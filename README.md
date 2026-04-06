@@ -176,7 +176,7 @@ Frente a esta problemática, TechWatch desarrolla una plataforma web orientada a
 
 | Foto | Nombres y Apellidos | Código | Carrera | Conocimientos y habilidades |
 |------|---------------------|--------|---------|-----------------------------|
-| <img src="ruta/foto.jpg" width="100"/> | Luis Andrés Alva Abanto | u202310877 | Ingeniería de Software | Algoritmos, estructuras de datos, arquitectura de software, cloud, IA, QA. |
+| <img src="assets/images/luis.png" width="100"/> | Luis Andrés Alva Abanto | u202310877 | Ingeniería de Software | Algoritmos, estructuras de datos, arquitectura de software, cloud, IA, QA. |
 | <img src="ruta/foto.jpg" width="100"/> | | | Ingeniería de Software | |
 | <img src="ruta/foto.jpg" width="100"/> | | | Ingeniería de Software | |
 | <img src="ruta/foto.jpg" width="100"/> | | | Ingeniería de Software | |
