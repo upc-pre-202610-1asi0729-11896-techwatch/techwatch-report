@@ -172,6 +172,16 @@ Frente a esta problemática, TechWatch desarrolla una plataforma web orientada a
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
+## 1.1.2. Perfiles de integrantes del equipo
+
+| Foto | Nombres y Apellidos | Código | Carrera | Conocimientos y habilidades |
+|------|---------------------|--------|---------|-----------------------------|
+| <img src="ruta/foto.jpg" width="100"/> | Luis Andrés Alva Abanto | u202310877 | Ingeniería de Software | Algoritmos, estructuras de datos, arquitectura de software, cloud, IA, QA. |
+| <img src="ruta/foto.jpg" width="100"/> | | | Ingeniería de Software | |
+| <img src="ruta/foto.jpg" width="100"/> | | | Ingeniería de Software | |
+| <img src="ruta/foto.jpg" width="100"/> | | | Ingeniería de Software | |
+| <img src="ruta/foto.jpg" width="100"/> | | | Ingeniería de Software | |
+
 ## 1.2. Solution Profile
 
 ### 1.2.1. Antecedentes y problemática
