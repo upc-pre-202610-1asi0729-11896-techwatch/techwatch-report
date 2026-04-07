@@ -216,6 +216,32 @@ El estado actual de la gestión de hogares inteligentes se ha enfocado en la con
 
 #### 1.2.2.2. Lean UX Assumptions
 
+**Business Assumptions:**
+
+1. Los usuarios están dispuestos a adoptar una plataforma web dedicada para gestionar y monitorear su hogar inteligente.
+
+2. Existe demanda suficiente en el mercado peruano para una solución accesible de análisis de Smart Homes.
+
+3. Una interfaz tipo control remoto accesible desde el celular incentivará el uso frecuente de la plataforma.
+
+4. Los dashboards con métricas e insights generarán valor percibido suficiente para retener a los usuarios. 
+
+5. Los usuarios están dispuestos a pagar una suscripción mensual por acceder a funcionalidades avanzadas de monitoreo y análisis.
+
+6. Un modelo freemiun con límite en la cantidad de dispositivos registrados es suficiente para incentivar la conversión a planes de pago.
+
+7. Las funcionalidades premiun como historial extendido de métricas, alertas personalizadas o reportes avanzados representan valor suficiente para justificar el costo de suscripción. 
+
+**User Assumptions:**
+
+1. Los usuarios no tienen visibilidad clara sobre el consumo y comportamiento de sus dispositivos domésticos.
+
+2. Los propietarios de casas gestionan una mayor cantidad y variedad de dispositivos que los arrendatarios de departamentos.
+
+3. Los usuarios prefieren visualizar la información de su hogar de forma gráfica antes que en texto o listas.
+
+4. Los usuarios accederán al control remoto principalmente desde su smartphone. 
+
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
 #### 1.2.2.4. Lean UX Canvas
