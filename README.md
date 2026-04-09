@@ -363,6 +363,28 @@ Ambos segmentos se enmarcan en un contexto regional favorable: el mercado de Sma
 
 ### 2.2.2. Registro de entrevistas
 
+Plantilla para cada entrevista:
+
+### Entrevista [N] — [Nombre del entrevistado]
+
+| Campo | Detalle |
+|-------|---------|
+| Nombres y apellidos | |
+| Edad | |
+| Distrito | |
+| Segmento objetivo | |
+| Fecha de entrevista | |
+| Duración | |
+| Timing en el video | |
+| URL del video | |
+
+![Screenshot del video](ruta/imagen.png)
+
+**Resumen:**
+[Párrafo descriptivo de las respuestas del entrevistado, incluyendo características
+objetivas y subjetivas: personalidad, marcas e influencias, dispositivos que usa,
+canales de interacción, browser, objetivos y frustraciones.]
+
 ### 2.2.3. Análisis de entrevistas
 
 ## 2.3. Needfinding
