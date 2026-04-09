@@ -300,6 +300,30 @@ Ambos segmentos se enmarcan en un contexto regional favorable: el mercado de Sma
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
+**Oportunidades más claras:**
+
+1. Google Home y SmartThings requieren hardware propio o ecosistemas cerrados. Techwatch no requiere ningún hardware adicional.
+
+2. Home Assistant es poderoso pero técnicamente complejo, TechWatch apunta a usuarios no técnicos con una interfaz accesible. 
+
+3. Ninguno de los tres tiene un enfoque específico en el mercado peruano/latinoamericano ni una interfaz en español centrada en ese segmento.
+
+**Estrategias:**
+
+1. Posicionarese como la alternativa accesible y sin barreras de hardware para usuarios latinoamericanos que quieren dar sus primeros pasos en la gestión inteligente de su hogar.
+
+2. Diferenciarse mediante el enfoque en métricas e insights como propuesta de valor central, en lugar del control directo de dispositivos que ya ofrecen los competidores. 
+
+3. Ofrecer una experiencia completamente en español, adaptada al contexto y necesidades del usuario peruano. 
+
+**Tácticas:**
+
+1. Modelo freemium que elimina la barrera de entrada económica frente a competidores con suscripciones obligatorias.
+
+2. Experiencia móvil optimizada desde el primer día, aprovechando la alta penetración de smartphones en el Perú.
+
+3. Interfaz intuitiva que no requiere conocimientos técnicos, en contraste directo con Home Assistant. 
+
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
