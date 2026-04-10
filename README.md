@@ -391,6 +391,16 @@ canales de interacción, browser, objetivos y frustraciones.]
 
 ### 2.3.1. User Personas
 
+Las siguientes fichas de User Persona han sido elaboradas en base al análisis de los segmentos objetivo identificados y los supuestos establecidos en el Lean UX Process. Cada ficha representa un arquetipo del usuario típico para cada segmento, considerando características demográficas, hábitos tecnológicos, objetivos y frustraciones principales. Para el segmento de propietarios de casas se identificó un perfil de usuario con experiencia tecnológica intermedia, orientado a la eficiencia y la toma de decisiones informadas sobre su hogar. Para el segmento de arrendatarios y propietarios de departamentos, el perfil corresponde a un usuario joven con alta afinidad tecnológica, que valora el diseño, la accesibilidad móvil y la sostenibilidad.
+
+**1. Primer segmento**
+
+![User persona 1](assets/images/user-persona1.png)
+
+**2. Segundo segmento**
+
+![User persona 2](assets/images/user-persona2.png)
+
 ### 2.3.2. User Task Matrix
 
 ### 2.3.3. User Journey Mapping
