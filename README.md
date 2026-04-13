@@ -403,6 +403,22 @@ Las siguientes fichas de User Persona han sido elaboradas en base al análisis d
 
 ### 2.3.2. User Task Matrix
 
+A continuación se presenta el User Task Matrix para los dos User Personas identificados: Carlos Mendoza, representante del segmento de propietarios de casas, y Valeria Torres, representante del segmento de arrendatarios y propietarios de departamentos. El cuadro concentra las tareas que ambos usuarios realizan cotidianamente para gestionar su hogar, independientemente de la existencia de una solución de software. Para cada tarea se indica la frecuencia con la que cada User Persona la realiza y la importancia que le asigna, con el fin de identificar patrones de comportamiento, necesidades no cubiertas y oportunidades de diseño para TechWatch.
+
+| Tarea | Carlos Mendoza (Propietario de casa) | | Valeria Torres (Arrendataria de departamento) | |
+|-------|--------------------------------------|--------------------------------------|-----------------------------------------------|----------------------------------------------|
+| | **Frecuencia** | **Importancia** | **Frecuencia** | **Importancia** |
+| Revisar el consumo eléctrico del hogar | Sometimes | High | Sometimes | High |
+| Controlar dispositivos inteligentes del hogar | Often | High | Often | High |
+| Identificar qué dispositivos consumen más energía | Rarely | High | Rarely | High |
+| Gestionar dispositivos en distintos espacios del inmueble | Often | High | Sometimes | Medium |
+| Tomar decisiones para reducir el gasto energético | Sometimes | High | Sometimes | High |
+| Verificar el estado de los dispositivos del hogar de forma remota | Sometimes | Medium | Often | High |
+| Buscar información sobre optimización del hogar | Rarely | Medium | Sometimes | Medium |
+| Coordinar el uso de dispositivos con otros miembros del hogar | Often | Medium | Rarely | Low |
+
+Ambos User Personas comparten como tareas de mayor frecuencia e importancia el control de dispositivos inteligentes y la toma de decisiones para reducir el gasto energético, lo que confirma que la propuesta de valor central de TechWatch responde a necesidades reales de ambos segmentos. La principal diferencia se observa en la gestión de dispositivos en distintos espacios del inmueble, tarea que Carlos realiza con mayor frecuencia dada la mayor extensión de su vivienda, mientras que Valeria prioriza la verificación remota del estado de sus dispositivos, lo que refuerza la importancia de una experiencia móvil optimizada para este segmento. Ambos coinciden en que identificar qué dispositivos consumen más energía es una tarea de alta importancia pero baja frecuencia, lo que sugiere que actualmente no cuentan con herramientas adecuadas para realizarla, representando una oportunidad directa para TechWatch.
+
 ### 2.3.3. User Journey Mapping
 
 ### 2.3.4. Empathy Mapping
