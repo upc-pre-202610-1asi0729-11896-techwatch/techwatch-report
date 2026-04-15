@@ -496,6 +496,28 @@ El siguiente glosario reúne los términos y conceptos clave del dominio de nego
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines
+El diseño visual de TechWatch se basa en un enfoque moderno, minimalista y orientado a productos digitales tipo SaaS (Software as a Service), priorizando la claridad de la información, la jerarquía visual y la experiencia del usuario.
+
+Se adopta una estética limpia que facilita la visualización de métricas e insights relacionados al comportamiento de dispositivos inteligentes dentro del hogar.
+
+### Paleta de colores:
+
+* Color primario : *Azul oscuro (#0F172A)* Utilizado en fondos principales para transmitir confianza, estabilidad y tecnología.
+* Color secundario: *Azul brillante (#3B82F6)* y/o *cyan (#06B6D4)*, empleado en botones, enlaces y elementos interactivos.
+* Colores neutros: *Tonos oscuros (#020617, #0B1120)* para fondos secundarios y tarjetas.
+* Texto: *Blanco suave (#E5E7EB) y gris (#9CA3AF)* para garantizar legibilidad.
+* Color de énfasis: *Verde (#10B981)* para representar métricas positivas o ahorro energético.
+
+### Tipografía:
+Se utilizará la fuente *sans-serif “Inter”*, debido a su alta legibilidad en interfaces digitales y su uso extendido en aplicaciones modernas.
+
+### Principios de diseño:
+
+* Minimalismo visual (reducción de elementos innecesarios)
+* Uso consistente de espacios en blanco
+* Bordes redondeados en componentes (8px – 16px)
+* Jerarquía tipográfica clara (títulos, subtítulos, contenido)
+* Enfoque en la visualización de datos
 
 ### 4.1.1. General Style Guidelines
 
