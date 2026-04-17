@@ -595,7 +595,28 @@ A continuación se presentan los diagramas de clases UML para cada Bounded Conte
 
 **Device Management**
 
+El diagrama de clases del Bounded Context Device Management define tres entidades principales. Property actúa como Aggregate Root y representa el inmueble registrado por el usuario, al cual se asocian uno o más espacios mediante una relación de composición. Space representa cada ambiente del inmueble y contiene a su vez uno o más dispositivos. Device representa cada dispositivo inteligente registrado en un espacio, con atributos como tipo y estado gestionados mediante las enumeraciones DeviceType y DeviceStatus. Los repositorios PropertyRepository y DeviceRepository definen las interfaces de acceso a datos para sus respectivos agregados, mientras que PropertyService y DeviceService encapsulan la lógica de negocio del contexto.
+
 ![class-diagram-device-management](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-device-management.puml)
+
+**Simulation**
+
+
+El diagrama de clases del Bounded Context Simulation define SimulationSession como Aggregate Root, que representa una sesión de uso simulado iniciada por el usuario. Cada sesión registra un conjunto de DeviceAction, que captura cada interacción realizada sobre un dispositivo durante la sesión, y genera UsageData, que almacena los datos de consumo producidos por cada interacción. El estado del ciclo de vida de la sesión se gestiona mediante la enumeración SessionStatus, mientras que DeviceActionType clasifica el tipo de acción ejecutada. El SimulationService encapsula la lógica de negocio para iniciar, gestionar y finalizar sesiones, así como para generar los datos de uso correspondientes.
+
+![class-diagram-simulation](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-simulation.puml)
+
+**Analytics**
+
+El diagrama de clases del Bounded Context Analytics define Metric como Aggregate Root, que representa un valor calculado a partir de los datos de uso generados en Simulation. ConsumptionReport representa un reporte de consumo generado para un período determinado, compuesto por uno o más ReportItem que detallan el consumo por dispositivo. ConsumptionAlert representa una alerta disparada automáticamente cuando el valor de una métrica supera un umbral definido, clasificada por severidad mediante la enumeración AlertSeverity. AnalyticsService gestiona el cálculo de métricas y la generación de alertas, mientras que ReportService se encarga de la generación de reportes tanto automáticos como bajo demanda.
+
+![class-diagram-analytics](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-analytics.puml)
+
+**Subscriptions**
+
+El diagrama de clases del Bounded Context Subscriptions define Subscription como Aggregate Root, que representa la suscripción activa de un usuario a un plan determinado. Plan representa cada plan de suscripción disponible, con sus características encapsuladas en el Value Object PlanFeatures y su precio representado mediante el Value Object Money, aplicando así el principio de inmutabilidad propio de los Value Objects en DDD. Payment registra cada transacción de pago asociada a una suscripción, con su estado gestionado mediante la enumeración PaymentStatus. SubscriptionService encapsula la lógica de negocio para crear, actualizar y cancelar suscripciones, delegando el procesamiento de pagos al PaymentComponent, que actúa como puente hacia el servicio de pagos externo.
+
+![class-diagram-subscriptions](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-subscriptions.puml)
 
 ## 4.8. Database Design
 

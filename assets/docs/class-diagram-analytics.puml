@@ -1,0 +1,164 @@
+@startuml Analytics
+
+skinparam classAttributeIconSize 0
+skinparam monochrome false
+skinparam shadowing false
+
+' Enumerations
+enum MetricType <<Enum>> {
+    ENERGY_CONSUMPTION
+    USAGE_FREQUENCY
+    PEAK_HOURS
+    AVERAGE_CONSUMPTION
+}
+
+enum AlertSeverity <<Enum>> {
+    LOW
+    MEDIUM
+    HIGH
+}
+
+enum ReportPeriod <<Enum>> {
+    DAILY
+    WEEKLY
+    MONTHLY
+    CUSTOM
+}
+
+' Entities
+class Metric <<Aggregate Root>> <<Entity>> {
+    - id: Long
+    - deviceId: Long
+    - propertyId: Long
+    - metricType: MetricType
+    - value: Double
+    - unit: String
+    - calculatedAt: LocalDateTime
+    + getId(): Long
+    + getDeviceId(): Long
+    + getPropertyId(): Long
+    + getMetricType(): MetricType
+    + getValue(): Double
+    + getUnit(): String
+    + getCalculatedAt(): LocalDateTime
+}
+
+class ConsumptionReport <<Entity>> {
+    - id: Long
+    - propertyId: Long
+    - userId: Long
+    - period: ReportPeriod
+    - startDate: LocalDate
+    - endDate: LocalDate
+    - generatedAt: LocalDateTime
+    - isAutomatic: Boolean
+    + getId(): Long
+    + getPropertyId(): Long
+    + getUserId(): Long
+    + getPeriod(): ReportPeriod
+    + getStartDate(): LocalDate
+    + getEndDate(): LocalDate
+    + getGeneratedAt(): LocalDateTime
+    + isAutomatic(): Boolean
+}
+
+class ReportItem <<Entity>> {
+    - id: Long
+    - reportId: Long
+    - deviceId: Long
+    - deviceName: String
+    - totalConsumption: Double
+    - unit: String
+    - usageFrequency: Integer
+    + getId(): Long
+    + getReportId(): Long
+    + getDeviceId(): Long
+    + getDeviceName(): String
+    + getTotalConsumption(): Double
+    + getUnit(): String
+    + getUsageFrequency(): Integer
+}
+
+class ConsumptionAlert <<Entity>> {
+    - id: Long
+    - deviceId: Long
+    - propertyId: Long
+    - userId: Long
+    - severity: AlertSeverity
+    - message: String
+    - threshold: Double
+    - currentValue: Double
+    - triggeredAt: LocalDateTime
+    - isRead: Boolean
+    + getId(): Long
+    + getDeviceId(): Long
+    + getPropertyId(): Long
+    + getSeverity(): AlertSeverity
+    + getMessage(): String
+    + getThreshold(): Double
+    + getCurrentValue(): Double
+    + isRead(): Boolean
+    + markAsRead(): void
+}
+
+' Repositories
+interface MetricRepository <<Repository>> {
+    + findById(id: Long): Optional<Metric>
+    + findByDeviceId(deviceId: Long): List<Metric>
+    + findByPropertyId(propertyId: Long): List<Metric>
+    + findByMetricType(metricType: MetricType): List<Metric>
+    + findByPropertyIdAndCalculatedAtBetween(propertyId: Long, start: LocalDateTime, end: LocalDateTime): List<Metric>
+    + save(metric: Metric): Metric
+}
+
+interface ConsumptionReportRepository <<Repository>> {
+    + findById(id: Long): Optional<ConsumptionReport>
+    + findByUserId(userId: Long): List<ConsumptionReport>
+    + findByPropertyId(propertyId: Long): List<ConsumptionReport>
+    + save(report: ConsumptionReport): ConsumptionReport
+    + deleteById(id: Long): void
+}
+
+interface ConsumptionAlertRepository <<Repository>> {
+    + findById(id: Long): Optional<ConsumptionAlert>
+    + findByUserId(userId: Long): List<ConsumptionAlert>
+    + findByPropertyId(propertyId: Long): List<ConsumptionAlert>
+    + findUnreadByUserId(userId: Long): List<ConsumptionAlert>
+    + save(alert: ConsumptionAlert): ConsumptionAlert
+}
+
+' Services
+class AnalyticsService <<Service>> {
+    - metricRepository: MetricRepository
+    - alertRepository: ConsumptionAlertRepository
+    + calculateMetrics(deviceId: Long, sessionId: Long): List<Metric>
+    + getMetricsByDeviceId(deviceId: Long): List<Metric>
+    + getMetricsByPropertyId(propertyId: Long): List<Metric>
+    + checkThresholdAndAlert(metric: Metric): Optional<ConsumptionAlert>
+    + getAlertsByUserId(userId: Long): List<ConsumptionAlert>
+    + markAlertAsRead(alertId: Long): void
+}
+
+class ReportService <<Service>> {
+    - reportRepository: ConsumptionReportRepository
+    - metricRepository: MetricRepository
+    + generateAutomaticReport(propertyId: Long, period: ReportPeriod): ConsumptionReport
+    + generateReportOnDemand(propertyId: Long, startDate: LocalDate, endDate: LocalDate): ConsumptionReport
+    + getReportById(reportId: Long): ConsumptionReport
+    + getReportsByUserId(userId: Long): List<ConsumptionReport>
+}
+
+' Relations
+ConsumptionReport "1" *-- "1..*" ReportItem : contains >
+ConsumptionReport --> ReportPeriod : uses >
+ConsumptionAlert --> AlertSeverity : uses >
+Metric --> MetricType : uses >
+AnalyticsService --> MetricRepository : uses >
+AnalyticsService --> ConsumptionAlertRepository : uses >
+ReportService --> ConsumptionReportRepository : uses >
+ReportService --> MetricRepository : uses >
+MetricRepository ..> Metric : manages >
+ConsumptionReportRepository ..> ConsumptionReport : manages >
+ConsumptionAlertRepository ..> ConsumptionAlert : manages >
+
+@enduml

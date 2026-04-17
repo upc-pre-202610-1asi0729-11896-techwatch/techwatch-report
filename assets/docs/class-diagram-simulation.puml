@@ -1,0 +1,112 @@
+@startuml Simulation
+
+skinparam classAttributeIconSize 0
+skinparam monochrome false
+skinparam shadowing false
+
+' Enumerations
+enum SessionStatus <<Enum>> {
+    ACTIVE
+    COMPLETED
+    CANCELLED
+}
+
+enum DeviceActionType <<Enum>> {
+    TURN_ON
+    TURN_OFF
+    MODIFY_PARAMETER
+}
+
+' Entities
+class SimulationSession <<Aggregate Root>> <<Entity>> {
+    - id: Long
+    - userId: Long
+    - propertyId: Long
+    - status: SessionStatus
+    - startedAt: LocalDateTime
+    - endedAt: LocalDateTime
+    + getId(): Long
+    + getUserId(): Long
+    + getPropertyId(): Long
+    + getStatus(): SessionStatus
+    + getStartedAt(): LocalDateTime
+    + getEndedAt(): LocalDateTime
+    + start(): void
+    + end(): void
+    + cancel(): void
+}
+
+class DeviceAction <<Entity>> {
+    - id: Long
+    - sessionId: Long
+    - deviceId: Long
+    - actionType: DeviceActionType
+    - parameterName: String
+    - parameterValue: String
+    - executedAt: LocalDateTime
+    + getId(): Long
+    + getSessionId(): Long
+    + getDeviceId(): Long
+    + getActionType(): DeviceActionType
+    + getParameterName(): String
+    + getParameterValue(): String
+    + getExecutedAt(): LocalDateTime
+}
+
+class UsageData <<Entity>> {
+    - id: Long
+    - sessionId: Long
+    - deviceId: Long
+    - consumptionValue: Double
+    - unit: String
+    - recordedAt: LocalDateTime
+    + getId(): Long
+    + getSessionId(): Long
+    + getDeviceId(): Long
+    + getConsumptionValue(): Double
+    + getUnit(): String
+    + getRecordedAt(): LocalDateTime
+}
+
+' Repositories
+interface SimulationSessionRepository <<Repository>> {
+    + findById(id: Long): Optional<SimulationSession>
+    + findByUserId(userId: Long): List<SimulationSession>
+    + findByPropertyId(propertyId: Long): List<SimulationSession>
+    + findActiveByUserId(userId: Long): Optional<SimulationSession>
+    + save(session: SimulationSession): SimulationSession
+    + deleteById(id: Long): void
+}
+
+interface UsageDataRepository <<Repository>> {
+    + findById(id: Long): Optional<UsageData>
+    + findBySessionId(sessionId: Long): List<UsageData>
+    + findByDeviceId(deviceId: Long): List<UsageData>
+    + save(usageData: UsageData): UsageData
+}
+
+' Services
+class SimulationService <<Service>> {
+    - sessionRepository: SimulationSessionRepository
+    - usageDataRepository: UsageDataRepository
+    + startSession(userId: Long, propertyId: Long): SimulationSession
+    + endSession(sessionId: Long): SimulationSession
+    + cancelSession(sessionId: Long): SimulationSession
+    + executeAction(sessionId: Long, action: DeviceAction): DeviceAction
+    + generateUsageData(sessionId: Long, deviceId: Long): UsageData
+    + getSessionById(sessionId: Long): SimulationSession
+    + getSessionsByUserId(userId: Long): List<SimulationSession>
+    + getUsageDataBySessionId(sessionId: Long): List<UsageData>
+}
+
+' Relations
+SimulationSession "1" *-- "0..*" DeviceAction : records >
+SimulationSession "1" *-- "0..*" UsageData : generates >
+SimulationSession --> SessionStatus : uses >
+DeviceAction --> DeviceActionType : uses >
+SimulationService --> SimulationSessionRepository : uses >
+SimulationService --> UsageDataRepository : uses >
+SimulationSessionRepository ..> SimulationSession : manages >
+UsageDataRepository ..> UsageData : manages >
+
+@enduml

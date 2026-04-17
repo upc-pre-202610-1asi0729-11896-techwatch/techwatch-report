@@ -1,0 +1,173 @@
+@startuml Subscriptions
+
+skinparam classAttributeIconSize 0
+skinparam monochrome false
+skinparam shadowing false
+
+' Enumerations
+enum PlanType <<Enum>> {
+    FREE
+    BASIC
+    PREMIUM
+}
+
+enum SubscriptionStatus <<Enum>> {
+    ACTIVE
+    CANCELLED
+    EXPIRED
+    PENDING
+}
+
+enum PaymentStatus <<Enum>> {
+    PENDING
+    COMPLETED
+    FAILED
+    REFUNDED
+}
+
+enum BillingCycle <<Enum>> {
+    MONTHLY
+    ANNUAL
+}
+
+' Value Objects
+class Money <<Value Object>> {
+    - amount: Double
+    - currency: String
+    + getAmount(): Double
+    + getCurrency(): String
+    + equals(other: Money): Boolean
+}
+
+class PlanFeatures <<Value Object>> {
+    - maxDevices: Integer
+    - hasAdvancedMetrics: Boolean
+    - hasCustomReports: Boolean
+    - hasAlerts: Boolean
+    - hasUnlimitedHistory: Boolean
+    + getMaxDevices(): Integer
+    + hasAdvancedMetrics(): Boolean
+    + hasCustomReports(): Boolean
+    + hasAlerts(): Boolean
+    + hasUnlimitedHistory(): Boolean
+}
+
+' Entities
+class Plan <<Entity>> {
+    - id: Long
+    - name: String
+    - planType: PlanType
+    - price: Money
+    - billingCycle: BillingCycle
+    - features: PlanFeatures
+    - isActive: Boolean
+    + getId(): Long
+    + getName(): String
+    + getPlanType(): PlanType
+    + getPrice(): Money
+    + getBillingCycle(): BillingCycle
+    + getFeatures(): PlanFeatures
+    + isActive(): Boolean
+}
+
+class Subscription <<Aggregate Root>> <<Entity>> {
+    - id: Long
+    - userId: Long
+    - planId: Long
+    - status: SubscriptionStatus
+    - startDate: LocalDate
+    - endDate: LocalDate
+    - autoRenew: Boolean
+    - createdAt: LocalDateTime
+    - updatedAt: LocalDateTime
+    + getId(): Long
+    + getUserId(): Long
+    + getPlanId(): Long
+    + getStatus(): SubscriptionStatus
+    + getStartDate(): LocalDate
+    + getEndDate(): LocalDate
+    + isAutoRenew(): Boolean
+    + activate(): void
+    + cancel(): void
+    + expire(): void
+    + isActive(): Boolean
+}
+
+class Payment <<Entity>> {
+    - id: Long
+    - subscriptionId: Long
+    - amount: Money
+    - status: PaymentStatus
+    - externalPaymentId: String
+    - processedAt: LocalDateTime
+    + getId(): Long
+    + getSubscriptionId(): Long
+    + getAmount(): Money
+    + getStatus(): PaymentStatus
+    + getExternalPaymentId(): String
+    + getProcessedAt(): LocalDateTime
+    + markAsCompleted(externalId: String): void
+    + markAsFailed(): void
+}
+
+' Repositories
+interface SubscriptionRepository <<Repository>> {
+    + findById(id: Long): Optional<Subscription>
+    + findByUserId(userId: Long): Optional<Subscription>
+    + findActiveByUserId(userId: Long): Optional<Subscription>
+    + save(subscription: Subscription): Subscription
+    + deleteById(id: Long): void
+}
+
+interface PlanRepository <<Repository>> {
+    + findById(id: Long): Optional<Plan>
+    + findByPlanType(planType: PlanType): Optional<Plan>
+    + findAllActive(): List<Plan>
+    + save(plan: Plan): Plan
+}
+
+interface PaymentRepository <<Repository>> {
+    + findById(id: Long): Optional<Payment>
+    + findBySubscriptionId(subscriptionId: Long): List<Payment>
+    + save(payment: Payment): Payment
+}
+
+' Services
+class SubscriptionService <<Service>> {
+    - subscriptionRepository: SubscriptionRepository
+    - planRepository: PlanRepository
+    - paymentComponent: PaymentComponent
+    + createSubscription(userId: Long, planId: Long, billingCycle: BillingCycle): Subscription
+    + cancelSubscription(subscriptionId: Long): Subscription
+    + upgradeSubscription(subscriptionId: Long, newPlanId: Long): Subscription
+    + getSubscriptionByUserId(userId: Long): Subscription
+    + getAvailablePlans(): List<Plan>
+    + renewSubscription(subscriptionId: Long): Subscription
+}
+
+class PaymentComponent <<Service>> {
+    - paymentRepository: PaymentRepository
+    + processPayment(subscription: Subscription, amount: Money): Payment
+    + refundPayment(paymentId: Long): Payment
+    + getPaymentsBySubscriptionId(subscriptionId: Long): List<Payment>
+}
+
+' Relations
+Subscription "1" *-- "0..*" Payment : records >
+Subscription --> Plan : subscribes to >
+Subscription --> SubscriptionStatus : uses >
+Plan --> PlanType : uses >
+Plan --> BillingCycle : uses >
+Plan *-- PlanFeatures : has >
+Plan *-- Money : priced with >
+Payment --> PaymentStatus : uses >
+Payment *-- Money : amount >
+SubscriptionService --> SubscriptionRepository : uses >
+SubscriptionService --> PlanRepository : uses >
+SubscriptionService --> PaymentComponent : uses >
+PaymentComponent --> PaymentRepository : uses >
+SubscriptionRepository ..> Subscription : manages >
+PlanRepository ..> Plan : manages >
+PaymentRepository ..> Payment : manages >
+
+@enduml
