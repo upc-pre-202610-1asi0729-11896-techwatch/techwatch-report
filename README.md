@@ -27,13 +27,13 @@
 
 ## Relación de Integrantes
 
-| Código | Apellidos y Nombres |
-|--------|---------------------|
-| U202310877 | Alva Abanto, Luis Andrés |
-| U20241E367 | Toro Turpo, Ronal |
-| U20XXXXXXX | [Apellido], [Nombre] |
-| U20XXXXXXX | [Apellido], [Nombre] |
-| U20XXXXXXX | [Apellido], [Nombre] |
+| Código     | Apellidos y Nombres             |
+|------------|---------------------------------|
+| U202310877 | Alva Abanto, Luis Andrés        |
+| U20241E367 | Toro Turpo, Ronal               |
+| U20XXXXXXX | [Apellido], [Nombre]            |
+| U202111529 | Montalvo Vásquez, Bruno Rodrigo |
+| U20XXXXXXX | [Apellido], [Nombre]            |
 
 ---
 
@@ -174,13 +174,13 @@ Frente a esta problemática, TechWatch desarrolla una plataforma web orientada a
 
 ## 1.1.2. Perfiles de integrantes del equipo
 
-| Foto | Nombres y Apellidos | Código | Carrera | Conocimientos y habilidades |
-|------|---------------------|--------|---------|-----------------------------|
-| <img src="assets/images/luis.png" width="100"/> | Luis Andrés Alva Abanto | u202310877 | Ingeniería de Software | Algoritmos, estructuras de datos, arquitectura de software, cloud, IA, QA. |
-| <img src="ruta/foto.jpg" width="100"/> | | | Ingeniería de Software | |
-| <img src="ruta/foto.jpg" width="100"/> | | | Ingeniería de Software | |
-| <img src="ruta/foto.jpg" width="100"/> | | | Ingeniería de Software | |
-| <img src="ruta/foto.jpg" width="100"/> | | | Ingeniería de Software | |
+| Foto                                             | Nombres y Apellidos            | Código     | Carrera | Conocimientos y habilidades                                                     |
+|--------------------------------------------------|--------------------------------|------------|---------|---------------------------------------------------------------------------------|
+| <img src="assets/images/luis.png" width="100"/>  | Luis Andrés Alva Abanto        | u202310877 | Ingeniería de Software | Algoritmos, estructuras de datos, arquitectura de software, cloud, IA, QA.      |
+| <img src="ruta/foto.jpg" width="100"/>           |                                |            | Ingeniería de Software |                                                                                 |
+| <img src="assets/images/bruno.png" width="100"/> | Bruno Rodrigo Montalvo Vásquez | u202111529 | Ingeniería de Software | Algoritmos, leve conocimiento de java y typescript; y arquitectura de software. |
+| <img src="ruta/foto.jpg" width="100"/>           |                                |            | Ingeniería de Software |                                                                                 |
+| <img src="ruta/foto.jpg" width="100"/>           |                                |            | Ingeniería de Software |                                                                                 |
 
 ## 1.2. Solution Profile
 
@@ -480,8 +480,50 @@ El siguiente glosario reúne los términos y conceptos clave del dominio de nego
 
 | Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
 |-----------------|--------|-------------|-------------------------|---------------------------|
-| EP01 | | | | |
-| US01 | | Como... deseo... para... | **Scenario 1:** <br> Given... <br> When... <br> Then... | EP01 |
+| EP01 | Gestión de usuarios | Epic orientado al registro, acceso, recuperación y administración de cuentas de usuario. | - | - |
+| US01 | Registro de usuario | Como visitante, deseo crear una cuenta para acceder a la plataforma. | **Scenario 1: Registro exitoso** <br> **Given** el visitante completa los datos obligatorios válidos, <br> **When** solicita registrarse, <br> **Then** el sistema crea la cuenta correctamente. <br><br> **Scenario 2: Datos incompletos** <br> **Given** faltan campos obligatorios, <br> **When** intenta registrarse, <br> **Then** el sistema informa que existen datos pendientes. | EP01 |
+| US02 | Inicio de sesión | Como usuario registrado, deseo iniciar sesión para acceder a mis funciones. | **Scenario 1: Credenciales válidas** <br> **Given** el usuario ingresa credenciales correctas, <br> **When** solicita acceso, <br> **Then** el sistema permite el ingreso. | EP01 |
+| US03 | Recuperar contraseña | Como usuario, deseo recuperar mi contraseña para volver a ingresar a mi cuenta. | **Scenario 1: Solicitud exitosa** <br> **Given** el correo está registrado, <br> **When** solicita recuperación, <br> **Then** el sistema envía instrucciones al correo. | EP01 |
+| EP02 | Monitoreo inteligente | Epic orientado a supervisión de sensores, consumo y estado de instalaciones. | - | - |
+| US04 | Visualizar estado en tiempo real | Como usuario, deseo ver el estado actual de agua y gas para detectar anomalías rápidamente. | **Scenario 1: Lecturas disponibles** <br> **Given** existen dispositivos vinculados, <br> **When** consulta el panel, <br> **Then** el sistema muestra lecturas actualizadas. | EP02 |
+| US05 | Recibir alertas automáticas | Como usuario, deseo recibir alertas inmediatas ante fugas o riesgos. | **Scenario 1: Evento crítico** <br> **Given** se detecta una anomalía, <br> **When** ocurre el evento, <br> **Then** el sistema envía una notificación automática. | EP02 |
+| US06 | Historial de consumo | Como usuario, deseo revisar consumos anteriores para identificar excesos o patrones anormales. | **Scenario 1: Historial disponible** <br> **Given** existen registros históricos, <br> **When** consulta reportes, <br> **Then** el sistema muestra el historial almacenado. | EP02 |
+| EP03 | Gestión de Suscripciones y Planes | Epic orientado a planes comerciales, beneficios y suscripciones. | - | - |
+| US07 | Visualizar planes disponibles | Como visitante, deseo visualizar los planes disponibles para comparar beneficios y elegir el más adecuado. | **Scenario 1: Consulta de planes** <br> **Given** el visitante accede a la sección de planes, <br> **When** carga la información, <br> **Then** se muestran planes con beneficios y precios. | EP03 |
+| US08 | Suscribirse a un plan | Como usuario registrado, deseo contratar un plan para acceder a funciones premium. | **Scenario 1: Suscripción exitosa** <br> **Given** el usuario tiene cuenta activa, <br> **When** selecciona un plan y confirma la compra, <br> **Then** el sistema activa la suscripción. | EP03 |
+| US09 | Cambiar de plan | Como usuario suscrito, deseo cambiar de plan para adaptar el servicio a mis nuevas necesidades. | **Scenario 1: Cambio exitoso** <br> **Given** el usuario tiene un plan activo, <br> **When** selecciona otro plan, <br> **Then** el sistema actualiza los beneficios. | EP03 |
+| US10 | Cancelar suscripción | Como usuario suscrito, deseo cancelar mi suscripción para detener futuras renovaciones. | **Scenario 1: Cancelación correcta** <br> **Given** existe una suscripción activa, <br> **When** solicita cancelarla, <br> **Then** el sistema registra la cancelación. | EP03 |
+| EP04 | Landing Page y Conversión | Epic orientado al sitio público de captación de clientes. | - | - |
+| US11 | Ver propuesta de valor | Como visitante, deseo entender rápidamente el beneficio principal del producto para decidir si me interesa. | **Scenario 1: Contenido visible** <br> **Given** el visitante ingresa al sitio, <br> **When** carga la página principal, <br> **Then** se presenta claramente la propuesta de valor. | EP04 |
+| US12 | Navegar por secciones informativas | Como visitante, deseo revisar información del producto para conocer funcionalidades y beneficios. | **Scenario 1: Navegación exitosa** <br> **Given** accede al menú principal, <br> **When** selecciona una sección, <br> **Then** el sistema muestra el contenido solicitado. | EP04 |
+| US13 | Redirección a registro | Como visitante, deseo registrarme desde la Landing Page para comenzar a usar la plataforma. | **Scenario 1: CTA funcional** <br> **Given** visualiza un botón de acción, <br> **When** hace clic en registrarse, <br> **Then** el sistema redirige al formulario. | EP04 |
+| EP05 | Gestión Multiubicación | Epic orientado a organizaciones con múltiples sedes o instalaciones. | - | - |
+| US14 | Registrar múltiples sedes | Como administrador de organización, deseo registrar varias sedes para monitorear diferentes instalaciones. | **Scenario 1: Registro correcto** <br> **Given** tiene permisos activos, <br> **When** registra una nueva sede, <br> **Then** la sede queda disponible. | EP05 |
+| US15 | Filtrar datos por sede | Como gestor operativo, deseo filtrar información por sede para analizar incidencias específicas. | **Scenario 1: Filtro aplicado** <br> **Given** existen varias sedes registradas, <br> **When** selecciona una sede, <br> **Then** el sistema muestra solo la información asociada. | EP05 |
+| US16 | Ver resumen general | Como gestor operativo, deseo visualizar un resumen consolidado para tomar decisiones rápidas. | **Scenario 1: Dashboard global** <br> **Given** existen múltiples sedes activas, <br> **When** ingresa al panel general, <br> **Then** el sistema muestra métricas consolidadas. | EP05 |
+| EP06 | Gestión de dispositivos IoT | Epic orientado al registro y administración de dispositivos inteligentes. | - | - |
+| US17 | Vincular nuevo dispositivo | Como usuario, deseo vincular un dispositivo para comenzar a monitorear una instalación. | **Scenario 1: Vinculación exitosa** <br> **Given** el dispositivo es compatible, <br> **When** solicita vincularlo, <br> **Then** el sistema registra el dispositivo. | EP06 |
+| US18 | Desvincular dispositivo | Como usuario, deseo desvincular un dispositivo que ya no utilizo. | **Scenario 1: Eliminación correcta** <br> **Given** el dispositivo pertenece al usuario, <br> **When** solicita desvincularlo, <br> **Then** el sistema elimina la asociación. | EP06 |
+| US19 | Ver estado de conexión | Como usuario, deseo ver si mis dispositivos están conectados para asegurar el monitoreo continuo. | **Scenario 1: Consulta exitosa** <br> **Given** existen dispositivos registrados, <br> **When** revisa el panel, <br> **Then** el sistema muestra el estado de conexión. | EP06 |
+| EP07 | Reportes y Analítica | Epic orientado a métricas y reportes para la toma de decisiones. | - | - |
+| US20 | Visualizar consumo mensual | Como usuario, deseo visualizar mi consumo mensual para controlar gastos. | **Scenario 1: Datos disponibles** <br> **Given** existen registros mensuales, <br> **When** consulta el reporte, <br> **Then** el sistema muestra el consumo total. | EP07 |
+| US21 | Comparar periodos | Como usuario, deseo comparar distintos periodos para identificar variaciones. | **Scenario 1: Comparación exitosa** <br> **Given** existen datos históricos suficientes, <br> **When** selecciona dos periodos, <br> **Then** el sistema muestra la comparación. | EP07 |
+| US22 | Exportar reporte | Como usuario premium, deseo exportar reportes para compartir información. | **Scenario 1: Exportación correcta** <br> **Given** el usuario tiene acceso al beneficio, <br> **When** solicita exportar un reporte, <br> **Then** el sistema genera el archivo correspondiente. | EP07 |
+| EP08 | Soporte y Atención | Epic orientado a la gestión de incidencias y soporte técnico. | - | - |
+| US23 | Solicitar soporte técnico | Como usuario, deseo solicitar ayuda técnica para resolver incidencias complejas. | **Scenario 1: Solicitud generada** <br> **Given** existe una incidencia registrada, <br> **When** solicita soporte, <br> **Then** el sistema genera el caso correspondiente. | EP08 |
+| US24 | Consultar estado del ticket | Como usuario, deseo revisar el estado de mi solicitud para conocer el avance de atención. | **Scenario 1: Ticket existente** <br> **Given** existe una solicitud registrada, <br> **When** consulta su estado, <br> **Then** el sistema muestra el progreso actual. | EP08 |
+| EP09 | API y Backend | Epic orientado a servicios RESTful y lógica del sistema. | - | - |
+| TS01 | API registrar usuario | Como Developer, deseo consumir un endpoint de registro para crear cuentas desde clientes externos. | **Scenario 1: Request válido** <br> **Given** el request contiene datos válidos, <br> **When** se envía al endpoint, <br> **Then** la API responde con creación exitosa. | EP09 |
+| TS02 | API obtener sensores | Como Developer, deseo consultar lecturas de sensores mediante la API. | **Scenario 1: Consulta exitosa** <br> **Given** existe un dispositivo registrado, <br> **When** se consulta el endpoint correspondiente, <br> **Then** la API devuelve el estado actual del sensor. | EP09 |
+| TS03 | API consultar historial | Como Developer, deseo obtener el historial de consumo para que el frontend genere reportes. | **Scenario 1: Historial disponible** <br> **Given** existen registros almacenados, <br> **When** se ejecuta la solicitud, <br> **Then** la API devuelve los datos históricos ordenados por fecha. | EP09 |
+| TS04 | API generar alerta | Como Developer, deseo registrar alertas mediante la API para almacenar incidentes. | **Scenario 1: Alerta creada** <br> **Given** se proporciona información válida, <br> **When** la solicitud es procesada, <br> **Then** la API registra la alerta y devuelve confirmación. | EP09 |
+| TS05 | API actualizar plan | Como Developer, deseo consumir un endpoint para cambiar la suscripción del usuario. | **Scenario 1: Cambio exitoso** <br> **Given** el request contiene datos válidos, <br> **When** se procesa la solicitud, <br> **Then** la API actualiza el plan del usuario. | EP09 |
+| EP10 | Seguridad y Administración | Epic orientado a permisos, sesiones y protección de datos. | - | - |
+| US25 | Cerrar sesión | Como usuario, deseo cerrar sesión para proteger mi cuenta en dispositivos compartidos. | **Scenario 1: Logout exitoso** <br> **Given** tiene sesión iniciada, <br> **When** selecciona cerrar sesión, <br> **Then** el sistema finaliza la sesión activa. | EP10 |
+| US26 | Actualizar perfil | Como usuario, deseo editar mis datos personales para mantener mi información actualizada. | **Scenario 1: Actualización exitosa** <br> **Given** accede a perfil, <br> **When** guarda nuevos datos válidos, <br> **Then** el sistema actualiza la información registrada. | EP10 |
+| US27 | Gestionar permisos de colaboradores | Como administrador, deseo asignar permisos para controlar accesos dentro de la organización. | **Scenario 1: Asignación correcta** <br> **Given** existe un colaborador registrado, <br> **When** asigna un rol válido, <br> **Then** el sistema actualiza sus permisos. | EP10 |
+| US28 | Renovar suscripción | Como usuario, deseo renovar mi suscripción para mantener mis beneficios activos. | **Scenario 1: Renovación exitosa** <br> **Given** la suscripción está próxima a vencer, <br> **When** confirma la renovación, <br> **Then** el sistema extiende la vigencia del plan. | EP10 |
+| TS06 | API autenticación segura | Como Developer, deseo autenticar solicitudes protegidas para resguardar la información. | **Scenario 1: Token válido** <br> **Given** la solicitud incluye credenciales válidas, <br> **When** accede a un recurso protegido, <br> **Then** la API autoriza el acceso. | EP10 |
 
 ## 3.2. Impact Mapping
 
@@ -498,9 +540,40 @@ El siguiente glosario reúne los términos y conceptos clave del dominio de nego
 ## 4.1. Style Guidelines
 
 ### 4.1.1. General Style Guidelines
+El diseño visual de TechWatch se basa en un enfoque moderno, minimalista y orientado a productos digitales tipo SaaS (Software as a Service), priorizando la claridad de la información, la jerarquía visual y la experiencia del usuario.
 
+Se adopta una estética limpia que facilita la visualización de métricas e insights relacionados al comportamiento de dispositivos inteligentes dentro del hogar.
+
+### Paleta de colores:
+
+* Color primario : *Azul oscuro (#0F172A)* Utilizado en fondos principales para transmitir confianza, estabilidad y tecnología.
+* Color secundario: *Azul brillante (#3B82F6)* y/o *cyan (#06B6D4)*, empleado en botones, enlaces y elementos interactivos.
+* Colores neutros: *Tonos oscuros (#020617, #0B1120)* para fondos secundarios y tarjetas.
+* Texto: *Blanco suave (#E5E7EB) y gris (#9CA3AF)* para garantizar legibilidad.
+* Color de énfasis: *Verde (#10B981)* para representar métricas positivas o ahorro energético.
+
+### Tipografía:
+Se utilizará la fuente *sans-serif “Inter”*, debido a su alta legibilidad en interfaces digitales y su uso extendido en aplicaciones modernas.
+
+### Principios de diseño:
+
+* Minimalismo visual (reducción de elementos innecesarios)
+* Uso consistente de espacios en blanco
+* Bordes redondeados en componentes (8px – 16px)
+* Jerarquía tipográfica clara (títulos, subtítulos, contenido)
+* Enfoque en la visualización de datos
 ### 4.1.2. Web Style Guidelines
+Las interfaces web de TechWatch seguirán lineamientos consistentes orientados a la usabilidad y accesibilidad.
 
+**Componentes principales:**
+
+* Botones: Colores sólidos con contraste alto y estados hover.
+* Tarjetas (Cards): Contenedores con fondo oscuro y bordes redondeados para agrupar información.
+* Inputs: Estilo minimalista con bordes suaves y enfoque en legibilidad.
+* Dashboards: Uso de gráficos claros, con énfasis en tendencias y métricas clave.
+
+**Responsive Design:**
+El sistema será diseñado bajo un enfoque mobile-first, adaptándose a diferentes resoluciones, considerando la alta penetración del uso de smartphones en el contexto peruano.
 ## 4.2. Information Architecture
 
 ### 4.2.1. Organization Systems
