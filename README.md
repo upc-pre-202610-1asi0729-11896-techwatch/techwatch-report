@@ -527,6 +527,8 @@ El siguiente glosario reúne los términos y conceptos clave del dominio de nego
 
 ## 3.2. Impact Mapping
 
+![Impact Mapping](/assets/images/impact-mapping.png)
+
 ## 3.3. Product Backlog
 
 El Product Backlog ha sido priorizado enfocándose en el valor entregado al negocio y a los usuarios tempranos, asegurando la disponibilidad del Landing Page para captación desde el Sprint 1, seguido de las funcionalidades core de gestión de dispositivos (Smart Home) y las interacciones de los usuarios.
