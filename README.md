@@ -529,11 +529,44 @@ El siguiente glosario reúne los términos y conceptos clave del dominio de nego
 
 ## 3.3. Product Backlog
 
-| # Orden | User Story ID | Título | Descripción | Story Points (1/2/3/5/8) |
-|---------|---------------|--------|-------------|--------------------------|
-| 1 | US01 | | Como... deseo... para... | |
+El Product Backlog ha sido priorizado enfocándose en el valor entregado al negocio y a los usuarios tempranos, asegurando la disponibilidad del Landing Page para captación desde el Sprint 1, seguido de las funcionalidades core de gestión de dispositivos (Smart Home) y las interacciones de los usuarios.
 
----
+| # Orden | User Story Id | Título | Descripción | Story Points (1/2/3/5/8) |
+|---------|---------------|--------|-------------|--------------------------|
+| 1 | US11 | Ver propuesta de valor | Como visitante, deseo entender rápidamente el beneficio principal del producto para decidir si me interesa. | 2 |
+| 2 | US12 | Navegar por secciones informativas | Como visitante, deseo revisar información del producto para conocer funcionalidades y beneficios. | 3 |
+| 3 | US13 | Redirección a registro | Como visitante, deseo registrarme desde la Landing Page para comenzar a usar la plataforma. | 2 |
+| 4 | US07 | Visualizar planes disponibles | Como visitante, deseo visualizar los planes disponibles para comparar beneficios y elegir el más adecuado. | 3 |
+| 5 | US01 | Registro de usuario | Como visitante, deseo crear una cuenta para acceder a la plataforma. | 5 |
+| 6 | TS01 | API registrar usuario | Como Developer, deseo consumir un endpoint de registro para crear cuentas desde clientes externos. | 3 |
+| 7 | US02 | Inicio de sesión | Como usuario registrado, deseo iniciar sesión para acceder a mis funciones. | 3 |
+| 8 | TS06 | API autenticación segura | Como Developer, deseo autenticar solicitudes protegidas para resguardar la información. | 5 |
+| 9 | US17 | Vincular nuevo dispositivo | Como usuario, deseo vincular un dispositivo para comenzar a monitorear una instalación. | 5 |
+| 10 | US04 | Visualizar estado en tiempo real | Como usuario, deseo ver el estado actual de agua y gas para detectar anomalías rápidamente. | 5 |
+| 11 | TS02 | API obtener sensores | Como Developer, deseo consultar lecturas de sensores mediante la API. | 3 |
+| 12 | US05 | Recibir alertas automáticas | Como usuario, deseo recibir alertas inmediatas ante fugas o riesgos. | 8 |
+| 13 | TS04 | API generar alerta | Como Developer, deseo registrar alertas mediante la API para almacenar incidentes. | 3 |
+| 14 | US08 | Suscribirse a un plan | Como usuario registrado, deseo contratar un plan para acceder a funciones premium. | 5 |
+| 15 | TS05 | API actualizar plan | Como Developer, deseo consumir un endpoint para cambiar la suscripción del usuario. | 3 |
+| 16 | US20 | Visualizar consumo mensual | Como usuario, deseo visualizar mi consumo mensual para controlar gastos. | 5 |
+| 17 | US06 | Historial de consumo | Como usuario, deseo revisar consumos anteriores para identificar excesos o patrones anormales. | 5 |
+| 18 | TS03 | API consultar historial | Como Developer, deseo obtener el historial de consumo para que el frontend genere reportes. | 3 |
+| 19 | US18 | Desvincular dispositivo | Como usuario, deseo desvincular un dispositivo que ya no utilizo. | 2 |
+| 20 | US19 | Ver estado de conexión | Como usuario, deseo ver si mis dispositivos están conectados para asegurar el monitoreo continuo. | 2 |
+| 21 | US09 | Cambiar de plan | Como usuario suscrito, deseo cambiar de plan para adaptar el servicio a mis nuevas necesidades. | 3 |
+| 22 | US10 | Cancelar suscripción | Como usuario suscrito, deseo cancelar mi suscripción para detener futuras renovaciones. | 2 |
+| 23 | US21 | Comparar periodos | Como usuario, deseo comparar distintos periodos para identificar variaciones. | 5 |
+| 24 | US22 | Exportar reporte | Como usuario premium, deseo exportar reportes para compartir información. | 3 |
+| 25 | US14 | Registrar múltiples sedes | Como administrador de organización, deseo registrar varias sedes para monitorear diferentes instalaciones. | 5 |
+| 26 | US15 | Filtrar datos por sede | Como gestor operativo, deseo filtrar información por sede para analizar incidencias específicas. | 3 |
+| 27 | US16 | Ver resumen general | Como gestor operativo, deseo visualizar un resumen consolidado para tomar decisiones rápidas. | 5 |
+| 28 | US23 | Solicitar soporte técnico | Como usuario, deseo solicitar ayuda técnica para resolver incidencias complejas. | 3 |
+| 29 | US24 | Consultar estado del ticket | Como usuario, deseo revisar el estado de mi solicitud para conocer el avance de atención. | 2 |
+| 30 | US26 | Actualizar perfil | Como usuario, deseo editar mis datos personales para mantener mi información actualizada. | 2 |
+| 31 | US27 | Gestionar permisos de colaboradores | Como administrador, deseo asignar permisos para controlar accesos dentro de la organización. | 5 |
+| 32 | US28 | Renovar suscripción | Como usuario, deseo renovar mi suscripción para mantener mis beneficios activos. | 2 |
+| 33 | US03 | Recuperar contraseña | Como usuario, deseo recuperar mi contraseña para volver a ingresar a mi cuenta. | 3 |
+| 34 | US25 | Cerrar sesión | Como usuario, deseo cerrar sesión para proteger mi cuenta en dispositivos compartidos. | 1 |
 
 # Capítulo IV: Product Design
 
