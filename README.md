@@ -610,30 +610,226 @@ Las interfaces web de TechWatch seguirán lineamientos consistentes orientados a
 **Responsive Design:**
 El sistema será diseñado bajo un enfoque mobile-first, adaptándose a diferentes resoluciones, considerando la alta penetración del uso de smartphones en el contexto peruano.
 ## 4.2. Information Architecture
+La arquitectura de información de TechWatch está diseñada para organizar el contenido de forma clara, intuitiva y centrada en el usuario, permitiendo una navegación eficiente tanto en el Landing Page como en la Web Application.
 
 ### 4.2.1. Organization Systems
 
+### Organización Jerárquica (Visual Hierarchy)
+
+Se aplica en el Landing Page y Dashboard:
+
+- Hero
+- Features
+- About Us
+- Pricing
+- Testimonials
+- Contact
+
+Permite guiar al usuario desde el valor del producto hasta la acción (registro).
+
+### Organización Secuencial
+
+Se usa en procesos:
+
+1. Crear cuenta
+2. Registrar inmueble
+3. Agregar dispositivos
+4. Ver dashboard
+
+### Organización Matricial
+
+Se aplica en analytics:
+
+- Dispositivo × Consumo × Tiempo
+- Habitación × Estado
+
+### Categorización
+
+- Por tópicos: Monitoring, Analytics, Security
+- Por usuario: Free / Premium
+- Cronológico: Historial
+- Espacial: Habitaciones
+
+
 ### 4.2.2. Labeling Systems
+
+### Landing Page
+- Hero
+- Features
+- About us
+- Pricing
+- Reviews
+- Contact
+
+### Web App
+- Dashboard
+- Devices
+- Rooms
+- Analytics
+- Alerts
+- Settings
+
 
 ### 4.2.3. SEO Tags and Meta Tags
 
+### Landing Page
+
+```html
+<title>TechWatch | Smart Home Monitoring Platform</title>
+<meta name="description" content="Monitor and optimize your smart home devices with TechWatch.">
+<meta name="keywords" content="smart home, IoT, energy monitoring">
+<meta name="author" content="TechWatch Team">
+```
+
 ### 4.2.4. Searching Systems
+
+La plataforma TechWatch incorpora sistemas de búsqueda para facilitar el acceso rápido a la información y evitar que el usuario se pierda dentro del sistema.
+
+### Barra de búsqueda
+Se implementa en el Dashboard principal.
+
+Permite buscar:
+- Dispositivos
+- Habitaciones
+
+### Filtros disponibles
+Los usuarios pueden refinar la búsqueda mediante:
+
+- Tipo de dispositivo
+- Consumo energético
+- Estado (activo / inactivo)
+- Rango de fechas
+
+
+### Resultados de búsqueda
+Los resultados se muestran en formato de tarjetas (cards), incluyendo:
+
+- Nombre del dispositivo
+- Estado actual
+- Consumo energético
+
+
+
+### Objetivo
+Reducir la carga cognitiva del usuario y mejorar la eficiencia en la interacción con la plataforma.
+
 
 ### 4.2.5. Navigation Systems
 
+### Landing Page
+
+Se implementa un sistema de navegación simple e intuitivo:
+
+- Navbar fijo (sticky)
+- Navegación mediante anchors (#hero, #feature, etc.)
+- Scroll vertical con efecto snap
+
+
+### Web Application
+
+Se utiliza una navegación persistente:
+
+- Sidebar con acceso a:
+  - Dashboard
+  - Devices
+  - Analytics
+  - Alerts
+  - Settings
+
+
+### Tipos de navegación
+
+- Global: Navbar principal
+- Local: Navegación dentro del dashboard
+- Contextual: Acciones dentro de tarjetas y componentes
+
+
 ## 4.3. Landing Page UI Design
+
+El diseño de la interfaz del Landing Page traduce la arquitectura de información en una experiencia visual clara, moderna y centrada en la conversión del usuario.
+
+Se prioriza:
+- Jerarquía visual
+- Uso consistente de colores
+- Componentes reutilizables
+- Diseño responsive
+
 
 ### 4.3.1. Landing Page Wireframe
 
+### Wireframes
+
+- Hero: Presenta la propuesta de valor principal
+  ![Wireframe 1](./assets/images/431img1.png)
+-
+- Features: Organización en tarjetas
+
+![Wireframe 2](./assets/images/431img2.png)
+
+- Pricing: Comparación de planes
+
+![Wireframe 3](./assets/images/431img3.png)
+- Contact: Formulario accesible
+-
+![Wireframe 4](./assets/images/431img4.png)
+
+![Wireframe 5](./assets/images/431img5.png)
+
+![Wireframe 6](./assets/images/431img6.png)
+
 ### 4.3.2. Landing Page Mock-up
+
+### Mock-ups finales
+![Mockup 1](./assets/images/432img1.png)
+
+![Mockup 2](./assets/images/432img2.png)
+
+![Mockup 3](./assets/images/432img3.png)
+
+![Mockup 4](./assets/images/432img4.png)
+
+![Mockup 5](./assets/images/432img5.png)
+
+![Mockup 6](./assets/images/432img6.png)
+
+
+### Características
+
+- Uso de gradientes modernos
+- Cards con sombras (elevación visual)
+- Tipografía clara (Inter)
+- Botones con llamados a la acción (CTA)
 
 ## 4.4. Web Applications UX/UI Design
 
+Esta sección presenta la propuesta visual y de interacción de la aplicación web de TechWatch.
+
 ### 4.4.1. Web Applications Wireframes
+
+![Wireframe 2](./assets/images/431img2.png)
+
+
+![Wireframe 3](./assets/images/431img3.png)
+
+![Wireframe 4](./assets/images/431img4.png)
+
+![Wireframe 5](./assets/images/431img5.png)
+
+![Wireframe 6](./assets/images/431img6.png)
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
 ### 4.4.3. Web Applications Mock-ups
+
+![Mockup 2](./assets/images/432img2.png)
+
+![Mockup 3](./assets/images/432img3.png)
+
+![Mockup 4](./assets/images/432img4.png)
+
+![Mockup 5](./assets/images/432img5.png)
+
+![Mockup 6](./assets/images/432img6.png)
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
