@@ -31,7 +31,7 @@
 |------------|---------------------------------|
 | U202310877 | Alva Abanto, Luis Andrés        |
 | U20241E367 | Toro Turpo, Ronal               |
-| U20XXXXXXX | [Apellido], [Nombre]            |
+| U202019498 | Fernandez Garfias, Alexander Piero |
 | U202111529 | Montalvo Vásquez, Bruno Rodrigo |
 | U20XXXXXXX | [Apellido], [Nombre]            |
 
@@ -969,11 +969,142 @@ El diagrama de Subscriptions contiene tres tablas propias y una tabla externa de
 
 ### 5.1.1. Software Development Environment Configuration
 
+#### Project Management
+
+Para la gestión del proyecto utilizamos herramientas de comunicación, coordinación y seguimiento que nos permiten trabajar de forma colaborativa entre los 5 integrantes:
+
+- **WhatsApp:** canal principal de comunicación diaria para coordinar tareas, resolver dudas y compartir avances.
+- **Google Meet:** reuniones sincrónicas para Sprint Planning, seguimiento y retrospectivas.
+- **Google Drive:** documentación colaborativa del informe, con historial de cambios y edición compartida.
+- **Trello:** gestión del Sprint Backlog y seguimiento de tareas por estado (To-Do, In-Process, Review, Done).
+- **GitHub:** gestión de repositorios, branches, pull requests y control de versiones.
+
+#### Requirements Management
+
+Los requerimientos funcionales y no funcionales se registran como User Stories en el Product Backlog del equipo. Para su gestión usamos Trello, donde priorizamos las historias según valor de negocio y complejidad técnica. La definición y refinamiento de historias se realiza de forma grupal.
+
+#### Product UX/UI Design
+
+Para la definición de experiencia de usuario y diseño de interfaces usamos:
+
+- **UXPressia:** elaboración de User Persona, Empathy Map, User Journey Map e Impact Mapping.
+- **Figma:** diseño de wireframes, mockups y prototipos de la Landing Page y de la Web Application.
+
+#### Software Development
+
+Como entorno de desarrollo principal usamos **Visual Studio Code**, por su flexibilidad y soporte para múltiples tecnologías.  
+El stack de tecnologías usado y planificado en el proyecto es:
+
+- **Landing Page:** HTML, CSS y JavaScript.
+- **Frontend Web Application:** Angular con TypeScript.
+- **Backend Web Services:** Java.
+
+Además, usamos integración con GitHub desde el IDE para mantener trazabilidad de cambios por integrante y por rama.
+
+#### Software Testing
+
+Para las pruebas de aceptación utilizamos **Gherkin** (Given-When-Then), permitiendo describir escenarios en lenguaje natural y validar criterios de aceptación de las User Stories. Este enfoque facilita la comunicación entre miembros técnicos y no técnicos, y mejora la calidad del software desde etapas tempranas.
+
 ### 5.1.2. Source Code Management
+
+#### Usuarios de GitHub
+
+| Integrante | Usuario de GitHub |
+|------------|-------------------|
+| Alva Abanto, Luis Andrés | [pendiente] |
+| Toro Turpo, Ronal | [pendiente] |
+| Montalvo Vásquez, Bruno Rodrigo | [pendiente] |
+| Fernandez Garfias, Alexander Piero | Dostoyevsk1 |
+| Integrante 5 | [pendiente] |
+
+**URL de organización en GitHub:**  
+[https://github.com/upc-pre-202610-1asi0729-11896-techwatch](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
+
+**URL del repositorio de Landing Page:**  
+[https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page.git](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page.git)
+
+#### Estrategia de ramas
+
+Para el control de versiones usamos un flujo basado en tres ramas principales del equipo:
+
+- **Rama `main`:** contiene la versión estable y publicada del proyecto.
+- **Rama `develop`:** integra cambios validados antes de pasar a `main`.
+- **Rama `tb01`:** rama de trabajo del equipo para implementación y pruebas de funcionalidades del sprint.
+
+Este esquema permite trabajar en paralelo sin afectar la versión estable, mantener trazabilidad de cambios y facilitar revisiones mediante pull requests.
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
+En el desarrollo del proyecto se aplican convenciones de estilo para mantener consistencia y legibilidad del código en todos los repositorios.
+
+#### HTML
+
+- Declarar `<!DOCTYPE html>` en la primera línea.
+- Mantener estructura base: `<html>`, `<head>`, `<body>`.
+- Definir `<title>` descriptivo por página.
+- Usar indentación consistente según nivel de anidamiento.
+- Cerrar correctamente etiquetas de apertura/cierre.
+- Incluir atributo `alt` en imágenes.
+
+Referencia: [W3C/W3Schools HTML Syntax](https://www.w3schools.com/html/html5_syntax.asp)
+
+#### CSS
+
+- Usar nombres de clases claros, cortos y en minúsculas.
+- Mantener indentación uniforme y bloques ordenados.
+- Definir colores en formato hexadecimal cuando aplique.
+- Incorporar comentarios breves en secciones complejas.
+- Diseñar interfaces responsivas para distintos dispositivos.
+
+Referencia: [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+
+#### JavaScript
+
+- Nombrar variables y funciones de forma coherente.
+- Finalizar instrucciones con punto y coma.
+- Priorizar `const` sobre `let` cuando el valor no cambia.
+- Usar comparación estricta (`===`, `!==`) cuando sea posible.
+- Mantener funciones pequeñas y enfocadas en una responsabilidad.
+
+Referencia: [JavaScript Conventions](https://www.w3schools.com/js/js_conventions.asp)
+
+#### TypeScript (Angular)
+
+- Usar nombres significativos para variables, funciones y clases.
+- Interfaces y tipos en PascalCase.
+- Variables y funciones en camelCase.
+- Tipar parámetros y retornos de funciones.
+- Usar interfaces para reutilización y mantenibilidad.
+
+Referencia: [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
+
+#### Java (Backend)
+
+- Seguir nomenclatura estándar (clases en PascalCase, métodos/variables en camelCase).
+- Mantener una indentación consistente.
+- Definir constantes para valores inmutables.
+- Documentar bloques relevantes con comentarios claros.
+- Priorizar conexiones seguras y buenas prácticas de API.
+
+Referencia: [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
+
+#### Gherkin
+
+- Estructurar escenarios con `Given`, `When`, `Then`.
+- Separar escenarios con líneas en blanco para mejor lectura.
+- Usar tablas de ejemplos cuando se requiera parametrización.
+- Escribir pasos en lenguaje claro y verificable.
+
+Referencia: [Gherkin conventions](https://specflow.org/gherkin/gherkin-conventions-for-readable-specifications/)
+
 ### 5.1.4. Software Deployment Configuration
+
+Para la configuración de despliegue del proyecto se usa Git + GitHub:
+
+- **Git** permite versionar cambios, crear ramas de trabajo y fusionar avances de forma controlada.
+- **GitHub** aloja repositorios remotos, centraliza revisión de código con pull requests y conserva historial completo de versiones.
+
+El flujo de despliegue considera que los cambios se integran en `develop`, se validan y luego se publican en `main`. Desde `main` se realiza la publicación de entregables (por ejemplo, Landing Page en GitHub Pages) asegurando que la versión desplegada sea estable.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
@@ -984,23 +1115,27 @@ El diagrama de Subscriptions contiene tres tablas propias y una tabla externa de
 | Sprint # | Sprint 1 |
 |----------|----------|
 | **Sprint Planning Background** | |
-| Date | YYYY-MM-DD |
-| Time | HH:MM AM/PM |
-| Location | |
-| Prepared By | |
-| Attendees (to planning meeting) | |
-| Sprint 0 Review Summary | |
-| Sprint 0 Retrospective Summary | |
+| Date | 2024-03-07 |
+| Time | 5:00 PM |
+| Location | Virtual (Google Meet) |
+| Prepared By | Alva Abanto, Luis Andrés |
+| Attendees (to planning meeting) | Alva Abanto, Luis Andrés; Toro Turpo, Ronal; Montalvo Vásquez, Bruno Rodrigo; Fernandez Garfias, Alexander Piero; Integrante 5 |
+| Sprint 0 Review Summary | No hubo sprint anterior. |
+| Sprint 0 Retrospective Summary | No hubo sprint anterior. |
 | **Sprint Goal & User Stories** | |
-| Sprint 1 Goal | |
-| Sprint 1 Velocity | |
-| Sum of Story Points | |
+| Sprint 1 Goal | Realizar la Landing Page. |
+| Sprint 1 Velocity | 20 |
+| Sum of Story Points | 20 |
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
 | Team Member (Last Name, First Name) | GitHub Username | [Aspecto 1] L/C | [Aspecto 2] L/C | [Aspecto n] L/C |
 |-------------------------------------|-----------------|-----------------|-----------------|-----------------|
-| | | | | |
+| Alva Abanto, Luis Andrés | [pendiente] | Landing Page (L) | Frontend Web App (C) | Testing (C) |
+| Toro Turpo, Ronal | [pendiente] | Backend Services (L) | Testing (C) | Deployment (C) |
+| Montalvo Vásquez, Bruno Rodrigo | [pendiente] | Frontend Web App (L) | Landing Page (C) | Documentation (C) |
+| Fernandez Garfias, Alexander Piero | Dostoyevsk1 | UX/UI (L) | Landing Page (C) | Collaboration (C) |
+| Integrante 5 | [pendiente] | Testing (L) | Backend Services (C) | Trello Management (C) |
 
 #### 5.2.1.3. Sprint Backlog 1
 
@@ -1008,21 +1143,58 @@ El diagrama de Subscriptions contiene tres tablas propias y una tabla externa de
 |----------|----------|-|-|-|-|-|-|
 | **User Story** | | **Work-Item / Task** | | | | | |
 | Id | Title | Id | Title | Description | Estimation (Hours) | Assigned To | Status |
-| US01 | | T01 | | | | | To-do |
+| US11 | Ver propuesta de valor | T01 | Implementar sección Hero | Maquetar propuesta de valor principal con CTA. | 4 | [pendiente] | Done |
+| US12 | Navegar por secciones informativas | T02 | Implementar Navbar responsive | Crear barra de navegación con anclas a secciones. | 3 | [pendiente] | Done |
+| US12 | Navegar por secciones informativas | T03 | Implementar secciones informativas | Desarrollar secciones About, Features y Contact. | 6 | [pendiente] | Done |
+| US13 | Redirección a registro | T04 | Configurar CTA de registro | Conectar botones de registro con flujo definido. | 2 | [pendiente] | Done |
+| US11 | Ver propuesta de valor | T05 | Estilos responsive de Landing | Ajustar estilos para móvil, tablet y desktop. | 5 | [pendiente] | Done |
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |------------|--------|-----------|----------------|---------------------|---------------------|
-| | | | | | |
+| upc-pre-202610-1asi0729-11896-techwatch/Landing-Page | tb01 | [pendiente] | [pendiente] | [pendiente] | [pendiente] |
+| upc-pre-202610-1asi0729-11896-techwatch/Landing-Page | develop | [pendiente] | [pendiente] | [pendiente] | [pendiente] |
+| upc-pre-202610-1asi0729-11896-techwatch/Landing-Page | main | [pendiente] | [pendiente] | [pendiente] | [pendiente] |
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
+URL de video:  
+[pendiente]
+
+Evidencia de ejecución (capturas de la Landing Page):
+
+![Evidencia 1 - Landing Page](assets/images/[pendiente-imagen-1].png)
+![Evidencia 2 - Navbar](assets/images/[pendiente-imagen-2].png)
+![Evidencia 3 - Footer](assets/images/[pendiente-imagen-3].png)
+![Evidencia 4 - Sección principal](assets/images/[pendiente-imagen-4].png)
+
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 1 el equipo se enfocó en la implementación de la Landing Page. La documentación de servicios web se desarrollará en los siguientes sprints, cuando se implemente de forma completa la capa backend.
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
+Para este sprint, el despliegue de la Landing Page se realiza mediante GitHub Pages desde la rama `main` del repositorio oficial.
+
+Repositorio de referencia:  
+[https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page.git](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page.git)
+
+URL de deployment:  
+[https://landing-page-production-8095.up.railway.app](https://landing-page-production-8095.up.railway.app)
+
+Capturas del proceso de deployment:
+
+![Deployment 1](assets/images/[pendiente-deployment-1].png)
+![Deployment 2](assets/images/[pendiente-deployment-2].png)
+
 #### 5.2.1.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 1, los 5 integrantes trabajaron de forma colaborativa sobre la rama `tb01`, integrando avances a `develop` y posteriormente a `main`.  
+La coordinación se realizó mediante WhatsApp y reuniones por Google Meet, mientras que el seguimiento de tareas y prioridades se gestionó en Trello.
+
+Organización del equipo en GitHub:  
+[https://github.com/upc-pre-202610-1asi0729-11896-techwatch](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
 
 ---
 
