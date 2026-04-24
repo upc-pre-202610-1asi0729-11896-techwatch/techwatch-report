@@ -6,6 +6,7 @@
 /contentModel.xml
 /projectSettingsUpdater.xml
 /.idea.techwatch-report.iml
+.idea/
 # Editor-based HTTP Client requests
 /httpRequests/
 # Ignored default folder with query files
