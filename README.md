@@ -1395,7 +1395,7 @@ La coordinación se realizó mediante WhatsApp y reuniones por Google Meet, mien
 
 Organización del equipo en GitHub:  
 [https://github.com/upc-pre-202610-1asi0729-11896-techwatch](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
-
+![Captura ](assets/images/5218img1.png)
 ---
 
 # Conclusiones
