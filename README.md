@@ -1362,10 +1362,10 @@ Los *hash* con longitud 7 (salvo el **SHA completo** cuando se indicó) se corre
 
 Evidencia de ejecución (capturas de la Landing Page):
 
-![Evidencia 1 - Landing Page](assets/images/[pendiente-imagen-1].png)
-![Evidencia 2 - Navbar](assets/images/[pendiente-imagen-2].png)
-![Evidencia 3 - Footer](assets/images/[pendiente-imagen-3].png)
-![Evidencia 4 - Sección principal](assets/images/[pendiente-imagen-4].png)
+![Evidencia 1 - Landing Page](assets/images/5215img1.png)
+![Evidencia 2 - Navbar](assets/images/5215img2.png)
+![Evidencia 3 - Footer](assets/images/5215img3.png)
+![Evidencia 4 - Sección principal](assets/images/5215img4.png)
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
@@ -1375,7 +1375,7 @@ Durante el Sprint 1 el equipo se enfocó en la implementación de la Landing Pag
 
 **Flujo de publicación (Sprint 1):** el **código fuente** y el historial de *commits* viven en **GitHub** ([*Landing-Page*](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page), rama de trabajo `tb01` documentada en 5.2.1.4). El **entorno de ejecución público** se aprovisiona en **Railway**, conectado al repositorio remoto, de modo que al integrar cambios en la rama configurada (por ejemplo, `main` o la rama *build* definida en el *dashboard* de Railway) se dispara un *build* (contenido estático HTML/CSS/JS) y se expone la **URL pública** del servicio.
 
-**Repositorio:** [https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page) · clon: `https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page.git`
+**Repositorio:** [https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page)
 
 **URL pública (Railway — producción):**  
 [https://landing-page-production-8095.up.railway.app](https://landing-page-production-8095.up.railway.app)
@@ -1388,8 +1388,9 @@ Desde esa *URL* se verifica un despliegue *live* (cabecera, *hero*, *features*, 
 Flujo: GitHub (código) → Railway (build + hosting) → https://landing-page-production-8095.up.railway.app
 ```
 
-![Captura 1 - Entorno de despliegue (pendiente)](assets/images/pendiente-deployment-1.png)
-![Captura 2 - Sitio en producción (pendiente)](assets/images/pendiente-deployment-2.png)
+![Captura 1 - Entorno de despliegue (pendiente)](assets/images/5217img1.png)
+![Captura 2 - Sitio en producción (pendiente)](assets/images/5217img2.png)
+![Captura 3 - Landingpage en producción (pendiente)](assets/images/5217img3.png)
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
@@ -1418,7 +1419,7 @@ Finalmente, se sugiere incorporar funcionalidades avanzadas como alertas intelig
 
 ---
 
- 
+
 
 # Anexos
 
