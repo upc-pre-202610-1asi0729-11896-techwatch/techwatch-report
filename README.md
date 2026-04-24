@@ -177,10 +177,10 @@ Frente a esta problemática, TechWatch desarrolla una plataforma web orientada a
 | Foto                                             | Nombres y Apellidos            | Código     | Carrera | Conocimientos y habilidades                                                     |
 |--------------------------------------------------|--------------------------------|------------|---------|---------------------------------------------------------------------------------|
 | <img src="assets/images/luis.png" width="100"/>  | Luis Andrés Alva Abanto        | u202310877 | Ingeniería de Software | Algoritmos, estructuras de datos, arquitectura de software, cloud, IA, QA.      |
-| <img src="ruta/foto.jpg" width="100"/>           |                                |            | Ingeniería de Software |                                                                                 |
+| <img src="assets/images/Ronal.png" width="100"/>           | Ronal Toro Turpo               | u20241e367 | Ingeniería de Software | Algoritmos, Diseño, Estructuras de datos y conocimientos en c++.             |
 | <img src="assets/images/bruno.png" width="100"/> | Bruno Rodrigo Montalvo Vásquez | u202111529 | Ingeniería de Software | Algoritmos, leve conocimiento de java y typescript; y arquitectura de software. |
-| <img src="ruta/foto.jpg" width="100"/>           |                                |            | Ingeniería de Software |                                                                                 |
-| <img src="ruta/foto.jpg" width="100"/>           |                                |            | Ingeniería de Software |                                                                                 |
+| <img src="ruta/foto.jpg" width="100"/>           | Alexander Piero Fernandez Garfias| U202019498 | Ingeniería de Software |                                                                                 |
+| <img src="ruta/foto.jpg" width="100"/>           | Sebastian Uriel Becerra Durand | U20221b756 | Ingeniería de Software |                                                                                 |
 
 ## 1.2. Solution Profile
 
@@ -416,7 +416,7 @@ Tito Rusel Montalvo Vera es técnico en electricidad electrónica y posee un per
 | Timing en el video | 05:42 - 11:21 |
 | URL del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka |
 
-![Screenshot del video](assets/images/entrevista3.png)
+![Screenshot del video](assets/images/cap2entrevista3.png)
 
 **Resumen:**  
 José Vásquez Martínez se desempeña como analista de marketing digital y representa un perfil joven con alta afinidad tecnológica. Los dispositivos que más utiliza en su día a día son el smartphone, laptop y tablet. Cuenta con dispositivos inteligentes en su vivienda, entre ellos asistente de voz, cámaras de seguridad, luces inteligentes y enchufes inteligentes. Utiliza con frecuencia aplicaciones web para revisar cámaras y encender luces. Sin embargo, no posee visibilidad clara del consumo energético, ya que únicamente verifica los recibos mensuales. Indicó que siente no tener suficiente control ni información sobre los dispositivos de su hogar. Considera importante optimizar los recursos de la vivienda para ahorrar dinero. Mostró interés en una plataforma centralizada donde pueda visualizar consumos en una sola pantalla y especialmente monitorear el consumo en tiempo real para reducir gastos de energía. Señaló que pagaría una suscripción mensual siempre que el costo sea accesible y la solución realmente funcione. Destacó que es importante que la herramienta sea accesible desde smartphone. Su vivienda cuenta con sala con asistente de voz y luces inteligentes, cocina con enchufes inteligentes, dormitorios con luces inteligentes, un pequeño estudio y cámaras de seguridad en la entrada. Confirmó además haber tenido dificultades para controlar varios dispositivos al mismo tiempo.
