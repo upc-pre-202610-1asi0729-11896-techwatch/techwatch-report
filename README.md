@@ -1178,7 +1178,7 @@ Para las pruebas de aceptación utilizamos **Gherkin** (Given-When-Then), permit
 | Toro Turpo, Ronal | [pendiente] |
 | Montalvo Vásquez, Bruno Rodrigo | TartaroZ |
 | Fernandez Garfias, Alexander Piero | Dostoyevsk1 |
-| Integrante 5 | [pendiente] |
+| Becerra Durand, Sebastian Uriel |sebasdev28|
 
 **URL de organización en GitHub:**  
 [https://github.com/upc-pre-202610-1asi0729-11896-techwatch](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
@@ -1298,7 +1298,7 @@ El flujo de despliegue considera que los cambios se integran en `develop`, se va
 | Toro Turpo, Ronal | [pendiente] | Backend Services (L) | Testing (C) | Deployment (C) |
 | Montalvo Vásquez, Bruno Rodrigo | TartaroZ | Frontend Web App (L) | Landing Page (C) | Documentation (C) |
 | Fernandez Garfias, Alexander Piero | Dostoyevsk1 | UX/UI (L) | Landing Page (C) | Collaboration (C) |
-| Integrante 5 | [pendiente] | Testing (L) | Backend Services (C) | Trello Management (C) |
+| Becerra Durand, Sebastian Uriel | sebasdev28 | Testing (L) | Backend Services (C) | Trello Management (C) |
 
 #### 5.2.1.3. Sprint Backlog 1
 
