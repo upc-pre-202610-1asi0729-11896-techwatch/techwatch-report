@@ -4,121 +4,186 @@ skinparam classAttributeIconSize 0
 skinparam monochrome false
 skinparam shadowing false
 
-' Enumerations
-enum DeviceType <<Enum>> {
-    LIGHT
-    THERMOSTAT
-    CAMERA
-    SMART_PLUG
-    AIR_CONDITIONER
-    DOOR_LOCK
-}
+package "Device Management" {
 
-enum DeviceStatus <<Enum>> {
-    ACTIVE
-    INACTIVE
-}
+    ' Value Objects
+    class UserId <<Value Object>> {
+        - value: Long
+        + getValue(): Long
+        + equals(other: UserId): Boolean
+    }
 
-' Entities
-class Property <<Aggregate Root>> <<Entity>> {
-    - id: Long
-    - name: String
-    - address: String
-    - propertyType: String
-    - userId: Long
-    - createdAt: LocalDateTime
-    - updatedAt: LocalDateTime
-    + getId(): Long
-    + getName(): String
-    + getAddress(): String
-    + getPropertyType(): String
-    + getUserId(): Long
-    + setName(name: String): void
-    + setAddress(address: String): void
-}
+    class PropertyId <<Value Object>> {
+        - value: Long
+        + getValue(): Long
+        + equals(other: PropertyId): Boolean
+    }
 
-class Space <<Entity>> {
-    - id: Long
-    - name: String
-    - description: String
-    - propertyId: Long
-    - createdAt: LocalDateTime
-    + getId(): Long
-    + getName(): String
-    + getDescription(): String
-    + getPropertyId(): Long
-    + setName(name: String): void
-    + setDescription(description: String): void
-}
+    class SpaceId <<Value Object>> {
+        - value: Long
+        + getValue(): Long
+        + equals(other: SpaceId): Boolean
+    }
 
-class Device <<Entity>> {
-    - id: Long
-    - name: String
-    - brand: String
-    - model: String
-    - deviceType: DeviceType
-    - status: DeviceStatus
-    - spaceId: Long
-    - createdAt: LocalDateTime
-    - updatedAt: LocalDateTime
-    + getId(): Long
-    + getName(): String
-    + getBrand(): String
-    + getModel(): String
-    + getDeviceType(): DeviceType
-    + getStatus(): DeviceStatus
-    + getSpaceId(): Long
-    + setName(name: String): void
-    + setBrand(brand: String): void
-    + setModel(model: String): void
-    + setStatus(status: DeviceStatus): void
-}
+    class DeviceId <<Value Object>> {
+        - value: Long
+        + getValue(): Long
+        + equals(other: DeviceId): Boolean
+    }
 
-' Repositories
-interface PropertyRepository <<Repository>> {
-    + findById(id: Long): Optional<Property>
-    + findByUserId(userId: Long): List<Property>
-    + save(property: Property): Property
-    + deleteById(id: Long): void
-}
+    class Name <<Value Object>> {
+        - value: String
+        + getValue(): String
+        + equals(other: Name): Boolean
+    }
 
-interface DeviceRepository <<Repository>> {
-    + findById(id: Long): Optional<Device>
-    + findBySpaceId(spaceId: Long): List<Device>
-    + findByPropertyId(propertyId: Long): List<Device>
-    + save(device: Device): Device
-    + deleteById(id: Long): void
-}
+    class Address <<Value Object>> {
+        - value: String
+        + getValue(): String
+        + equals(other: Address): Boolean
+    }
 
-' Services
-class PropertyService <<Service>> {
-    - propertyRepository: PropertyRepository
-    + createProperty(property: Property): Property
-    + getPropertyById(id: Long): Property
-    + getPropertiesByUserId(userId: Long): List<Property>
-    + updateProperty(id: Long, property: Property): Property
-    + deleteProperty(id: Long): void
-    + createSpace(propertyId: Long, space: Space): Space
-    + getSpacesByPropertyId(propertyId: Long): List<Space>
-}
+    class Brand <<Value Object>> {
+        - value: String
+        + getValue(): String
+        + equals(other: Brand): Boolean
+    }
 
-class DeviceService <<Service>> {
-    - deviceRepository: DeviceRepository
-    + addDevice(spaceId: Long, device: Device): Device
-    + getDeviceById(id: Long): Device
-    + getDevicesBySpaceId(spaceId: Long): List<Device>
-    + updateDevice(id: Long, device: Device): Device
-    + deleteDevice(id: Long): void
-}
+    class Model <<Value Object>> {
+        - value: String
+        + getValue(): String
+        + equals(other: Model): Boolean
+    }
 
-' Relations
-Property "1" *-- "0..*" Space : contains >
-Space "1" *-- "0..*" Device : contains >
-Device --> DeviceType : uses >
-Device --> DeviceStatus : uses >
-PropertyService --> PropertyRepository : uses >
-DeviceService --> DeviceRepository : uses >
-PropertyRepository ..> Property : manages >
-DeviceRepository ..> Device : manages >
+    ' Enumerations
+    enum DeviceType <<Enum>> {
+        LIGHT
+        THERMOSTAT
+        CAMERA
+        SMART_PLUG
+        AIR_CONDITIONER
+        DOOR_LOCK
+    }
+
+    enum DeviceStatus <<Enum>> {
+        ACTIVE
+        INACTIVE
+    }
+
+    ' Entities
+    class Property <<Aggregate Root>> <<Entity>> {
+        - id: PropertyId
+        - name: Name
+        - address: Address
+        - propertyType: String
+        - userId: UserId
+        - createdAt: LocalDateTime
+        - updatedAt: LocalDateTime
+        + getId(): PropertyId
+        + getName(): Name
+        + getAddress(): Address
+        + getPropertyType(): String
+        + getUserId(): UserId
+        + setName(name: Name): void
+        + setAddress(address: Address): void
+    }
+
+    class Space <<Entity>> {
+        - id: SpaceId
+        - name: Name
+        - description: String
+        - propertyId: PropertyId
+        - createdAt: LocalDateTime
+        - updatedAt: LocalDateTime
+        + getId(): SpaceId
+        + getName(): Name
+        + getDescription(): String
+        + getPropertyId(): PropertyId
+        + setName(name: Name): void
+        + setDescription(description: String): void
+    }
+
+    class Device <<Entity>> {
+        - id: DeviceId
+        - name: Name
+        - brand: Brand
+        - model: Model
+        - deviceType: DeviceType
+        - status: DeviceStatus
+        - spaceId: SpaceId
+        - createdAt: LocalDateTime
+        - updatedAt: LocalDateTime
+        + getId(): DeviceId
+        + getName(): Name
+        + getBrand(): Brand
+        + getModel(): Model
+        + getDeviceType(): DeviceType
+        + getStatus(): DeviceStatus
+        + getSpaceId(): SpaceId
+        + setName(name: Name): void
+        + setBrand(brand: Brand): void
+        + setModel(model: Model): void
+        + setStatus(status: DeviceStatus): void
+    }
+
+    ' Repositories
+    interface PropertyRepository <<Repository>> {
+        + findById(id: PropertyId): Optional<Property>
+        + findByUserId(userId: UserId): List<Property>
+        + save(property: Property): Property
+        + deleteById(id: PropertyId): void
+    }
+
+    interface DeviceRepository <<Repository>> {
+        + findById(id: DeviceId): Optional<Device>
+        + findBySpaceId(spaceId: SpaceId): List<Device>
+        + findByPropertyId(propertyId: PropertyId): List<Device>
+        + save(device: Device): Device
+        + deleteById(id: DeviceId): void
+    }
+
+    ' Services
+    class PropertyService <<Service>> {
+        - propertyRepository: PropertyRepository
+        + createProperty(property: Property): Property
+        + getPropertyById(id: PropertyId): Property
+        + getPropertiesByUserId(userId: UserId): List<Property>
+        + updateProperty(id: PropertyId, property: Property): Property
+        + deleteProperty(id: PropertyId): void
+        + createSpace(propertyId: PropertyId, space: Space): Space
+        + getSpacesByPropertyId(propertyId: PropertyId): List<Space>
+    }
+
+    class DeviceService <<Service>> {
+        - deviceRepository: DeviceRepository
+        + addDevice(spaceId: SpaceId, device: Device): Device
+        + getDeviceById(id: DeviceId): Device
+        + getDevicesBySpaceId(spaceId: SpaceId): List<Device>
+        + updateDevice(id: DeviceId, device: Device): Device
+        + deleteDevice(id: DeviceId): void
+    }
+
+    ' Relations
+    Property "1" *-- "0..*" Space : contains >
+    Space "1" *-- "0..*" Device : contains >
+    Device --> DeviceType : uses >
+    Device --> DeviceStatus : uses >
+    Property *-- Name : name >
+    Property *-- Address : address >
+    Property *-- UserId : userId >
+    Property *-- PropertyId : id >
+    Space *-- Name : name >
+    Space *-- SpaceId : id >
+    Space *-- PropertyId : propertyId >
+    Device *-- Name : name >
+    Device *-- Brand : brand >
+    Device *-- Model : model >
+    Device *-- DeviceId : id >
+    Device *-- SpaceId : spaceId >
+    PropertyService --> PropertyRepository : uses >
+    DeviceService --> DeviceRepository : uses >
+    PropertyRepository ..> Property : manages >
+    DeviceRepository ..> Device : manages >
+}
 
 @enduml
