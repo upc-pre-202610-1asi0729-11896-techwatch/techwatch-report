@@ -1411,9 +1411,39 @@ Finalmente, se sugiere incorporar funcionalidades avanzadas como alertas intelig
 
 # Bibliografía
 
+Amazon Web Services. (s.f.). *What is IoT?* AWS. https://aws.amazon.com/what-is/iot/ :contentReference[oaicite:0]{index=0}
+
+Google. (s.f.). *Material Design 3*. Material Design. https://m3.material.io/
+
+International Energy Agency. (2023). *Energy efficiency 2023*. IEA. https://www.iea.org/reports/energy-efficiency-2023
+
+Mozilla Developer Network. (s.f.). *REST APIs*. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Glossary/REST
+
+Nielsen Norman Group. (s.f.). *10 usability heuristics for user interface design*. https://www.nngroup.com/articles/ten-usability-heuristics/
+
+Object Management Group. (2017). *Business Process Model and Notation (BPMN) Version 2.0.2*. OMG. https://www.omg.org/spec/BPMN/2.0.2/
+
+OpenAPI Initiative. (s.f.). *OpenAPI specification*. https://www.openapis.org/
+
+OpenJS Foundation. (s.f.). *Node.js documentation*. Node.js. https://nodejs.org/en/docs
+
+Oracle. (s.f.). *MySQL documentation*. Oracle. https://dev.mysql.com/doc/
+
+Scrum Guides. (2020). *The Scrum Guide*. Scrum.org. https://scrumguides.org/
+
+The PostgreSQL Global Development Group. (s.f.). *PostgreSQL documentation*. https://www.postgresql.org/docs/
+
+ThingsBoard. (s.f.). *IoT energy management & monitoring with ThingsBoard*. https://thingsboard.io/use-cases/smart-energy/ :contentReference[oaicite:1]{index=1}
+
+W3C. (s.f.). *Web Content Accessibility Guidelines (WCAG) 2.2*. World Wide Web Consortium. https://www.w3.org/TR/WCAG22/
+
+Ahmed, N., & Mueller, K. (2019). *EnergyScout: A consumer oriented dashboard for smart meter data analytics*. arXiv. https://arxiv.org/abs/1911.09284 :contentReference[oaicite:2]{index=2}
+
+Onay, A., Ertürk, G., Kıranlı, C., Ateş, H., & Isikdemir, Y. E. (2023). *A smart home energy monitoring system based on Internet of Things and Inter Planetary File System for secure data sharing*. Journal of Computer and Communications. https://www.scirp.org/journal/doi.aspx?doi=10.4236/jcc.2023.1110005 :contentReference[oaicite:3]{index=3}
+
+Almas’ud, T. L., Pramudito, H. D., & Badruzzaman, A. (2025). *IoT-enabled smart home energy monitoring system using web server-based control logic*. Jurnal Informasi dan Teknologi. https://www.researchgate.net/publication/394723148_IoT-Enabled_Smart_Home_Energy_Monitoring_System_Using_Web_Server-Based_Control_Logic :contentReference[oaicite:4]{index=4}
+
 ---
-
-
 
 # Anexos
 
