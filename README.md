@@ -1183,8 +1183,7 @@ Para las pruebas de aceptación utilizamos **Gherkin** (Given-When-Then), permit
 [https://github.com/upc-pre-202610-1asi0729-11896-techwatch](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
 
 **Repositorio público de la Landing Page (código y tablero de *issues*):**  
-[https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page)  
-(Clonación: `https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page.git`)
+[https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page)
 
 Cada integrante se autenticó con su propia cuenta de GitHub (tabla *Usuarios de GitHub*) y comprobó **git config user.name** / **user.email** antes de subir *commits*.
 
@@ -1330,32 +1329,30 @@ Las tareas se derivan de las *User Stories* de la sección 3.1 cuyo alcance corr
 
 Se registró el progreso del *Sprint 1* con *commits* en el repositorio de la *Landing Page* (rama **`tb01`**). Los mensajes siguen *Conventional Commits* (`feat`, `style`, `refactor`).
 
-**Repositorio en GitHub:** [upc-pre-202610-1asi0729-11896-techwatch/Landing-Page](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page) · rama de trabajo: **`tb01`**.
+**Repositorio en GitHub:** [upc-pre-202610-1asi0729-11896-techwatch/Landing-Page](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page) · rama de trabajo: **`tb01`**. Historial en [commits/tb01](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page/commits/tb01).
 
-Los *hash* con longitud 7 (salvo el **SHA completo** cuando se indicó) se corresponden con el historial de GitHub; *Git* puede mostrar un prefijo más largo o el hash completo en [https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page/commits/tb01](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page/commits/tb01).
-
-| Repository | Branch | *Commit* Id | Mensaje (asunto) | Cuerpo / notas | Fecha *commit* |
-|------------|--------|-------------|------------------|---------------|---------------|
-| upc-pre-202610-1asi0729-11896-techwatch/Landing-Page | tb01 | e2879ee | feat(header): add HTML structure | — | 17/04/2026 |
-| upc-pre-202610-1asi0729-11896-techwatch/Landing-Page | tb01 | 6510892 | style(header): add header styles | — | 17/04/2026 |
-| upc-pre-202610-1asi0729-11896-techwatch/Landing-Page | tb01 | b365d54 | style(header): adjust spacing and layout | — | 17/04/2026 |
-| upc-pre-202610-1asi0729-11896-techwatch/Landing-Page | tb01 | 056a1ee | feat(pricing): add section pricing | — | 17/04/2026 |
-| upc-pre-202610-1asi0729-11896-techwatch/Landing-Page | tb01 | 170023e | feat(contact): add contact us section | — | 17/04/2026 |
-| upc-pre-202610-1asi0729-11896-techwatch/Landing-Page | tb01 | 5c5f7a1 | refactor(feature): reorder hero and feature sections | — | 17/04/2026 |
-| upc-pre-202610-1asi0729-11896-techwatch/Landing-Page | tb01 | 8ab18e7 | feat(footer): add footer section | — | 17/04/2026 |
-| upc-pre-202610-1asi0729-11896-techwatch/Landing-Page | tb01 | e4ae200 | style(ui): redesign ui with new color palette and improved layout | — | 18/04/2026 |
-| upc-pre-202610-1asi0729-11896-techwatch/Landing-Page | tb01 | 58b4e8c | feat(ui): replace logo image | — | 18/04/2026 |
-| upc-pre-202610-1asi0729-11896-techwatch/Landing-Page | tb01 | a5eeb7a | style(ui): improve css layout and structure | — | 18/04/2026 |
-| upc-pre-202610-1asi0729-11896-techwatch/Landing-Page | tb01 | 4bfe00e | feat(about-us): add about us section | — | 18/04/2026 |
-| upc-pre-202610-1asi0729-11896-techwatch/Landing-Page | tb01 | 2015e71 | style(ui): reorganize layout and fix minor issues | — | 18/04/2026 |
-| upc-pre-202610-1asi0729-11896-techwatch/Landing-Page | tb01 | 1240367 | feat(testimonials): add testimonials section | — | 20/04/2026 |
-| upc-pre-202610-1asi0729-11896-techwatch/Landing-Page | tb01 | 65d37afec72f80a2bee4efb5fac14f83b12c5ca6 | feat(login): add login and register | — | 20/04/2026 |
-| upc-pre-202610-1asi0729-11896-techwatch/Landing-Page | tb01 | fceb7597bf470bee5eabfcfff2ef31bdea215ed7 | feat(i18n): add i18n for the translate | — | 20/04/2026 |
-| upc-pre-202610-1asi0729-11896-techwatch/Landing-Page | tb01 | 7286078a24f9950380b0d10c7f3e3cbf76a76d00 | feat(ui): make layout responsive | — | 20/04/2026 |
+| Repository | Branch | Commit Id | *Commit* / mensaje (asunto) | Fecha |
+|------------|--------|------------|----------------------------|-------|
+| techwatch/Landing-Page | tb01 | e2879ee | feat(header): add HTML structure | 17/04/2026 |
+| techwatch/Landing-Page | tb01 | 6510892 | style(header): add header styles | 17/04/2026 |
+| techwatch/Landing-Page | tb01 | b365d54 | style(header): adjust spacing and layout | 17/04/2026 |
+| techwatch/Landing-Page | tb01 | 056a1ee | feat(pricing): add section pricing | 17/04/2026 |
+| techwatch/Landing-Page | tb01 | 170023e | feat(contact): add contact us section | 17/04/2026 |
+| techwatch/Landing-Page | tb01 | 5c5f7a1 | refactor(feature): reorder hero and feature sections | 17/04/2026 |
+| techwatch/Landing-Page | tb01 | 8ab18e7 | feat(footer): add footer section | 17/04/2026 |
+| techwatch/Landing-Page | tb01 | e4ae200 | style(ui): redesign ui with new color palette and improved layout | 18/04/2026 |
+| techwatch/Landing-Page | tb01 | 58b4e8c | feat(ui): replace logo image | 18/04/2026 |
+| techwatch/Landing-Page | tb01 | a5eeb7a | style(ui): improve css layout and structure | 18/04/2026 |
+| techwatch/Landing-Page | tb01 | 4bfe00e | feat(about-us): add about us section | 18/04/2026 |
+| techwatch/Landing-Page | tb01 | 2015e71 | style(ui): reorganize layout and fix minor issues | 18/04/2026 |
+| techwatch/Landing-Page | tb01 | 1240367 | feat(testimonials): add testimonials section | 20/04/2026 |
+| techwatch/Landing-Page | tb01 | 65d37afec72f80a2bee4efb5fac14f83b12c5ca6 | feat(login): add login and register | 20/04/2026 |
+| techwatch/Landing-Page | tb01 | fceb7597bf470bee5eabfcfff2ef31bdea215ed7 | feat(i18n): add i18n for the translate | 20/04/2026 |
+| techwatch/Landing-Page | tb01 | 7286078a24f9950380b0d10c7f3e3cbf76a76d00 | feat(ui): make layout responsive | 20/04/2026 |
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
-**Comprobación en el navegador (producción):** [https://landing-page-production-8095.up.railway.app](https://landing-page-production-8095.up.railway.app) (mismo *deploy* documentado en 5.2.1.7).
+**Comprobación en el navegador (producción):** [https://landing-page-production-8095.up.railway.app](https://landing-page-production-8095.up.railway.app)
 
 *URL* de *video* de demostración o *Sprint Review* (opcional):  
 [pendiente]
