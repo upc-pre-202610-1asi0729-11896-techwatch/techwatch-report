@@ -33,7 +33,7 @@
 | U20241E367 | Toro Turpo, Ronal               |
 | U202019498 | Fernandez Garfias, Alexander Piero |
 | U202111529 | Montalvo Vásquez, Bruno Rodrigo |
-| U20XXXXXXX | [Apellido], [Nombre]            |
+| U20221b756 | Becerra Durand, Sebastian Uriel           |
 
 ---
 
