@@ -1306,7 +1306,6 @@ El flujo de despliegue considera que los cambios se integran en `develop`, se va
 |----------|----------|-|-|-|-|-|-|
 | **User Story** | | **Work-Item / Task** | | | | | |
 | Id | Title | Id | Title | Description | Estimation (Hours) | Assigned To | Status |
-|----|------|----|------|-------------|-------------------|------------|--------|
 | US11 | Ver propuesta de valor | T01 | Implementar sección Hero | Maquetar propuesta de valor principal con título, subtítulo y CTA. | 4 | [pendiente] | Done |
 | US12 | Navegar por secciones informativas | T02 | Implementar Navbar responsive | Crear barra de navegación adaptable con enlaces internos. | 3 | [pendiente] | Done |
 | US12 | Navegar por secciones informativas | T03 | Implementar secciones informativas | Desarrollar secciones About, Benefits, Features y Footer. | 6 | [pendiente] | Done |
