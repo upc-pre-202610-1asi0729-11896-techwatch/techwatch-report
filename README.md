@@ -391,8 +391,8 @@ Gustavo Rivas trabaja en refacción de vehículos y muestra un perfil práctico 
 | Distrito | San Juan de Miraflores |
 | Segmento objetivo | Primer segmento objetivo: Propietario de casa |
 | Fecha de entrevista | 20 Abril 2026 |
-| Duración | 03:10 |
-| Timing en el video | 02:31 - 05:41 |
+| Duración | 03:09 |
+| Timing en el video | 02:31 - 05:40 |
 | URL del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka |
 
 ![Screenshot del video](assets/images/Cap2entrevista2.png)
@@ -412,7 +412,7 @@ Tito Rusel Montalvo Vera es técnico en electricidad electrónica y posee un per
 | Segmento objetivo | Primer segmento objetivo: Propietario de casa |
 | Fecha de entrevista | 24 Abril 2026 |
 | Duración | 05:39 |
-| Timing en el video | 05:42 - 11:21 |
+| Timing en el video | 05:41 - 11:20 |
 | URL del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka |
 
 ![Screenshot del video](assets/images/cap2entrevista3.png)
@@ -431,8 +431,8 @@ José Vásquez Martínez se desempeña como analista de marketing digital y repr
 | Distrito | Santiago de Surco |
 | Segmento objetivo | Segundo segmento objetivo:Arrendatario / propietario de departamento |
 | Fecha de entrevista | 19 Abril 2026 |
-| Duración | 05:43 |
-| Timing en el video | 11:22 - 17:05 |
+| Duración | 05:41 |
+| Timing en el video | 11:21 - 17:02 |
 | URL del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka|
 
 ![Screenshot del video](assets/images/Cap2entrevista4.png)
@@ -451,8 +451,8 @@ Daniel Palomino es estudiante de Ingeniería de Software y representa un perfil 
 | Distrito | San Juan de Lurigancho |
 | Segmento objetivo | Segundo segmento objetivo: Arrendatario / propietario de departamento |
 | Fecha de entrevista | 20 Abril 2026 |
-| Duración | 02:54 |
-| Timing en el video | 17:06 - 20:00 |
+| Duración | 02:53 |
+| Timing en el video | 17:03 - 19:56 |
 | URL del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka|
 
 ![Screenshot del video](assets/images/Cap2entrevista5.png)
@@ -471,8 +471,8 @@ Eleno Giovanni Mena Zuleta trabaja desde casa y presenta un perfil orientado a l
 | Distrito | San Juan de Miraflores |
 | Segmento objetivo | Segundo segmento objetivo: Arrendataria / propietaria de departamento |
 | Fecha de entrevista | 20 Abril 2026 |
-| Duración | 02:26 |
-| Timing en el video | 20:01 - 22:27 |
+| Duración | 02:25 |
+| Timing en el video | 19:57 - 22:22 |
 | URL del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka |
 
 ![Screenshot del video](assets/images/Cap2entrevista6.png)
@@ -1453,7 +1453,7 @@ Almas’ud, T. L., Pramudito, H. D., & Badruzzaman, A. (2025). *IoT-enabled smar
 
 | Entrega | Características del video | Sobre el contenido | Integración y entrega |
 |---------|----------------------------|-------------------|----------------------|
-| AV1 | **Enlace:** .nohay <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-av1 <br><br> **Formato:** .mp4 <br><br> **Duración:** nohay| Video de exposición grupal que resume el avance integral del proyecto desarrollado hasta la presente entrega, incluyendo los principales capítulos trabajados y evidencias del desarrollo del sistema. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
+| AV1 | **Enlace:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQBeS4ZyHvBRS7DxBIhtX41KAVW1jCO4GycXqKhoihL49AY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=8OcrcO <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-av1 <br><br> **Formato:** .mp4 <br><br> **Duración:** 16:57 | Video de exposición grupal que resume el avance integral del proyecto desarrollado hasta la presente entrega, incluyendo los principales capítulos trabajados y evidencias del desarrollo del sistema. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
 
 ---
 
@@ -1462,5 +1462,6 @@ Almas’ud, T. L., Pramudito, H. D., & Badruzzaman, A. (2025). *IoT-enabled smar
 | Sección | Características del video | Sobre el contenido | Integración y entrega |
 |--------|----------------------------|-------------------|----------------------|
 | Needfinding Interviews | **Enlace:** el link del video de entrevistas es este; https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-needfinding-sprint-1 <br> **Formato:** .mp4 <br> **Duración:** 22:22 | Consolida todas las entrevistas realizadas, incluyendo títulos con información del entrevistado, segmento objetivo y fecha de entrevista. Presenta evidencia audiovisual del proceso de investigación con usuarios para identificar necesidades, problemas y oportunidades del mercado objetivo. | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo, introducción de la sección, registro de entrevistas y análisis general con hallazgos clave para la construcción de User Persona. |
+
 
 ---
