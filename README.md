@@ -970,7 +970,7 @@ https://www.figma.com/design/msBrKegzk619dYQHvns0Ty/Alexander-Fernandez-s-team-l
 
 ### 4.6.1. Design-Level Event Storming
 
-En esta sección se presenta el resultado del Design-Level Event Storming realizado como continuación del Big Picture Event Storming previamente elaborado. El objetivo fue profundizar en los flujos más relevantes del dominio de TechWatch, identificando para cada proceso los Commands, Read Models, Policies y Aggregates que permiten modelar el comportamiento del sistema con mayor detalle. La sesión se organizó en torno a cuatro Bounded Contexts identificados: Device Management, Simulation, Analytics y Subscriptions. A partir de este ejercicio se establecieron las bases para la definición de la arquitectura de software, incluyendo los diagramas de contexto, contenedores y componentes que se presentan en las secciones siguientes.
+En esta sección se presenta el resultado del Design-Level Event Storming realizado como continuación del Big Picture Event Storming previamente elaborado. El objetivo fue profundizar en los flujos más relevantes del dominio de TechWatch, identificando para cada proceso los Commands, Read Models, Policies y Aggregates que permiten modelar el comportamiento del sistema con mayor detalle. La sesión se organizó en torno a cuatro Bounded Contexts identificados: Device Management, Analytics, I am, Profile y Subscriptions. A partir de este ejercicio se establecieron las bases para la definición de la arquitectura de software, incluyendo los diagramas de contexto, contenedores y componentes que se presentan en las secciones siguientes.
 
 ![Design-Level Event Storming](/assets/images/design-level-event-storming.png)
 
@@ -996,11 +996,11 @@ El sistema TechWatch está compuesto por cinco contenedores. La Landing Page es 
 
 ### 4.6.4. Software Architecture Components Diagrams
 
-En esta sección se presentan los diagramas de componentes para cada uno de los contenedores que conforman TechWatch, elaborados siguiendo el tercer nivel del modelo C4. Cada diagrama descompone un contenedor en sus bloques estructurales principales, mostrando las responsabilidades de cada componente, sus tecnologías de implementación y las interacciones entre ellos. La organización interna de la RESTful API sigue los Bounded Contexts identificados en el Design-Level Event Storming: Device Management, Simulation, Analytics y Subscriptions. Los contenedores frontend siguen una arquitectura basada en la separación entre vistas y servicios, característica del framework Angular.
+En esta sección se presentan los diagramas de componentes para cada uno de los contenedores que conforman TechWatch, elaborados siguiendo el tercer nivel del modelo C4. Cada diagrama descompone un contenedor en sus bloques estructurales principales, mostrando las responsabilidades de cada componente, sus tecnologías de implementación y las interacciones entre ellos. La organización interna de la RESTful API sigue los Bounded Contexts identificados en el Design-Level Event Storming: Device Management, Analytics, I am, Profile y Subscriptions. Los contenedores frontend siguen una arquitectura basada en la separación entre vistas y servicios, característica del framework Angular.
 
 **API Component General Diagram**
 
-La RESTful API organiza sus componentes en cuatro Bounded Contexts. Device Management expone los controladores PropertyController y DeviceController, cada uno con su Service y Repository correspondiente. Simulation gestiona las sesiones de simulación y la generación de datos de uso a través del SimulationController y SimulationService, notificando al AnalyticsService cuando se generan nuevos datos. Analytics procesa las métricas mediante el AnalyticsService y genera reportes a través del ReportService. Subscriptions gestiona los planes del usuario mediante el SubscriptionService, que delega el procesamiento de pagos al PaymentComponent para su integración con el servicio externo. El AuthComponent es transversal a todos los Bounded Contexts y gestiona la autenticación mediante JWT.
+La RESTful API organiza sus componentes en cuatro Bounded Contexts. Device Management expone los controladores PropertyController y DeviceController, cada uno con su Service y Repository correspondiente. I am(Identity and access management) gestiona la autenticación y autorización de usuarios mediante AuthService; este contexto se integra con el proveedor externo de autenticación utilizando OAuth 2.0 y JWT para garantizar un acceso seguro a la plataforma; además, administra el inicio de sesión y registro. Profile administra la información personal y preferencias de los usuarios mediante ProfileController, ProfileService y ProfileRepository; este contexto permite actualizar datos de perfil, gestionar configuraciones de cuenta y personalizar la experiencia del usuario dentro de la plataforma. Analytics procesa las métricas mediante el AnalyticsService y genera reportes a través del ReportService. Subscriptions gestiona los planes del usuario mediante el SubscriptionService, que delega el procesamiento de pagos al PaymentComponent para su integración con el servicio externo. El AuthComponent es transversal a todos los Bounded Contexts y gestiona la autenticación mediante JWT.
 
 ![Component API General Key](/assets/images/c4-components-api-general-key.png)
 
@@ -1018,7 +1018,13 @@ La RESTful API organiza sus componentes en cuatro Bounded Contexts. Device Manag
 
 ![API Device Management Diagram](/assets/images/component-diagram-api-device-management.png)
 
-**API Simulation Diagram**
+**API I am Diagram**
+
+![Component API Simulation Key](/assets/images/c4-components-api-simulation-key.png)
+
+![API Simulation Diagram](/assets/images/component-diagram-api-simulation.png)
+
+**API Profile Diagram**
 
 ![Component API Simulation Key](/assets/images/c4-components-api-simulation-key.png)
 
@@ -1070,7 +1076,14 @@ El diagrama de clases del Bounded Context Device Management define tres entidade
 
 ![class-diagram-device-management](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-device-management.puml)
 
-**Simulation**
+**I am**
+
+
+El diagrama de clases del Bounded Context Simulation define SimulationSession como Aggregate Root, que representa una sesión de uso simulado iniciada por el usuario. Cada sesión registra un conjunto de DeviceAction, que captura cada interacción realizada sobre un dispositivo durante la sesión, y genera UsageData, que almacena los datos de consumo producidos por cada interacción. El estado del ciclo de vida de la sesión se gestiona mediante la enumeración SessionStatus, mientras que DeviceActionType clasifica el tipo de acción ejecutada. El SimulationService encapsula la lógica de negocio para iniciar, gestionar y finalizar sesiones, así como para generar los datos de uso correspondientes.
+
+![class-diagram-simulation](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-simulation.puml)
+
+**Profile**
 
 
 El diagrama de clases del Bounded Context Simulation define SimulationSession como Aggregate Root, que representa una sesión de uso simulado iniciada por el usuario. Cada sesión registra un conjunto de DeviceAction, que captura cada interacción realizada sobre un dispositivo durante la sesión, y genera UsageData, que almacena los datos de consumo producidos por cada interacción. El estado del ciclo de vida de la sesión se gestiona mediante la enumeración SessionStatus, mientras que DeviceActionType clasifica el tipo de acción ejecutada. El SimulationService encapsula la lógica de negocio para iniciar, gestionar y finalizar sesiones, así como para generar los datos de uso correspondientes.
@@ -1095,7 +1108,7 @@ En esta sección se presenta el diseño de base de datos de TechWatch, organizad
 
 ### 4.8.1. Database Diagrams
 
-A continuación se presentan los diagramas de base de datos para cada uno de los cuatro Bounded Contexts identificados en TechWatch: Device Management, Simulation, Analytics y Subscriptions. Los diagramas fueron elaborados en Vertabelo (producto adquirido por Red Gate) y reflejan directamente el modelo de dominio definido en los diagramas de clases, aplicando las convenciones de mapeo objeto-relacional propias de Spring Data JPA. Los Value Objects han sido aplanados como columnas dentro de la tabla de su entidad padre, y las enumeraciones se representan como columnas de tipo VARCHAR.
+A continuación se presentan los diagramas de base de datos para cada uno de los cuatro Bounded Contexts identificados en TechWatch: Device Management, I am, Profile, Analytics y Subscriptions. Los diagramas fueron elaborados en Vertabelo (producto adquirido por Red Gate) y reflejan directamente el modelo de dominio definido en los diagramas de clases, aplicando las convenciones de mapeo objeto-relacional propias de Spring Data JPA. Los Value Objects han sido aplanados como columnas dentro de la tabla de su entidad padre, y las enumeraciones se representan como columnas de tipo VARCHAR.
 
 
 **Device Management**
@@ -1104,7 +1117,13 @@ El diagrama de Device Management contiene cuatro tablas propias. La tabla users 
 
 ![Device Management ERD](/assets/images/device-management-erd.png)
 
-**Simulation**
+**I am**
+
+El diagrama de Simulation contiene tres tablas propias y tres tablas externas del Bounded Context Device Management. La tabla simulation_sessions registra cada sesión de uso simulado iniciada por un usuario para un inmueble específico, con referencias externas hacia users y properties. La tabla device_actions registra cada acción ejecutada sobre un dispositivo durante una sesión activa, con referencias hacia simulation_sessions y la tabla externa devices. La tabla usage_data almacena los datos de consumo generados por cada interacción con un dispositivo durante la sesión, con referencias hacia simulation_sessions y devices.
+
+![Simulation ERD](/assets/images/simulation-erd.png)
+
+**Profile**
 
 El diagrama de Simulation contiene tres tablas propias y tres tablas externas del Bounded Context Device Management. La tabla simulation_sessions registra cada sesión de uso simulado iniciada por un usuario para un inmueble específico, con referencias externas hacia users y properties. La tabla device_actions registra cada acción ejecutada sobre un dispositivo durante una sesión activa, con referencias hacia simulation_sessions y la tabla externa devices. La tabla usage_data almacena los datos de consumo generados por cada interacción con un dispositivo durante la sesión, con referencias hacia simulation_sessions y devices.
 
