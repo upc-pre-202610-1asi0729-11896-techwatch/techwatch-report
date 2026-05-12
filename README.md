@@ -211,47 +211,46 @@ El mercado de Smart Home en Latinoamérica alcanzará los USD 3.44 mil millones 
 #### 1.2.2.1. Lean UX Problem Statements
 
 **Problem statement:**
-El estado actual de la gestión de hogares inteligentes se ha enfocado en la conexión y control básico de dispositivos IoT, dejando de lado la capacidad de los usuarios para comprender y analizar el comportamiento de esos dispositivos de forma centralizada. Lo que los productos y servicios existentes no logran abordar es la falta de visibilidad sobre métricas de consumo y uso en un formato accesible y unificado, independientemente del tipo de inmueble. Nuestro producto abordará esto mediante una plataforma web de monitoreo y análisis de dispositivos domésticos que presenta dashboards e insights accionables para el usuario. Nuestro enfoque inicial serán propietarios y arrendatarios de casas y departamentos en Perú que buscan gestionar su hogar de forma más inteligente y eficiente. 
+Actualmente, el mercado de Smart Homes se encuentra enfocado principalmente en la automatización y control básico de dispositivos IoT; sin embargo, muchas soluciones existentes continúan siendo costosas, fragmentadas y difíciles de comprender para usuarios no especializados. Como consecuencia, propietarios y arrendatarios de casas y departamentos no cuentan con una plataforma centralizada que les permita visualizar, monitorear y analizar el comportamiento y consumo de sus dispositivos domésticos de forma accesible e intuitiva.
+
+Esta problemática afecta especialmente a usuarios residenciales que desean optimizar recursos, reducir consumo energético y mejorar el control de su hogar, pero que dependen únicamente de recibos mensuales o revisiones manuales para obtener información limitada sobre el uso de sus dispositivos.
+
+TechWatch busca aprovechar la creciente adopción de dispositivos inteligentes en Latinoamérica mediante una plataforma web accesible orientada al monitoreo y análisis de Smart Homes. La solución estará enfocada inicialmente en usuarios residenciales del mercado peruano y priorizará el acceso desde smartphones, facilidad de uso y visualización centralizada de métricas e insights.
 
 #### 1.2.2.2. Lean UX Assumptions
 
-**Business Assumptions:**
+#### Business Assumptions
 
-1. Los usuarios están dispuestos a adoptar una plataforma web dedicada para gestionar y monitorear su hogar inteligente.
+- Los usuarios percibirán valor en una plataforma centralizada para monitorear dispositivos inteligentes.
+- Existe interés creciente por soluciones de Smart Home accesibles en el mercado peruano.
+- Un modelo freemium incentivará la adopción inicial de la plataforma.
+- Las funcionalidades premium relacionadas con dashboards avanzados, historial y alertas aumentarán la intención de pago.
+- El acceso desde smartphones incrementará la frecuencia de uso de la plataforma.
 
-2. Existe demanda suficiente en el mercado peruano para una solución accesible de análisis de Smart Homes.
+#### User Assumptions
 
-3. Una interfaz tipo control remoto accesible desde el celular incentivará el uso frecuente de la plataforma.
-
-4. Los dashboards con métricas e insights generarán valor percibido suficiente para retener a los usuarios. 
-
-5. Los usuarios están dispuestos a pagar una suscripción mensual por acceder a funcionalidades avanzadas de monitoreo y análisis.
-
-6. Un modelo freemiun con límite en la cantidad de dispositivos registrados es suficiente para incentivar la conversión a planes de pago.
-
-7. Las funcionalidades premiun como historial extendido de métricas, alertas personalizadas o reportes avanzados representan valor suficiente para justificar el costo de suscripción. 
-
-**User Assumptions:**
-
-1. Los usuarios no tienen visibilidad clara sobre el consumo y comportamiento de sus dispositivos domésticos.
-
-2. Los propietarios de casas gestionan una mayor cantidad y variedad de dispositivos que los arrendatarios de departamentos.
-
-3. Los usuarios prefieren visualizar la información de su hogar de forma gráfica antes que en texto o listas.
-
-4. Los usuarios accederán al control remoto principalmente desde su smartphone. 
-
+- Los usuarios actualmente no poseen suficiente visibilidad sobre el consumo energético de sus hogares.
+- Los usuarios desean monitorear múltiples dispositivos desde una sola interfaz.
+- Los usuarios prefieren visualizar métricas mediante gráficos y dashboards interactivos.
+- Los usuarios consideran importante optimizar el consumo energético para reducir gastos.
+- Los usuarios valoran soluciones fáciles de usar sin requerir conocimientos técnicos avanzados.
+  
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-**Hypothesis Statements:**
+#### Hypothesis 1
+Creemos que implementar un dashboard centralizado de monitoreo permitirá a propietarios y arrendatarios visualizar mejor el comportamiento de sus dispositivos domésticos, logrando una mayor percepción de control sobre su hogar. Sabremos que esto es cierto cuando al menos el 70% de usuarios entrevistados indique que la plataforma mejora su visibilidad del consumo y estado de sus dispositivos.
 
-1. Creemos que los propietarios y arrendatarios de casas y departamentos necesitan una plataforma centralizada para visualizar el comportamiento de sus dispositivos domésticos. Sabremos que estamos bien cuando al menos el 70% de los usuarios entrevistados confirme que no tiene visibilidad clara sobre el consumo de sus dispositivos. 
+#### Hypothesis 2
+Creemos que ofrecer acceso a métricas de consumo energético en tiempo real ayudará a los usuarios a identificar patrones de uso ineficiente y fomentar decisiones de ahorro energético. Sabremos que esto es cierto cuando al menos el 65% de usuarios afirme que la información mostrada les ayuda a comprender mejor su consumo eléctrico.
 
-2. Creemos que un modelo freemium con límite de dispositivos incentivará la conversión a planes de pago. Sabremos que estamos bien cuando al menos el 30% de usuarios del plan gratuito actualice a un plan de pago en los primeros 3 meses. 
+#### Hypothesis 3
+Creemos que priorizar una experiencia optimizada para smartphones incrementará la frecuencia de acceso y uso de la plataforma por parte de los usuarios residenciales. Sabremos que esto es cierto cuando más del 60% de sesiones registradas provenga de dispositivos móviles.
 
-3. Creemos que los usuarios preferirán acceder al control remoto desde su smartphone. Sabremos que estamos bien cuando el 60% o más de las sesiones en esa aplicación provengan de dispositivos móviles.
+#### Hypothesis 4
+Creemos que un modelo freemium con limitación de dispositivos registrados incentivará a los usuarios a probar la plataforma y posteriormente considerar una suscripción premium. Sabremos que esto es cierto cuando al menos el 30% de usuarios gratuitos muestre intención de actualización a un plan de pago durante las entrevistas de validación.
 
-4. Creemos que los dashboards con métricas e insights son el factor de mayor valor percibido para retener usuarios. Sabremos que estamos bien cuando sea la funcionalidad mejor valorada en las entrevistas de validación. 
+#### Hypothesis 5
+Creemos que incluir alertas y reportes inteligentes sobre consumo energético aumentará el valor percibido de la plataforma para usuarios que buscan optimizar recursos del hogar. Sabremos que esto es cierto cuando dichas funcionalidades sean identificadas como útiles por al menos el 70% de usuarios entrevistados.
 
 #### 1.2.2.4. Lean UX Canvas
 
@@ -971,7 +970,7 @@ https://www.figma.com/design/msBrKegzk619dYQHvns0Ty/Alexander-Fernandez-s-team-l
 
 ### 4.6.1. Design-Level Event Storming
 
-En esta sección se presenta el resultado del Design-Level Event Storming realizado como continuación del Big Picture Event Storming previamente elaborado. El objetivo fue profundizar en los flujos más relevantes del dominio de TechWatch, identificando para cada proceso los Commands, Read Models, Policies y Aggregates que permiten modelar el comportamiento del sistema con mayor detalle. La sesión se organizó en torno a cuatro Bounded Contexts identificados: Device Management, Simulation, Analytics y Subscriptions. A partir de este ejercicio se establecieron las bases para la definición de la arquitectura de software, incluyendo los diagramas de contexto, contenedores y componentes que se presentan en las secciones siguientes.
+En esta sección se presenta el resultado del Design-Level Event Storming realizado como continuación del Big Picture Event Storming previamente elaborado. El objetivo fue profundizar en los flujos más relevantes del dominio de TechWatch, identificando para cada proceso los Commands, Read Models, Policies y Aggregates que permiten modelar el comportamiento del sistema con mayor detalle. La sesión se organizó en torno a cuatro Bounded Contexts identificados: Device Management, Analytics, I am, Profile y Subscriptions. A partir de este ejercicio se establecieron las bases para la definición de la arquitectura de software, incluyendo los diagramas de contexto, contenedores y componentes que se presentan en las secciones siguientes.
 
 ![Design-Level Event Storming](/assets/images/design-level-event-storming.png)
 
@@ -997,11 +996,11 @@ El sistema TechWatch está compuesto por cinco contenedores. La Landing Page es 
 
 ### 4.6.4. Software Architecture Components Diagrams
 
-En esta sección se presentan los diagramas de componentes para cada uno de los contenedores que conforman TechWatch, elaborados siguiendo el tercer nivel del modelo C4. Cada diagrama descompone un contenedor en sus bloques estructurales principales, mostrando las responsabilidades de cada componente, sus tecnologías de implementación y las interacciones entre ellos. La organización interna de la RESTful API sigue los Bounded Contexts identificados en el Design-Level Event Storming: Device Management, Simulation, Analytics y Subscriptions. Los contenedores frontend siguen una arquitectura basada en la separación entre vistas y servicios, característica del framework Angular.
+En esta sección se presentan los diagramas de componentes para cada uno de los contenedores que conforman TechWatch, elaborados siguiendo el tercer nivel del modelo C4. Cada diagrama descompone un contenedor en sus bloques estructurales principales, mostrando las responsabilidades de cada componente, sus tecnologías de implementación y las interacciones entre ellos. La organización interna de la RESTful API sigue los Bounded Contexts identificados en el Design-Level Event Storming: Device Management, Analytics, I am, Profile y Subscriptions. Los contenedores frontend siguen una arquitectura basada en la separación entre vistas y servicios, característica del framework Angular.
 
 **API Component General Diagram**
 
-La RESTful API organiza sus componentes en cuatro Bounded Contexts. Device Management expone los controladores PropertyController y DeviceController, cada uno con su Service y Repository correspondiente. Simulation gestiona las sesiones de simulación y la generación de datos de uso a través del SimulationController y SimulationService, notificando al AnalyticsService cuando se generan nuevos datos. Analytics procesa las métricas mediante el AnalyticsService y genera reportes a través del ReportService. Subscriptions gestiona los planes del usuario mediante el SubscriptionService, que delega el procesamiento de pagos al PaymentComponent para su integración con el servicio externo. El AuthComponent es transversal a todos los Bounded Contexts y gestiona la autenticación mediante JWT.
+La RESTful API organiza sus componentes en cuatro Bounded Contexts. Device Management expone los controladores PropertyController y DeviceController, cada uno con su Service y Repository correspondiente. I am(Identity and access management) gestiona la autenticación y autorización de usuarios mediante AuthService; este contexto se integra con el proveedor externo de autenticación utilizando OAuth 2.0 y JWT para garantizar un acceso seguro a la plataforma; además, administra el inicio de sesión y registro. Profile administra la información personal y preferencias de los usuarios mediante ProfileController, ProfileService y ProfileRepository; este contexto permite actualizar datos de perfil, gestionar configuraciones de cuenta y personalizar la experiencia del usuario dentro de la plataforma. Analytics procesa las métricas mediante el AnalyticsService y genera reportes a través del ReportService. Subscriptions gestiona los planes del usuario mediante el SubscriptionService, que delega el procesamiento de pagos al PaymentComponent para su integración con el servicio externo. El AuthComponent es transversal a todos los Bounded Contexts y gestiona la autenticación mediante JWT.
 
 ![Component API General Key](/assets/images/c4-components-api-general-key.png)
 
@@ -1019,7 +1018,13 @@ La RESTful API organiza sus componentes en cuatro Bounded Contexts. Device Manag
 
 ![API Device Management Diagram](/assets/images/component-diagram-api-device-management.png)
 
-**API Simulation Diagram**
+**API I am Diagram**
+
+![Component API Simulation Key](/assets/images/c4-components-api-simulation-key.png)
+
+![API Simulation Diagram](/assets/images/component-diagram-api-simulation.png)
+
+**API Profile Diagram**
 
 ![Component API Simulation Key](/assets/images/c4-components-api-simulation-key.png)
 
@@ -1071,7 +1076,14 @@ El diagrama de clases del Bounded Context Device Management define tres entidade
 
 ![class-diagram-device-management](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-device-management.puml)
 
-**Simulation**
+**I am**
+
+
+El diagrama de clases del Bounded Context Simulation define SimulationSession como Aggregate Root, que representa una sesión de uso simulado iniciada por el usuario. Cada sesión registra un conjunto de DeviceAction, que captura cada interacción realizada sobre un dispositivo durante la sesión, y genera UsageData, que almacena los datos de consumo producidos por cada interacción. El estado del ciclo de vida de la sesión se gestiona mediante la enumeración SessionStatus, mientras que DeviceActionType clasifica el tipo de acción ejecutada. El SimulationService encapsula la lógica de negocio para iniciar, gestionar y finalizar sesiones, así como para generar los datos de uso correspondientes.
+
+![class-diagram-simulation](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-simulation.puml)
+
+**Profile**
 
 
 El diagrama de clases del Bounded Context Simulation define SimulationSession como Aggregate Root, que representa una sesión de uso simulado iniciada por el usuario. Cada sesión registra un conjunto de DeviceAction, que captura cada interacción realizada sobre un dispositivo durante la sesión, y genera UsageData, que almacena los datos de consumo producidos por cada interacción. El estado del ciclo de vida de la sesión se gestiona mediante la enumeración SessionStatus, mientras que DeviceActionType clasifica el tipo de acción ejecutada. El SimulationService encapsula la lógica de negocio para iniciar, gestionar y finalizar sesiones, así como para generar los datos de uso correspondientes.
@@ -1096,7 +1108,7 @@ En esta sección se presenta el diseño de base de datos de TechWatch, organizad
 
 ### 4.8.1. Database Diagrams
 
-A continuación se presentan los diagramas de base de datos para cada uno de los cuatro Bounded Contexts identificados en TechWatch: Device Management, Simulation, Analytics y Subscriptions. Los diagramas fueron elaborados en Vertabelo (producto adquirido por Red Gate) y reflejan directamente el modelo de dominio definido en los diagramas de clases, aplicando las convenciones de mapeo objeto-relacional propias de Spring Data JPA. Los Value Objects han sido aplanados como columnas dentro de la tabla de su entidad padre, y las enumeraciones se representan como columnas de tipo VARCHAR.
+A continuación se presentan los diagramas de base de datos para cada uno de los cuatro Bounded Contexts identificados en TechWatch: Device Management, I am, Profile, Analytics y Subscriptions. Los diagramas fueron elaborados en Vertabelo (producto adquirido por Red Gate) y reflejan directamente el modelo de dominio definido en los diagramas de clases, aplicando las convenciones de mapeo objeto-relacional propias de Spring Data JPA. Los Value Objects han sido aplanados como columnas dentro de la tabla de su entidad padre, y las enumeraciones se representan como columnas de tipo VARCHAR.
 
 
 **Device Management**
@@ -1105,7 +1117,13 @@ El diagrama de Device Management contiene cuatro tablas propias. La tabla users 
 
 ![Device Management ERD](/assets/images/device-management-erd.png)
 
-**Simulation**
+**I am**
+
+El diagrama de Simulation contiene tres tablas propias y tres tablas externas del Bounded Context Device Management. La tabla simulation_sessions registra cada sesión de uso simulado iniciada por un usuario para un inmueble específico, con referencias externas hacia users y properties. La tabla device_actions registra cada acción ejecutada sobre un dispositivo durante una sesión activa, con referencias hacia simulation_sessions y la tabla externa devices. La tabla usage_data almacena los datos de consumo generados por cada interacción con un dispositivo durante la sesión, con referencias hacia simulation_sessions y devices.
+
+![Simulation ERD](/assets/images/simulation-erd.png)
+
+**Profile**
 
 El diagrama de Simulation contiene tres tablas propias y tres tablas externas del Bounded Context Device Management. La tabla simulation_sessions registra cada sesión de uso simulado iniciada por un usuario para un inmueble específico, con referencias externas hacia users y properties. La tabla device_actions registra cada acción ejecutada sobre un dispositivo durante una sesión activa, con referencias hacia simulation_sessions y la tabla externa devices. La tabla usage_data almacena los datos de consumo generados por cada interacción con un dispositivo durante la sesión, con referencias hacia simulation_sessions y devices.
 
