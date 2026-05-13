@@ -827,30 +827,74 @@ El Product Backlog ha sido priorizado enfocándose en el valor entregado al nego
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines
+La importancia de las guías de estilo en TechWatch radica en garantizar una experiencia visual consistente, intuitiva y moderna para los usuarios de la plataforma. Estas decisiones de diseño permiten mantener coherencia entre los distintos componentes visuales y funcionalidades del sistema, facilitando la navegación, comprensión de la información y uso de dashboards orientados al monitoreo y análisis inteligente del hogar. A continuación, se presentarán las principales pautas de estilo y criterios visuales considerados para el desarrollo del proyecto.
 
 ### 4.1.1. General Style Guidelines
+
+### Consistencia Visual
+
+La interfaz de TechWatch mantendrá una apariencia uniforme en todas las vistas de la plataforma mediante el uso consistente de colores, tipografías, espaciados y componentes visuales reutilizables. Se utilizarán dashboards minimalistas, tarjetas con bordes redondeados y una jerarquía visual clara para facilitar la navegación y comprensión de la información.
+
+![Consistencia Visual](./assets/images/chapter-4-1-1-img1.png)
+
+### Simplicidad
+
+El diseño de TechWatch prioriza una experiencia simple e intuitiva, evitando elementos visuales innecesarios que puedan distraer al usuario. La plataforma utiliza interfaces limpias, espacios amplios y una cantidad limitada de colores para mantener el enfoque en la información relevante, como métricas, alertas y consumo energético.
+
+Además, la navegación se organiza de manera clara y directa, permitiendo que los usuarios accedan rápidamente a funcionalidades importantes como monitoreo de dispositivos, dashboards analíticos y reportes de consumo.
+
+![Simplicidad](./assets/images/chapter-4-1-1-img2.png)
+
+### Branding
+
+El logotipo de TechWatch adopta un diseño minimalista y moderno que representa la integración entre tecnología, monitoreo inteligente y hogares conectados. El ícono principal combina la silueta de una casa con elementos visuales relacionados al análisis de datos y control inteligente, simbolizando la capacidad de la plataforma para supervisar y gestionar dispositivos domésticos desde una única interfaz centralizada.
+
+La paleta de colores basada en tonos azules transmite confianza, innovación y estabilidad, mientras que las líneas limpias y formas simples refuerzan el enfoque moderno y accesible de la plataforma. Asimismo, el uso de gráficos y señales dentro del ícono representa el monitoreo en tiempo real, el consumo energético y la obtención de métricas e insights para la toma de decisiones inteligentes dentro del hogar.
+
+La identidad visual de TechWatch busca proyectar una experiencia tecnológica profesional, intuitiva y orientada a Smart Homes, manteniendo una estética minimalista alineada con dashboards modernos y aplicaciones SaaS contemporáneas.
+
+![Branding](./assets/images/chapter-4-1-1-img3.png)
+
+### Typography
+
+La plataforma utilizará principalmente la tipografía **Roboto**, debido a su estilo moderno, minimalista y alta legibilidad en interfaces web y dashboards analíticos. Como tipografías de respaldo se utilizarán **Inter** y **Segoe UI**, las cuales mantienen consistencia visual y compatibilidad multiplataforma.
+
+- Primary Font: Roboto
+- Secondary Font: Inter
+- Fallback Font: Segoe UI, sans-serif
+
+![Typography](./assets/images/chapter-4-1-1-img4.png)
+
+Asimismo, se empleará una estructura homogénea en formularios, tablas, botones y menús de navegación, permitiendo que los usuarios identifiquen rápidamente patrones visuales y reduzcan la curva de aprendizaje dentro de la plataforma.
 El diseño visual de TechWatch se basa en un enfoque moderno, minimalista y orientado a productos digitales tipo SaaS (Software as a Service), priorizando la claridad de la información, la jerarquía visual y la experiencia del usuario.
 
 Se adopta una estética limpia que facilita la visualización de métricas e insights relacionados al comportamiento de dispositivos inteligentes dentro del hogar.
 
 ### Paleta de colores:
 
-* Color primario : *Azul oscuro (#0F172A)* Utilizado en fondos principales para transmitir confianza, estabilidad y tecnología.
-* Color secundario: *Azul brillante (#3B82F6)* y/o *cyan (#06B6D4)*, empleado en botones, enlaces y elementos interactivos.
-* Colores neutros: *Tonos oscuros (#020617, #0B1120)* para fondos secundarios y tarjetas.
-* Texto: *Blanco suave (#E5E7EB) y gris (#9CA3AF)* para garantizar legibilidad.
-* Color de énfasis: *Verde (#10B981)* para representar métricas positivas o ahorro energético.
+* Color primario: *Azul moderno (#2563EB)* utilizado en botones principales, elementos interactivos y acciones destacadas, transmitiendo confianza, tecnología y simplicidad visual.
 
-### Tipografía:
-Se utilizará la fuente *sans-serif “Inter”*, debido a su alta legibilidad en interfaces digitales y su uso extendido en aplicaciones modernas.
+* Color secundario: *Azul suave (#60A5FA)* empleado en estados hover, enlaces y componentes secundarios para mantener una estética minimalista y consistente.
 
-### Principios de diseño:
+* Color de apoyo: *Azul claro (#DBEAFE)* utilizado en fondos sutiles, highlights y elementos informativos sin generar sobrecarga visual.
 
-* Minimalismo visual (reducción de elementos innecesarios)
-* Uso consistente de espacios en blanco
-* Bordes redondeados en componentes (8px – 16px)
-* Jerarquía tipográfica clara (títulos, subtítulos, contenido)
-* Enfoque en la visualización de datos
+* Colores neutros: *Blanco (#FFFFFF)* y gris muy claro (#F5F7FA)* utilizados como fondos principales para mantener una interfaz limpia, moderna y enfocada en dashboards y métricas.
+
+* Bordes y superficies: *Gris claro (#E5E7EB)* aplicado en divisiones, formularios, tablas y contenedores para conservar jerarquía visual sin perder minimalismo.
+
+* Texto principal: *Azul oscuro (#1F2937)* utilizado en títulos y encabezados para garantizar contraste y legibilidad.
+
+* Texto secundario: *Gris medio (#6B7280)* empleado en descripciones, labels e información complementaria.
+
+* Color de éxito: *Verde (#10B981)* utilizado para métricas positivas, ahorro energético y estados satisfactorios.
+
+* Color de advertencia: *Ámbar (#F59E0B)* empleado en alertas moderadas y notificaciones preventivas.
+
+* Color de error: *Rojo suave (#EF4444)* utilizado para errores, alertas críticas y estados de fallo.
+
+![Paleta de colores](./assets/images/chapter-4-1-1-img5.png)
+
+
 ### 4.1.2. Web Style Guidelines
 Las interfaces web de TechWatch seguirán lineamientos consistentes orientados a la usabilidad y accesibilidad.
 
