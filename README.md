@@ -1990,8 +1990,8 @@ Asimismo, los usuarios pueden visualizar información relacionada con el estado 
 
 La interfaz fue desarrollada utilizando Angular y TypeScript, manteniendo una experiencia responsive y consistente con los diseños, wireframes y mockups previamente definidos en Figma. Las funcionalidades implementadas durante este sprint se alinean con el objetivo principal de TechWatch: permitir el monitoreo, control y análisis energético de dispositivos inteligentes dentro del hogar.
 
-Comprobación en el navegador (producción): frontend-tech-black.vercel.app
 
+[Ver aplicación en producción](https://frontend-tech-black.vercel.app)
 
 ![Frontend Captura](assets/images/chapter-5-2-2-5-img1.png)
 
