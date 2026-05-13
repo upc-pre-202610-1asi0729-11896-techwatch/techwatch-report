@@ -1044,65 +1044,50 @@ Los inputs utilizarán colores neutros, bordes redondeados y una jerarquía visu
 
 ## 4.2. Information Architecture
 
-La arquitectura de información de TechWatch está diseñada para organizar el contenido de forma clara, intuitiva y centrada en el usuario, permitiendo una navegación eficiente tanto en el Landing Page como en la Web Application.
+La arquitectura de información de TechWatch fue diseñada para organizar el contenido de manera clara, intuitiva y consistente tanto en la Landing Page como en la Web Application. Las decisiones de organización, navegación y búsqueda están orientadas a facilitar que los usuarios comprendan rápidamente el funcionamiento de la plataforma y puedan acceder sin esfuerzo a funcionalidades relacionadas con monitoreo, control y análisis inteligente del hogar.
+
+La estructura de la plataforma toma como referencia los bounded contexts definidos dentro del dominio del negocio, permitiendo separar funcionalidades relacionadas con gestión de dispositivos, analítica, autenticación, suscripciones y perfil de usuario.
 
 ### 4.2.1. Organization Systems
 
-### Organización Jerárquica (Visual Hierarchy)
+TechWatch aplicará distintos sistemas de organización dependiendo del tipo de contenido y funcionalidad dentro de la plataforma.
 
-Se aplica en el Landing Page y Dashboard:
+Se utilizará una organización jerárquica (visual hierarchy) para dashboards, métricas y reportes, priorizando información crítica como consumo energético, alertas y estado de dispositivos inteligentes. Los elementos más relevantes tendrán mayor peso visual mediante tamaño, posición y contraste.
 
-- Hero
-- Features
-- About Us
-- Pricing
-- Testimonials
-- Contact
+Asimismo, se empleará una organización secuencial (step-by-step) en flujos como autenticación, registro de dispositivos, configuración inicial del hogar y procesos de suscripción, guiando al usuario de manera intuitiva durante cada etapa.
 
-Permite guiar al usuario desde el valor del producto hasta la acción (registro).
+Por otro lado, la plataforma también utilizará organización matricial y categorización por tópicos en módulos relacionados con dashboards analíticos, tablas de dispositivos y métricas históricas, permitiendo combinar filtros, categorías y visualizaciones de información.
 
-### Organización Secuencial
+La categorización del contenido se organizará principalmente según funcionalidades y grupos de usuarios:
 
-Se usa en procesos:
-
-1. Crear cuenta
-2. Registrar inmueble
-3. Agregar dispositivos
-4. Ver dashboard
-
-### Organización Matricial
-
-Se aplica en analytics:
-
-- Dispositivo × Consumo × Tiempo
-- Habitación × Estado
-
-### Categorización
-
-- Por tópicos: Monitoring, Analytics, Security
-- Por usuario: Free / Premium
-- Cronológico: Historial
-- Espacial: Habitaciones
-
+| Categoría | Descripción |
+|---|---|
+| Device Management | Gestión y control de dispositivos inteligentes |
+| Analytics | Métricas, dashboards, reportes y consumo energético |
+| IAM | Autenticación, acceso y seguridad |
+| Profile | Información y configuración del usuario |
+| Payment | Suscripciones y funcionalidades premium |
 
 ### 4.2.2. Labeling Systems
 
-### Landing Page
-- Hero
-- Features
-- About us
-- Pricing
-- Reviews
-- Contact
+TechWatch implementará un sistema de etiquetado simple, consistente y fácil de comprender, evitando ambigüedad y reduciendo la carga cognitiva de los usuarios. Las etiquetas utilizarán pocas palabras y estarán alineadas con el ubiquitous language definido para el dominio del proyecto.
 
-### Web App
-- Dashboard
-- Devices
-- Rooms
-- Analytics
-- Alerts
-- Settings
+Las principales etiquetas de navegación y funcionalidades serán las siguientes:
 
+| Label | Descripción |
+|---|---|
+| Dashboard | Visualización general del hogar inteligente |
+| Devices | Gestión y monitoreo de dispositivos |
+| Analytics | Métricas, gráficos y reportes |
+| Alerts | Alertas y notificaciones de consumo |
+| Reports | Reportes históricos y exportables |
+| Profile | Configuración e información del usuario |
+| Subscription | Gestión de planes y pagos |
+| Settings | Configuración general de la plataforma |
+| Login | Acceso al sistema |
+| Logout | Cierre de sesión |
+
+Las etiquetas buscarán mantener claridad visual y coherencia tanto en la Landing Page como en la Web Application.
 
 ### 4.2.3. SEO Tags and Meta Tags
 
@@ -1110,73 +1095,75 @@ Se aplica en analytics:
 
 ```html
 <title>TechWatch | Smart Home Monitoring Platform</title>
-<meta name="description" content="Monitor and optimize your smart home devices with TechWatch.">
-<meta name="keywords" content="smart home, IoT, energy monitoring">
-<meta name="author" content="TechWatch Team">
 ```
+### Meta Description
+
+```html
+<meta name="description" content="TechWatch is a smart home platform that allows users to monitor, control and analyze connected devices through interactive dashboards and energy consumption insights.">
+```
+### Meta Keywords
+
+```html
+<meta name="keywords" content="Smart Home, IoT, Home Automation, Energy Consumption, Dashboard, Smart Devices, Monitoring Platform">
+```
+
+### Meta Author
+
+```html
+<meta name="author" content="TechWatch">
+```
+
+### Language Tag
+
+```html
+<html lang="en">
+```
+
 
 ### 4.2.4. Searching Systems
 
-La plataforma TechWatch incorpora sistemas de búsqueda para facilitar el acceso rápido a la información y evitar que el usuario se pierda dentro del sistema.
+TechWatch incorporará sistemas de búsqueda y filtrado orientados a facilitar la localización rápida de dispositivos, métricas y reportes dentro de la plataforma.
 
-### Barra de búsqueda
-Se implementa en el Dashboard principal.
+El sistema de búsqueda incluirá filtros dinámicos y búsquedas por palabras clave para evitar que el usuario se sienta abrumado por el volumen de información generado por dispositivos inteligentes y dashboards analíticos.
 
-Permite buscar:
-- Dispositivos
-- Habitaciones
+Los principales filtros de búsqueda serán los siguientes:
 
-### Filtros disponibles
-Los usuarios pueden refinar la búsqueda mediante:
+| Filtro | Descripción |
+|---|---|
+| Device Name | Buscar dispositivos específicos |
+| Device Type | Filtrar por tipo de dispositivo |
+| Space | Buscar por ambiente o habitación |
+| Consumption Range | Filtrar por rango de consumo energético |
+| Status | Filtrar dispositivos activos o inactivos |
+| Date Range | Filtrar métricas y reportes históricos |
+| Alerts | Buscar alertas específicas |
+| Keywords | Búsqueda rápida mediante texto |
 
-- Tipo de dispositivo
-- Consumo energético
-- Estado (activo / inactivo)
-- Rango de fechas
-
-
-### Resultados de búsqueda
-Los resultados se muestran en formato de tarjetas (cards), incluyendo:
-
-- Nombre del dispositivo
-- Estado actual
-- Consumo energético
-
-
-
-### Objetivo
-Reducir la carga cognitiva del usuario y mejorar la eficiencia en la interacción con la plataforma.
+Los resultados de búsqueda se mostrarán mediante tablas, dashboards y tarjetas visuales organizadas de forma clara y consistente para facilitar la interpretación de la información.
 
 
 ### 4.2.5. Navigation Systems
 
-### Landing Page
+TechWatch implementará sistemas de navegación claros y consistentes que permitan a los usuarios recorrer la plataforma de forma intuitiva y eficiente.
 
-Se implementa un sistema de navegación simple e intuitivo:
+La Landing Page utilizará navegación superior horizontal con acceso rápido a secciones principales como características, beneficios, métricas, funcionalidades y contacto.
 
-- Navbar fijo (sticky)
-- Navegación mediante anchors (#hero, #feature, etc.)
-- Scroll vertical con efecto snap
+Por otro lado, la Web Application utilizará un sidebar de navegación persistente que permitirá acceder rápidamente a los módulos principales del sistema relacionados con gestión de dispositivos, analítica y control inteligente del hogar.
 
+Los principales módulos de navegación serán los siguientes:
 
-### Web Application
+- Dashboard
+- Devices
+- Analytics
+- Alerts
+- Reports
+- Subscription
+- Profile
+- Settings
 
-Se utiliza una navegación persistente:
+Asimismo, se emplearán breadcrumbs, cards interactivas y navegación contextual dentro de dashboards y tablas para mejorar la experiencia de exploración y reducir la desorientación del usuario.
 
-- Sidebar con acceso a:
-  - Dashboard
-  - Devices
-  - Analytics
-  - Alerts
-  - Settings
-
-
-### Tipos de navegación
-
-- Global: Navbar principal
-- Local: Navegación dentro del dashboard
-- Contextual: Acciones dentro de tarjetas y componentes
-
+La navegación responsive permitirá adaptar la experiencia tanto en escritorio como en dispositivos móviles mediante menús colapsables y accesos rápidos orientados a mantener simplicidad y accesibilidad visual.
 
 ## 4.3. Landing Page UI Design
 
