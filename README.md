@@ -59,7 +59,12 @@ URL del repositorio del Project Report en GitHub:
 
 ## Contenido
 
-- [Student Outcome](#student-outcome)
+- [Informe de Trabajo Final](#informe-de-trabajo-final)
+  - [Relación de Integrantes](#relación-de-integrantes)
+  - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
+  - [Project Report Collaboration Insights](#project-report-collaboration-insights)
+  - [Contenido](#contenido)
+  - [Student Outcome](#student-outcome)
 - [Capítulo I: Introducción](#capítulo-i-introducción)
   - [1.1. Startup Profile](#11-startup-profile)
     - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
@@ -69,17 +74,33 @@ URL del repositorio del Project Report en GitHub:
     - [1.2.2. Lean UX Process](#122-lean-ux-process)
       - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
       - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
+      - [Business Assumptions](#business-assumptions)
+      - [User Assumptions](#user-assumptions)
       - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+      - [Hypothesis 1](#hypothesis-1)
+      - [Hypothesis 2](#hypothesis-2)
+      - [Hypothesis 3](#hypothesis-3)
+      - [Hypothesis 4](#hypothesis-4)
+      - [Hypothesis 5](#hypothesis-5)
       - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
   - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
-- [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
+- [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
   - [2.1. Competidores](#21-competidores)
     - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
     - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
   - [2.2. Entrevistas](#22-entrevistas)
     - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
     - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+    - [Entrevista 1 — Gustavo Rivas](#entrevista-1--gustavo-rivas)
+    - [Entrevista 2 — Tito Rusel Montalvo Vera](#entrevista-2--tito-rusel-montalvo-vera)
+    - [Entrevista 3 — José Vásquez Martínez](#entrevista-3--josé-vásquez-martínez)
+    - [Entrevista 4 — Daniel Palomino](#entrevista-4--daniel-palomino)
+    - [Entrevista 5 — Eleno Giovanni Mena Zuleta](#entrevista-5--eleno-giovanni-mena-zuleta)
+    - [Entrevista 6 — Gloria Quispe](#entrevista-6--gloria-quispe)
     - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
+      - [Análisis del Segmento 1: Propietarios de casas](#análisis-del-segmento-1-propietarios-de-casas)
+      - [Análisis del Segmento 2: Arrendatarios y propietarios de departamentos](#análisis-del-segmento-2-arrendatarios-y-propietarios-de-departamentos)
+      - [Conclusión general](#conclusión-general)
   - [2.3. Needfinding](#23-needfinding)
     - [2.3.1. User Personas](#231-user-personas)
     - [2.3.2. User Task Matrix](#232-user-task-matrix)
@@ -94,16 +115,37 @@ URL del repositorio del Project Report en GitHub:
 - [Capítulo IV: Product Design](#capítulo-iv-product-design)
   - [4.1. Style Guidelines](#41-style-guidelines)
     - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
+    - [Paleta de colores:](#paleta-de-colores)
+    - [Tipografía:](#tipografía)
+    - [Principios de diseño:](#principios-de-diseño)
     - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
   - [4.2. Information Architecture](#42-information-architecture)
     - [4.2.1. Organization Systems](#421-organization-systems)
+    - [Organización Jerárquica (Visual Hierarchy)](#organización-jerárquica-visual-hierarchy)
+    - [Organización Secuencial](#organización-secuencial)
+    - [Organización Matricial](#organización-matricial)
+    - [Categorización](#categorización)
     - [4.2.2. Labeling Systems](#422-labeling-systems)
+    - [Landing Page](#landing-page)
+    - [Web App](#web-app)
     - [4.2.3. SEO Tags and Meta Tags](#423-seo-tags-and-meta-tags)
+    - [Landing Page](#landing-page-1)
     - [4.2.4. Searching Systems](#424-searching-systems)
+    - [Barra de búsqueda](#barra-de-búsqueda)
+    - [Filtros disponibles](#filtros-disponibles)
+    - [Resultados de búsqueda](#resultados-de-búsqueda)
+    - [Objetivo](#objetivo)
     - [4.2.5. Navigation Systems](#425-navigation-systems)
+    - [Landing Page](#landing-page-2)
+    - [Web Application](#web-application)
+    - [Tipos de navegación](#tipos-de-navegación)
   - [4.3. Landing Page UI Design](#43-landing-page-ui-design)
     - [4.3.1. Landing Page Wireframe](#431-landing-page-wireframe)
+    - [Wireframes](#wireframes)
+  - [](#)
     - [4.3.2. Landing Page Mock-up](#432-landing-page-mock-up)
+    - [Mock-ups finales](#mock-ups-finales)
+    - [Características](#características)
   - [4.4. Web Applications UX/UI Design](#44-web-applications-uxui-design)
     - [4.4.1. Web Applications Wireframes](#441-web-applications-wireframes)
     - [4.4.2. Web Applications Wireflow Diagrams](#442-web-applications-wireflow-diagrams)
@@ -119,13 +161,26 @@ URL del repositorio del Project Report en GitHub:
     - [4.7.1. Class Diagrams](#471-class-diagrams)
   - [4.8. Database Design](#48-database-design)
     - [4.8.1. Database Diagrams](#481-database-diagrams)
-- [Capítulo V: Product Implementation, Validation & Deployment](#capítulo-v-product-implementation-validation--deployment)
+- [Capítulo V: Product Implementation, Validation \& Deployment](#capítulo-v-product-implementation-validation--deployment)
   - [5.1. Software Configuration Management](#51-software-configuration-management)
     - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
+      - [Project Management](#project-management)
+      - [Requirements Management](#requirements-management)
+      - [Product UX/UI Design](#product-uxui-design)
+      - [Software Development](#software-development)
+      - [Software Testing](#software-testing)
     - [5.1.2. Source Code Management](#512-source-code-management)
-    - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide--conventions)
+      - [Usuarios de GitHub](#usuarios-de-github)
+      - [Estrategia de ramas](#estrategia-de-ramas)
+    - [5.1.3. Source Code Style Guide \& Conventions](#513-source-code-style-guide--conventions)
+      - [HTML](#html)
+      - [CSS](#css)
+      - [JavaScript](#javascript)
+      - [TypeScript (Angular)](#typescript-angular)
+      - [Java (Backend)](#java-backend)
+      - [Gherkin](#gherkin)
     - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
-  - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
+  - [5.2. Landing Page, Services \& Applications Implementation](#52-landing-page-services--applications-implementation)
     - [5.2.1. Sprint 1](#521-sprint-1)
       - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
       - [5.2.1.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
@@ -135,9 +190,13 @@ URL del repositorio del Project Report en GitHub:
       - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
       - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
       - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
+  - [](#-1)
 - [Conclusiones](#conclusiones)
+  - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
+  - [Anexo A. Video de Exposiciones](#anexo-a-video-de-exposiciones)
+  - [Anexo B. Evidencia de Video](#anexo-b-evidencia-de-video)
 
 ---
 
@@ -547,11 +606,11 @@ En esta sección se presentan los User Journey Maps elaborados para cada uno de 
 
 **1. User Journey Map para el primer segmento**
 
-![User Journey Map](/assets/images/user-journey-map1.png)
+![User Journey Map](./assets/images/user-journey-map1.png)
 
 **2. User Journey Map para el segundo segmento**
 
-![User Journey Map](/assets/images/user-journey-map2.png)
+![User Journey Map](./assets/images/user-journey-map2.png)
 
 ### 2.3.4. Empathy Mapping
 
@@ -559,17 +618,17 @@ A continuación se presentan los Empathy Maps elaborados para cada uno de los Us
 
 **1. Empathy Map para el primer segmento**
 
-![Empathy Map](/assets/images/empathy-map1.png)
+![Empathy Map](./assets/images/empathy-map1.png)
 
 **2. Empathy Map para el segundo segmento**
 
-![Empathy Map](/assets/images/empathy-map2.png)
+![Empathy Map](./assets/images/empathy-map2.png)
 
 ## 2.4. Big Picture Event Storming
 
 En esta sección se presenta el resultado del Big Picture Event Storming realizado por el equipo con el objetivo de explorar y comprender el dominio del negocio de TechWatch a alto nivel. La sesión se llevó a cabo de forma colaborativa siguiendo el proceso de Event Storming, identificando los Domain Events más significativos del sistema, organizándolos cronológicamente y complementándolos con los actores y sistemas externos involucrados. El proceso permitió identificar cuatro procesos clave en el dominio: Gestión de cuenta, Gestión de inmueble y dispositivos, Simulación de uso, y Métricas e insights. A continuación se presenta el diagrama resultante elaborado en LucidChart, seguido de una descripción de los principales flujos identificados.
 
-![Big Picture Event Storming](/assets/images/big-picture-event-storming.png)
+![Big Picture Event Storming](./assets/images/big-picture-event-storming.png)
 
 El diagrama refleja cuatro flujos principales en el dominio de TechWatch. El primero corresponde a la gestión de cuenta, donde el usuario se registra, inicia sesión y selecciona un plan de suscripción a través del servicio de pagos, tras lo cual el sistema actualiza su suscripción. El segundo flujo abarca la gestión del inmueble y dispositivos, en el que el usuario registra su inmueble, organiza sus espacios y administra los dispositivos asociados a cada uno. El tercer flujo corresponde a la simulación de uso, donde el usuario inicia una sesión desde la aplicación de control remoto, interactúa con sus dispositivos encendiéndolos, apagándolos o modificando sus parámetros, lo que desencadena la generación de datos de uso. Finalmente, el cuarto flujo abarca las métricas e insights, donde el sistema procesa automáticamente los datos generados, calcula métricas, actualiza el dashboard y genera reportes de consumo, ya sea de forma automática o bajo demanda del usuario, disparando además alertas cuando se detectan niveles de consumo elevados. 
 
@@ -649,7 +708,7 @@ El siguiente glosario reúne los términos y conceptos clave del dominio de nego
 | TS14 | API obtener perfil de usuario | Como Developer, deseo consultar la información del perfil para mostrarla y editarla desde el frontend. | **Scenario 1: Usuario autenticado** <br> **Given** el token es válido, <br> **When** se consulta el endpoint, <br> **Then** la API devuelve los datos del perfil. | EP09 |
 ## 3.2. Impact Mapping
 
-![Impact Mapping](/assets/images/impact-mapping.png)
+![Impact Mapping](./assets/images/impact-mapping.png)
 
 ## 3.3. Product Backlog
 
@@ -972,15 +1031,15 @@ https://www.figma.com/design/msBrKegzk619dYQHvns0Ty/Alexander-Fernandez-s-team-l
 
 En esta sección se presenta el resultado del Design-Level Event Storming realizado como continuación del Big Picture Event Storming previamente elaborado. El objetivo fue profundizar en los flujos más relevantes del dominio de TechWatch, identificando para cada proceso los Commands, Read Models, Policies y Aggregates que permiten modelar el comportamiento del sistema con mayor detalle. La sesión se organizó en torno a cuatro Bounded Contexts identificados: Device Management, Analytics, I am, Profile y Subscriptions. A partir de este ejercicio se establecieron las bases para la definición de la arquitectura de software, incluyendo los diagramas de contexto, contenedores y componentes que se presentan en las secciones siguientes.
 
-![Design-Level Event Storming](/assets/images/design-level-event-storming.png)
+![Design-Level Event Storming](./assets/images/design-level-event-storming.png)
 
 ### 4.6.2. Software Architecture Context Diagram
 
 En esta sección se presenta el diagrama de contexto del sistema TechWatch, elaborado siguiendo el modelo C4. Este diagrama representa el nivel más alto de abstracción de la arquitectura de software, mostrando el sistema como una unidad central rodeada por los usuarios que interactúan con él y los sistemas externos con los que se integra. El objetivo es proporcionar una visión general del alcance del sistema y sus relaciones con el entorno externo, sin entrar en detalles de implementación interna.
 
-![Context Key](/assets/images/c4-context-key.png)
+![Context Key](./assets/images/c4-context-key.png)
 
-![Software Architecture Context Diagram](/assets/images/context-diagram.png)
+![Software Architecture Context Diagram](./assets/images/context-diagram.png)
 
 El diagrama muestra a TechWatch como sistema central, con el que interactúan dos tipos de usuarios: el propietario de casa y el arrendatario de departamento, ambos con el mismo conjunto de acciones disponibles: registrar su inmueble, gestionar sus dispositivos, simular el uso de los mismos y visualizar las métricas e insights resultantes. El sistema se integra con dos sistemas externos: el Servicio de Pagos, encargado de procesar las transacciones de suscripción, y el Proveedor de Autenticación, que gestiona el acceso seguro de los usuarios a la plataforma mediante OAuth 2.0.
 
@@ -988,9 +1047,9 @@ El diagrama muestra a TechWatch como sistema central, con el que interactúan do
 
 En esta sección se presenta el diagrama de contenedores de TechWatch, correspondiente al segundo nivel del modelo C4. Este diagrama descompone el sistema en sus contenedores principales, mostrando las aplicaciones y servicios que lo conforman, las tecnologías utilizadas en cada uno y la forma en que se comunican entre sí.
 
-![Containers Key](/assets/images/c4-containers-key.png)
+![Containers Key](./assets/images/c4-containers-key.png)
 
-![Software Architecture Container Diagram](/assets/images/container-diagram.png)
+![Software Architecture Container Diagram](./assets/images/container-diagram.png)
 
 El sistema TechWatch está compuesto por cinco contenedores. La Landing Page es un sitio web estático desarrollado en HTML, CSS y JavaScript que presenta el modelo de negocio y redirige a los usuarios a la aplicación principal mediante calls-to-action. La Web Application es una SPA desarrollada en Angular que permite a los usuarios gestionar su inmueble y dispositivos, y visualizar el dashboard de métricas e insights. La Remote Control App es también una SPA Angular con diseño responsive, orientada al uso desde dispositivos móviles para simular la operación de los dispositivos. Ambas aplicaciones frontend se comunican con el RESTful API desarrollado en Spring Boot con Java, que contiene la lógica de negocio principal y se integra con el Servicio de Pagos para procesar suscripciones y con el Proveedor de Autenticación para validar el acceso de los usuarios. Finalmente, la base de datos PostgreSQL almacena toda la información persistente del sistema.
 
@@ -1002,64 +1061,64 @@ En esta sección se presentan los diagramas de componentes para cada uno de los 
 
 La RESTful API organiza sus componentes en cuatro Bounded Contexts. Device Management expone los controladores PropertyController y DeviceController, cada uno con su Service y Repository correspondiente. I am(Identity and access management) gestiona la autenticación y autorización de usuarios mediante AuthService; este contexto se integra con el proveedor externo de autenticación utilizando OAuth 2.0 y JWT para garantizar un acceso seguro a la plataforma; además, administra el inicio de sesión y registro. Profile administra la información personal y preferencias de los usuarios mediante ProfileController, ProfileService y ProfileRepository; este contexto permite actualizar datos de perfil, gestionar configuraciones de cuenta y personalizar la experiencia del usuario dentro de la plataforma. Analytics procesa las métricas mediante el AnalyticsService y genera reportes a través del ReportService. Subscriptions gestiona los planes del usuario mediante el SubscriptionService, que delega el procesamiento de pagos al PaymentComponent para su integración con el servicio externo. El AuthComponent es transversal a todos los Bounded Contexts y gestiona la autenticación mediante JWT.
 
-![Component API General Key](/assets/images/c4-components-api-general-key.png)
+![Component API General Key](./assets/images/c4-components-api-general-key.png)
 
-![API Component Diagram](/assets/images/component-diagram-api.png)
+![API Component Diagram](./assets/images/component-diagram-api.png)
 
 **API Analytics Diagram**
 
-![Component API Analytics Key](/assets/images/c4-components-api-analytics-key.png)
+![Component API Analytics Key](./assets/images/c4-components-api-analytics-key.png)
 
-![API Analytics Diagram](/assets/images/component-diagram-api-analytics.png)
+![API Analytics Diagram](./assets/images/component-diagram-api-analytics.png)
 
 **API Device Management Diagram**
 
-![Component API Device Management Key](/assets/images/c4-components-api-device-management-key.png)
+![Component API Device Management Key](./assets/images/c4-components-api-device-management-key.png)
 
-![API Device Management Diagram](/assets/images/component-diagram-api-device-management.png)
+![API Device Management Diagram](./assets/images/component-diagram-api-device-management.png)
 
 **API I am Diagram**
 
-![Component API Simulation Key](/assets/images/c4-components-api-simulation-key.png)
+![Component API Simulation Key](./assets/images/c4-components-api-simulation-key.png)
 
-![API Simulation Diagram](/assets/images/component-diagram-api-simulation.png)
+![API Simulation Diagram](./assets/images/component-diagram-api-simulation.png)
 
 **API Profile Diagram**
 
-![Component API Simulation Key](/assets/images/c4-components-api-simulation-key.png)
+![Component API Simulation Key](./assets/images/c4-components-api-simulation-key.png)
 
-![API Simulation Diagram](/assets/images/component-diagram-api-simulation.png)
+![API Simulation Diagram](./assets/images/component-diagram-api-simulation.png)
 
 **API Subscriptions Diagram**
 
-![Component API Subscriptions Key](/assets/images/c4-components-api-subscription-key.png)
+![Component API Subscriptions Key](./assets/images/c4-components-api-subscription-key.png)
 
-![API Subscriptions Diagram](/assets/images/component-diagram-api-subscription.png)
+![API Subscriptions Diagram](./assets/images/component-diagram-api-subscription.png)
 
 **Landing Page Component Diagram**
 
 El Landing Page se compone de un NavBar y cinco secciones de contenido: HeroSection, FeaturesSection, PricingSection, AboutSection y ContactSection. El NavBar permite la navegación entre secciones. La HeroSection es el punto de entrada principal para ambos segmentos objetivo y contiene el call-to-action que redirige al usuario hacia la Web Application.
 
-![Component Landing Page Key](/assets/images/c4-components-landing-page-key.png)
+![Component Landing Page Key](./assets/images/c4-components-landing-page-key.png)
 
-![Landing Page Component Diagram](/assets/images/component-diagram-landing-page.png)
+![Landing Page Component Diagram](./assets/images/component-diagram-landing-page.png)
 
 
 **Remote Control App Component Diagram**
 
 La Remote Control App tiene una estructura más compacta orientada al uso móvil. Las vistas HomeView, DeviceControlView y SessionView cubren los flujos principales de simulación. Todas las operaciones de control de dispositivos y gestión de sesiones son delegadas al SimulationService, que consume los endpoints correspondientes de la RESTful API. El AuthService gestiona la autenticación del usuario de forma independiente al de la Web Application.
 
-![Component Remote App Key](/assets/images/c4-components-remote-app-key.png)
+![Component Remote App Key](./assets/images/c4-components-remote-app-key.png)
 
-![Remote App Component Diagram](/assets/images/component-diagram-remote-api.png)
+![Remote App Component Diagram](./assets/images/component-diagram-remote-api.png)
 
 **Web App Component Diagram**
 
 La Web Application sigue una arquitectura de separación entre vistas y servicios. Las vistas DashboardView, PropertyView, DeviceView, ReportsView y SubscriptionView representan las pantallas principales de la aplicación, cada una delegando sus operaciones a su servicio correspondiente. Los servicios PropertyService, DeviceService, AnalyticsService y SubscriptionService consumen los endpoints de la RESTful API via HTTPS/JSON. El AuthService gestiona la autenticación del usuario y el almacenamiento del token JWT.
 
-![Component Web App Key](/assets/images/c4-components-web-app-key.png)
+![Component Web App Key](./assets/images/c4-components-web-app-key.png)
 
-![Web App Component Diagram](/assets/images/component-diagram-webapp.png)
+![Web App Component Diagram](./assets/images/component-diagram-webapp.png)
 
 ## 4.7. Software Object-Oriented Design
 
@@ -1115,31 +1174,31 @@ A continuación se presentan los diagramas de base de datos para cada uno de los
 
 El diagrama de Device Management contiene cuatro tablas propias. La tabla users almacena la información de los usuarios registrados en la plataforma. La tabla properties representa los inmuebles registrados por cada usuario, con una relación de muchos a uno hacia users. La tabla spaces representa los espacios o ambientes dentro de cada inmueble, con una relación de muchos a uno hacia properties. Finalmente la tabla devices representa los dispositivos registrados en cada espacio, con una relación de muchos a uno hacia spaces. La cadena de relaciones refleja la jerarquía natural del dominio: un usuario tiene propiedades, cada propiedad tiene espacios y cada espacio tiene dispositivos.
 
-![Device Management ERD](/assets/images/device-management-erd.png)
+![Device Management ERD](./assets/images/device-management-erd.png)
 
 **I am**
 
 El diagrama de Simulation contiene tres tablas propias y tres tablas externas del Bounded Context Device Management. La tabla simulation_sessions registra cada sesión de uso simulado iniciada por un usuario para un inmueble específico, con referencias externas hacia users y properties. La tabla device_actions registra cada acción ejecutada sobre un dispositivo durante una sesión activa, con referencias hacia simulation_sessions y la tabla externa devices. La tabla usage_data almacena los datos de consumo generados por cada interacción con un dispositivo durante la sesión, con referencias hacia simulation_sessions y devices.
 
-![Simulation ERD](/assets/images/simulation-erd.png)
+![Simulation ERD](./assets/images/simulation-erd.png)
 
 **Profile**
 
 El diagrama de Simulation contiene tres tablas propias y tres tablas externas del Bounded Context Device Management. La tabla simulation_sessions registra cada sesión de uso simulado iniciada por un usuario para un inmueble específico, con referencias externas hacia users y properties. La tabla device_actions registra cada acción ejecutada sobre un dispositivo durante una sesión activa, con referencias hacia simulation_sessions y la tabla externa devices. La tabla usage_data almacena los datos de consumo generados por cada interacción con un dispositivo durante la sesión, con referencias hacia simulation_sessions y devices.
 
-![Simulation ERD](/assets/images/simulation-erd.png)
+![Simulation ERD](./assets/images/simulation-erd.png)
 
 **Analytics**
 
 El diagrama de Analytics contiene cuatro tablas propias y tres tablas externas del Bounded Context Device Management. La tabla metrics almacena los valores calculados a partir de los datos de uso, referenciando externamente a devices y properties. La tabla consumption_reports representa los reportes de consumo generados para un período determinado, con referencias externas hacia properties y users. La tabla report_items detalla el consumo por dispositivo dentro de cada reporte, con referencias hacia consumption_reports y la tabla externa devices. La tabla consumption_alerts almacena las alertas disparadas automáticamente cuando el consumo supera un umbral definido, referenciando externamente a devices, properties y users.
 
-![Analytics ERD](/assets/images/analytics-erd.png)
+![Analytics ERD](./assets/images/analytics-erd.png)
 
 **Subscriptions**
 
 El diagrama de Subscriptions contiene tres tablas propias y una tabla externa del Bounded Context Device Management. La tabla plans almacena los planes de suscripción disponibles en la plataforma, con sus características y precio representados como columnas aplanadas desde los Value Objects PlanFeatures y Money respectivamente. La tabla subscriptions representa la suscripción activa de cada usuario a un plan determinado, con referencias hacia users como tabla externa y hacia plans. La tabla payments registra cada transacción de pago asociada a una suscripción, con referencia hacia subscriptions.
 
-![Subscriptions ERD](/assets/images/subscriptions-erd.png)
+![Subscriptions ERD](./assets/images/subscriptions-erd.png)
 
 ---
 
@@ -1413,6 +1472,7 @@ La coordinación se realizó mediante WhatsApp y reuniones por Google Meet, mien
 
 Organización del equipo en GitHub:  
 [https://github.com/upc-pre-202610-1asi0729-11896-techwatch](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
+
 ![Captura ](assets/images/5218img1.png)
 ---
 
