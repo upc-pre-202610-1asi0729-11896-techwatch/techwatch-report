@@ -872,6 +872,8 @@ Se adopta una estética limpia que facilita la visualización de métricas e ins
 
 ### Paleta de colores:
 
+La identidad visual de TechWatch utilizará tonos azules, neutros y colores suaves para transmitir tecnología, confianza y simplicidad. La paleta visual buscará mantener una experiencia limpia y moderna enfocada en monitoreo, análisis y control inteligente del hogar.
+
 * Color primario: *Azul moderno (#2563EB)* utilizado en botones principales, elementos interactivos y acciones destacadas, transmitiendo confianza, tecnología y simplicidad visual.
 
 * Color secundario: *Azul suave (#60A5FA)* empleado en estados hover, enlaces y componentes secundarios para mantener una estética minimalista y consistente.
@@ -896,18 +898,152 @@ Se adopta una estética limpia que facilita la visualización de métricas e ins
 
 
 ### 4.1.2. Web Style Guidelines
-Las interfaces web de TechWatch seguirán lineamientos consistentes orientados a la usabilidad y accesibilidad.
 
-**Componentes principales:**
+### Colors
+La experiencia web de TechWatch utiliza una paleta minimalista basada en tonos azules y neutros suaves para mantener claridad visual y consistencia entre dashboards, formularios y componentes interactivos. Los colores fueron seleccionados para priorizar legibilidad, accesibilidad y una experiencia enfocada en monitoreo y análisis inteligente del hogar.
 
-* Botones: Colores sólidos con contraste alto y estados hover.
-* Tarjetas (Cards): Contenedores con fondo oscuro y bordes redondeados para agrupar información.
-* Inputs: Estilo minimalista con bordes suaves y enfoque en legibilidad.
-* Dashboards: Uso de gráficos claros, con énfasis en tendencias y métricas clave.
+| Elemento | Color | Código Hex | Uso |
+|---|---|---|---|
+| Primary Blue | Azul principal | #2563EB | Botones principales, acciones destacadas y navegación activa |
+| Secondary Blue | Azul secundario | #60A5FA | Hover, links y elementos secundarios |
+| Accent Blue | Azul de apoyo | #DBEAFE | Fondos suaves, highlights y elementos informativos |
+| Background | Fondo principal | #F5F7FA | Fondo general de la interfaz |
+| Surface | Superficie | #FFFFFF | Cards, formularios y contenedores |
+| Border | Bordes | #E5E7EB | Divisiones y bordes de componentes |
+| Title Text | Texto principal | #1F2937 | Títulos y encabezados |
+| Body Text | Texto secundario | #6B7280 | Descripciones y labels |
+| Success | Éxito | #10B981 | Métricas positivas y ahorro energético |
+| Warning | Advertencia | #F59E0B | Alertas moderadas |
+| Error | Error | #EF4444 | Errores y alertas críticas |
 
-**Responsive Design:**
-El sistema será diseñado bajo un enfoque mobile-first, adaptándose a diferentes resoluciones, considerando la alta penetración del uso de smartphones en el contexto peruano.
+![Colors](./assets/images/chapter-4-1-2-img1.png)
+
+### Typography
+
+La tipografía de TechWatch fue seleccionada con el objetivo de mantener una experiencia visual moderna, minimalista y altamente legible dentro de dashboards, formularios y componentes interactivos. Se prioriza una jerarquía tipográfica clara para facilitar la lectura de métricas, insights y estados relacionados con el monitoreo inteligente del hogar.
+
+La plataforma utilizará principalmente la fuente **Roboto**, debido a su estilo limpio y excelente adaptabilidad en interfaces web modernas. Como fuentes complementarias se emplearán **Inter** y **Segoe UI**, garantizando consistencia visual y compatibilidad entre distintos dispositivos y sistemas operativos.
+
+| Tipo | Fuente | Uso |
+|---|---|---|
+| Primary Font | Roboto | Títulos, encabezados y componentes principales |
+| Secondary Font | Inter | Interfaces, tablas y contenido secundario |
+| Fallback Font | Segoe UI, sans-serif | Compatibilidad multiplataforma |
+
+| Estilo | Peso | Uso |
+|---|---|---|
+| Heading 1 | Bold 700 | Títulos principales |
+| Heading 2 | SemiBold 600 | Encabezados de sección |
+| Heading 3 | Medium 500 | Subtítulos y cards |
+| Body Large | Regular 400 | Texto descriptivo |
+| Body Small | Light 300 | Labels y texto secundario |
+| Button Text | Medium 500 | Botones y acciones |
+
+![Typography](./assets/images/chapter-4-1-2-img2.png)
+
+
+### Icons
+
+Los íconos de TechWatch fueron seleccionados para complementar la experiencia visual minimalista y moderna de la plataforma. Su objetivo es facilitar la identificación rápida de funcionalidades relacionadas con monitoreo, control inteligente, consumo energético y navegación dentro del sistema.
+
+Se utilizarán íconos lineales y simples, evitando elementos visuales recargados para mantener consistencia con la identidad visual de dashboards modernos y aplicaciones SaaS. Asimismo, los íconos permitirán mejorar la comprensión de métricas, estados de dispositivos, alertas y acciones principales dentro de la interfaz.
+
+La plataforma priorizará el uso de íconos claros, reconocibles y accesibles, asegurando una experiencia intuitiva tanto en escritorio como en dispositivos móviles.
+
+| Categoría | Ejemplos de uso |
+|---|---|
+| Navigation Icons | Sidebar, menú principal y navegación |
+| Device Icons | Dispositivos inteligentes y estados |
+| Analytics Icons | Métricas, dashboards y reportes |
+| Alert Icons | Advertencias, errores y notificaciones |
+| Action Icons | Editar, eliminar, guardar y configurar |
+| Profile Icons | Usuario, autenticación y configuraciones |
+
+Para mantener consistencia visual, se utilizarán librerías modernas de íconos como Material Symbols o Lucide Icons, adaptadas al estilo minimalista de la plataforma.
+
+![Icons](./assets/images/chapter-4-1-2-img3.png)
+
+### Spacing
+
+El sistema de espaciado de TechWatch fue diseñado para mantener una interfaz limpia, ordenada y fácil de comprender dentro de dashboards, formularios y componentes interactivos. La distribución consistente de espacios permite mejorar la jerarquía visual, reducir la sobrecarga de información y facilitar la navegación dentro de la plataforma.
+
+Se utilizará un sistema de spacing basado en múltiplos de 8 px, permitiendo mantener alineación y consistencia visual entre tarjetas, tablas, botones y elementos de navegación tanto en escritorio como en dispositivos móviles.
+
+| Espaciado | Uso |
+|---|---|
+| 4 px | Separaciones mínimas y elementos compactos |
+| 8 px | Espaciado base entre componentes pequeños |
+| 16 px | Separación estándar entre cards y formularios |
+| 24 px | Espaciado entre secciones y grupos de contenido |
+| 32 px | Márgenes amplios y separación principal de layouts |
+| 48 px+ | Secciones destacadas y dashboards principales |
+
+El uso consistente del spacing permitirá mantener una experiencia visual moderna, minimalista y enfocada en la claridad de métricas, estados y funcionalidades relacionadas con Smart Homes.
+
+![Spacing](./assets/images/chapter-4-1-2-img4.png)
+
+### Buttons
+
+Los botones de TechWatch fueron diseñados bajo un enfoque minimalista y moderno, priorizando claridad visual y facilidad de interacción dentro de dashboards, formularios y controles inteligentes del hogar. Se utilizarán estilos consistentes para mantener una experiencia intuitiva y accesible en toda la plataforma.
+
+Los botones principales emplearán tonos azules para destacar acciones importantes, mientras que las variantes secundarias y outline permitirán mantener jerarquía visual sin generar sobrecarga en la interfaz.
+
+Asimismo, los estados hover, focus y disabled ayudarán a comunicar claramente la interacción disponible para el usuario.
+
+| Tipo de botón | Uso |
+|---|---|
+| Primary Button | Acciones principales como guardar, conectar o confirmar |
+| Secondary Button | Acciones complementarias y navegación secundaria |
+| Outline Button | Acciones opcionales o de menor prioridad |
+| Icon Button | Acciones rápidas dentro de dashboards y tablas |
+| Danger Button | Eliminación y acciones críticas |
+| Disabled Button | Estados no disponibles temporalmente |
+
+| Estado | Comportamiento |
+|---|---|
+| Default | Estado normal del botón |
+| Hover | Resalta interacción disponible |
+| Focus | Indica selección activa |
+| Disabled | Reduce énfasis visual y bloquea interacción |
+
+Los botones mantendrán bordes redondeados, espaciado consistente y una jerarquía visual clara para alinearse con la identidad minimalista de TechWatch.
+
+![Buttons](./assets/images/chapter-4-1-2-img5.png)
+
+### Input System
+
+El sistema de inputs de TechWatch fue diseñado para ofrecer una experiencia de usuario clara, consistente e intuitiva dentro de formularios, configuraciones y controles relacionados con dispositivos inteligentes. Los campos de entrada priorizan legibilidad, simplicidad visual y facilidad de interacción tanto en escritorio como en dispositivos móviles.
+
+Los inputs mantendrán una estructura minimalista con bordes suaves, espaciado uniforme y estados visuales claros para comunicar interacción, validación y errores sin generar sobrecarga visual en la interfaz.
+
+Asimismo, se empleará una jerarquía visual consistente entre labels, placeholders, mensajes de ayuda y validaciones para mejorar la comprensión de formularios y configuraciones dentro de la plataforma.
+
+| Tipo de input | Uso |
+|---|---|
+| Text Input | Ingreso de nombres, espacios y configuraciones |
+| Search Input | Búsqueda de dispositivos y métricas |
+| Password Input | Autenticación y seguridad |
+| Select Input | Selección de categorías y opciones |
+| Toggle Switch | Activación y desactivación de dispositivos |
+| Date Picker | Filtros de reportes y métricas |
+| Text Area | Comentarios y descripciones amplias |
+
+| Estado | Comportamiento |
+|---|---|
+| Default | Estado normal del campo |
+| Focus | Resalta interacción activa |
+| Filled | Campo con contenido ingresado |
+| Success | Validación correcta |
+| Error | Error de validación |
+| Disabled | Campo deshabilitado |
+
+Los inputs utilizarán colores neutros, bordes redondeados y una jerarquía visual clara para alinearse con la identidad minimalista y moderna de TechWatch.
+
+![Input System](./assets/images/chapter-4-1-2-img6.png)
+
+
 ## 4.2. Information Architecture
+
 La arquitectura de información de TechWatch está diseñada para organizar el contenido de forma clara, intuitiva y centrada en el usuario, permitiendo una navegación eficiente tanto en el Landing Page como en la Web Application.
 
 ### 4.2.1. Organization Systems
