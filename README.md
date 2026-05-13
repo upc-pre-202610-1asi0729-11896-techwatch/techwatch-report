@@ -1167,36 +1167,36 @@ La navegación responsive permitirá adaptar la experiencia tanto en escritorio 
 
 ## 4.3. Landing Page UI Design
 
-El diseño de la interfaz del Landing Page traduce la arquitectura de información en una experiencia visual clara, moderna y centrada en la conversión del usuario.
-
-Se prioriza:
-- Jerarquía visual
-- Uso consistente de colores
-- Componentes reutilizables
-- Diseño responsive
-
+El diseño de la Landing Page de TechWatch fue desarrollado bajo un enfoque minimalista, moderno y orientado a la claridad visual. La interfaz busca transmitir innovación, confianza y simplicidad mediante el uso de dashboards limpios, jerarquía visual clara y componentes consistentes. Asimismo, la estructura de la página está organizada para guiar intuitivamente a los visitantes a través de la propuesta de valor, funcionalidades y beneficios relacionados con el monitoreo y control inteligente del hogar.
 
 ### 4.3.1. Landing Page Wireframe
 
 ### Wireframes
 
-- Hero: Presenta la propuesta de valor principal
-  ![Wireframe 1](./assets/images/431img1.png)
--
-- Features: Organización en tarjetas
+**Hero Section**: La sección principal presentará una imagen representativa de Smart Homes y monitoreo inteligente junto con un mensaje que refleje la propuesta de valor de TechWatch, destacando el control, análisis y optimización energética del hogar mediante dashboards interactivos y dispositivos conectados.
 
-![Wireframe 2](./assets/images/431img2.png)
 
-- Pricing: Comparación de planes
+  ![Wireframe 1](./assets/images/chapter-4-3-1-img1.png)
 
-![Wireframe 3](./assets/images/431img3.png)
-- Contact: Formulario accesible
--
-![Wireframe 4](./assets/images/431img4.png)
+**Features Section**: La sección mostrará las principales funcionalidades de la plataforma mediante tarjetas organizadas visualmente, destacando monitoreo de dispositivos, dashboards analíticos, control remoto, alertas inteligentes y reportes de consumo energético.
 
-![Wireframe 5](./assets/images/431img5.png)
+![Wireframe 2](./assets/images/chapter-4-3-1-img2.png)
 
-![Wireframe 6](./assets/images/431img6.png)
+**About Us Section**: La sección presentará información sobre la startup TechWatch, incluyendo misión, visión y propósito del proyecto, acompañada de elementos visuales relacionados con tecnología, IoT y hogares inteligentes.
+
+![Wireframe 3](./assets/images/chapter-4-3-1-img3.png)
+
+**Pricing Section**: La sección mostrará una comparación visual de planes de suscripción, permitiendo a los usuarios identificar fácilmente las funcionalidades incluidas en los planes gratuitos y premium.
+
+![Wireframe 4](./assets/images/chapter-4-3-1-img4.png)
+
+**Testimonials Section**: La sección incluirá comentarios y opiniones de usuarios sobre la experiencia con la plataforma, resaltando beneficios relacionados con monitoreo, ahorro energético y facilidad de uso.
+
+![Wireframe 5](./assets/images/chapter-4-3-1-img5.png)
+
+**Contact Section**: La sección contará con un formulario accesible e intuitivo que permitirá a los usuarios comunicarse con TechWatch para resolver dudas, solicitar información o recibir soporte relacionado con la plataforma.
+
+![Wireframe 6](./assets/images/chapter-4-3-1-img6.png)
 
 ### 4.3.2. Landing Page Mock-up
 
