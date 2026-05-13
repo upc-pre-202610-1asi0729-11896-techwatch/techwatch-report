@@ -1725,12 +1725,22 @@ Referencia: [Gherkin conventions](https://specflow.org/gherkin/gherkin-conventio
 
 ### 5.1.4. Software Deployment Configuration
 
-Para la configuración de despliegue del proyecto se usa Git + GitHub:
+En esta sección se detallan las herramientas y configuraciones consideradas para el despliegue de los proyectos incluidos en TechWatch, incluyendo Landing Page, Web Application, Backend Web Services y Base de Datos.
 
-- **Git** permite versionar cambios, crear ramas de trabajo y fusionar avances de forma controlada.
-- **GitHub** aloja repositorios remotos, centraliza revisión de código con pull requests y conserva historial completo de versiones.
+- **Landing Page:**  
+  La Landing Page fue desarrollada utilizando HTML, CSS y JavaScript. Para su despliegue se utilizó Railway, plataforma que permitió publicar el sitio web y mantener integración con el repositorio de GitHub para facilitar la actualización continua del contenido y despliegue de nuevas versiones.
 
-El flujo de despliegue toma el código alojado en **GitHub** (rama publicable acordada por el equipo) y publica el sitio en **Railway** mediante *build* y *deploy* conectado al repositorio. Cada integración a la rama desplegada pasa por validación básica en *staging* o revisión de *PR* según se defina con el cierre de *sprint*, de modo que la versión pública de la *Landing Page* [https://landing-page-production-8095.up.railway.app](https://landing-page-production-8095.up.railway.app) corresponde a *commits* rastreables.
+- **Frontend Web Application:**  
+  La Web Application fue desarrollada en Angular con TypeScript. Para su despliegue se utilizaron plataformas como Azure y Vercel, permitiendo publicar la aplicación web compilada y mantener acceso público a la solución. Estas herramientas facilitan el despliegue continuo desde GitHub y permiten actualizar la aplicación conforme se integran nuevos cambios en el repositorio.
+
+- **Backend Web Services:**  
+  El backend fue desarrollado en Java, siguiendo una arquitectura orientada a servicios REST. Para su despliegue se consideraron plataformas como Azure, Railway y Render, ya que permiten alojar servicios backend, configurar variables de entorno y conectar la aplicación con la base de datos PostgreSQL.
+
+- **Base de Datos:**  
+  Para la persistencia de datos se utiliza PostgreSQL. La base de datos puede ser desplegada en Railway, plataforma que permite provisionar una instancia PostgreSQL, gestionar credenciales de conexión y administrar variables de entorno necesarias para la comunicación con el backend.
+
+- **Control de versiones y despliegue:**  
+  GitHub fue utilizado como repositorio principal para gestionar el código fuente, ramas de desarrollo, pull requests y versiones del proyecto. Además, permitió integrar los repositorios con las plataformas de despliegue para facilitar la publicación de la Landing Page, Web Application y Backend.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
@@ -1746,8 +1756,6 @@ El flujo de despliegue toma el código alojado en **GitHub** (rama publicable ac
 | Location | Virtual (Google Meet) |
 | Prepared By | Alva Abanto, Luis Andrés |
 | Attendees (to planning meeting) | Alva Abanto, Luis Andrés; Toro Turpo, Ronal; Montalvo Vásquez, Bruno Rodrigo; Fernandez Garfias, Alexander Piero; Becerra Durand, Sebastian Uriel |
-| Sprint 0 Review Summary | No hubo sprint anterior. |
-| Sprint 0 Retrospective Summary | No hubo sprint anterior. |
 | **Sprint Goal & User Stories** | |
 | Sprint 1 Goal | Entregar la *Landing Page* pública (secciones informativas, CTA, *pricing*, contacto, *about*, testimonios, *login* y *registro* estáticos, *i18n* EN/ES, *demo* “Try it right now!”, *responsive*) alineada a las *User Stories* 3.1: US11, US12, US13, US14, US06, US22, US01, US02, US04. |
 | Sprint 1 Velocity | 20 |
