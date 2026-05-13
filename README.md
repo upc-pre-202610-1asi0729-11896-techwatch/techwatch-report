@@ -2027,7 +2027,7 @@ El frontend fue desarrollado con Angular y desplegado en [plataforma de desplieg
 GitHub (código) → [Plataforma] (build + hosting) → [URL pública del frontend]
 ```
 
-**URL pública del Frontend:** [Deploy Frontend](https://github.com/)
+**URL pública del Frontend:** [frontend-tech-black.vercel.app](https://frontend-tech-black.vercel.app)
 
 ![Frontend Deploy](assets/images/chapter-5-2-2-7-img1.png)
 
@@ -2049,11 +2049,11 @@ Organización del equipo en GitHub:
 
 [https://github.com/upc-pre-202610-1asi0729-11896-techwatch](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
 
-![JSON Server](assets/images/chapter-5-2-2-8-img1.png)
+![commits](assets/images/chapter-5-2-2-8-img1.png)
 
-![JSON Server](assets/images/chapter-5-2-2-8-img2.png)
+![commits](assets/images/chapter-5-2-2-8-img2.png)
 
-![JSON Server](assets/images/chapter-5-2-2-8-img3.png)
+![commits](assets/images/chapter-5-2-2-8-img3.png)
 
 
 ---
