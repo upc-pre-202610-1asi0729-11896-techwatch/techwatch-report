@@ -1368,7 +1368,7 @@ Como usuario, quiero visualizar métricas y reportes de consumo energético para
 A partir de los wireframes, wireflows y user flows definidos en las secciones anteriores, se desarrolló el prototipo funcional de la Web Application de TechWatch utilizando Figma. El prototipo permite visualizar la interacción entre las distintas pantallas relacionadas con autenticación, gestión de dispositivos, monitoreo y análisis energético, manteniendo una interfaz moderna, minimalista y alineada con la identidad visual de la plataforma.
 Figma Prototype:
 
-[Prototipo Web Application - TechWatch](https://www.figma.com/)
+[Prototipo Web Application - TechWatch](https://www.figma.com/design/PDG6qhxJpnzelVaEg62a2e/TechWatch-Figma?node-id=0-1&t=UbF3SjkaZBAef0eo-1)
 
 
 ## 4.6. Domain-Driven Software Architecture
