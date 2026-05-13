@@ -12,14 +12,11 @@
 <h3 align="center">Nombre del Profesor: Efraín Ricardo Bautista Ubillús</h3>
 
 
----
+
 
 <h1 align="center">Informe de Trabajo Final</h1>
-
 <h2 align="center">TechWatch</h2>
 <h2 align="center">IntelliHome</h2>
-
-
 
 <h3 align="center">Integrantes</h3>
 
@@ -37,7 +34,7 @@
 
 <h3 align="center">Año : 2026</h3>
 
----
+
 <h2 align="center">Registro de Versiones del Informe</h2>
 
 
@@ -52,7 +49,6 @@
 URL de la organizacion  del Project Report en GitHub:
 [https://github.com/techwatch-upc/Project](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
 
----
 
 ## Contenido
 
