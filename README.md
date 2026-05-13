@@ -1625,20 +1625,39 @@ Este enfoque facilitó la comunicación entre integrantes técnicos y no técnic
 **URL de organización en GitHub:**  
 [https://github.com/upc-pre-202610-1asi0729-11896-techwatch](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
 
-**Repositorio público de la Landing Page (código y tablero de *issues*):**  
-[https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page)
+**Repositorio público del report :**  
+[Report - TechWatch](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report)
 
-Cada integrante se autenticó con su propia cuenta de GitHub (tabla *Usuarios de GitHub*) y comprobó **git config user.name** / **user.email** antes de subir *commits*.
+**Repositorio público de la Landing Page :**  
+[Landing - Page-TechWatch](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page)
 
-#### Estrategia de ramas
+**Repositorio público del Frontend :**  
+[Frontend - TechWatch](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Frontend-Tech)
 
-Para el **Sprint 1 (Landing Page)** se trabajó principalmente en la rama **`tb01`**, donde se registran los avances (header, secciones, *login*/*i18n*, *responsive*). El flujo de integración con el repositorio es:
+**Repositorio público del Backend :**  
+[Backend - TechWatch](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/backend.git)
 
-- **`main`:** versión estable, base para publicación o integración con el proveedor de *hosting*.
-- **`develop` (o equivalente de integración):** puede recibir *merge* desde ramas de *feature* cuando se validen revisiones.
-- **`tb01`:** rama de trabajo colaborativa del *team*; los *commits* listados en la sección 5.2.1.4 se realizan sobre ella, con revisiones y *pull requests* hacia `main` o `develop` según cierre de *sprint*.
+Para el desarrollo del proyecto TechWatch se utilizó GitFlow como modelo de flujo de trabajo para la gestión de control de versiones mediante Git. Este enfoque permitió mantener una estructura organizada durante el desarrollo colaborativo de la Landing Page y de la Web Application, facilitando la integración de funcionalidades, control de cambios y despliegue del sistema.
 
-Las *pull requests* y el historial de *commits* permiten auditar quién integró cada parte del *frontend* y mantener coherencia con las historias de usuario priorizadas en el *Product Backlog* (capítulo 3.1).
+Las ramas utilizadas dentro del proyecto fueron las siguientes:
+
+- **Rama Main:**  
+  Contiene la versión estable y oficial más reciente del proyecto. Esta rama representa el estado productivo de la aplicación y almacena las versiones desplegadas de manera oficial.
+
+- **Rama Develop:**  
+  Funciona como rama principal de integración durante el desarrollo. En esta rama se fusionan las distintas funcionalidades desarrolladas en las ramas feature antes de pasar a despliegue o liberación final.
+
+- **Ramas Feature:**  
+  Cada funcionalidad específica del sistema se desarrolla en una rama independiente basada en develop. Estas ramas permiten trabajar de forma aislada sobre módulos como autenticación, gestión de dispositivos, analytics, perfiles y suscripciones, evitando afectar la estabilidad general del proyecto. Algunos ejemplos utilizados fueron feature/device-management, feature/analytics y feature/iam.
+
+- **Ramas Deploy:**  
+  Se utilizaron ramas específicas orientadas a configuraciones y despliegues del sistema en distintas plataformas. Estas ramas permitieron mantener separadas las configuraciones relacionadas con infraestructura y hosting. Algunos ejemplos utilizados fueron deploy/firebase y deploy/azure.
+
+Este flujo de trabajo permitió mantener trazabilidad de cambios, integración ordenada de funcionalidades y un mejor control sobre las versiones desplegadas durante el desarrollo del proyecto.
+
+
+![Git Flow](./assets/images/chapter-5-1-2-img1.png)
+
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
