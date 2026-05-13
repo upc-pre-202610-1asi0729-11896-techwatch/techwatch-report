@@ -1390,7 +1390,13 @@ El sistema TechWatch está compuesto por cinco contenedores. La Landing Page es 
 
 ### 4.6.4. Software Architecture Components Diagrams
 
-En esta sección se presentan los diagramas de componentes para cada uno de los contenedores que conforman TechWatch, elaborados siguiendo el tercer nivel del modelo C4. Cada diagrama descompone un contenedor en sus bloques estructurales principales, mostrando las responsabilidades de cada componente, sus tecnologías de implementación y las interacciones entre ellos. La organización interna de la RESTful API sigue los Bounded Contexts identificados en el Design-Level Event Storming: Device Management, Analytics, I am, Profile y Subscriptions. Los contenedores frontend siguen una arquitectura basada en la separación entre vistas y servicios, característica del framework Angular.
+En esta sección se presentan los diagramas de componentes para cada uno de los contenedores que conforman TechWatch, elaborados siguiendo el tercer nivel del modelo C4. Cada diagrama descompone un contenedor en sus bloques estructurales principales, mostrando las responsabilidades de cada componente, sus tecnologías de implementación y las interacciones entre ellos.
+
+La organización interna de la RESTful API sigue los Bounded Contexts identificados durante el Design-Level Event Storming: Device Management, Analytics, Payment, IAM y Profile. Los contextos Device Management, Analytics y Payment representan el núcleo funcional del sistema, ya que están relacionados directamente con el control de dispositivos inteligentes, monitoreo del hogar y optimización del consumo energético. Por otro lado, IAM y Profile cumplen funciones transversales y de soporte relacionadas con autenticación, autorización y configuración de usuario.
+
+Asimismo, la arquitectura interna de cada Bounded Context sigue los principios de Domain-Driven Design y Clean Architecture, separando responsabilidades en capas Presentation, Application, Domain e Infrastructure. Los contenedores frontend siguen una arquitectura basada en la separación entre vistas y servicios, característica del framework Angular.
+
+
 
 **API Component General Diagram**
 
@@ -1438,46 +1444,64 @@ La Web Application sigue una arquitectura de separación entre vistas y servicio
 
 ![Web App Component Diagram](./assets/images/component-diagram-webapp.png)
 
+
+
 ## 4.7. Software Object-Oriented Design
 
-En esta sección se presenta el diseño orientado a objetos de los componentes de TechWatch, aplicando los principios de Domain-Driven Design. Se incluyen los diagramas de clases UML para cada Bounded Context identificado en el Design-Level Event Storming, detallando las entidades, agregados, repositorios, servicios y enumeraciones que conforman el modelo del dominio.
+En esta sección se presenta el diseño orientado a objetos de los componentes de TechWatch, aplicando los principios de Domain-Driven Design y Clean Architecture. Se incluyen los diagramas de clases UML para cada Bounded Context identificado durante el Design-Level Event Storming, detallando entidades, agregados, Value Objects, repositorios y servicios que conforman el modelo del dominio.
+
+Asimismo, los diagramas consideran la separación de responsabilidades en capas Domain, Application, Infrastructure y Presentation. Para evitar el uso de datos primitivos dentro del dominio, las entidades emplean Value Objects que representan conceptos propios del negocio, como DeviceId, DeviceName, EnergyConsumption, Money, EmailAddress y ProfileName.
 
 
 ### 4.7.1. Class Diagrams
 
-A continuación se presentan los diagramas de clases UML para cada Bounded Context. Cada diagrama incluye las clases con sus atributos, métodos y visibilidad, así como las relaciones entre ellas con su multiplicidad y dirección. Se aplican los estereotipos estándar de Domain-Driven Design para distinguir entre Aggregate Roots, Entities, Value Objects, Repositories y Services.
+A continuación se presentan los diagramas de clases UML organizados por Bounded Context. Cada diagrama incluye clases, relaciones, multiplicidad y responsabilidades dentro de la arquitectura del sistema. Los contextos Device Management, Analytics y Payment representan el núcleo funcional de TechWatch, mientras que IAM y Profile cumplen funciones transversales relacionadas con autenticación y personalización del usuario.
 
-**Device Management**
+#### Device Management
 
-El diagrama de clases del Bounded Context Device Management define tres entidades principales. Property actúa como Aggregate Root y representa el inmueble registrado por el usuario, al cual se asocian uno o más espacios mediante una relación de composición. Space representa cada ambiente del inmueble y contiene a su vez uno o más dispositivos. Device representa cada dispositivo inteligente registrado en un espacio, con atributos como tipo y estado gestionados mediante las enumeraciones DeviceType y DeviceStatus. Los repositorios PropertyRepository y DeviceRepository definen las interfaces de acceso a datos para sus respectivos agregados, mientras que PropertyService y DeviceService encapsulan la lógica de negocio del contexto.
+El diagrama de clases del Bounded Context Device Management define las estructuras relacionadas con la gestión y control de dispositivos inteligentes dentro del hogar. Property actúa como Aggregate Root y representa el inmueble registrado por el usuario, asociado a uno o más Space mediante una relación de composición. Cada Space representa un ambiente específico del hogar y contiene múltiples Device.
 
-![class-diagram-device-management](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-device-management.puml)
+Device representa cada dispositivo inteligente registrado dentro del sistema, utilizando Value Objects como DeviceId, DeviceName, DeviceType, DeviceStatus y PowerWatts para evitar el uso de datos primitivos y modelar correctamente las reglas del dominio. PropertyRepository y DeviceRepository definen las interfaces de persistencia de los agregados, mientras que PropertyService y DeviceService encapsulan la lógica de negocio relacionada con gestión y control de dispositivos.
 
-**I am**
+![Class Diagram Device Management](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-device-management.puml)
+
+#### Analytics
+
+El diagrama de clases del Bounded Context Analytics define las clases responsables del procesamiento de métricas, generación de reportes y monitoreo de consumo energético. Metric actúa como Aggregate Root y representa una medición calculada a partir de los datos de uso de los dispositivos inteligentes.
+
+ConsumptionReport representa reportes generados para períodos específicos y se compone de múltiples ReportItem que detallan el consumo por dispositivo. ConsumptionAlert representa alertas disparadas automáticamente cuando determinadas métricas superan umbrales definidos. El contexto utiliza Value Objects como MetricId, EnergyConsumption, ConsumptionPeriod y AlertThreshold para modelar correctamente el dominio analítico.
+
+AnalyticsService encapsula la lógica relacionada con cálculo de métricas, generación de insights y administración de alertas, mientras que ReportService se encarga de generar reportes automáticos y bajo demanda.
+
+![Class Diagram Analytics](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-analytics.puml)
+
+#### Payment
+
+El diagrama de clases del Bounded Context Payment define las estructuras relacionadas con suscripciones, planes premium y procesamiento de pagos. Subscription actúa como Aggregate Root y representa la suscripción activa de un usuario dentro de la plataforma.
+
+Plan representa cada modalidad de acceso disponible, utilizando Value Objects como PlanId, PlanName, PlanFeatures, Money y BillingPeriod para representar características del dominio sin recurrir a datos primitivos. Payment registra las transacciones asociadas a una suscripción, gestionando su estado mediante PaymentStatus.
+
+SubscriptionService encapsula la lógica de negocio relacionada con creación, actualización y cancelación de suscripciones, mientras que PaymentComponent actúa como puente de integración hacia servicios externos de pago.
+
+![Class Diagram Payment](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-subscriptions.puml)
+
+#### IAM
+
+El diagrama de clases del Bounded Context IAM (Identity and Access Management) define las estructuras responsables de autenticación, autorización y control de acceso dentro de la plataforma. Este contexto cumple una función transversal para garantizar seguridad y acceso controlado a los distintos módulos de TechWatch.
+
+UserCredential representa las credenciales del usuario mediante Value Objects como UserId, EmailAddress, PasswordHash y AccessRole. AuthService encapsula la lógica relacionada con inicio de sesión, registro y validación de tokens JWT, integrándose con proveedores externos mediante OAuth 2.0.
+
+![Class Diagram IAM](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-simulation.puml)
+
+#### Profile
+
+El diagrama de clases del Bounded Context Profile define las estructuras relacionadas con la información personal y preferencias del usuario dentro de la plataforma. Este contexto permite personalizar la experiencia del usuario y administrar configuraciones relacionadas con la cuenta.
+
+UserProfile representa el perfil del usuario utilizando Value Objects como ProfileId, FullName, ProfileImage y UserPreferences. ProfileRepository define las interfaces de persistencia relacionadas con información de perfil, mientras que ProfileService encapsula la lógica relacionada con actualización y configuración de preferencias de usuario.
+
+![Class Diagram Profile](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-simulation.puml)
 
 
-El diagrama de clases del Bounded Context Simulation define SimulationSession como Aggregate Root, que representa una sesión de uso simulado iniciada por el usuario. Cada sesión registra un conjunto de DeviceAction, que captura cada interacción realizada sobre un dispositivo durante la sesión, y genera UsageData, que almacena los datos de consumo producidos por cada interacción. El estado del ciclo de vida de la sesión se gestiona mediante la enumeración SessionStatus, mientras que DeviceActionType clasifica el tipo de acción ejecutada. El SimulationService encapsula la lógica de negocio para iniciar, gestionar y finalizar sesiones, así como para generar los datos de uso correspondientes.
-
-![class-diagram-simulation](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-simulation.puml)
-
-**Profile**
-
-
-El diagrama de clases del Bounded Context Simulation define SimulationSession como Aggregate Root, que representa una sesión de uso simulado iniciada por el usuario. Cada sesión registra un conjunto de DeviceAction, que captura cada interacción realizada sobre un dispositivo durante la sesión, y genera UsageData, que almacena los datos de consumo producidos por cada interacción. El estado del ciclo de vida de la sesión se gestiona mediante la enumeración SessionStatus, mientras que DeviceActionType clasifica el tipo de acción ejecutada. El SimulationService encapsula la lógica de negocio para iniciar, gestionar y finalizar sesiones, así como para generar los datos de uso correspondientes.
-
-![class-diagram-simulation](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-simulation.puml)
-
-**Analytics**
-
-El diagrama de clases del Bounded Context Analytics define Metric como Aggregate Root, que representa un valor calculado a partir de los datos de uso generados en Simulation. ConsumptionReport representa un reporte de consumo generado para un período determinado, compuesto por uno o más ReportItem que detallan el consumo por dispositivo. ConsumptionAlert representa una alerta disparada automáticamente cuando el valor de una métrica supera un umbral definido, clasificada por severidad mediante la enumeración AlertSeverity. AnalyticsService gestiona el cálculo de métricas y la generación de alertas, mientras que ReportService se encarga de la generación de reportes tanto automáticos como bajo demanda.
-
-![class-diagram-analytics](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-analytics.puml)
-
-**Subscriptions**
-
-El diagrama de clases del Bounded Context Subscriptions define Subscription como Aggregate Root, que representa la suscripción activa de un usuario a un plan determinado. Plan representa cada plan de suscripción disponible, con sus características encapsuladas en el Value Object PlanFeatures y su precio representado mediante el Value Object Money, aplicando así el principio de inmutabilidad propio de los Value Objects en DDD. Payment registra cada transacción de pago asociada a una suscripción, con su estado gestionado mediante la enumeración PaymentStatus. SubscriptionService encapsula la lógica de negocio para crear, actualizar y cancelar suscripciones, delegando el procesamiento de pagos al PaymentComponent, que actúa como puente hacia el servicio de pagos externo.
-
-![class-diagram-subscriptions](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-subscriptions.puml)
 
 ## 4.8. Database Design
 
