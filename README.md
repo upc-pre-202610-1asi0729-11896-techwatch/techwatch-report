@@ -1891,6 +1891,9 @@ La evidencia de colaboración incluye commits realizados por los integrantes, us
 
 ![Trello Sprint 1](assets/images/chapter-5-2-1-8-img1.png)
 
+Link del trello :
+
+https://trello.com/invite/b/69eabab8c6d017d12b30ef1a/ATTIb95191deca519b3139e11dc099fa0d2940C6069B/sprint-backlog-1-techwatch
 
 ### 5.2.2. Sprint 2
 
@@ -1986,6 +1989,9 @@ Durante el Sprint 2 se implementó la primera versión funcional del Frontend We
 Asimismo, los usuarios pueden visualizar información relacionada con el estado de los dispositivos, potencia energética en watts y métricas de consumo energético mediante dashboards y tablas interactivas. La aplicación consume información desde un JSON Server desplegado para simular persistencia y comunicación con servicios backend.
 
 La interfaz fue desarrollada utilizando Angular y TypeScript, manteniendo una experiencia responsive y consistente con los diseños, wireframes y mockups previamente definidos en Figma. Las funcionalidades implementadas durante este sprint se alinean con el objetivo principal de TechWatch: permitir el monitoreo, control y análisis energético de dispositivos inteligentes dentro del hogar.
+
+Comprobación en el navegador (producción): frontend-tech-black.vercel.app
+
 
 ![Frontend Captura](assets/images/chapter-5-2-2-5-img1.png)
 
