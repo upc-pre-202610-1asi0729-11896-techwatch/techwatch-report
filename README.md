@@ -1381,7 +1381,9 @@ La sesión se organizó en torno a los Bounded Contexts identificados dentro de 
 
 A partir de este ejercicio se establecieron las bases para la definición de la arquitectura de software y de los principales flujos orientados al monitoreo, control inteligente y optimización energética del hogar, incluyendo los diagramas de contexto, contenedores y componentes presentados en las secciones siguientes.
 
-![Design-Level Event Storming](./assets/images/design-level-event-storming.png)
+![Design-Level Event Storming 1](./assets/images/chapter-4-6-1-img1.png)
+
+![Design-Level Event Storming 2](./assets/images/chapter-4-6-1-img2.png)
 
 ### 4.6.2. Software Architecture Context Diagram
 
