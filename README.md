@@ -1381,17 +1381,25 @@ La sesión se organizó en torno a los Bounded Contexts identificados dentro de 
 
 A partir de este ejercicio se establecieron las bases para la definición de la arquitectura de software y de los principales flujos orientados al monitoreo, control inteligente y optimización energética del hogar, incluyendo los diagramas de contexto, contenedores y componentes presentados en las secciones siguientes.
 
+
 ![Design-Level Event Storming 1](./assets/images/chapter-4-6-1-img1.png)
 
 ![Design-Level Event Storming 2](./assets/images/chapter-4-6-1-img2.png)
 
 ### 4.6.2. Software Architecture Context Diagram
 
-En esta sección se presenta el diagrama de contexto del sistema TechWatch, elaborado siguiendo el modelo C4. Este diagrama representa el nivel más alto de abstracción de la arquitectura de software, mostrando el sistema como una unidad central rodeada por los usuarios que interactúan con él y los sistemas externos con los que se integra. El objetivo es proporcionar una visión general del alcance del sistema y sus relaciones con el entorno externo, sin entrar en detalles de implementación interna.
+En esta sección se presenta el diagrama de contexto de la arquitectura de software de TechWatch, elaborado siguiendo el primer nivel del modelo C4. El objetivo del diagrama es mostrar la relación entre la plataforma y los actores externos que interactúan con el sistema, así como los servicios y plataformas externas necesarios para su funcionamiento.
 
-![Context Key](./assets/images/c4-context-key.png)
+TechWatch permite a los usuarios registrar inmuebles, administrar dispositivos inteligentes y visualizar información relacionada con monitoreo y consumo energético dentro del hogar. A través de la plataforma, los usuarios pueden interactuar con funcionalidades relacionadas con gestión de dispositivos, métricas de consumo, autenticación y suscripciones premium.
 
-![Software Architecture Context Diagram](./assets/images/context-diagram.png)
+Asimismo, el sistema se integra con servicios externos para autenticación, procesamiento de pagos y despliegue de infraestructura. Estas integraciones permiten garantizar seguridad, escalabilidad y disponibilidad dentro de la plataforma.
+
+
+![Software Architecture Context Diagram ES](./assets/images/chapter-4-6-2-img1.png)
+
+![Software Architecture Context Diagram EN](./assets/images/chapter-4-6-2-img2.png)
+
+
 
 El diagrama muestra a TechWatch como sistema central, con el que interactúan dos tipos de usuarios: el propietario de casa y el arrendatario de departamento, ambos con el mismo conjunto de acciones disponibles: registrar su inmueble, gestionar sus dispositivos, simular el uso de los mismos y visualizar las métricas e insights resultantes. El sistema se integra con dos sistemas externos: el Servicio de Pagos, encargado de procesar las transacciones de suscripción, y el Proveedor de Autenticación, que gestiona el acceso seguro de los usuarios a la plataforma mediante OAuth 2.0.
 
@@ -1399,9 +1407,9 @@ El diagrama muestra a TechWatch como sistema central, con el que interactúan do
 
 En esta sección se presenta el diagrama de contenedores de TechWatch, correspondiente al segundo nivel del modelo C4. Este diagrama descompone el sistema en sus contenedores principales, mostrando las aplicaciones y servicios que lo conforman, las tecnologías utilizadas en cada uno y la forma en que se comunican entre sí.
 
-![Containers Key](./assets/images/c4-containers-key.png)
+![Software Architecture Container Diagrams ES](./assets/images/chapter-4-6-3-img1.png)
 
-![Software Architecture Container Diagram](./assets/images/container-diagram.png)
+![Software Architecture Container Diagrams En](./assets/images/chapter-4-6-3-img2.png)
 
 El sistema TechWatch está compuesto por cinco contenedores. La Landing Page es un sitio web estático desarrollado en HTML, CSS y JavaScript que presenta el modelo de negocio y redirige a los usuarios a la aplicación principal mediante calls-to-action. La Web Application es una SPA desarrollada en Angular que permite a los usuarios gestionar su inmueble y dispositivos, y visualizar el dashboard de métricas e insights. La Remote Control App es también una SPA Angular con diseño responsive, orientada al uso desde dispositivos móviles para simular la operación de los dispositivos. Ambas aplicaciones frontend se comunican con el RESTful API desarrollado en Spring Boot con Java, que contiene la lógica de negocio principal y se integra con el Servicio de Pagos para procesar suscripciones y con el Proveedor de Autenticación para validar el acceso de los usuarios. Finalmente, la base de datos PostgreSQL almacena toda la información persistente del sistema.
 
