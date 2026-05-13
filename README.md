@@ -703,11 +703,15 @@ A continuación se presentan los Empathy Maps elaborados para cada uno de los Us
 
 ## 2.4. Big Picture Event Storming
 
-En esta sección se presenta el resultado del Big Picture Event Storming realizado por el equipo con el objetivo de explorar y comprender el dominio del negocio de TechWatch a alto nivel. La sesión se llevó a cabo de forma colaborativa siguiendo el proceso de Event Storming, identificando los Domain Events más significativos del sistema, organizándolos cronológicamente y complementándolos con los actores y sistemas externos involucrados. El proceso permitió identificar cuatro procesos clave en el dominio: Gestión de cuenta, Gestión de inmueble y dispositivos, Simulación de uso, y Métricas e insights. A continuación se presenta el diagrama resultante elaborado en LucidChart, seguido de una descripción de los principales flujos identificados.
+En esta sección se presenta el resultado del Big Picture Event Storming realizado con el objetivo de explorar y comprender el dominio de negocio de TechWatch a alto nivel. La sesión permitió identificar los principales Domain Events del sistema y organizarlos según los Bounded Contexts definidos dentro de la arquitectura del dominio.
 
-![Big Picture Event Storming](./assets/images/big-picture-event-storming.png)
+A partir del análisis colaborativo se identificaron cinco Bounded Contexts principales: Device Management, Analytics, Payment, IAM y Profile. Cada contexto agrupa eventos relacionados con una responsabilidad específica del sistema, permitiendo separar el dominio siguiendo los principios de Domain-Driven Design.
 
-El diagrama refleja cuatro flujos principales en el dominio de TechWatch. El primero corresponde a la gestión de cuenta, donde el usuario se registra, inicia sesión y selecciona un plan de suscripción a través del servicio de pagos, tras lo cual el sistema actualiza su suscripción. El segundo flujo abarca la gestión del inmueble y dispositivos, en el que el usuario registra su inmueble, organiza sus espacios y administra los dispositivos asociados a cada uno. El tercer flujo corresponde a la simulación de uso, donde el usuario inicia una sesión desde la aplicación de control remoto, interactúa con sus dispositivos encendiéndolos, apagándolos o modificando sus parámetros, lo que desencadena la generación de datos de uso. Finalmente, el cuarto flujo abarca las métricas e insights, donde el sistema procesa automáticamente los datos generados, calcula métricas, actualiza el dashboard y genera reportes de consumo, ya sea de forma automática o bajo demanda del usuario, disparando además alertas cuando se detectan niveles de consumo elevados. 
+El contexto Device Management concentra la gestión de inmuebles, espacios y dispositivos inteligentes registrados por el usuario. Analytics procesa los datos generados por los dispositivos para calcular métricas, actualizar dashboards y generar reportes de consumo energético. Payment administra los procesos relacionados con suscripciones y pagos dentro de la plataforma. IAM gestiona la autenticación e inicio de sesión de usuarios, mientras que Profile administra la información y preferencias asociadas a cada cuenta.
+
+A continuación se presenta el diagrama elaborado durante la sesión de Event Storming.
+![Big Picture Event Storming](./assets/images/chapter-2-4-img1.png)
+
 
 ## 2.5. Ubiquitous Language
 
