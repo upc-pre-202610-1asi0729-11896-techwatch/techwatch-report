@@ -1,0 +1,116 @@
+@startuml Profiles
+
+skinparam classAttributeIconSize 0
+skinparam monochrome false
+skinparam shadowing false
+
+package "Profiles" {
+
+    ' Value Objects
+    class UserId <<Value Object>> <<Record>> {
+        - userId: Long
+        + UserId(userId: Long)
+    }
+
+    class PersonName <<Value Object>> <<Record>> {
+        - firstName: String
+        - lastName: String
+        + getFullName(): String
+    }
+
+    class Preferences <<Value Object>> <<Record>> {
+        - language: String
+        - theme: String
+        - notificationsEnabled: Boolean
+    }
+
+    ' Aggregates
+    class Profile <<Aggregate Root>> {
+        - id: Long
+        - userId: UserId
+        - fullName: PersonName
+        - phoneNumber: String
+        - profileImageUrl: String
+        - preferences: Preferences
+        + Profile(command: CreateProfileCommand)
+        + updateInformation(fullName: PersonName, phoneNumber: String, profileImageUrl: String): Profile
+        + updatePreferences(preferences: Preferences): Profile
+    }
+
+    ' Commands
+    class CreateProfileCommand <<Command>> <<Record>> {
+        - userId: Long
+        - firstName: String
+        - lastName: String
+        - phoneNumber: String
+        - profileImageUrl: String
+    }
+
+    class UpdateProfileCommand <<Command>> <<Record>> {
+        - profileId: Long
+        - firstName: String
+        - lastName: String
+        - phoneNumber: String
+        - profileImageUrl: String
+    }
+
+    class UpdatePreferencesCommand <<Command>> <<Record>> {
+        - profileId: Long
+        - language: String
+        - theme: String
+        - notificationsEnabled: Boolean
+    }
+
+    ' Queries
+    class GetProfileByIdQuery <<Query>> <<Record>> {
+        - profileId: Long
+    }
+
+    class GetProfileByUserIdQuery <<Query>> <<Record>> {
+        - userId: UserId
+    }
+
+    ' Repository (port)
+    interface ProfileRepository <<Repository>> {
+        + findById(id: Long): Optional<Profile>
+        + findByUserId(userId: UserId): Optional<Profile>
+        + existsByUserId(userId: UserId): Boolean
+        + save(profile: Profile): Profile
+    }
+
+    ' Application Services
+    interface ProfileCommandService <<Service>> {
+        + handle(command: CreateProfileCommand): Result<Long, ApplicationError>
+        + handle(command: UpdateProfileCommand): Result<Profile, ApplicationError>
+        + handle(command: UpdatePreferencesCommand): Result<Profile, ApplicationError>
+    }
+
+    interface ProfileQueryService <<Service>> {
+        + handle(query: GetProfileByIdQuery): Optional<Profile>
+        + handle(query: GetProfileByUserIdQuery): Optional<Profile>
+    }
+
+    ' ACL Facade
+    interface ProfilesContextFacade <<Facade>> {
+        + createProfile(userId: Long, firstName: String, lastName: String): Long
+        + fetchProfileIdByUserId(userId: Long): Long
+    }
+
+    ' Relations
+    Profile *-- UserId : userId >
+    Profile *-- PersonName : fullName >
+    Profile *-- Preferences : preferences >
+    Profile ..> CreateProfileCommand : created from >
+    ProfileCommandService ..> CreateProfileCommand : handles >
+    ProfileCommandService ..> UpdateProfileCommand : handles >
+    ProfileCommandService ..> UpdatePreferencesCommand : handles >
+    ProfileCommandService --> ProfileRepository : uses >
+    ProfileQueryService ..> GetProfileByIdQuery : handles >
+    ProfileQueryService ..> GetProfileByUserIdQuery : handles >
+    ProfileQueryService --> ProfileRepository : uses >
+    ProfileRepository ..> Profile : manages >
+    ProfilesContextFacade ..> ProfileCommandService : delegates to >
+    ProfilesContextFacade ..> ProfileQueryService : delegates to >
+}
+
+@enduml

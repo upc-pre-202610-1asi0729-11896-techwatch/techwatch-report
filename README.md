@@ -716,12 +716,12 @@ A continuación se presentan los Empathy Maps elaborados para cada uno de los Us
 
 En esta sección se presenta el resultado del Big Picture Event Storming realizado con el objetivo de explorar y comprender el dominio de negocio de TechWatch a alto nivel. La sesión permitió identificar los principales Domain Events del sistema y organizarlos según los Bounded Contexts definidos dentro de la arquitectura del dominio.
 
-A partir del análisis colaborativo se identificaron cinco Bounded Contexts principales: Device Management, Analytics, Payment, IAM y Profile. Cada contexto agrupa eventos relacionados con una responsabilidad específica del sistema, permitiendo separar el dominio siguiendo los principios de Domain-Driven Design.
+A partir del análisis colaborativo se identificaron cinco Bounded Contexts principales: Device Management, Analytics, Subscriptions, IAM y Profiles. Cada contexto agrupa eventos relacionados con una responsabilidad específica del sistema, permitiendo separar el dominio siguiendo los principios de Domain-Driven Design.
 
-El contexto Device Management concentra la gestión de inmuebles, espacios y dispositivos inteligentes registrados por el usuario. Analytics procesa los datos generados por los dispositivos para calcular métricas, actualizar dashboards y generar reportes de consumo energético. Payment administra los procesos relacionados con suscripciones y pagos dentro de la plataforma. IAM gestiona la autenticación e inicio de sesión de usuarios, mientras que Profile administra la información y preferencias asociadas a cada cuenta.
+El contexto Device Management concentra la gestión de inmuebles, espacios y dispositivos inteligentes registrados por el usuario. Analytics procesa los datos generados por los dispositivos para calcular métricas, actualizar dashboards y generar reportes de consumo energético. Subscriptions administra los procesos relacionados con planes, suscripciones y pagos dentro de la plataforma. IAM gestiona la autenticación e inicio de sesión de usuarios, mientras que Profiles administra la información y preferencias asociadas a cada cuenta.
 
 A continuación se presenta el diagrama elaborado durante la sesión de Event Storming.
-![Big Picture Event Storming](./assets/images/chapter-2-4-img1.png)
+![Big Picture Event Storming](./assets/images/big-picture-event-storming-2.png)
 
 
 ## 2.5. Ubiquitous Language
@@ -733,10 +733,11 @@ El siguiente glosario reúne los términos y conceptos clave del dominio de nego
 | Property (Inmueble) | Unidad residencial registrada en la plataforma, puede ser una casa o departamento, compuesta por uno o más espacios. |
 | Space (Espacio) | Ambiente o habitación dentro de un inmueble, como sala, dormitorio o cocina, al que se asocian dispositivos. |
 | Device (Dispositivo) | Elemento doméstico inteligente registrado dentro de un espacio, cuyo comportamiento, estado y consumo puede ser monitoreado y controlado. |
-| Device Status (Estado del dispositivo) | Condición actual de funcionamiento de un dispositivo inteligente, como activo, inactivo o en espera. |
-| Monitoring Session (Sesión de monitoreo) | Período durante el cual el sistema recopila información sobre el comportamiento y consumo de los dispositivos registrados. |
+| Device Status (Estado del dispositivo) | Condición actual de funcionamiento de un dispositivo inteligente: encendido (ON) o apagado (OFF). |
+| Simulation Session (Sesión de simulación) | Período durante el cual el usuario simula el uso de sus dispositivos desde la Remote Control App y el sistema recopila los datos de uso generados. |
+| Device Action (Acción de dispositivo) | Operación ejecutada sobre un dispositivo durante una sesión de simulación, como encenderlo, apagarlo o modificar un parámetro. |
 | Remote Control (Control remoto) | Funcionalidad que permite al usuario operar y controlar dispositivos inteligentes desde la plataforma mediante una interfaz web responsive. |
-| Usage Data (Datos de uso) | Información generada por la interacción y funcionamiento de los dispositivos inteligentes dentro del hogar. |
+| Usage Data (Datos de uso) | Información de consumo generada por la interacción y funcionamiento de los dispositivos inteligentes durante una sesión de simulación. |
 | Metric (Métrica) | Valor calculado a partir de los datos de uso que permite cuantificar el comportamiento o consumo de un dispositivo o espacio. |
 | Energy Consumption (Consumo energético) | Cantidad de energía utilizada por uno o más dispositivos durante un período determinado. |
 | Insight | Hallazgo relevante derivado del análisis de métricas y datos de uso, orientado a apoyar la toma de decisiones del usuario. |
@@ -746,8 +747,9 @@ El siguiente glosario reúne los términos y conceptos clave del dominio de nego
 | User Profile (Perfil de usuario) | Información personal, preferencias y configuración asociada a la cuenta del usuario dentro de la plataforma. |
 | Authentication (Autenticación) | Proceso mediante el cual un usuario valida su identidad para acceder a la plataforma. |
 | Access Role (Rol de acceso) | Nivel de permisos asignado a un usuario dentro de la plataforma. |
-| Subscription Plan (Plan de suscripción) | Modalidad de acceso a la plataforma que determina las funcionalidades disponibles para el usuario, incluyendo opciones gratuitas y premium. |
-| Subscription (Suscripción) | Registro activo asociado a un plan premium dentro de la plataforma. |
+| Plan (Plan de suscripción) | Modalidad de acceso a la plataforma que determina las funcionalidades disponibles para el usuario, incluyendo el límite de dispositivos y beneficios como métricas avanzadas, reportes personalizados, alertas e historial ilimitado. Existen planes gratuitos (Free) y de pago (Premium). |
+| Subscription (Suscripción) | Registro que vincula a un usuario con un plan, con un estado (activa, cancelada o expirada), período de vigencia y renovación automática opcional. |
+| Payment (Pago) | Transacción monetaria asociada a una suscripción, procesada a través del servicio de pagos externo. |
 | Freemium | Modelo de negocio que ofrece acceso gratuito con funcionalidades limitadas y planes de pago con funcionalidades extendidas. |
 ---
 
@@ -1092,7 +1094,7 @@ La categorización del contenido se organizará principalmente según funcionali
 | Analytics | Métricas, dashboards, reportes y consumo energético |
 | IAM | Autenticación, acceso y seguridad |
 | Profile | Información y configuración del usuario |
-| Payment | Suscripciones y funcionalidades premium |
+| Subscriptions | Suscripciones y funcionalidades premium |
 
 ### 4.2.2. Labeling Systems
 
@@ -1388,14 +1390,12 @@ Figma Prototype:
 
 En esta sección se presenta el resultado del Design-Level Event Storming realizado como continuación del Big Picture Event Storming previamente elaborado. El objetivo fue profundizar en los procesos más relevantes del dominio de TechWatch, identificando para cada flujo los Commands, Read Models, Policies y Aggregates necesarios para modelar el comportamiento del sistema con mayor detalle.
 
-La sesión se organizó en torno a los Bounded Contexts identificados dentro de la plataforma: **Device Management**, **Analytics**, **Payment**, **IAM** y **Profile**. Estos contextos permiten estructurar funcionalidades relacionadas con gestión y control de dispositivos inteligentes, análisis de consumo energético, autenticación, perfil de usuario y suscripciones premium.
+La sesión se organizó en torno a los Bounded Contexts identificados dentro de la plataforma: **Device Management**, **Analytics**, **Subscriptions**, **IAM** y **Profiles**. Estos contextos permiten estructurar funcionalidades relacionadas con gestión y control de dispositivos inteligentes, análisis de consumo energético, autenticación, perfil de usuario y suscripciones premium.
 
 A partir de este ejercicio se establecieron las bases para la definición de la arquitectura de software y de los principales flujos orientados al monitoreo, control inteligente y optimización energética del hogar, incluyendo los diagramas de contexto, contenedores y componentes presentados en las secciones siguientes.
 
 
-![Design-Level Event Storming 1](./assets/images/chapter-4-6-1-img1.png)
-
-![Design-Level Event Storming 2](./assets/images/chapter-4-6-1-img2.png)
+![Design-Level Event Storming](./assets/images/design-level-event-storming-2.png)
 
 ### 4.6.2. Software Architecture Context Diagram
 
@@ -1403,169 +1403,175 @@ En esta sección se presenta el diagrama de contexto de la arquitectura de softw
 
 TechWatch permite a los usuarios registrar inmuebles, administrar dispositivos inteligentes y visualizar información relacionada con monitoreo y consumo energético dentro del hogar. A través de la plataforma, los usuarios pueden interactuar con funcionalidades relacionadas con gestión de dispositivos, métricas de consumo, autenticación y suscripciones premium.
 
-Asimismo, el sistema se integra con servicios externos para autenticación, procesamiento de pagos y despliegue de infraestructura. Estas integraciones permiten garantizar seguridad, escalabilidad y disponibilidad dentro de la plataforma.
+Asimismo, el sistema se integra con un servicio externo de procesamiento de pagos para gestionar las transacciones de suscripción. La autenticación de usuarios se implementa dentro de la propia plataforma mediante JWT, por lo que no se depende de proveedores externos de identidad.
 
 
-![Software Architecture Context Diagram ES](./assets/images/chapter-4-6-2-img1.png)
+![Software Architecture Context Diagram](./assets/images/c4-context.png)
 
-![Software Architecture Context Diagram EN](./assets/images/chapter-4-6-2-img2.png)
+![Software Architecture Context Diagram Key](./assets/images/c4-context-key.png)
 
 
 
-El diagrama muestra a TechWatch como sistema central, con el que interactúan dos tipos de usuarios: el propietario de casa y el arrendatario de departamento, ambos con el mismo conjunto de acciones disponibles: registrar su inmueble, gestionar sus dispositivos, simular el uso de los mismos y visualizar las métricas e insights resultantes. El sistema se integra con dos sistemas externos: el Servicio de Pagos, encargado de procesar las transacciones de suscripción, y el Proveedor de Autenticación, que gestiona el acceso seguro de los usuarios a la plataforma mediante OAuth 2.0.
+El diagrama muestra a TechWatch como sistema central, con el que interactúan dos tipos de usuarios: el propietario de casa y el arrendatario de departamento, ambos con el mismo conjunto de acciones disponibles: registrar su inmueble, gestionar sus dispositivos, simular el uso de los mismos y visualizar las métricas e insights resultantes. El sistema se integra con un sistema externo: el Servicio de Pagos (por ejemplo, Stripe), encargado de procesar las transacciones de suscripción.
 
 ### 4.6.3. Software Architecture Container Diagrams
 
 En esta sección se presenta el diagrama de contenedores de TechWatch, elaborado siguiendo el segundo nivel del modelo C4. Este diagrama permite visualizar los principales contenedores que conforman la plataforma, sus responsabilidades, tecnologías utilizadas y relaciones entre ellos.
 
-TechWatch está compuesto por una Landing Page desarrollada en HTML, CSS y JavaScript, una Web Application desarrollada en Angular y TypeScript, una RESTful API desarrollada en Java con Spring Boot y una base de datos PostgreSQL.
+TechWatch está compuesto por una Landing Page desarrollada en HTML, CSS y JavaScript, una Web Application desarrollada en Angular y TypeScript, una Remote Control App también desarrollada en Angular, una RESTful API desarrollada en Java con Spring Boot y una base de datos MySQL.
 
-La Landing Page presenta la propuesta de valor del producto y redirige a los usuarios hacia la aplicación principal. La Web Application permite registrar inmuebles, gestionar dispositivos inteligentes, visualizar métricas de consumo energético y administrar suscripciones. Esta aplicación consume los servicios expuestos por la RESTful API mediante HTTPS/JSON.
+La Landing Page presenta la propuesta de valor del producto y redirige a los usuarios hacia la aplicación principal. La Web Application permite registrar inmuebles, gestionar dispositivos inteligentes, visualizar métricas de consumo energético y administrar suscripciones. La Remote Control App es una aplicación web responsive orientada a smartphones que permite simular el uso de los dispositivos del hogar a modo de control remoto. Ambas aplicaciones consumen los servicios expuestos por la RESTful API mediante HTTPS/JSON.
 
-La RESTful API concentra la lógica de negocio relacionada con los Bounded Contexts Device Management, Analytics, Payment, IAM y Profile. Además, se integra con servicios externos como el Authentication Provider para validar el acceso seguro de los usuarios y el Payment Service para procesar pagos y suscripciones premium.
+La RESTful API concentra la lógica de negocio relacionada con los Bounded Contexts IAM, Profiles, Device Management, Analytics y Subscriptions. Además, se integra con el Payment Service externo para procesar pagos y suscripciones premium.
 
-Finalmente, la base de datos PostgreSQL almacena la información persistente del sistema, incluyendo usuarios, perfiles, inmuebles, dispositivos, métricas, reportes, alertas y suscripciones.
+Finalmente, la base de datos MySQL almacena la información persistente del sistema, incluyendo usuarios, perfiles, inmuebles, dispositivos, sesiones de simulación, métricas, reportes, alertas, planes y suscripciones.
 
-![Software Architecture Container Diagrams ES](./assets/images/chapter-4-6-3-img1.png)
+![Software Architecture Container Diagrams](./assets/images/c4-containers.png)
 
-![Software Architecture Container Diagrams En](./assets/images/chapter-4-6-3-img2.png)
+![Software Architecture Container Diagrams Key](./assets/images/c4-containers-key.png)
 
 
 ### 4.6.4. Software Architecture Components Diagrams
 
 En esta sección se presentan los diagramas de componentes para cada uno de los contenedores que conforman TechWatch, elaborados siguiendo el tercer nivel del modelo C4. Cada diagrama descompone un contenedor en sus bloques estructurales principales, mostrando las responsabilidades de cada componente, sus tecnologías de implementación y las interacciones entre ellos.
 
-La organización interna de la RESTful API sigue los Bounded Contexts identificados durante el Design-Level Event Storming: Device Management, Analytics, Payment, IAM y Profile. Los contextos Device Management, Analytics y Payment representan el núcleo funcional del sistema, ya que están relacionados directamente con el control de dispositivos inteligentes, monitoreo del hogar y optimización del consumo energético. Por otro lado, IAM y Profile cumplen funciones transversales y de soporte relacionadas con autenticación, autorización y configuración de usuario.
+La organización interna de la RESTful API sigue los Bounded Contexts identificados durante el Design-Level Event Storming: Device Management (que incluye la simulación de uso de dispositivos), Analytics, Subscriptions, IAM y Profiles. Los contextos Device Management, Analytics y Subscriptions representan el núcleo funcional del sistema, ya que están relacionados directamente con el control de dispositivos inteligentes, monitoreo del hogar y optimización del consumo energético. Por otro lado, IAM y Profiles cumplen funciones transversales y de soporte relacionadas con autenticación, autorización y configuración de usuario.
 
-Asimismo, la arquitectura interna de cada Bounded Context sigue los principios de Domain-Driven Design y Clean Architecture, separando responsabilidades en capas Presentation, Application, Domain e Infrastructure. Los contenedores frontend siguen una arquitectura basada en la separación entre vistas y servicios, característica del framework Angular.
+Asimismo, la arquitectura interna de cada Bounded Context sigue los principios de Domain-Driven Design y Clean Architecture, separando responsabilidades en capas Interfaces, Application, Domain e Infrastructure. La integración entre contextos se realiza mediante fachadas ACL (Anti-Corruption Layer) y eventos de dominio, como la creación automática del perfil al registrarse un usuario (IAM → Profiles) o la validación del límite de dispositivos del plan contratado (Device Management → Subscriptions). Los contenedores frontend siguen una arquitectura basada en la separación entre vistas y servicios, característica del framework Angular.
 
+
+**General API Component Diagram**
+
+![General API Component](./assets/images/c4-components-api-general.png)
 
 **Device Management Component Diagram**
 
-![Device Management Component](./assets/images/chapter-4-6-4-img1.png)
-
+![Device Management Component](./assets/images/c4-components-api-device-management.png)
 
 **Analytics Component Diagram**
 
-![Analytics Component](./assets/images/chapter-4-6-4-img2.png)
+![Analytics Component](./assets/images/c4-components-api-analytics.png)
 
-**Payment Component Diagram**
+**Subscriptions Component Diagram**
 
-![Payment Component](./assets/images/chapter-4-6-4-img3.png)
+![Subscriptions Component](./assets/images/c4-components-api-subscriptions.png)
 
-**Iam Component Diagram**
+**IAM Component Diagram**
 
-![Iam Component](./assets/images/chapter-4-6-4-img4.png)
+![IAM Component](./assets/images/c4-components-api-iam.png)
 
-**Profile Component Diagram**
+**Profiles Component Diagram**
 
-![Profile Component](./assets/images/chapter-4-6-4-img4.png)
+![Profile Component](./assets/images/c4-components-api-profiles.png)
+
+**Landing Page Component Diagram**
+
+![Landing Page Component](./assets/images/c4-components-landing-page.png)
+
+**Web Application Component Diagram**
+
+![Web Application Component](./assets/images/c4-components-webapp.png)
+
+**Remote Control App Component Diagram**
+
+![Remote Control App Component](./assets/images/c4-components-remoteapp.png)
 
 
 ## 4.7. Software Object-Oriented Design
 
-En esta sección se presenta el diseño orientado a objetos de los componentes de TechWatch, aplicando los principios de Domain-Driven Design y Clean Architecture. Se incluyen los diagramas de clases UML para cada Bounded Context identificado durante el Design-Level Event Storming, detallando entidades, agregados, Value Objects, repositorios y servicios que conforman el modelo del dominio.
+En esta sección se presenta el diseño orientado a objetos de los componentes de TechWatch, aplicando los principios de Domain-Driven Design y el patrón de arquitectura por capas del dominio. Se incluyen los diagramas de clases UML para cada Bounded Context identificado durante el Design-Level Event Storming, detallando agregados, entidades, Value Objects, Commands, Queries, eventos de dominio, repositorios y servicios de aplicación que conforman el modelo del dominio.
 
-Asimismo, los diagramas consideran la separación de responsabilidades en capas Domain, Application, Infrastructure y Presentation. Para evitar el uso de datos primitivos dentro del dominio, las entidades emplean Value Objects que representan conceptos propios del negocio, como DeviceId, DeviceName, EnergyConsumption, Money, EmailAddress y ProfileName.
+Asimismo, los diagramas consideran la separación de responsabilidades en capas Domain, Application, Infrastructure e Interfaces, siguiendo un enfoque CQRS ligero: las operaciones de escritura se modelan como Commands procesados por Command Services y las consultas como Queries procesadas por Query Services. Los identificadores internos de los agregados se representan como `Long`, mientras que los Value Objects se reservan para conceptos propios del negocio como EnergyConsumption, Money, EmailAddress y PersonName, y para referencias entre contextos como UserId, PropertyId y DeviceId. Los campos de auditoría (createdAt, updatedAt) se gestionan en la capa de infraestructura, por lo que no forman parte del modelo de dominio.
 
 
 ### 4.7.1. Class Diagrams
 
-A continuación se presentan los diagramas de clases UML organizados por Bounded Context. Cada diagrama incluye clases, relaciones, multiplicidad y responsabilidades dentro de la arquitectura del sistema. Los contextos Device Management, Analytics y Payment representan el núcleo funcional de TechWatch, mientras que IAM y Profile cumplen funciones transversales relacionadas con autenticación y personalización del usuario.
-
-#### Device Management
-
-El diagrama de clases del Bounded Context Device Management define las estructuras relacionadas con la gestión de hogares y dispositivos inteligentes dentro de TechWatch. Home actúa como Aggregate Root y representa el hogar registrado por el usuario, mientras que Device modela cada dispositivo inteligente asociado al sistema. Asimismo, se emplean Value Objects como HomeId, DeviceName, PowerWatts y EnergyConsumption para representar correctamente los conceptos del dominio relacionados con monitoreo y consumo energético.
-
-![Class Diagram Device Management](https://img.plantuml.biz/plantuml/png/dLRTRzem47-FbF_1uYbRHzMz8eIQKbgYjL11kZsxnD1in46nmyIc_U-pVN5ivwD5VOfzz_Dz_7ntyJNZkE1bjlSzzYkb1rpW36tscB6Gyo9zAJc9DZbTfty8kl8ztrCwDCypiYR5CTqGD1vNgya4_VKzX8ReLQXNv92pbEV5QQJWPYyn5sXJ4Co9r0GI3g1Fy074Zd2vkJb5IP0ce8cIBWYxEJqpKWXSgJuZ15k1VKWP7qlC14wKXqIxDJQ_e9uG4h8dBRH07FCqyRr_af2KSb9iiI32pLBmOZQQcWkqJMdIpcXvu6bEyTwE593dviNmiPT8oABjrSh2NAk8Ezpj2h8JDA5LddCH-tWyeppb9tF3nWxiATQU5nZS3X4_7IfPB5OWS_C06LH24l8HckfbXLQNfJJFUWafuIIv9RBeWaHzHWYsTLOIL90iFn879ttVLYi72wvay86RInTFOE6D1W1dTWlSDYJDD5uLcQOWMsd1eYvxsDPtQkNK2HGT0fORZdGb0ShfaIems_exOK6TTPphO7hDCIzPmpfJGYq1YEMZqMzDIi_fE2kYkkUSt05zFbUgxyvWfIk2dhhgQJTzq6uua3LR3gIcwGxvRrBym9mBQf_gDUYwA3T3F6gq-KTQbPS5NTB0gG4bssw3Zi9G0GRT8R_TiOQCBcwdEMLbfkxyaOXVsuO9dh_ZVKdGykKdsN33ziVu8eodcKpSyZH2CqgAtSaIjGPkbBG2iTKodru0ZD5UjIwPTm1lkZ04z49QEVOYwwBfpqWNJmV2zmWji_gF0jSrNpwlPt8HFeMh-76sY2k65TQq0g2d3z5Z62lyjoYUpcSBkHI7PgiuZ1Pm7A67w7uUHulxjYcuSJ2sL8UNTtSLp7uL3OUJveDW9Fz-362MM2E5FiCKxoJ4zznVZCIqnfssrr8Oj6jJUHby7Q3Fmo4QN5rUVXuOd7ZbSPpIsfwoqj4qscjbJaSl9uGZWA7aY60YrIBz1gW5raWn83DCdCZCD6m9mNDB3DvROjt2biBkUKkiqxJvCH5RKYVc3WgRFdeW7QEZ1-bcudlNX2RgJVyV)
-
-#### Analytics
-
-El diagrama de clases del Bounded Context Analytics define las estructuras relacionadas con métricas y consumo energético dentro de TechWatch. ConsumptionMetric actúa como Aggregate Root y representa la información calculada a partir del comportamiento de los dispositivos registrados en el hogar. Asimismo, ConsumptionReport y ReportItem permiten generar reportes de consumo utilizando Value Objects para modelar correctamente conceptos del dominio relacionados con energía y períodos de análisis.
-
-![Class Diagram Analytics](https://img.plantuml.biz/plantuml/png/jLPTRzCm57sFbFzWzQdTo3HUewfQ1nDC0eOsnBkNt0L3ubJspQI0-E_u8rxTnawgIJmryJt7r-VSUvrUIQG2kwPE4_cByHqLj255JQNS8Whss27S5Yr_OB-1NAP9cfWOsN9QzyWA-G3YcHL0rklXQRCXVzA4a8meckoQ7RAMVmQrLt4FkrOoR4MVatVnu8YjGm8ZxEEWPf-JWjP5LrC4kxbS_cWRk2rpyj7yhW87iCGASA1SznOxfdvY4jSZ_iPjm46enFPSH-GtP0U2jUL1-gzcQHLGbIP_jUMC8uWdgboUS4rLOF_YYd1EdXWlhtkbWgcabcCqt9bDQ1tLOOclia3IPrWsPYNWSzZxkD3Z0fyYr7AYGctuLK8Fg4QeC2k1warKr0xHo0ObRLjL0YhLF-I-RL79MwzlE3BiztFbLzAk79xQhc6BjFOovEH6DMRLUqiM6Et8OGxT99LRBT9xUncORqUfbgj8CeEscozNmOnXTwnt4IjShUDMp2WysIatsiQ93_kN_sp4812XcNP00PpY4lHLh7ruFppvwrze0owYdqSNxjIfv-LvHnz5bOBljEw0t3t-X4BrTw3Qre8eqhL-5E0QOWvW_8g2R0D5myxN6O2sDwxP6wOeoEkp02PDHb_YBDjCVYToqacGyyJHlUk8QJArVJ2zuZQKqqhJfr84Z-2J0xaDQTnexhHX_BZTfl53DyniwjSpwDOWQF5sGSwoZ2mkBoxE5lw0vteCaJ8UCkfqfHx-9AKUFgxK0_bDkHVgwT2Wbn5nY63SJ4W44TUQ9bV0I_EtzHy0)
-
-
-#### Payment
-
-El diagrama de clases del Bounded Context Payment define las estructuras relacionadas con suscripciones y procesamiento de pagos dentro de TechWatch. Subscription actúa como Aggregate Root y representa la suscripción activa de un usuario, mientras que Payment registra las transacciones asociadas a cada plan. Además, se utilizan Value Objects como Money, BillingPeriod y SubscriptionId para modelar correctamente conceptos financieros y de facturación dentro del dominio.
-
-![Class Diagram Payment](https://img.plantuml.biz/plantuml/png/bLPBR-8m4Bv7od-mED5MLDqhGgYKfgj8G2DegrvDCY3l9avaE-oog_xtTUmyR19NsqjZUsQ-cVdcGU-vm4oKMUfx_2UX1MOuGt6AELy8mSY-5136ETsHFu3kVC_tb0n5-9m15JjW9n83citgqtoE_leUGXF4opsF6Ia4oUaMYfmJaRFp5Eq6txLDeL5DzUZogTAyGJ43BC346fiERJTNzbKZ52oFWVCQVroxRXrUjQVQ8QOnf9P3ajYuOIADJZb9jCKHX2db3-TN3YnCngNwJ96-IfiLuM9cwivzxwFYcb01x80bmSEiITwxIqFz3JeGcZoSfQV129_L4QUN7ZlBhyHPMN5yWg_Idq0A0jnHQXulMEWrm_yGK1lPkTUFLjfs35P2uL28YWuRI37nMIjzT2Dauiay5iSZWwDiQhJDSo5pcSq2AeWuToFL9qg_suMgHod5iWoH_FjoBa2_uImlgxZMEOLwulOaJGazHi18BX4Up6iznmABajkET-gjbJC1oKBYxfgZbi3lWZ3WbIHeZfec70joagcEhO7H8sQ_CQ3mQsptWxM173IrHUyletujdUmqkJVRpaYxm4Jb7AbldK1E3uHbpKePYbg1ovZVS5e2Ujx_W5ZMkf5Qz3krxE2TQYq5JWtTBsu_JJcT6crPFmc230Fu7j0oQnjKr-vf6mJLDze6w_1rNJEd5FljfqqMovVmJHaj5vjbi5e5ZzKbU8_2RNNi4AmYQkCes3o6c-_A-daThO8NRVsq25UjySLFtMGoTstZQJM9VD2YlxaQPTzpe5qwaXOPflXeUBZGRaR2KBJHUvYo-aqSFRswEvnotSfEiTtBJhMkoPmgNPTrd3Mf6caRiPfIHxgcYfs93KqIowyLtEZR25rF9cXqTtjxFJBebuj0O4ALnJtGHFrxzGy0)
-
+A continuación se presentan los diagramas de clases UML organizados por Bounded Context. Cada diagrama incluye clases, relaciones, multiplicidad y responsabilidades dentro de la arquitectura del sistema. Los contextos Device Management, Analytics y Subscriptions representan el núcleo funcional de TechWatch, mientras que IAM y Profiles cumplen funciones transversales relacionadas con autenticación y personalización del usuario. La integración entre contextos se realiza mediante fachadas ACL y eventos de dominio.
 
 #### IAM
 
-El diagrama de clases del Bounded Context IAM define las estructuras relacionadas con autenticación y control de acceso dentro de TechWatch. User actúa como Aggregate Root y representa al usuario autenticado dentro de la plataforma, mientras que UserCredential administra la información de acceso y credenciales. El contexto utiliza Value Objects como EmailAddress, PasswordHash y AuthToken para representar correctamente conceptos de seguridad y autenticación.
+El diagrama de clases del Bounded Context IAM define las estructuras relacionadas con autenticación y control de acceso dentro de TechWatch. User actúa como Aggregate Root y concentra las credenciales y el rol del usuario, empleando el Value Object EmailAddress y el enumerado Role. Las operaciones de registro e inicio de sesión se modelan mediante los Commands SignUpCommand y SignInCommand, procesados por UserCommandService con apoyo de los servicios de infraestructura TokenService (JWT) y HashingService (BCrypt). Al registrarse un usuario se publica el evento UserRegisteredEvent, que el contexto Profiles consume para crear el perfil correspondiente. El facade IamContextFacade expone las capacidades del contexto hacia los demás módulos del sistema.
 
-![Class Diagram IAM](https://img.plantuml.biz/plantuml/png/XLN1Rjim3BqRy3_ewA4DiBDX1FMA0lEfHRhkhbYiezMH34bEaGtxzr5MPCcEdLqIYNnyVdoaamTjg3BziKqJ_S55HnKzahgbMfV6ABxl3LIr5A_yDv2lQP8cGuwKlJcyWZhn6aXHN4xRBVcJ9eHiIAz1xQ2JcXkfpZbvczmTfbR0G1XEsnZvk12r-3kYeE7QWCeikQEyZqXS99H_SG5Nsyg6YmoEb2FkoNwLZ2dG-fvqsCwdL2mdE_hvShbWiUtmX_m0uHXEjEMC6XX2cR6V4GRnUobRe69ydkpDeBHYJaXbIK-IipJvQtta0djvf-ZVr1oqCroyetVadGlsxLonZCTypvtXKj2si95jZ1oQNEfufKhJ4qJEZkxDj2wDvwPY9_NQYOc6m1gh-UziG-2Yq-scJQ6cicbmPN1aP2UbGLr5yOHWSmvh6hnqzmMxN4BXR77STOsH7Px73KPwLffXRTtHwQyFL3HWaTcyTBe5GN5ePaLe07YvKrDTpA_pTweFENc9RfUQZddDR_xeDBkChyZMYPOw6Dy45F-JjZsGv_qlgD7skCUAhQRZxbP1yM1MGT5hl8g9sra5XPdTKkqiN6_Rcxo0I9FuPtIpsSv_2d8xOdqDMtmBFJXDPYoU6157AcXZGOiC7XYjObJYU4SGZia_SOnFvdELZVoyoWKZfsr4KgQDpnu_moq8d24c6t2BQPnV43OVHrZ-d3GWG67507m0mOQ_rdy0)
+![Class Diagram IAM](https://img.plantuml.biz/plantuml/png/jLV1Rjiu4BtxAuXUehHnqRCG67KJPzT0kcdjpLuN33cMsKYaIb99iqN_VOUKB9CI7VjI7sn9V3Dltd1cA7yqbchRL2LPpZzF9kPHo9fgMX5MKcFcrchnq5XOCYNNuZyW7m98fQHYMwqg81jQ6WYMp9PozInaqQrCQieUQG7a3TAy8Jyd4uAVC_8FBHiWTm_VW5dZdtbUigYeAEUSQy2RoyiGDflXWnKmfJbU_lH6xZCbjCNdP8rHow9VUHUvomQmSu_xrKO4igd8IfM070kyZXXMTxUBV-_NYrNyP7xzUVbNwEICp8j2Gq4jX9hk3MXqswyXZx832OBdv5O5iKy9kDZpI4AmMgFdPqp5dzHiHyAdHAEKt0iAik42oPYgAYgHRYqAULzVjRSNIOVdWN5JSupzIuVAal3SKmH6R4jb0IwCR1zH2EipTwrGfoIB9v1scBmL5C9OqC3zijiYzpj8OOF8vS4q1XdgEJlj8LsK52JghWxNtjXzl3yfvZtLKlvcgZFojG4jedhy0wpBwgUN9NUBByZdVmypZr8R2Udz-L8zqUMXwkxZNa6jZB0AdMMrqhQjHI6n3ZQKGLSOFSRHx6uYgdTa8oHtOhDTas41tjLMA4dBI-TcDWBxiB94ZA-PmW-iKlEwyIU53K1bO6Ne4sGkmMrN99jZNjUbODJnaZNe9y6w3OtJqLLGXy2KT5U3V61FScp8z210_XMOfhHUtaL8lT1QHO9JZlgAtZkQDtQBxUgy07_DQwSt5kNhw4H9tnqs7nNuQvjsm79VocdZVckMSgEfiRfXjj7Gxmx93B162_iohDk_rIF8OteAaA0nNHwSHOr_dZZcdcWfU0-txZk0Zskk0Ei5tk0PdhOPJvAz0ZVoSV6O1f1CSPpxzFdBO42b95JKiYsO5FoYSyKJVa9j-tQvkYKtb54EWyYNjBfIUFV3jiiOUtind1Y0mTpxeJTevvuuEcK22u_sqoOSckVfsRo2qlT0syp-FU7jT1g_1ENjg2IpFMOwdRNlAha_vyEbz-zdWpCi9qo3wpoomTqUObF7Qqxgvg4K1hSZW0-6IugexQKJZFR7tWb6JkrWsEVkH3fYCgZIKqoYrXmPH8F8AHcTeoanXws2q_AeuIav2DPsEuiWr8YltplSg05so44sSiAXR5zaYLN7ZADGHwPOxHz1SlohCVaV)
 
-#### Profile
+#### Profiles
 
-El diagrama de clases del Bounded Context Profile define las estructuras relacionadas con la información y preferencias del usuario dentro de TechWatch. Profile actúa como Aggregate Root y representa los datos personales asociados a cada cuenta, mientras que UserPreference administra configuraciones relacionadas con idioma, tema y notificaciones. Asimismo, se utilizan Value Objects para modelar correctamente conceptos relacionados con preferencias y datos de perfil.
+El diagrama de clases del Bounded Context Profiles define las estructuras relacionadas con la información y preferencias del usuario dentro de TechWatch. Profile actúa como Aggregate Root y agrupa los datos personales junto con las preferencias de idioma, tema y notificaciones, modeladas mediante los Value Objects PersonName y Preferences, además de UserId como referencia al contexto IAM. Las operaciones se modelan mediante Commands y Queries procesados por ProfileCommandService y ProfileQueryService, y el facade ProfilesContextFacade permite que IAM cree el perfil automáticamente al registrar un usuario.
 
-![Class Diagram Profile](https://img.plantuml.biz/plantuml/png/bLPTRvim57sFn7_m8rKRQSyHYffMdHHfIgTstRi35-eDR6HCf6pgVv-nyGTWi-qfvjxZutEF3qdkEu6vw9iwsNG_2MqnnmtAQznr1o4uEVS2ZZcZh-GNe4_99jce7lhAMKbgU0L-8JcWB1jN-ptwdMmGsg9M8rwWPHqHZ5ztPfCh6IIKm87cC_2oEk1lKSu12nZ9ql4SotvZLnhTjuM79eLj7uixzA-RZPGkxJlWHqdofZxlFF6wvh0tyuAch42CHpnSDScCqzVmCJXEg01UOcdpma1fl7imtj-Yaj3YuIgP9-DAukTM44PndOt5lO-FgObiwl1btVs5-EM5hkh_gvwflLDP_t4h7ujOIrc7gk9GoSj7Bum9AItBdgWWukeIFZ5NbwPQTQtiw_g46wdayxWQO__EA9pwvWnSyhY7oUjpR73bt5LFkgzVWk8WTkZHB4SDAhEgysQMVfgDYdGfJ9fpOQIOPDy9IsEAxJRFoQd9KVSCOCt06jEgLpPy6LUwBjvX4Fzj-D0LoWGfIOw7V7HF59zha5mdhpf_6_MGYYBr-G9EcCFJfPwG0JOPSlRlkEu1FPz_G2wZv11k-YX86n5jcvkB7-AkQKM8IrSKP6QD0fHlqMxu4g9mc-cuCIRR0KIocVq-RRVxm9VdReXR5m47lgmCtkxmUju94jTWAgrIr06U0JjxFxmjbjtdb16OgRKiaPPDHgZffoBOznCH0hZx2SgoT-CicmqyDTcR8O2RJHb0s72kO7G-Lm2HYBeHxe4Mwf_I7m00)
+![Class Diagram Profiles](https://img.plantuml.biz/plantuml/png/pLVTJzim47_lNs7jXNIqQCzHLV4Xc2eXO23sxYQNrCEnCzjXCBJ_VPV42KxYqfHjqlBInFVrkz_vpkwnDbIP8kFaHic4ST2JYNvW8gUAPYJYLEiJOnHR5mPMaHHtx2UGJuvA9eMCDafcG1BADJWYlQ6n_C54QYMJd4OFD0NoeOdrWRnC9WIV0_ALyWB8zVeRH4PNQrLmSgz1hMAoMBWAooKkt48aLOolBvLw-Sn9KQc7v5AAj5q-j5u2LpgjnBycJgmRK5gAAugvZ8sNCALDQH6IEwJ92JedwDClEYGfc8k2yr8QJ3loBY052IWG4UZHY3WLQO4iUm2P3NY12cbOmY9gc1JwND0r1oJfL4eELBYe3iX9cYf8gG7TWLcL4n6rOd8hfUaXO_swl9Qhhe_BgsKdT8hYYFED571LP6jGddpo6iygGnhk5VTgjCI6BijEYMnIGIIpZ0h4UAO04xFBP_Ngr34eyXZbAv58bLLK1huaPZxiissGfs63On38GHriIwTdtbRHedThwCiE2shVzcouT_R5dzIrqpVtbg5zasa2_A_vj8NzApdzsqdnfG35EcFYCnXRajFdLLpAdn5qzRiV_0uthjTwZ8pqx9azBVXRoALcHgAV89VAr7tEX06Lq0YQhdBKoY3DHoVG8UuT4PSP1yq0nBQypaiAALzOJyk1Vk_8gZztMC8JqqPljtKBLLje-WY1vRWT5jl6nacUSrjySWVgaJKJSq2CtPLM2ScnRprcDgYpSyI6M0rTSBCegPkv8CwLachvXZ_V77ZrPzVVvxBVYgFTMZO7b5MxTIHXtqlTqDTGEpR8TdkdTRRwUDq8PvVaWaOq1dykI0ekFPbQ1xEfNth9H6wrEtUpsN3UpWPZTZguvILWeirDCp06RM1Rhpz6ocxdzKIhlflRpCVvlBbzXdPOaEL0mxapXksjnQVdNEL2z_xHqpqwMlhFuj3o5PC4RzjTgrwxlU6ZtW1wfxdt1DtVV71WZNCndoyz8xQgGi-mqpLbPDyXioNecxRkKJB6VZnaHrm6RGeV4cG0J-EUTg-L78iUPo69WTTNSsBaM2UT70Oki4EEGSJuzt3o6m)
+
+#### Device Management
+
+El diagrama de clases del Bounded Context Device Management define las estructuras relacionadas con la gestión de inmuebles, dispositivos inteligentes y simulación de uso dentro de TechWatch. Property actúa como Aggregate Root y contiene los Spaces del inmueble; Device es un Aggregate Root independiente que referencia a su espacio mediante el Value Object SpaceId; y SimulationSession registra las sesiones de simulación con sus DeviceActions y UsageDataRecords. Al generarse datos de uso se publica el evento UsageDataGeneratedEvent, consumido por Analytics. Antes de registrar un nuevo dispositivo, DeviceCommandService valida el límite de dispositivos del plan contratado a través del ACL ExternalSubscriptionService.
+
+![Class Diagram Device Management](https://img.plantuml.biz/plantuml/png/lLbVKziu47_Ffz3mGcY1wRrwc4pTaDBC0UabeVVOCRO8ljfoJf9fQUU--wqbsPPaoOa3TxmGIxkhtT_-qKfwptX4UPbdw18_fJ6-YKYqmJacV3HYtrAoZMYKepYB60ivf-bzoV4yBiWg_OdHEuqaBqWHFz8Yn-WXoXZMfjXZb1JVKx9HCwDj57-3LT2HN1ErYnwXNwCHWhzZz2NAIemMzt_Xc3Cn9hH0TmpJUO8kBdI2oGG6bZWkQ08_VmdowkyCbO8yGDS5sOZXVqQQiC-qs6BAdmS8t3OiFg4hi0yFaCWalK-S16c0l4GnU8qklcFwPyGvsrlazuewG9T5UPzXNI8cPTwWk7xUOf0mWp63_zFYRZLhliBFuN9zCxjTT-H8ItrIhkTNdzRDr_hJR7cpMAt3TcWQtioMOVEvke5rldw-lhjgbvullquNjvVpzNnnErisuvUBnVBhzMBwkqUb5OzuoLnABMxRdny_TjXNcB4KiiNB7qxNyoyjDhFRozcbBkKOXPiDnPk8OuOYag0PuIbFCNC4CSXlYD6oABZbn5IF23CxP59f4oJASO1MaF46VPGa54nop73mMc14WXtXm7MTCduXqcFIpBvjcCPnaUTWOu2c58CDzVXK3fzeBEKs0O8vUIXe7d50UAmhV6hhUT9gfWa18g6BnPjW5jDqMqdL-0Mb9zU5Oy4jpxi1z-3gM7E0jOCqLZLtUAmqPKhLjzrMtLFXpSvuNYGuyyPGMmNqnKK61KO-waMvAMc1Ljuq22MV7M5or15VlAHaGSOdzOBsrCE3SswNemn0JaqSJ7bcaALvcGbvgfwyPgRh-rcx7JgWDsgPEKyvJa8E1e0-sWmcYNCyYYjRwdeWhGx5sCJG69e2u8mKtLtzhNOe3VSEGAsZLvLsdNc7owcGAjKOjrjelVkUAgtN8aPh3ue61tDCRmq_DyDYT-ruM2wYhGr0LV7KKTENlLB0WBBJjQVZ3jqmFJnS5hhc3LFr8FY1uzAE3yCcox6lPHPqgQpCHLLKkcdjYmenadA7oZ8Kt2eVWvGyIWcQFK6_obncN662AR0bWgGof_flDttIm_C-ewo9NeCSKI8pTVeOaKs_BjuLlLMt0KCbaew3S_E6bTMl0QtwwxOY1aAXsllNnG6AEey01-tlXawEFMaVRRh7X_zhKzPtNLyeteajqGZ8_KqxE33LljbN-ryGaRkFW5AQNgo7E7HuQVYlIhXXr8maBm7JPLPJH_ueCJLFDLUOgzI4yG_Fic-foAfpZlY_sszQisDO0hAbRq2mwcRtbEniWctPbSUVS0UhLpFY6E9hMx2K5nLcQBmjA6Uobqa9-F6XEfFKTQqXVHOBrH_6Oc_HGqgI3n3GutgNXNPa8UfLb5tKeYOT1gdRs5JrH3LiBZOMFU5ndJzjaNOVqA0WGLZQQZqLgO56QxBqwIiOB0LrpLLE7zjHS6AqiZfVN9I4z-1K60SzWOvCyhgskOuPGt7fHE8hGDIHQQCbay1l-dwI12AgSZWQv5rDyp4AjziiZSKyd62eI7fFfgWAfgW06VNBWWNwgIJ3kouh0iXHLcRyeWBkL5TZHcb19pq2lRr9AxIUy0dkX43D86hEdXR-NT46FONOdUYUj7mHkkP1_GNOUjkHLgYSt1jPINuOhivDo5LCTgVqWV3s7uzV0BIt0sg5TfOTja9FEtB06hiHFip5-_G2UrJ3ffujIduFUqg2mkcrtflz0Bs1VrNUDoUDLbUWjMixvl7ZJVH3HU37WbRwZFM65xIQ0neRJEtUG-edosXp-Npqsn5wStQ6ZjwTdxyvKXUZGNLevN1SPcXYabUawYadKAsEJN9sDZ6V5W9n655awXwpabC_k0HrUzObqTuy0ktSOX9M2sfl4AxbMX9rfn-eiuWYwrxLMRWO5pY1kchOczk-AWdGHbqs-4NuaNRJQczYWNRKyV9Ka9Zl71OcXidL2isBLj2SQ1IfRLy_TLUNy_E9znu6Z84ZQieUiUNsYibxOzBbyhGBUhHg_PM0t6OrIia-ZCujj8t5mMnzvG9ozX77tnZQPX51MPgdt13NKRvVXrqxbGYVdWQrNrX7cRr5EI2l0g6fFW7AnREqYQL5hIB8fkrJecBh1guk0IhjUqoICiz6_m8)
+
+#### Analytics
+
+El diagrama de clases del Bounded Context Analytics define las estructuras relacionadas con métricas, reportes y alertas de consumo energético dentro de TechWatch. ConsumptionMetric, ConsumptionReport y ConsumptionAlert actúan como Aggregate Roots, mientras que ReportItem es una entidad interna de los reportes. El contexto emplea los Value Objects EnergyConsumption y ConsumptionPeriod para modelar conceptos del dominio relacionados con energía y períodos de análisis. El manejador UsageDataGeneratedEventHandler procesa los eventos provenientes de Device Management para calcular métricas y disparar alertas cuando se superan los umbrales configurados.
+
+![Class Diagram Analytics](https://img.plantuml.biz/plantuml/png/lLXHKziu47xFhz3aXQG5flUgOJ8DO20p3T04UjEdZh15uc9RgIJdnjUv_twIh3Yo9SiEfSq39DBkjzfFdrThVMGSKPwd2PXcA2bu7BB1WBt4sGPHb88mGOnDEQVnKyxnB2JPCluNWm-6IKeo4gufIJ5uHWd3nXHReuZy4sShFJFOeF05hJ0OLi66uETW0CJd27n1IOx1tTDt77AcnbHqyCWmdKNWxCmqc4p4m0A7X4RYwqzbBZyd85Vc47mYsKeD_pSmmEufsM3AYmC0DvLB6-WbtiOXFW0oqWvjW466wQgu81dBqmsFITORUIkj8BWa-LE2JLQoc4Em51lfYcT4kiSq9lqpKVAvH5p657-D6Pn5ZN4T4cTv2kPOB2LyA3PO80TYf8ORt0QBww_VBkvkbu_p-uVPtMqrzRYSNWVV7cRpe35qjGW-FmQt5r-jMDD4RDyIRqLcl725-tJtT_Lz7bpE7kVLpvlPzOq9U0IcgnN5Av4J0oYBn5RncCUOkTaiqnGnAo-m88GtI8nD8TYYsslMAQ6T-ep9j68N6apRCh5qPgv02G7QsZ1iGfI4UIAoYgQy8O3tDWsZaAIfu4nWxlpA2NPHJeozobpW3Q7y5LpkAa9PI0uXkGy7d72K60P-LcCspJb9aQXz49mJac1aJg-my7NoALmvJfb8BcRyhEHY9aOcRiPBWptZrnhOCgbHNyAWA9B88rjYnrfsjoZ5ksfo349lyiU2Vr7phoZ-aUCiB22OPHolC1r3i4_3tldzd7fanLDMT6-rzwcmrsvAkUyEjcJZbQwgG7zKkLuYcAw5i5uQQmM4oJGTFF4rnMnDaiXno8GvfJZZNrhEe9WjC8fSiXT1LeB3hZAYLhlNz4FfrJHmA3f5z6Mgee_6q4AirtVjNYlexd8bDbH_Ex1vQ6q23glU1nxoNIMWJpfMSzMPvI4DGaU9h6NZt_pVaqlhZdK_KAzwR6e9pwM69Nefv0CIHTBBrMmUWS-vM6YjURd6NAlylDXN5cadMoVrlv_Q6sMf8KKX2RP-8eX6ormidnRdHLdaUaPoLCPcX5BSlpaDjIFipHP_f8uz5dCYjmMCL0Pb9Ol5EKEVKOZjnghoALJ4tOzQrFVWESwYSv77Q7VGY59ufr1GScPXJYpFFHCZDq5ZtPnuiHZQub5PuQ2ToTWnPlBZ9A7SwBSbeSHy6n9iB4K2LSFGpcJi6EiaGGdnRJbGa3O5fMgdMJHJXUXAljgFwf9sa621AGvKQR9FvCv3UhhP9768rAln4bDPbbc3c-gAGTT7RIQ8qTyQhAo5JOAxtr5aryhoX9z9vexDbGIK4ZhnG7OsuR-0tT4C_GAo--3P8pP3jg5RwgrsI9NBdllpGzf2tp7LgmnPQDxpw7MGRGTGhn9XeJbE6lzZLZqimLPq5-160TBwpPheyKNtXNR2Z9IfjfIlNQPdOpz8Di9o6hR1YDLjIMmTRudIHRaC-wRatSc9UKS7ZRCOJ3m-rHKShBeqhxrzmmRBjjhhPT-JGNr7qEfsSZ8nBxkWqTtRFlgAO_ZNK8KRVZWzVJSqtuIXV4_bACvOgxDqr5UcK7SQNjlUR1i-X_1WkBb8RrwVQ00ZP__sDWnT8K8BtNerxqNQthGtPtkNNW8jpQLawdUMi7h3q3vjXvjqzRM7AZbs68ZLNhq6fDcUk35g1y7hSl51zCp41-7DewEUgdrjeKkg8j7NofoqLHCZyEcfWnrPNb0c5j5Q7jeHz7FgGMZctW0enMlwYwh_KRpbvsao-1y)
+
+#### Subscriptions
+
+El diagrama de clases del Bounded Context Subscriptions define las estructuras relacionadas con planes, suscripciones y procesamiento de pagos dentro de TechWatch. Plan modela las características del modelo freemium (límite de dispositivos y beneficios premium), Subscription representa el vínculo del usuario con un plan y su estado, y Payment registra las transacciones procesadas mediante el adaptador ExternalPaymentService hacia el servicio de pagos externo. Se utilizan Value Objects como Money y los enumerados PlanType, BillingCycle, SubscriptionStatus y PaymentStatus. El facade SubscriptionsContextFacade expone el límite de dispositivos y los beneficios del plan hacia otros contextos.
+
+![Class Diagram Subscriptions](https://img.plantuml.biz/plantuml/png/jLXBRziu4BxxLn2znDucnPw5mAZiAAq1E_4wIR4zCjB4PakHNf9AunRxtvSFMIRrMZj8VKWaSlZDQ1xVaFme5HQgo2cwAnvbAiXM4SxaO22_4xR50kSefLZAM2b17Wi5ivIpE_8Jq9-UICuPJpU2vu2UC9NWJSaDplWFmjRbp62Bq-zu3UXTeF0T-ZKO8FqxGrymBG3TFdw3L4axPYr03nB4B4ENbxx0UAm7Lf1oaUd7NrRS_2vGOSKZDETiROV_7NXWIuhP2M1RAzu5vd_92Q0oMDO5lk0CTaTZufmNJ4LeGjPNa98SKsyoBOG0bkuYTAUZ6Ie3LkJMA_UxBMZqHBy7sDUh9AbUbgjaCNjOD00cX58DFDsbj1LaSNjp_td-jNh_ciIhyjM7yHrwfx0gP1jOFBsVVJdOD8rlfibydbnL8ydVozcgV0y-4-zoOAeRUPdSNCrkFXsWRnVBUNBlGL_7itc8V8RYzLh06YkGjKJJAgevjE9SrO96_E2x8OPp2CBaXfKEJbI5oKzGGL8zOvF56txquX45qV64Slno1SzwlOpGZ2bOW_1cDrZ6sJDcAMGBqFQaMch2EGNCGgbf8HNFLx3bGdN9n1Iw9nyO9JbHa7qc6adisiI8Z5D5dY6Swwp6LtX-pnkERbeum567NySsZwAMh0s5XBhIPaJ8_FLcW6MjuxXGV0KCVZJzy3xGDKnvdcEcJPiAq1Z-tDHDZRobs3XGYmr7eScUI6h2JNi4XB6h3s23sHgCfuQXszgMXCJiQlCLWQlJQSZABHnPBvPz70Dwy0Frea0mJCjvgwDUe5l1THr9o69L2-ZxFUuXN4idN8wtX4htsYSYyc6dvb5bhRVg2HCREt-c8gbIYqzHdLcZWr0-dT1cEnfcRqu76J2rkUEROrBd19Cw--enlNngK_-LpZYkeri7_5ODhOdr1gvxzUxY3FrLW211P_m4AgRKn5QQIRF7iV_Rh0k-pYoqJS3tuMJd2Fj_eJfPlgwZz9wSx48cELB34NHKESSqJKbqpzCUGaFRG1qD4DsEnHDEmT9d9RQpIlSlWM9T_eHbazqi6-uvKbF1hLMBwQM16TU4THIqVDbOxqLXEyDSz-26jCJFO0dTqVd8_VE_vM2m_xrlOBWFr_W0Q_a-0uPXR8y1iT_b1omCLq_JyWBaqkKjOkIGnWtvC8M6_HbMnR29viBengisqTKmuksMaXJRtTGT2BjFx0brIJ6bfFP1-LHpWERuZC8nEvT8LuSigBeqRZhtpKc4u6BS1zhNIGx0li292hgQnLk0TxM9jy1kttaSvUhUGhUSU6Ji_p6oKQCDT75FSrL_3pYcxXkOlPpVMb5LdTmMwb5tnmpX36-rRv3YI6sWsZMYik2GT4xncaqIRkyE_eiTLCr_so1ums0xUzxQmaVjFJcUpj4rJd46FI6LKwx7NvGJr4QvXpgXWKetY-eWUSs52SNGtnsEcgTB4m5vhIk_4138dcj0E-fjT5isZAPpKknkhEovtHos_xYuA2zD8dSiHkF3vCN5-73B4TdpT7qwkCE8WYDqAHgSC8swycegAhSLNMBbfLDKRa7Rn8m1BRSVKNausTjQff81hLq-HRK4Q5cnTuvBd9g0TL1mFrBJtKFsU-TwFT2wvCYb7Jk6Ko2QJVYKrHrr65MdEhaluZR0WFjESKLZuQcEQ6hkTqFDi0yVdArQI7i4hrjrrEI3fAslQwgtAieCwzDI8vkwfk138vG1TVTjXcl70qqA7u5bHKu7_m4)
 
 
 ## 4.8. Database Design
 
-En esta sección se presenta el diseño de base de datos de TechWatch, organizado por Bounded Context siguiendo los principios de Domain-Driven Design. Cada diagrama representa el esquema de tablas correspondiente a un contexto delimitado, incluyendo columnas, tipos de dato, restricciones y relaciones mediante claves foráneas.
+En esta sección se presenta el diseño de base de datos de TechWatch, organizado por Bounded Context siguiendo los principios de Domain-Driven Design. Cada diagrama representa el esquema de tablas correspondiente a un contexto delimitado, incluyendo columnas, tipos de dato, restricciones y relaciones mediante claves foráneas. El motor de base de datos utilizado es MySQL, con nomenclatura snake_case y tablas pluralizadas.
 
-Asimismo, el diseño considera la separación lógica entre **Device Management**, **Analytics**, **Payment**, **IAM** y **Profile**, manteniendo coherencia con la arquitectura del dominio y el Design-Level Event Storming realizado previamente.
+Asimismo, el diseño considera la separación lógica entre **IAM**, **Profiles**, **Device Management**, **Analytics** y **Subscriptions**, manteniendo coherencia con la arquitectura del dominio y el Design-Level Event Storming realizado previamente. Las tablas pertenecientes a otros contextos se representan como referencias externas dentro de cada diagrama, ya que la integración entre contextos a nivel de código se realiza mediante fachadas ACL y eventos de dominio.
 
 
 ### 4.8.1. Database Diagrams
 
-A continuación se presentan los diagramas de base de datos para cada uno de los Bounded Contexts identificados en TechWatch: Device Management, Analytics, Payment, IAM y Profile. Los diagramas fueron elaborados utilizando Vertabelo y reflejan directamente el modelo de dominio definido previamente en los diagramas de clases.
-
-
-#### Device Management
-
-El diagrama de Device Management contiene las tablas principales relacionadas con la gestión y control de dispositivos inteligentes dentro del hogar. La tabla users representa los usuarios registrados en la plataforma y actúa como referencia para distintos contextos del sistema.
-
-La tabla properties almacena los inmuebles registrados por cada usuario, manteniendo una relación muchos a uno hacia users. La tabla spaces representa los ambientes o espacios dentro de cada inmueble, con una relación muchos a uno hacia properties. Finalmente, la tabla devices almacena los dispositivos inteligentes registrados dentro de cada espacio, manteniendo relaciones hacia spaces y properties.
-
-La estructura refleja la jerarquía natural del dominio: un usuario posee propiedades, cada propiedad contiene espacios y cada espacio administra múltiples dispositivos inteligentes.
-
-![Device Management ERD](./assets/images/chapter-4-8-1-img1.png)
-
-#### Analytics
-
-El diagrama de Analytics contiene las tablas relacionadas con métricas, reportes y alertas de consumo energético. La tabla metrics almacena valores calculados a partir del comportamiento de los dispositivos inteligentes, referenciando externamente tablas como devices y properties pertenecientes al contexto Device Management.
-
-La tabla consumption_reports representa reportes generados para períodos específicos, asociados tanto a propiedades como usuarios. La tabla report_items detalla información individual de consumo por dispositivo dentro de cada reporte generado. Asimismo, la tabla consumption_alerts almacena alertas automáticas generadas cuando determinadas métricas superan umbrales definidos por el sistema.
-
-Este contexto permite almacenar y procesar información orientada al monitoreo energético y generación de insights relacionados con optimización del consumo.
-
-![Analytics ERD](./assets/images/chapter-4-8-1-img2.png)
-
-
-#### Payment
-
-El diagrama de Payment contiene las tablas relacionadas con suscripciones, planes y transacciones de pago. La tabla plans almacena los distintos planes de suscripción disponibles dentro de la plataforma, incluyendo características y precios derivados de los Value Objects del dominio.
-
-La tabla subscriptions representa la suscripción activa de cada usuario hacia un plan específico, manteniendo referencias hacia users y plans. Finalmente, la tabla payments almacena las transacciones de pago realizadas dentro del sistema, asociadas directamente a una suscripción.
-
-Este contexto permite administrar funcionalidades premium y procesar pagos mediante integración con servicios externos especializados.
-
-![Payment ERD](./assets/images/chapter-4-8-1-img3.png)
+A continuación se presentan los diagramas de base de datos para cada uno de los Bounded Contexts identificados en TechWatch: IAM, Profiles, Device Management, Analytics y Subscriptions. Los diagramas fueron elaborados utilizando Vertabelo y reflejan directamente el modelo de dominio definido previamente en los diagramas de clases.
 
 
 #### IAM
 
-El diagrama de IAM (Identity and Access Management) contiene las tablas relacionadas con autenticación, autorización y control de acceso dentro de la plataforma. La tabla user_credentials almacena información relacionada con credenciales, autenticación y validación de acceso, utilizando referencias hacia users como entidad principal del sistema.
+El diagrama de IAM (Identity and Access Management) contiene la tabla users, que almacena las cuentas registradas en la plataforma junto con sus credenciales y rol de acceso. El correo electrónico actúa como identificador único de inicio de sesión y la contraseña se almacena como hash (BCrypt). La autenticación de solicitudes se realiza mediante tokens JWT generados por la propia plataforma, los cuales no requieren persistencia en base de datos.
 
-Asimismo, este contexto administra tokens, roles y mecanismos de autenticación utilizados para proteger los distintos módulos de TechWatch mediante JWT y OAuth 2.0.
-
-![IAM ERD](./assets/images/chapter-4-8-1-img4.png)
+![IAM ERD](./assets/images/erd-iam.png)
 
 
-#### Profile
+#### Profiles
 
-El diagrama de Profile contiene las tablas relacionadas con la información personal y preferencias de usuario dentro de la plataforma. La tabla user_profiles almacena configuraciones, preferencias y datos personalizados asociados a cada usuario registrado.
+El diagrama de Profiles contiene la tabla profiles, que almacena la información personal del usuario (nombres, teléfono e imagen de perfil) junto con sus preferencias de idioma, tema y notificaciones, las cuales corresponden al Value Object Preferences embebido en el agregado Profile. Cada perfil mantiene una relación uno a uno con la tabla users del contexto IAM, referenciada de forma externa.
 
-Este contexto permite administrar personalización de experiencia, configuraciones de cuenta e información complementaria relacionada con el perfil del usuario dentro de TechWatch.
+![Profiles ERD](./assets/images/erd-profiles.png)
 
-![Profile ERD](./assets/images/chapter-4-8-1-img4.png)
+
+#### Device Management
+
+El diagrama de Device Management contiene las tablas relacionadas con la gestión de inmuebles, dispositivos inteligentes y simulación de uso. La tabla properties almacena los inmuebles registrados por cada usuario; la tabla spaces representa los ambientes dentro de cada inmueble; y la tabla devices almacena los dispositivos inteligentes registrados dentro de cada espacio, incluyendo su potencia en watts y su estado actual.
+
+Asimismo, el contexto incluye las tablas de simulación: simulation_sessions registra las sesiones de uso simulado iniciadas por el usuario sobre un inmueble, device_actions almacena las acciones ejecutadas sobre los dispositivos durante cada sesión y usage_data registra los datos de consumo generados, los cuales son consumidos por el contexto Analytics mediante eventos de dominio.
+
+La estructura refleja la jerarquía natural del dominio: un usuario posee inmuebles, cada inmueble contiene espacios y cada espacio administra múltiples dispositivos inteligentes.
+
+![Device Management ERD](./assets/images/erd-device-management.png)
+
+
+#### Analytics
+
+El diagrama de Analytics contiene las tablas relacionadas con métricas, reportes y alertas de consumo energético. La tabla metrics almacena valores calculados a partir de los datos de uso generados durante las sesiones de simulación, asociados a un período de análisis y referenciando externamente las tablas properties y devices del contexto Device Management.
+
+La tabla consumption_reports representa reportes generados para períodos específicos, asociados tanto a inmuebles como usuarios. La tabla report_items detalla información individual de consumo por dispositivo dentro de cada reporte generado. Asimismo, la tabla consumption_alerts almacena alertas automáticas generadas cuando determinadas métricas superan umbrales definidos por el sistema, incluyendo severidad y estado de lectura.
+
+![Analytics ERD](./assets/images/erd-analytics.png)
+
+
+#### Subscriptions
+
+El diagrama de Subscriptions contiene las tablas relacionadas con planes, suscripciones y transacciones de pago. La tabla plans almacena los planes disponibles dentro del modelo freemium, incluyendo precio, ciclo de facturación, límite de dispositivos y beneficios premium como métricas avanzadas, reportes personalizados, alertas e historial ilimitado.
+
+La tabla subscriptions representa la suscripción de cada usuario hacia un plan específico junto con su estado y vigencia, manteniendo referencias hacia users y plans. Finalmente, la tabla payments almacena las transacciones de pago realizadas dentro del sistema, asociadas directamente a una suscripción y procesadas mediante la integración con el servicio de pagos externo.
+
+![Subscriptions ERD](./assets/images/erd-subscriptions.png)
 
 
 
@@ -1737,10 +1743,10 @@ En esta sección se detallan las herramientas y configuraciones consideradas par
   La Web Application fue desarrollada en Angular con TypeScript. Para su despliegue se utilizaron plataformas como Azure y Vercel, permitiendo publicar la aplicación web compilada y mantener acceso público a la solución. Estas herramientas facilitan el despliegue continuo desde GitHub y permiten actualizar la aplicación conforme se integran nuevos cambios en el repositorio.
 
 - **Backend Web Services:**  
-  El backend fue desarrollado en Java, siguiendo una arquitectura orientada a servicios REST. Para su despliegue se consideraron plataformas como Azure, Railway y Render, ya que permiten alojar servicios backend, configurar variables de entorno y conectar la aplicación con la base de datos PostgreSQL.
+  El backend fue desarrollado en Java, siguiendo una arquitectura orientada a servicios REST. Para su despliegue se consideraron plataformas como Azure, Railway y Render, ya que permiten alojar servicios backend, configurar variables de entorno y conectar la aplicación con la base de datos MySQL.
 
 - **Base de Datos:**  
-  Para la persistencia de datos se utiliza PostgreSQL. La base de datos puede ser desplegada en Railway, plataforma que permite provisionar una instancia PostgreSQL, gestionar credenciales de conexión y administrar variables de entorno necesarias para la comunicación con el backend.
+  Para la persistencia de datos se utiliza MySQL. La base de datos puede ser desplegada en Railway, plataforma que permite provisionar una instancia MySQL, gestionar credenciales de conexión y administrar variables de entorno necesarias para la comunicación con el backend.
 
 - **Control de versiones y despliegue:**  
   GitHub fue utilizado como repositorio principal para gestionar el código fuente, ramas de desarrollo, pull requests y versiones del proyecto. Además, permitió integrar los repositorios con las plataformas de despliegue para facilitar la publicación de la Landing Page, Web Application y Backend.
@@ -2054,7 +2060,7 @@ Organización del equipo en GitHub:
 
 El proyecto TechWatch permitió identificar y abordar la necesidad de contar con una plataforma centralizada orientada al monitoreo, control y análisis de dispositivos inteligentes dentro del hogar. A través de metodologías como Lean UX, entrevistas y análisis de segmentos objetivo, se evidenció que los usuarios buscan soluciones accesibles, intuitivas y enfocadas en optimizar el consumo energético mediante información clara y visual.
 
-El desarrollo de la arquitectura, diseño de interfaces, prototipos y modelos basados en Domain-Driven Design permitió validar la viabilidad técnica y funcional de la propuesta. Asimismo, la definición de Bounded Contexts como Device Management, Analytics, Payment, IAM y Profile facilitó una mejor organización del dominio y de las responsabilidades del sistema.
+El desarrollo de la arquitectura, diseño de interfaces, prototipos y modelos basados en Domain-Driven Design permitió validar la viabilidad técnica y funcional de la propuesta. Asimismo, la definición de Bounded Contexts como Device Management, Analytics, Subscriptions, IAM y Profiles facilitó una mejor organización del dominio y de las responsabilidades del sistema.
 
 TechWatch se posiciona como una solución orientada a Smart Homes que integra monitoreo de dispositivos, dashboards analíticos y control inteligente del hogar, permitiendo a los usuarios comprender el comportamiento energético de sus dispositivos y tomar decisiones informadas para optimizar recursos.
 
@@ -2084,9 +2090,7 @@ Oracle. (s.f.). *MySQL documentation*. Oracle. https://dev.mysql.com/doc/
 
 Scrum Guides. (2020). *The Scrum Guide*. Scrum.org. https://scrumguides.org/
 
-The PostgreSQL Global Development Group. (s.f.). *PostgreSQL documentation*. https://www.postgresql.org/docs/
-
-ThingsBoard. (s.f.). *IoT energy management & monitoring with ThingsBoard*. https://thingsboard.io/use-cases/smart-energy/ :contentReference[oaicite:1]{index=1}
+ThingsBoard. (s.f.). *IoT energy management & monitoring with ThingsBoard*. https://thingsboard.io/use-cases/smart-energy/
 
 W3C. (s.f.). *Web Content Accessibility Guidelines (WCAG) 2.2*. World Wide Web Consortium. https://www.w3.org/TR/WCAG22/
 
