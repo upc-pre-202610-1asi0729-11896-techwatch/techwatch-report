@@ -80,7 +80,7 @@ package "Device Management" {
         - type: DeviceType
         - status: DeviceStatus
         - powerWatts: PowerWatts
-        + Device(command: CreateDeviceCommand)
+        + Device(command: AddDeviceToSpaceCommand)
         + turnOn(): Device
         + turnOff(): Device
         + updateInformation(name: String, brand: String, model: String): Device
@@ -137,13 +137,13 @@ package "Device Management" {
         - type: PropertyType
     }
 
-    class AddSpaceToPropertyCommand <<Command>> <<Record>> {
+    class CreateSpaceCommand <<Command>> <<Record>> {
         - propertyId: Long
         - name: String
         - description: String
     }
 
-    class CreateDeviceCommand <<Command>> <<Record>> {
+    class AddDeviceToSpaceCommand <<Command>> <<Record>> {
         - spaceId: Long
         - name: String
         - brand: String
@@ -152,9 +152,13 @@ package "Device Management" {
         - powerWatts: Double
     }
 
-    class UpdateDeviceStatusCommand <<Command>> <<Record>> {
+    class EditDeviceCommand <<Command>> <<Record>> {
         - deviceId: Long
-        - status: DeviceStatus
+        - name: String
+        - brand: String
+        - model: String
+        - type: DeviceType
+        - powerWatts: Double
     }
 
     class StartSimulationSessionCommand <<Command>> <<Record>> {
@@ -212,7 +216,7 @@ package "Device Management" {
     ' Application Services
     interface PropertyCommandService <<Service>> {
         + handle(command: CreatePropertyCommand): Result<Long, ApplicationError>
-        + handle(command: AddSpaceToPropertyCommand): Result<Property, ApplicationError>
+        + handle(command: CreateSpaceCommand): Result<Long, ApplicationError>
     }
 
     interface PropertyQueryService <<Service>> {
@@ -220,8 +224,8 @@ package "Device Management" {
     }
 
     interface DeviceCommandService <<Service>> {
-        + handle(command: CreateDeviceCommand): Result<Long, ApplicationError>
-        + handle(command: UpdateDeviceStatusCommand): Result<Device, ApplicationError>
+        + handle(command: AddDeviceToSpaceCommand): Result<Long, ApplicationError>
+        + handle(command: EditDeviceCommand): Result<Device, ApplicationError>
     }
 
     interface DeviceQueryService <<Service>> {

@@ -106,9 +106,9 @@ Tabla de respuesta directa a "muéstrame la implementación de este comando/even
 | Profile Updated | `UpdateProfileCommand` | `ProfileCommandServiceImpl.handle(...)` | `PUT /api/v1/profiles/{id}` |
 | Preferences Updated | `UpdatePreferencesCommand` | `ProfileCommandServiceImpl.handle(...)` | `PUT /api/v1/profiles/{id}/preferences` |
 | Property Registered | `CreatePropertyCommand` | `PropertyCommandServiceImpl.handle(...)` | `POST /api/v1/properties` |
-| Space Created | `AddSpaceToPropertyCommand` | `PropertyCommandServiceImpl.handle(...)` | `POST /api/v1/properties/{id}/spaces` |
-| Device Added to Space | `CreateDeviceCommand` | `DeviceCommandServiceImpl.handle(...)` (valida límite vía `ExternalSubscriptionService`) | `POST /api/v1/devices` |
-| Device Updated | `UpdateDeviceStatusCommand` | `DeviceCommandServiceImpl.handle(...)` | `PUT /api/v1/devices/{id}` |
+| Space Created | `CreateSpaceCommand` | `PropertyCommandServiceImpl.handle(...)` | `POST /api/v1/properties/{id}/spaces` |
+| Device Added to Space | `AddDeviceToSpaceCommand` | `DeviceCommandServiceImpl.handle(...)` (valida límite vía `ExternalSubscriptionService`) | `POST /api/v1/devices` |
+| Device Updated | `EditDeviceCommand` | `DeviceCommandServiceImpl.handle(...)` | `PUT /api/v1/devices/{id}` |
 | Device Deleted | `DeleteDeviceCommand` | `DeviceCommandServiceImpl.handle(...)` | `DELETE /api/v1/devices/{id}` |
 | Simulation Session Started | `StartSimulationSessionCommand` | `SimulationSessionCommandServiceImpl.handle(...)` | `POST /api/v1/simulation-sessions` |
 | Device Action Recorded / Usage Data Generated | `RecordDeviceActionCommand` | `SimulationSessionCommandServiceImpl.handle(...)` + publica `UsageDataGeneratedEvent` | `POST /api/v1/simulation-sessions/{id}/actions` |

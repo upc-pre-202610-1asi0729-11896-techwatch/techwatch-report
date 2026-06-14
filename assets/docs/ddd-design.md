@@ -104,7 +104,7 @@ Notas: `UserPreference` deja de ser entidad con repositorio (D6) y pasa a ser el
 | `SimulationSession` | `id: Long`, `userId: UserId`, `propertyId: PropertyId`, `status: SessionStatus`, `startedAt`, `endedAt`, `actions: List<DeviceAction>`, `usageData: List<UsageDataRecord>` — métodos `start`, `end`, `recordAction` |
 | Entidades internas | `DeviceAction(deviceId, actionType, parameterName, parameterValue, executedAt)`, `UsageDataRecord(deviceId, consumptionValue, unit, recordedAt)` dentro de `SimulationSession` |
 | Value Objects | `UserId`, `PropertyId`, `SpaceId`, `DeviceId` (cross-context/cross-aggregate), `PowerWatts`, enums `PropertyType(HOUSE, APARTMENT)`, `DeviceType(LIGHT, THERMOSTAT, CAMERA, SMART_PLUG, AIR_CONDITIONER, DOOR_LOCK)`, `DeviceStatus(ON, OFF)`, `SessionStatus(ACTIVE, ENDED)` |
-| Commands | `CreatePropertyCommand`, `UpdatePropertyCommand`, `DeletePropertyCommand`, `AddSpaceToPropertyCommand`, `CreateDeviceCommand`, `UpdateDeviceStatusCommand`, `DeleteDeviceCommand`, `StartSimulationSessionCommand`, `RecordDeviceActionCommand`, `EndSimulationSessionCommand` |
+| Commands | `CreatePropertyCommand`, `UpdatePropertyCommand`, `DeletePropertyCommand`, `CreateSpaceCommand`, `AddDeviceToSpaceCommand`, `EditDeviceCommand`, `DeleteDeviceCommand`, `StartSimulationSessionCommand`, `RecordDeviceActionCommand`, `EndSimulationSessionCommand` |
 | Queries | `GetPropertiesByUserIdQuery`, `GetPropertyByIdQuery`, `GetDevicesBySpaceIdQuery`, `GetDevicesByPropertyIdQuery`, `GetDeviceByIdQuery`, `GetActiveSimulationSessionByUserIdQuery` |
 | Eventos | `UsageDataGeneratedEvent` (lo consume Analytics), `DeviceStatusChangedEvent` |
 | Repositorios | `PropertyRepository`, `DeviceRepository`, `SimulationSessionRepository` |
