@@ -2124,6 +2124,140 @@ URL del tablero: _(pendiente de agregar por el equipo)_
 | — | Deployment | T11 | Contenerizar y desplegar la solución en Railway | Dockerfile del backend (Maven + Temurin), Docker multi-stage del frontend (node + nginx), MySQL gestionado, perfil prod y CORS | 5 | Alva Abanto, Luis Andrés | Done |
 | — | Configuración | T12 | Configurar shared kernel, OpenAPI y manejo de errores | Result/ApplicationError, GlobalExceptionHandler, configuración de OpenAPI/Swagger y naming strategy snake_case pluralizado | 3 | Alva Abanto, Luis Andrés | Done |
 
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 3 se documentaron todos los endpoints del RESTful API utilizando **OpenAPI 3** mediante **springdoc-openapi**, anotando cada controller con `@Tag`, `@Operation`, `@ApiResponses` y `@Parameter`, y cada resource con `@Schema` (incluyendo ejemplos). La documentación interactiva queda disponible vía **Swagger UI**, tanto en local como en el despliegue de producción:
+
+- **Producción (Swagger UI):** https://techwatch-backend-production.up.railway.app/swagger-ui/index.html
+- **Especificación OpenAPI (JSON):** https://techwatch-backend-production.up.railway.app/v3/api-docs
+- **Local:** http://localhost:8080/swagger-ui/index.html
+
+El API expone 20 endpoints organizados en los Bounded Contexts **Device Management** (Properties, Spaces, Devices, Simulation Sessions) y **Analytics** (Metrics, Alerts, Reports). Todas las respuestas usan `application/json` y los errores siguen un formato uniforme (`ErrorResponse`) gestionado por un `GlobalExceptionHandler`.
+
+**Device Management — Properties & Spaces**
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/properties` | Body: `CreatePropertyRequest` | Registra una propiedad (casa o departamento) de un usuario | 201 `PropertyResponse` · 400 · 409 |
+| GET | `/api/v1/properties/{propertyId}` | Path: `propertyId` | Obtiene una propiedad por su id | 200 `PropertyResponse` · 404 |
+| GET | `/api/v1/properties?userId={userId}` | Query: `userId` | Lista las propiedades de un usuario | 200 `PropertyResponse[]` |
+| POST | `/api/v1/properties/{propertyId}/spaces` | Path: `propertyId` · Body: `CreateSpaceRequest` | Crea un espacio (ambiente) dentro de una propiedad | 201 `SpaceResponse` · 400 · 404 · 409 |
+
+**Device Management — Devices**
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/devices` | Body: `CreateDeviceRequest` | Agrega un dispositivo a un espacio (inicia en estado OFF) | 201 `DeviceResponse` · 400 · 409 |
+| GET | `/api/v1/devices/{deviceId}` | Path: `deviceId` | Obtiene un dispositivo por su id | 200 `DeviceResponse` · 404 |
+| PUT | `/api/v1/devices/{deviceId}` | Path: `deviceId` · Body: `EditDeviceRequest` | Edita la información descriptiva de un dispositivo | 200 `DeviceResponse` · 400 · 404 · 409 |
+| GET | `/api/v1/devices?spaceId={spaceId}` | Query: `spaceId` | Lista los dispositivos de un espacio | 200 `DeviceResponse[]` |
+| DELETE | `/api/v1/devices/{deviceId}` | Path: `deviceId` | Elimina un dispositivo | 200 `MessageResponse` · 404 |
+
+**Device Management — Simulation Sessions**
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/simulation-sessions` | Body: `StartSimulationSessionRequest` | Inicia una sesión de simulación (una activa por usuario) | 201 `SimulationSessionResponse` · 400 · 409 |
+| POST | `/api/v1/simulation-sessions/{sessionId}/actions` | Path: `sessionId` · Body: `RecordDeviceActionRequest` | Registra una acción de dispositivo y genera datos de consumo | 201 `SimulationSessionResponse` · 400 · 404 · 422 |
+| POST | `/api/v1/simulation-sessions/{sessionId}/end` | Path: `sessionId` | Finaliza una sesión activa (estado ENDED) | 200 `SimulationSessionResponse` · 404 · 422 |
+| GET | `/api/v1/simulation-sessions/{sessionId}` | Path: `sessionId` | Obtiene una sesión por su id | 200 `SimulationSessionResponse` · 404 |
+| GET | `/api/v1/simulation-sessions/active?userId={userId}` | Query: `userId` | Obtiene la sesión activa de un usuario | 200 `SimulationSessionResponse` · 404 |
+
+**Analytics — Metrics, Alerts & Reports**
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| GET | `/api/v1/metrics?propertyId={propertyId}` | Query: `propertyId` | Lista las métricas de consumo de una propiedad | 200 `ConsumptionMetricResponse[]` |
+| GET | `/api/v1/alerts?userId={userId}` | Query: `userId` | Lista las alertas de consumo de un usuario | 200 `ConsumptionAlertResponse[]` |
+| PUT | `/api/v1/alerts/{alertId}/read` | Path: `alertId` | Marca una alerta de consumo como leída | 200 `ConsumptionAlertResponse` · 404 |
+| POST | `/api/v1/reports` | Body: `GenerateConsumptionReportRequest` | Genera un reporte agregando las métricas por dispositivo en un periodo | 201 `ConsumptionReportResponse` · 400 |
+| GET | `/api/v1/reports/{reportId}` | Path: `reportId` | Obtiene un reporte por su id | 200 `ConsumptionReportResponse` · 404 |
+| GET | `/api/v1/reports?propertyId={propertyId}` | Query: `propertyId` | Lista los reportes de una propiedad | 200 `ConsumptionReportResponse[]` |
+
+**Ejemplos de interacción con datos de muestra**
+
+*Ejemplo 1 — Registrar una propiedad.* `POST /api/v1/properties`
+
+```json
+// Request body (CreatePropertyRequest)
+{ "userId": 1, "name": "My House", "address": "742 Evergreen Terrace", "type": "HOUSE" }
+```
+```json
+// Response 201 Created (PropertyResponse)
+{ "id": 1, "userId": 1, "name": "My House", "address": "742 Evergreen Terrace", "type": "HOUSE", "spaces": [] }
+```
+La propiedad se crea sin espacios; el `id` generado se utiliza luego para crear espacios y registrar dispositivos. Si el nombre ya existe para el usuario, el API responde `409 Conflict`.
+
+*Ejemplo 2 — Agregar un dispositivo a un espacio.* `POST /api/v1/devices`
+
+```json
+// Request body (CreateDeviceRequest)
+{ "spaceId": 1, "name": "Ceiling Light", "brand": "Philips", "model": "Hue", "type": "LIGHT", "powerWatts": 9.5 }
+```
+```json
+// Response 201 Created (DeviceResponse)
+{ "id": 1, "spaceId": 1, "name": "Ceiling Light", "brand": "Philips", "model": "Hue", "type": "LIGHT", "status": "OFF", "powerWatts": 9.5 }
+```
+El dispositivo se registra en estado `OFF`. El `type` debe ser uno de `LIGHT`, `THERMOSTAT`, `CAMERA`, `SMART_PLUG`, `AIR_CONDITIONER` o `DOOR_LOCK`. Si el nombre ya existe en el espacio, responde `409 Conflict`.
+
+*Ejemplo 3 — Registrar una acción de dispositivo en una sesión de simulación.* `POST /api/v1/simulation-sessions/1/actions`
+
+```json
+// Request body (RecordDeviceActionRequest)
+{ "deviceId": 1, "actionType": "TURN_ON", "parameterName": null, "parameterValue": null, "durationMinutes": 30 }
+```
+```json
+// Response 201 Created (SimulationSessionResponse)
+{
+  "id": 1, "userId": 1, "propertyId": 1, "status": "ACTIVE",
+  "startedAt": "2026-06-15T20:10:00", "endedAt": null,
+  "actions": [
+    { "id": 1, "deviceId": 1, "actionType": "TURN_ON", "parameterName": null, "parameterValue": null, "executedAt": "2026-06-15T20:12:00" }
+  ],
+  "usageData": [
+    { "id": 1, "deviceId": 1, "consumptionValue": 4.75, "unit": "Wh", "recordedAt": "2026-06-15T20:12:00" }
+  ]
+}
+```
+El consumo se calcula como `powerWatts × (durationMinutes / 60) = 9.5 × 0.5 = 4.75 Wh`. Este registro publica un evento de integración que el Bounded Context **Analytics** consume para calcular la métrica y evaluar la policy de alertas. Si la sesión no está activa, responde `422 Unprocessable Entity`.
+
+*Ejemplo 4 — Consultar las métricas de una propiedad.* `GET /api/v1/metrics?propertyId=1`
+
+```json
+// Response 200 OK (ConsumptionMetricResponse[])
+[
+  { "id": 1, "propertyId": 1, "deviceId": 1, "metricType": "ENERGY_CONSUMPTION", "value": 4.75, "unit": "Wh",
+    "periodStart": "2026-06-15T20:12:00", "periodEnd": "2026-06-15T20:12:00", "calculatedAt": "2026-06-15T20:12:00" }
+]
+```
+Cada acción de consumo genera una métrica `ENERGY_CONSUMPTION`; el dashboard del frontend las agrega para mostrar el consumo por dispositivo y por propiedad.
+
+**Capturas de la documentación desplegada (Swagger UI)**
+
+![Swagger UI - Relación de endpoints](assets/images/chapter-5-2-3-6-img1.png)
+
+![Swagger UI - Ejemplo de request/response con datos de muestra](assets/images/chapter-5-2-3-6-img2.png)
+
+<!-- TODO equipo: reemplazar las dos imágenes anteriores por capturas reales del Swagger UI desplegado, interactuando con datos de muestra (Try it out). -->
+
+**Repositorio de Web Services y commits de documentación**
+
+Repositorio: [upc-pre-202610-1asi0729-11896-techwatch/techwatch-backend](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-backend) · rama de trabajo: **`develop`**.
+
+La documentación OpenAPI se incorporó junto con cada endpoint mediante anotaciones de springdoc. Commits relacionados con la documentación de servicios en este Sprint:
+
+| Commit Id | Mensaje |
+|-----------|---------|
+| 3153991 | Merge branch 'feature/setup' into develop (shared kernel + `OpenApiConfiguration` + springdoc) |
+| 1403b25 | feat(devices): exponer API REST de registro y consulta de propiedades |
+| 548a885 | feat(devices): exponer API REST para crear spaces en una propiedad |
+| 8d3e4ca | feat(devices): exponer API REST para agregar y consultar devices |
+| 2562f5f | feat(devices): exponer API REST para iniciar sesiones de simulacion |
+| 177e65f | feat(analytics): exponer API REST de consulta de metricas |
+| 261f049 | feat(analytics): exponer API REST de consulta de alertas |
+| 7421af9 | feat(analytics): exponer API REST de consumption reports |
+| b64831e | feat(shared): habilitar CORS y URL de servidor OpenAPI relativa |
+
 ---
 
 
