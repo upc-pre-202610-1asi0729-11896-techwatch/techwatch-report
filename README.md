@@ -2375,6 +2375,131 @@ Analíticos de colaboración y *commits* del Sprint 3:
 
 ---
 
+## 5.3. Validation Interviews
+
+En esta sección se registran y explican las entrevistas de validación realizadas con usuarios de los segmentos objetivo, quienes interactuaron con el Landing Page y la Web Application desplegados, ejecutando tareas concretas. El objetivo es validar la usabilidad, la arquitectura de información y el diseño inclusivo de la experiencia propuesta, así como contrastar las hipótesis del proceso Lean UX. La sección incluye el diseño de las entrevistas, su registro y la evaluación según heurísticas.
+
+### 5.3.1. Diseño de Entrevistas
+
+El proceso de validación se diseñó para cada segmento objetivo, combinando la navegación por el Landing Page (propuesta de valor, planes y registro) con la ejecución de los principales *user flows* de la Web Application. Para cada participante se definió un guion de tareas a completar mientras se observa su interacción, sin guiarlo, registrando dudas, errores y comentarios.
+
+**Elementos a validar:**
+
+- **Landing Page:** comprensión de la propuesta de valor (*hero* y *features*), claridad de los planes (*pricing*) y del *call-to-action* hacia el registro.
+- **Web Application — *user flows*:**
+  1. Registrar un inmueble (casa o departamento).
+  2. Crear espacios y agregar dispositivos a un espacio.
+  3. Iniciar una sesión de simulación y registrar acciones de dispositivos.
+  4. Visualizar el *dashboard* de métricas de consumo.
+  5. Revisar y marcar alertas de consumo.
+  6. Generar y consultar un reporte de consumo por periodo.
+
+**Preguntas de validación (post-tarea), para ambos segmentos:**
+
+1. ¿Pudiste completar la tarea sin ayuda? ¿Qué te resultó confuso?
+2. ¿La información mostrada (métricas, alertas, reportes) te resultó clara y útil?
+3. ¿La navegación entre secciones te pareció intuitiva?
+4. ¿Las etiquetas y los textos fueron comprensibles?
+5. ¿Qué mejorarías de la experiencia?
+
+**Énfasis por segmento:**
+
+- **Segmento 1 — Propietarios de casas:** se prioriza la gestión de múltiples espacios y dispositivos (casa con varios ambientes) y la lectura del *dashboard* y reportes para optimizar el consumo.
+- **Segmento 2 — Arrendatarios/propietarios de departamentos:** se prioriza el registro rápido de un inmueble compacto, la experiencia móvil y la comprensión de las alertas de consumo.
+
+### 5.3.2. Registro de Entrevistas
+
+Se requieren de 3 a 5 entrevistas de validación por cada segmento objetivo. Cada entrevista se registró en video (un solo video editado, subido a Microsoft Stream), indicando para cada entrevistado: nombres y apellidos, edad, distrito, un *screenshot* de un cuadro del video, el URL del video con el *timing* de inicio y la duración, y un resumen descriptivo de sus apreciaciones respecto a las tareas asignadas.
+
+**Video consolidado de entrevistas de validación:** _(pendiente: enlace del video en Microsoft Stream)_
+
+<!-- TODO equipo: pegar el enlace del video consolidado de entrevistas de validación. -->
+
+**Segmento 1 — Propietarios de casas**
+
+| Campo | Entrevista 1 | Entrevista 2 | Entrevista 3 |
+|-------|--------------|--------------|--------------|
+| Nombres y apellidos | _(pendiente)_ | _(pendiente)_ | _(pendiente)_ |
+| Edad | | | |
+| Distrito | | | |
+| Timing en el video | | | |
+| Duración | | | |
+| Screenshot | | | |
+| Resumen | | | |
+
+**Segmento 2 — Arrendatarios/propietarios de departamentos**
+
+| Campo | Entrevista 1 | Entrevista 2 | Entrevista 3 |
+|-------|--------------|--------------|--------------|
+| Nombres y apellidos | _(pendiente)_ | _(pendiente)_ | _(pendiente)_ |
+| Edad | | | |
+| Distrito | | | |
+| Timing en el video | | | |
+| Duración | | | |
+| Screenshot | | | |
+| Resumen | | | |
+
+<!-- TODO equipo: completar con 3 a 5 entrevistas reales por segmento (datos, screenshot, URL con timing y resumen descriptivo de cada entrevistado). -->
+
+### 5.3.3. Evaluaciones según heurísticas
+
+La evaluación de las sesiones de validación se realizó siguiendo el formato del Anexo D (*UX Heuristics & Principles Evaluation*), considerando heurísticas de **usabilidad** (Nielsen), **arquitectura de información** e **inclusive design** de la experiencia propuesta.
+
+**UX Heuristics & Principles Evaluation — Usability · Inclusive Design · Information Architecture**
+
+| Campo | Detalle |
+|-------|---------|
+| Carrera | Ingeniería de Software |
+| Curso | Desarrollo de Aplicaciones Open Source |
+| Sección | _(pendiente: sección)_ |
+| Profesor | Efraín Ricardo Bautista Ubillús |
+| Auditor | Equipo TechWatch |
+| Cliente(s) | Usuarios de validación de los segmentos objetivo |
+
+**Site/App a evaluar:** TechWatch — Landing Page y Web Application (IntelliHome).
+
+**Tareas a evaluar:**
+
+1. Registrar un inmueble.
+2. Crear espacios y agregar dispositivos.
+3. Iniciar una sesión de simulación y registrar acciones.
+4. Visualizar el *dashboard* de métricas.
+5. Revisar y marcar alertas.
+6. Generar un reporte de consumo.
+
+*No incluidas en esta versión:* autenticación/login (IAM pendiente), gestión de suscripciones y pagos, y edición de perfil.
+
+**Escala de severidad:**
+
+| Nivel | Descripción |
+|-------|-------------|
+| 1 | Problema superficial: puede superarse fácilmente o se presenta con muy poca frecuencia. |
+| 2 | Problema menor: ocurre con cierta frecuencia o es algo difícil de superar; prioridad baja para el siguiente *release*. |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no logran resolverlo; prioridad alta de corrección. |
+| 4 | Problema muy grave: impide continuar con el uso de la herramienta; debe corregirse antes del lanzamiento. |
+
+**Tabla resumen:**
+
+| # | Problema | Severidad | Heurística/Principio violada(o) |
+|---|----------|-----------|---------------------------------|
+| 1 | El estado on/off de los dispositivos es de solo lectura; el usuario no puede encender/apagar desde la interfaz. | 2 | Usability: Control y libertad del usuario |
+| 2 | Los tipos de dispositivo se muestran con etiquetas técnicas en inglés (LIGHT, SMART_PLUG). | 2 | Inclusive Design: lenguaje del usuario / Consistencia |
+| 3 | Las métricas se expresan en Wh sin equivalencia a kWh ni a costo estimado. | 2 | Information Architecture: ¿Es usable? |
+| 4 | Al generar un reporte *on-demand* no hay indicador de progreso/carga visible. | 1 | Usability: Visibilidad del estado del sistema |
+| 5 | La aplicación opera con un usuario fijo (sin *login*), por lo que no hay contexto de sesión visible. | 2 | Usability: Visibilidad del estado del sistema |
+
+**Descripción de problemas (representativos):**
+
+*Problema #1 — Estado de dispositivo de solo lectura.* Severidad: 2 · Heurística: *Usability – Control y libertad del usuario*. El detalle del dispositivo muestra su estado (ON/OFF) pero no permite alternarlo, lo que algunos usuarios esperaban poder hacer a modo de "control remoto". *(Incluir captura.)* **Recomendación:** habilitar una acción de encendido/apagado cuando el backend exponga dicho comando, o comunicar claramente que el estado es informativo en esta versión.
+
+*Problema #2 — Etiquetas técnicas en inglés.* Severidad: 2 · Heurística: *Inclusive Design – lenguaje del usuario*. Tipos como `SMART_PLUG` o `AIR_CONDITIONER` se muestran tal cual al usuario. *(Incluir captura.)* **Recomendación:** mapear los *enums* a etiquetas localizadas (es/en) coherentes con el i18n del producto.
+
+*Problema #3 — Unidades sin contexto.* Severidad: 2 · Heurística: *Information Architecture – ¿Es usable?*. El consumo en Wh no se acompaña de kWh ni de un costo estimado, lo que dificulta su interpretación. *(Incluir captura.)* **Recomendación:** mostrar el equivalente en kWh y una estimación de costo configurable.
+
+<!-- TODO equipo: ajustar/completar los hallazgos con los problemas observados en las sesiones de validación reales e incluir las capturas correspondientes a cada problema. -->
+
+---
+
 
 
 ## Conclusiones y recomendaciones
