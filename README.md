@@ -2162,6 +2162,30 @@ Durante el Sprint 3 el desarrollo se concentró en dos repositorios: el **Backen
 | techwatch-frontend | develop | c3c9573 | Docker, nginx y configuración de Railway | 2026-06-17 |
 | techwatch-frontend | develop | 63cf8e7 | apuntar apiBaseUrl de producción al backend de Railway | 2026-06-17 |
 
+#### 5.2.3.5. Execution Evidence for Sprint Review
+
+En el Sprint 3 se alcanzó la integración *end-to-end* del Frontend Web Application con el RESTful API real desplegado, reemplazando por completo el JSON Server. El flujo principal validado abarca: registrar una propiedad (casa o departamento), crear espacios dentro de ella, agregar y administrar dispositivos por espacio, iniciar una sesión de simulación, registrar acciones de dispositivos que generan datos de consumo, y visualizar las métricas, alertas y reportes calculados por el Bounded Context Analytics. El flujo se ejecuta consumiendo el API en `https://techwatch-backend-production.up.railway.app/api/v1` (o el *proxy* local de `ng serve` en desarrollo).
+
+Principales vistas implementadas:
+
+- **Gestión (Management):** listado de propiedades, formulario de propiedad, y detalle de propiedad con *chips* de espacios, tabla de dispositivos por espacio y formularios de espacio y dispositivo (con marca, modelo y tipo).
+- **Simulación (Simulation):** inicio de sesión de simulación por propiedad, registro de acciones de dispositivos y finalización de la sesión.
+- **Analítica (Analytics):** *dashboard* de métricas de consumo, listado de alertas (con marcado como leídas) y reportes de consumo por periodo.
+
+Capturas de las principales vistas:
+
+![Vista de gestión de propiedades y dispositivos](assets/images/chapter-5-2-3-5-img1.png)
+
+![Vista de simulación de dispositivos](assets/images/chapter-5-2-3-5-img2.png)
+
+![Dashboard de analítica: métricas, alertas y reportes](assets/images/chapter-5-2-3-5-img3.png)
+
+<!-- TODO equipo: reemplazar por capturas reales de la Web Application desplegada con datos de muestra (poblar con el script scripts/seed-data.ps1). -->
+
+**Video de visualización y navegación del Sprint 3:** _(pendiente: enlace al video de navegación — ver Anexo de Evidencia de Video)_
+
+<!-- TODO equipo: pegar el enlace del video (Microsoft Stream) que ilustra la visualización y navegación logradas en este Sprint. -->
+
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
 Durante el Sprint 3 se documentaron todos los endpoints del RESTful API utilizando **OpenAPI 3** mediante **springdoc-openapi**, anotando cada controller con `@Tag`, `@Operation`, `@ApiResponses` y `@Parameter`, y cada resource con `@Schema` (incluyendo ejemplos). La documentación interactiva queda disponible vía **Swagger UI**, tanto en local como en el despliegue de producción:
@@ -2332,6 +2356,22 @@ Commits relacionados con el *deployment* en este Sprint:
 | techwatch-backend | b64831e | feat(shared): habilitar CORS y URL de servidor OpenAPI relativa | 2026-06-17 |
 | techwatch-frontend | c3c9573 | chore(deployment): añadir Docker, nginx y configuración de Railway | 2026-06-17 |
 | techwatch-frontend | 63cf8e7 | chore(config): apuntar apiBaseUrl de producción al backend de Railway | 2026-06-17 |
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 3 los 5 integrantes colaboraron en la construcción del Backend Web Services, la migración del Frontend Web Application y el despliegue de la solución en Railway. El trabajo se organizó con ramas `feature/*` por funcionalidad e integración a `develop` mediante *pull requests*, siguiendo GitFlow y Conventional Commits. La coordinación se realizó mediante WhatsApp y reuniones por Google Meet, y el seguimiento de tareas se gestionó en Trello. Las actividades se distribuyeron según los aspectos de la matriz LACX (sección 5.2.3.2): el modelado DDD y la API REST del backend, la integración del frontend, el despliegue y DevOps, y la documentación del informe.
+
+Organización del equipo en GitHub:
+
+[https://github.com/upc-pre-202610-1asi0729-11896-techwatch](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
+
+Analíticos de colaboración y *commits* del Sprint 3:
+
+![Insights de colaboración - Backend Web Services](assets/images/chapter-5-2-3-8-img1.png)
+
+![Insights de colaboración - Frontend Web Application](assets/images/chapter-5-2-3-8-img2.png)
+
+<!-- TODO equipo: reemplazar por capturas reales de los analíticos de colaboración (Insights → Contributors y/o Network) de los repositorios techwatch-backend y techwatch-frontend para este Sprint. -->
 
 ---
 
