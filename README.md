@@ -2124,6 +2124,44 @@ URL del tablero: _(pendiente de agregar por el equipo)_
 | — | Deployment | T11 | Contenerizar y desplegar la solución en Railway | Dockerfile del backend (Maven + Temurin), Docker multi-stage del frontend (node + nginx), MySQL gestionado, perfil prod y CORS | 5 | Alva Abanto, Luis Andrés | Done |
 | — | Configuración | T12 | Configurar shared kernel, OpenAPI y manejo de errores | Result/ApplicationError, GlobalExceptionHandler, configuración de OpenAPI/Swagger y naming strategy snake_case pluralizado | 3 | Alva Abanto, Luis Andrés | Done |
 
+#### 5.2.3.4. Development Evidence for Sprint Review
+
+Durante el Sprint 3 el desarrollo se concentró en dos repositorios: el **Backend Web Services** (Spring Boot) y el **Frontend Web Application** (Angular). En el backend se aplicó GitFlow trabajando una rama `feature/*` por cada comando o query del Design-Level Event Storming, con *commits* por capa (domain → application → infrastructure → interfaces) e integración a `develop` mediante *merge* `--no-ff`. Todos los mensajes siguen Conventional Commits (`feat`, `fix`, `chore`).
+
+**Backend Web Services** — [techwatch-backend](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-backend) · rama `develop`.
+
+| Repository | Branch | Commit Id | Commit Message | Fecha |
+|------------|--------|-----------|----------------|-------|
+| techwatch-backend | feature/setup | 3153991 | shared kernel, OpenAPI y manejo global de errores | 2026-06-13 |
+| techwatch-backend | feature/create-property | 869e579 | aggregate Property + REST de registro y consulta de propiedades | 2026-06-13 |
+| techwatch-backend | feature/create-spaces | eec268e | comando CreateSpace + REST de espacios | 2026-06-13 |
+| techwatch-backend | feature/add-device-to-space | 79f5bb4 | aggregate Device + REST para agregar y consultar dispositivos | 2026-06-13 |
+| techwatch-backend | feature/edit-device | 7eda085 | edición de dispositivo (PUT /api/v1/devices/{id}) | 2026-06-13 |
+| techwatch-backend | feature/delete-device | 9fbe398 | eliminación de dispositivo (DELETE /api/v1/devices/{id}) | 2026-06-13 |
+| techwatch-backend | feature/start-simulation-session | 345ec1e | inicio de sesión de simulación | 2026-06-13 |
+| techwatch-backend | feature/record-device-action | 81b7f85 | registro de acción de dispositivo + datos de consumo | 2026-06-13 |
+| techwatch-backend | feature/end-simulation-session | 0fd6eba | fin de sesión de simulación | 2026-06-13 |
+| techwatch-backend | feature/calculate-metrics | cf05412 | Analytics: cálculo de métricas de consumo | 2026-06-14 |
+| techwatch-backend | feature/trigger-consumption-alert | deb8759 | Analytics: policy de alertas de consumo | 2026-06-14 |
+| techwatch-backend | feature/mark-alert-as-read | e3b7cf9 | Analytics: marcar alerta como leída | 2026-06-14 |
+| techwatch-backend | feature/generate-consumption-report | a09f6c7 | Analytics: generación de reportes de consumo | 2026-06-14 |
+| techwatch-backend | develop | b33b365 | Docker, Railway y perfil de producción | 2026-06-17 |
+| techwatch-backend | develop | b64831e | CORS y URL de servidor OpenAPI relativa | 2026-06-17 |
+| techwatch-backend | develop | 27db939 | script de seed de datos de demo | 2026-06-17 |
+
+**Frontend Web Application** — [techwatch-frontend](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-frontend) · rama `develop`.
+
+| Repository | Branch | Commit Id | Commit Message | Fecha |
+|------------|--------|-----------|----------------|-------|
+| techwatch-frontend | feature/connect-real-backend | a8e8149 | conectar el frontend al backend real vía proxy de ng serve | 2026-06-14 |
+| techwatch-frontend | feature/connect-real-backend | bc19c34 | migrar de Home a Property/Space/Device contra el backend | 2026-06-14 |
+| techwatch-frontend | feature/connect-real-backend | c6c4deb | agregar el contexto de simulation sessions | 2026-06-14 |
+| techwatch-frontend | feature/connect-real-backend | 1076d8b | reescribir analytics a metrics, alerts y reports | 2026-06-14 |
+| techwatch-frontend | develop | 53c1b19 | cablear rutas raíz y navegación principal | 2026-06-14 |
+| techwatch-frontend | develop | c1f8ca2 | integrar feature/connect-real-backend a develop | 2026-06-14 |
+| techwatch-frontend | develop | c3c9573 | Docker, nginx y configuración de Railway | 2026-06-17 |
+| techwatch-frontend | develop | 63cf8e7 | apuntar apiBaseUrl de producción al backend de Railway | 2026-06-17 |
+
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
 Durante el Sprint 3 se documentaron todos los endpoints del RESTful API utilizando **OpenAPI 3** mediante **springdoc-openapi**, anotando cada controller con `@Tag`, `@Operation`, `@ApiResponses` y `@Parameter`, y cada resource con `@Schema` (incluyendo ejemplos). La documentación interactiva queda disponible vía **Swagger UI**, tanto en local como en el despliegue de producción:
@@ -2257,6 +2295,43 @@ La documentación OpenAPI se incorporó junto con cada endpoint mediante anotaci
 | 261f049 | feat(analytics): exponer API REST de consulta de alertas |
 | 7421af9 | feat(analytics): exponer API REST de consumption reports |
 | b64831e | feat(shared): habilitar CORS y URL de servidor OpenAPI relativa |
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 3 se desplegó por primera vez la **solución completa en producción** sobre **Railway**, dentro de un único proyecto (`techwatch`) que agrupa tres servicios: **techwatch-backend**, **MySQL** y **techwatch-frontend**. La Landing Page mantiene su despliegue en Railway con una nueva versión. A continuación se resumen los pasos realizados por cada producto.
+
+**Backend Web Services (Spring Boot).** Se añadió un `Dockerfile` multi-stage (*build* con `maven:3.9.16-eclipse-temurin-26`, *runtime* con `eclipse-temurin:26-jre`) y un perfil `prod` (`application-prod.properties`). El despliegue se realiza desde el repositorio con la CLI de Railway (`railway up --ci --service techwatch-backend`), que construye la imagen Docker. Las variables de entorno (`DATABASE_URL`, `DATABASE_USERNAME`, `DATABASE_PASSWORD`, `SPRING_PROFILES_ACTIVE=prod`) referencian el servicio de MySQL a través de la red interna de Railway. URL pública: **https://techwatch-backend-production.up.railway.app** (Swagger en `/swagger-ui/index.html`).
+
+**Frontend Web Application (Angular).** Se añadió un `Dockerfile` multi-stage que compila la aplicación con `node:22-alpine` y la sirve con `nginx:1.27-alpine` (nginx escucha en el puerto 8080 que Railway expone por defecto). La URL del Backend Web Services queda incorporada en el *build*. URL pública: **https://techwatch-frontend-production.up.railway.app**.
+
+**Base de Datos (MySQL).** Se provisionó una instancia gestionada de MySQL como servicio del mismo proyecto. El esquema se crea automáticamente al arrancar (`ddl-auto=update`) y el backend se conecta por la red interna `mysql.railway.internal`. Para poblar datos de demostración se dispone del script idempotente `scripts/seed-data.ps1`, que crea propiedades, espacios y dispositivos y ejecuta una simulación que genera métricas, alertas y reportes mediante el API.
+
+**CORS.** Se habilitó CORS en el backend (`WebConfiguration`), con `cors.allowed-origins` configurable por variable de entorno, permitiendo que el frontend desplegado consuma el API.
+
+| Producto | Plataforma | URL pública |
+|----------|------------|-------------|
+| Landing Page | Railway | _(pendiente)_ |
+| Frontend Web Application | Railway (Docker + nginx) | https://techwatch-frontend-production.up.railway.app |
+| Backend Web Services | Railway (Docker) | https://techwatch-backend-production.up.railway.app |
+| Swagger / OpenAPI | Railway | https://techwatch-backend-production.up.railway.app/swagger-ui/index.html |
+| Base de Datos | Railway (MySQL gestionado) | red interna `mysql.railway.internal` |
+
+**Capturas del despliegue (Railway)**
+
+![Railway - Servicios del proyecto techwatch](assets/images/chapter-5-2-3-7-img1.png)
+
+![Railway - Variables de entorno y logs de despliegue](assets/images/chapter-5-2-3-7-img2.png)
+
+<!-- TODO equipo: reemplazar por capturas reales del dashboard de Railway (los tres servicios, logs de build y variables de entorno) y agregar la URL pública de la Landing Page. -->
+
+Commits relacionados con el *deployment* en este Sprint:
+
+| Repository | Commit Id | Mensaje | Fecha |
+|------------|-----------|---------|-------|
+| techwatch-backend | b33b365 | chore(deployment): añadir Docker, Railway y perfil de producción | 2026-06-17 |
+| techwatch-backend | b64831e | feat(shared): habilitar CORS y URL de servidor OpenAPI relativa | 2026-06-17 |
+| techwatch-frontend | c3c9573 | chore(deployment): añadir Docker, nginx y configuración de Railway | 2026-06-17 |
+| techwatch-frontend | 63cf8e7 | chore(config): apuntar apiBaseUrl de producción al backend de Railway | 2026-06-17 |
 
 ---
 
