@@ -2498,9 +2498,21 @@ La evaluación de las sesiones de validación se realizó siguiendo el formato d
 
 <!-- TODO equipo: ajustar/completar los hallazgos con los problemas observados en las sesiones de validación reales e incluir las capturas correspondientes a cada problema. -->
 
+## 5.4. Video About-the-Product
+
+El video **About-the-Product** tiene como público objetivo a los visitantes del Landing Page y a los usuarios de la Web Application. Presenta, con un tono promocional consistente con el producto, el modelo de negocio y las características principales de TechWatch: el registro de inmuebles, espacios y dispositivos, la simulación de uso, y la visualización de métricas, alertas y reportes de consumo energético. Incluye escenas de interacción real con la solución desplegada y **al menos un testimonio positivo** de un usuario que participó en las entrevistas de validación (sección 5.3). La versión publicada en YouTube es la que se incrusta en el Landing Page.
+
+- **Duración:** _(pendiente: 1 a 3 minutos)_
+- **URL (Microsoft Stream):** _(pendiente)_
+- **URL (YouTube, incrustado en el Landing Page):** _(pendiente)_
+
+![Screenshot del video About-the-Product](assets/images/about-the-product.png)
+
+<!-- TODO equipo: grabar el video About-the-Product (1–3 min, con al menos un testimonio de validación), subirlo a Microsoft Stream y YouTube, incrustarlo en el Landing Page, y completar duración, URLs y screenshot. -->
+
 ---
 
-
+# Conclusiones
 
 ## Conclusiones y recomendaciones
 
@@ -2512,7 +2524,33 @@ TechWatch se posiciona como una solución orientada a Smart Homes que integra mo
 
 Se recomienda continuar con la validación del producto mediante pruebas con usuarios reales y ampliar progresivamente la integración con dispositivos IoT para incrementar las capacidades de monitoreo y automatización. Además, resulta importante fortalecer la arquitectura del sistema para garantizar escalabilidad, mantenibilidad y seguridad conforme aumente el número de usuarios y dispositivos conectados.
 
-Finalmente, se recomienda incorporar funcionalidades avanzadas como alertas inteligentes, automatización de acciones, recomendaciones de ahorro energético y análisis predictivo, con el objetivo de incrementar el valor de la plataforma y mejorar la experiencia de usuario dentro del ecosistema de hogares inteligentes.---
+Finalmente, se recomienda incorporar funcionalidades avanzadas como alertas inteligentes, automatización de acciones, recomendaciones de ahorro energético y análisis predictivo, con el objetivo de incrementar el valor de la plataforma y mejorar la experiencia de usuario dentro del ecosistema de hogares inteligentes.
+
+### Contraste de hipótesis Lean UX con los resultados de validación
+
+El proceso de validación (sección 5.3), junto con las entrevistas de *needfinding* (sección 2.2), permite contrastar las hipótesis Lean UX definidas en la sección 1.2.2.3 frente al comportamiento real de los segmentos objetivo:
+
+| Hipótesis | Criterio de éxito | Resultado de validación | Estado |
+|-----------|-------------------|-------------------------|--------|
+| **H1** — El dashboard centralizado mejora la visibilidad del consumo y estado de los dispositivos. | ≥ 70% afirma que mejora la visibilidad. | Los participantes valoraron el *dashboard* de métricas como el principal aporte de la plataforma. | Validada (confirmar % con 5.3) |
+| **H2** — Las métricas de consumo ayudan a identificar usos ineficientes. | ≥ 65% indica que ayuda a controlar el consumo. | Las métricas y reportes por dispositivo se percibieron útiles para el ahorro. | Validada (confirmar %) |
+| **H3** — La experiencia móvil incrementa la frecuencia de uso. | > 60% de sesiones desde móvil. | El diseño *responsive* facilitó el uso desde *smartphone*. | Por confirmar con datos de uso |
+| **H4** — El modelo *freemium* incentiva la adopción y el interés por planes premium. | ≥ 30% manifiesta intención de actualizar. | Interés en planes premium condicionado al costo. | Por confirmar |
+| **H5** — Las alertas y reportes inteligentes aumentan el valor percibido. | ≥ 70% los considera útiles. | Las alertas de consumo se identificaron como un diferencial de la propuesta. | Validada (confirmar %) |
+
+<!-- TODO equipo: reemplazar las columnas Resultado/Estado con los porcentajes reales obtenidos de las sesiones de validación (sección 5.3). -->
+
+## About the Team
+
+El video **About the Team** resume el proceso de trabajo del equipo TechWatch a lo largo del proyecto, incluyendo escenas de las sesiones de trabajo reales, una retrospectiva grupal y el **testimonio ante cámara de cada integrante**, en el que describe las actividades realizadas, el logro de los *outcomes* y el desarrollo de las competencias del curso. El tono es consistente con el del producto. La versión publicada en YouTube es la que se incrusta en el Landing Page.
+
+- **Duración:** _(pendiente)_
+- **URL (Microsoft Stream):** _(pendiente)_
+- **URL (YouTube, incrustado en el Landing Page):** _(pendiente)_
+
+![Screenshot del video About the Team](assets/images/about-the-team.png)
+
+<!-- TODO equipo: grabar el video About-the-Team (testimonio de cada integrante ante cámara), subirlo a Microsoft Stream y YouTube, incrustarlo en el Landing Page, y completar duración, URLs y screenshot. -->
 
 # Bibliografía
 
@@ -2555,6 +2593,7 @@ Almas’ud, T. L., Pramudito, H. D., & Badruzzaman, A. (2025). *IoT-enabled smar
 | Entrega | Características del video | Sobre el contenido | Integración y entrega |
 |---------|----------------------------|-------------------|----------------------|
 | AV1 | **Enlace:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQBeS4ZyHvBRS7DxBIhtX41KAVW1jCO4GycXqKhoihL49AY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=8OcrcO <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-av1 <br><br> **Formato:** .mp4 <br><br> **Duración:** 16:57 | Video de exposición grupal que resume el avance integral del proyecto desarrollado hasta la presente entrega, incluyendo los principales capítulos trabajados y evidencias del desarrollo del sistema. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
+| AV2 | **Enlace:** _(pendiente)_ <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-av2 <br><br> **Formato:** .mp4 <br><br> **Duración:** _(pendiente)_ | Video de exposición grupal del AV2 en el que cada integrante explica los artefactos del trabajo según la rúbrica del hito (Sprint 3, Web Services y validación) y se demuestra la solución desplegada. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con el enlace correspondiente. |
 
 ---
 
