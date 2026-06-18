@@ -48,6 +48,12 @@
 
 ![Project Report Collaboration Insights TB1](./assets/images/project_colaboration.png)
 
+**AV2.** Para la AV2, la elaboración del informe se centró en documentar el Sprint 3 (Backend Web Services con OpenAPI, y las evidencias de desarrollo y despliegue en Railway), el capítulo de Validation Interviews con la evaluación según heurísticas, las secciones de Video About-the-Product y About the Team, y la actualización del Registro de Versiones, el Student Outcome y este apartado. Todos los integrantes participaron en la redacción y revisión del informe, coordinando mediante Trello y reuniones por Google Meet.
+
+![Project Report Collaboration Insights AV2](./assets/images/project_colaboration_av2.png)
+
+<!-- TODO equipo: reemplazar por la captura real de los analíticos de colaboración (Insights → Contributors) del repositorio techwatch-report para la AV2. -->
+
 
 URL de la organizacion  del Project Report en GitHub:
 [https://github.com/techwatch-upc/Project](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
@@ -181,11 +187,11 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </tr>
 
   <tr>
-    <td rowspan="10">Comunica oralmente con efectividad a diferentes rangos de audiencia.</td>
+    <td rowspan="15">Comunica oralmente con efectividad a diferentes rangos de audiencia.</td>
     <td rowspan="5">AV1</td>
     <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Participé activamente en la sustentación de la Landing Page, explicando la coherencia entre el diseño en Figma y la implementación visual. Además, apoyé constantemente en la elaboración y mejora del documento del proyecto.</td>
-    <td rowspan="10">
-      Durante la AV1 y la TB1, el equipo mantuvo una comunicación oral efectiva entre integrantes, docente y usuarios entrevistados, permitiendo explicar de manera clara tanto aspectos funcionales como técnicos del proyecto. Las reuniones de coordinación y revisión facilitaron la validación de hipótesis, historias de usuario, wireframes y criterios de aceptación, fortaleciendo la toma de decisiones durante el desarrollo de la solución IoT y mejorando la integración de los avances realizados en cada sprint.
+    <td rowspan="15">
+      Durante la AV1, la TB1 y la AV2, el equipo mantuvo una comunicación oral efectiva entre integrantes, docente y usuarios entrevistados, permitiendo explicar de manera clara tanto aspectos funcionales como técnicos del proyecto. Las reuniones de coordinación y revisión facilitaron la validación de hipótesis, historias de usuario, wireframes y criterios de aceptación, fortaleciendo la toma de decisiones durante el desarrollo de la solución IoT y mejorando la integración de los avances realizados en cada sprint. En la AV2, la comunicación oral se centró en sustentar la construcción del Backend Web Services, su documentación con OpenAPI y su despliegue en Railway, así como el proceso de validación con usuarios.
     </td>
   </tr>
 
@@ -227,11 +233,32 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </tr>
 
   <tr>
-    <td rowspan="10">Comunica por escrito con efectividad a diferentes rangos de audiencia.</td>
+    <td rowspan="5">AV2</td>
+    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Expuse la migración del Frontend Web Application al RESTful API real y la integración end-to-end durante las revisiones del Sprint 3.</td>
+  </tr>
+
+  <tr>
+    <td><b>Alva Abanto, Luis Andrés</b><br><br>Sustenté la arquitectura del Backend Web Services (DDD), la documentación OpenAPI y el despliegue en Railway ante el equipo y el docente.</td>
+  </tr>
+
+  <tr>
+    <td><b>Toro Turpo, Ronal</b><br><br>Participé en las revisiones de navegación y validación de los user flows de la Web Application durante las reuniones del Sprint.</td>
+  </tr>
+
+  <tr>
+    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Expuse el diseño de las entrevistas de validación y la evaluación según heurísticas durante las sesiones del equipo.</td>
+  </tr>
+
+  <tr>
+    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Presenté hallazgos de las pruebas sobre la solución desplegada y observaciones de la evaluación heurística.</td>
+  </tr>
+
+  <tr>
+    <td rowspan="15">Comunica por escrito con efectividad a diferentes rangos de audiencia.</td>
     <td rowspan="5">AV1</td>
     <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Participé en el desarrollo del frontend y apoyé de manera constante en la elaboración, corrección y organización del Project Report, además de documentar avances relacionados con la Landing Page y estructura visual del sistema.</td>
-    <td rowspan="10">
-      La comunicación escrita desarrollada durante la AV1 y la TB1 permitió mantener trazabilidad y coherencia entre los artefactos del proyecto, incluyendo Lean UX, historias de usuario, technical stories, wireframes, reportes y despliegues. La documentación elaborada facilitó la comprensión de los avances técnicos y funcionales por parte del docente y del equipo, además de reducir ambigüedades en los procesos de integración y validación del sistema.
+    <td rowspan="15">
+      La comunicación escrita desarrollada durante la AV1, la TB1 y la AV2 permitió mantener trazabilidad y coherencia entre los artefactos del proyecto, incluyendo Lean UX, historias de usuario, technical stories, wireframes, reportes y despliegues. La documentación elaborada facilitó la comprensión de los avances técnicos y funcionales por parte del docente y del equipo, además de reducir ambigüedades en los procesos de integración y validación del sistema. En la AV2 se documentó por escrito el Sprint 3 (Web Services con OpenAPI, evidencias de desarrollo y despliegue) y las entrevistas de validación con su evaluación según heurísticas.
     </td>
   </tr>
 
@@ -270,6 +297,27 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
   <tr>
     <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Documenté avances del Sprint 2 y mejoras en los wireframes del Web Application dentro del informe del proyecto.</td>
+  </tr>
+
+  <tr>
+    <td rowspan="5">AV2</td>
+    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Documenté la evidencia de ejecución y la integración del Frontend Web Application con el API real en la sección del Sprint 3 del informe.</td>
+  </tr>
+
+  <tr>
+    <td><b>Alva Abanto, Luis Andrés</b><br><br>Redacté la documentación del Sprint 3: Services Documentation (endpoints con OpenAPI), Development Evidence y Software Deployment Evidence.</td>
+  </tr>
+
+  <tr>
+    <td><b>Toro Turpo, Ronal</b><br><br>Documenté el diseño de las entrevistas de validación y los user flows evaluados de la Web Application.</td>
+  </tr>
+
+  <tr>
+    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Redacté la evaluación según heurísticas y el contraste de hipótesis Lean UX en las conclusiones del informe.</td>
+  </tr>
+
+  <tr>
+    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Registré el registro de entrevistas de validación y observaciones de calidad del informe antes de la entrega.</td>
   </tr>
 
 </table>
