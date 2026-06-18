@@ -2150,10 +2150,9 @@ En este Sprint el alcance se concentró en la construcción del Backend Web Serv
 
 El objetivo principal del Sprint 3 es reemplazar el backend simulado por un RESTful API real desarrollado en Spring Boot bajo Domain-Driven Design, cubriendo los Bounded Contexts **Device Management** (propiedades, espacios, dispositivos y simulación) y **Analytics** (métricas, alertas y reportes), migrar el Frontend Web Application para que consuma dicho API y desplegar la solución completa en Railway. Las tareas se derivan de las *Technical Stories* del Epic EP09 (API y Backend) de la sección 3.1.
 
-![Tablero Trello Sprint 3](assets/images/chapter-5-2-3-3-img1.png)
+![Tablero Trello Sprint 3](./assets/images/chapter-5-2-3-3-img1.png)
 
-<!-- TODO equipo: pegar la URL pública del tablero Trello del Sprint 3 -->
-URL del tablero: _(pendiente de agregar por el equipo)_
+URL del tablero: [https://trello.com/invite/b/6a337a6e973bd63ace947efb/ATTI8aef747c3e59352c70b079cfa522102f77CEBCD8/sprint-backlog-3-techwatch](https://trello.com/invite/b/6a337a6e973bd63ace947efb/ATTI8aef747c3e59352c70b079cfa522102f77CEBCD8/sprint-backlog-3-techwatch)
 
 | Sprint # | Sprint 3 | | | | | | |
 |----------|----------|-|-|-|-|-|-|
@@ -2222,13 +2221,11 @@ Principales vistas implementadas:
 
 Capturas de las principales vistas:
 
-![Vista de gestión de propiedades y dispositivos](assets/images/chapter-5-2-3-5-img1.png)
+![Vista de gestión de propiedades y dispositivos](./assets/images/chapter-5-2-3-5-img1.png)
 
-![Vista de simulación de dispositivos](assets/images/chapter-5-2-3-5-img2.png)
+![Vista de simulación de dispositivos](./assets/images/chapter-5-2-3-5-img2.png)
 
-![Dashboard de analítica: métricas, alertas y reportes](assets/images/chapter-5-2-3-5-img3.png)
-
-<!-- TODO equipo: reemplazar por capturas reales de la Web Application desplegada con datos de muestra (poblar con el script scripts/seed-data.ps1). -->
+![Dashboard de analítica: métricas, alertas y reportes](./assets/images/chapter-5-2-3-5-img3.png)
 
 **Video de visualización y navegación del Sprint 3:** _(pendiente: enlace al video de navegación — ver Anexo de Evidencia de Video)_
 
@@ -2344,11 +2341,9 @@ Cada acción de consumo genera una métrica `ENERGY_CONSUMPTION`; el dashboard d
 
 **Capturas de la documentación desplegada (Swagger UI)**
 
-![Swagger UI - Relación de endpoints](assets/images/chapter-5-2-3-6-img1.png)
+![Swagger UI - Relación de endpoints](./assets/images/chapter-5-2-3-6-img1.png)
 
-![Swagger UI - Ejemplo de request/response con datos de muestra](assets/images/chapter-5-2-3-6-img2.png)
-
-<!-- TODO equipo: reemplazar las dos imágenes anteriores por capturas reales del Swagger UI desplegado, interactuando con datos de muestra (Try it out). -->
+![Swagger UI - Ejemplo de request/response con datos de muestra](./assets/images/chapter-5-2-3-6-img2.png)
 
 **Repositorio de Web Services y commits de documentación**
 
@@ -2390,11 +2385,11 @@ Durante el Sprint 3 se desplegó por primera vez la **solución completa en prod
 
 **Capturas del despliegue (Railway)**
 
-![Railway - Servicios del proyecto techwatch](assets/images/chapter-5-2-3-7-img1.png)
+![Railway - Servicios del proyecto techwatch](./assets/images/chapter-5-2-3-7-img1.png)
 
-![Railway - Variables de entorno y logs de despliegue](assets/images/chapter-5-2-3-7-img2.png)
+![Railway - Variables de entorno y logs de despliegue](./assets/images/chapter-5-2-3-7-img2.png)
 
-<!-- TODO equipo: reemplazar por capturas reales del dashboard de Railway (los tres servicios, logs de build y variables de entorno) y agregar la URL pública de la Landing Page. -->
+<!-- TODO equipo: agregar la URL pública de la Landing Page en la tabla de URLs (sección 5.2.3.7). -->
 
 Commits relacionados con el *deployment* en este Sprint:
 
@@ -2415,11 +2410,9 @@ Organización del equipo en GitHub:
 
 Analíticos de colaboración y *commits* del Sprint 3:
 
-![Insights de colaboración - Backend Web Services](assets/images/chapter-5-2-3-8-img1.png)
+![Insights de colaboración - Backend Web Services](./assets/images/chapter-5-2-3-8-img1.png)
 
-![Insights de colaboración - Frontend Web Application](assets/images/chapter-5-2-3-8-img2.png)
-
-<!-- TODO equipo: reemplazar por capturas reales de los analíticos de colaboración (Insights → Contributors y/o Network) de los repositorios techwatch-backend y techwatch-frontend para este Sprint. -->
+![Insights de colaboración - Frontend Web Application](./assets/images/chapter-5-2-3-8-img2.png)
 
 ---
 
@@ -2499,7 +2492,7 @@ La evaluación de las sesiones de validación se realizó siguiendo el formato d
 |-------|---------|
 | Carrera | Ingeniería de Software |
 | Curso | Desarrollo de Aplicaciones Open Source |
-| Sección | _(pendiente: sección)_ |
+| Sección | 11896 |
 | Profesor | Efraín Ricardo Bautista Ubillús |
 | Auditor | Equipo TechWatch |
 | Cliente(s) | Usuarios de validación de los segmentos objetivo |
