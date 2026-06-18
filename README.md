@@ -42,10 +42,17 @@
 |---------|------------|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AV1     | 04-04-2026 | Equipo TechWatch | Creación del informe. Inclusión de Capítulos I, II, III, IV , V y la inclusion del Sprint 1                                                                                                                                                                                              |
 | TB1     | 13-05-2026 | Equipo TechWatch | Actualización del Project Report con la inclusión del Sprint 2 y corrección de observaciones de la entrega anterior relacionadas con hipótesis Lean UX, diagramas, wireflows, Sprint Goal, estadísticas de colaboración, nomenclatura de archivos y visualización de imágenes y enlaces. |
+| AV2     | 17-06-2026 | Equipo TechWatch | Actualización del Project Report para el AV2: inclusión del Sprint 3 con la migración del JSON Server al RESTful API real en Spring Boot desplegado en Railway y su documentación con OpenAPI, capítulo de Validation Interviews con evaluación según heurísticas, sección de Video About-the-Product, sección About the Team en Conclusiones, y actualización del Registro de Versiones, Student Outcome y Project Report Collaboration Insights. |
 
 <h2 align="center">Project Report Collaboration Insights</h2>
 
 ![Project Report Collaboration Insights TB1](./assets/images/project_colaboration.png)
+
+**AV2.** Para la AV2, la elaboración del informe se centró en documentar el Sprint 3 (Backend Web Services con OpenAPI, y las evidencias de desarrollo y despliegue en Railway), el capítulo de Validation Interviews con la evaluación según heurísticas, las secciones de Video About-the-Product y About the Team, y la actualización del Registro de Versiones, el Student Outcome y este apartado. Todos los integrantes participaron en la redacción y revisión del informe, coordinando mediante Trello y reuniones por Google Meet.
+
+![Project Report Collaboration Insights AV2](./assets/images/project_colaboration_av2.png)
+
+<!-- TODO equipo: reemplazar por la captura real de los analíticos de colaboración (Insights → Contributors) del repositorio techwatch-report para la AV2. -->
 
 
 URL de la organizacion  del Project Report en GitHub:
@@ -139,8 +146,23 @@ URL de la organizacion  del Project Report en GitHub:
       - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
       - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
       - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
+    - [5.2.3. Sprint 3](#523-sprint-3)
+      - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
+      - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
+      - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
+      - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
+      - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
+      - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
+      - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
+      - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
+  - [5.3. Validation Interviews](#53-validation-interviews)
+    - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
+    - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
+    - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
+  - [5.4. Video About-the-Product](#54-video-about-the-product)
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+  - [About the Team](#about-the-team)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
   - [Anexo A. Video de Exposiciones](#anexo-a-video-de-exposiciones)
@@ -165,11 +187,11 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </tr>
 
   <tr>
-    <td rowspan="10">Comunica oralmente con efectividad a diferentes rangos de audiencia.</td>
+    <td rowspan="15">Comunica oralmente con efectividad a diferentes rangos de audiencia.</td>
     <td rowspan="5">AV1</td>
     <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Participé activamente en la sustentación de la Landing Page, explicando la coherencia entre el diseño en Figma y la implementación visual. Además, apoyé constantemente en la elaboración y mejora del documento del proyecto.</td>
-    <td rowspan="10">
-      Durante la AV1 y la TB1, el equipo mantuvo una comunicación oral efectiva entre integrantes, docente y usuarios entrevistados, permitiendo explicar de manera clara tanto aspectos funcionales como técnicos del proyecto. Las reuniones de coordinación y revisión facilitaron la validación de hipótesis, historias de usuario, wireframes y criterios de aceptación, fortaleciendo la toma de decisiones durante el desarrollo de la solución IoT y mejorando la integración de los avances realizados en cada sprint.
+    <td rowspan="15">
+      Durante la AV1, la TB1 y la AV2, el equipo mantuvo una comunicación oral efectiva entre integrantes, docente y usuarios entrevistados, permitiendo explicar de manera clara tanto aspectos funcionales como técnicos del proyecto. Las reuniones de coordinación y revisión facilitaron la validación de hipótesis, historias de usuario, wireframes y criterios de aceptación, fortaleciendo la toma de decisiones durante el desarrollo de la solución IoT y mejorando la integración de los avances realizados en cada sprint. En la AV2, la comunicación oral se centró en sustentar la construcción del Backend Web Services, su documentación con OpenAPI y su despliegue en Railway, así como el proceso de validación con usuarios.
     </td>
   </tr>
 
@@ -211,11 +233,32 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </tr>
 
   <tr>
-    <td rowspan="10">Comunica por escrito con efectividad a diferentes rangos de audiencia.</td>
+    <td rowspan="5">AV2</td>
+    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Expuse la migración del Frontend Web Application al RESTful API real y la integración end-to-end durante las revisiones del Sprint 3.</td>
+  </tr>
+
+  <tr>
+    <td><b>Alva Abanto, Luis Andrés</b><br><br>Sustenté la arquitectura del Backend Web Services (DDD), la documentación OpenAPI y el despliegue en Railway ante el equipo y el docente.</td>
+  </tr>
+
+  <tr>
+    <td><b>Toro Turpo, Ronal</b><br><br>Participé en las revisiones de navegación y validación de los user flows de la Web Application durante las reuniones del Sprint.</td>
+  </tr>
+
+  <tr>
+    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Expuse el diseño de las entrevistas de validación y la evaluación según heurísticas durante las sesiones del equipo.</td>
+  </tr>
+
+  <tr>
+    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Presenté hallazgos de las pruebas sobre la solución desplegada y observaciones de la evaluación heurística.</td>
+  </tr>
+
+  <tr>
+    <td rowspan="15">Comunica por escrito con efectividad a diferentes rangos de audiencia.</td>
     <td rowspan="5">AV1</td>
     <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Participé en el desarrollo del frontend y apoyé de manera constante en la elaboración, corrección y organización del Project Report, además de documentar avances relacionados con la Landing Page y estructura visual del sistema.</td>
-    <td rowspan="10">
-      La comunicación escrita desarrollada durante la AV1 y la TB1 permitió mantener trazabilidad y coherencia entre los artefactos del proyecto, incluyendo Lean UX, historias de usuario, technical stories, wireframes, reportes y despliegues. La documentación elaborada facilitó la comprensión de los avances técnicos y funcionales por parte del docente y del equipo, además de reducir ambigüedades en los procesos de integración y validación del sistema.
+    <td rowspan="15">
+      La comunicación escrita desarrollada durante la AV1, la TB1 y la AV2 permitió mantener trazabilidad y coherencia entre los artefactos del proyecto, incluyendo Lean UX, historias de usuario, technical stories, wireframes, reportes y despliegues. La documentación elaborada facilitó la comprensión de los avances técnicos y funcionales por parte del docente y del equipo, además de reducir ambigüedades en los procesos de integración y validación del sistema. En la AV2 se documentó por escrito el Sprint 3 (Web Services con OpenAPI, evidencias de desarrollo y despliegue) y las entrevistas de validación con su evaluación según heurísticas.
     </td>
   </tr>
 
@@ -254,6 +297,27 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
   <tr>
     <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Documenté avances del Sprint 2 y mejoras en los wireframes del Web Application dentro del informe del proyecto.</td>
+  </tr>
+
+  <tr>
+    <td rowspan="5">AV2</td>
+    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Documenté la evidencia de ejecución y la integración del Frontend Web Application con el API real en la sección del Sprint 3 del informe.</td>
+  </tr>
+
+  <tr>
+    <td><b>Alva Abanto, Luis Andrés</b><br><br>Redacté la documentación del Sprint 3: Services Documentation (endpoints con OpenAPI), Development Evidence y Software Deployment Evidence.</td>
+  </tr>
+
+  <tr>
+    <td><b>Toro Turpo, Ronal</b><br><br>Documenté el diseño de las entrevistas de validación y los user flows evaluados de la Web Application.</td>
+  </tr>
+
+  <tr>
+    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Redacté la evaluación según heurísticas y el contraste de hipótesis Lean UX en las conclusiones del informe.</td>
+  </tr>
+
+  <tr>
+    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Registré el registro de entrevistas de validación y observaciones de calidad del informe antes de la entrega.</td>
   </tr>
 
 </table>
@@ -1734,22 +1798,22 @@ Referencia: [Gherkin conventions](https://specflow.org/gherkin/gherkin-conventio
 
 ### 5.1.4. Software Deployment Configuration
 
-En esta sección se detallan las herramientas y configuraciones consideradas para el despliegue de los proyectos incluidos en TechWatch, incluyendo Landing Page, Web Application, Backend Web Services y Base de Datos.
+En esta sección se detallan las herramientas y la configuración utilizadas para el despliegue de los productos digitales de TechWatch —Landing Page, Frontend Web Application, Backend Web Services y Base de Datos—, todos publicados en **Railway**. La evidencia detallada del proceso de despliegue por iteración se documenta en las secciones de *Software Deployment Evidence* de cada Sprint (ver 5.2.3.7).
 
 - **Landing Page:**  
   La Landing Page fue desarrollada utilizando HTML, CSS y JavaScript. Para su despliegue se utilizó Railway, plataforma que permitió publicar el sitio web y mantener integración con el repositorio de GitHub para facilitar la actualización continua del contenido y despliegue de nuevas versiones.
 
 - **Frontend Web Application:**  
-  La Web Application fue desarrollada en Angular con TypeScript. Para su despliegue se utilizaron plataformas como Azure y Vercel, permitiendo publicar la aplicación web compilada y mantener acceso público a la solución. Estas herramientas facilitan el despliegue continuo desde GitHub y permiten actualizar la aplicación conforme se integran nuevos cambios en el repositorio.
+  La Web Application fue desarrollada en Angular con TypeScript. Para su despliegue en producción se utiliza **Railway** mediante un contenedor **Docker multi-stage** que compila la aplicación con `node:22-alpine` y sirve los archivos estáticos resultantes con `nginx:1.27-alpine`. La aplicación queda accesible públicamente en **https://techwatch-frontend-production.up.railway.app**, con la URL del Backend Web Services incorporada en el momento del build.
 
 - **Backend Web Services:**  
-  El backend fue desarrollado en Java, siguiendo una arquitectura orientada a servicios REST. Para su despliegue se consideraron plataformas como Azure, Railway y Render, ya que permiten alojar servicios backend, configurar variables de entorno y conectar la aplicación con la base de datos MySQL.
+  El Backend Web Services fue desarrollado en Java con **Spring Boot**, siguiendo el estilo arquitectónico **RESTful API**. Para su despliegue en producción se utiliza **Railway** a partir de un **Dockerfile** (build con `maven:3.9.16-eclipse-temurin-26` y ejecución con `eclipse-temurin:26-jre`), activando el perfil `prod` mediante `application-prod.properties`. El servicio queda accesible públicamente en **https://techwatch-backend-production.up.railway.app**, con la documentación interactiva de los endpoints disponible en **/swagger-ui/index.html** (OpenAPI). Las credenciales y la URL de la base de datos se inyectan como variables de entorno y la conexión con MySQL se realiza por la red interna de Railway.
 
 - **Base de Datos:**  
-  Para la persistencia de datos se utiliza MySQL. La base de datos puede ser desplegada en Railway, plataforma que permite provisionar una instancia MySQL, gestionar credenciales de conexión y administrar variables de entorno necesarias para la comunicación con el backend.
+  Para la persistencia de datos se utiliza **MySQL**, provisionado como servicio gestionado dentro del mismo proyecto de **Railway**. El esquema se genera automáticamente a partir del modelo de dominio (`ddl-auto=update`) y la comunicación con el Backend Web Services se realiza a través de la red interna de Railway (`mysql.railway.internal`), utilizando credenciales administradas mediante variables de entorno.
 
 - **Control de versiones y despliegue:**  
-  GitHub fue utilizado como repositorio principal para gestionar el código fuente, ramas de desarrollo, pull requests y versiones del proyecto. Además, permitió integrar los repositorios con las plataformas de despliegue para facilitar la publicación de la Landing Page, Web Application y Backend.
+  GitHub fue utilizado como repositorio principal para gestionar el código fuente, ramas de desarrollo, pull requests y versiones del proyecto, aplicando GitFlow, Conventional Commits y Semantic Versioning. El despliegue de cada producto en Railway se realiza a partir de su imagen Docker generada desde el código fuente versionado en GitHub.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
@@ -2037,7 +2101,7 @@ El JSON Server fue desplegado en Railway y expone los endpoints de users, homes,
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
-Durante el Sprint 2 los 5 integrantes colaboraron en el desarrollo del Frontend Web Application, trabajando sobre ramas de feature individuales e integrando avances mediante pull requests hacia la rama de trabajo del sprint. La coordinación se realizó mediante WhatsApp y reuniones por Google Meet. El seguimiento de tareas se gestionó en [herramienta indicada].
+Durante el Sprint 2 los 5 integrantes colaboraron en el desarrollo del Frontend Web Application, trabajando sobre ramas de feature individuales e integrando avances mediante pull requests hacia la rama de trabajo del sprint. La coordinación se realizó mediante WhatsApp y reuniones por Google Meet. El seguimiento de tareas se gestionó en Trello.
 
 Organización del equipo en GitHub:
 
@@ -2051,10 +2115,445 @@ Organización del equipo en GitHub:
 
 ![commits](assets/images/chapter-5-2-2-8-img4.png)
 
+### 5.2.3. Sprint 3
+
+#### 5.2.3.1. Sprint Planning 3
+
+| Sprint # | Sprint 3 |
+|----------|----------|
+| **Sprint Planning Background** | |
+| Date | 06-06-2026 |
+| Time | 08:30 PM |
+| Location | Reunión virtual vía Google Meet |
+| Prepared By | Alva Abanto, Luis Andrés |
+| Attendees (to planning meeting) | Alva Abanto, Luis Andrés / Fernandez Garfias, Alexander Piero / Toro Turpo, Ronal / Montalvo Vásquez, Bruno Rodrigo / Becerra Durand, Sebastian Uriel |
+| Sprint 2 Review Summary | En el Sprint 2 se entregó la primera versión funcional del Frontend Web Application, integrada con un JSON Server que actuaba como backend simulado para la gestión de hogares, dispositivos y métricas de consumo. |
+| Sprint 2 Retrospective Summary | El equipo identificó que el JSON Server simulado limitaba la lógica de negocio y la persistencia real de la solución. Para el Sprint 3 se acordó construir el RESTful API real con Spring Boot aplicando Domain-Driven Design, migrar el frontend para consumirlo y desplegar la solución completa (backend, frontend y base de datos) en Railway. |
+| **Sprint Goal & User Stories** | |
+| Sprint 3 Goal | Our focus is on replacing the simulated backend with a real RESTful API for the Device Management and Analytics bounded contexts. We believe it delivers real persistence, business rules and consumption analytics to IntelliHome users through an integrated and deployed solution. This will be confirmed when users can register properties, spaces and devices, run a simulation session and visualize the generated metrics, alerts and reports consumed from the deployed Spring Boot API without intervention of the development team. |
+| Sprint 3 Velocity | 26 |
+| Sum of Story Points | 26 |
+
+#### 5.2.3.2. Aspect Leaders and Collaborators
+
+En este Sprint el alcance se concentró en la construcción del Backend Web Services real (Spring Boot + MySQL) y su integración con el Frontend Web Application. Los aspectos de la matriz LACX (*Leadership and Collaboration eXtended*) son: **Backend Domain & Application** (modelado DDD de los Bounded Contexts Device Management y Analytics, con CQRS ligero); **Backend REST API & Persistence** (controllers REST, documentación OpenAPI y persistencia JPA); **Frontend Integration** (migración del frontend del JSON Server al API real); **Deployment & DevOps** (contenerización con Docker y despliegue en Railway del backend, el frontend y MySQL); y **Documentation & Report** (documentación del sprint en el informe). **L** indica a la persona que lidera el cierre y la coherencia del aspecto, y **C** a quien colabora con aportes, *commits* puntuales o *feedback*.
+
+| Team Member (Last Name, First Name) | GitHub Username | Backend Domain & Application | Backend REST API & Persistence | Frontend Integration | Deployment & DevOps | Documentation & Report |
+|-------------------------------------|-----------------|------------------------------|--------------------------------|----------------------|---------------------|------------------------|
+| Alva Abanto, Luis Andrés | luis-alva0 | L | C | C | L | C |
+| Fernandez Garfias, Alexander Piero | Dostoyevsk1 | C | L | C | C | C |
+| Toro Turpo, Ronal | ronaltt-345 | C | C | L | C | C |
+| Montalvo Vásquez, Bruno Rodrigo | TartaroZ | C | C | C | C | L |
+| Becerra Durand, Sebastian Uriel | sebasdev28 | C | C | C | C | C |
+
+#### 5.2.3.3. Sprint Backlog 3
+
+El objetivo principal del Sprint 3 es reemplazar el backend simulado por un RESTful API real desarrollado en Spring Boot bajo Domain-Driven Design, cubriendo los Bounded Contexts **Device Management** (propiedades, espacios, dispositivos y simulación) y **Analytics** (métricas, alertas y reportes), migrar el Frontend Web Application para que consuma dicho API y desplegar la solución completa en Railway. Las tareas se derivan de las *Technical Stories* del Epic EP09 (API y Backend) de la sección 3.1.
+
+![Tablero Trello Sprint 3](./assets/images/chapter-5-2-3-3-img1.png)
+
+URL del tablero: [https://trello.com/invite/b/6a337a6e973bd63ace947efb/ATTI8aef747c3e59352c70b079cfa522102f77CEBCD8/sprint-backlog-3-techwatch](https://trello.com/invite/b/6a337a6e973bd63ace947efb/ATTI8aef747c3e59352c70b079cfa522102f77CEBCD8/sprint-backlog-3-techwatch)
+
+| Sprint # | Sprint 3 | | | | | | |
+|----------|----------|-|-|-|-|-|-|
+| **User Story / Technical Story** | | **Work-Item / Task** | | | | | |
+| Id | Title | Id | Title | Description | Estimation (Hours) | Assigned To | Status |
+| TS09 | API registrar inmueble | T01 | Implementar API REST de propiedades | Slice DDD del aggregate Property con endpoints POST /api/v1/properties y GET /api/v1/properties?userId, persistencia JPA y CQRS | 5 | Alva Abanto, Luis Andrés | Done |
+| TS09 | API registrar inmueble | T02 | Implementar gestión de espacios | Comando CreateSpace dentro del aggregate Property y endpoint POST /api/v1/properties/{propertyId}/spaces | 3 | Alva Abanto, Luis Andrés | Done |
+| TS11 | API registrar dispositivo | T03 | Implementar API REST de dispositivos | Aggregate Device con endpoint POST /api/v1/devices (add device to space) y validación de nombre único por espacio | 5 | Alva Abanto, Luis Andrés | Done |
+| TS12 | API actualizar estado de dispositivo | T04 | Implementar edición de dispositivo | Comando EditDevice y endpoint PUT /api/v1/devices/{deviceId} | 3 | Alva Abanto, Luis Andrés | Done |
+| TS02 | API obtener sensores | T05 | Implementar consulta y eliminación de dispositivos | Endpoints GET /api/v1/devices?spaceId, GET /api/v1/devices/{deviceId} y DELETE /api/v1/devices/{deviceId} | 3 | Alva Abanto, Luis Andrés | Done |
+| TS02 | API obtener sensores | T06 | Implementar sesiones de simulación | Aggregate SimulationSession con start, record-action y end (POST /api/v1/simulation-sessions y subrecursos), generando datos de consumo | 5 | Alva Abanto, Luis Andrés | Done |
+| TS13 | API obtener dashboard | T07 | Implementar API REST de métricas | Bounded Context Analytics: cálculo de métricas a partir de eventos de integración y GET /api/v1/metrics?propertyId | 5 | Alva Abanto, Luis Andrés | Done |
+| TS04 | API generar alerta | T08 | Implementar API REST de alertas | Policy de umbral escalonado para generar alertas de consumo, GET /api/v1/alerts?userId y PUT /api/v1/alerts/{alertId}/read | 3 | Alva Abanto, Luis Andrés | Done |
+| TS03 | API consultar historial | T09 | Implementar API REST de reportes de consumo | Generación on-demand de reportes agregando métricas por periodo: POST /api/v1/reports y GET /api/v1/reports?propertyId | 3 | Alva Abanto, Luis Andrés | Done |
+| TS10 | API listar inmuebles | T10 | Migrar Frontend Web Application al API real | Reemplazar el consumo del JSON Server por el RESTful API (proxy de ng serve, environments y stores de management, simulation y analytics) | 5 | Fernandez Garfias, Alexander Piero | Done |
+| — | Deployment | T11 | Contenerizar y desplegar la solución en Railway | Dockerfile del backend (Maven + Temurin), Docker multi-stage del frontend (node + nginx), MySQL gestionado, perfil prod y CORS | 5 | Alva Abanto, Luis Andrés | Done |
+| — | Configuración | T12 | Configurar shared kernel, OpenAPI y manejo de errores | Result/ApplicationError, GlobalExceptionHandler, configuración de OpenAPI/Swagger y naming strategy snake_case pluralizado | 3 | Alva Abanto, Luis Andrés | Done |
+
+#### 5.2.3.4. Development Evidence for Sprint Review
+
+Durante el Sprint 3 el desarrollo se concentró en dos repositorios: el **Backend Web Services** (Spring Boot) y el **Frontend Web Application** (Angular). En el backend se aplicó GitFlow trabajando una rama `feature/*` por cada comando o query del Design-Level Event Storming, con *commits* por capa (domain → application → infrastructure → interfaces) e integración a `develop` mediante *merge* `--no-ff`. Todos los mensajes siguen Conventional Commits (`feat`, `fix`, `chore`).
+
+**Backend Web Services** — [techwatch-backend](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-backend) · rama `develop`.
+
+| Repository | Branch | Commit Id | Commit Message | Fecha |
+|------------|--------|-----------|----------------|-------|
+| techwatch-backend | feature/setup | 3153991 | shared kernel, OpenAPI y manejo global de errores | 2026-06-13 |
+| techwatch-backend | feature/create-property | 869e579 | aggregate Property + REST de registro y consulta de propiedades | 2026-06-13 |
+| techwatch-backend | feature/create-spaces | eec268e | comando CreateSpace + REST de espacios | 2026-06-13 |
+| techwatch-backend | feature/add-device-to-space | 79f5bb4 | aggregate Device + REST para agregar y consultar dispositivos | 2026-06-13 |
+| techwatch-backend | feature/edit-device | 7eda085 | edición de dispositivo (PUT /api/v1/devices/{id}) | 2026-06-13 |
+| techwatch-backend | feature/delete-device | 9fbe398 | eliminación de dispositivo (DELETE /api/v1/devices/{id}) | 2026-06-13 |
+| techwatch-backend | feature/start-simulation-session | 345ec1e | inicio de sesión de simulación | 2026-06-13 |
+| techwatch-backend | feature/record-device-action | 81b7f85 | registro de acción de dispositivo + datos de consumo | 2026-06-13 |
+| techwatch-backend | feature/end-simulation-session | 0fd6eba | fin de sesión de simulación | 2026-06-13 |
+| techwatch-backend | feature/calculate-metrics | cf05412 | Analytics: cálculo de métricas de consumo | 2026-06-14 |
+| techwatch-backend | feature/trigger-consumption-alert | deb8759 | Analytics: policy de alertas de consumo | 2026-06-14 |
+| techwatch-backend | feature/mark-alert-as-read | e3b7cf9 | Analytics: marcar alerta como leída | 2026-06-14 |
+| techwatch-backend | feature/generate-consumption-report | a09f6c7 | Analytics: generación de reportes de consumo | 2026-06-14 |
+| techwatch-backend | develop | b33b365 | Docker, Railway y perfil de producción | 2026-06-17 |
+| techwatch-backend | develop | b64831e | CORS y URL de servidor OpenAPI relativa | 2026-06-17 |
+| techwatch-backend | develop | 27db939 | script de seed de datos de demo | 2026-06-17 |
+
+**Frontend Web Application** — [techwatch-frontend](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-frontend) · rama `develop`.
+
+| Repository | Branch | Commit Id | Commit Message | Fecha |
+|------------|--------|-----------|----------------|-------|
+| techwatch-frontend | feature/connect-real-backend | a8e8149 | conectar el frontend al backend real vía proxy de ng serve | 2026-06-14 |
+| techwatch-frontend | feature/connect-real-backend | bc19c34 | migrar de Home a Property/Space/Device contra el backend | 2026-06-14 |
+| techwatch-frontend | feature/connect-real-backend | c6c4deb | agregar el contexto de simulation sessions | 2026-06-14 |
+| techwatch-frontend | feature/connect-real-backend | 1076d8b | reescribir analytics a metrics, alerts y reports | 2026-06-14 |
+| techwatch-frontend | develop | 53c1b19 | cablear rutas raíz y navegación principal | 2026-06-14 |
+| techwatch-frontend | develop | c1f8ca2 | integrar feature/connect-real-backend a develop | 2026-06-14 |
+| techwatch-frontend | develop | c3c9573 | Docker, nginx y configuración de Railway | 2026-06-17 |
+| techwatch-frontend | develop | 63cf8e7 | apuntar apiBaseUrl de producción al backend de Railway | 2026-06-17 |
+
+#### 5.2.3.5. Execution Evidence for Sprint Review
+
+En el Sprint 3 se alcanzó la integración *end-to-end* del Frontend Web Application con el RESTful API real desplegado, reemplazando por completo el JSON Server. El flujo principal validado abarca: registrar una propiedad (casa o departamento), crear espacios dentro de ella, agregar y administrar dispositivos por espacio, iniciar una sesión de simulación, registrar acciones de dispositivos que generan datos de consumo, y visualizar las métricas, alertas y reportes calculados por el Bounded Context Analytics. El flujo se ejecuta consumiendo el API en `https://techwatch-backend-production.up.railway.app/api/v1` (o el *proxy* local de `ng serve` en desarrollo).
+
+Principales vistas implementadas:
+
+- **Gestión (Management):** listado de propiedades, formulario de propiedad, y detalle de propiedad con *chips* de espacios, tabla de dispositivos por espacio y formularios de espacio y dispositivo (con marca, modelo y tipo).
+- **Simulación (Simulation):** inicio de sesión de simulación por propiedad, registro de acciones de dispositivos y finalización de la sesión.
+- **Analítica (Analytics):** *dashboard* de métricas de consumo, listado de alertas (con marcado como leídas) y reportes de consumo por periodo.
+
+Capturas de las principales vistas:
+
+![Vista de gestión de propiedades y dispositivos](./assets/images/chapter-5-2-3-5-img1.png)
+
+![Vista de simulación de dispositivos](./assets/images/chapter-5-2-3-5-img2.png)
+
+![Dashboard de analítica: métricas, alertas y reportes](./assets/images/chapter-5-2-3-5-img3.png)
+
+**Video de visualización y navegación del Sprint 3:** _(pendiente: enlace al video de navegación — ver Anexo de Evidencia de Video)_
+
+<!-- TODO equipo: pegar el enlace del video (Microsoft Stream) que ilustra la visualización y navegación logradas en este Sprint. -->
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 3 se documentaron todos los endpoints del RESTful API utilizando **OpenAPI 3** mediante **springdoc-openapi**, anotando cada controller con `@Tag`, `@Operation`, `@ApiResponses` y `@Parameter`, y cada resource con `@Schema` (incluyendo ejemplos). La documentación interactiva queda disponible vía **Swagger UI**, tanto en local como en el despliegue de producción:
+
+- **Producción (Swagger UI):** https://techwatch-backend-production.up.railway.app/swagger-ui/index.html
+- **Especificación OpenAPI (JSON):** https://techwatch-backend-production.up.railway.app/v3/api-docs
+- **Local:** http://localhost:8080/swagger-ui/index.html
+
+El API expone 20 endpoints organizados en los Bounded Contexts **Device Management** (Properties, Spaces, Devices, Simulation Sessions) y **Analytics** (Metrics, Alerts, Reports). Todas las respuestas usan `application/json` y los errores siguen un formato uniforme (`ErrorResponse`) gestionado por un `GlobalExceptionHandler`.
+
+**Device Management — Properties & Spaces**
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/properties` | Body: `CreatePropertyRequest` | Registra una propiedad (casa o departamento) de un usuario | 201 `PropertyResponse` · 400 · 409 |
+| GET | `/api/v1/properties/{propertyId}` | Path: `propertyId` | Obtiene una propiedad por su id | 200 `PropertyResponse` · 404 |
+| GET | `/api/v1/properties?userId={userId}` | Query: `userId` | Lista las propiedades de un usuario | 200 `PropertyResponse[]` |
+| POST | `/api/v1/properties/{propertyId}/spaces` | Path: `propertyId` · Body: `CreateSpaceRequest` | Crea un espacio (ambiente) dentro de una propiedad | 201 `SpaceResponse` · 400 · 404 · 409 |
+
+**Device Management — Devices**
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/devices` | Body: `CreateDeviceRequest` | Agrega un dispositivo a un espacio (inicia en estado OFF) | 201 `DeviceResponse` · 400 · 409 |
+| GET | `/api/v1/devices/{deviceId}` | Path: `deviceId` | Obtiene un dispositivo por su id | 200 `DeviceResponse` · 404 |
+| PUT | `/api/v1/devices/{deviceId}` | Path: `deviceId` · Body: `EditDeviceRequest` | Edita la información descriptiva de un dispositivo | 200 `DeviceResponse` · 400 · 404 · 409 |
+| GET | `/api/v1/devices?spaceId={spaceId}` | Query: `spaceId` | Lista los dispositivos de un espacio | 200 `DeviceResponse[]` |
+| DELETE | `/api/v1/devices/{deviceId}` | Path: `deviceId` | Elimina un dispositivo | 200 `MessageResponse` · 404 |
+
+**Device Management — Simulation Sessions**
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/simulation-sessions` | Body: `StartSimulationSessionRequest` | Inicia una sesión de simulación (una activa por usuario) | 201 `SimulationSessionResponse` · 400 · 409 |
+| POST | `/api/v1/simulation-sessions/{sessionId}/actions` | Path: `sessionId` · Body: `RecordDeviceActionRequest` | Registra una acción de dispositivo y genera datos de consumo | 201 `SimulationSessionResponse` · 400 · 404 · 422 |
+| POST | `/api/v1/simulation-sessions/{sessionId}/end` | Path: `sessionId` | Finaliza una sesión activa (estado ENDED) | 200 `SimulationSessionResponse` · 404 · 422 |
+| GET | `/api/v1/simulation-sessions/{sessionId}` | Path: `sessionId` | Obtiene una sesión por su id | 200 `SimulationSessionResponse` · 404 |
+| GET | `/api/v1/simulation-sessions/active?userId={userId}` | Query: `userId` | Obtiene la sesión activa de un usuario | 200 `SimulationSessionResponse` · 404 |
+
+**Analytics — Metrics, Alerts & Reports**
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| GET | `/api/v1/metrics?propertyId={propertyId}` | Query: `propertyId` | Lista las métricas de consumo de una propiedad | 200 `ConsumptionMetricResponse[]` |
+| GET | `/api/v1/alerts?userId={userId}` | Query: `userId` | Lista las alertas de consumo de un usuario | 200 `ConsumptionAlertResponse[]` |
+| PUT | `/api/v1/alerts/{alertId}/read` | Path: `alertId` | Marca una alerta de consumo como leída | 200 `ConsumptionAlertResponse` · 404 |
+| POST | `/api/v1/reports` | Body: `GenerateConsumptionReportRequest` | Genera un reporte agregando las métricas por dispositivo en un periodo | 201 `ConsumptionReportResponse` · 400 |
+| GET | `/api/v1/reports/{reportId}` | Path: `reportId` | Obtiene un reporte por su id | 200 `ConsumptionReportResponse` · 404 |
+| GET | `/api/v1/reports?propertyId={propertyId}` | Query: `propertyId` | Lista los reportes de una propiedad | 200 `ConsumptionReportResponse[]` |
+
+**Ejemplos de interacción con datos de muestra**
+
+*Ejemplo 1 — Registrar una propiedad.* `POST /api/v1/properties`
+
+```json
+// Request body (CreatePropertyRequest)
+{ "userId": 1, "name": "My House", "address": "742 Evergreen Terrace", "type": "HOUSE" }
+```
+```json
+// Response 201 Created (PropertyResponse)
+{ "id": 1, "userId": 1, "name": "My House", "address": "742 Evergreen Terrace", "type": "HOUSE", "spaces": [] }
+```
+La propiedad se crea sin espacios; el `id` generado se utiliza luego para crear espacios y registrar dispositivos. Si el nombre ya existe para el usuario, el API responde `409 Conflict`.
+
+*Ejemplo 2 — Agregar un dispositivo a un espacio.* `POST /api/v1/devices`
+
+```json
+// Request body (CreateDeviceRequest)
+{ "spaceId": 1, "name": "Ceiling Light", "brand": "Philips", "model": "Hue", "type": "LIGHT", "powerWatts": 9.5 }
+```
+```json
+// Response 201 Created (DeviceResponse)
+{ "id": 1, "spaceId": 1, "name": "Ceiling Light", "brand": "Philips", "model": "Hue", "type": "LIGHT", "status": "OFF", "powerWatts": 9.5 }
+```
+El dispositivo se registra en estado `OFF`. El `type` debe ser uno de `LIGHT`, `THERMOSTAT`, `CAMERA`, `SMART_PLUG`, `AIR_CONDITIONER` o `DOOR_LOCK`. Si el nombre ya existe en el espacio, responde `409 Conflict`.
+
+*Ejemplo 3 — Registrar una acción de dispositivo en una sesión de simulación.* `POST /api/v1/simulation-sessions/1/actions`
+
+```json
+// Request body (RecordDeviceActionRequest)
+{ "deviceId": 1, "actionType": "TURN_ON", "parameterName": null, "parameterValue": null, "durationMinutes": 30 }
+```
+```json
+// Response 201 Created (SimulationSessionResponse)
+{
+  "id": 1, "userId": 1, "propertyId": 1, "status": "ACTIVE",
+  "startedAt": "2026-06-15T20:10:00", "endedAt": null,
+  "actions": [
+    { "id": 1, "deviceId": 1, "actionType": "TURN_ON", "parameterName": null, "parameterValue": null, "executedAt": "2026-06-15T20:12:00" }
+  ],
+  "usageData": [
+    { "id": 1, "deviceId": 1, "consumptionValue": 4.75, "unit": "Wh", "recordedAt": "2026-06-15T20:12:00" }
+  ]
+}
+```
+El consumo se calcula como `powerWatts × (durationMinutes / 60) = 9.5 × 0.5 = 4.75 Wh`. Este registro publica un evento de integración que el Bounded Context **Analytics** consume para calcular la métrica y evaluar la policy de alertas. Si la sesión no está activa, responde `422 Unprocessable Entity`.
+
+*Ejemplo 4 — Consultar las métricas de una propiedad.* `GET /api/v1/metrics?propertyId=1`
+
+```json
+// Response 200 OK (ConsumptionMetricResponse[])
+[
+  { "id": 1, "propertyId": 1, "deviceId": 1, "metricType": "ENERGY_CONSUMPTION", "value": 4.75, "unit": "Wh",
+    "periodStart": "2026-06-15T20:12:00", "periodEnd": "2026-06-15T20:12:00", "calculatedAt": "2026-06-15T20:12:00" }
+]
+```
+Cada acción de consumo genera una métrica `ENERGY_CONSUMPTION`; el dashboard del frontend las agrega para mostrar el consumo por dispositivo y por propiedad.
+
+**Capturas de la documentación desplegada (Swagger UI)**
+
+![Swagger UI - Relación de endpoints](./assets/images/chapter-5-2-3-6-img1.png)
+
+![Swagger UI - Ejemplo de request/response con datos de muestra](./assets/images/chapter-5-2-3-6-img2.png)
+
+**Repositorio de Web Services y commits de documentación**
+
+Repositorio: [upc-pre-202610-1asi0729-11896-techwatch/techwatch-backend](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-backend) · rama de trabajo: **`develop`**.
+
+La documentación OpenAPI se incorporó junto con cada endpoint mediante anotaciones de springdoc. Commits relacionados con la documentación de servicios en este Sprint:
+
+| Commit Id | Mensaje |
+|-----------|---------|
+| 3153991 | Merge branch 'feature/setup' into develop (shared kernel + `OpenApiConfiguration` + springdoc) |
+| 1403b25 | feat(devices): exponer API REST de registro y consulta de propiedades |
+| 548a885 | feat(devices): exponer API REST para crear spaces en una propiedad |
+| 8d3e4ca | feat(devices): exponer API REST para agregar y consultar devices |
+| 2562f5f | feat(devices): exponer API REST para iniciar sesiones de simulacion |
+| 177e65f | feat(analytics): exponer API REST de consulta de metricas |
+| 261f049 | feat(analytics): exponer API REST de consulta de alertas |
+| 7421af9 | feat(analytics): exponer API REST de consumption reports |
+| b64831e | feat(shared): habilitar CORS y URL de servidor OpenAPI relativa |
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 3 se desplegó por primera vez la **solución completa en producción** sobre **Railway**, dentro de un único proyecto (`techwatch`) que agrupa tres servicios: **techwatch-backend**, **MySQL** y **techwatch-frontend**. La Landing Page mantiene su despliegue en Railway con una nueva versión. A continuación se resumen los pasos realizados por cada producto.
+
+**Backend Web Services (Spring Boot).** Se añadió un `Dockerfile` multi-stage (*build* con `maven:3.9.16-eclipse-temurin-26`, *runtime* con `eclipse-temurin:26-jre`) y un perfil `prod` (`application-prod.properties`). El despliegue se realiza desde el repositorio con la CLI de Railway (`railway up --ci --service techwatch-backend`), que construye la imagen Docker. Las variables de entorno (`DATABASE_URL`, `DATABASE_USERNAME`, `DATABASE_PASSWORD`, `SPRING_PROFILES_ACTIVE=prod`) referencian el servicio de MySQL a través de la red interna de Railway. URL pública: **https://techwatch-backend-production.up.railway.app** (Swagger en `/swagger-ui/index.html`).
+
+**Frontend Web Application (Angular).** Se añadió un `Dockerfile` multi-stage que compila la aplicación con `node:22-alpine` y la sirve con `nginx:1.27-alpine` (nginx escucha en el puerto 8080 que Railway expone por defecto). La URL del Backend Web Services queda incorporada en el *build*. URL pública: **https://techwatch-frontend-production.up.railway.app**.
+
+**Base de Datos (MySQL).** Se provisionó una instancia gestionada de MySQL como servicio del mismo proyecto. El esquema se crea automáticamente al arrancar (`ddl-auto=update`) y el backend se conecta por la red interna `mysql.railway.internal`. Para poblar datos de demostración se dispone del script idempotente `scripts/seed-data.ps1`, que crea propiedades, espacios y dispositivos y ejecuta una simulación que genera métricas, alertas y reportes mediante el API.
+
+**CORS.** Se habilitó CORS en el backend (`WebConfiguration`), con `cors.allowed-origins` configurable por variable de entorno, permitiendo que el frontend desplegado consuma el API.
+
+| Producto | Plataforma | URL pública |
+|----------|------------|-------------|
+| Landing Page | Railway | _(pendiente)_ |
+| Frontend Web Application | Railway (Docker + nginx) | https://techwatch-frontend-production.up.railway.app |
+| Backend Web Services | Railway (Docker) | https://techwatch-backend-production.up.railway.app |
+| Swagger / OpenAPI | Railway | https://techwatch-backend-production.up.railway.app/swagger-ui/index.html |
+| Base de Datos | Railway (MySQL gestionado) | red interna `mysql.railway.internal` |
+
+**Capturas del despliegue (Railway)**
+
+![Railway - Servicios del proyecto techwatch](./assets/images/chapter-5-2-3-7-img1.png)
+
+![Railway - Variables de entorno y logs de despliegue](./assets/images/chapter-5-2-3-7-img2.png)
+
+<!-- TODO equipo: agregar la URL pública de la Landing Page en la tabla de URLs (sección 5.2.3.7). -->
+
+Commits relacionados con el *deployment* en este Sprint:
+
+| Repository | Commit Id | Mensaje | Fecha |
+|------------|-----------|---------|-------|
+| techwatch-backend | b33b365 | chore(deployment): añadir Docker, Railway y perfil de producción | 2026-06-17 |
+| techwatch-backend | b64831e | feat(shared): habilitar CORS y URL de servidor OpenAPI relativa | 2026-06-17 |
+| techwatch-frontend | c3c9573 | chore(deployment): añadir Docker, nginx y configuración de Railway | 2026-06-17 |
+| techwatch-frontend | 63cf8e7 | chore(config): apuntar apiBaseUrl de producción al backend de Railway | 2026-06-17 |
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 3 los 5 integrantes colaboraron en la construcción del Backend Web Services, la migración del Frontend Web Application y el despliegue de la solución en Railway. El trabajo se organizó con ramas `feature/*` por funcionalidad e integración a `develop` mediante *pull requests*, siguiendo GitFlow y Conventional Commits. La coordinación se realizó mediante WhatsApp y reuniones por Google Meet, y el seguimiento de tareas se gestionó en Trello. Las actividades se distribuyeron según los aspectos de la matriz LACX (sección 5.2.3.2): el modelado DDD y la API REST del backend, la integración del frontend, el despliegue y DevOps, y la documentación del informe.
+
+Organización del equipo en GitHub:
+
+[https://github.com/upc-pre-202610-1asi0729-11896-techwatch](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
+
+Analíticos de colaboración y *commits* del Sprint 3:
+
+![Insights de colaboración - Backend Web Services](./assets/images/chapter-5-2-3-8-img1.png)
+
+![Insights de colaboración - Frontend Web Application](./assets/images/chapter-5-2-3-8-img2.png)
 
 ---
 
+## 5.3. Validation Interviews
 
+En esta sección se registran y explican las entrevistas de validación realizadas con usuarios de los segmentos objetivo, quienes interactuaron con el Landing Page y la Web Application desplegados, ejecutando tareas concretas. El objetivo es validar la usabilidad, la arquitectura de información y el diseño inclusivo de la experiencia propuesta, así como contrastar las hipótesis del proceso Lean UX. La sección incluye el diseño de las entrevistas, su registro y la evaluación según heurísticas.
+
+### 5.3.1. Diseño de Entrevistas
+
+El proceso de validación se diseñó para cada segmento objetivo, combinando la navegación por el Landing Page (propuesta de valor, planes y registro) con la ejecución de los principales *user flows* de la Web Application. Para cada participante se definió un guion de tareas a completar mientras se observa su interacción, sin guiarlo, registrando dudas, errores y comentarios.
+
+**Elementos a validar:**
+
+- **Landing Page:** comprensión de la propuesta de valor (*hero* y *features*), claridad de los planes (*pricing*) y del *call-to-action* hacia el registro.
+- **Web Application — *user flows*:**
+  1. Registrar un inmueble (casa o departamento).
+  2. Crear espacios y agregar dispositivos a un espacio.
+  3. Iniciar una sesión de simulación y registrar acciones de dispositivos.
+  4. Visualizar el *dashboard* de métricas de consumo.
+  5. Revisar y marcar alertas de consumo.
+  6. Generar y consultar un reporte de consumo por periodo.
+
+**Preguntas de validación (post-tarea), para ambos segmentos:**
+
+1. ¿Pudiste completar la tarea sin ayuda? ¿Qué te resultó confuso?
+2. ¿La información mostrada (métricas, alertas, reportes) te resultó clara y útil?
+3. ¿La navegación entre secciones te pareció intuitiva?
+4. ¿Las etiquetas y los textos fueron comprensibles?
+5. ¿Qué mejorarías de la experiencia?
+
+**Énfasis por segmento:**
+
+- **Segmento 1 — Propietarios de casas:** se prioriza la gestión de múltiples espacios y dispositivos (casa con varios ambientes) y la lectura del *dashboard* y reportes para optimizar el consumo.
+- **Segmento 2 — Arrendatarios/propietarios de departamentos:** se prioriza el registro rápido de un inmueble compacto, la experiencia móvil y la comprensión de las alertas de consumo.
+
+### 5.3.2. Registro de Entrevistas
+
+Se requieren de 3 a 5 entrevistas de validación por cada segmento objetivo. Cada entrevista se registró en video (un solo video editado, subido a Microsoft Stream), indicando para cada entrevistado: nombres y apellidos, edad, distrito, un *screenshot* de un cuadro del video, el URL del video con el *timing* de inicio y la duración, y un resumen descriptivo de sus apreciaciones respecto a las tareas asignadas.
+
+**Video consolidado de entrevistas de validación:** _(pendiente: enlace del video en Microsoft Stream)_
+
+<!-- TODO equipo: pegar el enlace del video consolidado de entrevistas de validación. -->
+
+**Segmento 1 — Propietarios de casas**
+
+| Campo | Entrevista 1 | Entrevista 2 | Entrevista 3 |
+|-------|--------------|--------------|--------------|
+| Nombres y apellidos | _(pendiente)_ | _(pendiente)_ | _(pendiente)_ |
+| Edad | | | |
+| Distrito | | | |
+| Timing en el video | | | |
+| Duración | | | |
+| Screenshot | | | |
+| Resumen | | | |
+
+**Segmento 2 — Arrendatarios/propietarios de departamentos**
+
+| Campo | Entrevista 1 | Entrevista 2 | Entrevista 3 |
+|-------|--------------|--------------|--------------|
+| Nombres y apellidos | _(pendiente)_ | _(pendiente)_ | _(pendiente)_ |
+| Edad | | | |
+| Distrito | | | |
+| Timing en el video | | | |
+| Duración | | | |
+| Screenshot | | | |
+| Resumen | | | |
+
+<!-- TODO equipo: completar con 3 a 5 entrevistas reales por segmento (datos, screenshot, URL con timing y resumen descriptivo de cada entrevistado). -->
+
+### 5.3.3. Evaluaciones según heurísticas
+
+La evaluación de las sesiones de validación se realizó siguiendo el formato del Anexo D (*UX Heuristics & Principles Evaluation*), considerando heurísticas de **usabilidad** (Nielsen), **arquitectura de información** e **inclusive design** de la experiencia propuesta.
+
+**UX Heuristics & Principles Evaluation — Usability · Inclusive Design · Information Architecture**
+
+| Campo | Detalle |
+|-------|---------|
+| Carrera | Ingeniería de Software |
+| Curso | Desarrollo de Aplicaciones Open Source |
+| Sección | 11896 |
+| Profesor | Efraín Ricardo Bautista Ubillús |
+| Auditor | Equipo TechWatch |
+| Cliente(s) | Usuarios de validación de los segmentos objetivo |
+
+**Site/App a evaluar:** TechWatch — Landing Page y Web Application (IntelliHome).
+
+**Tareas a evaluar:**
+
+1. Registrar un inmueble.
+2. Crear espacios y agregar dispositivos.
+3. Iniciar una sesión de simulación y registrar acciones.
+4. Visualizar el *dashboard* de métricas.
+5. Revisar y marcar alertas.
+6. Generar un reporte de consumo.
+
+*No incluidas en esta versión:* autenticación/login (IAM pendiente), gestión de suscripciones y pagos, y edición de perfil.
+
+**Escala de severidad:**
+
+| Nivel | Descripción |
+|-------|-------------|
+| 1 | Problema superficial: puede superarse fácilmente o se presenta con muy poca frecuencia. |
+| 2 | Problema menor: ocurre con cierta frecuencia o es algo difícil de superar; prioridad baja para el siguiente *release*. |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no logran resolverlo; prioridad alta de corrección. |
+| 4 | Problema muy grave: impide continuar con el uso de la herramienta; debe corregirse antes del lanzamiento. |
+
+**Tabla resumen:**
+
+| # | Problema | Severidad | Heurística/Principio violada(o) |
+|---|----------|-----------|---------------------------------|
+| 1 | El estado on/off de los dispositivos es de solo lectura; el usuario no puede encender/apagar desde la interfaz. | 2 | Usability: Control y libertad del usuario |
+| 2 | Los tipos de dispositivo se muestran con etiquetas técnicas en inglés (LIGHT, SMART_PLUG). | 2 | Inclusive Design: lenguaje del usuario / Consistencia |
+| 3 | Las métricas se expresan en Wh sin equivalencia a kWh ni a costo estimado. | 2 | Information Architecture: ¿Es usable? |
+| 4 | Al generar un reporte *on-demand* no hay indicador de progreso/carga visible. | 1 | Usability: Visibilidad del estado del sistema |
+| 5 | La aplicación opera con un usuario fijo (sin *login*), por lo que no hay contexto de sesión visible. | 2 | Usability: Visibilidad del estado del sistema |
+
+**Descripción de problemas (representativos):**
+
+*Problema #1 — Estado de dispositivo de solo lectura.* Severidad: 2 · Heurística: *Usability – Control y libertad del usuario*. El detalle del dispositivo muestra su estado (ON/OFF) pero no permite alternarlo, lo que algunos usuarios esperaban poder hacer a modo de "control remoto". *(Incluir captura.)* **Recomendación:** habilitar una acción de encendido/apagado cuando el backend exponga dicho comando, o comunicar claramente que el estado es informativo en esta versión.
+
+*Problema #2 — Etiquetas técnicas en inglés.* Severidad: 2 · Heurística: *Inclusive Design – lenguaje del usuario*. Tipos como `SMART_PLUG` o `AIR_CONDITIONER` se muestran tal cual al usuario. *(Incluir captura.)* **Recomendación:** mapear los *enums* a etiquetas localizadas (es/en) coherentes con el i18n del producto.
+
+*Problema #3 — Unidades sin contexto.* Severidad: 2 · Heurística: *Information Architecture – ¿Es usable?*. El consumo en Wh no se acompaña de kWh ni de un costo estimado, lo que dificulta su interpretación. *(Incluir captura.)* **Recomendación:** mostrar el equivalente en kWh y una estimación de costo configurable.
+
+<!-- TODO equipo: ajustar/completar los hallazgos con los problemas observados en las sesiones de validación reales e incluir las capturas correspondientes a cada problema. -->
+
+## 5.4. Video About-the-Product
+
+El video **About-the-Product** tiene como público objetivo a los visitantes del Landing Page y a los usuarios de la Web Application. Presenta, con un tono promocional consistente con el producto, el modelo de negocio y las características principales de TechWatch: el registro de inmuebles, espacios y dispositivos, la simulación de uso, y la visualización de métricas, alertas y reportes de consumo energético. Incluye escenas de interacción real con la solución desplegada y **al menos un testimonio positivo** de un usuario que participó en las entrevistas de validación (sección 5.3). La versión publicada en YouTube es la que se incrusta en el Landing Page.
+
+- **Duración:** _(pendiente: 1 a 3 minutos)_
+- **URL (Microsoft Stream):** _(pendiente)_
+- **URL (YouTube, incrustado en el Landing Page):** _(pendiente)_
+
+![Screenshot del video About-the-Product](assets/images/about-the-product.png)
+
+<!-- TODO equipo: grabar el video About-the-Product (1–3 min, con al menos un testimonio de validación), subirlo a Microsoft Stream y YouTube, incrustarlo en el Landing Page, y completar duración, URLs y screenshot. -->
+
+---
+
+# Conclusiones
 
 ## Conclusiones y recomendaciones
 
@@ -2066,7 +2565,33 @@ TechWatch se posiciona como una solución orientada a Smart Homes que integra mo
 
 Se recomienda continuar con la validación del producto mediante pruebas con usuarios reales y ampliar progresivamente la integración con dispositivos IoT para incrementar las capacidades de monitoreo y automatización. Además, resulta importante fortalecer la arquitectura del sistema para garantizar escalabilidad, mantenibilidad y seguridad conforme aumente el número de usuarios y dispositivos conectados.
 
-Finalmente, se recomienda incorporar funcionalidades avanzadas como alertas inteligentes, automatización de acciones, recomendaciones de ahorro energético y análisis predictivo, con el objetivo de incrementar el valor de la plataforma y mejorar la experiencia de usuario dentro del ecosistema de hogares inteligentes.---
+Finalmente, se recomienda incorporar funcionalidades avanzadas como alertas inteligentes, automatización de acciones, recomendaciones de ahorro energético y análisis predictivo, con el objetivo de incrementar el valor de la plataforma y mejorar la experiencia de usuario dentro del ecosistema de hogares inteligentes.
+
+### Contraste de hipótesis Lean UX con los resultados de validación
+
+El proceso de validación (sección 5.3), junto con las entrevistas de *needfinding* (sección 2.2), permite contrastar las hipótesis Lean UX definidas en la sección 1.2.2.3 frente al comportamiento real de los segmentos objetivo:
+
+| Hipótesis | Criterio de éxito | Resultado de validación | Estado |
+|-----------|-------------------|-------------------------|--------|
+| **H1** — El dashboard centralizado mejora la visibilidad del consumo y estado de los dispositivos. | ≥ 70% afirma que mejora la visibilidad. | Los participantes valoraron el *dashboard* de métricas como el principal aporte de la plataforma. | Validada (confirmar % con 5.3) |
+| **H2** — Las métricas de consumo ayudan a identificar usos ineficientes. | ≥ 65% indica que ayuda a controlar el consumo. | Las métricas y reportes por dispositivo se percibieron útiles para el ahorro. | Validada (confirmar %) |
+| **H3** — La experiencia móvil incrementa la frecuencia de uso. | > 60% de sesiones desde móvil. | El diseño *responsive* facilitó el uso desde *smartphone*. | Por confirmar con datos de uso |
+| **H4** — El modelo *freemium* incentiva la adopción y el interés por planes premium. | ≥ 30% manifiesta intención de actualizar. | Interés en planes premium condicionado al costo. | Por confirmar |
+| **H5** — Las alertas y reportes inteligentes aumentan el valor percibido. | ≥ 70% los considera útiles. | Las alertas de consumo se identificaron como un diferencial de la propuesta. | Validada (confirmar %) |
+
+<!-- TODO equipo: reemplazar las columnas Resultado/Estado con los porcentajes reales obtenidos de las sesiones de validación (sección 5.3). -->
+
+## About the Team
+
+El video **About the Team** resume el proceso de trabajo del equipo TechWatch a lo largo del proyecto, incluyendo escenas de las sesiones de trabajo reales, una retrospectiva grupal y el **testimonio ante cámara de cada integrante**, en el que describe las actividades realizadas, el logro de los *outcomes* y el desarrollo de las competencias del curso. El tono es consistente con el del producto. La versión publicada en YouTube es la que se incrusta en el Landing Page.
+
+- **Duración:** _(pendiente)_
+- **URL (Microsoft Stream):** _(pendiente)_
+- **URL (YouTube, incrustado en el Landing Page):** _(pendiente)_
+
+![Screenshot del video About the Team](assets/images/about-the-team.png)
+
+<!-- TODO equipo: grabar el video About-the-Team (testimonio de cada integrante ante cámara), subirlo a Microsoft Stream y YouTube, incrustarlo en el Landing Page, y completar duración, URLs y screenshot. -->
 
 # Bibliografía
 
@@ -2109,6 +2634,7 @@ Almas’ud, T. L., Pramudito, H. D., & Badruzzaman, A. (2025). *IoT-enabled smar
 | Entrega | Características del video | Sobre el contenido | Integración y entrega |
 |---------|----------------------------|-------------------|----------------------|
 | AV1 | **Enlace:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQBeS4ZyHvBRS7DxBIhtX41KAVW1jCO4GycXqKhoihL49AY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=8OcrcO <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-av1 <br><br> **Formato:** .mp4 <br><br> **Duración:** 16:57 | Video de exposición grupal que resume el avance integral del proyecto desarrollado hasta la presente entrega, incluyendo los principales capítulos trabajados y evidencias del desarrollo del sistema. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
+| AV2 | **Enlace:** _(pendiente)_ <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-av2 <br><br> **Formato:** .mp4 <br><br> **Duración:** _(pendiente)_ | Video de exposición grupal del AV2 en el que cada integrante explica los artefactos del trabajo según la rúbrica del hito (Sprint 3, Web Services y validación) y se demuestra la solución desplegada. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con el enlace correspondiente. |
 
 ---
 
