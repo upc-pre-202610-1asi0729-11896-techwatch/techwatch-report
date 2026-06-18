@@ -2067,6 +2067,62 @@ Organización del equipo en GitHub:
 
 ![commits](assets/images/chapter-5-2-2-8-img4.png)
 
+### 5.2.3. Sprint 3
+
+#### 5.2.3.1. Sprint Planning 3
+
+| Sprint # | Sprint 3 |
+|----------|----------|
+| **Sprint Planning Background** | |
+| Date | 06-06-2026 |
+| Time | 08:30 PM |
+| Location | Reunión virtual vía Google Meet |
+| Prepared By | Alva Abanto, Luis Andrés |
+| Attendees (to planning meeting) | Alva Abanto, Luis Andrés / Fernandez Garfias, Alexander Piero / Toro Turpo, Ronal / Montalvo Vásquez, Bruno Rodrigo / Becerra Durand, Sebastian Uriel |
+| Sprint 2 Review Summary | En el Sprint 2 se entregó la primera versión funcional del Frontend Web Application, integrada con un JSON Server que actuaba como backend simulado para la gestión de hogares, dispositivos y métricas de consumo. |
+| Sprint 2 Retrospective Summary | El equipo identificó que el JSON Server simulado limitaba la lógica de negocio y la persistencia real de la solución. Para el Sprint 3 se acordó construir el RESTful API real con Spring Boot aplicando Domain-Driven Design, migrar el frontend para consumirlo y desplegar la solución completa (backend, frontend y base de datos) en Railway. |
+| **Sprint Goal & User Stories** | |
+| Sprint 3 Goal | Our focus is on replacing the simulated backend with a real RESTful API for the Device Management and Analytics bounded contexts. We believe it delivers real persistence, business rules and consumption analytics to IntelliHome users through an integrated and deployed solution. This will be confirmed when users can register properties, spaces and devices, run a simulation session and visualize the generated metrics, alerts and reports consumed from the deployed Spring Boot API without intervention of the development team. |
+| Sprint 3 Velocity | 26 |
+| Sum of Story Points | 26 |
+
+#### 5.2.3.2. Aspect Leaders and Collaborators
+
+En este Sprint el alcance se concentró en la construcción del Backend Web Services real (Spring Boot + MySQL) y su integración con el Frontend Web Application. Los aspectos de la matriz LACX (*Leadership and Collaboration eXtended*) son: **Backend Domain & Application** (modelado DDD de los Bounded Contexts Device Management y Analytics, con CQRS ligero); **Backend REST API & Persistence** (controllers REST, documentación OpenAPI y persistencia JPA); **Frontend Integration** (migración del frontend del JSON Server al API real); **Deployment & DevOps** (contenerización con Docker y despliegue en Railway del backend, el frontend y MySQL); y **Documentation & Report** (documentación del sprint en el informe). **L** indica a la persona que lidera el cierre y la coherencia del aspecto, y **C** a quien colabora con aportes, *commits* puntuales o *feedback*.
+
+| Team Member (Last Name, First Name) | GitHub Username | Backend Domain & Application | Backend REST API & Persistence | Frontend Integration | Deployment & DevOps | Documentation & Report |
+|-------------------------------------|-----------------|------------------------------|--------------------------------|----------------------|---------------------|------------------------|
+| Alva Abanto, Luis Andrés | luis-alva0 | L | C | C | L | C |
+| Fernandez Garfias, Alexander Piero | Dostoyevsk1 | C | L | C | C | C |
+| Toro Turpo, Ronal | ronaltt-345 | C | C | L | C | C |
+| Montalvo Vásquez, Bruno Rodrigo | TartaroZ | C | C | C | C | L |
+| Becerra Durand, Sebastian Uriel | sebasdev28 | C | C | C | C | C |
+
+#### 5.2.3.3. Sprint Backlog 3
+
+El objetivo principal del Sprint 3 es reemplazar el backend simulado por un RESTful API real desarrollado en Spring Boot bajo Domain-Driven Design, cubriendo los Bounded Contexts **Device Management** (propiedades, espacios, dispositivos y simulación) y **Analytics** (métricas, alertas y reportes), migrar el Frontend Web Application para que consuma dicho API y desplegar la solución completa en Railway. Las tareas se derivan de las *Technical Stories* del Epic EP09 (API y Backend) de la sección 3.1.
+
+![Tablero Trello Sprint 3](assets/images/chapter-5-2-3-3-img1.png)
+
+<!-- TODO equipo: pegar la URL pública del tablero Trello del Sprint 3 -->
+URL del tablero: _(pendiente de agregar por el equipo)_
+
+| Sprint # | Sprint 3 | | | | | | |
+|----------|----------|-|-|-|-|-|-|
+| **User Story / Technical Story** | | **Work-Item / Task** | | | | | |
+| Id | Title | Id | Title | Description | Estimation (Hours) | Assigned To | Status |
+| TS09 | API registrar inmueble | T01 | Implementar API REST de propiedades | Slice DDD del aggregate Property con endpoints POST /api/v1/properties y GET /api/v1/properties?userId, persistencia JPA y CQRS | 5 | Alva Abanto, Luis Andrés | Done |
+| TS09 | API registrar inmueble | T02 | Implementar gestión de espacios | Comando CreateSpace dentro del aggregate Property y endpoint POST /api/v1/properties/{propertyId}/spaces | 3 | Alva Abanto, Luis Andrés | Done |
+| TS11 | API registrar dispositivo | T03 | Implementar API REST de dispositivos | Aggregate Device con endpoint POST /api/v1/devices (add device to space) y validación de nombre único por espacio | 5 | Alva Abanto, Luis Andrés | Done |
+| TS12 | API actualizar estado de dispositivo | T04 | Implementar edición de dispositivo | Comando EditDevice y endpoint PUT /api/v1/devices/{deviceId} | 3 | Alva Abanto, Luis Andrés | Done |
+| TS02 | API obtener sensores | T05 | Implementar consulta y eliminación de dispositivos | Endpoints GET /api/v1/devices?spaceId, GET /api/v1/devices/{deviceId} y DELETE /api/v1/devices/{deviceId} | 3 | Alva Abanto, Luis Andrés | Done |
+| TS02 | API obtener sensores | T06 | Implementar sesiones de simulación | Aggregate SimulationSession con start, record-action y end (POST /api/v1/simulation-sessions y subrecursos), generando datos de consumo | 5 | Alva Abanto, Luis Andrés | Done |
+| TS13 | API obtener dashboard | T07 | Implementar API REST de métricas | Bounded Context Analytics: cálculo de métricas a partir de eventos de integración y GET /api/v1/metrics?propertyId | 5 | Alva Abanto, Luis Andrés | Done |
+| TS04 | API generar alerta | T08 | Implementar API REST de alertas | Policy de umbral escalonado para generar alertas de consumo, GET /api/v1/alerts?userId y PUT /api/v1/alerts/{alertId}/read | 3 | Alva Abanto, Luis Andrés | Done |
+| TS03 | API consultar historial | T09 | Implementar API REST de reportes de consumo | Generación on-demand de reportes agregando métricas por periodo: POST /api/v1/reports y GET /api/v1/reports?propertyId | 3 | Alva Abanto, Luis Andrés | Done |
+| TS10 | API listar inmuebles | T10 | Migrar Frontend Web Application al API real | Reemplazar el consumo del JSON Server por el RESTful API (proxy de ng serve, environments y stores de management, simulation y analytics) | 5 | Fernandez Garfias, Alexander Piero | Done |
+| — | Deployment | T11 | Contenerizar y desplegar la solución en Railway | Dockerfile del backend (Maven + Temurin), Docker multi-stage del frontend (node + nginx), MySQL gestionado, perfil prod y CORS | 5 | Alva Abanto, Luis Andrés | Done |
+| — | Configuración | T12 | Configurar shared kernel, OpenAPI y manejo de errores | Result/ApplicationError, GlobalExceptionHandler, configuración de OpenAPI/Swagger y naming strategy snake_case pluralizado | 3 | Alva Abanto, Luis Andrés | Done |
 
 ---
 
