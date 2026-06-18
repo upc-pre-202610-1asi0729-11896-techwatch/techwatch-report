@@ -1750,22 +1750,22 @@ Referencia: [Gherkin conventions](https://specflow.org/gherkin/gherkin-conventio
 
 ### 5.1.4. Software Deployment Configuration
 
-En esta sección se detallan las herramientas y configuraciones consideradas para el despliegue de los proyectos incluidos en TechWatch, incluyendo Landing Page, Web Application, Backend Web Services y Base de Datos.
+En esta sección se detallan las herramientas y la configuración utilizadas para el despliegue de los productos digitales de TechWatch —Landing Page, Frontend Web Application, Backend Web Services y Base de Datos—, todos publicados en **Railway**. La evidencia detallada del proceso de despliegue por iteración se documenta en las secciones de *Software Deployment Evidence* de cada Sprint (ver 5.2.3.7).
 
 - **Landing Page:**  
   La Landing Page fue desarrollada utilizando HTML, CSS y JavaScript. Para su despliegue se utilizó Railway, plataforma que permitió publicar el sitio web y mantener integración con el repositorio de GitHub para facilitar la actualización continua del contenido y despliegue de nuevas versiones.
 
 - **Frontend Web Application:**  
-  La Web Application fue desarrollada en Angular con TypeScript. Para su despliegue se utilizaron plataformas como Azure y Vercel, permitiendo publicar la aplicación web compilada y mantener acceso público a la solución. Estas herramientas facilitan el despliegue continuo desde GitHub y permiten actualizar la aplicación conforme se integran nuevos cambios en el repositorio.
+  La Web Application fue desarrollada en Angular con TypeScript. Para su despliegue en producción se utiliza **Railway** mediante un contenedor **Docker multi-stage** que compila la aplicación con `node:22-alpine` y sirve los archivos estáticos resultantes con `nginx:1.27-alpine`. La aplicación queda accesible públicamente en **https://techwatch-frontend-production.up.railway.app**, con la URL del Backend Web Services incorporada en el momento del build.
 
 - **Backend Web Services:**  
-  El backend fue desarrollado en Java, siguiendo una arquitectura orientada a servicios REST. Para su despliegue se consideraron plataformas como Azure, Railway y Render, ya que permiten alojar servicios backend, configurar variables de entorno y conectar la aplicación con la base de datos MySQL.
+  El Backend Web Services fue desarrollado en Java con **Spring Boot**, siguiendo el estilo arquitectónico **RESTful API**. Para su despliegue en producción se utiliza **Railway** a partir de un **Dockerfile** (build con `maven:3.9.16-eclipse-temurin-26` y ejecución con `eclipse-temurin:26-jre`), activando el perfil `prod` mediante `application-prod.properties`. El servicio queda accesible públicamente en **https://techwatch-backend-production.up.railway.app**, con la documentación interactiva de los endpoints disponible en **/swagger-ui/index.html** (OpenAPI). Las credenciales y la URL de la base de datos se inyectan como variables de entorno y la conexión con MySQL se realiza por la red interna de Railway.
 
 - **Base de Datos:**  
-  Para la persistencia de datos se utiliza MySQL. La base de datos puede ser desplegada en Railway, plataforma que permite provisionar una instancia MySQL, gestionar credenciales de conexión y administrar variables de entorno necesarias para la comunicación con el backend.
+  Para la persistencia de datos se utiliza **MySQL**, provisionado como servicio gestionado dentro del mismo proyecto de **Railway**. El esquema se genera automáticamente a partir del modelo de dominio (`ddl-auto=update`) y la comunicación con el Backend Web Services se realiza a través de la red interna de Railway (`mysql.railway.internal`), utilizando credenciales administradas mediante variables de entorno.
 
 - **Control de versiones y despliegue:**  
-  GitHub fue utilizado como repositorio principal para gestionar el código fuente, ramas de desarrollo, pull requests y versiones del proyecto. Además, permitió integrar los repositorios con las plataformas de despliegue para facilitar la publicación de la Landing Page, Web Application y Backend.
+  GitHub fue utilizado como repositorio principal para gestionar el código fuente, ramas de desarrollo, pull requests y versiones del proyecto, aplicando GitFlow, Conventional Commits y Semantic Versioning. El despliegue de cada producto en Railway se realiza a partir de su imagen Docker generada desde el código fuente versionado en GitHub.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
