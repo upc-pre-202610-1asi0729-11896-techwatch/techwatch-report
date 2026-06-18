@@ -42,6 +42,7 @@
 |---------|------------|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AV1     | 04-04-2026 | Equipo TechWatch | Creación del informe. Inclusión de Capítulos I, II, III, IV , V y la inclusion del Sprint 1                                                                                                                                                                                              |
 | TB1     | 13-05-2026 | Equipo TechWatch | Actualización del Project Report con la inclusión del Sprint 2 y corrección de observaciones de la entrega anterior relacionadas con hipótesis Lean UX, diagramas, wireflows, Sprint Goal, estadísticas de colaboración, nomenclatura de archivos y visualización de imágenes y enlaces. |
+| AV2     | 17-06-2026 | Equipo TechWatch | Actualización del Project Report para el AV2: inclusión del Sprint 3 con la migración del JSON Server al RESTful API real en Spring Boot desplegado en Railway y su documentación con OpenAPI, capítulo de Validation Interviews con evaluación según heurísticas, sección de Video About-the-Product, sección About the Team en Conclusiones, y actualización del Registro de Versiones, Student Outcome y Project Report Collaboration Insights. |
 
 <h2 align="center">Project Report Collaboration Insights</h2>
 
@@ -139,8 +140,23 @@ URL de la organizacion  del Project Report en GitHub:
       - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
       - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
       - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
+    - [5.2.3. Sprint 3](#523-sprint-3)
+      - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
+      - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
+      - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
+      - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
+      - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
+      - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
+      - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
+      - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
+  - [5.3. Validation Interviews](#53-validation-interviews)
+    - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
+    - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
+    - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
+  - [5.4. Video About-the-Product](#54-video-about-the-product)
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+  - [About the Team](#about-the-team)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
   - [Anexo A. Video de Exposiciones](#anexo-a-video-de-exposiciones)
@@ -2037,7 +2053,7 @@ El JSON Server fue desplegado en Railway y expone los endpoints de users, homes,
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
-Durante el Sprint 2 los 5 integrantes colaboraron en el desarrollo del Frontend Web Application, trabajando sobre ramas de feature individuales e integrando avances mediante pull requests hacia la rama de trabajo del sprint. La coordinación se realizó mediante WhatsApp y reuniones por Google Meet. El seguimiento de tareas se gestionó en [herramienta indicada].
+Durante el Sprint 2 los 5 integrantes colaboraron en el desarrollo del Frontend Web Application, trabajando sobre ramas de feature individuales e integrando avances mediante pull requests hacia la rama de trabajo del sprint. La coordinación se realizó mediante WhatsApp y reuniones por Google Meet. El seguimiento de tareas se gestionó en Trello.
 
 Organización del equipo en GitHub:
 
