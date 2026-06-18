@@ -12,14 +12,11 @@
 <h3 align="center">Nombre del Profesor: Efraín Ricardo Bautista Ubillús</h3>
 
 
----
+
 
 <h1 align="center">Informe de Trabajo Final</h1>
-
 <h2 align="center">TechWatch</h2>
 <h2 align="center">IntelliHome</h2>
-
-
 
 <h3 align="center">Integrantes</h3>
 
@@ -37,7 +34,7 @@
 
 <h3 align="center">Año : 2026</h3>
 
----
+
 <h2 align="center">Registro de Versiones del Informe</h2>
 
 
@@ -45,23 +42,26 @@
 |---------|------------|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AV1     | 04-04-2026 | Equipo TechWatch | Creación del informe. Inclusión de Capítulos I, II, III, IV , V y la inclusion del Sprint 1                                                                                                                                                                                              |
 | TB1     | 13-05-2026 | Equipo TechWatch | Actualización del Project Report con la inclusión del Sprint 2 y corrección de observaciones de la entrega anterior relacionadas con hipótesis Lean UX, diagramas, wireflows, Sprint Goal, estadísticas de colaboración, nomenclatura de archivos y visualización de imágenes y enlaces. |
+| AV2     | 17-06-2026 | Equipo TechWatch | Actualización del Project Report para el AV2: inclusión del Sprint 3 con la migración del JSON Server al RESTful API real en Spring Boot desplegado en Railway y su documentación con OpenAPI, capítulo de Validation Interviews con evaluación según heurísticas, sección de Video About-the-Product, sección About the Team en Conclusiones, y actualización del Registro de Versiones, Student Outcome y Project Report Collaboration Insights. |
 
 <h2 align="center">Project Report Collaboration Insights</h2>
+
+![Project Report Collaboration Insights TB1](./assets/images/project_colaboration.png)
+
+**AV2.** Para la AV2, la elaboración del informe se centró en documentar el Sprint 3 (Backend Web Services con OpenAPI, y las evidencias de desarrollo y despliegue en Railway), el capítulo de Validation Interviews con la evaluación según heurísticas, las secciones de Video About-the-Product y About the Team, y la actualización del Registro de Versiones, el Student Outcome y este apartado. Todos los integrantes participaron en la redacción y revisión del informe, coordinando mediante Trello y reuniones por Google Meet.
+
+![Project Report Collaboration Insights AV2](./assets/images/project_colaboration_av2.png)
+
+<!-- TODO equipo: reemplazar por la captura real de los analíticos de colaboración (Insights → Contributors) del repositorio techwatch-report para la AV2. -->
 
 
 URL de la organizacion  del Project Report en GitHub:
 [https://github.com/techwatch-upc/Project](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
 
----
 
 ## Contenido
 
-- [Informe de Trabajo Final](#informe-de-trabajo-final)
-  - [Relación de Integrantes](#relación-de-integrantes)
-  - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
-  - [Project Report Collaboration Insights](#project-report-collaboration-insights)
-  - [Contenido](#contenido)
-  - [Student Outcome](#student-outcome)
+- [Student Outcome](#student-outcome)
 - [Capítulo I: Introducción](#capítulo-i-introducción)
   - [1.1. Startup Profile](#11-startup-profile)
     - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
@@ -71,33 +71,17 @@ URL de la organizacion  del Project Report en GitHub:
     - [1.2.2. Lean UX Process](#122-lean-ux-process)
       - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
       - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
-      - [Business Assumptions](#business-assumptions)
-      - [User Assumptions](#user-assumptions)
       - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
-      - [Hypothesis 1](#hypothesis-1)
-      - [Hypothesis 2](#hypothesis-2)
-      - [Hypothesis 3](#hypothesis-3)
-      - [Hypothesis 4](#hypothesis-4)
-      - [Hypothesis 5](#hypothesis-5)
       - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
   - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
-- [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
+- [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
   - [2.1. Competidores](#21-competidores)
     - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
     - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
   - [2.2. Entrevistas](#22-entrevistas)
     - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
     - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
-    - [Entrevista 1 — Gustavo Rivas](#entrevista-1--gustavo-rivas)
-    - [Entrevista 2 — Tito Rusel Montalvo Vera](#entrevista-2--tito-rusel-montalvo-vera)
-    - [Entrevista 3 — José Vásquez Martínez](#entrevista-3--josé-vásquez-martínez)
-    - [Entrevista 4 — Daniel Palomino](#entrevista-4--daniel-palomino)
-    - [Entrevista 5 — Eleno Giovanni Mena Zuleta](#entrevista-5--eleno-giovanni-mena-zuleta)
-    - [Entrevista 6 — Gloria Quispe](#entrevista-6--gloria-quispe)
     - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
-      - [Análisis del Segmento 1: Propietarios de casas](#análisis-del-segmento-1-propietarios-de-casas)
-      - [Análisis del Segmento 2: Arrendatarios y propietarios de departamentos](#análisis-del-segmento-2-arrendatarios-y-propietarios-de-departamentos)
-      - [Conclusión general](#conclusión-general)
   - [2.3. Needfinding](#23-needfinding)
     - [2.3.1. User Personas](#231-user-personas)
     - [2.3.2. User Task Matrix](#232-user-task-matrix)
@@ -112,37 +96,16 @@ URL de la organizacion  del Project Report en GitHub:
 - [Capítulo IV: Product Design](#capítulo-iv-product-design)
   - [4.1. Style Guidelines](#41-style-guidelines)
     - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
-    - [Paleta de colores:](#paleta-de-colores)
-    - [Tipografía:](#tipografía)
-    - [Principios de diseño:](#principios-de-diseño)
     - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
   - [4.2. Information Architecture](#42-information-architecture)
     - [4.2.1. Organization Systems](#421-organization-systems)
-    - [Organización Jerárquica (Visual Hierarchy)](#organización-jerárquica-visual-hierarchy)
-    - [Organización Secuencial](#organización-secuencial)
-    - [Organización Matricial](#organización-matricial)
-    - [Categorización](#categorización)
     - [4.2.2. Labeling Systems](#422-labeling-systems)
-    - [Landing Page](#landing-page)
-    - [Web App](#web-app)
     - [4.2.3. SEO Tags and Meta Tags](#423-seo-tags-and-meta-tags)
-    - [Landing Page](#landing-page-1)
     - [4.2.4. Searching Systems](#424-searching-systems)
-    - [Barra de búsqueda](#barra-de-búsqueda)
-    - [Filtros disponibles](#filtros-disponibles)
-    - [Resultados de búsqueda](#resultados-de-búsqueda)
-    - [Objetivo](#objetivo)
     - [4.2.5. Navigation Systems](#425-navigation-systems)
-    - [Landing Page](#landing-page-2)
-    - [Web Application](#web-application)
-    - [Tipos de navegación](#tipos-de-navegación)
   - [4.3. Landing Page UI Design](#43-landing-page-ui-design)
     - [4.3.1. Landing Page Wireframe](#431-landing-page-wireframe)
-    - [Wireframes](#wireframes)
-  - [](#)
     - [4.3.2. Landing Page Mock-up](#432-landing-page-mock-up)
-    - [Mock-ups finales](#mock-ups-finales)
-    - [Características](#características)
   - [4.4. Web Applications UX/UI Design](#44-web-applications-uxui-design)
     - [4.4.1. Web Applications Wireframes](#441-web-applications-wireframes)
     - [4.4.2. Web Applications Wireflow Diagrams](#442-web-applications-wireflow-diagrams)
@@ -158,26 +121,13 @@ URL de la organizacion  del Project Report en GitHub:
     - [4.7.1. Class Diagrams](#471-class-diagrams)
   - [4.8. Database Design](#48-database-design)
     - [4.8.1. Database Diagrams](#481-database-diagrams)
-- [Capítulo V: Product Implementation, Validation \& Deployment](#capítulo-v-product-implementation-validation--deployment)
+- [Capítulo V: Product Implementation, Validation & Deployment](#capítulo-v-product-implementation-validation--deployment)
   - [5.1. Software Configuration Management](#51-software-configuration-management)
     - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
-      - [Project Management](#project-management)
-      - [Requirements Management](#requirements-management)
-      - [Product UX/UI Design](#product-uxui-design)
-      - [Software Development](#software-development)
-      - [Software Testing](#software-testing)
     - [5.1.2. Source Code Management](#512-source-code-management)
-      - [Usuarios de GitHub](#usuarios-de-github)
-      - [Estrategia de ramas](#estrategia-de-ramas)
-    - [5.1.3. Source Code Style Guide \& Conventions](#513-source-code-style-guide--conventions)
-      - [HTML](#html)
-      - [CSS](#css)
-      - [JavaScript](#javascript)
-      - [TypeScript (Angular)](#typescript-angular)
-      - [Java (Backend)](#java-backend)
-      - [Gherkin](#gherkin)
+    - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide--conventions)
     - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
-  - [5.2. Landing Page, Services \& Applications Implementation](#52-landing-page-services--applications-implementation)
+  - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
     - [5.2.1. Sprint 1](#521-sprint-1)
       - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
       - [5.2.1.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
@@ -187,9 +137,32 @@ URL de la organizacion  del Project Report en GitHub:
       - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
       - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
       - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
-  - [](#-1)
+    - [5.2.2. Sprint 2](#522-sprint-2)
+      - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
+      - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
+      - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
+      - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
+      - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
+      - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
+      - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
+      - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
+    - [5.2.3. Sprint 3](#523-sprint-3)
+      - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
+      - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
+      - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
+      - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
+      - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
+      - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
+      - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
+      - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
+  - [5.3. Validation Interviews](#53-validation-interviews)
+    - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
+    - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
+    - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
+  - [5.4. Video About-the-Product](#54-video-about-the-product)
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+  - [About the Team](#about-the-team)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
   - [Anexo A. Video de Exposiciones](#anexo-a-video-de-exposiciones)
@@ -208,47 +181,145 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 <table border="1" cellspacing="0" cellpadding="6">
   <tr>
     <th>Criterio específico</th>
-    <th colspan="2">Acciones realizadas</th>
+    <th>Entrega</th>
+    <th>Acciones realizadas</th>
     <th>Conclusiones</th>
   </tr>
 
   <tr>
-    <td rowspan="5">Comunica oralmente con efectividad a diferentes rangos de audiencia.</td>
+    <td rowspan="15">Comunica oralmente con efectividad a diferentes rangos de audiencia.</td>
     <td rowspan="5">AV1</td>
     <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Participé activamente en la sustentación de la Landing Page, explicando la coherencia entre el diseño en Figma y la implementación visual. Además, apoyé constantemente en la elaboración y mejora del documento del proyecto.</td>
-    <td rowspan="5">El equipo mantuvo comunicación oral clara con usuarios, compañeros y docente, validando prioridades y criterios compartidos antes de integrar y desplegar.</td>
+    <td rowspan="15">
+      Durante la AV1, la TB1 y la AV2, el equipo mantuvo una comunicación oral efectiva entre integrantes, docente y usuarios entrevistados, permitiendo explicar de manera clara tanto aspectos funcionales como técnicos del proyecto. Las reuniones de coordinación y revisión facilitaron la validación de hipótesis, historias de usuario, wireframes y criterios de aceptación, fortaleciendo la toma de decisiones durante el desarrollo de la solución IoT y mejorando la integración de los avances realizados en cada sprint. En la AV2, la comunicación oral se centró en sustentar la construcción del Backend Web Services, su documentación con OpenAPI y su despliegue en Railway, así como el proceso de validación con usuarios.
+    </td>
   </tr>
+
   <tr>
     <td><b>Alva Abanto, Luis Andrés</b><br><br>Realicé entrevistas y coordiné criterios de aceptación y dudas de integración.</td>
   </tr>
+
   <tr>
     <td><b>Toro Turpo, Ronal</b><br><br>Revisé el comportamiento de navegación y flujo entre secciones en reuniones de alineación.</td>
   </tr>
+
   <tr>
     <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Participé en discusiones sobre estructura de secciones y criterios de prueba.</td>
   </tr>
+
   <tr>
     <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Expuse hallazgos de pruebas rápidas de UI y enlaces durante revisiones del sprint.</td>
   </tr>
 
   <tr>
-    <td rowspan="5">Comunica por escrito con efectividad a diferentes rangos de audiencia.</td>
     <td rowspan="5">TB1</td>
-    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Participé en el desarrollo del frontend y apoyé de manera constante en la elaboración, corrección y organización del Project Report, además de documentar avances relacionados con la Landing Page y estructura visual del sistema.</td>
-    <td rowspan="5">La comunicación escrita permitió mantener trazabilidad entre diseño, historias de usuario, código y despliegue, reduciendo ambigüedad para el equipo.</td>
+    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Participé en reuniones de coordinación para validar el desarrollo frontend, despliegue de la landing page y correcciones relacionadas con diagramas y funcionalidades implementadas.</td>
   </tr>
+
+  <tr>
+    <td><b>Alva Abanto, Luis Andrés</b><br><br>Coordiné actividades relacionadas con Sprint 2 y el despliegue del JSON Server, comunicando avances y observaciones al equipo.</td>
+  </tr>
+
+  <tr>
+    <td><b>Toro Turpo, Ronal</b><br><br>Participé en revisiones del capítulo IV y validación de wireframes y mock-ups del Web Application.</td>
+  </tr>
+
+  <tr>
+    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Expuse correcciones relacionadas con Lean UX Hypothesis y validación de enlaces de entrevistas durante reuniones del equipo.</td>
+  </tr>
+
+  <tr>
+    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Presenté avances relacionados con Sprint 2 y mejoras en wireframes del Web Application durante las sesiones de revisión.</td>
+  </tr>
+
+  <tr>
+    <td rowspan="5">AV2</td>
+    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Expuse la migración del Frontend Web Application al RESTful API real y la integración end-to-end durante las revisiones del Sprint 3.</td>
+  </tr>
+
+  <tr>
+    <td><b>Alva Abanto, Luis Andrés</b><br><br>Sustenté la arquitectura del Backend Web Services (DDD), la documentación OpenAPI y el despliegue en Railway ante el equipo y el docente.</td>
+  </tr>
+
+  <tr>
+    <td><b>Toro Turpo, Ronal</b><br><br>Participé en las revisiones de navegación y validación de los user flows de la Web Application durante las reuniones del Sprint.</td>
+  </tr>
+
+  <tr>
+    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Expuse el diseño de las entrevistas de validación y la evaluación según heurísticas durante las sesiones del equipo.</td>
+  </tr>
+
+  <tr>
+    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Presenté hallazgos de las pruebas sobre la solución desplegada y observaciones de la evaluación heurística.</td>
+  </tr>
+
+  <tr>
+    <td rowspan="15">Comunica por escrito con efectividad a diferentes rangos de audiencia.</td>
+    <td rowspan="5">AV1</td>
+    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Participé en el desarrollo del frontend y apoyé de manera constante en la elaboración, corrección y organización del Project Report, además de documentar avances relacionados con la Landing Page y estructura visual del sistema.</td>
+    <td rowspan="15">
+      La comunicación escrita desarrollada durante la AV1, la TB1 y la AV2 permitió mantener trazabilidad y coherencia entre los artefactos del proyecto, incluyendo Lean UX, historias de usuario, technical stories, wireframes, reportes y despliegues. La documentación elaborada facilitó la comprensión de los avances técnicos y funcionales por parte del docente y del equipo, además de reducir ambigüedades en los procesos de integración y validación del sistema. En la AV2 se documentó por escrito el Sprint 3 (Web Services con OpenAPI, evidencias de desarrollo y despliegue) y las entrevistas de validación con su evaluación según heurísticas.
+    </td>
+  </tr>
+
   <tr>
     <td><b>Alva Abanto, Luis Andrés</b><br><br>Redacté historias de usuario, technical stories y análisis de entrevistas.</td>
   </tr>
+
   <tr>
     <td><b>Toro Turpo, Ronal</b><br><br>Registré checklists y notas de integración en Trello y GitHub.</td>
   </tr>
+
   <tr>
     <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Mejoré textos y documentación de escenarios BDD.</td>
   </tr>
+
   <tr>
     <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Registré observaciones de pruebas y acuerdos de calidad antes del merge final.</td>
   </tr>
+
+  <tr>
+    <td rowspan="5">TB1</td>
+    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Documenté avances relacionados con frontend, despliegue de landing page, diagramas y mejoras visuales del sistema dentro del informe y repositorios.</td>
+  </tr>
+
+  <tr>
+    <td><b>Alva Abanto, Luis Andrés</b><br><br>Actualicé documentación relacionada con Sprint 2, despliegue del JSON Server y mejoras continuas del informe.</td>
+  </tr>
+
+  <tr>
+    <td><b>Toro Turpo, Ronal</b><br><br>Realicé correcciones documentadas en el capítulo IV relacionadas con wireframes y mock-ups del Web Application.</td>
+  </tr>
+
+  <tr>
+    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Corregí Lean UX Hypothesis, validé enlaces de entrevistas y adapté documentación del informe a formato PDF.</td>
+  </tr>
+
+  <tr>
+    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Documenté avances del Sprint 2 y mejoras en los wireframes del Web Application dentro del informe del proyecto.</td>
+  </tr>
+
+  <tr>
+    <td rowspan="5">AV2</td>
+    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Documenté la evidencia de ejecución y la integración del Frontend Web Application con el API real en la sección del Sprint 3 del informe.</td>
+  </tr>
+
+  <tr>
+    <td><b>Alva Abanto, Luis Andrés</b><br><br>Redacté la documentación del Sprint 3: Services Documentation (endpoints con OpenAPI), Development Evidence y Software Deployment Evidence.</td>
+  </tr>
+
+  <tr>
+    <td><b>Toro Turpo, Ronal</b><br><br>Documenté el diseño de las entrevistas de validación y los user flows evaluados de la Web Application.</td>
+  </tr>
+
+  <tr>
+    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Redacté la evaluación según heurísticas y el contraste de hipótesis Lean UX en las conclusiones del informe.</td>
+  </tr>
+
+  <tr>
+    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Registré el registro de entrevistas de validación y observaciones de calidad del informe antes de la entrega.</td>
+  </tr>
+
 </table>
 
 
@@ -268,14 +339,13 @@ Frente a esta problemática, TechWatch desarrolla una plataforma web orientada a
 
 ## 1.1.2. Perfiles de integrantes del equipo
 
-| Foto                                             | Nombres y Apellidos            | Código     | Carrera | Conocimientos y habilidades                                                     |
-|--------------------------------------------------|--------------------------------|------------|---------|---------------------------------------------------------------------------------|
-| <img src="assets/images/luis.png" width="100"/>  | Luis Andrés Alva Abanto        | u202310877 | Ingeniería de Software | C++, algoritmos, arquitectura y servicios. En el sprint de la landing aportó criterios de aceptación, alineación con requerimientos y revisión de integración respecto a enlaces y flujos. |
-| <img src="assets/images/Ronal.png" width="100"/> | Ronal Toro Turpo               | u20241e367 | Ingeniería de Software | C++, HTML, CSS, JavaScript. Afinó el comportamiento de la navegación, el menú lateral y la transición entre secciones, además de validar usabilidad en la vista móvil. |
-| <img src="assets/images/bruno.png" width="100"/> | Bruno Rodrigo Montalvo Vásquez | u202111529 | Ingeniería de Software | C++, Java y TypeScript básico. Cuidó la coherencia de textos, tarjetas de *pricing* y datos mostrados en *features* frente a lo definido en requerimientos. |
-| <img src="assets/images/alex.png" width="100"/>           | Alexander Piero Fernandez Garfias | u202019498 | Ingeniería de Software | C++, HTML, CSS, JavaScript, C#, Python, Java y Flutter. Diseño y *frontend* web y móvil. Se encargó de la **implementación de la Landing Page** (maquetado, estilos y conexión con *login*/*registro* e *i18n*) y de los **diseños y prototipos en Figma** que definen la identidad visual del producto. |
-| <img src="ruta/foto.jpg" width="100"/>           | Sebastian Uriel Becerra Durand | u20221b756 | Ingeniería de Software | C++, pruebas exploratorias básicas y atención al detalle. En la landing aportó revisiones de formularios, *footer*, enlaces externos y *checklist* de despliegue antes de publicar en el entorno productivo. |
-
+| Foto                                                               | Información |
+|--------------------------------------------------------------------|---|
+| <img src="assets/images/luis.png" width="500"/>                    | **Nombre:** Luis Andrés Alva Abanto<br><br>**Código:** U202310877<br><br>**Carrera:** Ingeniería de Software<br><br>**Conocimientos y habilidades:**<br><br>C++, algoritmos, arquitectura y servicios. En el sprint de la landing aportó criterios de aceptación, alineación con requerimientos y revisión de integración respecto a enlaces y flujos. |
+| <img src="assets/images/Ronal.png" width="500"/>                   | **Nombre:** Ronal Toro Turpo<br><br>**Código:** U20241E367<br><br>**Carrera:** Ingeniería de Software<br><br>**Conocimientos y habilidades:**<br><br>C++, HTML, CSS y JavaScript. Afinó el comportamiento de la navegación, el menú lateral y la transición entre secciones, además de validar usabilidad en la vista móvil. |
+| <img src="assets/images/bruno.png" width="500"/>                   | **Nombre:** Bruno Rodrigo Montalvo Vásquez<br><br>**Código:** U202111529<br><br>**Carrera:** Ingeniería de Software<br><br>**Conocimientos y habilidades:**<br><br>C++, Java y TypeScript básico. Cuidó la coherencia de textos, tarjetas de *pricing* y datos mostrados en *features* frente a lo definido en requerimientos. |
+| <img src="assets/images/chapter-1-1-2-alexander.png" width="550"/> | **Nombre:** Alexander Piero Fernandez Garfias<br><br>**Código:** U202019498<br><br>**Carrera:** Ingeniería de Software<br><br>**Conocimientos y habilidades:**<br><br>C++, HTML, CSS, JavaScript, C#, Python, Java y Flutter. Diseño y *frontend* web y móvil. Se encargó de la **implementación de la Landing Page** (maquetado, estilos y conexión con *login*/*registro* e *i18n*) y de los **diseños y prototipos en Figma** que definen la identidad visual del producto. |
+| <img src="assets/images/sebastian.png" width="500"/>               | **Nombre:** Sebastian Uriel Becerra Durand<br><br>**Código:** U20221B756<br><br>**Carrera:** Ingeniería de Software<br><br>**Conocimientos y habilidades:**<br><br>C++, pruebas exploratorias básicas y atención al detalle. En la landing aportó revisiones de formularios, *footer*, enlaces externos y *checklist* de despliegue antes de publicar en el entorno productivo. |
 ## 1.2. Solution Profile
 
 ### 1.2.1. Antecedentes y problemática
@@ -499,7 +569,9 @@ Aunque gestionan una menor cantidad de dispositivos en comparación con el segme
 | Timing en el video | 00:00 - 02:30 |
 | URL del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka|
 
-![Screenshot del video](assets/images/Cap2entrevista1.png)
+<p align="center">
+  <img src="assets/images/Cap2entrevista1.png" width="700">
+</p>
 
 **Resumen:**  
 Gustavo Rivas trabaja en refacción de vehículos y muestra un perfil práctico orientado a la funcionalidad y al ahorro. En su día a día utiliza principalmente el celular, aunque también interactúa con cámaras de seguridad y sensores de humo instalados en su vivienda. No utiliza aplicaciones web o móviles para gestionar aspectos del hogar, ya que actualmente resuelve el monitoreo de forma manual. La única manera en que revisa el consumo eléctrico es observando el panel de control o el medidor tradicional. Considera que no cuenta con suficiente información sobre el gasto energético de su vivienda y cree importante optimizarlo para reducir costos. Mostró alto interés en una plataforma centralizada donde pueda visualizar el consumo eléctrico en una sola pantalla. Indicó además que sí pagaría una suscripción mensual si la solución le aporta valor. Valora especialmente que pueda usarse desde el celular. Comentó que ha tenido dificultades para controlar varios dispositivos a la vez debido a errores en las cámaras y a que la información está dispersa.
@@ -519,7 +591,10 @@ Gustavo Rivas trabaja en refacción de vehículos y muestra un perfil práctico 
 | Timing en el video | 02:31 - 05:40 |
 | URL del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka |
 
-![Screenshot del video](assets/images/Cap2entrevista2.png)
+<p align="center">
+  <img src="assets/images/Cap2entrevista2.png" width="700">
+</p>
+
 
 **Resumen:**  
 Tito Rusel Montalvo Vera es técnico en electricidad electrónica y posee un perfil analítico con interés en la tecnología aplicada al hogar. Utiliza con frecuencia la computadora y el celular. Actualmente no cuenta con dispositivos inteligentes en su vivienda y tampoco usa aplicaciones para administrar aspectos domésticos, aunque mencionó que le gustaría hacerlo si tuviera mayor conocimiento del tema. No tiene visibilidad clara sobre el consumo energético del hogar y siente que no posee suficiente control sobre los equipos de la casa. Considera importante optimizar recursos y reducir gastos. Mostró interés en una plataforma unificada que no solo muestre consumo energético, sino también estados de cuenta de servicios como internet u otros pagos relacionados al hogar. Señaló que el acceso desde el celular sería muy importante para monitorear su vivienda mientras trabaja. Vive en una casa de tres pisos y ha tenido dificultades para gestionar varios equipos distribuidos en distintos ambientes.
@@ -539,7 +614,11 @@ Tito Rusel Montalvo Vera es técnico en electricidad electrónica y posee un per
 | Timing en el video | 05:41 - 11:20 |
 | URL del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka |
 
-![Screenshot del video](assets/images/cap2entrevista3.png)
+
+<p align="center">
+  <img src="assets/images/chapter-2-2-2-img3.png" width="700">
+</p>
+
 
 **Resumen:**  
 José Vásquez Martínez se desempeña como analista de marketing digital y representa un perfil joven con alta afinidad tecnológica. Los dispositivos que más utiliza en su día a día son el smartphone, laptop y tablet. Cuenta con dispositivos inteligentes en su vivienda, entre ellos asistente de voz, cámaras de seguridad, luces inteligentes y enchufes inteligentes. Utiliza con frecuencia aplicaciones web para revisar cámaras y encender luces. Sin embargo, no posee visibilidad clara del consumo energético, ya que únicamente verifica los recibos mensuales. Indicó que siente no tener suficiente control ni información sobre los dispositivos de su hogar. Considera importante optimizar los recursos de la vivienda para ahorrar dinero. Mostró interés en una plataforma centralizada donde pueda visualizar consumos en una sola pantalla y especialmente monitorear el consumo en tiempo real para reducir gastos de energía. Señaló que pagaría una suscripción mensual siempre que el costo sea accesible y la solución realmente funcione. Destacó que es importante que la herramienta sea accesible desde smartphone. Su vivienda cuenta con sala con asistente de voz y luces inteligentes, cocina con enchufes inteligentes, dormitorios con luces inteligentes, un pequeño estudio y cámaras de seguridad en la entrada. Confirmó además haber tenido dificultades para controlar varios dispositivos al mismo tiempo.
@@ -559,7 +638,10 @@ José Vásquez Martínez se desempeña como analista de marketing digital y repr
 | Timing en el video | 11:21 - 17:02 |
 | URL del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka|
 
-![Screenshot del video](assets/images/Cap2entrevista4.png)
+<p align="center">
+  <img src="assets/images/Cap2entrevista4.png" width="700">
+</p>
+
 
 **Resumen:**  
 Daniel Palomino es estudiante de Ingeniería de Software y representa un perfil joven con alta afinidad tecnológica. Usa principalmente smartphone, laptop con Windows y televisor. Cuenta con dispositivos inteligentes como Alexa y focos inteligentes en la sala. Utiliza aplicaciones para encender y apagar luces, pero no dispone de una solución más avanzada de monitoreo. Solo conoce su consumo eléctrico mediante recibos mensuales y apagando equipos que no usa, por lo que considera que no tiene control en tiempo real. Para él es importante optimizar el consumo energético por ahorro económico. Mostró gran interés en una plataforma centralizada con dashboard en tiempo real, visualización de dispositivos encendidos y alertas por consumo excesivo. Estaría dispuesto a pagar una suscripción siempre que la información sea clara, útil y de precio accesible. Indicó que el celular sería el dispositivo principal de uso y que apenas utilizaría laptop para estas tareas. Le permiten instalar dispositivos inteligentes en su departamento y le gustaría monitorear iluminación, electrodomésticos y la zona exterior de ingreso.
@@ -579,7 +661,9 @@ Daniel Palomino es estudiante de Ingeniería de Software y representa un perfil 
 | Timing en el video | 17:03 - 19:56 |
 | URL del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka|
 
-![Screenshot del video](assets/images/Cap2entrevista5.png)
+<p align="center">
+  <img src="assets/images/Cap2entrevista5.png" width="700">
+</p>
 
 **Resumen:**  
 Eleno Giovanni Mena Zuleta trabaja desde casa y presenta un perfil orientado a la practicidad y seguridad del hogar. Utiliza principalmente el celular y como dispositivo inteligente solo cuenta con cámaras de vigilancia. Usa pocas veces aplicaciones web para gestionar aspectos domésticos. Señaló que sí tiene cierta visibilidad del consumo energético, aunque no mediante herramientas avanzadas. Indicó que nunca había pensado en la falta de control sobre sus dispositivos, pero sí considera importante optimizar el uso de energía. Le interesaría visualizar en una sola pantalla el estado y consumo eléctrico de su vivienda, especialmente el gasto energético. Confirmó que pagaría una suscripción mensual si la plataforma resulta útil. Considera indispensable que sea accesible desde el celular por facilidad de uso. Le permiten instalar dispositivos inteligentes y lo que más desea monitorear es el ingreso a la propiedad.
@@ -599,7 +683,9 @@ Eleno Giovanni Mena Zuleta trabaja desde casa y presenta un perfil orientado a l
 | Timing en el video | 19:57 - 22:22 |
 | URL del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka |
 
-![Screenshot del video](assets/images/Cap2entrevista6.png)
+<p align="center">
+  <img src="assets/images/Cap2entrevista6.png" width="700">
+</p>
 
 **Resumen:**  
 Gloria Quispe es ama de casa y representa un perfil enfocado en la economía familiar y la organización del hogar. El dispositivo que más utiliza es el celular. No cuenta con dispositivos inteligentes ni utiliza aplicaciones web para gestionar actividades domésticas. Tampoco posee visibilidad del consumo energético y comentó haber tenido dudas sobre el nivel de control e información respecto a los equipos de su hogar. Considera muy importante optimizar el consumo eléctrico y los recursos disponibles. Mostró interés en una plataforma que le permita ver el estado y consumo de sus dispositivos desde una sola pantalla, especialmente medidores de corriente. Indicó que pagaría una suscripción si la solución realmente ayuda al ahorro económico. También considera importante que la herramienta funcione correctamente en celular. Señaló que sí le permiten instalar dispositivos inteligentes y le gustaría monitorear principalmente habitaciones y salas.
@@ -692,11 +778,15 @@ A continuación se presentan los Empathy Maps elaborados para cada uno de los Us
 
 ## 2.4. Big Picture Event Storming
 
-En esta sección se presenta el resultado del Big Picture Event Storming realizado por el equipo con el objetivo de explorar y comprender el dominio del negocio de TechWatch a alto nivel. La sesión se llevó a cabo de forma colaborativa siguiendo el proceso de Event Storming, identificando los Domain Events más significativos del sistema, organizándolos cronológicamente y complementándolos con los actores y sistemas externos involucrados. El proceso permitió identificar cuatro procesos clave en el dominio: Gestión de cuenta, Gestión de inmueble y dispositivos, Simulación de uso, y Métricas e insights. A continuación se presenta el diagrama resultante elaborado en LucidChart, seguido de una descripción de los principales flujos identificados.
+En esta sección se presenta el resultado del Big Picture Event Storming realizado con el objetivo de explorar y comprender el dominio de negocio de TechWatch a alto nivel. La sesión permitió identificar los principales Domain Events del sistema y organizarlos según los Bounded Contexts definidos dentro de la arquitectura del dominio.
 
-![Big Picture Event Storming](./assets/images/big-picture-event-storming.png)
+A partir del análisis colaborativo se identificaron cinco Bounded Contexts principales: Device Management, Analytics, Subscriptions, IAM y Profiles. Cada contexto agrupa eventos relacionados con una responsabilidad específica del sistema, permitiendo separar el dominio siguiendo los principios de Domain-Driven Design.
 
-El diagrama refleja cuatro flujos principales en el dominio de TechWatch. El primero corresponde a la gestión de cuenta, donde el usuario se registra, inicia sesión y selecciona un plan de suscripción a través del servicio de pagos, tras lo cual el sistema actualiza su suscripción. El segundo flujo abarca la gestión del inmueble y dispositivos, en el que el usuario registra su inmueble, organiza sus espacios y administra los dispositivos asociados a cada uno. El tercer flujo corresponde a la simulación de uso, donde el usuario inicia una sesión desde la aplicación de control remoto, interactúa con sus dispositivos encendiéndolos, apagándolos o modificando sus parámetros, lo que desencadena la generación de datos de uso. Finalmente, el cuarto flujo abarca las métricas e insights, donde el sistema procesa automáticamente los datos generados, calcula métricas, actualiza el dashboard y genera reportes de consumo, ya sea de forma automática o bajo demanda del usuario, disparando además alertas cuando se detectan niveles de consumo elevados. 
+El contexto Device Management concentra la gestión de inmuebles, espacios y dispositivos inteligentes registrados por el usuario. Analytics procesa los datos generados por los dispositivos para calcular métricas, actualizar dashboards y generar reportes de consumo energético. Subscriptions administra los procesos relacionados con planes, suscripciones y pagos dentro de la plataforma. IAM gestiona la autenticación e inicio de sesión de usuarios, mientras que Profiles administra la información y preferencias asociadas a cada cuenta.
+
+A continuación se presenta el diagrama elaborado durante la sesión de Event Storming.
+![Big Picture Event Storming](./assets/images/big-picture-event-storming-2.png)
+
 
 ## 2.5. Ubiquitous Language
 
@@ -707,10 +797,11 @@ El siguiente glosario reúne los términos y conceptos clave del dominio de nego
 | Property (Inmueble) | Unidad residencial registrada en la plataforma, puede ser una casa o departamento, compuesta por uno o más espacios. |
 | Space (Espacio) | Ambiente o habitación dentro de un inmueble, como sala, dormitorio o cocina, al que se asocian dispositivos. |
 | Device (Dispositivo) | Elemento doméstico inteligente registrado dentro de un espacio, cuyo comportamiento, estado y consumo puede ser monitoreado y controlado. |
-| Device Status (Estado del dispositivo) | Condición actual de funcionamiento de un dispositivo inteligente, como activo, inactivo o en espera. |
-| Monitoring Session (Sesión de monitoreo) | Período durante el cual el sistema recopila información sobre el comportamiento y consumo de los dispositivos registrados. |
+| Device Status (Estado del dispositivo) | Condición actual de funcionamiento de un dispositivo inteligente: encendido (ON) o apagado (OFF). |
+| Simulation Session (Sesión de simulación) | Período durante el cual el usuario simula el uso de sus dispositivos desde la Remote Control App y el sistema recopila los datos de uso generados. |
+| Device Action (Acción de dispositivo) | Operación ejecutada sobre un dispositivo durante una sesión de simulación, como encenderlo, apagarlo o modificar un parámetro. |
 | Remote Control (Control remoto) | Funcionalidad que permite al usuario operar y controlar dispositivos inteligentes desde la plataforma mediante una interfaz web responsive. |
-| Usage Data (Datos de uso) | Información generada por la interacción y funcionamiento de los dispositivos inteligentes dentro del hogar. |
+| Usage Data (Datos de uso) | Información de consumo generada por la interacción y funcionamiento de los dispositivos inteligentes durante una sesión de simulación. |
 | Metric (Métrica) | Valor calculado a partir de los datos de uso que permite cuantificar el comportamiento o consumo de un dispositivo o espacio. |
 | Energy Consumption (Consumo energético) | Cantidad de energía utilizada por uno o más dispositivos durante un período determinado. |
 | Insight | Hallazgo relevante derivado del análisis de métricas y datos de uso, orientado a apoyar la toma de decisiones del usuario. |
@@ -720,8 +811,9 @@ El siguiente glosario reúne los términos y conceptos clave del dominio de nego
 | User Profile (Perfil de usuario) | Información personal, preferencias y configuración asociada a la cuenta del usuario dentro de la plataforma. |
 | Authentication (Autenticación) | Proceso mediante el cual un usuario valida su identidad para acceder a la plataforma. |
 | Access Role (Rol de acceso) | Nivel de permisos asignado a un usuario dentro de la plataforma. |
-| Subscription Plan (Plan de suscripción) | Modalidad de acceso a la plataforma que determina las funcionalidades disponibles para el usuario, incluyendo opciones gratuitas y premium. |
-| Subscription (Suscripción) | Registro activo asociado a un plan premium dentro de la plataforma. |
+| Plan (Plan de suscripción) | Modalidad de acceso a la plataforma que determina las funcionalidades disponibles para el usuario, incluyendo el límite de dispositivos y beneficios como métricas avanzadas, reportes personalizados, alertas e historial ilimitado. Existen planes gratuitos (Free) y de pago (Premium). |
+| Subscription (Suscripción) | Registro que vincula a un usuario con un plan, con un estado (activa, cancelada o expirada), período de vigencia y renovación automática opcional. |
+| Payment (Pago) | Transacción monetaria asociada a una suscripción, procesada a través del servicio de pagos externo. |
 | Freemium | Modelo de negocio que ofrece acceso gratuito con funcionalidades limitadas y planes de pago con funcionalidades extendidas. |
 ---
 
@@ -1066,7 +1158,7 @@ La categorización del contenido se organizará principalmente según funcionali
 | Analytics | Métricas, dashboards, reportes y consumo energético |
 | IAM | Autenticación, acceso y seguridad |
 | Profile | Información y configuración del usuario |
-| Payment | Suscripciones y funcionalidades premium |
+| Subscriptions | Suscripciones y funcionalidades premium |
 
 ### 4.2.2. Labeling Systems
 
@@ -1353,7 +1445,7 @@ Como usuario, quiero visualizar métricas y reportes de consumo energético para
 A partir de los wireframes, wireflows y user flows definidos en las secciones anteriores, se desarrolló el prototipo funcional de la Web Application de TechWatch utilizando Figma. El prototipo permite visualizar la interacción entre las distintas pantallas relacionadas con autenticación, gestión de dispositivos, monitoreo y análisis energético, manteniendo una interfaz moderna, minimalista y alineada con la identidad visual de la plataforma.
 Figma Prototype:
 
-[Prototipo Web Application - TechWatch](https://www.figma.com/)
+[Prototipo Web Application - TechWatch](https://www.figma.com/design/PDG6qhxJpnzelVaEg62a2e/TechWatch-Figma?node-id=0-1&t=UbF3SjkaZBAef0eo-1)
 
 
 ## 4.6. Domain-Driven Software Architecture
@@ -1362,207 +1454,188 @@ Figma Prototype:
 
 En esta sección se presenta el resultado del Design-Level Event Storming realizado como continuación del Big Picture Event Storming previamente elaborado. El objetivo fue profundizar en los procesos más relevantes del dominio de TechWatch, identificando para cada flujo los Commands, Read Models, Policies y Aggregates necesarios para modelar el comportamiento del sistema con mayor detalle.
 
-La sesión se organizó en torno a los Bounded Contexts identificados dentro de la plataforma: **Device Management**, **Analytics**, **Payment**, **IAM** y **Profile**. Estos contextos permiten estructurar funcionalidades relacionadas con gestión y control de dispositivos inteligentes, análisis de consumo energético, autenticación, perfil de usuario y suscripciones premium.
+La sesión se organizó en torno a los Bounded Contexts identificados dentro de la plataforma: **Device Management**, **Analytics**, **Subscriptions**, **IAM** y **Profiles**. Estos contextos permiten estructurar funcionalidades relacionadas con gestión y control de dispositivos inteligentes, análisis de consumo energético, autenticación, perfil de usuario y suscripciones premium.
 
 A partir de este ejercicio se establecieron las bases para la definición de la arquitectura de software y de los principales flujos orientados al monitoreo, control inteligente y optimización energética del hogar, incluyendo los diagramas de contexto, contenedores y componentes presentados en las secciones siguientes.
 
-![Design-Level Event Storming](./assets/images/design-level-event-storming.png)
+
+![Design-Level Event Storming](./assets/images/design-level-event-storming-2.png)
 
 ### 4.6.2. Software Architecture Context Diagram
 
-En esta sección se presenta el diagrama de contexto del sistema TechWatch, elaborado siguiendo el modelo C4. Este diagrama representa el nivel más alto de abstracción de la arquitectura de software, mostrando el sistema como una unidad central rodeada por los usuarios que interactúan con él y los sistemas externos con los que se integra. El objetivo es proporcionar una visión general del alcance del sistema y sus relaciones con el entorno externo, sin entrar en detalles de implementación interna.
+En esta sección se presenta el diagrama de contexto de la arquitectura de software de TechWatch, elaborado siguiendo el primer nivel del modelo C4. El objetivo del diagrama es mostrar la relación entre la plataforma y los actores externos que interactúan con el sistema, así como los servicios y plataformas externas necesarios para su funcionamiento.
 
-![Context Key](./assets/images/c4-context-key.png)
+TechWatch permite a los usuarios registrar inmuebles, administrar dispositivos inteligentes y visualizar información relacionada con monitoreo y consumo energético dentro del hogar. A través de la plataforma, los usuarios pueden interactuar con funcionalidades relacionadas con gestión de dispositivos, métricas de consumo, autenticación y suscripciones premium.
 
-![Software Architecture Context Diagram](./assets/images/context-diagram.png)
+Asimismo, el sistema se integra con un servicio externo de procesamiento de pagos para gestionar las transacciones de suscripción. La autenticación de usuarios se implementa dentro de la propia plataforma mediante JWT, por lo que no se depende de proveedores externos de identidad.
 
-El diagrama muestra a TechWatch como sistema central, con el que interactúan dos tipos de usuarios: el propietario de casa y el arrendatario de departamento, ambos con el mismo conjunto de acciones disponibles: registrar su inmueble, gestionar sus dispositivos, simular el uso de los mismos y visualizar las métricas e insights resultantes. El sistema se integra con dos sistemas externos: el Servicio de Pagos, encargado de procesar las transacciones de suscripción, y el Proveedor de Autenticación, que gestiona el acceso seguro de los usuarios a la plataforma mediante OAuth 2.0.
+
+![Software Architecture Context Diagram](./assets/images/c4-context.png)
+
+![Software Architecture Context Diagram Key](./assets/images/c4-context-key.png)
+
+
+
+El diagrama muestra a TechWatch como sistema central, con el que interactúan dos tipos de usuarios: el propietario de casa y el arrendatario de departamento, ambos con el mismo conjunto de acciones disponibles: registrar su inmueble, gestionar sus dispositivos, simular el uso de los mismos y visualizar las métricas e insights resultantes. El sistema se integra con un sistema externo: el Servicio de Pagos (por ejemplo, Stripe), encargado de procesar las transacciones de suscripción.
 
 ### 4.6.3. Software Architecture Container Diagrams
 
-En esta sección se presenta el diagrama de contenedores de TechWatch, correspondiente al segundo nivel del modelo C4. Este diagrama descompone el sistema en sus contenedores principales, mostrando las aplicaciones y servicios que lo conforman, las tecnologías utilizadas en cada uno y la forma en que se comunican entre sí.
+En esta sección se presenta el diagrama de contenedores de TechWatch, elaborado siguiendo el segundo nivel del modelo C4. Este diagrama permite visualizar los principales contenedores que conforman la plataforma, sus responsabilidades, tecnologías utilizadas y relaciones entre ellos.
 
-![Containers Key](./assets/images/c4-containers-key.png)
+TechWatch está compuesto por una Landing Page desarrollada en HTML, CSS y JavaScript, una Web Application desarrollada en Angular y TypeScript, una Remote Control App también desarrollada en Angular, una RESTful API desarrollada en Java con Spring Boot y una base de datos MySQL.
 
-![Software Architecture Container Diagram](./assets/images/container-diagram.png)
+La Landing Page presenta la propuesta de valor del producto y redirige a los usuarios hacia la aplicación principal. La Web Application permite registrar inmuebles, gestionar dispositivos inteligentes, visualizar métricas de consumo energético y administrar suscripciones. La Remote Control App es una aplicación web responsive orientada a smartphones que permite simular el uso de los dispositivos del hogar a modo de control remoto. Ambas aplicaciones consumen los servicios expuestos por la RESTful API mediante HTTPS/JSON.
 
-El sistema TechWatch está compuesto por cinco contenedores. La Landing Page es un sitio web estático desarrollado en HTML, CSS y JavaScript que presenta el modelo de negocio y redirige a los usuarios a la aplicación principal mediante calls-to-action. La Web Application es una SPA desarrollada en Angular que permite a los usuarios gestionar su inmueble y dispositivos, y visualizar el dashboard de métricas e insights. La Remote Control App es también una SPA Angular con diseño responsive, orientada al uso desde dispositivos móviles para simular la operación de los dispositivos. Ambas aplicaciones frontend se comunican con el RESTful API desarrollado en Spring Boot con Java, que contiene la lógica de negocio principal y se integra con el Servicio de Pagos para procesar suscripciones y con el Proveedor de Autenticación para validar el acceso de los usuarios. Finalmente, la base de datos PostgreSQL almacena toda la información persistente del sistema.
+La RESTful API concentra la lógica de negocio relacionada con los Bounded Contexts IAM, Profiles, Device Management, Analytics y Subscriptions. Además, se integra con el Payment Service externo para procesar pagos y suscripciones premium.
+
+Finalmente, la base de datos MySQL almacena la información persistente del sistema, incluyendo usuarios, perfiles, inmuebles, dispositivos, sesiones de simulación, métricas, reportes, alertas, planes y suscripciones.
+
+![Software Architecture Container Diagrams](./assets/images/c4-containers.png)
+
+![Software Architecture Container Diagrams Key](./assets/images/c4-containers-key.png)
+
 
 ### 4.6.4. Software Architecture Components Diagrams
 
 En esta sección se presentan los diagramas de componentes para cada uno de los contenedores que conforman TechWatch, elaborados siguiendo el tercer nivel del modelo C4. Cada diagrama descompone un contenedor en sus bloques estructurales principales, mostrando las responsabilidades de cada componente, sus tecnologías de implementación y las interacciones entre ellos.
 
-La organización interna de la RESTful API sigue los Bounded Contexts identificados durante el Design-Level Event Storming: Device Management, Analytics, Payment, IAM y Profile. Los contextos Device Management, Analytics y Payment representan el núcleo funcional del sistema, ya que están relacionados directamente con el control de dispositivos inteligentes, monitoreo del hogar y optimización del consumo energético. Por otro lado, IAM y Profile cumplen funciones transversales y de soporte relacionadas con autenticación, autorización y configuración de usuario.
+La organización interna de la RESTful API sigue los Bounded Contexts identificados durante el Design-Level Event Storming: Device Management (que incluye la simulación de uso de dispositivos), Analytics, Subscriptions, IAM y Profiles. Los contextos Device Management, Analytics y Subscriptions representan el núcleo funcional del sistema, ya que están relacionados directamente con el control de dispositivos inteligentes, monitoreo del hogar y optimización del consumo energético. Por otro lado, IAM y Profiles cumplen funciones transversales y de soporte relacionadas con autenticación, autorización y configuración de usuario.
 
-Asimismo, la arquitectura interna de cada Bounded Context sigue los principios de Domain-Driven Design y Clean Architecture, separando responsabilidades en capas Presentation, Application, Domain e Infrastructure. Los contenedores frontend siguen una arquitectura basada en la separación entre vistas y servicios, característica del framework Angular.
+Asimismo, la arquitectura interna de cada Bounded Context sigue los principios de Domain-Driven Design y Clean Architecture, separando responsabilidades en capas Interfaces, Application, Domain e Infrastructure. La integración entre contextos se realiza mediante fachadas ACL (Anti-Corruption Layer) y eventos de dominio, como la creación automática del perfil al registrarse un usuario (IAM → Profiles) o la validación del límite de dispositivos del plan contratado (Device Management → Subscriptions). Los contenedores frontend siguen una arquitectura basada en la separación entre vistas y servicios, característica del framework Angular.
 
 
+**General API Component Diagram**
 
-**API Component General Diagram**
+![General API Component](./assets/images/c4-components-api-general.png)
 
-La RESTful API organiza sus componentes en cuatro Bounded Contexts. Device Management expone los controladores PropertyController y DeviceController, cada uno con su Service y Repository correspondiente. I am(Identity and access management) gestiona la autenticación y autorización de usuarios mediante AuthService; este contexto se integra con el proveedor externo de autenticación utilizando OAuth 2.0 y JWT para garantizar un acceso seguro a la plataforma; además, administra el inicio de sesión y registro. Profile administra la información personal y preferencias de los usuarios mediante ProfileController, ProfileService y ProfileRepository; este contexto permite actualizar datos de perfil, gestionar configuraciones de cuenta y personalizar la experiencia del usuario dentro de la plataforma. Analytics procesa las métricas mediante el AnalyticsService y genera reportes a través del ReportService. Subscriptions gestiona los planes del usuario mediante el SubscriptionService, que delega el procesamiento de pagos al PaymentComponent para su integración con el servicio externo. El AuthComponent es transversal a todos los Bounded Contexts y gestiona la autenticación mediante JWT.
+**Device Management Component Diagram**
 
-![Component API General Key](./assets/images/c4-components-api-general-key.png)
+![Device Management Component](./assets/images/c4-components-api-device-management.png)
 
-![API Component Diagram](./assets/images/component-diagram-api.png)
+**Analytics Component Diagram**
 
-**API Analytics Diagram**
+![Analytics Component](./assets/images/c4-components-api-analytics.png)
 
-![Component API Analytics Key](./assets/images/c4-components-api-analytics-key.png)
+**Subscriptions Component Diagram**
 
-![API Analytics Diagram](./assets/images/component-diagram-api-analytics.png)
+![Subscriptions Component](./assets/images/c4-components-api-subscriptions.png)
 
-**API Device Management Diagram**
+**IAM Component Diagram**
 
-![Component API Device Management Key](./assets/images/c4-components-api-device-management-key.png)
+![IAM Component](./assets/images/c4-components-api-iam.png)
 
-![API Device Management Diagram](./assets/images/component-diagram-api-device-management.png)
+**Profiles Component Diagram**
 
-**API I am Diagram**
+![Profile Component](./assets/images/c4-components-api-profiles.png)
 
-![Component API Simulation Key](./assets/images/c4-components-api-simulation-key.png)
+**Landing Page Component Diagram**
 
-![API Simulation Diagram](./assets/images/component-diagram-api-simulation.png)
+![Landing Page Component](./assets/images/c4-components-landing-page.png)
 
-**API Profile Diagram**
+**Web Application Component Diagram**
 
-![Component API Simulation Key](./assets/images/c4-components-api-simulation-key.png)
+![Web Application Component](./assets/images/c4-components-webapp.png)
 
-![API Simulation Diagram](./assets/images/component-diagram-api-simulation.png)
+**Remote Control App Component Diagram**
 
-**API Subscriptions Diagram**
-
-![Component API Subscriptions Key](./assets/images/c4-components-api-subscription-key.png)
-
-![API Subscriptions Diagram](./assets/images/component-diagram-api-subscription.png)
-
-**Web App Component Diagram**
-
-La Web Application sigue una arquitectura de separación entre vistas y servicios. Las vistas DashboardView, PropertyView, DeviceView, ReportsView y SubscriptionView representan las pantallas principales de la aplicación, cada una delegando sus operaciones a su servicio correspondiente. Los servicios PropertyService, DeviceService, AnalyticsService y SubscriptionService consumen los endpoints de la RESTful API via HTTPS/JSON. El AuthService gestiona la autenticación del usuario y el almacenamiento del token JWT.
-
-![Component Web App Key](./assets/images/c4-components-web-app-key.png)
-
-![Web App Component Diagram](./assets/images/component-diagram-webapp.png)
-
+![Remote Control App Component](./assets/images/c4-components-remoteapp.png)
 
 
 ## 4.7. Software Object-Oriented Design
 
-En esta sección se presenta el diseño orientado a objetos de los componentes de TechWatch, aplicando los principios de Domain-Driven Design y Clean Architecture. Se incluyen los diagramas de clases UML para cada Bounded Context identificado durante el Design-Level Event Storming, detallando entidades, agregados, Value Objects, repositorios y servicios que conforman el modelo del dominio.
+En esta sección se presenta el diseño orientado a objetos de los componentes de TechWatch, aplicando los principios de Domain-Driven Design y el patrón de arquitectura por capas del dominio. Se incluyen los diagramas de clases UML para cada Bounded Context identificado durante el Design-Level Event Storming, detallando agregados, entidades, Value Objects, Commands, Queries, eventos de dominio, repositorios y servicios de aplicación que conforman el modelo del dominio.
 
-Asimismo, los diagramas consideran la separación de responsabilidades en capas Domain, Application, Infrastructure y Presentation. Para evitar el uso de datos primitivos dentro del dominio, las entidades emplean Value Objects que representan conceptos propios del negocio, como DeviceId, DeviceName, EnergyConsumption, Money, EmailAddress y ProfileName.
+Asimismo, los diagramas consideran la separación de responsabilidades en capas Domain, Application, Infrastructure e Interfaces, siguiendo un enfoque CQRS ligero: las operaciones de escritura se modelan como Commands procesados por Command Services y las consultas como Queries procesadas por Query Services. Los identificadores internos de los agregados se representan como `Long`, mientras que los Value Objects se reservan para conceptos propios del negocio como EnergyConsumption, Money, EmailAddress y PersonName, y para referencias entre contextos como UserId, PropertyId y DeviceId. Los campos de auditoría (createdAt, updatedAt) se gestionan en la capa de infraestructura, por lo que no forman parte del modelo de dominio.
 
 
 ### 4.7.1. Class Diagrams
 
-A continuación se presentan los diagramas de clases UML organizados por Bounded Context. Cada diagrama incluye clases, relaciones, multiplicidad y responsabilidades dentro de la arquitectura del sistema. Los contextos Device Management, Analytics y Payment representan el núcleo funcional de TechWatch, mientras que IAM y Profile cumplen funciones transversales relacionadas con autenticación y personalización del usuario.
-
-#### Device Management
-
-El diagrama de clases del Bounded Context Device Management define las estructuras relacionadas con la gestión y control de dispositivos inteligentes dentro del hogar. Property actúa como Aggregate Root y representa el inmueble registrado por el usuario, asociado a uno o más Space mediante una relación de composición. Cada Space representa un ambiente específico del hogar y contiene múltiples Device.
-
-Device representa cada dispositivo inteligente registrado dentro del sistema, utilizando Value Objects como DeviceId, DeviceName, DeviceType, DeviceStatus y PowerWatts para evitar el uso de datos primitivos y modelar correctamente las reglas del dominio. PropertyRepository y DeviceRepository definen las interfaces de persistencia de los agregados, mientras que PropertyService y DeviceService encapsulan la lógica de negocio relacionada con gestión y control de dispositivos.
-
-![Class Diagram Device Management](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-device-management.puml)
-
-#### Analytics
-
-El diagrama de clases del Bounded Context Analytics define las clases responsables del procesamiento de métricas, generación de reportes y monitoreo de consumo energético. Metric actúa como Aggregate Root y representa una medición calculada a partir de los datos de uso de los dispositivos inteligentes.
-
-ConsumptionReport representa reportes generados para períodos específicos y se compone de múltiples ReportItem que detallan el consumo por dispositivo. ConsumptionAlert representa alertas disparadas automáticamente cuando determinadas métricas superan umbrales definidos. El contexto utiliza Value Objects como MetricId, EnergyConsumption, ConsumptionPeriod y AlertThreshold para modelar correctamente el dominio analítico.
-
-AnalyticsService encapsula la lógica relacionada con cálculo de métricas, generación de insights y administración de alertas, mientras que ReportService se encarga de generar reportes automáticos y bajo demanda.
-
-![Class Diagram Analytics](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-analytics.puml)
-
-#### Payment
-
-El diagrama de clases del Bounded Context Payment define las estructuras relacionadas con suscripciones, planes premium y procesamiento de pagos. Subscription actúa como Aggregate Root y representa la suscripción activa de un usuario dentro de la plataforma.
-
-Plan representa cada modalidad de acceso disponible, utilizando Value Objects como PlanId, PlanName, PlanFeatures, Money y BillingPeriod para representar características del dominio sin recurrir a datos primitivos. Payment registra las transacciones asociadas a una suscripción, gestionando su estado mediante PaymentStatus.
-
-SubscriptionService encapsula la lógica de negocio relacionada con creación, actualización y cancelación de suscripciones, mientras que PaymentComponent actúa como puente de integración hacia servicios externos de pago.
-
-![Class Diagram Payment](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-subscriptions.puml)
+A continuación se presentan los diagramas de clases UML organizados por Bounded Context. Cada diagrama incluye clases, relaciones, multiplicidad y responsabilidades dentro de la arquitectura del sistema. Los contextos Device Management, Analytics y Subscriptions representan el núcleo funcional de TechWatch, mientras que IAM y Profiles cumplen funciones transversales relacionadas con autenticación y personalización del usuario. La integración entre contextos se realiza mediante fachadas ACL y eventos de dominio.
 
 #### IAM
 
-El diagrama de clases del Bounded Context IAM (Identity and Access Management) define las estructuras responsables de autenticación, autorización y control de acceso dentro de la plataforma. Este contexto cumple una función transversal para garantizar seguridad y acceso controlado a los distintos módulos de TechWatch.
+El diagrama de clases del Bounded Context IAM define las estructuras relacionadas con autenticación y control de acceso dentro de TechWatch. User actúa como Aggregate Root y concentra las credenciales y el rol del usuario, empleando el Value Object EmailAddress y el enumerado Role. Las operaciones de registro e inicio de sesión se modelan mediante los Commands SignUpCommand y SignInCommand, procesados por UserCommandService con apoyo de los servicios de infraestructura TokenService (JWT) y HashingService (BCrypt). Al registrarse un usuario se publica el evento UserRegisteredEvent, que el contexto Profiles consume para crear el perfil correspondiente. El facade IamContextFacade expone las capacidades del contexto hacia los demás módulos del sistema.
 
-UserCredential representa las credenciales del usuario mediante Value Objects como UserId, EmailAddress, PasswordHash y AccessRole. AuthService encapsula la lógica relacionada con inicio de sesión, registro y validación de tokens JWT, integrándose con proveedores externos mediante OAuth 2.0.
+![Class Diagram IAM](https://img.plantuml.biz/plantuml/png/jLV1Rjiu4BtxAuXUehHnqRCG67KJPzT0kcdjpLuN33cMsKYaIb99iqN_VOUKB9CI7VjI7sn9V3Dltd1cA7yqbchRL2LPpZzF9kPHo9fgMX5MKcFcrchnq5XOCYNNuZyW7m98fQHYMwqg81jQ6WYMp9PozInaqQrCQieUQG7a3TAy8Jyd4uAVC_8FBHiWTm_VW5dZdtbUigYeAEUSQy2RoyiGDflXWnKmfJbU_lH6xZCbjCNdP8rHow9VUHUvomQmSu_xrKO4igd8IfM070kyZXXMTxUBV-_NYrNyP7xzUVbNwEICp8j2Gq4jX9hk3MXqswyXZx832OBdv5O5iKy9kDZpI4AmMgFdPqp5dzHiHyAdHAEKt0iAik42oPYgAYgHRYqAULzVjRSNIOVdWN5JSupzIuVAal3SKmH6R4jb0IwCR1zH2EipTwrGfoIB9v1scBmL5C9OqC3zijiYzpj8OOF8vS4q1XdgEJlj8LsK52JghWxNtjXzl3yfvZtLKlvcgZFojG4jedhy0wpBwgUN9NUBByZdVmypZr8R2Udz-L8zqUMXwkxZNa6jZB0AdMMrqhQjHI6n3ZQKGLSOFSRHx6uYgdTa8oHtOhDTas41tjLMA4dBI-TcDWBxiB94ZA-PmW-iKlEwyIU53K1bO6Ne4sGkmMrN99jZNjUbODJnaZNe9y6w3OtJqLLGXy2KT5U3V61FScp8z210_XMOfhHUtaL8lT1QHO9JZlgAtZkQDtQBxUgy07_DQwSt5kNhw4H9tnqs7nNuQvjsm79VocdZVckMSgEfiRfXjj7Gxmx93B162_iohDk_rIF8OteAaA0nNHwSHOr_dZZcdcWfU0-txZk0Zskk0Ei5tk0PdhOPJvAz0ZVoSV6O1f1CSPpxzFdBO42b95JKiYsO5FoYSyKJVa9j-tQvkYKtb54EWyYNjBfIUFV3jiiOUtind1Y0mTpxeJTevvuuEcK22u_sqoOSckVfsRo2qlT0syp-FU7jT1g_1ENjg2IpFMOwdRNlAha_vyEbz-zdWpCi9qo3wpoomTqUObF7Qqxgvg4K1hSZW0-6IugexQKJZFR7tWb6JkrWsEVkH3fYCgZIKqoYrXmPH8F8AHcTeoanXws2q_AeuIav2DPsEuiWr8YltplSg05so44sSiAXR5zaYLN7ZADGHwPOxHz1SlohCVaV)
 
-![Class Diagram IAM](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-simulation.puml)
+#### Profiles
 
-#### Profile
+El diagrama de clases del Bounded Context Profiles define las estructuras relacionadas con la información y preferencias del usuario dentro de TechWatch. Profile actúa como Aggregate Root y agrupa los datos personales junto con las preferencias de idioma, tema y notificaciones, modeladas mediante los Value Objects PersonName y Preferences, además de UserId como referencia al contexto IAM. Las operaciones se modelan mediante Commands y Queries procesados por ProfileCommandService y ProfileQueryService, y el facade ProfilesContextFacade permite que IAM cree el perfil automáticamente al registrar un usuario.
 
-El diagrama de clases del Bounded Context Profile define las estructuras relacionadas con la información personal y preferencias del usuario dentro de la plataforma. Este contexto permite personalizar la experiencia del usuario y administrar configuraciones relacionadas con la cuenta.
+![Class Diagram Profiles](https://img.plantuml.biz/plantuml/png/pLVTJzim47_lNs7jXNIqQCzHLV4Xc2eXO23sxYQNrCEnCzjXCBJ_VPV42KxYqfHjqlBInFVrkz_vpkwnDbIP8kFaHic4ST2JYNvW8gUAPYJYLEiJOnHR5mPMaHHtx2UGJuvA9eMCDafcG1BADJWYlQ6n_C54QYMJd4OFD0NoeOdrWRnC9WIV0_ALyWB8zVeRH4PNQrLmSgz1hMAoMBWAooKkt48aLOolBvLw-Sn9KQc7v5AAj5q-j5u2LpgjnBycJgmRK5gAAugvZ8sNCALDQH6IEwJ92JedwDClEYGfc8k2yr8QJ3loBY052IWG4UZHY3WLQO4iUm2P3NY12cbOmY9gc1JwND0r1oJfL4eELBYe3iX9cYf8gG7TWLcL4n6rOd8hfUaXO_swl9Qhhe_BgsKdT8hYYFED571LP6jGddpo6iygGnhk5VTgjCI6BijEYMnIGIIpZ0h4UAO04xFBP_Ngr34eyXZbAv58bLLK1huaPZxiissGfs63On38GHriIwTdtbRHedThwCiE2shVzcouT_R5dzIrqpVtbg5zasa2_A_vj8NzApdzsqdnfG35EcFYCnXRajFdLLpAdn5qzRiV_0uthjTwZ8pqx9azBVXRoALcHgAV89VAr7tEX06Lq0YQhdBKoY3DHoVG8UuT4PSP1yq0nBQypaiAALzOJyk1Vk_8gZztMC8JqqPljtKBLLje-WY1vRWT5jl6nacUSrjySWVgaJKJSq2CtPLM2ScnRprcDgYpSyI6M0rTSBCegPkv8CwLachvXZ_V77ZrPzVVvxBVYgFTMZO7b5MxTIHXtqlTqDTGEpR8TdkdTRRwUDq8PvVaWaOq1dykI0ekFPbQ1xEfNth9H6wrEtUpsN3UpWPZTZguvILWeirDCp06RM1Rhpz6ocxdzKIhlflRpCVvlBbzXdPOaEL0mxapXksjnQVdNEL2z_xHqpqwMlhFuj3o5PC4RzjTgrwxlU6ZtW1wfxdt1DtVV71WZNCndoyz8xQgGi-mqpLbPDyXioNecxRkKJB6VZnaHrm6RGeV4cG0J-EUTg-L78iUPo69WTTNSsBaM2UT70Oki4EEGSJuzt3o6m)
 
-UserProfile representa el perfil del usuario utilizando Value Objects como ProfileId, FullName, ProfileImage y UserPreferences. ProfileRepository define las interfaces de persistencia relacionadas con información de perfil, mientras que ProfileService encapsula la lógica relacionada con actualización y configuración de preferencias de usuario.
+#### Device Management
 
-![Class Diagram Profile](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-report/refs/heads/main/assets/docs/class-diagram-simulation.puml)
+El diagrama de clases del Bounded Context Device Management define las estructuras relacionadas con la gestión de inmuebles, dispositivos inteligentes y simulación de uso dentro de TechWatch. Property actúa como Aggregate Root y contiene los Spaces del inmueble; Device es un Aggregate Root independiente que referencia a su espacio mediante el Value Object SpaceId; y SimulationSession registra las sesiones de simulación con sus DeviceActions y UsageDataRecords. Al generarse datos de uso se publica el evento UsageDataGeneratedEvent, consumido por Analytics. Antes de registrar un nuevo dispositivo, DeviceCommandService valida el límite de dispositivos del plan contratado a través del ACL ExternalSubscriptionService.
 
+![Class Diagram Device Management](https://img.plantuml.biz/plantuml/png/pLbVK-Cs47_Ffz3mGhW3vlhgOJBd2m4o1KAJS7raZ2s2Yosdain1R_hTkvPaMx8bnmRQAI_4qkvgzxT_j9A-CXvGdgS9EiNFSOYl0X9iS8e97utOKqos0GrI52O1OpxdDBxFEPw76Ld5Vs7qHID9CvA5ZpHBCNe84eQrAVOOHDcFc6pKp6WRX4-m2jgJQw9wqJtqSpH2yBUFlWT9Zj7Y_WySSYR6X1Rebc4wZz39YKumcS304eSPZU3dJq5U_1sXN91xw38Z6p7yzqWJTaEpBQRyTO30RSNY4he2-_00YKpIkyH9a0R8YnI3q-Zi1wQ_1voptY9_5DGUEito-mJh4Z79qmh5zUiMWuGPZ1dy5ulRrQpwyc_yvVfgThrkoP6MkgHSpiylrjNN-cAsl5girduzDFMlPak_-bnTmJftDvUtv_NIy-NTT75zEb_F5zUpPJL-kbWixouNqryTAgrum7DcKsfnNVyyEsknhp1ZCMIBaz-VhkVVQsncrwUpKrtAFl8t6uet0SSC1IH2Cy9Z7cDc2MAGNn6ZPPRnXXDZFIBCx919fKsG8CKUMa766_H1554moJB3mMkU4GdD20UkovZn4v4UashsSyKq3hCq1HizDAKOR2Z7ftBuG6F9jn4GpCb3HjE00y9ZNU73ffu7jMQQ420IkZHu8yn26cyBgHg_e7Jakd0ikELrD-0EN2rh3h1saCQgvWwFbQfCgVgsswfxAhpP6a-p22VE6AghWBwuo23Fo4UzA5SbpTFAcmQXvAiZp8yYjKucpB746CyfMP3nGRbeS-hXmJgtora6A8Sc5gOyCz3YD4-4F5LJFZBRzJsjtX8jy1lrp9od74S-1mD07sq6ayWw7eI5BMLDa5RxOcnYQ0oD0N06Ykws_5Qxb8Px2w3QsQj2kzQynULKI9LgZEjjjDo13vNMQn6dfGT5auCvfjU6dwjXiSEsF2mNqTO6e8fuQgdfoc0fO43fQTlJSeTkc1uUDWjjyuQfUX2yu31lneTXKyEn7sKMTAeiJqLbLBffBOmACH9pYyeo5EmgxuEKD8W9cZr3pyfiPfnZWYcmHOAaCAVutspyf8VdNKOr9ZeDiaI9pDJfOq0stReuLtHMtWeCbKWw3jOD75PMlmQqwn_RZXW8IINryjz7Gsl__wRDtL36iI7rqQXzVlYlTcLzstN5uIoAkMGUO98p6lyVDdLkAEy8yzrdIobDtm661ChmUlDlxGjcY93eFM3QpAgAqsyvfkPnwHnpLHTW_DkhR8OAik809VxlzflMGHcMW6pf6n2iskIUagtTTLDsuV5dtCBgmupOX_ZQPYpcMO4P6cypofbia682Vdme3ZjbKQr8NyL2vOUns6Vq49Fe6mJqkDoweSTPY5eO92Ubg4cBGUesDbKzK5sWZOq5ptXSvazT-UqdFoWA49PDjPwps42ZDbdwz0CCbeBQvYgdZvjHS63qnpfVcEM4T-2K6IT8WOvCyhBisSukGt5fHU87GDIIsKHB9e7Rz7wI12AgSbYwxbsT-3xojzia3iKy78keI7f7fgWAfgW06VMh0GiqQL62Tzs2U92ZB4_uIG7SeQx6ZDACJdOADCwxlQIr_5xg90fDJxF-B6YzZkfhpsv7BhuHKjUn_nsWjlgRMfWSxesg97yRfjPTnrOzTkVm6w7jFcI_0s1dorCBRIqxq8Nk_kCDQ-n6-6qkxhFvzoX_LG5RvFmUDf48-TDBlHbx0Rs1VvNVLyUMMbUWRHPppCF7g-15HU1PHWjzndg72rhD0OqDfircG-edwsPrZRttonxwT7I4zhuS7t_QKrUiNd7qvN3ePcXYaXUawb78KxrDa-JeQ68-KdZY1A38r8re8QTykl7AVgnDehsUUDfXmIGi5jHUCspBrIJgTS1JHsr5rhxmQ-1YN0DvwiAYDtVpmiL36tLbuHRXHjfEgxskUThPnibJG6A-c3GmCKmkLgZUnhpg2AD8c_PrKxTrEJwUE6zpm1Wu5yRi4JVSNZ0vxrtQN8x-G8zMhQ4Ia3TPZLBIXz6wVTQnE9Yjgrn0pZxYy8cXRH8GbCHfp0rnBUMxTTYrKudmwUX8kuMrbEajoW9v4GXLzV5GAXwuJImRr2g2chHTIXHixS3L9K2b_Of9bAV9w1y0)
+
+#### Analytics
+
+El diagrama de clases del Bounded Context Analytics define las estructuras relacionadas con métricas, reportes y alertas de consumo energético dentro de TechWatch. ConsumptionMetric, ConsumptionReport y ConsumptionAlert actúan como Aggregate Roots, mientras que ReportItem es una entidad interna de los reportes. El contexto emplea los Value Objects EnergyConsumption y ConsumptionPeriod para modelar conceptos del dominio relacionados con energía y períodos de análisis. El manejador UsageDataGeneratedEventHandler procesa los eventos provenientes de Device Management para calcular métricas y disparar alertas cuando se superan los umbrales configurados.
+
+![Class Diagram Analytics](https://img.plantuml.biz/plantuml/png/lLXHKziu47xFhz3aXQG5flUgOJ8DO20p3T04UjEdZh15uc9RgIJdnjUv_twIh3Yo9SiEfSq39DBkjzfFdrThVMGSKPwd2PXcA2bu7BB1WBt4sGPHb88mGOnDEQVnKyxnB2JPCluNWm-6IKeo4gufIJ5uHWd3nXHReuZy4sShFJFOeF05hJ0OLi66uETW0CJd27n1IOx1tTDt77AcnbHqyCWmdKNWxCmqc4p4m0A7X4RYwqzbBZyd85Vc47mYsKeD_pSmmEufsM3AYmC0DvLB6-WbtiOXFW0oqWvjW466wQgu81dBqmsFITORUIkj8BWa-LE2JLQoc4Em51lfYcT4kiSq9lqpKVAvH5p657-D6Pn5ZN4T4cTv2kPOB2LyA3PO80TYf8ORt0QBww_VBkvkbu_p-uVPtMqrzRYSNWVV7cRpe35qjGW-FmQt5r-jMDD4RDyIRqLcl725-tJtT_Lz7bpE7kVLpvlPzOq9U0IcgnN5Av4J0oYBn5RncCUOkTaiqnGnAo-m88GtI8nD8TYYsslMAQ6T-ep9j68N6apRCh5qPgv02G7QsZ1iGfI4UIAoYgQy8O3tDWsZaAIfu4nWxlpA2NPHJeozobpW3Q7y5LpkAa9PI0uXkGy7d72K60P-LcCspJb9aQXz49mJac1aJg-my7NoALmvJfb8BcRyhEHY9aOcRiPBWptZrnhOCgbHNyAWA9B88rjYnrfsjoZ5ksfo349lyiU2Vr7phoZ-aUCiB22OPHolC1r3i4_3tldzd7fanLDMT6-rzwcmrsvAkUyEjcJZbQwgG7zKkLuYcAw5i5uQQmM4oJGTFF4rnMnDaiXno8GvfJZZNrhEe9WjC8fSiXT1LeB3hZAYLhlNz4FfrJHmA3f5z6Mgee_6q4AirtVjNYlexd8bDbH_Ex1vQ6q23glU1nxoNIMWJpfMSzMPvI4DGaU9h6NZt_pVaqlhZdK_KAzwR6e9pwM69Nefv0CIHTBBrMmUWS-vM6YjURd6NAlylDXN5cadMoVrlv_Q6sMf8KKX2RP-8eX6ormidnRdHLdaUaPoLCPcX5BSlpaDjIFipHP_f8uz5dCYjmMCL0Pb9Ol5EKEVKOZjnghoALJ4tOzQrFVWESwYSv77Q7VGY59ufr1GScPXJYpFFHCZDq5ZtPnuiHZQub5PuQ2ToTWnPlBZ9A7SwBSbeSHy6n9iB4K2LSFGpcJi6EiaGGdnRJbGa3O5fMgdMJHJXUXAljgFwf9sa621AGvKQR9FvCv3UhhP9768rAln4bDPbbc3c-gAGTT7RIQ8qTyQhAo5JOAxtr5aryhoX9z9vexDbGIK4ZhnG7OsuR-0tT4C_GAo--3P8pP3jg5RwgrsI9NBdllpGzf2tp7LgmnPQDxpw7MGRGTGhn9XeJbE6lzZLZqimLPq5-160TBwpPheyKNtXNR2Z9IfjfIlNQPdOpz8Di9o6hR1YDLjIMmTRudIHRaC-wRatSc9UKS7ZRCOJ3m-rHKShBeqhxrzmmRBjjhhPT-JGNr7qEfsSZ8nBxkWqTtRFlgAO_ZNK8KRVZWzVJSqtuIXV4_bACvOgxDqr5UcK7SQNjlUR1i-X_1WkBb8RrwVQ00ZP__sDWnT8K8BtNerxqNQthGtPtkNNW8jpQLawdUMi7h3q3vjXvjqzRM7AZbs68ZLNhq6fDcUk35g1y7hSl51zCp41-7DewEUgdrjeKkg8j7NofoqLHCZyEcfWnrPNb0c5j5Q7jeHz7FgGMZctW0enMlwYwh_KRpbvsao-1y)
+
+#### Subscriptions
+
+El diagrama de clases del Bounded Context Subscriptions define las estructuras relacionadas con planes, suscripciones y procesamiento de pagos dentro de TechWatch. Plan modela las características del modelo freemium (límite de dispositivos y beneficios premium), Subscription representa el vínculo del usuario con un plan y su estado, y Payment registra las transacciones procesadas mediante el adaptador ExternalPaymentService hacia el servicio de pagos externo. Se utilizan Value Objects como Money y los enumerados PlanType, BillingCycle, SubscriptionStatus y PaymentStatus. El facade SubscriptionsContextFacade expone el límite de dispositivos y los beneficios del plan hacia otros contextos.
+
+![Class Diagram Subscriptions](https://img.plantuml.biz/plantuml/png/jLXBRziu4BxxLn2znDucnPw5mAZiAAq1E_4wIR4zCjB4PakHNf9AunRxtvSFMIRrMZj8VKWaSlZDQ1xVaFme5HQgo2cwAnvbAiXM4SxaO22_4xR50kSefLZAM2b17Wi5ivIpE_8Jq9-UICuPJpU2vu2UC9NWJSaDplWFmjRbp62Bq-zu3UXTeF0T-ZKO8FqxGrymBG3TFdw3L4axPYr03nB4B4ENbxx0UAm7Lf1oaUd7NrRS_2vGOSKZDETiROV_7NXWIuhP2M1RAzu5vd_92Q0oMDO5lk0CTaTZufmNJ4LeGjPNa98SKsyoBOG0bkuYTAUZ6Ie3LkJMA_UxBMZqHBy7sDUh9AbUbgjaCNjOD00cX58DFDsbj1LaSNjp_td-jNh_ciIhyjM7yHrwfx0gP1jOFBsVVJdOD8rlfibydbnL8ydVozcgV0y-4-zoOAeRUPdSNCrkFXsWRnVBUNBlGL_7itc8V8RYzLh06YkGjKJJAgevjE9SrO96_E2x8OPp2CBaXfKEJbI5oKzGGL8zOvF56txquX45qV64Slno1SzwlOpGZ2bOW_1cDrZ6sJDcAMGBqFQaMch2EGNCGgbf8HNFLx3bGdN9n1Iw9nyO9JbHa7qc6adisiI8Z5D5dY6Swwp6LtX-pnkERbeum567NySsZwAMh0s5XBhIPaJ8_FLcW6MjuxXGV0KCVZJzy3xGDKnvdcEcJPiAq1Z-tDHDZRobs3XGYmr7eScUI6h2JNi4XB6h3s23sHgCfuQXszgMXCJiQlCLWQlJQSZABHnPBvPz70Dwy0Frea0mJCjvgwDUe5l1THr9o69L2-ZxFUuXN4idN8wtX4htsYSYyc6dvb5bhRVg2HCREt-c8gbIYqzHdLcZWr0-dT1cEnfcRqu76J2rkUEROrBd19Cw--enlNngK_-LpZYkeri7_5ODhOdr1gvxzUxY3FrLW211P_m4AgRKn5QQIRF7iV_Rh0k-pYoqJS3tuMJd2Fj_eJfPlgwZz9wSx48cELB34NHKESSqJKbqpzCUGaFRG1qD4DsEnHDEmT9d9RQpIlSlWM9T_eHbazqi6-uvKbF1hLMBwQM16TU4THIqVDbOxqLXEyDSz-26jCJFO0dTqVd8_VE_vM2m_xrlOBWFr_W0Q_a-0uPXR8y1iT_b1omCLq_JyWBaqkKjOkIGnWtvC8M6_HbMnR29viBengisqTKmuksMaXJRtTGT2BjFx0brIJ6bfFP1-LHpWERuZC8nEvT8LuSigBeqRZhtpKc4u6BS1zhNIGx0li292hgQnLk0TxM9jy1kttaSvUhUGhUSU6Ji_p6oKQCDT75FSrL_3pYcxXkOlPpVMb5LdTmMwb5tnmpX36-rRv3YI6sWsZMYik2GT4xncaqIRkyE_eiTLCr_so1ums0xUzxQmaVjFJcUpj4rJd46FI6LKwx7NvGJr4QvXpgXWKetY-eWUSs52SNGtnsEcgTB4m5vhIk_4138dcj0E-fjT5isZAPpKknkhEovtHos_xYuA2zD8dSiHkF3vCN5-73B4TdpT7qwkCE8WYDqAHgSC8swycegAhSLNMBbfLDKRa7Rn8m1BRSVKNausTjQff81hLq-HRK4Q5cnTuvBd9g0TL1mFrBJtKFsU-TwFT2wvCYb7Jk6Ko2QJVYKrHrr65MdEhaluZR0WFjESKLZuQcEQ6hkTqFDi0yVdArQI7i4hrjrrEI3fAslQwgtAieCwzDI8vkwfk138vG1TVTjXcl70qqA7u5bHKu7_m4)
 
 
 ## 4.8. Database Design
 
-En esta sección se presenta el diseño de base de datos de TechWatch, organizado por Bounded Context siguiendo los principios de Domain-Driven Design. Cada diagrama representa el esquema de tablas correspondiente a un contexto delimitado, incluyendo columnas, tipos de dato, restricciones y relaciones mediante claves foráneas.
+En esta sección se presenta el diseño de base de datos de TechWatch, organizado por Bounded Context siguiendo los principios de Domain-Driven Design. Cada diagrama representa el esquema de tablas correspondiente a un contexto delimitado, incluyendo columnas, tipos de dato, restricciones y relaciones mediante claves foráneas. El motor de base de datos utilizado es MySQL, con nomenclatura snake_case y tablas pluralizadas.
 
-Asimismo, el diseño considera la separación lógica entre **Device Management**, **Analytics**, **Payment**, **IAM** y **Profile**, manteniendo coherencia con la arquitectura del dominio y el Design-Level Event Storming realizado previamente.
+Asimismo, el diseño considera la separación lógica entre **IAM**, **Profiles**, **Device Management**, **Analytics** y **Subscriptions**, manteniendo coherencia con la arquitectura del dominio y el Design-Level Event Storming realizado previamente. Las tablas pertenecientes a otros contextos se representan como referencias externas dentro de cada diagrama, ya que la integración entre contextos a nivel de código se realiza mediante fachadas ACL y eventos de dominio.
 
 
 ### 4.8.1. Database Diagrams
 
-A continuación se presentan los diagramas de base de datos para cada uno de los Bounded Contexts identificados en TechWatch: Device Management, Analytics, Payment, IAM y Profile. Los diagramas fueron elaborados utilizando Vertabelo y reflejan directamente el modelo de dominio definido previamente en los diagramas de clases.
-
-
-#### Device Management
-
-El diagrama de Device Management contiene las tablas principales relacionadas con la gestión y control de dispositivos inteligentes dentro del hogar. La tabla users representa los usuarios registrados en la plataforma y actúa como referencia para distintos contextos del sistema.
-
-La tabla properties almacena los inmuebles registrados por cada usuario, manteniendo una relación muchos a uno hacia users. La tabla spaces representa los ambientes o espacios dentro de cada inmueble, con una relación muchos a uno hacia properties. Finalmente, la tabla devices almacena los dispositivos inteligentes registrados dentro de cada espacio, manteniendo relaciones hacia spaces y properties.
-
-La estructura refleja la jerarquía natural del dominio: un usuario posee propiedades, cada propiedad contiene espacios y cada espacio administra múltiples dispositivos inteligentes.
-
-![Device Management ERD](./assets/images/chapter-4-8-1-img1.png)
-
-#### Analytics
-
-El diagrama de Analytics contiene las tablas relacionadas con métricas, reportes y alertas de consumo energético. La tabla metrics almacena valores calculados a partir del comportamiento de los dispositivos inteligentes, referenciando externamente tablas como devices y properties pertenecientes al contexto Device Management.
-
-La tabla consumption_reports representa reportes generados para períodos específicos, asociados tanto a propiedades como usuarios. La tabla report_items detalla información individual de consumo por dispositivo dentro de cada reporte generado. Asimismo, la tabla consumption_alerts almacena alertas automáticas generadas cuando determinadas métricas superan umbrales definidos por el sistema.
-
-Este contexto permite almacenar y procesar información orientada al monitoreo energético y generación de insights relacionados con optimización del consumo.
-
-![Analytics ERD](./assets/images/chapter-4-8-1-img2.png)
-
-
-#### Payment
-
-El diagrama de Payment contiene las tablas relacionadas con suscripciones, planes y transacciones de pago. La tabla plans almacena los distintos planes de suscripción disponibles dentro de la plataforma, incluyendo características y precios derivados de los Value Objects del dominio.
-
-La tabla subscriptions representa la suscripción activa de cada usuario hacia un plan específico, manteniendo referencias hacia users y plans. Finalmente, la tabla payments almacena las transacciones de pago realizadas dentro del sistema, asociadas directamente a una suscripción.
-
-Este contexto permite administrar funcionalidades premium y procesar pagos mediante integración con servicios externos especializados.
-
-![Payment ERD](./assets/images/chapter-4-8-1-img3.png)
+A continuación se presentan los diagramas de base de datos para cada uno de los Bounded Contexts identificados en TechWatch: IAM, Profiles, Device Management, Analytics y Subscriptions. Los diagramas fueron elaborados utilizando Vertabelo y reflejan directamente el modelo de dominio definido previamente en los diagramas de clases.
 
 
 #### IAM
 
-El diagrama de IAM (Identity and Access Management) contiene las tablas relacionadas con autenticación, autorización y control de acceso dentro de la plataforma. La tabla user_credentials almacena información relacionada con credenciales, autenticación y validación de acceso, utilizando referencias hacia users como entidad principal del sistema.
+El diagrama de IAM (Identity and Access Management) contiene la tabla users, que almacena las cuentas registradas en la plataforma junto con sus credenciales y rol de acceso. El correo electrónico actúa como identificador único de inicio de sesión y la contraseña se almacena como hash (BCrypt). La autenticación de solicitudes se realiza mediante tokens JWT generados por la propia plataforma, los cuales no requieren persistencia en base de datos.
 
-Asimismo, este contexto administra tokens, roles y mecanismos de autenticación utilizados para proteger los distintos módulos de TechWatch mediante JWT y OAuth 2.0.
-
-![IAM ERD](./assets/images/chapter-4-8-1-img4.png)
+![IAM ERD](./assets/images/erd-iam.png)
 
 
-#### Profile
+#### Profiles
 
-El diagrama de Profile contiene las tablas relacionadas con la información personal y preferencias de usuario dentro de la plataforma. La tabla user_profiles almacena configuraciones, preferencias y datos personalizados asociados a cada usuario registrado.
+El diagrama de Profiles contiene la tabla profiles, que almacena la información personal del usuario (nombres, teléfono e imagen de perfil) junto con sus preferencias de idioma, tema y notificaciones, las cuales corresponden al Value Object Preferences embebido en el agregado Profile. Cada perfil mantiene una relación uno a uno con la tabla users del contexto IAM, referenciada de forma externa.
 
-Este contexto permite administrar personalización de experiencia, configuraciones de cuenta e información complementaria relacionada con el perfil del usuario dentro de TechWatch.
+![Profiles ERD](./assets/images/erd-profiles.png)
 
-![Profile ERD](./assets/images/chapter-4-8-1-img4.png)
+
+#### Device Management
+
+El diagrama de Device Management contiene las tablas relacionadas con la gestión de inmuebles, dispositivos inteligentes y simulación de uso. La tabla properties almacena los inmuebles registrados por cada usuario; la tabla spaces representa los ambientes dentro de cada inmueble; y la tabla devices almacena los dispositivos inteligentes registrados dentro de cada espacio, incluyendo su potencia en watts y su estado actual.
+
+Asimismo, el contexto incluye las tablas de simulación: simulation_sessions registra las sesiones de uso simulado iniciadas por el usuario sobre un inmueble, device_actions almacena las acciones ejecutadas sobre los dispositivos durante cada sesión y usage_data registra los datos de consumo generados, los cuales son consumidos por el contexto Analytics mediante eventos de dominio.
+
+La estructura refleja la jerarquía natural del dominio: un usuario posee inmuebles, cada inmueble contiene espacios y cada espacio administra múltiples dispositivos inteligentes.
+
+![Device Management ERD](./assets/images/erd-device-management.png)
+
+
+#### Analytics
+
+El diagrama de Analytics contiene las tablas relacionadas con métricas, reportes y alertas de consumo energético. La tabla metrics almacena valores calculados a partir de los datos de uso generados durante las sesiones de simulación, asociados a un período de análisis y referenciando externamente las tablas properties y devices del contexto Device Management.
+
+La tabla consumption_reports representa reportes generados para períodos específicos, asociados tanto a inmuebles como usuarios. La tabla report_items detalla información individual de consumo por dispositivo dentro de cada reporte generado. Asimismo, la tabla consumption_alerts almacena alertas automáticas generadas cuando determinadas métricas superan umbrales definidos por el sistema, incluyendo severidad y estado de lectura.
+
+![Analytics ERD](./assets/images/erd-analytics.png)
+
+
+#### Subscriptions
+
+El diagrama de Subscriptions contiene las tablas relacionadas con planes, suscripciones y transacciones de pago. La tabla plans almacena los planes disponibles dentro del modelo freemium, incluyendo precio, ciclo de facturación, límite de dispositivos y beneficios premium como métricas avanzadas, reportes personalizados, alertas e historial ilimitado.
+
+La tabla subscriptions representa la suscripción de cada usuario hacia un plan específico junto con su estado y vigencia, manteniendo referencias hacia users y plans. Finalmente, la tabla payments almacena las transacciones de pago realizadas dentro del sistema, asociadas directamente a una suscripción y procesadas mediante la integración con el servicio de pagos externo.
+
+![Subscriptions ERD](./assets/images/erd-subscriptions.png)
 
 
 
@@ -1725,22 +1798,22 @@ Referencia: [Gherkin conventions](https://specflow.org/gherkin/gherkin-conventio
 
 ### 5.1.4. Software Deployment Configuration
 
-En esta sección se detallan las herramientas y configuraciones consideradas para el despliegue de los proyectos incluidos en TechWatch, incluyendo Landing Page, Web Application, Backend Web Services y Base de Datos.
+En esta sección se detallan las herramientas y la configuración utilizadas para el despliegue de los productos digitales de TechWatch —Landing Page, Frontend Web Application, Backend Web Services y Base de Datos—, todos publicados en **Railway**. La evidencia detallada del proceso de despliegue por iteración se documenta en las secciones de *Software Deployment Evidence* de cada Sprint (ver 5.2.3.7).
 
 - **Landing Page:**  
   La Landing Page fue desarrollada utilizando HTML, CSS y JavaScript. Para su despliegue se utilizó Railway, plataforma que permitió publicar el sitio web y mantener integración con el repositorio de GitHub para facilitar la actualización continua del contenido y despliegue de nuevas versiones.
 
 - **Frontend Web Application:**  
-  La Web Application fue desarrollada en Angular con TypeScript. Para su despliegue se utilizaron plataformas como Azure y Vercel, permitiendo publicar la aplicación web compilada y mantener acceso público a la solución. Estas herramientas facilitan el despliegue continuo desde GitHub y permiten actualizar la aplicación conforme se integran nuevos cambios en el repositorio.
+  La Web Application fue desarrollada en Angular con TypeScript. Para su despliegue en producción se utiliza **Railway** mediante un contenedor **Docker multi-stage** que compila la aplicación con `node:22-alpine` y sirve los archivos estáticos resultantes con `nginx:1.27-alpine`. La aplicación queda accesible públicamente en **https://techwatch-frontend-production.up.railway.app**, con la URL del Backend Web Services incorporada en el momento del build.
 
 - **Backend Web Services:**  
-  El backend fue desarrollado en Java, siguiendo una arquitectura orientada a servicios REST. Para su despliegue se consideraron plataformas como Azure, Railway y Render, ya que permiten alojar servicios backend, configurar variables de entorno y conectar la aplicación con la base de datos PostgreSQL.
+  El Backend Web Services fue desarrollado en Java con **Spring Boot**, siguiendo el estilo arquitectónico **RESTful API**. Para su despliegue en producción se utiliza **Railway** a partir de un **Dockerfile** (build con `maven:3.9.16-eclipse-temurin-26` y ejecución con `eclipse-temurin:26-jre`), activando el perfil `prod` mediante `application-prod.properties`. El servicio queda accesible públicamente en **https://techwatch-backend-production.up.railway.app**, con la documentación interactiva de los endpoints disponible en **/swagger-ui/index.html** (OpenAPI). Las credenciales y la URL de la base de datos se inyectan como variables de entorno y la conexión con MySQL se realiza por la red interna de Railway.
 
 - **Base de Datos:**  
-  Para la persistencia de datos se utiliza PostgreSQL. La base de datos puede ser desplegada en Railway, plataforma que permite provisionar una instancia PostgreSQL, gestionar credenciales de conexión y administrar variables de entorno necesarias para la comunicación con el backend.
+  Para la persistencia de datos se utiliza **MySQL**, provisionado como servicio gestionado dentro del mismo proyecto de **Railway**. El esquema se genera automáticamente a partir del modelo de dominio (`ddl-auto=update`) y la comunicación con el Backend Web Services se realiza a través de la red interna de Railway (`mysql.railway.internal`), utilizando credenciales administradas mediante variables de entorno.
 
 - **Control de versiones y despliegue:**  
-  GitHub fue utilizado como repositorio principal para gestionar el código fuente, ramas de desarrollo, pull requests y versiones del proyecto. Además, permitió integrar los repositorios con las plataformas de despliegue para facilitar la publicación de la Landing Page, Web Application y Backend.
+  GitHub fue utilizado como repositorio principal para gestionar el código fuente, ramas de desarrollo, pull requests y versiones del proyecto, aplicando GitFlow, Conventional Commits y Semantic Versioning. El despliegue de cada producto en Railway se realiza a partir de su imagen Docker generada desde el código fuente versionado en GitHub.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
@@ -1876,6 +1949,9 @@ La evidencia de colaboración incluye commits realizados por los integrantes, us
 
 ![Trello Sprint 1](assets/images/chapter-5-2-1-8-img1.png)
 
+Link del trello :
+
+https://trello.com/invite/b/69eabab8c6d017d12b30ef1a/ATTIb95191deca519b3139e11dc099fa0d2940C6069B/sprint-backlog-1-techwatch
 
 ### 5.2.2. Sprint 2
 
@@ -1972,6 +2048,9 @@ Asimismo, los usuarios pueden visualizar información relacionada con el estado 
 
 La interfaz fue desarrollada utilizando Angular y TypeScript, manteniendo una experiencia responsive y consistente con los diseños, wireframes y mockups previamente definidos en Figma. Las funcionalidades implementadas durante este sprint se alinean con el objetivo principal de TechWatch: permitir el monitoreo, control y análisis energético de dispositivos inteligentes dentro del hogar.
 
+
+[Ver aplicación en producción](https://frontend-tech-black.vercel.app)
+
 ![Frontend Captura](assets/images/chapter-5-2-2-5-img1.png)
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
@@ -2006,7 +2085,7 @@ El frontend fue desarrollado con Angular y desplegado en [plataforma de desplieg
 GitHub (código) → [Plataforma] (build + hosting) → [URL pública del frontend]
 ```
 
-**URL pública del Frontend:** [Deploy Frontend](https://github.com/)
+**URL pública del Frontend:** [frontend-tech-black.vercel.app](https://frontend-tech-black.vercel.app)
 
 ![Frontend Deploy](assets/images/chapter-5-2-2-7-img1.png)
 
@@ -2022,34 +2101,497 @@ El JSON Server fue desplegado en Railway y expone los endpoints de users, homes,
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
-Durante el Sprint 2 los 5 integrantes colaboraron en el desarrollo del Frontend Web Application, trabajando sobre ramas de feature individuales e integrando avances mediante pull requests hacia la rama de trabajo del sprint. La coordinación se realizó mediante WhatsApp y reuniones por Google Meet. El seguimiento de tareas se gestionó en [herramienta indicada].
+Durante el Sprint 2 los 5 integrantes colaboraron en el desarrollo del Frontend Web Application, trabajando sobre ramas de feature individuales e integrando avances mediante pull requests hacia la rama de trabajo del sprint. La coordinación se realizó mediante WhatsApp y reuniones por Google Meet. El seguimiento de tareas se gestionó en Trello.
 
 Organización del equipo en GitHub:
 
 [https://github.com/upc-pre-202610-1asi0729-11896-techwatch](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
 
-![JSON Server](assets/images/chapter-5-2-2-8-img1.png)
+![commits](assets/images/chapter-5-2-2-8-img1.png)
 
-![JSON Server](assets/images/chapter-5-2-2-8-img2.png)
+![commits](assets/images/chapter-5-2-2-8-img2.png)
 
-![JSON Server](assets/images/chapter-5-2-2-8-img3.png)
+![commits](assets/images/chapter-5-2-2-8-img3.png)
 
+![commits](assets/images/chapter-5-2-2-8-img4.png)
+
+### 5.2.3. Sprint 3
+
+#### 5.2.3.1. Sprint Planning 3
+
+| Sprint # | Sprint 3 |
+|----------|----------|
+| **Sprint Planning Background** | |
+| Date | 06-06-2026 |
+| Time | 08:30 PM |
+| Location | Reunión virtual vía Google Meet |
+| Prepared By | Alva Abanto, Luis Andrés |
+| Attendees (to planning meeting) | Alva Abanto, Luis Andrés / Fernandez Garfias, Alexander Piero / Toro Turpo, Ronal / Montalvo Vásquez, Bruno Rodrigo / Becerra Durand, Sebastian Uriel |
+| Sprint 2 Review Summary | En el Sprint 2 se entregó la primera versión funcional del Frontend Web Application, integrada con un JSON Server que actuaba como backend simulado para la gestión de hogares, dispositivos y métricas de consumo. |
+| Sprint 2 Retrospective Summary | El equipo identificó que el JSON Server simulado limitaba la lógica de negocio y la persistencia real de la solución. Para el Sprint 3 se acordó construir el RESTful API real con Spring Boot aplicando Domain-Driven Design, migrar el frontend para consumirlo y desplegar la solución completa (backend, frontend y base de datos) en Railway. |
+| **Sprint Goal & User Stories** | |
+| Sprint 3 Goal | Our focus is on replacing the simulated backend with a real RESTful API for the Device Management and Analytics bounded contexts. We believe it delivers real persistence, business rules and consumption analytics to IntelliHome users through an integrated and deployed solution. This will be confirmed when users can register properties, spaces and devices, run a simulation session and visualize the generated metrics, alerts and reports consumed from the deployed Spring Boot API without intervention of the development team. |
+| Sprint 3 Velocity | 26 |
+| Sum of Story Points | 26 |
+
+#### 5.2.3.2. Aspect Leaders and Collaborators
+
+En este Sprint el alcance se concentró en la construcción del Backend Web Services real (Spring Boot + MySQL) y su integración con el Frontend Web Application. Los aspectos de la matriz LACX (*Leadership and Collaboration eXtended*) son: **Backend Domain & Application** (modelado DDD de los Bounded Contexts Device Management y Analytics, con CQRS ligero); **Backend REST API & Persistence** (controllers REST, documentación OpenAPI y persistencia JPA); **Frontend Integration** (migración del frontend del JSON Server al API real); **Deployment & DevOps** (contenerización con Docker y despliegue en Railway del backend, el frontend y MySQL); y **Documentation & Report** (documentación del sprint en el informe). **L** indica a la persona que lidera el cierre y la coherencia del aspecto, y **C** a quien colabora con aportes, *commits* puntuales o *feedback*.
+
+| Team Member (Last Name, First Name) | GitHub Username | Backend Domain & Application | Backend REST API & Persistence | Frontend Integration | Deployment & DevOps | Documentation & Report |
+|-------------------------------------|-----------------|------------------------------|--------------------------------|----------------------|---------------------|------------------------|
+| Alva Abanto, Luis Andrés | luis-alva0 | L | C | C | L | C |
+| Fernandez Garfias, Alexander Piero | Dostoyevsk1 | C | L | C | C | C |
+| Toro Turpo, Ronal | ronaltt-345 | C | C | L | C | C |
+| Montalvo Vásquez, Bruno Rodrigo | TartaroZ | C | C | C | C | L |
+| Becerra Durand, Sebastian Uriel | sebasdev28 | C | C | C | C | C |
+
+#### 5.2.3.3. Sprint Backlog 3
+
+El objetivo principal del Sprint 3 es reemplazar el backend simulado por un RESTful API real desarrollado en Spring Boot bajo Domain-Driven Design, cubriendo los Bounded Contexts **Device Management** (propiedades, espacios, dispositivos y simulación) y **Analytics** (métricas, alertas y reportes), migrar el Frontend Web Application para que consuma dicho API y desplegar la solución completa en Railway. Las tareas se derivan de las *Technical Stories* del Epic EP09 (API y Backend) de la sección 3.1.
+
+![Tablero Trello Sprint 3](./assets/images/chapter-5-2-3-3-img1.png)
+
+URL del tablero: [https://trello.com/invite/b/6a337a6e973bd63ace947efb/ATTI8aef747c3e59352c70b079cfa522102f77CEBCD8/sprint-backlog-3-techwatch](https://trello.com/invite/b/6a337a6e973bd63ace947efb/ATTI8aef747c3e59352c70b079cfa522102f77CEBCD8/sprint-backlog-3-techwatch)
+
+| Sprint # | Sprint 3 | | | | | | |
+|----------|----------|-|-|-|-|-|-|
+| **User Story / Technical Story** | | **Work-Item / Task** | | | | | |
+| Id | Title | Id | Title | Description | Estimation (Hours) | Assigned To | Status |
+| TS09 | API registrar inmueble | T01 | Implementar API REST de propiedades | Slice DDD del aggregate Property con endpoints POST /api/v1/properties y GET /api/v1/properties?userId, persistencia JPA y CQRS | 5 | Alva Abanto, Luis Andrés | Done |
+| TS09 | API registrar inmueble | T02 | Implementar gestión de espacios | Comando CreateSpace dentro del aggregate Property y endpoint POST /api/v1/properties/{propertyId}/spaces | 3 | Alva Abanto, Luis Andrés | Done |
+| TS11 | API registrar dispositivo | T03 | Implementar API REST de dispositivos | Aggregate Device con endpoint POST /api/v1/devices (add device to space) y validación de nombre único por espacio | 5 | Alva Abanto, Luis Andrés | Done |
+| TS12 | API actualizar estado de dispositivo | T04 | Implementar edición de dispositivo | Comando EditDevice y endpoint PUT /api/v1/devices/{deviceId} | 3 | Alva Abanto, Luis Andrés | Done |
+| TS02 | API obtener sensores | T05 | Implementar consulta y eliminación de dispositivos | Endpoints GET /api/v1/devices?spaceId, GET /api/v1/devices/{deviceId} y DELETE /api/v1/devices/{deviceId} | 3 | Alva Abanto, Luis Andrés | Done |
+| TS02 | API obtener sensores | T06 | Implementar sesiones de simulación | Aggregate SimulationSession con start, record-action y end (POST /api/v1/simulation-sessions y subrecursos), generando datos de consumo | 5 | Alva Abanto, Luis Andrés | Done |
+| TS13 | API obtener dashboard | T07 | Implementar API REST de métricas | Bounded Context Analytics: cálculo de métricas a partir de eventos de integración y GET /api/v1/metrics?propertyId | 5 | Alva Abanto, Luis Andrés | Done |
+| TS04 | API generar alerta | T08 | Implementar API REST de alertas | Policy de umbral escalonado para generar alertas de consumo, GET /api/v1/alerts?userId y PUT /api/v1/alerts/{alertId}/read | 3 | Alva Abanto, Luis Andrés | Done |
+| TS03 | API consultar historial | T09 | Implementar API REST de reportes de consumo | Generación on-demand de reportes agregando métricas por periodo: POST /api/v1/reports y GET /api/v1/reports?propertyId | 3 | Alva Abanto, Luis Andrés | Done |
+| TS10 | API listar inmuebles | T10 | Migrar Frontend Web Application al API real | Reemplazar el consumo del JSON Server por el RESTful API (proxy de ng serve, environments y stores de management, simulation y analytics) | 5 | Fernandez Garfias, Alexander Piero | Done |
+| — | Deployment | T11 | Contenerizar y desplegar la solución en Railway | Dockerfile del backend (Maven + Temurin), Docker multi-stage del frontend (node + nginx), MySQL gestionado, perfil prod y CORS | 5 | Alva Abanto, Luis Andrés | Done |
+| — | Configuración | T12 | Configurar shared kernel, OpenAPI y manejo de errores | Result/ApplicationError, GlobalExceptionHandler, configuración de OpenAPI/Swagger y naming strategy snake_case pluralizado | 3 | Alva Abanto, Luis Andrés | Done |
+
+#### 5.2.3.4. Development Evidence for Sprint Review
+
+Durante el Sprint 3 el desarrollo se concentró en dos repositorios: el **Backend Web Services** (Spring Boot) y el **Frontend Web Application** (Angular). En el backend se aplicó GitFlow trabajando una rama `feature/*` por cada comando o query del Design-Level Event Storming, con *commits* por capa (domain → application → infrastructure → interfaces) e integración a `develop` mediante *merge* `--no-ff`. Todos los mensajes siguen Conventional Commits (`feat`, `fix`, `chore`).
+
+**Backend Web Services** — [techwatch-backend](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-backend) · rama `develop`.
+
+| Repository | Branch | Commit Id | Commit Message | Fecha |
+|------------|--------|-----------|----------------|-------|
+| techwatch-backend | feature/setup | 3153991 | shared kernel, OpenAPI y manejo global de errores | 2026-06-13 |
+| techwatch-backend | feature/create-property | 869e579 | aggregate Property + REST de registro y consulta de propiedades | 2026-06-13 |
+| techwatch-backend | feature/create-spaces | eec268e | comando CreateSpace + REST de espacios | 2026-06-13 |
+| techwatch-backend | feature/add-device-to-space | 79f5bb4 | aggregate Device + REST para agregar y consultar dispositivos | 2026-06-13 |
+| techwatch-backend | feature/edit-device | 7eda085 | edición de dispositivo (PUT /api/v1/devices/{id}) | 2026-06-13 |
+| techwatch-backend | feature/delete-device | 9fbe398 | eliminación de dispositivo (DELETE /api/v1/devices/{id}) | 2026-06-13 |
+| techwatch-backend | feature/start-simulation-session | 345ec1e | inicio de sesión de simulación | 2026-06-13 |
+| techwatch-backend | feature/record-device-action | 81b7f85 | registro de acción de dispositivo + datos de consumo | 2026-06-13 |
+| techwatch-backend | feature/end-simulation-session | 0fd6eba | fin de sesión de simulación | 2026-06-13 |
+| techwatch-backend | feature/calculate-metrics | cf05412 | Analytics: cálculo de métricas de consumo | 2026-06-14 |
+| techwatch-backend | feature/trigger-consumption-alert | deb8759 | Analytics: policy de alertas de consumo | 2026-06-14 |
+| techwatch-backend | feature/mark-alert-as-read | e3b7cf9 | Analytics: marcar alerta como leída | 2026-06-14 |
+| techwatch-backend | feature/generate-consumption-report | a09f6c7 | Analytics: generación de reportes de consumo | 2026-06-14 |
+| techwatch-backend | develop | b33b365 | Docker, Railway y perfil de producción | 2026-06-17 |
+| techwatch-backend | develop | b64831e | CORS y URL de servidor OpenAPI relativa | 2026-06-17 |
+| techwatch-backend | develop | 27db939 | script de seed de datos de demo | 2026-06-17 |
+
+**Frontend Web Application** — [techwatch-frontend](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-frontend) · rama `develop`.
+
+| Repository | Branch | Commit Id | Commit Message | Fecha |
+|------------|--------|-----------|----------------|-------|
+| techwatch-frontend | feature/connect-real-backend | a8e8149 | conectar el frontend al backend real vía proxy de ng serve | 2026-06-14 |
+| techwatch-frontend | feature/connect-real-backend | bc19c34 | migrar de Home a Property/Space/Device contra el backend | 2026-06-14 |
+| techwatch-frontend | feature/connect-real-backend | c6c4deb | agregar el contexto de simulation sessions | 2026-06-14 |
+| techwatch-frontend | feature/connect-real-backend | 1076d8b | reescribir analytics a metrics, alerts y reports | 2026-06-14 |
+| techwatch-frontend | develop | 53c1b19 | cablear rutas raíz y navegación principal | 2026-06-14 |
+| techwatch-frontend | develop | c1f8ca2 | integrar feature/connect-real-backend a develop | 2026-06-14 |
+| techwatch-frontend | develop | c3c9573 | Docker, nginx y configuración de Railway | 2026-06-17 |
+| techwatch-frontend | develop | 63cf8e7 | apuntar apiBaseUrl de producción al backend de Railway | 2026-06-17 |
+
+#### 5.2.3.5. Execution Evidence for Sprint Review
+
+En el Sprint 3 se alcanzó la integración *end-to-end* del Frontend Web Application con el RESTful API real desplegado, reemplazando por completo el JSON Server. El flujo principal validado abarca: registrar una propiedad (casa o departamento), crear espacios dentro de ella, agregar y administrar dispositivos por espacio, iniciar una sesión de simulación, registrar acciones de dispositivos que generan datos de consumo, y visualizar las métricas, alertas y reportes calculados por el Bounded Context Analytics. El flujo se ejecuta consumiendo el API en `https://techwatch-backend-production.up.railway.app/api/v1` (o el *proxy* local de `ng serve` en desarrollo).
+
+Principales vistas implementadas:
+
+- **Gestión (Management):** listado de propiedades, formulario de propiedad, y detalle de propiedad con *chips* de espacios, tabla de dispositivos por espacio y formularios de espacio y dispositivo (con marca, modelo y tipo).
+- **Simulación (Simulation):** inicio de sesión de simulación por propiedad, registro de acciones de dispositivos y finalización de la sesión.
+- **Analítica (Analytics):** *dashboard* de métricas de consumo, listado de alertas (con marcado como leídas) y reportes de consumo por periodo.
+
+Capturas de las principales vistas:
+
+![Vista de gestión de propiedades y dispositivos](./assets/images/chapter-5-2-3-5-img1.png)
+
+![Vista de simulación de dispositivos](./assets/images/chapter-5-2-3-5-img2.png)
+
+![Dashboard de analítica: métricas, alertas y reportes](./assets/images/chapter-5-2-3-5-img3.png)
+
+**Video de visualización y navegación del Sprint 3:** _(pendiente: enlace al video de navegación — ver Anexo de Evidencia de Video)_
+
+<!-- TODO equipo: pegar el enlace del video (Microsoft Stream) que ilustra la visualización y navegación logradas en este Sprint. -->
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 3 se documentaron todos los endpoints del RESTful API utilizando **OpenAPI 3** mediante **springdoc-openapi**, anotando cada controller con `@Tag`, `@Operation`, `@ApiResponses` y `@Parameter`, y cada resource con `@Schema` (incluyendo ejemplos). La documentación interactiva queda disponible vía **Swagger UI**, tanto en local como en el despliegue de producción:
+
+- **Producción (Swagger UI):** https://techwatch-backend-production.up.railway.app/swagger-ui/index.html
+- **Especificación OpenAPI (JSON):** https://techwatch-backend-production.up.railway.app/v3/api-docs
+- **Local:** http://localhost:8080/swagger-ui/index.html
+
+El API expone 20 endpoints organizados en los Bounded Contexts **Device Management** (Properties, Spaces, Devices, Simulation Sessions) y **Analytics** (Metrics, Alerts, Reports). Todas las respuestas usan `application/json` y los errores siguen un formato uniforme (`ErrorResponse`) gestionado por un `GlobalExceptionHandler`.
+
+**Device Management — Properties & Spaces**
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/properties` | Body: `CreatePropertyRequest` | Registra una propiedad (casa o departamento) de un usuario | 201 `PropertyResponse` · 400 · 409 |
+| GET | `/api/v1/properties/{propertyId}` | Path: `propertyId` | Obtiene una propiedad por su id | 200 `PropertyResponse` · 404 |
+| GET | `/api/v1/properties?userId={userId}` | Query: `userId` | Lista las propiedades de un usuario | 200 `PropertyResponse[]` |
+| POST | `/api/v1/properties/{propertyId}/spaces` | Path: `propertyId` · Body: `CreateSpaceRequest` | Crea un espacio (ambiente) dentro de una propiedad | 201 `SpaceResponse` · 400 · 404 · 409 |
+
+**Device Management — Devices**
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/devices` | Body: `CreateDeviceRequest` | Agrega un dispositivo a un espacio (inicia en estado OFF) | 201 `DeviceResponse` · 400 · 409 |
+| GET | `/api/v1/devices/{deviceId}` | Path: `deviceId` | Obtiene un dispositivo por su id | 200 `DeviceResponse` · 404 |
+| PUT | `/api/v1/devices/{deviceId}` | Path: `deviceId` · Body: `EditDeviceRequest` | Edita la información descriptiva de un dispositivo | 200 `DeviceResponse` · 400 · 404 · 409 |
+| GET | `/api/v1/devices?spaceId={spaceId}` | Query: `spaceId` | Lista los dispositivos de un espacio | 200 `DeviceResponse[]` |
+| DELETE | `/api/v1/devices/{deviceId}` | Path: `deviceId` | Elimina un dispositivo | 200 `MessageResponse` · 404 |
+
+**Device Management — Simulation Sessions**
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/simulation-sessions` | Body: `StartSimulationSessionRequest` | Inicia una sesión de simulación (una activa por usuario) | 201 `SimulationSessionResponse` · 400 · 409 |
+| POST | `/api/v1/simulation-sessions/{sessionId}/actions` | Path: `sessionId` · Body: `RecordDeviceActionRequest` | Registra una acción de dispositivo y genera datos de consumo | 201 `SimulationSessionResponse` · 400 · 404 · 422 |
+| POST | `/api/v1/simulation-sessions/{sessionId}/end` | Path: `sessionId` | Finaliza una sesión activa (estado ENDED) | 200 `SimulationSessionResponse` · 404 · 422 |
+| GET | `/api/v1/simulation-sessions/{sessionId}` | Path: `sessionId` | Obtiene una sesión por su id | 200 `SimulationSessionResponse` · 404 |
+| GET | `/api/v1/simulation-sessions/active?userId={userId}` | Query: `userId` | Obtiene la sesión activa de un usuario | 200 `SimulationSessionResponse` · 404 |
+
+**Analytics — Metrics, Alerts & Reports**
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| GET | `/api/v1/metrics?propertyId={propertyId}` | Query: `propertyId` | Lista las métricas de consumo de una propiedad | 200 `ConsumptionMetricResponse[]` |
+| GET | `/api/v1/alerts?userId={userId}` | Query: `userId` | Lista las alertas de consumo de un usuario | 200 `ConsumptionAlertResponse[]` |
+| PUT | `/api/v1/alerts/{alertId}/read` | Path: `alertId` | Marca una alerta de consumo como leída | 200 `ConsumptionAlertResponse` · 404 |
+| POST | `/api/v1/reports` | Body: `GenerateConsumptionReportRequest` | Genera un reporte agregando las métricas por dispositivo en un periodo | 201 `ConsumptionReportResponse` · 400 |
+| GET | `/api/v1/reports/{reportId}` | Path: `reportId` | Obtiene un reporte por su id | 200 `ConsumptionReportResponse` · 404 |
+| GET | `/api/v1/reports?propertyId={propertyId}` | Query: `propertyId` | Lista los reportes de una propiedad | 200 `ConsumptionReportResponse[]` |
+
+**Ejemplos de interacción con datos de muestra**
+
+*Ejemplo 1 — Registrar una propiedad.* `POST /api/v1/properties`
+
+```json
+// Request body (CreatePropertyRequest)
+{ "userId": 1, "name": "My House", "address": "742 Evergreen Terrace", "type": "HOUSE" }
+```
+```json
+// Response 201 Created (PropertyResponse)
+{ "id": 1, "userId": 1, "name": "My House", "address": "742 Evergreen Terrace", "type": "HOUSE", "spaces": [] }
+```
+La propiedad se crea sin espacios; el `id` generado se utiliza luego para crear espacios y registrar dispositivos. Si el nombre ya existe para el usuario, el API responde `409 Conflict`.
+
+*Ejemplo 2 — Agregar un dispositivo a un espacio.* `POST /api/v1/devices`
+
+```json
+// Request body (CreateDeviceRequest)
+{ "spaceId": 1, "name": "Ceiling Light", "brand": "Philips", "model": "Hue", "type": "LIGHT", "powerWatts": 9.5 }
+```
+```json
+// Response 201 Created (DeviceResponse)
+{ "id": 1, "spaceId": 1, "name": "Ceiling Light", "brand": "Philips", "model": "Hue", "type": "LIGHT", "status": "OFF", "powerWatts": 9.5 }
+```
+El dispositivo se registra en estado `OFF`. El `type` debe ser uno de `LIGHT`, `THERMOSTAT`, `CAMERA`, `SMART_PLUG`, `AIR_CONDITIONER` o `DOOR_LOCK`. Si el nombre ya existe en el espacio, responde `409 Conflict`.
+
+*Ejemplo 3 — Registrar una acción de dispositivo en una sesión de simulación.* `POST /api/v1/simulation-sessions/1/actions`
+
+```json
+// Request body (RecordDeviceActionRequest)
+{ "deviceId": 1, "actionType": "TURN_ON", "parameterName": null, "parameterValue": null, "durationMinutes": 30 }
+```
+```json
+// Response 201 Created (SimulationSessionResponse)
+{
+  "id": 1, "userId": 1, "propertyId": 1, "status": "ACTIVE",
+  "startedAt": "2026-06-15T20:10:00", "endedAt": null,
+  "actions": [
+    { "id": 1, "deviceId": 1, "actionType": "TURN_ON", "parameterName": null, "parameterValue": null, "executedAt": "2026-06-15T20:12:00" }
+  ],
+  "usageData": [
+    { "id": 1, "deviceId": 1, "consumptionValue": 4.75, "unit": "Wh", "recordedAt": "2026-06-15T20:12:00" }
+  ]
+}
+```
+El consumo se calcula como `powerWatts × (durationMinutes / 60) = 9.5 × 0.5 = 4.75 Wh`. Este registro publica un evento de integración que el Bounded Context **Analytics** consume para calcular la métrica y evaluar la policy de alertas. Si la sesión no está activa, responde `422 Unprocessable Entity`.
+
+*Ejemplo 4 — Consultar las métricas de una propiedad.* `GET /api/v1/metrics?propertyId=1`
+
+```json
+// Response 200 OK (ConsumptionMetricResponse[])
+[
+  { "id": 1, "propertyId": 1, "deviceId": 1, "metricType": "ENERGY_CONSUMPTION", "value": 4.75, "unit": "Wh",
+    "periodStart": "2026-06-15T20:12:00", "periodEnd": "2026-06-15T20:12:00", "calculatedAt": "2026-06-15T20:12:00" }
+]
+```
+Cada acción de consumo genera una métrica `ENERGY_CONSUMPTION`; el dashboard del frontend las agrega para mostrar el consumo por dispositivo y por propiedad.
+
+**Capturas de la documentación desplegada (Swagger UI)**
+
+![Swagger UI - Relación de endpoints](./assets/images/chapter-5-2-3-6-img1.png)
+
+![Swagger UI - Ejemplo de request/response con datos de muestra](./assets/images/chapter-5-2-3-6-img2.png)
+
+**Repositorio de Web Services y commits de documentación**
+
+Repositorio: [upc-pre-202610-1asi0729-11896-techwatch/techwatch-backend](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-backend) · rama de trabajo: **`develop`**.
+
+La documentación OpenAPI se incorporó junto con cada endpoint mediante anotaciones de springdoc. Commits relacionados con la documentación de servicios en este Sprint:
+
+| Commit Id | Mensaje |
+|-----------|---------|
+| 3153991 | Merge branch 'feature/setup' into develop (shared kernel + `OpenApiConfiguration` + springdoc) |
+| 1403b25 | feat(devices): exponer API REST de registro y consulta de propiedades |
+| 548a885 | feat(devices): exponer API REST para crear spaces en una propiedad |
+| 8d3e4ca | feat(devices): exponer API REST para agregar y consultar devices |
+| 2562f5f | feat(devices): exponer API REST para iniciar sesiones de simulacion |
+| 177e65f | feat(analytics): exponer API REST de consulta de metricas |
+| 261f049 | feat(analytics): exponer API REST de consulta de alertas |
+| 7421af9 | feat(analytics): exponer API REST de consumption reports |
+| b64831e | feat(shared): habilitar CORS y URL de servidor OpenAPI relativa |
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 3 se desplegó por primera vez la **solución completa en producción** sobre **Railway**, dentro de un único proyecto (`techwatch`) que agrupa tres servicios: **techwatch-backend**, **MySQL** y **techwatch-frontend**. La Landing Page mantiene su despliegue en Railway con una nueva versión. A continuación se resumen los pasos realizados por cada producto.
+
+**Backend Web Services (Spring Boot).** Se añadió un `Dockerfile` multi-stage (*build* con `maven:3.9.16-eclipse-temurin-26`, *runtime* con `eclipse-temurin:26-jre`) y un perfil `prod` (`application-prod.properties`). El despliegue se realiza desde el repositorio con la CLI de Railway (`railway up --ci --service techwatch-backend`), que construye la imagen Docker. Las variables de entorno (`DATABASE_URL`, `DATABASE_USERNAME`, `DATABASE_PASSWORD`, `SPRING_PROFILES_ACTIVE=prod`) referencian el servicio de MySQL a través de la red interna de Railway. URL pública: **https://techwatch-backend-production.up.railway.app** (Swagger en `/swagger-ui/index.html`).
+
+**Frontend Web Application (Angular).** Se añadió un `Dockerfile` multi-stage que compila la aplicación con `node:22-alpine` y la sirve con `nginx:1.27-alpine` (nginx escucha en el puerto 8080 que Railway expone por defecto). La URL del Backend Web Services queda incorporada en el *build*. URL pública: **https://techwatch-frontend-production.up.railway.app**.
+
+**Base de Datos (MySQL).** Se provisionó una instancia gestionada de MySQL como servicio del mismo proyecto. El esquema se crea automáticamente al arrancar (`ddl-auto=update`) y el backend se conecta por la red interna `mysql.railway.internal`. Para poblar datos de demostración se dispone del script idempotente `scripts/seed-data.ps1`, que crea propiedades, espacios y dispositivos y ejecuta una simulación que genera métricas, alertas y reportes mediante el API.
+
+**CORS.** Se habilitó CORS en el backend (`WebConfiguration`), con `cors.allowed-origins` configurable por variable de entorno, permitiendo que el frontend desplegado consuma el API.
+
+| Producto | Plataforma | URL pública |
+|----------|------------|-------------|
+| Landing Page | Railway | _(pendiente)_ |
+| Frontend Web Application | Railway (Docker + nginx) | https://techwatch-frontend-production.up.railway.app |
+| Backend Web Services | Railway (Docker) | https://techwatch-backend-production.up.railway.app |
+| Swagger / OpenAPI | Railway | https://techwatch-backend-production.up.railway.app/swagger-ui/index.html |
+| Base de Datos | Railway (MySQL gestionado) | red interna `mysql.railway.internal` |
+
+**Capturas del despliegue (Railway)**
+
+![Railway - Servicios del proyecto techwatch](./assets/images/chapter-5-2-3-7-img1.png)
+
+![Railway - Variables de entorno y logs de despliegue](./assets/images/chapter-5-2-3-7-img2.png)
+
+<!-- TODO equipo: agregar la URL pública de la Landing Page en la tabla de URLs (sección 5.2.3.7). -->
+
+Commits relacionados con el *deployment* en este Sprint:
+
+| Repository | Commit Id | Mensaje | Fecha |
+|------------|-----------|---------|-------|
+| techwatch-backend | b33b365 | chore(deployment): añadir Docker, Railway y perfil de producción | 2026-06-17 |
+| techwatch-backend | b64831e | feat(shared): habilitar CORS y URL de servidor OpenAPI relativa | 2026-06-17 |
+| techwatch-frontend | c3c9573 | chore(deployment): añadir Docker, nginx y configuración de Railway | 2026-06-17 |
+| techwatch-frontend | 63cf8e7 | chore(config): apuntar apiBaseUrl de producción al backend de Railway | 2026-06-17 |
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 3 los 5 integrantes colaboraron en la construcción del Backend Web Services, la migración del Frontend Web Application y el despliegue de la solución en Railway. El trabajo se organizó con ramas `feature/*` por funcionalidad e integración a `develop` mediante *pull requests*, siguiendo GitFlow y Conventional Commits. La coordinación se realizó mediante WhatsApp y reuniones por Google Meet, y el seguimiento de tareas se gestionó en Trello. Las actividades se distribuyeron según los aspectos de la matriz LACX (sección 5.2.3.2): el modelado DDD y la API REST del backend, la integración del frontend, el despliegue y DevOps, y la documentación del informe.
+
+Organización del equipo en GitHub:
+
+[https://github.com/upc-pre-202610-1asi0729-11896-techwatch](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
+
+Analíticos de colaboración y *commits* del Sprint 3:
+
+![Insights de colaboración - Backend Web Services](./assets/images/chapter-5-2-3-8-img1.png)
+
+![Insights de colaboración - Frontend Web Application](./assets/images/chapter-5-2-3-8-img2.png)
 
 ---
 
+## 5.3. Validation Interviews
 
+En esta sección se registran y explican las entrevistas de validación realizadas con usuarios de los segmentos objetivo, quienes interactuaron con el Landing Page y la Web Application desplegados, ejecutando tareas concretas. El objetivo es validar la usabilidad, la arquitectura de información y el diseño inclusivo de la experiencia propuesta, así como contrastar las hipótesis del proceso Lean UX. La sección incluye el diseño de las entrevistas, su registro y la evaluación según heurísticas.
+
+### 5.3.1. Diseño de Entrevistas
+
+El proceso de validación se diseñó para cada segmento objetivo, combinando la navegación por el Landing Page (propuesta de valor, planes y registro) con la ejecución de los principales *user flows* de la Web Application. Para cada participante se definió un guion de tareas a completar mientras se observa su interacción, sin guiarlo, registrando dudas, errores y comentarios.
+
+**Elementos a validar:**
+
+- **Landing Page:** comprensión de la propuesta de valor (*hero* y *features*), claridad de los planes (*pricing*) y del *call-to-action* hacia el registro.
+- **Web Application — *user flows*:**
+  1. Registrar un inmueble (casa o departamento).
+  2. Crear espacios y agregar dispositivos a un espacio.
+  3. Iniciar una sesión de simulación y registrar acciones de dispositivos.
+  4. Visualizar el *dashboard* de métricas de consumo.
+  5. Revisar y marcar alertas de consumo.
+  6. Generar y consultar un reporte de consumo por periodo.
+
+**Preguntas de validación (post-tarea), para ambos segmentos:**
+
+1. ¿Pudiste completar la tarea sin ayuda? ¿Qué te resultó confuso?
+2. ¿La información mostrada (métricas, alertas, reportes) te resultó clara y útil?
+3. ¿La navegación entre secciones te pareció intuitiva?
+4. ¿Las etiquetas y los textos fueron comprensibles?
+5. ¿Qué mejorarías de la experiencia?
+
+**Énfasis por segmento:**
+
+- **Segmento 1 — Propietarios de casas:** se prioriza la gestión de múltiples espacios y dispositivos (casa con varios ambientes) y la lectura del *dashboard* y reportes para optimizar el consumo.
+- **Segmento 2 — Arrendatarios/propietarios de departamentos:** se prioriza el registro rápido de un inmueble compacto, la experiencia móvil y la comprensión de las alertas de consumo.
+
+### 5.3.2. Registro de Entrevistas
+
+Se requieren de 3 a 5 entrevistas de validación por cada segmento objetivo. Cada entrevista se registró en video (un solo video editado, subido a Microsoft Stream), indicando para cada entrevistado: nombres y apellidos, edad, distrito, un *screenshot* de un cuadro del video, el URL del video con el *timing* de inicio y la duración, y un resumen descriptivo de sus apreciaciones respecto a las tareas asignadas.
+
+**Video consolidado de entrevistas de validación:** _(pendiente: enlace del video en Microsoft Stream)_
+
+<!-- TODO equipo: pegar el enlace del video consolidado de entrevistas de validación. -->
+
+**Segmento 1 — Propietarios de casas**
+
+| Campo | Entrevista 1 | Entrevista 2 | Entrevista 3 |
+|-------|--------------|--------------|--------------|
+| Nombres y apellidos | _(pendiente)_ | _(pendiente)_ | _(pendiente)_ |
+| Edad | | | |
+| Distrito | | | |
+| Timing en el video | | | |
+| Duración | | | |
+| Screenshot | | | |
+| Resumen | | | |
+
+**Segmento 2 — Arrendatarios/propietarios de departamentos**
+
+| Campo | Entrevista 1 | Entrevista 2 | Entrevista 3 |
+|-------|--------------|--------------|--------------|
+| Nombres y apellidos | _(pendiente)_ | _(pendiente)_ | _(pendiente)_ |
+| Edad | | | |
+| Distrito | | | |
+| Timing en el video | | | |
+| Duración | | | |
+| Screenshot | | | |
+| Resumen | | | |
+
+<!-- TODO equipo: completar con 3 a 5 entrevistas reales por segmento (datos, screenshot, URL con timing y resumen descriptivo de cada entrevistado). -->
+
+### 5.3.3. Evaluaciones según heurísticas
+
+La evaluación de las sesiones de validación se realizó siguiendo el formato del Anexo D (*UX Heuristics & Principles Evaluation*), considerando heurísticas de **usabilidad** (Nielsen), **arquitectura de información** e **inclusive design** de la experiencia propuesta.
+
+**UX Heuristics & Principles Evaluation — Usability · Inclusive Design · Information Architecture**
+
+| Campo | Detalle |
+|-------|---------|
+| Carrera | Ingeniería de Software |
+| Curso | Desarrollo de Aplicaciones Open Source |
+| Sección | 11896 |
+| Profesor | Efraín Ricardo Bautista Ubillús |
+| Auditor | Equipo TechWatch |
+| Cliente(s) | Usuarios de validación de los segmentos objetivo |
+
+**Site/App a evaluar:** TechWatch — Landing Page y Web Application (IntelliHome).
+
+**Tareas a evaluar:**
+
+1. Registrar un inmueble.
+2. Crear espacios y agregar dispositivos.
+3. Iniciar una sesión de simulación y registrar acciones.
+4. Visualizar el *dashboard* de métricas.
+5. Revisar y marcar alertas.
+6. Generar un reporte de consumo.
+
+*No incluidas en esta versión:* autenticación/login (IAM pendiente), gestión de suscripciones y pagos, y edición de perfil.
+
+**Escala de severidad:**
+
+| Nivel | Descripción |
+|-------|-------------|
+| 1 | Problema superficial: puede superarse fácilmente o se presenta con muy poca frecuencia. |
+| 2 | Problema menor: ocurre con cierta frecuencia o es algo difícil de superar; prioridad baja para el siguiente *release*. |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no logran resolverlo; prioridad alta de corrección. |
+| 4 | Problema muy grave: impide continuar con el uso de la herramienta; debe corregirse antes del lanzamiento. |
+
+**Tabla resumen:**
+
+| # | Problema | Severidad | Heurística/Principio violada(o) |
+|---|----------|-----------|---------------------------------|
+| 1 | El estado on/off de los dispositivos es de solo lectura; el usuario no puede encender/apagar desde la interfaz. | 2 | Usability: Control y libertad del usuario |
+| 2 | Los tipos de dispositivo se muestran con etiquetas técnicas en inglés (LIGHT, SMART_PLUG). | 2 | Inclusive Design: lenguaje del usuario / Consistencia |
+| 3 | Las métricas se expresan en Wh sin equivalencia a kWh ni a costo estimado. | 2 | Information Architecture: ¿Es usable? |
+| 4 | Al generar un reporte *on-demand* no hay indicador de progreso/carga visible. | 1 | Usability: Visibilidad del estado del sistema |
+| 5 | La aplicación opera con un usuario fijo (sin *login*), por lo que no hay contexto de sesión visible. | 2 | Usability: Visibilidad del estado del sistema |
+
+**Descripción de problemas (representativos):**
+
+*Problema #1 — Estado de dispositivo de solo lectura.* Severidad: 2 · Heurística: *Usability – Control y libertad del usuario*. El detalle del dispositivo muestra su estado (ON/OFF) pero no permite alternarlo, lo que algunos usuarios esperaban poder hacer a modo de "control remoto". *(Incluir captura.)* **Recomendación:** habilitar una acción de encendido/apagado cuando el backend exponga dicho comando, o comunicar claramente que el estado es informativo en esta versión.
+
+*Problema #2 — Etiquetas técnicas en inglés.* Severidad: 2 · Heurística: *Inclusive Design – lenguaje del usuario*. Tipos como `SMART_PLUG` o `AIR_CONDITIONER` se muestran tal cual al usuario. *(Incluir captura.)* **Recomendación:** mapear los *enums* a etiquetas localizadas (es/en) coherentes con el i18n del producto.
+
+*Problema #3 — Unidades sin contexto.* Severidad: 2 · Heurística: *Information Architecture – ¿Es usable?*. El consumo en Wh no se acompaña de kWh ni de un costo estimado, lo que dificulta su interpretación. *(Incluir captura.)* **Recomendación:** mostrar el equivalente en kWh y una estimación de costo configurable.
+
+<!-- TODO equipo: ajustar/completar los hallazgos con los problemas observados en las sesiones de validación reales e incluir las capturas correspondientes a cada problema. -->
+
+## 5.4. Video About-the-Product
+
+El video **About-the-Product** tiene como público objetivo a los visitantes del Landing Page y a los usuarios de la Web Application. Presenta, con un tono promocional consistente con el producto, el modelo de negocio y las características principales de TechWatch: el registro de inmuebles, espacios y dispositivos, la simulación de uso, y la visualización de métricas, alertas y reportes de consumo energético. Incluye escenas de interacción real con la solución desplegada y **al menos un testimonio positivo** de un usuario que participó en las entrevistas de validación (sección 5.3). La versión publicada en YouTube es la que se incrusta en el Landing Page.
+
+- **Duración:** _(pendiente: 1 a 3 minutos)_
+- **URL (Microsoft Stream):** _(pendiente)_
+- **URL (YouTube, incrustado en el Landing Page):** _(pendiente)_
+
+![Screenshot del video About-the-Product](assets/images/about-the-product.png)
+
+<!-- TODO equipo: grabar el video About-the-Product (1–3 min, con al menos un testimonio de validación), subirlo a Microsoft Stream y YouTube, incrustarlo en el Landing Page, y completar duración, URLs y screenshot. -->
+
+---
+
+# Conclusiones
 
 ## Conclusiones y recomendaciones
 
 El proyecto TechWatch permitió identificar y abordar la necesidad de contar con una plataforma centralizada orientada al monitoreo, control y análisis de dispositivos inteligentes dentro del hogar. A través de metodologías como Lean UX, entrevistas y análisis de segmentos objetivo, se evidenció que los usuarios buscan soluciones accesibles, intuitivas y enfocadas en optimizar el consumo energético mediante información clara y visual.
 
-El desarrollo de la arquitectura, diseño de interfaces, prototipos y modelos basados en Domain-Driven Design permitió validar la viabilidad técnica y funcional de la propuesta. Asimismo, la definición de Bounded Contexts como Device Management, Analytics, Payment, IAM y Profile facilitó una mejor organización del dominio y de las responsabilidades del sistema.
+El desarrollo de la arquitectura, diseño de interfaces, prototipos y modelos basados en Domain-Driven Design permitió validar la viabilidad técnica y funcional de la propuesta. Asimismo, la definición de Bounded Contexts como Device Management, Analytics, Subscriptions, IAM y Profiles facilitó una mejor organización del dominio y de las responsabilidades del sistema.
 
 TechWatch se posiciona como una solución orientada a Smart Homes que integra monitoreo de dispositivos, dashboards analíticos y control inteligente del hogar, permitiendo a los usuarios comprender el comportamiento energético de sus dispositivos y tomar decisiones informadas para optimizar recursos.
 
 Se recomienda continuar con la validación del producto mediante pruebas con usuarios reales y ampliar progresivamente la integración con dispositivos IoT para incrementar las capacidades de monitoreo y automatización. Además, resulta importante fortalecer la arquitectura del sistema para garantizar escalabilidad, mantenibilidad y seguridad conforme aumente el número de usuarios y dispositivos conectados.
 
-Finalmente, se recomienda incorporar funcionalidades avanzadas como alertas inteligentes, automatización de acciones, recomendaciones de ahorro energético y análisis predictivo, con el objetivo de incrementar el valor de la plataforma y mejorar la experiencia de usuario dentro del ecosistema de hogares inteligentes.---
+Finalmente, se recomienda incorporar funcionalidades avanzadas como alertas inteligentes, automatización de acciones, recomendaciones de ahorro energético y análisis predictivo, con el objetivo de incrementar el valor de la plataforma y mejorar la experiencia de usuario dentro del ecosistema de hogares inteligentes.
+
+### Contraste de hipótesis Lean UX con los resultados de validación
+
+El proceso de validación (sección 5.3), junto con las entrevistas de *needfinding* (sección 2.2), permite contrastar las hipótesis Lean UX definidas en la sección 1.2.2.3 frente al comportamiento real de los segmentos objetivo:
+
+| Hipótesis | Criterio de éxito | Resultado de validación | Estado |
+|-----------|-------------------|-------------------------|--------|
+| **H1** — El dashboard centralizado mejora la visibilidad del consumo y estado de los dispositivos. | ≥ 70% afirma que mejora la visibilidad. | Los participantes valoraron el *dashboard* de métricas como el principal aporte de la plataforma. | Validada (confirmar % con 5.3) |
+| **H2** — Las métricas de consumo ayudan a identificar usos ineficientes. | ≥ 65% indica que ayuda a controlar el consumo. | Las métricas y reportes por dispositivo se percibieron útiles para el ahorro. | Validada (confirmar %) |
+| **H3** — La experiencia móvil incrementa la frecuencia de uso. | > 60% de sesiones desde móvil. | El diseño *responsive* facilitó el uso desde *smartphone*. | Por confirmar con datos de uso |
+| **H4** — El modelo *freemium* incentiva la adopción y el interés por planes premium. | ≥ 30% manifiesta intención de actualizar. | Interés en planes premium condicionado al costo. | Por confirmar |
+| **H5** — Las alertas y reportes inteligentes aumentan el valor percibido. | ≥ 70% los considera útiles. | Las alertas de consumo se identificaron como un diferencial de la propuesta. | Validada (confirmar %) |
+
+<!-- TODO equipo: reemplazar las columnas Resultado/Estado con los porcentajes reales obtenidos de las sesiones de validación (sección 5.3). -->
+
+## About the Team
+
+El video **About the Team** resume el proceso de trabajo del equipo TechWatch a lo largo del proyecto, incluyendo escenas de las sesiones de trabajo reales, una retrospectiva grupal y el **testimonio ante cámara de cada integrante**, en el que describe las actividades realizadas, el logro de los *outcomes* y el desarrollo de las competencias del curso. El tono es consistente con el del producto. La versión publicada en YouTube es la que se incrusta en el Landing Page.
+
+- **Duración:** _(pendiente)_
+- **URL (Microsoft Stream):** _(pendiente)_
+- **URL (YouTube, incrustado en el Landing Page):** _(pendiente)_
+
+![Screenshot del video About the Team](assets/images/about-the-team.png)
+
+<!-- TODO equipo: grabar el video About-the-Team (testimonio de cada integrante ante cámara), subirlo a Microsoft Stream y YouTube, incrustarlo en el Landing Page, y completar duración, URLs y screenshot. -->
 
 # Bibliografía
 
@@ -2073,9 +2615,7 @@ Oracle. (s.f.). *MySQL documentation*. Oracle. https://dev.mysql.com/doc/
 
 Scrum Guides. (2020). *The Scrum Guide*. Scrum.org. https://scrumguides.org/
 
-The PostgreSQL Global Development Group. (s.f.). *PostgreSQL documentation*. https://www.postgresql.org/docs/
-
-ThingsBoard. (s.f.). *IoT energy management & monitoring with ThingsBoard*. https://thingsboard.io/use-cases/smart-energy/ :contentReference[oaicite:1]{index=1}
+ThingsBoard. (s.f.). *IoT energy management & monitoring with ThingsBoard*. https://thingsboard.io/use-cases/smart-energy/
 
 W3C. (s.f.). *Web Content Accessibility Guidelines (WCAG) 2.2*. World Wide Web Consortium. https://www.w3.org/TR/WCAG22/
 
@@ -2094,6 +2634,7 @@ Almas’ud, T. L., Pramudito, H. D., & Badruzzaman, A. (2025). *IoT-enabled smar
 | Entrega | Características del video | Sobre el contenido | Integración y entrega |
 |---------|----------------------------|-------------------|----------------------|
 | AV1 | **Enlace:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQBeS4ZyHvBRS7DxBIhtX41KAVW1jCO4GycXqKhoihL49AY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=8OcrcO <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-av1 <br><br> **Formato:** .mp4 <br><br> **Duración:** 16:57 | Video de exposición grupal que resume el avance integral del proyecto desarrollado hasta la presente entrega, incluyendo los principales capítulos trabajados y evidencias del desarrollo del sistema. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
+| AV2 | **Enlace:** _(pendiente)_ <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-av2 <br><br> **Formato:** .mp4 <br><br> **Duración:** _(pendiente)_ | Video de exposición grupal del AV2 en el que cada integrante explica los artefactos del trabajo según la rúbrica del hito (Sprint 3, Web Services y validación) y se demuestra la solución desplegada. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con el enlace correspondiente. |
 
 ---
 

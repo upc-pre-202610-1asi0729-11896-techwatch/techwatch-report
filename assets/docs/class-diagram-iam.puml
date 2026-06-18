@@ -1,0 +1,112 @@
+@startuml IAM
+
+skinparam classAttributeIconSize 0
+skinparam monochrome false
+skinparam shadowing false
+
+package "IAM" {
+
+    ' Value Objects
+    class EmailAddress <<Value Object>> <<Record>> {
+        - address: String
+        + EmailAddress(address: String)
+    }
+
+    enum Role <<Enum>> {
+        ROLE_USER
+        ROLE_ADMIN
+    }
+
+    ' Aggregates
+    class User <<Aggregate Root>> {
+        - id: Long
+        - email: EmailAddress
+        - passwordHash: String
+        - role: Role
+        + User(command: SignUpCommand, passwordHash: String)
+        + updatePassword(passwordHash: String): User
+        + changeRole(role: Role): User
+    }
+
+    ' Domain Events
+    class UserRegisteredEvent <<Event>> {
+        - userId: Long
+        - email: String
+    }
+
+    ' Commands
+    class SignUpCommand <<Command>> <<Record>> {
+        - email: String
+        - password: String
+    }
+
+    class SignInCommand <<Command>> <<Record>> {
+        - email: String
+        - password: String
+    }
+
+    ' Queries
+    class GetUserByIdQuery <<Query>> <<Record>> {
+        - userId: Long
+    }
+
+    class GetUserByEmailQuery <<Query>> <<Record>> {
+        - email: EmailAddress
+    }
+
+    ' Repository (port)
+    interface UserRepository <<Repository>> {
+        + findById(id: Long): Optional<User>
+        + findByEmail(email: EmailAddress): Optional<User>
+        + existsByEmail(email: EmailAddress): Boolean
+        + save(user: User): User
+    }
+
+    ' Application Services
+    interface UserCommandService <<Service>> {
+        + handle(command: SignUpCommand): Result<User, ApplicationError>
+        + handle(command: SignInCommand): Result<AuthenticatedUser, ApplicationError>
+    }
+
+    interface UserQueryService <<Service>> {
+        + handle(query: GetUserByIdQuery): Optional<User>
+        + handle(query: GetUserByEmailQuery): Optional<User>
+    }
+
+    ' Infrastructure Services (security)
+    interface TokenService <<Service>> {
+        + generateToken(email: String): String
+        + validateToken(token: String): Boolean
+        + getEmailFromToken(token: String): String
+    }
+
+    interface HashingService <<Service>> {
+        + encode(rawPassword: String): String
+        + matches(rawPassword: String, encodedPassword: String): Boolean
+    }
+
+    ' ACL Facade
+    interface IamContextFacade <<Facade>> {
+        + fetchUserIdByEmail(email: String): Long
+        + fetchUserEmailById(userId: Long): String
+    }
+
+    ' Relations
+    User *-- EmailAddress : email >
+    User --> Role : role >
+    User ..> SignUpCommand : created from >
+    User ..> UserRegisteredEvent : publishes >
+    UserCommandService ..> SignUpCommand : handles >
+    UserCommandService ..> SignInCommand : handles >
+    UserCommandService --> UserRepository : uses >
+    UserCommandService --> HashingService : uses >
+    UserCommandService --> TokenService : uses >
+    UserQueryService ..> GetUserByIdQuery : handles >
+    UserQueryService ..> GetUserByEmailQuery : handles >
+    UserQueryService --> UserRepository : uses >
+    UserRepository ..> User : manages >
+    IamContextFacade ..> UserCommandService : delegates to >
+    IamContextFacade ..> UserQueryService : delegates to >
+}
+
+@enduml
