@@ -2391,11 +2391,13 @@ La documentación OpenAPI se incorporó junto con cada endpoint mediante anotaci
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
-Durante el Sprint 3 se desplegó por primera vez la **solución completa en producción** sobre **Railway**, dentro de un único proyecto (`techwatch`) que agrupa tres servicios: **techwatch-backend**, **MySQL** y **techwatch-frontend**. La Landing Page mantiene su despliegue en Railway con una nueva versión. A continuación se resumen los pasos realizados por cada producto.
+Durante el Sprint 3 se desplegó por primera vez la **solución completa en producción** sobre **Railway**, dentro de un único proyecto (`techwatch`) que agrupa cuatro servicios: **techwatch-backend**, **MySQL**, **techwatch-frontend** y **techwatch-landing**. A continuación se resumen los pasos realizados por cada producto.
 
 **Backend Web Services (Spring Boot).** Se añadió un `Dockerfile` multi-stage (*build* con `maven:3.9.16-eclipse-temurin-26`, *runtime* con `eclipse-temurin:26-jre`) y un perfil `prod` (`application-prod.properties`). El despliegue se realiza desde el repositorio con la CLI de Railway (`railway up --ci --service techwatch-backend`), que construye la imagen Docker. Las variables de entorno (`DATABASE_URL`, `DATABASE_USERNAME`, `DATABASE_PASSWORD`, `SPRING_PROFILES_ACTIVE=prod`) referencian el servicio de MySQL a través de la red interna de Railway. URL pública: **https://techwatch-backend-production.up.railway.app** (Swagger en `/swagger-ui/index.html`).
 
 **Frontend Web Application (Angular).** Se añadió un `Dockerfile` multi-stage que compila la aplicación con `node:22-alpine` y la sirve con `nginx:1.27-alpine` (nginx escucha en el puerto 8080 que Railway expone por defecto). La URL del Backend Web Services queda incorporada en el *build*. URL pública: **https://techwatch-frontend-production.up.railway.app**.
+
+**Landing Page (HTML/CSS/JS).** Se añadió un `Dockerfile` que sirve el sitio estático con `nginx:1.27-alpine` (puerto 8080 con IPv4/IPv6) y se desplegó como un cuarto servicio dentro del mismo proyecto `techwatch`, reemplazando el despliegue independiente de Sprints anteriores. URL pública: **https://techwatch-landing-production.up.railway.app**.
 
 **Base de Datos (MySQL).** Se provisionó una instancia gestionada de MySQL como servicio del mismo proyecto. El esquema se crea automáticamente al arrancar (`ddl-auto=update`) y el backend se conecta por la red interna `mysql.railway.internal`. Para poblar datos de demostración se dispone del script idempotente `scripts/seed-data.ps1`, que crea propiedades, espacios y dispositivos y ejecuta una simulación que genera métricas, alertas y reportes mediante el API.
 
@@ -2403,7 +2405,7 @@ Durante el Sprint 3 se desplegó por primera vez la **solución completa en prod
 
 | Producto | Plataforma | URL pública |
 |----------|------------|-------------|
-| Landing Page | Railway | _(pendiente)_ |
+| Landing Page | Railway (Docker + nginx) | https://techwatch-landing-production.up.railway.app |
 | Frontend Web Application | Railway (Docker + nginx) | https://techwatch-frontend-production.up.railway.app |
 | Backend Web Services | Railway (Docker) | https://techwatch-backend-production.up.railway.app |
 | Swagger / OpenAPI | Railway | https://techwatch-backend-production.up.railway.app/swagger-ui/index.html |
@@ -2420,8 +2422,6 @@ Durante el Sprint 3 se desplegó por primera vez la **solución completa en prod
 El despliegue de los productos se realiza a partir de su **imagen Docker**: el `Dockerfile` de cada servicio genera una imagen que luego se ejecuta como contenedor. La siguiente captura muestra el panel *Images* de **Docker Desktop** con las imágenes construidas a partir de los `Dockerfile` del proyecto —`techwatch-backend:1.0.0` (≈592 MB) y `techwatch-frontend:1.0.0`—, evidenciando que tanto el Backend Web Services como el Frontend Web Application quedan empaquetados como contenedores Docker.
 
 ![Imágenes Docker de techwatch-backend y techwatch-frontend en Docker Desktop](./assets/images/docker-image.png)
-
-<!-- TODO equipo: agregar la URL pública de la Landing Page en la tabla de URLs (sección 5.2.3.7). -->
 
 Commits relacionados con el *deployment* en este Sprint:
 
