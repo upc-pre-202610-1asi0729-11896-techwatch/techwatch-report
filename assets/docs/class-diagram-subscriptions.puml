@@ -7,152 +7,136 @@ skinparam shadowing false
 package "Subscriptions" {
 
     ' Value Objects
-    class UserId <<Value Object>> {
-        - value: Long
-        + getValue(): Long
-        + equals(other: UserId): Boolean
+    class UserId <<Value Object>> <<Record>> {
+        - userId: Long
     }
 
-    class SubscriptionId <<Value Object>> {
-        - value: Long
-        + getValue(): Long
-        + equals(other: SubscriptionId): Boolean
+    class PlanId <<Value Object>> <<Record>> {
+        - planId: Long
     }
 
-    class PlanId <<Value Object>> {
-        - value: Long
-        + getValue(): Long
-        + equals(other: PlanId): Boolean
+    class SubscriptionId <<Value Object>> <<Record>> {
+        - subscriptionId: Long
     }
 
-    class Email <<Value Object>> {
-        - value: String
-        + getValue(): String
-        + equals(other: Email): Boolean
-    }
-
-    class Money <<Value Object>> {
-        - amount: Double
+    class Money <<Value Object>> <<Record>> {
+        - amount: BigDecimal
         - currency: String
-        + getAmount(): Double
-        + getCurrency(): String
-        + equals(other: Money): Boolean
     }
 
-    class PlanFeatures <<Value Object>> {
-        - maxDevices: Integer
-        - hasAdvancedMetrics: Boolean
-        - hasCustomReports: Boolean
-        - hasAlerts: Boolean
-        - hasUnlimitedHistory: Boolean
-        + getMaxDevices(): Integer
-        + hasAdvancedMetrics(): Boolean
-        + hasCustomReports(): Boolean
-        + hasAlerts(): Boolean
-        + hasUnlimitedHistory(): Boolean
-        + equals(other: PlanFeatures): Boolean
-    }
-
-    ' Enumerations
     enum PlanType <<Enum>> {
         FREE
-        BASIC
         PREMIUM
+    }
+
+    enum BillingCycle <<Enum>> {
+        MONTHLY
+        YEARLY
     }
 
     enum SubscriptionStatus <<Enum>> {
         ACTIVE
         CANCELLED
         EXPIRED
-        PENDING
     }
 
     enum PaymentStatus <<Enum>> {
         PENDING
         COMPLETED
         FAILED
-        REFUNDED
     }
 
-    enum BillingCycle <<Enum>> {
-        MONTHLY
-        ANNUAL
-    }
-
-    ' Entities
-    class Plan <<Entity>> {
-        - id: PlanId
+    ' Aggregates
+    class Plan <<Aggregate Root>> {
+        - id: Long
         - name: String
-        - planType: PlanType
+        - type: PlanType
         - price: Money
         - billingCycle: BillingCycle
-        - features: PlanFeatures
+        - maxDevices: Integer
+        - hasAdvancedMetrics: Boolean
+        - hasCustomReports: Boolean
+        - hasAlerts: Boolean
+        - hasUnlimitedHistory: Boolean
         - isActive: Boolean
-        - createdAt: LocalDateTime
-        - updatedAt: LocalDateTime
-        + getId(): PlanId
-        + getName(): String
-        + getPlanType(): PlanType
-        + getPrice(): Money
-        + getBillingCycle(): BillingCycle
-        + getFeatures(): PlanFeatures
-        + isActive(): Boolean
     }
 
-    class Subscription <<Aggregate Root>> <<Entity>> {
-        - id: SubscriptionId
+    class Subscription <<Aggregate Root>> {
+        - id: Long
         - userId: UserId
         - planId: PlanId
         - status: SubscriptionStatus
-        - startDate: LocalDate
-        - endDate: LocalDate
+        - startDate: Date
+        - endDate: Date
         - autoRenew: Boolean
-        - createdAt: LocalDateTime
-        - updatedAt: LocalDateTime
-        + getId(): SubscriptionId
-        + getUserId(): UserId
-        + getPlanId(): PlanId
-        + getStatus(): SubscriptionStatus
-        + getStartDate(): LocalDate
-        + getEndDate(): LocalDate
-        + isAutoRenew(): Boolean
-        + activate(): void
-        + cancel(): void
-        + expire(): void
-        + isActive(): Boolean
+        + Subscription(command: CreateSubscriptionCommand)
+        + activate(): Subscription
+        + cancel(): Subscription
+        + renew(): Subscription
+        + changePlan(planId: PlanId): Subscription
     }
 
-    class Payment <<Entity>> {
+    class Payment <<Aggregate Root>> {
         - id: Long
         - subscriptionId: SubscriptionId
         - amount: Money
         - status: PaymentStatus
         - externalPaymentId: String
-        - processedAt: LocalDateTime
-        + getId(): Long
-        + getSubscriptionId(): SubscriptionId
-        + getAmount(): Money
-        + getStatus(): PaymentStatus
-        + getExternalPaymentId(): String
-        + getProcessedAt(): LocalDateTime
-        + markAsCompleted(externalId: String): void
-        + markAsFailed(): void
+        - processedAt: Date
+        + Payment(command: ProcessPaymentCommand)
+        + confirm(externalPaymentId: String): Payment
+        + fail(): Payment
     }
 
-    ' Repositories
+    ' Commands
+    class CreateSubscriptionCommand <<Command>> <<Record>> {
+        - userId: Long
+        - planId: Long
+        - autoRenew: Boolean
+    }
+
+    class ChangeSubscriptionPlanCommand <<Command>> <<Record>> {
+        - subscriptionId: Long
+        - planId: Long
+    }
+
+    class CancelSubscriptionCommand <<Command>> <<Record>> {
+        - subscriptionId: Long
+    }
+
+    class RenewSubscriptionCommand <<Command>> <<Record>> {
+        - subscriptionId: Long
+    }
+
+    class ProcessPaymentCommand <<Command>> <<Record>> {
+        - subscriptionId: Long
+        - amount: BigDecimal
+        - currency: String
+    }
+
+    ' Queries
+    class GetAllPlansQuery <<Query>> <<Record>> {
+    }
+
+    class GetActiveSubscriptionByUserIdQuery <<Query>> <<Record>> {
+        - userId: UserId
+    }
+
+    class GetPaymentsBySubscriptionIdQuery <<Query>> <<Record>> {
+        - subscriptionId: SubscriptionId
+    }
+
+    ' Repositories (ports)
+    interface PlanRepository <<Repository>> {
+        + findById(id: Long): Optional<Plan>
+        + findAllByIsActiveTrue(): List<Plan>
+        + save(plan: Plan): Plan
+    }
+
     interface SubscriptionRepository <<Repository>> {
-        + findById(id: SubscriptionId): Optional<Subscription>
-        + findByUserId(userId: UserId): Optional<Subscription>
+        + findById(id: Long): Optional<Subscription>
         + findActiveByUserId(userId: UserId): Optional<Subscription>
         + save(subscription: Subscription): Subscription
-        + deleteById(id: SubscriptionId): void
-    }
-
-    interface PlanRepository <<Repository>> {
-        + findById(id: PlanId): Optional<Plan>
-        + findByPlanType(planType: PlanType): Optional<Plan>
-        + findAllActive(): List<Plan>
-        + save(plan: Plan): Plan
     }
 
     interface PaymentRepository <<Repository>> {
@@ -161,48 +145,53 @@ package "Subscriptions" {
         + save(payment: Payment): Payment
     }
 
-    ' Services
-    class SubscriptionService <<Service>> {
-        - subscriptionRepository: SubscriptionRepository
-        - planRepository: PlanRepository
-        - paymentComponent: PaymentComponent
-        + createSubscription(userId: UserId, planId: PlanId, billingCycle: BillingCycle): Subscription
-        + cancelSubscription(subscriptionId: SubscriptionId): Subscription
-        + upgradeSubscription(subscriptionId: SubscriptionId, newPlanId: PlanId): Subscription
-        + getSubscriptionByUserId(userId: UserId): Subscription
-        + getAvailablePlans(): List<Plan>
-        + renewSubscription(subscriptionId: SubscriptionId): Subscription
+    ' Application Services
+    interface SubscriptionCommandService <<Service>> {
+        + handle(command: CreateSubscriptionCommand): Result<Long, ApplicationError>
+        + handle(command: ChangeSubscriptionPlanCommand): Result<Subscription, ApplicationError>
+        + handle(command: CancelSubscriptionCommand): Result<Subscription, ApplicationError>
+        + handle(command: RenewSubscriptionCommand): Result<Subscription, ApplicationError>
+        + handle(command: ProcessPaymentCommand): Result<Long, ApplicationError>
     }
 
-    class PaymentComponent <<Service>> {
-        - paymentRepository: PaymentRepository
-        + processPayment(subscription: Subscription, amount: Money): Payment
-        + refundPayment(paymentId: Long): Payment
-        + getPaymentsBySubscriptionId(subscriptionId: SubscriptionId): List<Payment>
+    interface SubscriptionQueryService <<Service>> {
+        + handle(query: GetAllPlansQuery): List<Plan>
+        + handle(query: GetActiveSubscriptionByUserIdQuery): Optional<Subscription>
+        + handle(query: GetPaymentsBySubscriptionIdQuery): List<Payment>
+    }
+
+    ' Outbound adapter to the external payment service
+    class ExternalPaymentService <<Adapter>> {
+        + processPayment(amount: Money, subscriptionId: Long): String
+    }
+
+    ' ACL Facade
+    interface SubscriptionsContextFacade <<Facade>> {
+        + fetchMaxDevicesForUser(userId: Long): Integer
+        + hasFeature(userId: Long, feature: String): Boolean
     }
 
     ' Relations
-    Subscription "1" *-- "0..*" Payment : records >
-    Subscription --> Plan : subscribes to >
-    Subscription --> SubscriptionStatus : uses >
-    Subscription *-- SubscriptionId : id >
+    Plan *-- Money : price >
+    Plan --> PlanType : type >
+    Plan --> BillingCycle : billingCycle >
     Subscription *-- UserId : userId >
     Subscription *-- PlanId : planId >
-    Plan --> PlanType : uses >
-    Plan --> BillingCycle : uses >
-    Plan *-- PlanFeatures : features >
-    Plan *-- Money : price >
-    Plan *-- PlanId : id >
-    Payment --> PaymentStatus : uses >
-    Payment *-- Money : amount >
+    Subscription --> SubscriptionStatus : status >
     Payment *-- SubscriptionId : subscriptionId >
-    SubscriptionService --> SubscriptionRepository : uses >
-    SubscriptionService --> PlanRepository : uses >
-    SubscriptionService --> PaymentComponent : uses >
-    PaymentComponent --> PaymentRepository : uses >
-    SubscriptionRepository ..> Subscription : manages >
+    Payment *-- Money : amount >
+    Payment --> PaymentStatus : status >
+    SubscriptionCommandService --> PlanRepository : uses >
+    SubscriptionCommandService --> SubscriptionRepository : uses >
+    SubscriptionCommandService --> PaymentRepository : uses >
+    SubscriptionCommandService --> ExternalPaymentService : processes payments >
+    SubscriptionQueryService --> PlanRepository : uses >
+    SubscriptionQueryService --> SubscriptionRepository : uses >
+    SubscriptionQueryService --> PaymentRepository : uses >
     PlanRepository ..> Plan : manages >
+    SubscriptionRepository ..> Subscription : manages >
     PaymentRepository ..> Payment : manages >
+    SubscriptionsContextFacade ..> SubscriptionQueryService : delegates to >
 }
 
 @enduml

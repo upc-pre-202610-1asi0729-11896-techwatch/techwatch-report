@@ -7,55 +7,31 @@ skinparam shadowing false
 package "Device Management" {
 
     ' Value Objects
-    class UserId <<Value Object>> {
-        - value: Long
-        + getValue(): Long
-        + equals(other: UserId): Boolean
+    class UserId <<Value Object>> <<Record>> {
+        - userId: Long
     }
 
-    class PropertyId <<Value Object>> {
-        - value: Long
-        + getValue(): Long
-        + equals(other: PropertyId): Boolean
+    class PropertyId <<Value Object>> <<Record>> {
+        - propertyId: Long
     }
 
-    class SpaceId <<Value Object>> {
-        - value: Long
-        + getValue(): Long
-        + equals(other: SpaceId): Boolean
+    class SpaceId <<Value Object>> <<Record>> {
+        - spaceId: Long
     }
 
-    class DeviceId <<Value Object>> {
-        - value: Long
-        + getValue(): Long
-        + equals(other: DeviceId): Boolean
+    class DeviceId <<Value Object>> <<Record>> {
+        - deviceId: Long
     }
 
-    class Name <<Value Object>> {
-        - value: String
-        + getValue(): String
-        + equals(other: Name): Boolean
+    class PowerWatts <<Value Object>> <<Record>> {
+        - watts: Double
     }
 
-    class Address <<Value Object>> {
-        - value: String
-        + getValue(): String
-        + equals(other: Address): Boolean
+    enum PropertyType <<Enum>> {
+        HOUSE
+        APARTMENT
     }
 
-    class Brand <<Value Object>> {
-        - value: String
-        + getValue(): String
-        + equals(other: Brand): Boolean
-    }
-
-    class Model <<Value Object>> {
-        - value: String
-        + getValue(): String
-        + equals(other: Model): Boolean
-    }
-
-    ' Enumerations
     enum DeviceType <<Enum>> {
         LIGHT
         THERMOSTAT
@@ -66,124 +42,238 @@ package "Device Management" {
     }
 
     enum DeviceStatus <<Enum>> {
-        ACTIVE
-        INACTIVE
+        ON
+        OFF
     }
 
-    ' Entities
-    class Property <<Aggregate Root>> <<Entity>> {
-        - id: PropertyId
-        - name: Name
-        - address: Address
-        - propertyType: String
+    enum SessionStatus <<Enum>> {
+        ACTIVE
+        ENDED
+    }
+
+    ' Aggregates and Entities
+    class Property <<Aggregate Root>> {
+        - id: Long
         - userId: UserId
-        - createdAt: LocalDateTime
-        - updatedAt: LocalDateTime
-        + getId(): PropertyId
-        + getName(): Name
-        + getAddress(): Address
-        + getPropertyType(): String
-        + getUserId(): UserId
-        + setName(name: Name): void
-        + setAddress(address: Address): void
+        - name: String
+        - address: String
+        - type: PropertyType
+        - spaces: List<Space>
+        + Property(command: CreatePropertyCommand)
+        + updateInformation(name: String, address: String): Property
+        + addSpace(name: String, description: String): Space
     }
 
     class Space <<Entity>> {
-        - id: SpaceId
-        - name: Name
+        - id: Long
+        - name: String
         - description: String
-        - propertyId: PropertyId
-        - createdAt: LocalDateTime
-        - updatedAt: LocalDateTime
-        + getId(): SpaceId
-        + getName(): Name
-        + getDescription(): String
-        + getPropertyId(): PropertyId
-        + setName(name: Name): void
-        + setDescription(description: String): void
+        + updateInformation(name: String, description: String): Space
     }
 
-    class Device <<Entity>> {
-        - id: DeviceId
-        - name: Name
-        - brand: Brand
-        - model: Model
-        - deviceType: DeviceType
-        - status: DeviceStatus
+    class Device <<Aggregate Root>> {
+        - id: Long
         - spaceId: SpaceId
-        - createdAt: LocalDateTime
-        - updatedAt: LocalDateTime
-        + getId(): DeviceId
-        + getName(): Name
-        + getBrand(): Brand
-        + getModel(): Model
-        + getDeviceType(): DeviceType
-        + getStatus(): DeviceStatus
-        + getSpaceId(): SpaceId
-        + setName(name: Name): void
-        + setBrand(brand: Brand): void
-        + setModel(model: Model): void
-        + setStatus(status: DeviceStatus): void
+        - name: String
+        - brand: String
+        - model: String
+        - type: DeviceType
+        - status: DeviceStatus
+        - powerWatts: PowerWatts
+        + Device(command: AddDeviceToSpaceCommand)
+        + turnOn(): Device
+        + turnOff(): Device
+        + updateInformation(name: String, brand: String, model: String): Device
     }
 
-    ' Repositories
+    class SimulationSession <<Aggregate Root>> {
+        - id: Long
+        - userId: UserId
+        - propertyId: PropertyId
+        - status: SessionStatus
+        - startedAt: Date
+        - endedAt: Date
+        - actions: List<DeviceAction>
+        - usageData: List<UsageDataRecord>
+        + SimulationSession(command: StartSimulationSessionCommand)
+        + recordAction(deviceId: DeviceId, actionType: String, parameterName: String, parameterValue: String): DeviceAction
+        + end(): SimulationSession
+    }
+
+    class DeviceAction <<Entity>> {
+        - id: Long
+        - deviceId: DeviceId
+        - actionType: String
+        - parameterName: String
+        - parameterValue: String
+        - executedAt: Date
+    }
+
+    class UsageDataRecord <<Entity>> {
+        - id: Long
+        - deviceId: DeviceId
+        - consumptionValue: Double
+        - unit: String
+        - recordedAt: Date
+    }
+
+    ' Domain Events
+    class UsageDataGeneratedEvent <<Event>> {
+        - sessionId: Long
+        - deviceId: Long
+        - consumptionValue: Double
+    }
+
+    class DeviceStatusChangedEvent <<Event>> {
+        - deviceId: Long
+        - status: DeviceStatus
+    }
+
+    ' Commands
+    class CreatePropertyCommand <<Command>> <<Record>> {
+        - userId: Long
+        - name: String
+        - address: String
+        - type: PropertyType
+    }
+
+    class CreateSpaceCommand <<Command>> <<Record>> {
+        - propertyId: Long
+        - name: String
+        - description: String
+    }
+
+    class AddDeviceToSpaceCommand <<Command>> <<Record>> {
+        - spaceId: Long
+        - name: String
+        - brand: String
+        - model: String
+        - type: DeviceType
+        - powerWatts: Double
+    }
+
+    class EditDeviceCommand <<Command>> <<Record>> {
+        - deviceId: Long
+        - name: String
+        - brand: String
+        - model: String
+        - type: DeviceType
+        - powerWatts: Double
+    }
+
+    class StartSimulationSessionCommand <<Command>> <<Record>> {
+        - userId: Long
+        - propertyId: Long
+    }
+
+    class RecordDeviceActionCommand <<Command>> <<Record>> {
+        - sessionId: Long
+        - deviceId: Long
+        - actionType: String
+        - parameterName: String
+        - parameterValue: String
+    }
+
+    class EndSimulationSessionCommand <<Command>> <<Record>> {
+        - sessionId: Long
+    }
+
+    ' Queries
+    class GetPropertiesByUserIdQuery <<Query>> <<Record>> {
+        - userId: UserId
+    }
+
+    class GetDevicesBySpaceIdQuery <<Query>> <<Record>> {
+        - spaceId: SpaceId
+    }
+
+    class GetActiveSimulationSessionByUserIdQuery <<Query>> <<Record>> {
+        - userId: UserId
+    }
+
+    ' Repositories (ports)
     interface PropertyRepository <<Repository>> {
-        + findById(id: PropertyId): Optional<Property>
+        + findById(id: Long): Optional<Property>
         + findByUserId(userId: UserId): List<Property>
         + save(property: Property): Property
-        + deleteById(id: PropertyId): void
+        + deleteById(id: Long): void
     }
 
     interface DeviceRepository <<Repository>> {
-        + findById(id: DeviceId): Optional<Device>
+        + findById(id: Long): Optional<Device>
         + findBySpaceId(spaceId: SpaceId): List<Device>
-        + findByPropertyId(propertyId: PropertyId): List<Device>
+        + countByUserId(userId: UserId): Long
         + save(device: Device): Device
-        + deleteById(id: DeviceId): void
+        + deleteById(id: Long): void
     }
 
-    ' Services
-    class PropertyService <<Service>> {
-        - propertyRepository: PropertyRepository
-        + createProperty(property: Property): Property
-        + getPropertyById(id: PropertyId): Property
-        + getPropertiesByUserId(userId: UserId): List<Property>
-        + updateProperty(id: PropertyId, property: Property): Property
-        + deleteProperty(id: PropertyId): void
-        + createSpace(propertyId: PropertyId, space: Space): Space
-        + getSpacesByPropertyId(propertyId: PropertyId): List<Space>
+    interface SimulationSessionRepository <<Repository>> {
+        + findById(id: Long): Optional<SimulationSession>
+        + findActiveByUserId(userId: UserId): Optional<SimulationSession>
+        + save(session: SimulationSession): SimulationSession
     }
 
-    class DeviceService <<Service>> {
-        - deviceRepository: DeviceRepository
-        + addDevice(spaceId: SpaceId, device: Device): Device
-        + getDeviceById(id: DeviceId): Device
-        + getDevicesBySpaceId(spaceId: SpaceId): List<Device>
-        + updateDevice(id: DeviceId, device: Device): Device
-        + deleteDevice(id: DeviceId): void
+    ' Application Services
+    interface PropertyCommandService <<Service>> {
+        + handle(command: CreatePropertyCommand): Result<Long, ApplicationError>
+        + handle(command: CreateSpaceCommand): Result<Long, ApplicationError>
+    }
+
+    interface PropertyQueryService <<Service>> {
+        + handle(query: GetPropertiesByUserIdQuery): List<Property>
+    }
+
+    interface DeviceCommandService <<Service>> {
+        + handle(command: AddDeviceToSpaceCommand): Result<Long, ApplicationError>
+        + handle(command: EditDeviceCommand): Result<Device, ApplicationError>
+    }
+
+    interface DeviceQueryService <<Service>> {
+        + handle(query: GetDevicesBySpaceIdQuery): List<Device>
+    }
+
+    interface SimulationSessionCommandService <<Service>> {
+        + handle(command: StartSimulationSessionCommand): Result<Long, ApplicationError>
+        + handle(command: RecordDeviceActionCommand): Result<SimulationSession, ApplicationError>
+        + handle(command: EndSimulationSessionCommand): Result<SimulationSession, ApplicationError>
+    }
+
+    interface SimulationSessionQueryService <<Service>> {
+        + handle(query: GetActiveSimulationSessionByUserIdQuery): Optional<SimulationSession>
+    }
+
+    ' Outbound ACL
+    class ExternalSubscriptionService <<ACL>> {
+        + fetchMaxDevicesForUser(userId: Long): Integer
     }
 
     ' Relations
     Property "1" *-- "0..*" Space : contains >
-    Space "1" *-- "0..*" Device : contains >
-    Device --> DeviceType : uses >
-    Device --> DeviceStatus : uses >
-    Property *-- Name : name >
-    Property *-- Address : address >
     Property *-- UserId : userId >
-    Property *-- PropertyId : id >
-    Space *-- Name : name >
-    Space *-- SpaceId : id >
-    Space *-- PropertyId : propertyId >
-    Device *-- Name : name >
-    Device *-- Brand : brand >
-    Device *-- Model : model >
-    Device *-- DeviceId : id >
+    Property --> PropertyType : type >
     Device *-- SpaceId : spaceId >
-    PropertyService --> PropertyRepository : uses >
-    DeviceService --> DeviceRepository : uses >
+    Device *-- PowerWatts : powerWatts >
+    Device --> DeviceType : type >
+    Device --> DeviceStatus : status >
+    SimulationSession "1" *-- "0..*" DeviceAction : records >
+    SimulationSession "1" *-- "0..*" UsageDataRecord : generates >
+    SimulationSession *-- UserId : userId >
+    SimulationSession *-- PropertyId : propertyId >
+    SimulationSession --> SessionStatus : status >
+    DeviceAction *-- DeviceId : deviceId >
+    UsageDataRecord *-- DeviceId : deviceId >
+    SimulationSession ..> UsageDataGeneratedEvent : publishes >
+    Device ..> DeviceStatusChangedEvent : publishes >
+    PropertyCommandService --> PropertyRepository : uses >
+    PropertyQueryService --> PropertyRepository : uses >
+    DeviceCommandService --> DeviceRepository : uses >
+    DeviceCommandService --> ExternalSubscriptionService : checks plan limit >
+    DeviceQueryService --> DeviceRepository : uses >
+    SimulationSessionCommandService --> SimulationSessionRepository : uses >
+    SimulationSessionQueryService --> SimulationSessionRepository : uses >
     PropertyRepository ..> Property : manages >
     DeviceRepository ..> Device : manages >
+    SimulationSessionRepository ..> SimulationSession : manages >
 }
 
 @enduml
