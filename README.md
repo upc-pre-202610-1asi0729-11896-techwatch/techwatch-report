@@ -2392,6 +2392,12 @@ Durante el Sprint 3 se desplegó por primera vez la **solución completa en prod
 
 ![Railway - Variables de entorno y logs de despliegue](./assets/images/chapter-5-2-3-7-img2.png)
 
+**Evidencia de la imagen Docker (Docker Desktop)**
+
+El despliegue de los productos se realiza a partir de su **imagen Docker**: el `Dockerfile` de cada servicio genera una imagen que luego se ejecuta como contenedor. La siguiente captura muestra el panel *Images* de **Docker Desktop** con las imágenes construidas a partir de los `Dockerfile` del proyecto —`techwatch-backend:1.0.0` (≈592 MB) y `techwatch-frontend:1.0.0`—, evidenciando que tanto el Backend Web Services como el Frontend Web Application quedan empaquetados como contenedores Docker.
+
+![Imágenes Docker de techwatch-backend y techwatch-frontend en Docker Desktop](./assets/images/docker-image.png)
+
 <!-- TODO equipo: agregar la URL pública de la Landing Page en la tabla de URLs (sección 5.2.3.7). -->
 
 Commits relacionados con el *deployment* en este Sprint:
