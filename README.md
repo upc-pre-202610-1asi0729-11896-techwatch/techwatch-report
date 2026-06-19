@@ -2227,9 +2227,12 @@ Capturas de las principales vistas:
 
 ![Dashboard de analítica: métricas, alertas y reportes](./assets/images/chapter-5-2-3-5-img3.png)
 
-**Video de visualización y navegación del Sprint 3:** _(pendiente: enlace al video de navegación — ver Anexo de Evidencia de Video)_
+**Video de visualización y navegación del Sprint 3 (Product Navigation):** demostración del recorrido por los principales *user flows* del producto desplegado (registro de propiedades, espacios y dispositivos, simulación de acciones, y visualización de métricas, alertas y reportes).
 
-<!-- TODO equipo: pegar el enlace del video (Microsoft Stream) que ilustra la visualización y navegación logradas en este Sprint. -->
+- **Duración:** 4:19 min
+- **URL (Microsoft Stream):** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310877_upc_edu_pe/IQC-Otlc_V8uQafHAcGBjdNYARcHHtrY_IorSueRBRfHdJY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ff1i6y
+
+![Screenshot del video de navegación del producto](./assets/images/product-navigation.png)
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
@@ -2543,13 +2546,13 @@ La evaluación de las sesiones de validación se realizó siguiendo el formato d
 
 El video **About-the-Product** tiene como público objetivo a los visitantes del Landing Page y a los usuarios de la Web Application. Presenta, con un tono promocional consistente con el producto, el modelo de negocio y las características principales de TechWatch: el registro de inmuebles, espacios y dispositivos, la simulación de uso, y la visualización de métricas, alertas y reportes de consumo energético. Incluye escenas de interacción real con la solución desplegada y **al menos un testimonio positivo** de un usuario que participó en las entrevistas de validación (sección 5.3). La versión publicada en YouTube es la que se incrusta en el Landing Page.
 
-- **Duración:** _(pendiente: 1 a 3 minutos)_
-- **URL (Microsoft Stream):** _(pendiente)_
-- **URL (YouTube, incrustado en el Landing Page):** _(pendiente)_
+- **Duración:** 1:30 min
+- **URL (Microsoft Stream):** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310877_upc_edu_pe/IQDhCTNsGjzeS6kAoX2jYgvcAaSqByjHAyqXcSRxA9T0mIA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5LEZKe
+- **URL (YouTube, incrustado en el Landing Page):** https://www.youtube.com/watch?v=DF6cDTX380g
 
-![Screenshot del video About-the-Product](assets/images/about-the-product.png)
+![Screenshot del video About-the-Product](./assets/images/about-the-product.png)
 
-<!-- TODO equipo: grabar el video About-the-Product (1–3 min, con al menos un testimonio de validación), subirlo a Microsoft Stream y YouTube, incrustarlo en el Landing Page, y completar duración, URLs y screenshot. -->
+<!-- TODO equipo: incrustar el video de YouTube en una sección del Landing Page (las versiones de Microsoft Stream y YouTube ya están). -->
 
 ---
 
