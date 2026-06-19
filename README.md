@@ -3,36 +3,59 @@
 </p>
 
 <h1 align="center">Universidad Peruana de Ciencias Aplicadas</h1>
-<h2 align="center">Facultad de Ingeniería</h2>
-<h3 align="center">Carrera de Ingeniería de Software</h3>
-<h3 align="center">Ciclo 2026-10</h3>
+<h2 align="center">Carrera de Ingeniería de Software</h2>
+
+<h3 align="center">1ASI0729</h3>
 
 <h3 align="center">Desarrollo de Aplicaciones Open Source </h3>
-<h3 align="center">NRC : 11896</h3>
-<h3 align="center">Nombre del Profesor: Efraín Ricardo Bautista Ubillús</h3>
-
-
-
+<h3 align="center">NRC</h3>
+<h3 align="center">11896</h3>
 
 <h1 align="center">Informe de Trabajo Final</h1>
+
+<h3 align="center">Docente</h3>
+<h2 align="center">Bautista Ubillús, Efraín Ricardo</h2>
+
+<h3 align="center">Equipo</h3>
 <h2 align="center">TechWatch</h2>
-<h2 align="center">IntelliHome</h2>
 
-<h3 align="center">Integrantes</h3>
+<h3 align="center">Proyecto</h3>
+<h2 align="center">Intellihome</h2>
 
-<div align="center">
+<h2 align="center">Integrantes</h2>
 
-| Código     | Apellidos y Nombres |
-|------------|---------------------|
-| U202310877 | Alva Abanto, Luis Andrés |
-| U20241E367 | Toro Turpo, Ronal |
-| U202019498 | Fernandez Garfias, Alexander Piero |
-| U202111529 | Montalvo Vásquez, Bruno Rodrigo |
-| U20221B756 | Becerra Durand, Sebastian Uriel |
+<table align="center">
+  <tr>
+    <th>Código</th>
+    <th>Apellidos y Nombres</th>
+  </tr>
+  <tr>
+    <td>U202310877</td>
+    <td>Alva Abanto, Luis Andrés</td>
+  </tr>
+  <tr>
+    <td>U20241E367</td>
+    <td>Toro Turpo, Ronal</td>
+  </tr>
+  <tr>
+    <td>U202019498</td>
+    <td>Fernandez Garfias, Alexander Piero</td>
+  </tr>
+  <tr>
+    <td>U202111529</td>
+    <td>Montalvo Vásquez, Bruno Rodrigo</td>
+  </tr>
+  <tr>
+    <td>U20221B756</td>
+    <td>Becerra Durand, Sebastian Uriel</td>
+  </tr>
+</table>
 
-</div>
+<h3 align="center">Periodo 202610</h3>
 
-<h3 align="center">Año : 2026</h3>
+<h2 align="center">Junio 2026</h2>
+
+<div style="page-break-after: always;"></div>
 
 
 <h2 align="center">Registro de Versiones del Informe</h2>
