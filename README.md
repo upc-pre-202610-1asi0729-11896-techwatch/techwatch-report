@@ -2584,7 +2584,160 @@ El video **About-the-Product** tiene como público objetivo a los visitantes del
 <!-- TODO equipo: incrustar el video de YouTube en una sección del Landing Page (las versiones de Microsoft Stream y YouTube ya están). -->
 
 ---
+## Validation Interviews
+### 5.3.1. Diseño de entrevistas
+### Entrevista 1 — Gustavo Rivas
 
+| Campo | Detalle |
+|-------|---------|
+| Nombres y apellidos | Gustavo Rivas |
+| Edad | 26 años |
+| Distrito | San Juan de Lurigancho |
+| Segmento objetivo | Primer segmento objetivo: Propietario de casa |
+| Fecha de entrevista | 18 Junio 2026 |
+| Duración | 01:23 |
+| Timing en el video | 00:00 - 01:23 |
+| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb|
+
+![Screenshot del video](assets/images/Cap3entrevista1.png)
+
+**Resumen:**  
+Gustavo Rivas dice que le parece bien todo pero le gustaria que hubiera una forma de borrar los espacios ya creados, por si hubo algun error y no ocupe espacio
+---
+
+### Entrevista 2 — Tito Rusel Montalvo Vera
+
+| Campo | Detalle |
+|-------|---------|
+| Nombres y apellidos | Tito Rusel Montalvo Vera |
+| Edad | 51 años |
+| Distrito | San Juan de Miraflores |
+| Segmento objetivo | Primer segmento objetivo: Propietario de casa |
+| Fecha de entrevista | 18 Junio 2026 |
+| Duración | 03:09 |
+| Timing en el video | 02:31 - 05:40 |
+| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb |
+
+![Screenshot del video](assets/images/Cap3entrevista2.png)
+
+**Resumen:**  
+Tito Rusel Montalvo Vera dice que le parece muy util, pero recomendaria que algunos botones o comandos esten escritos en español, porque hay personas como el que no entienden ingles.
+
+---
+
+### Entrevista 3 — José Vásquez Martínez
+
+| Campo | Detalle |
+|-------|---------|
+| Nombres y apellidos | José Vásquez Martínez |
+| Edad | 24 años |
+| Distrito | San Juan de Lurigancho |
+| Segmento objetivo | Primer segmento objetivo: Propietario de casa |
+| Fecha de entrevista | 19 Junio 2026 |
+| Duración | 05:39 |
+| Timing en el video | 05:41 - 11:20 |
+| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb |
+
+![Screenshot del video](assets/images/Cap3entrevista3.png)
+
+**Resumen:**  
+José Vásquez Martínez dice que le parece muy util la pagina pero recomendaria que la interfaz como la del inicio de sesion y demas fueran mas intuitivas y amigables para el consumidor casual.
+
+---
+
+### Entrevista 4 — Daniel Palomino
+
+| Campo | Detalle |
+|-------|---------|
+| Nombres y apellidos | Daniel Palomino |
+| Edad | 22 años |
+| Distrito | Santiago de Surco |
+| Segmento objetivo | Segundo segmento objetivo:Arrendatario / propietario de departamento |
+| Fecha de entrevista | 19 Junio 2026 |
+| Duración | 05:41 |
+| Timing en el video | 11:21 - 17:02 |
+| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb|
+
+![Screenshot del video](assets/images/Cap3entrevista4.png)
+
+**Resumen:**  
+Daniel Palomino piensa que es muy util, aunque le gustaria que agreguen gráficos de consumo electrico para gestionar mejor el uso.
+
+---
+
+### Entrevista 5 — Eleno Giovanni Mena Zuleta
+
+| Campo | Detalle |
+|-------|---------|
+| Nombres y apellidos | Eleno Giovanni Mena Zuleta |
+| Edad | 39 años |
+| Distrito | San Juan de Lurigancho |
+| Segmento objetivo | Segundo segmento objetivo: Arrendatario / propietario de departamento |
+| Fecha de entrevista | 19 Junio 2026 |
+| Duración | 02:53 |
+| Timing en el video | 17:03 - 19:56 |
+| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb|
+
+![Screenshot del video](assets/images/Cap3entrevista5.png)
+
+**Resumen:**  
+Eleno Giovanni Mena Zuleta dice que le parece muy intuitivo y util la pagina, sin embargo nunca pudo aprener ingles asi que le gustaria que algunas opciones estuvieran en español.
+
+---
+
+### Entrevista 6 — Gloria Quispe
+
+| Campo | Detalle |
+|-------|---------|
+| Nombres y apellidos | Gloria Quispe |
+| Edad | 30 años |
+| Distrito | San Juan de Miraflores |
+| Segmento objetivo | Segundo segmento objetivo: Arrendataria / propietaria de departamento |
+| Fecha de entrevista | 19 Junio 2026 |
+| Duración | 02:25 |
+| Timing en el video | 19:57 - 22:31 |
+| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb|
+
+![Screenshot del video](assets/images/Cap3entrevista6.png)
+
+**Resumen:**  
+Gloria Quispe dice que esta bien, aunque no entiende el ingles y necesitaria ayuda para saber que hacer con los botones, a su vez que algunos botones lo confundirian.
+
+---
+
+### 5.2.3. Análisis de entrevistas
+
+Se realizaron **6 entrevistas válidas**, distribuidas en los dos segmentos objetivo definidos previamente: **3 propietarios de casas (50%)** y **3 arrendatarios/propietarios de departamentos (50%)**.
+
+#### Análisis del Segmento 1: Propietarios de casas
+
+Se realizaron tres entrevistas a propietarios de casas. El **100%** de los entrevistados manifestó que la plataforma resulta útil y cumple con su propósito principal de gestión y monitoreo.
+
+Sin embargo, surgieron oportunidades de mejora importantes. El **33%** sugirió incorporar una opción para eliminar espacios previamente creados, con el fin de corregir errores y mantener una mejor organización dentro de la plataforma. Asimismo, el **33%** indicó que algunos botones o comandos deberían estar disponibles en español para facilitar su comprensión por parte de usuarios que no dominan el idioma inglés.
+
+Por otro lado, el **33%** recomendó mejorar la interfaz de usuario, especialmente en secciones como el inicio de sesión, para que resulte más intuitiva y amigable para usuarios con poca experiencia tecnológica.
+
+En general, los propietarios valoran positivamente la propuesta, pero consideran importante fortalecer la accesibilidad, la facilidad de uso y las opciones de gestión de espacios para mejorar la experiencia del usuario.
+
+#### Análisis del Segmento 2: Arrendatarios y propietarios de departamentos
+
+Se realizaron tres entrevistas a arrendatarios y propietarios de departamentos. El **100%** de los participantes consideró que la plataforma es útil e intuitiva para la administración y monitoreo de espacios.
+
+Respecto a las mejoras sugeridas, el **33%** recomendó incorporar gráficos de consumo eléctrico que permitan visualizar de manera más clara la información y facilitar la toma de decisiones relacionadas con el uso de energía.
+
+Además, el **67%** señaló dificultades relacionadas con el idioma, indicando que algunas opciones y botones en inglés pueden generar confusión. Estos entrevistados manifestaron que una versión completamente en español o una mayor adaptación del contenido mejoraría significativamente la experiencia de uso.
+
+Asimismo, el **33%** comentó que ciertos botones pueden resultar confusos para usuarios menos familiarizados con la tecnología, por lo que sería conveniente simplificar la navegación y mejorar la claridad visual de algunas funciones.
+
+Los resultados muestran que este segmento percibe valor en la plataforma, pero considera prioritario mejorar la accesibilidad mediante una interfaz más clara, elementos visuales de análisis y una localización completa al idioma español.
+
+#### Conclusión general
+
+Los resultados obtenidos evidencian una aceptación positiva de la propuesta por parte de ambos segmentos. El **100%** de los entrevistados considera que la plataforma es útil y responde a una necesidad real de monitoreo y gestión de espacios.
+
+Las principales oportunidades de mejora identificadas se relacionan con la experiencia de usuario. Entre ellas destacan la incorporación de funciones de administración más flexibles, como la eliminación de espacios creados, la implementación de gráficos para visualizar información de consumo, una interfaz más intuitiva y una adaptación completa al idioma español.
+
+Estos hallazgos validan la propuesta de valor de **TechWatch**, al mismo tiempo que proporcionan lineamientos claros para futuras mejoras orientadas a incrementar la accesibilidad, usabilidad y satisfacción de los usuarios finales.
 # Conclusiones
 
 ## Conclusiones y recomendaciones
@@ -2665,8 +2818,7 @@ Almas’ud, T. L., Pramudito, H. D., & Badruzzaman, A. (2025). *IoT-enabled smar
 
 | Entrega | Características del video | Sobre el contenido | Integración y entrega |
 |---------|----------------------------|-------------------|----------------------|
-| AV1 | **Enlace:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQBeS4ZyHvBRS7DxBIhtX41KAVW1jCO4GycXqKhoihL49AY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=8OcrcO <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-av1 <br><br> **Formato:** .mp4 <br><br> **Duración:** 16:57 | Video de exposición grupal que resume el avance integral del proyecto desarrollado hasta la presente entrega, incluyendo los principales capítulos trabajados y evidencias del desarrollo del sistema. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
-| AV2 | **Enlace:** _(pendiente)_ <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-av2 <br><br> **Formato:** .mp4 <br><br> **Duración:** _(pendiente)_ | Video de exposición grupal del AV2 en el que cada integrante explica los artefactos del trabajo según la rúbrica del hito (Sprint 3, Web Services y validación) y se demuestra la solución desplegada. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con el enlace correspondiente. |
+| AV1 | **Enlace:** https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/IQBeS4ZyHvBRS7DxBIhtX41KAVW1jCO4GycXqKhoihL49AY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=8OcrcO <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-av1 <br><br> **Formato:** .mp4 <br><br> **Duración:** 16:57 | Video de exposición grupal que resume el avance integral del proyecto desarrollado hasta la presente entrega, incluyendo los principales capítulos trabajados y evidencias del desarrollo del sistema. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
 
 ---
 
@@ -2674,7 +2826,13 @@ Almas’ud, T. L., Pramudito, H. D., & Badruzzaman, A. (2025). *IoT-enabled smar
 
 | Sección | Características del video | Sobre el contenido | Integración y entrega |
 |--------|----------------------------|-------------------|----------------------|
-| Needfinding Interviews | **Enlace:** el link del video de entrevistas es este; https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-needfinding-sprint-1 <br> **Formato:** .mp4 <br> **Duración:** 22:22 | Consolida todas las entrevistas realizadas, incluyendo títulos con información del entrevistado, segmento objetivo y fecha de entrevista. Presenta evidencia audiovisual del proceso de investigación con usuarios para identificar necesidades, problemas y oportunidades del mercado objetivo. | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo, introducción de la sección, registro de entrevistas y análisis general con hallazgos clave para la construcción de User Persona. |
+| Needfinding Interviews | **Enlace:** el link del video de entrevistas es este; https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-techwatch-needfinding-sprint-1 <br> **Formato:** .mp4 <br> **Duración:** 22:22 | Consolida todas las entrevistas realizadas, incluyendo títulos con información del entrevistado, segmento objetivo y fecha de entrevista. Presenta evidencia audiovisual del proceso de investigación con usuarios para identificar necesidades, problemas y oportunidades del mercado objetivo. | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo, introducción de la sección, registro de entrevistas y análisis general con hallazgos clave para la construcción de User Persona. |
+
+## Anexo C. Validation interviews
+
+| Sección | Características del video | Sobre el contenido | Integración y entrega |
+|--------|----------------------------|-------------------|----------------------|
+| Needfinding Interviews | **Enlace:** el link del video de entrevistas es este; https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-techwatch-needfinding-sprint-3 <br> **Formato:** .mp4 <br> **Duración:** 22:31 | Consolida todas las entrevistas realizadas, incluyendo títulos con información del entrevistado, segmento objetivo y fecha de entrevista. Presenta evidencia audiovisual del proceso de investigación con usuarios para identificar necesidades, problemas y oportunidades del mercado objetivo. | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo, introducción de la sección, registro de entrevistas y análisis general con hallazgos clave para la construcción de User Persona. |
 
 
 ---
