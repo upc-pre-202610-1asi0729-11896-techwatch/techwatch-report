@@ -73,7 +73,7 @@
 
 **AV2.** Para la AV2, la elaboración del informe se centró en documentar el Sprint 3 (Backend Web Services con OpenAPI, y las evidencias de desarrollo y despliegue en Railway), el capítulo de Validation Interviews con la evaluación según heurísticas, las secciones de Video About-the-Product y About the Team, y la actualización del Registro de Versiones, el Student Outcome y este apartado. Todos los integrantes participaron en la redacción y revisión del informe, coordinando mediante Trello y reuniones por Google Meet.
 
-![Project Report Collaboration Insights AV2](./assets/images/project_colaboration_av2.png)
+![Project Report Collaboration Insights AV2](./assets/images/insights-av2.png)
 
 <!-- TODO equipo: reemplazar por la captura real de los analíticos de colaboración (Insights → Contributors) del repositorio techwatch-report para la AV2. -->
 
@@ -2772,11 +2772,11 @@ El video **About the Team** resume el proceso de trabajo del equipo TechWatch a 
 
 - **Duración:** _(pendiente)_
 - **URL (Microsoft Stream):** _(pendiente)_
-- **URL (YouTube, incrustado en el Landing Page):** _(pendiente)_
+- **URL (YouTube, incrustado en el Landing Page):** https://youtu.be/v_BGvnbr95c
 
-![Screenshot del video About the Team](assets/images/about-the-team.png)
+![Screenshot del video About the Team](./assets/images/about-the-team.png)
 
-<!-- TODO equipo: grabar el video About-the-Team (testimonio de cada integrante ante cámara), subirlo a Microsoft Stream y YouTube, incrustarlo en el Landing Page, y completar duración, URLs y screenshot. -->
+<!-- TODO equipo: completar la URL de Microsoft Stream, la duración y el screenshot (about-the-team.png) del video About-the-Team, e incrustar la versión de YouTube en el Landing Page. -->
 
 # Bibliografía
 
