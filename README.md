@@ -67,6 +67,8 @@
 | TB1     | 13-05-2026 | Equipo TechWatch | Actualización del Project Report con la inclusión del Sprint 2 y corrección de observaciones de la entrega anterior relacionadas con hipótesis Lean UX, diagramas, wireflows, Sprint Goal, estadísticas de colaboración, nomenclatura de archivos y visualización de imágenes y enlaces. |
 | AV2     | 17-06-2026 | Equipo TechWatch | Actualización del Project Report para el AV2: inclusión del Sprint 3 con la migración del JSON Server al RESTful API real en Spring Boot desplegado en Railway y su documentación con OpenAPI, capítulo de Validation Interviews con evaluación según heurísticas, sección de Video About-the-Product, sección About the Team en Conclusiones, y actualización del Registro de Versiones, Student Outcome y Project Report Collaboration Insights. |
 
+<div style="page-break-after: always;"></div>
+
 <h2 align="center">Project Report Collaboration Insights</h2>
 
 ![Project Report Collaboration Insights TB1](./assets/images/project_colaboration.png)
@@ -81,6 +83,7 @@
 URL de la organizacion  del Project Report en GitHub:
 [https://github.com/techwatch-upc/Project](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
 
+<div style="page-break-after: always;"></div>
 
 ## Contenido
 
@@ -487,6 +490,8 @@ Aunque gestionan una menor cantidad de dispositivos en comparación con el segme
 | Objetivo principal | Reducir costos energéticos y optimizar el uso del hogar |
 ---
 
+<div style="page-break-after: always;"></div>
+
 # Capítulo II: Requirements Elicitation & Analysis
 
 ## 2.1. Competidores
@@ -840,6 +845,8 @@ El siguiente glosario reúne los términos y conceptos clave del dominio de nego
 | Freemium | Modelo de negocio que ofrece acceso gratuito con funcionalidades limitadas y planes de pago con funcionalidades extendidas. |
 ---
 
+<div style="page-break-after: always;"></div>
+
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
@@ -938,6 +945,8 @@ El Product Backlog ha sido priorizado enfocándose en el valor entregado al nego
 | 35 | TS14 | API obtener perfil de usuario | Como Developer, deseo consultar la información del perfil para mostrarla y editarla desde el frontend. | 3 |
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 # Capítulo IV: Product Design
 
@@ -1663,6 +1672,8 @@ La tabla subscriptions representa la suscripción de cada usuario hacia un plan 
 
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 # Capítulo V: Product Implementation, Validation & Deployment
 
