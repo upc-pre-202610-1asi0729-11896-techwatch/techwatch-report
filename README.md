@@ -447,7 +447,7 @@ Creemos que incorporar alertas y reportes inteligentes sobre consumo energético
 
 #### 1.2.2.4. Lean UX Canvas
 
-![Lean UX Canvas](assets/images/lean_ux_canvas.png)
+![Lean UX Canvas](./assets/images/lean_ux_canvas.png)
 
 ## 1.3. Segmentos objetivo
 
@@ -756,11 +756,11 @@ Las siguientes fichas de User Persona han sido elaboradas en base al análisis d
 
 **1. Primer segmento**
 
-![User persona 1](assets/images/user-persona1.png)
+![User persona 1](./assets/images/user-persona1.png)
 
 **2. Segundo segmento**
 
-![User persona 2](assets/images/user-persona2.png)
+![User persona 2](./assets/images/user-persona2.png)
 
 ### 2.3.2. User Task Matrix
 
@@ -1935,7 +1935,7 @@ Se registró el progreso del *Sprint 1* con *commits* en el repositorio de la *L
 
 Evidencia de ejecución :
 
-![Evidencia 1 - Landing Page](assets/images/chapter-5-2-1-5-img1.png)
+![Evidencia 1 - Landing Page](./assets/images/chapter-5-2-1-5-img1.png)
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
@@ -1962,11 +1962,11 @@ La evidencia de despliegue incluye el repositorio conectado en Railway, builds e
 Flujo: GitHub (código) → Railway (build + hosting) → https://landing-page-production-8095.up.railway.app
 ```
 
-![Captura 1 - Entorno de despliegue](assets/images/chapter-5-2-1-7-img1.png)
+![Captura 1 - Entorno de despliegue](./assets/images/chapter-5-2-1-7-img1.png)
 
-![Captura 2 - Sitio en producción](assets/images/chapter-5-2-1-7-img2.png)
+![Captura 2 - Sitio en producción](./assets/images/chapter-5-2-1-7-img2.png)
 
-![Captura 3 - Landingpage en producción](assets/images/chapter-5-2-1-7-img3.png)
+![Captura 3 - Landingpage en producción](./assets/images/chapter-5-2-1-7-img3.png)
 
 ### 5.2.1.8. Team Collaboration Insights during Sprint
 
@@ -1981,7 +1981,7 @@ https://github.com/upc-pre-202610-1asi0729-11896-techwatch
 
 La evidencia de colaboración incluye commits realizados por los integrantes, uso de ramas feature, integración hacia develop y despliegues posteriores hacia la rama main.
 
-![Trello Sprint 1](assets/images/chapter-5-2-1-8-img1.png)
+![Trello Sprint 1](./assets/images/chapter-5-2-1-8-img1.png)
 
 Link del trello :
 
@@ -2022,7 +2022,7 @@ En este Sprint el equipo se organiza en torno a cuatro aspectos principales: Dev
 
 El objetivo principal del Sprint 2 es entregar la primera versión funcional del Frontend Web Application de IntelliHome, cubriendo las funcionalidades core de gestión de hogares, dispositivos y visualización de métricas de consumo energético, integradas con el JSON Server desplegado que actúa como backend simulado.
 
-![Trello Sprint 1](assets/images/chapter-5-2-2-3-img1.png)
+![Trello Sprint 1](./assets/images/chapter-5-2-2-3-img1.png)
 
 URL del tablero: [https://trello.com/b/3Evj4rSv/sprint-backlog-2-techwatch](https://trello.com/b/3Evj4rSv/sprint-backlog-2-techwatch)
 
@@ -2085,7 +2085,7 @@ La interfaz fue desarrollada utilizando Angular y TypeScript, manteniendo una ex
 
 [Ver aplicación en producción](https://frontend-tech-black.vercel.app)
 
-![Frontend Captura](assets/images/chapter-5-2-2-5-img1.png)
+![Frontend Captura](./assets/images/chapter-5-2-2-5-img1.png)
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
@@ -2121,7 +2121,7 @@ GitHub (código) → [Plataforma] (build + hosting) → [URL pública del fronte
 
 **URL pública del Frontend:** [frontend-tech-black.vercel.app](https://frontend-tech-black.vercel.app)
 
-![Frontend Deploy](assets/images/chapter-5-2-2-7-img1.png)
+![Frontend Deploy](./assets/images/chapter-5-2-2-7-img1.png)
 
 
 **JSON Server:**
@@ -2130,7 +2130,7 @@ El JSON Server fue desplegado en Railway y expone los endpoints de users, homes,
 
 **URL pública del JSON Server:** [Deploy Json Server](mock-api-lc-json-production.up.railway.app)
 
-![JSON Server](assets/images/chapter-5-2-2-7-img2.png)
+![JSON Server](./assets/images/chapter-5-2-2-7-img2.png)
 
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
@@ -2141,13 +2141,13 @@ Organización del equipo en GitHub:
 
 [https://github.com/upc-pre-202610-1asi0729-11896-techwatch](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
 
-![commits](assets/images/chapter-5-2-2-8-img1.png)
+![commits](./assets/images/chapter-5-2-2-8-img1.png)
 
-![commits](assets/images/chapter-5-2-2-8-img2.png)
+![commits](./assets/images/chapter-5-2-2-8-img2.png)
 
-![commits](assets/images/chapter-5-2-2-8-img3.png)
+![commits](./assets/images/chapter-5-2-2-8-img3.png)
 
-![commits](assets/images/chapter-5-2-2-8-img4.png)
+![commits](./assets/images/chapter-5-2-2-8-img4.png)
 
 ### 5.2.3. Sprint 3
 
@@ -2610,7 +2610,7 @@ El video **About-the-Product** tiene como público objetivo a los visitantes del
 | Timing en el video | 00:00 - 01:23 |
 | URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb|
 
-![Screenshot del video](assets/images/Cap3entrevista1.png)
+![Screenshot del video](./assets/images/Cap3entrevista1.png)
 
 **Resumen:**  
 Gustavo Rivas dice que le parece bien todo pero le gustaria que hubiera una forma de borrar los espacios ya creados, por si hubo algun error y no ocupe espacio
@@ -2629,7 +2629,7 @@ Gustavo Rivas dice que le parece bien todo pero le gustaria que hubiera una form
 | Timing en el video | 02:31 - 05:40 |
 | URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb |
 
-![Screenshot del video](assets/images/Cap3entrevista2.png)
+![Screenshot del video](./assets/images/Cap3entrevista2.png)
 
 **Resumen:**  
 Tito Rusel Montalvo Vera dice que le parece muy util, pero recomendaria que algunos botones o comandos esten escritos en español, porque hay personas como el que no entienden ingles.
@@ -2649,7 +2649,7 @@ Tito Rusel Montalvo Vera dice que le parece muy util, pero recomendaria que algu
 | Timing en el video | 05:41 - 11:20 |
 | URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb |
 
-![Screenshot del video](assets/images/Cap3entrevista3.png)
+![Screenshot del video](./assets/images/Cap3entrevista3.png)
 
 **Resumen:**  
 José Vásquez Martínez dice que le parece muy util la pagina pero recomendaria que la interfaz como la del inicio de sesion y demas fueran mas intuitivas y amigables para el consumidor casual.
@@ -2669,7 +2669,7 @@ José Vásquez Martínez dice que le parece muy util la pagina pero recomendaria
 | Timing en el video | 11:21 - 17:02 |
 | URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb|
 
-![Screenshot del video](assets/images/Cap3entrevista4.png)
+![Screenshot del video](./assets/images/Cap3entrevista4.png)
 
 **Resumen:**  
 Daniel Palomino piensa que es muy util, aunque le gustaria que agreguen gráficos de consumo electrico para gestionar mejor el uso.
@@ -2689,7 +2689,7 @@ Daniel Palomino piensa que es muy util, aunque le gustaria que agreguen gráfico
 | Timing en el video | 17:03 - 19:56 |
 | URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb|
 
-![Screenshot del video](assets/images/Cap3entrevista5.png)
+![Screenshot del video](./assets/images/Cap3entrevista5.png)
 
 **Resumen:**  
 Eleno Giovanni Mena Zuleta dice que le parece muy intuitivo y util la pagina, sin embargo nunca pudo aprener ingles asi que le gustaria que algunas opciones estuvieran en español.
@@ -2709,7 +2709,7 @@ Eleno Giovanni Mena Zuleta dice que le parece muy intuitivo y util la pagina, si
 | Timing en el video | 19:57 - 22:31 |
 | URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb|
 
-![Screenshot del video](assets/images/Cap3entrevista6.png)
+![Screenshot del video](./assets/images/Cap3entrevista6.png)
 
 **Resumen:**  
 Gloria Quispe dice que esta bien, aunque no entiende el ingles y necesitaria ayuda para saber que hacer con los botones, a su vez que algunos botones lo confundirian.
