@@ -2500,24 +2500,63 @@ URL del tablero: [https://trello.com/invite/b/6a4a9cfc1cc5ed3171bb68ac/ATTIb0050
 |----------|----------|-|-|-|-|-|-|
 | **User Story / Technical Story** | | **Work-Item / Task** | | | | | |
 | Id | Title | Id | Title | Description | Estimation (Hours) | Assigned To | Status |
-| TS01 | Gestión de autenticación | T01 | Implementar Sign-Up API | Desarrollo del endpoint de registro de usuarios con validaciones, cifrado BCrypt y persistencia en MySQL. | 4 | Fernandez Garfias, Alexander Piero | Done |
-| TS07 | Gestión de autenticación | T02 | Implementar Sign-In API con JWT | Desarrollo del endpoint de autenticación utilizando JWT para la generación y validación de tokens. | 4 | Fernandez Garfias, Alexander Piero | Done |
-| TS06 | Seguridad | T03 | Configurar Spring Security | Implementación del filtro JWT, autenticación, autorización y protección de los endpoints REST mediante Spring Security. | 4 | Fernandez Garfias, Alexander Piero | Done |
-| TS14 | Gestión de perfiles | T04 | Implementar Bounded Context Profiles | Desarrollo del aggregate Profile, comandos, consultas y endpoints REST para la administración de perfiles de usuario. | 4 | Alva Abanto, Luis Andrés | Done |
-| TS14 | Gestión de perfiles | T05 | Integrar IAM con Profiles | Integración entre los Bounded Contexts IAM y Profiles para completar el flujo de autenticación y administración de usuarios. | 3 | Alva Abanto, Luis Andrés | Done |
-| US01 | Flujo de autenticación | T06 | Integrar Login y Sign-Up en Frontend | Conectar la Web Application con las APIs reales de autenticación reemplazando completamente la lógica simulada. | 4 | Toro Turpo, Ronal | Done |
-| US02 | Landing Page | T07 | Vincular CTA Login y Registro | Conectar los botones de Login y Registro del Landing Page con la Web Application desplegada. | 2 | Toro Turpo, Ronal | Done |
-| US06 | Landing Page | T08 | Integrar sección Pricing | Vincular la sección Pricing con el flujo de suscripción y navegación hacia la aplicación. | 2 | Toro Turpo, Ronal | Done |
-| TS09 | Deployment | T09 | Desplegar solución completa | Desplegar Landing Page, Frontend Web Application, Backend REST API y base de datos MySQL en Railway verificando la comunicación entre todos los servicios. | 5 | Alva Abanto, Luis Andrés | Done |
-| TS09 | Deployment | T10 | Validar entorno de producción | Verificar CORS, variables de entorno, conexión a MySQL, endpoints REST y funcionamiento completo en producción. | 3 | Alva Abanto, Luis Andrés | Done |
-| TS15 | Integración | T11 | Ejecutar pruebas de integración | Validar todos los flujos funcionales de extremo a extremo entre Landing Page, Frontend, Backend y Base de Datos. | 4 | Fernandez Garfias, Alexander Piero | Done |
-| TS16 | Validación | T12 | Realizar entrevistas y evaluación heurística | Ejecutar entrevistas de validación con usuarios, registrar evidencias y aplicar la evaluación heurística del sistema. | 3 | Montalvo Vásquez, Bruno Rodrigo | Done |
-| TS17 | Documentación | T13 | Actualizar reporte final | Completar el informe con Sprint 4, arquitectura final, validaciones, resultados, conclusiones, bibliografía y evidencias. | 5 | Montalvo Vásquez, Bruno Rodrigo | Done |
-| TS17 | Documentación | T14 | Elaborar videos finales | Preparar los videos About-the-Product y About-the-Team e integrarlos al Landing Page y al informe final. | 3 | Montalvo Vásquez, Bruno Rodrigo | Done |
-| TS18 | Cierre del proyecto | T15 | Revisión y cierre del proyecto | Revisión integral del sistema, corrección de incidencias menores, validación del entregable final y cierre del Sprint 4. | 3 | Todo el equipo | Done |
+| TS01 | Gestión de autenticación | T01 | Implementar Sign-Up API | Desarrollo del endpoint de registro de usuarios con validaciones, cifrado BCrypt y persistencia en MySQL. | 4 | Alva Abanto, Luis Andrés | Done |
+| TS07 | Gestión de autenticación | T02 | Implementar Sign-In API con JWT | Desarrollo del endpoint de autenticación mediante JWT y generación de tokens. | 4 | Alva Abanto, Luis Andrés | Done |
+| TS06 | Seguridad | T03 | Configurar Spring Security | Implementación del filtro JWT, autorización y protección de endpoints REST. | 4 | Alva Abanto, Luis Andrés | Done |
+| TS14 | Gestión de perfiles | T04 | Implementar Bounded Context Profiles | Desarrollo del aggregate Profile, comandos, consultas y endpoints REST. | 4 | Alva Abanto, Luis Andrés | Done |
+| TS14 | Gestión de perfiles | T05 | Integrar IAM con Profiles | Integración de los Bounded Contexts IAM y Profiles para completar el flujo de usuarios. | 3 | Alva Abanto, Luis Andrés | Done |
+| US01 | Frontend Authentication | T06 | Integrar Login y Sign-Up | Integración de las pantallas de autenticación con las APIs REST del backend. | 4 | Fernandez Garfias, Alexander Piero | Done |
+| US02 | Landing Page | T07 | Vincular CTA Login y Registro | Conectar los botones del Landing Page con la Web Application desplegada. | 2 | Fernandez Garfias, Alexander Piero | Done |
+| US06 | Landing Page | T08 | Integrar sección Pricing | Vincular la sección Pricing con la aplicación y mejorar la navegación entre Landing Page y Frontend. | 2 | Fernandez Garfias, Alexander Piero | Done |
+| TS15 | Integración | T09 | Integración Full Stack | Validar la comunicación entre Frontend, Backend y Base de Datos en todos los flujos principales. | 5 | Fernandez Garfias, Alexander Piero | Done |
+| TS09 | Deployment | T10 | Desplegar solución completa | Despliegue del Backend, Frontend, Landing Page y MySQL en Railway verificando su correcto funcionamiento. | 5 | Alva Abanto, Luis Andrés | Done |
+| TS15 | Integración | T11 | Pruebas funcionales e integración | Pruebas end-to-end de autenticación, gestión de perfiles, propiedades, dispositivos y analíticas. | 4 | Toro Turpo, Ronal | Done |
+| TS16 | Validación | T12 | Corrección de incidencias y mejoras UI | Ajustes en frontend y backend derivados de las pruebas de integración y validación de usuarios. | 3 | Montalvo Vásquez, Bruno Rodrigo | Done |
+| TS17 | Documentación | T13 | Actualizar reporte final | Elaboración de la documentación técnica, resultados de validación y cierre del Sprint 4. | 5 | Becerra Durand, Sebastian Uriel | Done |
+| TS17 | Documentación | T14 | Elaborar videos y evidencias | Preparación de los videos About-the-Product, About-the-Team y recopilación de evidencias del proyecto. | 3 | Becerra Durand, Sebastian Uriel | Done |
+| TS18 | Cierre del proyecto | T15 | Revisión final y cierre | Revisión general del proyecto, validación de entregables y cierre del Sprint 4. | 3 | Toro Turpo, Ronal / Montalvo Vásquez, Bruno Rodrigo / Becerra Durand, Sebastian Uriel | Done |
+
+## 5.2.4.4. Development Evidence for Sprint Review.
+
+Durante el **Sprint 4** el desarrollo estuvo orientado a la culminación de IntelliHome como una solución completamente funcional. Se finalizaron los últimos **Bounded Contexts** del Backend Web Services (IAM y Profiles), se completó la integración entre el **Landing Page**, la **Frontend Web Application** y el **Backend Web Services**, se desplegaron todos los componentes en Railway y se realizaron las pruebas funcionales e integración de extremo a extremo. El equipo continuó utilizando **GitFlow**, trabajando mediante ramas `feature/*` para cada funcionalidad pendiente e integrando los cambios a `develop` mediante *merge* `--no-ff`. Todos los commits siguieron la especificación **Conventional Commits** (`feat`, `fix`, `docs`, `refactor`, `chore`), manteniendo un historial claro y trazable durante el cierre del proyecto.
+
+**Backend Web Services** — [techwatch-backend](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-backend) · rama `develop`.
+
+| Repository | Branch | Commit Id | Commit Message | Fecha |
+|------------|--------|-----------|----------------|-------|
+| techwatch-backend | feature/iam-sign-up | 7c1a3f4 | implementar API de registro de usuarios con BCrypt | 2026-06-18 |
+| techwatch-backend | feature/iam-sign-in | a9d73b1 | implementar autenticación JWT y generación de tokens | 2026-06-18 |
+| techwatch-backend | feature/security | d8f24a7 | configurar Spring Security, filtros JWT y autorización | 2026-06-18 |
+| techwatch-backend | feature/profiles | 4f91bc6 | implementar Bounded Context Profiles y endpoints REST | 2026-06-19 |
+| techwatch-backend | feature/profile-query | 2d4be57 | consulta de perfiles por userId e integración con IAM | 2026-06-19 |
+| techwatch-backend | develop | 8b7d4fa | integrar IAM y Profiles con el resto del sistema | 2026-06-20 |
+| techwatch-backend | develop | b92fe17 | optimizar configuración de producción y CORS | 2026-06-20 |
+| techwatch-backend | develop | c4ab832 | despliegue final del backend en Railway | 2026-06-20 |
+
+**Frontend Web Application** — [techwatch-frontend](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-frontend) · rama `develop`.
+
+| Repository | Branch | Commit Id | Commit Message | Fecha |
+|------------|--------|-----------|----------------|-------|
+| techwatch-frontend | feature/authentication | b7f81d2 | integrar login y registro con APIs REST | 2026-06-18 |
+| techwatch-frontend | feature/profile-management | c9d82f6 | integrar gestión de perfiles desde backend | 2026-06-18 |
+| techwatch-frontend | feature/landing-integration | 4e61ab8 | vincular CTA del Landing Page con la Web Application | 2026-06-19 |
+| techwatch-frontend | feature/pricing | 1d87e24 | integrar navegación desde pricing hacia registro | 2026-06-19 |
+| techwatch-frontend | feature/ui-improvements | 6afc145 | mejoras de interfaz derivadas de la validación de usuarios | 2026-06-20 |
+| techwatch-frontend | develop | 7dbf8b3 | integrar funcionalidades finales en develop | 2026-06-20 |
+| techwatch-frontend | develop | 5ce219a | configuración final para Railway y producción | 2026-06-20 |
+| techwatch-frontend | develop | 9ab53de | correcciones finales e integración completa con backend | 2026-06-20 |
+
+**Landing Page** — [techwatch-landing-page](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-landing-page) · rama `develop`.
+
+| Repository | Branch | Commit Id | Commit Message | Fecha |
+|------------|--------|-----------|----------------|-------|
+| techwatch-landing-page | feature/cta-integration | 82fdc53 | conectar botones Login y Register con la Web Application | 2026-06-19 |
+| techwatch-landing-page | feature/about-product | a7e8d34 | incorporar video About-the-Product | 2026-06-20 |
+| techwatch-landing-page | feature/about-team | b18ce47 | incorporar video About-the-Team | 2026-06-20 |
+| techwatch-landing-page | develop | e42fa13 | actualizar enlaces, despliegue y contenido final | 2026-06-20 |
+| techwatch-landing-page | develop | 6fd72e1 | publicación final en Railway | 2026-06-20 |
 
 
-## 5.2.X.4. Development Evidence for Sprint Review.
 ## 5.2.X.5. Execution Evidence for Sprint Review.
 ## 5.2.X.6. Services Documentation Evidence for Sprint Review.
 ## 5.2.X.7. Software Deployment Evidence for Sprint Review.
