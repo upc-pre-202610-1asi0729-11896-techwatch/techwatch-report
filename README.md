@@ -2715,11 +2715,6 @@ Durante el **Sprint 4** se consolidó el despliegue definitivo de **IntelliHome*
 | Swagger / OpenAPI | Railway | https://techwatch-backend-production.up.railway.app/swagger-ui/index.html |
 | Base de Datos | Railway (MySQL gestionado) | Red privada de Railway |
 
-### Capturas del despliegue (Railway)
-
-![Railway - Vista general del proyecto desplegado](./assets/images/chapter-5-2-4-7-img1.png)
-
-![Railway - Servicios, variables de entorno y despliegue final](./assets/images/chapter-5-2-4-7-img2.png)
 
 ### Evidencia de la imagen Docker (Docker Desktop)
 
@@ -2727,7 +2722,7 @@ La versión final de IntelliHome se distribuye mediante imágenes Docker corresp
 
 Las imágenes incluyen la versión final del proyecto, incorporando los Bounded Contexts **Device Management**, **Analytics**, **Subscriptions**, **IAM** y **Profiles**, así como todas las configuraciones necesarias para producción.
 
-![Imágenes Docker finales de IntelliHome](./assets/images/chapter-5-2-4-7-img3.png)
+![Imágenes Docker finales de IntelliHome](./assets/images/chapter-5-2-4-7-img1.png)
 
 ### 5.2.4.8. Team Collaboration Insights during Sprint.
 
