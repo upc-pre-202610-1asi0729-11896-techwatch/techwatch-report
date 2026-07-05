@@ -2459,7 +2459,7 @@ Analíticos de colaboración y *commits* del Sprint 3:
 
 ---
 ### 5.2.4. Sprint 4
-## 5.2.4.1. Sprint Planning 4.
+### 5.2.4.1. Sprint Planning 4.
 
 | Sprint # | Sprint 4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -2476,7 +2476,7 @@ Analíticos de colaboración y *commits* del Sprint 3:
 | Sprint 4 Velocity | 40                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | Sum of Story Points | 40                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
-## 5.2.4.2. Aspect Leaders and Collaborators.
+### 5.2.4.2. Aspect Leaders and Collaborators.
 
 En este Sprint el alcance se concentró en la culminación e integración de todos los componentes del proyecto IntelliHome. Se completó el desarrollo del **Backend Web Services** (Spring Boot + MySQL), la integración completa con la **Frontend Web Application**, el despliegue del **Landing Page**, Frontend y Backend en los servicios correspondientes, así como la ejecución de pruebas funcionales y la elaboración del reporte final del proyecto. Los aspectos de la matriz LACX (*Leadership and Collaboration eXtended*) son: **Full Stack Integration** (integración completa entre Landing Page, Frontend y Backend mediante APIs REST); **Backend & Infrastructure** (finalización de los Bounded Contexts, servicios REST, persistencia y despliegue del backend); **Frontend & User Experience** (implementación final de interfaces, consumo de APIs y validación de flujos de usuario); **Deployment, Validation & Testing** (despliegue de todos los componentes, pruebas funcionales, entrevistas de validación y evaluación heurística); y **Documentation & Final Report** (elaboración del informe final, videos, evidencias y documentación técnica). **L** indica a la persona que lidera el cierre y la coherencia del aspecto, y **C** a quien colabora con aportes, *commits* puntuales o *feedback*.
 
@@ -2488,7 +2488,7 @@ En este Sprint el alcance se concentró en la culminación e integración de tod
 | Montalvo Vásquez, Bruno Rodrigo | TartaroZ | C | C | C | C | L |
 | Becerra Durand, Sebastian Uriel | sebasdev28 | C | C | C | C | C |
 
-## 5.2.4.3. Sprint Backlog 4
+### 5.2.4.3. Sprint Backlog 4
 El objetivo principal del Sprint 4 es completar el desarrollo de la solución IntelliHome mediante la implementación de los últimos **Bounded Contexts** del backend desarrollado en Spring Boot bajo Domain-Driven Design, finalizar la integración completa entre el Backend RESTful API, la Frontend Web Application y el Landing Page, realizar las pruebas funcionales y de integración de todos los flujos principales, desplegar la solución completa en los servicios correspondientes y culminar la documentación final del proyecto, incluyendo las entrevistas de validación, la evaluación heurística y los entregables finales. Las tareas de este Sprint se derivan de las Technical Stories pendientes de los Epics relacionados con Backend, Frontend, Integración, Deployment y Documentación definidos en la sección 3.1.
 
 ![Tablero Trello Sprint 4](./assets/images/chapter-5-2-4-3-img1.png)
@@ -2516,11 +2516,11 @@ URL del tablero: [https://trello.com/invite/b/6a4a9cfc1cc5ed3171bb68ac/ATTIb0050
 | TS17 | Documentación | T14 | Elaborar videos y evidencias | Preparación de los videos About-the-Product, About-the-Team y recopilación de evidencias del proyecto. | 3 | Becerra Durand, Sebastian Uriel | Done |
 | TS18 | Cierre del proyecto | T15 | Revisión final y cierre | Revisión general del proyecto, validación de entregables y cierre del Sprint 4. | 3 | Toro Turpo, Ronal / Montalvo Vásquez, Bruno Rodrigo / Becerra Durand, Sebastian Uriel | Done |
 
-## 5.2.4.4. Development Evidence for Sprint Review.
+### 5.2.4.4. Development Evidence for Sprint Review.
 
 Durante el **Sprint 4** el desarrollo estuvo orientado a la culminación de IntelliHome como una solución completamente funcional. Se finalizaron los últimos **Bounded Contexts** del Backend Web Services (IAM y Profiles), se completó la integración entre el **Landing Page**, la **Frontend Web Application** y el **Backend Web Services**, se desplegaron todos los componentes en Railway y se realizaron las pruebas funcionales e integración de extremo a extremo. El equipo continuó utilizando **GitFlow**, trabajando mediante ramas `feature/*` para cada funcionalidad pendiente e integrando los cambios a `develop` mediante *merge* `--no-ff`. Todos los commits siguieron la especificación **Conventional Commits** (`feat`, `fix`, `docs`, `refactor`, `chore`), manteniendo un historial claro y trazable durante el cierre del proyecto.
 
-**Backend Web Services** — [techwatch-backend](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-backend) · rama `develop`.
+**Backend Web Services** 
 
 | Repository | Branch | Commit Id | Commit Message | Fecha |
 |------------|--------|-----------|----------------|-------|
@@ -2533,7 +2533,7 @@ Durante el **Sprint 4** el desarrollo estuvo orientado a la culminación de Inte
 | techwatch-backend | develop | b92fe17 | optimizar configuración de producción y CORS | 2026-06-20 |
 | techwatch-backend | develop | c4ab832 | despliegue final del backend en Railway | 2026-06-20 |
 
-**Frontend Web Application** — [techwatch-frontend](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-frontend) · rama `develop`.
+**Frontend Web Application**
 
 | Repository | Branch | Commit Id | Commit Message | Fecha |
 |------------|--------|-----------|----------------|-------|
@@ -2546,7 +2546,7 @@ Durante el **Sprint 4** el desarrollo estuvo orientado a la culminación de Inte
 | techwatch-frontend | develop | 5ce219a | configuración final para Railway y producción | 2026-06-20 |
 | techwatch-frontend | develop | 9ab53de | correcciones finales e integración completa con backend | 2026-06-20 |
 
-**Landing Page** — [techwatch-landing-page](https://github.com/upc-pre-202610-1asi0729-11896-techwatch/techwatch-landing-page) · rama `develop`.
+**Landing Page** 
 
 | Repository | Branch | Commit Id | Commit Message | Fecha |
 |------------|--------|-----------|----------------|-------|
@@ -2557,10 +2557,38 @@ Durante el **Sprint 4** el desarrollo estuvo orientado a la culminación de Inte
 | techwatch-landing-page | develop | 6fd72e1 | publicación final en Railway | 2026-06-20 |
 
 
-## 5.2.X.5. Execution Evidence for Sprint Review.
-## 5.2.X.6. Services Documentation Evidence for Sprint Review.
-## 5.2.X.7. Software Deployment Evidence for Sprint Review.
-## 5.2.X.8. Team Collaboration Insights during Sprint.
+### 5.2.4.5. Execution Evidence for Sprint Review.
+
+En el **Sprint 4** se completó la versión final de IntelliHome, integrando exitosamente el **Landing Page**, la **Frontend Web Application** y los **Backend Web Services** desplegados en Railway. Durante este Sprint se implementaron los últimos **Bounded Contexts** del backend, incluyendo **IAM** y **Profiles**, completando la arquitectura basada en **Domain-Driven Design (DDD)** con autenticación mediante JWT, gestión de perfiles y seguridad utilizando Spring Security.
+
+Asimismo, se finalizaron las integraciones entre el frontend y el backend, eliminando completamente el uso de datos simulados y validando el funcionamiento integral de la aplicación. También se realizaron ajustes finales de interfaz, mejoras de experiencia de usuario, pruebas funcionales, pruebas de integración y el despliegue definitivo de todos los componentes de la solución.
+
+El flujo principal validado comprende el acceso desde el **Landing Page**, el registro e inicio de sesión de usuarios, la administración de perfiles, el registro de propiedades (casas y departamentos), la gestión de espacios y dispositivos inteligentes, la ejecución de sesiones de simulación, la visualización de métricas de consumo, alertas inteligentes y reportes de consumo. Todo el sistema funciona consumiendo el Backend REST desplegado en Railway y comunicándose correctamente entre todos sus componentes.
+
+### Principales vistas implementadas
+
+- **Landing Page:** página principal con las secciones Hero, Features, Pricing, About Us, Testimonials y Contact, conectada directamente con la Web Application.
+- **Autenticación (IAM):** registro de usuarios, inicio de sesión, autenticación mediante JWT y control de acceso.
+- **Gestión de perfiles:** administración de la información del usuario autenticado.
+- **Gestión de propiedades:** registro de inmuebles, creación de espacios y administración de dispositivos inteligentes.
+- **Simulación:** creación de sesiones de simulación y registro de acciones de dispositivos.
+- **Analítica:** dashboard con métricas de consumo, alertas inteligentes y reportes por período.
+
+### Capturas de las principales vistas
+
+![Landing Page](./assets/images/chapter-5-2-4-5-img1.png)
+
+![Autenticación y gestión de perfiles](./assets/images/chapter-5-2-4-5-img2.png)
+
+![Gestión de propiedades, espacios y dispositivos](./assets/images/chapter-5-2-4-5-img3.png)
+
+![Dashboard de analítica y reportes](./assets/images/chapter-5-2-4-5-img4.png)
+
+
+### 5.2.4.6. Services Documentation Evidence for Sprint Review.
+
+### 5.2.X.7. Software Deployment Evidence for Sprint Review.
+### 5.2.X.8. Team Collaboration Insights during Sprint.
 
 ---
 
