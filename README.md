@@ -2816,7 +2816,7 @@ Las siguientes entrevistas fueron registradas en video y documentan la interacci
 
 **Resumen:**  
 Gustavo Rivas dice que le parece bien todo pero le gustaria que hubiera una forma de borrar los espacios ya creados, por si hubo algun error y no ocupe espacio
----
+
 
 ### Entrevista 2 — Tito Rusel Montalvo Vera
 
