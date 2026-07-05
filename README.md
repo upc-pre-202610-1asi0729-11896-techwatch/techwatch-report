@@ -3116,8 +3116,9 @@ Finalmente, cada integrante comparte un breve testimonio describiendo las respon
 | 00:01:44 | Testimonio 1                        |
 | 00:02:12 | Testimonio 2                        |
 | 00:04:03 | Testimonio 3                        |
-| 00:05:03 | Testimonio 4                        |
-| 00:06:03 | Testimonio 5                        |
+| 00:05:01 | Testimonio 4                        |
+| 00:06:07 | Testimonio 5                        |
+| 00:07:07 | Cierre                              |
 
 ### Cuadro representativo del video
 
