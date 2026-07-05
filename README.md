@@ -2187,23 +2187,23 @@ El objetivo principal del Sprint 3 es reemplazar el backend simulado por un REST
 ![Tablero Trello Sprint 3](./assets/images/chapter-5-2-3-3-img1.png)
 
 URL del tablero: [https://trello.com/invite/b/6a337a6e973bd63ace947efb/ATTI8aef747c3e59352c70b079cfa522102f77CEBCD8/sprint-backlog-3-techwatch](https://trello.com/invite/b/6a337a6e973bd63ace947efb/ATTI8aef747c3e59352c70b079cfa522102f77CEBCD8/sprint-backlog-3-techwatch)
-
-| Sprint # | Sprint 3 | | | | | | |
-|----------|----------|-|-|-|-|-|-|
-| **User Story / Technical Story** | | **Work-Item / Task** | | | | | |
-| Id | Title | Id | Title | Description | Estimation (Hours) | Assigned To | Status |
-| TS09 | API registrar inmueble | T01 | Implementar API REST de propiedades | Slice DDD del aggregate Property con endpoints POST /api/v1/properties y GET /api/v1/properties?userId, persistencia JPA y CQRS | 5 | Alva Abanto, Luis Andrés | Done |
-| TS09 | API registrar inmueble | T02 | Implementar gestión de espacios | Comando CreateSpace dentro del aggregate Property y endpoint POST /api/v1/properties/{propertyId}/spaces | 3 | Alva Abanto, Luis Andrés | Done |
-| TS11 | API registrar dispositivo | T03 | Implementar API REST de dispositivos | Aggregate Device con endpoint POST /api/v1/devices (add device to space) y validación de nombre único por espacio | 5 | Alva Abanto, Luis Andrés | Done |
-| TS12 | API actualizar estado de dispositivo | T04 | Implementar edición de dispositivo | Comando EditDevice y endpoint PUT /api/v1/devices/{deviceId} | 3 | Alva Abanto, Luis Andrés | Done |
-| TS02 | API obtener sensores | T05 | Implementar consulta y eliminación de dispositivos | Endpoints GET /api/v1/devices?spaceId, GET /api/v1/devices/{deviceId} y DELETE /api/v1/devices/{deviceId} | 3 | Alva Abanto, Luis Andrés | Done |
-| TS02 | API obtener sensores | T06 | Implementar sesiones de simulación | Aggregate SimulationSession con start, record-action y end (POST /api/v1/simulation-sessions y subrecursos), generando datos de consumo | 5 | Alva Abanto, Luis Andrés | Done |
-| TS13 | API obtener dashboard | T07 | Implementar API REST de métricas | Bounded Context Analytics: cálculo de métricas a partir de eventos de integración y GET /api/v1/metrics?propertyId | 5 | Alva Abanto, Luis Andrés | Done |
-| TS04 | API generar alerta | T08 | Implementar API REST de alertas | Policy de umbral escalonado para generar alertas de consumo, GET /api/v1/alerts?userId y PUT /api/v1/alerts/{alertId}/read | 3 | Alva Abanto, Luis Andrés | Done |
-| TS03 | API consultar historial | T09 | Implementar API REST de reportes de consumo | Generación on-demand de reportes agregando métricas por periodo: POST /api/v1/reports y GET /api/v1/reports?propertyId | 3 | Alva Abanto, Luis Andrés | Done |
-| TS10 | API listar inmuebles | T10 | Migrar Frontend Web Application al API real | Reemplazar el consumo del JSON Server por el RESTful API (proxy de ng serve, environments y stores de management, simulation y analytics) | 5 | Fernandez Garfias, Alexander Piero | Done |
-| — | Deployment | T11 | Contenerizar y desplegar la solución en Railway | Dockerfile del backend (Maven + Temurin), Docker multi-stage del frontend (node + nginx), MySQL gestionado, perfil prod y CORS | 5 | Alva Abanto, Luis Andrés | Done |
-| — | Configuración | T12 | Configurar shared kernel, OpenAPI y manejo de errores | Result/ApplicationError, GlobalExceptionHandler, configuración de OpenAPI/Swagger y naming strategy snake_case pluralizado | 3 | Alva Abanto, Luis Andrés | Done |
+  
+  | Sprint # | Sprint 3 | | | | | | |
+  |----------|----------|-|-|-|-|-|-|
+  | **User Story / Technical Story** | | **Work-Item / Task** | | | | | |
+  | Id | Title | Id | Title | Description | Estimation (Hours) | Assigned To | Status |
+  | TS09 | API registrar inmueble | T01 | Implementar API REST de propiedades | Slice DDD del aggregate Property con endpoints POST /api/v1/properties y GET /api/v1/properties?userId, persistencia JPA y CQRS | 5 | Alva Abanto, Luis Andrés | Done |
+  | TS09 | API registrar inmueble | T02 | Implementar gestión de espacios | Comando CreateSpace dentro del aggregate Property y endpoint POST /api/v1/properties/{propertyId}/spaces | 3 | Alva Abanto, Luis Andrés | Done |
+  | TS11 | API registrar dispositivo | T03 | Implementar API REST de dispositivos | Aggregate Device con endpoint POST /api/v1/devices (add device to space) y validación de nombre único por espacio | 5 | Alva Abanto, Luis Andrés | Done |
+  | TS12 | API actualizar estado de dispositivo | T04 | Implementar edición de dispositivo | Comando EditDevice y endpoint PUT /api/v1/devices/{deviceId} | 3 | Alva Abanto, Luis Andrés | Done |
+  | TS02 | API obtener sensores | T05 | Implementar consulta y eliminación de dispositivos | Endpoints GET /api/v1/devices?spaceId, GET /api/v1/devices/{deviceId} y DELETE /api/v1/devices/{deviceId} | 3 | Alva Abanto, Luis Andrés | Done |
+  | TS02 | API obtener sensores | T06 | Implementar sesiones de simulación | Aggregate SimulationSession con start, record-action y end (POST /api/v1/simulation-sessions y subrecursos), generando datos de consumo | 5 | Alva Abanto, Luis Andrés | Done |
+  | TS13 | API obtener dashboard | T07 | Implementar API REST de métricas | Bounded Context Analytics: cálculo de métricas a partir de eventos de integración y GET /api/v1/metrics?propertyId | 5 | Alva Abanto, Luis Andrés | Done |
+  | TS04 | API generar alerta | T08 | Implementar API REST de alertas | Policy de umbral escalonado para generar alertas de consumo, GET /api/v1/alerts?userId y PUT /api/v1/alerts/{alertId}/read | 3 | Alva Abanto, Luis Andrés | Done |
+  | TS03 | API consultar historial | T09 | Implementar API REST de reportes de consumo | Generación on-demand de reportes agregando métricas por periodo: POST /api/v1/reports y GET /api/v1/reports?propertyId | 3 | Alva Abanto, Luis Andrés | Done |
+  | TS10 | API listar inmuebles | T10 | Migrar Frontend Web Application al API real | Reemplazar el consumo del JSON Server por el RESTful API (proxy de ng serve, environments y stores de management, simulation y analytics) | 5 | Fernandez Garfias, Alexander Piero | Done |
+  | — | Deployment | T11 | Contenerizar y desplegar la solución en Railway | Dockerfile del backend (Maven + Temurin), Docker multi-stage del frontend (node + nginx), MySQL gestionado, perfil prod y CORS | 5 | Alva Abanto, Luis Andrés | Done |
+  | — | Configuración | T12 | Configurar shared kernel, OpenAPI y manejo de errores | Result/ApplicationError, GlobalExceptionHandler, configuración de OpenAPI/Swagger y naming strategy snake_case pluralizado | 3 | Alva Abanto, Luis Andrés | Done |
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
@@ -2488,7 +2488,35 @@ En este Sprint el alcance se concentró en la culminación e integración de tod
 | Montalvo Vásquez, Bruno Rodrigo | TartaroZ | C | C | C | C | L |
 | Becerra Durand, Sebastian Uriel | sebasdev28 | C | C | C | C | C |
 
-## 5.2.X.3. Sprint Backlog 4
+## 5.2.4.3. Sprint Backlog 4
+El objetivo principal del Sprint 4 es completar el desarrollo de la solución IntelliHome mediante la implementación de los últimos **Bounded Contexts** del backend desarrollado en Spring Boot bajo Domain-Driven Design, finalizar la integración completa entre el Backend RESTful API, la Frontend Web Application y el Landing Page, realizar las pruebas funcionales y de integración de todos los flujos principales, desplegar la solución completa en los servicios correspondientes y culminar la documentación final del proyecto, incluyendo las entrevistas de validación, la evaluación heurística y los entregables finales. Las tareas de este Sprint se derivan de las Technical Stories pendientes de los Epics relacionados con Backend, Frontend, Integración, Deployment y Documentación definidos en la sección 3.1.
+
+![Tablero Trello Sprint 4](./assets/images/chapter-5-2-4-3-img1.png)
+
+URL del tablero: [https://trello.com/invite/b/6a4a9cfc1cc5ed3171bb68ac/ATTIb0050a3675667a942ba398f951fe1dcbC43FC431/sprint-4-techwatch](https://trello.com/invite/b/6a4a9cfc1cc5ed3171bb68ac/ATTIb0050a3675667a942ba398f951fe1dcbC43FC431/sprint-4-techwatch)
+
+
+| Sprint # | Sprint 4 | | | | | | |
+|----------|----------|-|-|-|-|-|-|
+| **User Story / Technical Story** | | **Work-Item / Task** | | | | | |
+| Id | Title | Id | Title | Description | Estimation (Hours) | Assigned To | Status |
+| TS01 | Gestión de autenticación | T01 | Implementar Sign-Up API | Desarrollo del endpoint de registro de usuarios con validaciones, cifrado BCrypt y persistencia en MySQL. | 4 | Fernandez Garfias, Alexander Piero | Done |
+| TS07 | Gestión de autenticación | T02 | Implementar Sign-In API con JWT | Desarrollo del endpoint de autenticación utilizando JWT para la generación y validación de tokens. | 4 | Fernandez Garfias, Alexander Piero | Done |
+| TS06 | Seguridad | T03 | Configurar Spring Security | Implementación del filtro JWT, autenticación, autorización y protección de los endpoints REST mediante Spring Security. | 4 | Fernandez Garfias, Alexander Piero | Done |
+| TS14 | Gestión de perfiles | T04 | Implementar Bounded Context Profiles | Desarrollo del aggregate Profile, comandos, consultas y endpoints REST para la administración de perfiles de usuario. | 4 | Alva Abanto, Luis Andrés | Done |
+| TS14 | Gestión de perfiles | T05 | Integrar IAM con Profiles | Integración entre los Bounded Contexts IAM y Profiles para completar el flujo de autenticación y administración de usuarios. | 3 | Alva Abanto, Luis Andrés | Done |
+| US01 | Flujo de autenticación | T06 | Integrar Login y Sign-Up en Frontend | Conectar la Web Application con las APIs reales de autenticación reemplazando completamente la lógica simulada. | 4 | Toro Turpo, Ronal | Done |
+| US02 | Landing Page | T07 | Vincular CTA Login y Registro | Conectar los botones de Login y Registro del Landing Page con la Web Application desplegada. | 2 | Toro Turpo, Ronal | Done |
+| US06 | Landing Page | T08 | Integrar sección Pricing | Vincular la sección Pricing con el flujo de suscripción y navegación hacia la aplicación. | 2 | Toro Turpo, Ronal | Done |
+| TS09 | Deployment | T09 | Desplegar solución completa | Desplegar Landing Page, Frontend Web Application, Backend REST API y base de datos MySQL en Railway verificando la comunicación entre todos los servicios. | 5 | Alva Abanto, Luis Andrés | Done |
+| TS09 | Deployment | T10 | Validar entorno de producción | Verificar CORS, variables de entorno, conexión a MySQL, endpoints REST y funcionamiento completo en producción. | 3 | Alva Abanto, Luis Andrés | Done |
+| TS15 | Integración | T11 | Ejecutar pruebas de integración | Validar todos los flujos funcionales de extremo a extremo entre Landing Page, Frontend, Backend y Base de Datos. | 4 | Fernandez Garfias, Alexander Piero | Done |
+| TS16 | Validación | T12 | Realizar entrevistas y evaluación heurística | Ejecutar entrevistas de validación con usuarios, registrar evidencias y aplicar la evaluación heurística del sistema. | 3 | Montalvo Vásquez, Bruno Rodrigo | Done |
+| TS17 | Documentación | T13 | Actualizar reporte final | Completar el informe con Sprint 4, arquitectura final, validaciones, resultados, conclusiones, bibliografía y evidencias. | 5 | Montalvo Vásquez, Bruno Rodrigo | Done |
+| TS17 | Documentación | T14 | Elaborar videos finales | Preparar los videos About-the-Product y About-the-Team e integrarlos al Landing Page y al informe final. | 3 | Montalvo Vásquez, Bruno Rodrigo | Done |
+| TS18 | Cierre del proyecto | T15 | Revisión y cierre del proyecto | Revisión integral del sistema, corrección de incidencias menores, validación del entregable final y cierre del Sprint 4. | 3 | Todo el equipo | Done |
+
+
 ## 5.2.X.4. Development Evidence for Sprint Review.
 ## 5.2.X.5. Execution Evidence for Sprint Review.
 ## 5.2.X.6. Services Documentation Evidence for Sprint Review.
