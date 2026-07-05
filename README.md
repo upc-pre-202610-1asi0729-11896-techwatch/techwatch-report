@@ -2687,9 +2687,26 @@ Las imágenes incluyen la versión final del proyecto, incorporando los Bounded 
 
 ![Imágenes Docker finales de IntelliHome](./assets/images/chapter-5-2-4-7-img3.png)
 
-### 5.2.X.8. Team Collaboration Insights during Sprint.
+### 5.2.4.8. Team Collaboration Insights during Sprint.
 
----
+Durante el **Sprint 4** los cinco integrantes colaboraron en la culminación de IntelliHome, completando el desarrollo de los últimos **Bounded Contexts** del **Backend Web Services** (IAM, Profiles y Subscriptions), la integración definitiva con la **Frontend Web Application**, la vinculación del **Landing Page** con la aplicación, el despliegue de la solución final en Railway y la elaboración del informe y evidencias correspondientes al cierre del proyecto.
+
+El trabajo continuó organizándose mediante ramas `feature/*` para cada funcionalidad pendiente e integración a la rama `develop` mediante *pull requests*, siguiendo la metodología **GitFlow** y la convención **Conventional Commits** para mantener un historial de cambios claro y trazable. Durante este Sprint se realizaron revisiones cruzadas de código, pruebas funcionales e integración de extremo a extremo para garantizar el correcto funcionamiento de todos los módulos antes de la entrega final.
+
+La coordinación del equipo se realizó mediante **WhatsApp** y reuniones periódicas por **Google Meet**, mientras que la planificación y seguimiento de las actividades se gestionó utilizando **Trello**. Las responsabilidades fueron distribuidas de acuerdo con la matriz **LACX** (sección **5.2.4.2**), abarcando el desarrollo del Backend, la integración Frontend-Backend, el despliegue en producción, las pruebas de validación, la documentación técnica y la elaboración del reporte final.
+
+**Organización del equipo en GitHub:**
+
+https://github.com/upc-pre-202610-1asi0729-11896-techwatch
+
+**Analíticos de colaboración y *commits* del Sprint 4:**
+
+![Insights de colaboración - Backend Web Services](./assets/images/chapter-5-2-4-8-img1.png)
+
+![Insights de colaboración - Frontend Web Application](./assets/images/chapter-5-2-4-8-img2.png)
+
+![Insights de colaboración - Landing Page](./assets/images/chapter-5-2-4-8-img3.png)
+
 
 ## 5.3. Validation Interviews
 
@@ -2816,11 +2833,12 @@ Gloria Quispe dice que esta bien, aunque no entiende el ingles y necesitaria ayu
 ---
 ### 5.3.2. Registro de Entrevistas
 
-Se requieren de 3 a 5 entrevistas de validación por cada segmento objetivo. Cada entrevista se registró en video (un solo video editado, subido a Microsoft Stream), indicando para cada entrevistado: nombres y apellidos, edad, distrito, un *screenshot* de un cuadro del video, el URL del video con el *timing* de inicio y la duración, y un resumen descriptivo de sus apreciaciones respecto a las tareas asignadas.
+Se requieren de 3 a 5 entrevistas de validación por cada segmento objetivo. Cada entrevista se registró en video (un solo video editado, subido a Microsoft Stream), 
+indicando para cada entrevistado: nombres y apellidos, edad, distrito, un *screenshot* de un cuadro del video, el URL del video con el *timing* de inicio y la duración, 
+y un resumen descriptivo de sus apreciaciones respecto a las tareas asignadas.
 
 **Video consolidado de entrevistas de validación:** _(pendiente: enlace del video en Microsoft Stream)_
 
-<!-- TODO equipo: pegar el enlace del video consolidado de entrevistas de validación. -->
 
 **Segmento 1 — Propietarios de casas**
 
@@ -2935,8 +2953,6 @@ La evaluación de las sesiones de validación se realizó siguiendo el formato d
 
 *Problema #3 — Unidades sin contexto.* Severidad: 2 · Heurística: *Information Architecture – ¿Es usable?*. El consumo en Wh no se acompaña de kWh ni de un costo estimado, lo que dificulta su interpretación. *(Incluir captura.)* **Recomendación:** mostrar el equivalente en kWh y una estimación de costo configurable.
 
-<!-- TODO equipo: ajustar/completar los hallazgos con los problemas observados en las sesiones de validación reales e incluir las capturas correspondientes a cada problema. -->
-
 ## 5.4. Video About-the-Product
 
 El video **About-the-Product** tiene como público objetivo a los visitantes del Landing Page y a los usuarios de la Web Application. Presenta, con un tono promocional consistente con el producto, el modelo de negocio y las características principales de TechWatch: el registro de inmuebles, espacios y dispositivos, la simulación de uso, y la visualización de métricas, alertas y reportes de consumo energético. Incluye escenas de interacción real con la solución desplegada y **al menos un testimonio positivo** de un usuario que participó en las entrevistas de validación (sección 5.3). La versión publicada en YouTube es la que se incrusta en el Landing Page.
@@ -2947,7 +2963,6 @@ El video **About-the-Product** tiene como público objetivo a los visitantes del
 
 ![Screenshot del video About-the-Product](./assets/images/about-the-product.png)
 
-<!-- TODO equipo: incrustar el video de YouTube en una sección del Landing Page (las versiones de Microsoft Stream y YouTube ya están). -->
 
 # Bibliografía
 
