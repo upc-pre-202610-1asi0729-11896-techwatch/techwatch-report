@@ -2459,7 +2459,7 @@ Analíticos de colaboración y *commits* del Sprint 3:
 
 ---
 ### 5.2.4. Sprint 4
-## 5.2.X.1. Sprint Planning 4.
+## 5.2.4.1. Sprint Planning 4.
 
 | Sprint # | Sprint 4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -2476,7 +2476,18 @@ Analíticos de colaboración y *commits* del Sprint 3:
 | Sprint 4 Velocity | 40                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | Sum of Story Points | 40                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
-## 5.2.X.2. Aspect Leaders and Collaborators.
+## 5.2.4.2. Aspect Leaders and Collaborators.
+
+En este Sprint el alcance se concentró en la culminación e integración de todos los componentes del proyecto IntelliHome. Se completó el desarrollo del **Backend Web Services** (Spring Boot + MySQL), la integración completa con la **Frontend Web Application**, el despliegue del **Landing Page**, Frontend y Backend en los servicios correspondientes, así como la ejecución de pruebas funcionales y la elaboración del reporte final del proyecto. Los aspectos de la matriz LACX (*Leadership and Collaboration eXtended*) son: **Full Stack Integration** (integración completa entre Landing Page, Frontend y Backend mediante APIs REST); **Backend & Infrastructure** (finalización de los Bounded Contexts, servicios REST, persistencia y despliegue del backend); **Frontend & User Experience** (implementación final de interfaces, consumo de APIs y validación de flujos de usuario); **Deployment, Validation & Testing** (despliegue de todos los componentes, pruebas funcionales, entrevistas de validación y evaluación heurística); y **Documentation & Final Report** (elaboración del informe final, videos, evidencias y documentación técnica). **L** indica a la persona que lidera el cierre y la coherencia del aspecto, y **C** a quien colabora con aportes, *commits* puntuales o *feedback*.
+
+| Team Member (Last Name, First Name) | GitHub Username | Full Stack Integration | Backend & Infrastructure | Frontend & User Experience | Deployment, Validation & Testing | Documentation & Final Report |
+|-------------------------------------|-----------------|------------------------|--------------------------|----------------------------|----------------------------------|------------------------------|
+| Alva Abanto, Luis Andrés | luis-alva0 | L | C | C | L | C |
+| Fernandez Garfias, Alexander Piero | Dostoyevsk1 | C | L | C | C | C |
+| Toro Turpo, Ronal | ronaltt-345 | C | C | L | C | C |
+| Montalvo Vásquez, Bruno Rodrigo | TartaroZ | C | C | C | C | L |
+| Becerra Durand, Sebastian Uriel | sebasdev28 | C | C | C | C | C |
+
 ## 5.2.X.3. Sprint Backlog 4
 ## 5.2.X.4. Development Evidence for Sprint Review.
 ## 5.2.X.5. Execution Evidence for Sprint Review.
