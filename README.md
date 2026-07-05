@@ -3016,6 +3016,64 @@ El video **About-the-Product** tiene como público objetivo a los visitantes del
 
 ![Screenshot del video About-the-Product](./assets/images/about-the-product.png)
 
+# Conclusiones
+
+## Conclusiones y recomendaciones
+
+### Conclusiones
+
+Como resultado del desarrollo del proyecto **TechWatch**, se logró diseñar e implementar una solución digital orientada al monitoreo inteligente del hogar, integrando una Landing Page, una Web Application y una arquitectura de software basada en Domain-Driven Design (DDD), Clean Architecture y principios de Lean UX. El proyecto permitió recorrer todas las etapas del proceso de análisis, diseño, validación, desarrollo e implementación de un producto digital.
+
+En relación con los **Problem Statements** definidos durante las primeras fases del proyecto, se concluye que la solución desarrollada responde al problema identificado de la dificultad que presentan los usuarios para monitorear y gestionar de manera centralizada sus dispositivos inteligentes y comprender su consumo energético. Las funcionalidades implementadas permiten registrar dispositivos, administrar inmuebles y espacios, visualizar métricas, generar alertas y consultar reportes, ofreciendo una plataforma integrada que facilita la toma de decisiones para optimizar el consumo de energía.
+
+Respecto a los **Assumptions** planteados durante el proceso de Lean UX, las validaciones realizadas permitieron comprobar que los usuarios prefieren interfaces sencillas, organizadas y con una navegación intuitiva. Asimismo, se confirmó que los dashboards, gráficos y reportes visuales facilitan la interpretación de la información relacionada con el consumo energético, incrementando la percepción de utilidad y facilidad de uso de la plataforma.
+
+De igual manera, los **Hypothesis Statements** formulados fueron contrastados con los resultados obtenidos durante las validaciones de los prototipos. La retroalimentación recibida evidenció que los usuarios comprenden con facilidad los principales flujos de navegación, pueden realizar las tareas propuestas sin dificultades relevantes y consideran que la plataforma representa una alternativa útil para monitorear dispositivos inteligentes y administrar el consumo energético del hogar. En consecuencia, las hipótesis planteadas fueron validadas en gran medida y respaldan la viabilidad de la solución propuesta.
+
+Asimismo, los **criterios de éxito** definidos durante el proceso de Lean UX fueron alcanzados satisfactoriamente. Se desarrolló una Landing Page funcional, una Web Application con los módulos principales del sistema, una arquitectura basada en Domain-Driven Design organizada mediante Bounded Contexts, una API REST implementada con Spring Boot y un modelo de datos consistente con el dominio del negocio. Todo ello permitió construir un producto coherente con los objetivos definidos para el proyecto.
+
+Finalmente, la aplicación conjunta de Scrum, Lean UX y Domain-Driven Design permitió desarrollar el proyecto de forma iterativa, promoviendo la colaboración entre los integrantes del equipo, la validación continua con usuarios y la mejora progresiva del producto. Como resultado, TechWatch cuenta con una base tecnológica sólida que facilita su evolución y futuras ampliaciones.
+
+### Recomendaciones
+
+Como parte de la evolución del **Roadmap** del producto digital, se recomienda integrar TechWatch con dispositivos IoT reales mediante APIs o protocolos especializados, permitiendo reemplazar las simulaciones actuales por información obtenida en tiempo real y ampliando las capacidades de monitoreo y control de la plataforma.
+
+Asimismo, se recomienda incorporar herramientas de analítica avanzada e Inteligencia Artificial que permitan identificar patrones de consumo, detectar comportamientos anómalos y generar recomendaciones personalizadas para optimizar el uso de energía y reducir costos para los usuarios.
+
+También se propone desarrollar una aplicación móvil para Android e iOS que complemente la Web Application, brindando acceso remoto a las principales funcionalidades del sistema y mejorando la experiencia de uso desde dispositivos móviles.
+
+Por otro lado, resulta recomendable ampliar el módulo de Analytics mediante indicadores comparativos, predicciones de consumo, objetivos de ahorro energético y un sistema de notificaciones inteligentes configurable por cada usuario, incrementando el valor agregado de la plataforma.
+
+Finalmente, se recomienda continuar realizando validaciones con un mayor número de usuarios pertenecientes al mercado objetivo, utilizando métricas de usabilidad y experiencia de usuario para identificar oportunidades de mejora, priorizar nuevas funcionalidades dentro del Product Backlog y orientar las siguientes iteraciones del Roadmap de TechWatch.
+
+## Video About-The-Team
+
+### Resumen
+
+El video **About-The-Team** presenta el proceso de desarrollo del proyecto TechWatch desde la planificación inicial hasta la implementación de los principales productos digitales. Durante el video se muestran evidencias reales de las reuniones del equipo, sesiones de coordinación, desarrollo de la Landing Page, Frontend, Backend y elaboración del informe académico.
+
+Asimismo, se explica la aplicación de las metodologías Scrum, Lean UX y Domain-Driven Design durante el desarrollo del proyecto, mostrando los principales entregables obtenidos en cada sprint y la forma en que el equipo organizó las actividades para alcanzar los objetivos planteados.
+
+Finalmente, cada integrante comparte un breve testimonio describiendo las responsabilidades asumidas, las actividades desarrolladas, los principales resultados obtenidos y las competencias profesionales fortalecidas durante la realización del proyecto.
+
+### Pauta de secuencias
+
+| Tiempo | Contenido |
+|---------|-----------|
+| 00:00:00 | Presentación del proyecto TechWatch y del equipo. |
+
+### Cuadro representativo del video
+
+![About The Team](./assets/images/about-the-team.png)
+
+### Microsoft Stream
+
+> https://stream.office.com/xxxxxxxxxxxxxxxx
+
+### YouTube
+
+> https://youtu.be/xxxxxxxxxxxxx
+>
 
 # Bibliografía
 
