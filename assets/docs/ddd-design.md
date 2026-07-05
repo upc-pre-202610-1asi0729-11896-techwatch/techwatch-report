@@ -69,7 +69,7 @@ Paquete base: `com.techwatch.techwatchbackend`. Contextos: `iam`, `profiles`, `d
 |---|---|
 | Aggregate Root | `User` — `id: Long`, `email: EmailAddress`, `passwordHash: String`, `role: Role` |
 | Value Objects | `EmailAddress` (record, valida formato), `Role` (enum: `ROLE_USER`, `ROLE_ADMIN`) |
-| Commands | `SignUpCommand(email, password)`, `SignInCommand(email, password)` |
+| Commands | `SignUpCommand(email, password, firstName, lastName)`, `SignInCommand(email, password)` |
 | Queries | `GetUserByIdQuery`, `GetUserByEmailQuery` |
 | Eventos | `UserRegisteredEvent` (dispara creación de Profile vía handler/ACL) |
 | Repositorio | `UserRepository` |
@@ -77,7 +77,7 @@ Paquete base: `com.techwatch.techwatchbackend`. Contextos: `iam`, `profiles`, `d
 | Expone ACL | `IamContextFacade`: `fetchUserIdByEmail(email)`, `fetchUserEmailById(userId)` |
 | Endpoints | `POST /api/v1/authentication/sign-up`, `POST /api/v1/authentication/sign-in`, `GET /api/v1/users/{userId}` |
 
-Notas: el password viaja como `String` en el command y se hashea en el command service. No existe entidad `UserCredential` ni VO `PasswordHash`/`AuthToken` (D6); el token es un artefacto de interfaz, no estado del dominio. La recuperación de contraseña (US03/TS08) se modela como command `ResetPasswordCommand` cuando se implemente.
+Notas: el password viaja como `String` en el command y se hashea en el command service. No existe entidad `UserCredential` ni VO `PasswordHash`/`AuthToken` (D6); el token es un artefacto de interfaz, no estado del dominio. La recuperación de contraseña (US03/TS08) se modela como command `ResetPasswordCommand` cuando se implemente. `SignUpCommand` incluye `firstName`/`lastName` (no solo `email`/`password`) porque la policy "crear Profile automáticamente" (4.6.1, Profiles) los necesita para poblar `PersonName` del Profile creado vía `UserRegisteredEvent`.
 
 ### 3.2 Profiles
 
