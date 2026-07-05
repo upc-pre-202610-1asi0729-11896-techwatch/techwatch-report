@@ -2463,139 +2463,6 @@ Analíticos de colaboración y *commits* del Sprint 3:
 
 En esta sección se registran y explican las entrevistas de validación realizadas con usuarios de los segmentos objetivo, quienes interactuaron con el Landing Page y la Web Application desplegados, ejecutando tareas concretas. El objetivo es validar la usabilidad, la arquitectura de información y el diseño inclusivo de la experiencia propuesta, así como contrastar las hipótesis del proceso Lean UX. La sección incluye el diseño de las entrevistas, su registro y la evaluación según heurísticas.
 
-### 5.3.1. Diseño de Entrevistas
-
-El proceso de validación se diseñó para cada segmento objetivo, combinando la navegación por el Landing Page (propuesta de valor, planes y registro) con la ejecución de los principales *user flows* de la Web Application. Para cada participante se definió un guion de tareas a completar mientras se observa su interacción, sin guiarlo, registrando dudas, errores y comentarios.
-
-**Elementos a validar:**
-
-- **Landing Page:** comprensión de la propuesta de valor (*hero* y *features*), claridad de los planes (*pricing*) y del *call-to-action* hacia el registro.
-- **Web Application — *user flows*:**
-  1. Registrar un inmueble (casa o departamento).
-  2. Crear espacios y agregar dispositivos a un espacio.
-  3. Iniciar una sesión de simulación y registrar acciones de dispositivos.
-  4. Visualizar el *dashboard* de métricas de consumo.
-  5. Revisar y marcar alertas de consumo.
-  6. Generar y consultar un reporte de consumo por periodo.
-
-**Preguntas de validación (post-tarea), para ambos segmentos:**
-
-1. ¿Pudiste completar la tarea sin ayuda? ¿Qué te resultó confuso?
-2. ¿La información mostrada (métricas, alertas, reportes) te resultó clara y útil?
-3. ¿La navegación entre secciones te pareció intuitiva?
-4. ¿Las etiquetas y los textos fueron comprensibles?
-5. ¿Qué mejorarías de la experiencia?
-
-**Énfasis por segmento:**
-
-- **Segmento 1 — Propietarios de casas:** se prioriza la gestión de múltiples espacios y dispositivos (casa con varios ambientes) y la lectura del *dashboard* y reportes para optimizar el consumo.
-- **Segmento 2 — Arrendatarios/propietarios de departamentos:** se prioriza el registro rápido de un inmueble compacto, la experiencia móvil y la comprensión de las alertas de consumo.
-
-### 5.3.2. Registro de Entrevistas
-
-Se requieren de 3 a 5 entrevistas de validación por cada segmento objetivo. Cada entrevista se registró en video (un solo video editado, subido a Microsoft Stream), indicando para cada entrevistado: nombres y apellidos, edad, distrito, un *screenshot* de un cuadro del video, el URL del video con el *timing* de inicio y la duración, y un resumen descriptivo de sus apreciaciones respecto a las tareas asignadas.
-
-**Video consolidado de entrevistas de validación:** _(pendiente: enlace del video en Microsoft Stream)_
-
-<!-- TODO equipo: pegar el enlace del video consolidado de entrevistas de validación. -->
-
-**Segmento 1 — Propietarios de casas**
-
-| Campo | Entrevista 1 | Entrevista 2 | Entrevista 3 |
-|-------|--------------|--------------|--------------|
-| Nombres y apellidos | _(pendiente)_ | _(pendiente)_ | _(pendiente)_ |
-| Edad | | | |
-| Distrito | | | |
-| Timing en el video | | | |
-| Duración | | | |
-| Screenshot | | | |
-| Resumen | | | |
-
-**Segmento 2 — Arrendatarios/propietarios de departamentos**
-
-| Campo | Entrevista 1 | Entrevista 2 | Entrevista 3 |
-|-------|--------------|--------------|--------------|
-| Nombres y apellidos | _(pendiente)_ | _(pendiente)_ | _(pendiente)_ |
-| Edad | | | |
-| Distrito | | | |
-| Timing en el video | | | |
-| Duración | | | |
-| Screenshot | | | |
-| Resumen | | | |
-
-<!-- TODO equipo: completar con 3 a 5 entrevistas reales por segmento (datos, screenshot, URL con timing y resumen descriptivo de cada entrevistado). -->
-
-### 5.3.3. Evaluaciones según heurísticas
-
-La evaluación de las sesiones de validación se realizó siguiendo el formato del Anexo D (*UX Heuristics & Principles Evaluation*), considerando heurísticas de **usabilidad** (Nielsen), **arquitectura de información** e **inclusive design** de la experiencia propuesta.
-
-**UX Heuristics & Principles Evaluation — Usability · Inclusive Design · Information Architecture**
-
-| Campo | Detalle |
-|-------|---------|
-| Carrera | Ingeniería de Software |
-| Curso | Desarrollo de Aplicaciones Open Source |
-| Sección | 11896 |
-| Profesor | Efraín Ricardo Bautista Ubillús |
-| Auditor | Equipo TechWatch |
-| Cliente(s) | Usuarios de validación de los segmentos objetivo |
-
-**Site/App a evaluar:** TechWatch — Landing Page y Web Application (IntelliHome).
-
-**Tareas a evaluar:**
-
-1. Registrar un inmueble.
-2. Crear espacios y agregar dispositivos.
-3. Iniciar una sesión de simulación y registrar acciones.
-4. Visualizar el *dashboard* de métricas.
-5. Revisar y marcar alertas.
-6. Generar un reporte de consumo.
-
-*No incluidas en esta versión:* autenticación/login (IAM pendiente), gestión de suscripciones y pagos, y edición de perfil.
-
-**Escala de severidad:**
-
-| Nivel | Descripción |
-|-------|-------------|
-| 1 | Problema superficial: puede superarse fácilmente o se presenta con muy poca frecuencia. |
-| 2 | Problema menor: ocurre con cierta frecuencia o es algo difícil de superar; prioridad baja para el siguiente *release*. |
-| 3 | Problema mayor: ocurre frecuentemente o los usuarios no logran resolverlo; prioridad alta de corrección. |
-| 4 | Problema muy grave: impide continuar con el uso de la herramienta; debe corregirse antes del lanzamiento. |
-
-**Tabla resumen:**
-
-| # | Problema | Severidad | Heurística/Principio violada(o) |
-|---|----------|-----------|---------------------------------|
-| 1 | El estado on/off de los dispositivos es de solo lectura; el usuario no puede encender/apagar desde la interfaz. | 2 | Usability: Control y libertad del usuario |
-| 2 | Los tipos de dispositivo se muestran con etiquetas técnicas en inglés (LIGHT, SMART_PLUG). | 2 | Inclusive Design: lenguaje del usuario / Consistencia |
-| 3 | Las métricas se expresan en Wh sin equivalencia a kWh ni a costo estimado. | 2 | Information Architecture: ¿Es usable? |
-| 4 | Al generar un reporte *on-demand* no hay indicador de progreso/carga visible. | 1 | Usability: Visibilidad del estado del sistema |
-| 5 | La aplicación opera con un usuario fijo (sin *login*), por lo que no hay contexto de sesión visible. | 2 | Usability: Visibilidad del estado del sistema |
-
-**Descripción de problemas (representativos):**
-
-*Problema #1 — Estado de dispositivo de solo lectura.* Severidad: 2 · Heurística: *Usability – Control y libertad del usuario*. El detalle del dispositivo muestra su estado (ON/OFF) pero no permite alternarlo, lo que algunos usuarios esperaban poder hacer a modo de "control remoto". *(Incluir captura.)* **Recomendación:** habilitar una acción de encendido/apagado cuando el backend exponga dicho comando, o comunicar claramente que el estado es informativo en esta versión.
-
-*Problema #2 — Etiquetas técnicas en inglés.* Severidad: 2 · Heurística: *Inclusive Design – lenguaje del usuario*. Tipos como `SMART_PLUG` o `AIR_CONDITIONER` se muestran tal cual al usuario. *(Incluir captura.)* **Recomendación:** mapear los *enums* a etiquetas localizadas (es/en) coherentes con el i18n del producto.
-
-*Problema #3 — Unidades sin contexto.* Severidad: 2 · Heurística: *Information Architecture – ¿Es usable?*. El consumo en Wh no se acompaña de kWh ni de un costo estimado, lo que dificulta su interpretación. *(Incluir captura.)* **Recomendación:** mostrar el equivalente en kWh y una estimación de costo configurable.
-
-<!-- TODO equipo: ajustar/completar los hallazgos con los problemas observados en las sesiones de validación reales e incluir las capturas correspondientes a cada problema. -->
-
-## 5.4. Video About-the-Product
-
-El video **About-the-Product** tiene como público objetivo a los visitantes del Landing Page y a los usuarios de la Web Application. Presenta, con un tono promocional consistente con el producto, el modelo de negocio y las características principales de TechWatch: el registro de inmuebles, espacios y dispositivos, la simulación de uso, y la visualización de métricas, alertas y reportes de consumo energético. Incluye escenas de interacción real con la solución desplegada y **al menos un testimonio positivo** de un usuario que participó en las entrevistas de validación (sección 5.3). La versión publicada en YouTube es la que se incrusta en el Landing Page.
-
-- **Duración:** 1:30 min
-- **URL (Microsoft Stream):** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310877_upc_edu_pe/IQDhCTNsGjzeS6kAoX2jYgvcAaSqByjHAyqXcSRxA9T0mIA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5LEZKe
-- **URL (YouTube, incrustado en el Landing Page):** https://www.youtube.com/watch?v=DF6cDTX380g
-
-![Screenshot del video About-the-Product](./assets/images/about-the-product.png)
-
-<!-- TODO equipo: incrustar el video de YouTube en una sección del Landing Page (las versiones de Microsoft Stream y YouTube ya están). -->
-
----
-## Validation Interviews
 ### 5.3.1. Diseño de entrevistas
 ### Entrevista 1 — Gustavo Rivas
 
@@ -2715,8 +2582,39 @@ Eleno Giovanni Mena Zuleta dice que le parece muy intuitivo y util la pagina, si
 Gloria Quispe dice que esta bien, aunque no entiende el ingles y necesitaria ayuda para saber que hacer con los botones, a su vez que algunos botones lo confundirian.
 
 ---
+### 5.3.2. Registro de Entrevistas
 
-### 5.2.3. Análisis de entrevistas
+Se requieren de 3 a 5 entrevistas de validación por cada segmento objetivo. Cada entrevista se registró en video (un solo video editado, subido a Microsoft Stream), indicando para cada entrevistado: nombres y apellidos, edad, distrito, un *screenshot* de un cuadro del video, el URL del video con el *timing* de inicio y la duración, y un resumen descriptivo de sus apreciaciones respecto a las tareas asignadas.
+
+**Video consolidado de entrevistas de validación:** _(pendiente: enlace del video en Microsoft Stream)_
+
+<!-- TODO equipo: pegar el enlace del video consolidado de entrevistas de validación. -->
+
+**Segmento 1 — Propietarios de casas**
+
+| Campo | Entrevista 1 | Entrevista 2 | Entrevista 3 |
+|-------|--------------|--------------|--------------|
+| Nombres y apellidos | _(pendiente)_ | _(pendiente)_ | _(pendiente)_ |
+| Edad | | | |
+| Distrito | | | |
+| Timing en el video | | | |
+| Duración | | | |
+| Screenshot | | | |
+| Resumen | | | |
+
+**Segmento 2 — Arrendatarios/propietarios de departamentos**
+
+| Campo | Entrevista 1 | Entrevista 2 | Entrevista 3 |
+|-------|--------------|--------------|--------------|
+| Nombres y apellidos | _(pendiente)_ | _(pendiente)_ | _(pendiente)_ |
+| Edad | | | |
+| Distrito | | | |
+| Timing en el video | | | |
+| Duración | | | |
+| Screenshot | | | |
+| Resumen | | | |
+
+###  Análisis de entrevistas
 
 Se realizaron **6 entrevistas válidas**, distribuidas en los dos segmentos objetivo definidos previamente: **3 propietarios de casas (50%)** y **3 arrendatarios/propietarios de departamentos (50%)**.
 
@@ -2749,45 +2647,75 @@ Los resultados obtenidos evidencian una aceptación positiva de la propuesta por
 Las principales oportunidades de mejora identificadas se relacionan con la experiencia de usuario. Entre ellas destacan la incorporación de funciones de administración más flexibles, como la eliminación de espacios creados, la implementación de gráficos para visualizar información de consumo, una interfaz más intuitiva y una adaptación completa al idioma español.
 
 Estos hallazgos validan la propuesta de valor de **TechWatch**, al mismo tiempo que proporcionan lineamientos claros para futuras mejoras orientadas a incrementar la accesibilidad, usabilidad y satisfacción de los usuarios finales.
-# Conclusiones
 
-## Conclusiones y recomendaciones
+### 5.3.3. Evaluaciones según heurísticas
 
-El proyecto TechWatch permitió identificar y abordar la necesidad de contar con una plataforma centralizada orientada al monitoreo, control y análisis de dispositivos inteligentes dentro del hogar. A través de metodologías como Lean UX, entrevistas y análisis de segmentos objetivo, se evidenció que los usuarios buscan soluciones accesibles, intuitivas y enfocadas en optimizar el consumo energético mediante información clara y visual.
+La evaluación de las sesiones de validación se realizó siguiendo el formato del Anexo D (*UX Heuristics & Principles Evaluation*), considerando heurísticas de **usabilidad** (Nielsen), **arquitectura de información** e **inclusive design** de la experiencia propuesta.
 
-El desarrollo de la arquitectura, diseño de interfaces, prototipos y modelos basados en Domain-Driven Design permitió validar la viabilidad técnica y funcional de la propuesta. Asimismo, la definición de Bounded Contexts como Device Management, Analytics, Subscriptions, IAM y Profiles facilitó una mejor organización del dominio y de las responsabilidades del sistema.
+**UX Heuristics & Principles Evaluation — Usability · Inclusive Design · Information Architecture**
 
-TechWatch se posiciona como una solución orientada a Smart Homes que integra monitoreo de dispositivos, dashboards analíticos y control inteligente del hogar, permitiendo a los usuarios comprender el comportamiento energético de sus dispositivos y tomar decisiones informadas para optimizar recursos.
+| Campo | Detalle |
+|-------|---------|
+| Carrera | Ingeniería de Software |
+| Curso | Desarrollo de Aplicaciones Open Source |
+| Sección | 11896 |
+| Profesor | Efraín Ricardo Bautista Ubillús |
+| Auditor | Equipo TechWatch |
+| Cliente(s) | Usuarios de validación de los segmentos objetivo |
 
-Se recomienda continuar con la validación del producto mediante pruebas con usuarios reales y ampliar progresivamente la integración con dispositivos IoT para incrementar las capacidades de monitoreo y automatización. Además, resulta importante fortalecer la arquitectura del sistema para garantizar escalabilidad, mantenibilidad y seguridad conforme aumente el número de usuarios y dispositivos conectados.
+**Site/App a evaluar:** TechWatch — Landing Page y Web Application (IntelliHome).
 
-Finalmente, se recomienda incorporar funcionalidades avanzadas como alertas inteligentes, automatización de acciones, recomendaciones de ahorro energético y análisis predictivo, con el objetivo de incrementar el valor de la plataforma y mejorar la experiencia de usuario dentro del ecosistema de hogares inteligentes.
+**Tareas a evaluar:**
 
-### Contraste de hipótesis Lean UX con los resultados de validación
+1. Registrar un inmueble.
+2. Crear espacios y agregar dispositivos.
+3. Iniciar una sesión de simulación y registrar acciones.
+4. Visualizar el *dashboard* de métricas.
+5. Revisar y marcar alertas.
+6. Generar un reporte de consumo.
 
-El proceso de validación (sección 5.3), junto con las entrevistas de *needfinding* (sección 2.2), permite contrastar las hipótesis Lean UX definidas en la sección 1.2.2.3 frente al comportamiento real de los segmentos objetivo:
+*No incluidas en esta versión:* autenticación/login (IAM pendiente), gestión de suscripciones y pagos, y edición de perfil.
 
-| Hipótesis | Criterio de éxito | Resultado de validación | Estado |
-|-----------|-------------------|-------------------------|--------|
-| **H1** — El dashboard centralizado mejora la visibilidad del consumo y estado de los dispositivos. | ≥ 70% afirma que mejora la visibilidad. | Los participantes valoraron el *dashboard* de métricas como el principal aporte de la plataforma. | Validada (confirmar % con 5.3) |
-| **H2** — Las métricas de consumo ayudan a identificar usos ineficientes. | ≥ 65% indica que ayuda a controlar el consumo. | Las métricas y reportes por dispositivo se percibieron útiles para el ahorro. | Validada (confirmar %) |
-| **H3** — La experiencia móvil incrementa la frecuencia de uso. | > 60% de sesiones desde móvil. | El diseño *responsive* facilitó el uso desde *smartphone*. | Por confirmar con datos de uso |
-| **H4** — El modelo *freemium* incentiva la adopción y el interés por planes premium. | ≥ 30% manifiesta intención de actualizar. | Interés en planes premium condicionado al costo. | Por confirmar |
-| **H5** — Las alertas y reportes inteligentes aumentan el valor percibido. | ≥ 70% los considera útiles. | Las alertas de consumo se identificaron como un diferencial de la propuesta. | Validada (confirmar %) |
+**Escala de severidad:**
 
-<!-- TODO equipo: reemplazar las columnas Resultado/Estado con los porcentajes reales obtenidos de las sesiones de validación (sección 5.3). -->
+| Nivel | Descripción |
+|-------|-------------|
+| 1 | Problema superficial: puede superarse fácilmente o se presenta con muy poca frecuencia. |
+| 2 | Problema menor: ocurre con cierta frecuencia o es algo difícil de superar; prioridad baja para el siguiente *release*. |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no logran resolverlo; prioridad alta de corrección. |
+| 4 | Problema muy grave: impide continuar con el uso de la herramienta; debe corregirse antes del lanzamiento. |
 
-## About the Team
+**Tabla resumen:**
 
-El video **About the Team** resume el proceso de trabajo del equipo TechWatch a lo largo del proyecto, incluyendo escenas de las sesiones de trabajo reales, una retrospectiva grupal y el **testimonio ante cámara de cada integrante**, en el que describe las actividades realizadas, el logro de los *outcomes* y el desarrollo de las competencias del curso. El tono es consistente con el del producto. La versión publicada en YouTube es la que se incrusta en el Landing Page.
+| # | Problema | Severidad | Heurística/Principio violada(o) |
+|---|----------|-----------|---------------------------------|
+| 1 | El estado on/off de los dispositivos es de solo lectura; el usuario no puede encender/apagar desde la interfaz. | 2 | Usability: Control y libertad del usuario |
+| 2 | Los tipos de dispositivo se muestran con etiquetas técnicas en inglés (LIGHT, SMART_PLUG). | 2 | Inclusive Design: lenguaje del usuario / Consistencia |
+| 3 | Las métricas se expresan en Wh sin equivalencia a kWh ni a costo estimado. | 2 | Information Architecture: ¿Es usable? |
+| 4 | Al generar un reporte *on-demand* no hay indicador de progreso/carga visible. | 1 | Usability: Visibilidad del estado del sistema |
+| 5 | La aplicación opera con un usuario fijo (sin *login*), por lo que no hay contexto de sesión visible. | 2 | Usability: Visibilidad del estado del sistema |
 
-- **Duración:** _(pendiente)_
-- **URL (Microsoft Stream):** _(pendiente)_
-- **URL (YouTube, incrustado en el Landing Page):** https://youtu.be/v_BGvnbr95c
+**Descripción de problemas (representativos):**
 
-![Screenshot del video About the Team](./assets/images/about-the-team.png)
+*Problema #1 — Estado de dispositivo de solo lectura.* Severidad: 2 · Heurística: *Usability – Control y libertad del usuario*. El detalle del dispositivo muestra su estado (ON/OFF) pero no permite alternarlo, lo que algunos usuarios esperaban poder hacer a modo de "control remoto". *(Incluir captura.)* **Recomendación:** habilitar una acción de encendido/apagado cuando el backend exponga dicho comando, o comunicar claramente que el estado es informativo en esta versión.
 
-<!-- TODO equipo: completar la URL de Microsoft Stream, la duración y el screenshot (about-the-team.png) del video About-the-Team, e incrustar la versión de YouTube en el Landing Page. -->
+*Problema #2 — Etiquetas técnicas en inglés.* Severidad: 2 · Heurística: *Inclusive Design – lenguaje del usuario*. Tipos como `SMART_PLUG` o `AIR_CONDITIONER` se muestran tal cual al usuario. *(Incluir captura.)* **Recomendación:** mapear los *enums* a etiquetas localizadas (es/en) coherentes con el i18n del producto.
+
+*Problema #3 — Unidades sin contexto.* Severidad: 2 · Heurística: *Information Architecture – ¿Es usable?*. El consumo en Wh no se acompaña de kWh ni de un costo estimado, lo que dificulta su interpretación. *(Incluir captura.)* **Recomendación:** mostrar el equivalente en kWh y una estimación de costo configurable.
+
+<!-- TODO equipo: ajustar/completar los hallazgos con los problemas observados en las sesiones de validación reales e incluir las capturas correspondientes a cada problema. -->
+
+## 5.4. Video About-the-Product
+
+El video **About-the-Product** tiene como público objetivo a los visitantes del Landing Page y a los usuarios de la Web Application. Presenta, con un tono promocional consistente con el producto, el modelo de negocio y las características principales de TechWatch: el registro de inmuebles, espacios y dispositivos, la simulación de uso, y la visualización de métricas, alertas y reportes de consumo energético. Incluye escenas de interacción real con la solución desplegada y **al menos un testimonio positivo** de un usuario que participó en las entrevistas de validación (sección 5.3). La versión publicada en YouTube es la que se incrusta en el Landing Page.
+
+- **Duración:** 1:30 min
+- **URL (Microsoft Stream):** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310877_upc_edu_pe/IQDhCTNsGjzeS6kAoX2jYgvcAaSqByjHAyqXcSRxA9T0mIA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5LEZKe
+- **URL (YouTube, incrustado en el Landing Page):** https://www.youtube.com/watch?v=DF6cDTX380g
+
+![Screenshot del video About-the-Product](./assets/images/about-the-product.png)
+
+<!-- TODO equipo: incrustar el video de YouTube en una sección del Landing Page (las versiones de Microsoft Stream y YouTube ya están). -->
 
 # Bibliografía
 
