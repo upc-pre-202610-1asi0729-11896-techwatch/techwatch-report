@@ -2744,12 +2744,61 @@ https://github.com/upc-pre-202610-1asi0729-11896-techwatch
 
 ![Insights de colaboración - Landing Page](./assets/images/chapter-5-2-4-8-img3.png)
 
+![Insights de colaboración - Report](./assets/images/chapter-5-2-4-8-img4.png)
+
 
 ## 5.3. Validation Interviews
 
 En esta sección se registran y explican las entrevistas de validación realizadas con usuarios de los segmentos objetivo, quienes interactuaron con el Landing Page y la Web Application desplegados, ejecutando tareas concretas. El objetivo es validar la usabilidad, la arquitectura de información y el diseño inclusivo de la experiencia propuesta, así como contrastar las hipótesis del proceso Lean UX. La sección incluye el diseño de las entrevistas, su registro y la evaluación según heurísticas.
 
-### 5.3.1. Diseño de entrevistas
+### 5.3.1. Diseño de Entrevistas
+
+Con el propósito de validar la solución propuesta, se diseñó un conjunto de entrevistas semiestructuradas dirigido a usuarios pertenecientes a los dos segmentos objetivo definidos durante la investigación. Cada participante interactuó con el Landing Page y la Web Application ejecutando un conjunto de tareas representativas del uso real del sistema, mientras el equipo registró observaciones y comentarios para identificar oportunidades de mejora.
+
+#### Objetivo de las entrevistas
+
+Validar la usabilidad, utilidad y facilidad de aprendizaje de IntelliHome, verificando que los usuarios comprendan la propuesta de valor y puedan utilizar las funcionalidades principales sin asistencia.
+
+#### Segmentos objetivo
+
+- Segmento 1: Propietarios de casas.
+- Segmento 2: Arrendatarios y propietarios de departamentos.
+
+Se realizaron seis entrevistas, tres por cada segmento.
+
+#### Escenarios y tareas de validación
+
+- Explorar el Landing Page.
+- Acceder a la Web Application.
+- Registrar una propiedad.
+- Crear espacios.
+- Agregar dispositivos inteligentes.
+- Ejecutar una simulación.
+- Consultar métricas, alertas y reportes.
+- Compartir observaciones sobre la experiencia de uso.
+
+#### Preguntas de validación
+
+1. ¿La plataforma le resultó fácil de utilizar?
+2. ¿Encontró dificultades durante la navegación?
+3. ¿La información presentada fue clara?
+4. ¿Qué funcionalidad mejoraría?
+5. ¿Utilizaría IntelliHome en su vivienda? ¿Por qué?
+
+#### Criterios de evaluación
+
+- Facilidad de aprendizaje.
+- Facilidad de navegación.
+- Claridad de la interfaz.
+- Comprensión de botones y opciones.
+- Utilidad de las funcionalidades.
+- Satisfacción general del usuario.
+- Oportunidades de mejora.
+
+### 5.3.2. Registro de Entrevistas
+
+Las siguientes entrevistas fueron registradas en video y documentan la interacción de los participantes con la solución propuesta. En cada caso se presenta la información del entrevistado, el segmento al que pertenece, la duración de la entrevista, el intervalo correspondiente dentro del video consolidado, una captura representativa y un resumen de los principales comentarios obtenidos.
+
 ### Entrevista 1 — Gustavo Rivas
 
 | Campo | Detalle |
@@ -2868,39 +2917,6 @@ Eleno Giovanni Mena Zuleta dice que le parece muy intuitivo y util la pagina, si
 Gloria Quispe dice que esta bien, aunque no entiende el ingles y necesitaria ayuda para saber que hacer con los botones, a su vez que algunos botones lo confundirian.
 
 ---
-### 5.3.2. Registro de Entrevistas
-
-Se requieren de 3 a 5 entrevistas de validación por cada segmento objetivo. Cada entrevista se registró en video (un solo video editado, subido a Microsoft Stream), 
-indicando para cada entrevistado: nombres y apellidos, edad, distrito, un *screenshot* de un cuadro del video, el URL del video con el *timing* de inicio y la duración, 
-y un resumen descriptivo de sus apreciaciones respecto a las tareas asignadas.
-
-**Video consolidado de entrevistas de validación:** _(pendiente: enlace del video en Microsoft Stream)_
-
-
-**Segmento 1 — Propietarios de casas**
-
-| Campo | Entrevista 1 | Entrevista 2 | Entrevista 3 |
-|-------|--------------|--------------|--------------|
-| Nombres y apellidos | _(pendiente)_ | _(pendiente)_ | _(pendiente)_ |
-| Edad | | | |
-| Distrito | | | |
-| Timing en el video | | | |
-| Duración | | | |
-| Screenshot | | | |
-| Resumen | | | |
-
-**Segmento 2 — Arrendatarios/propietarios de departamentos**
-
-| Campo | Entrevista 1 | Entrevista 2 | Entrevista 3 |
-|-------|--------------|--------------|--------------|
-| Nombres y apellidos | _(pendiente)_ | _(pendiente)_ | _(pendiente)_ |
-| Edad | | | |
-| Distrito | | | |
-| Timing en el video | | | |
-| Duración | | | |
-| Screenshot | | | |
-| Resumen | | | |
-
 ###  Análisis de entrevistas
 
 Se realizaron **6 entrevistas válidas**, distribuidas en los dos segmentos objetivo definidos previamente: **3 propietarios de casas (50%)** y **3 arrendatarios/propietarios de departamentos (50%)**.
