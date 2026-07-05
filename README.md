@@ -2576,13 +2576,12 @@ El flujo principal validado comprende el acceso desde el **Landing Page**, el re
 
 ### Capturas de las principales vistas
 
-![Landing Page](./assets/images/chapter-5-2-4-5-img1.png)
 
-![Autenticación y gestión de perfiles](./assets/images/chapter-5-2-4-5-img2.png)
+![Autenticación y gestión de perfiles](./assets/images/chapter-5-2-4-5-img1.png)
 
-![Gestión de propiedades, espacios y dispositivos](./assets/images/chapter-5-2-4-5-img3.png)
+![Gestión de propiedades, espacios y dispositivos](./assets/images/chapter-5-2-4-5-img2.png)
 
-![Dashboard de analítica y reportes](./assets/images/chapter-5-2-4-5-img4.png)
+![Dashboard de analítica y reportes](./assets/images/chapter-5-2-4-5-img3.png)
 
 
 ### 5.2.4.6. Services Documentation Evidence for Sprint Review.
@@ -2603,51 +2602,94 @@ El API expone los servicios correspondientes a los Bounded Contexts **IAM**, **P
 |-------|---------------------|------------|-------------|------------|
 | POST | `/api/v1/authentication/sign-up` | Body: `SignUpResource` | Registrar un nuevo usuario | 201 · 400 · 409 |
 | POST | `/api/v1/authentication/sign-in` | Body: `SignInResource` | Iniciar sesión y obtener un token JWT | 200 · 400 · 404 |
-| GET | `/api/v1/users` | Authorization: Bearer Token | Listar todos los usuarios | 200 · 401 · 403 |
 | GET | `/api/v1/users/{userId}` | Path: `userId` | Obtener un usuario por ID | 200 · 404 |
-| GET | `/api/v1/roles` | Authorization: Bearer Token | Listar los roles disponibles | 200 |
 
 ### Profiles
 
 | Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
 |-------|---------------------|------------|-------------|------------|
-| POST | `/api/v1/profiles` | Body: `CreateProfileResource` | Crear un perfil de usuario | 201 · 400 · 409 |
-| GET | `/api/v1/profiles` | Authorization: Bearer Token | Listar perfiles registrados | 200 |
+| POST | `/api/v1/profiles` | Body: `CreateProfileRequest` | Crear un perfil de usuario | 201 · 400 · 409 |
+| GET | `/api/v1/profiles` | Query: `userId` | Obtener el perfil asociado a un usuario | 200 · 404 |
 | GET | `/api/v1/profiles/{profileId}` | Path: `profileId` | Obtener un perfil por ID | 200 · 404 |
+| PUT | `/api/v1/profiles/{profileId}` | Path + Body | Actualizar la información de un perfil | 200 · 400 · 404 |
+| PUT | `/api/v1/profiles/{profileId}/preferences` | Path + Body | Actualizar las preferencias del usuario | 200 · 400 · 404 |
 
 ### Device Management
+
+#### Properties
 
 | Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
 |-------|---------------------|------------|-------------|------------|
 | POST | `/api/v1/properties` | Body: `CreatePropertyRequest` | Registrar una propiedad | 201 · 400 |
 | GET | `/api/v1/properties` | Query: `userId` | Listar propiedades de un usuario | 200 |
-| POST | `/api/v1/properties/{propertyId}/spaces` | Path + Body | Registrar un espacio dentro de una propiedad | 201 · 404 |
-| POST | `/api/v1/devices` | Body: `CreateDeviceRequest` | Registrar un dispositivo inteligente | 201 · 409 |
+| GET | `/api/v1/properties/{propertyId}` | Path: `propertyId` | Obtener una propiedad por ID | 200 · 404 |
+| POST | `/api/v1/properties/{propertyId}/spaces` | Path + Body | Crear un espacio dentro de una propiedad | 201 · 404 |
+
+#### Devices
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/devices` | Body: `CreateDeviceRequest` | Agregar un dispositivo a un espacio | 201 · 409 |
+| GET | `/api/v1/devices` | Query: `spaceId` | Obtener los dispositivos de un espacio | 200 |
+| GET | `/api/v1/devices/{deviceId}` | Path: `deviceId` | Obtener un dispositivo por ID | 200 · 404 |
 | PUT | `/api/v1/devices/{deviceId}` | Path + Body | Editar un dispositivo | 200 · 404 |
 | DELETE | `/api/v1/devices/{deviceId}` | Path | Eliminar un dispositivo | 200 · 404 |
+
+#### Simulation Sessions
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
 | POST | `/api/v1/simulation-sessions` | Body | Iniciar una sesión de simulación | 201 |
 | POST | `/api/v1/simulation-sessions/{sessionId}/actions` | Path + Body | Registrar una acción durante la simulación | 201 |
 | POST | `/api/v1/simulation-sessions/{sessionId}/end` | Path | Finalizar una sesión de simulación | 200 |
+| GET | `/api/v1/simulation-sessions/{sessionId}` | Path | Obtener una sesión de simulación | 200 · 404 |
+| GET | `/api/v1/simulation-sessions/active` | Query: `userId` | Obtener la sesión activa de un usuario | 200 · 404 |
 
 ### Analytics
+
+#### Metrics
 
 | Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
 |-------|---------------------|------------|-------------|------------|
 | GET | `/api/v1/metrics` | Query: `propertyId` | Consultar métricas de consumo | 200 |
-| GET | `/api/v1/alerts` | Query: `userId` | Consultar alertas de consumo | 200 |
-| PUT | `/api/v1/alerts/{alertId}/read` | Path: `alertId` | Marcar una alerta como leída | 200 |
+
+#### Alerts
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| GET | `/api/v1/alerts` | Query: `userId` | Obtener alertas de consumo | 200 |
+| PUT | `/api/v1/alerts/{alertId}/read` | Path: `alertId` | Marcar una alerta como leída | 200 · 404 |
+
+#### Reports
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
 | POST | `/api/v1/reports` | Body | Generar un reporte de consumo | 201 |
-| GET | `/api/v1/reports` | Query: `propertyId` | Consultar reportes de consumo | 200 |
+| GET | `/api/v1/reports` | Query: `propertyId` | Obtener reportes por propiedad | 200 |
+| GET | `/api/v1/reports/{reportId}` | Path: `reportId` | Obtener un reporte por ID | 200 · 404 |
 
 ### Subscriptions
 
 | Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
 |-------|---------------------|------------|-------------|------------|
-| POST | `/api/v1/subscriptions` | Body | Registrar una nueva suscripción | 201 · 400 |
-| GET | `/api/v1/subscriptions` | Authorization: Bearer Token | Listar suscripciones | 200 |
-| GET | `/api/v1/subscriptions/{subscriptionId}` | Path: `subscriptionId` | Obtener una suscripción por ID | 200 · 404 |
-| PUT | `/api/v1/subscriptions/{subscriptionId}` | Path + Body | Actualizar una suscripción | 200 · 404 |
-| DELETE | `/api/v1/subscriptions/{subscriptionId}` | Path | Cancelar una suscripción | 200 · 404 |
+| POST | `/api/v1/subscriptions` | Body | Crear una suscripción | 201 · 400 |
+| GET | `/api/v1/subscriptions` | Query: `userId` | Obtener la suscripción activa del usuario | 200 |
+| PUT | `/api/v1/subscriptions/{subscriptionId}/renew` | Path | Renovar una suscripción | 200 · 404 |
+| PUT | `/api/v1/subscriptions/{subscriptionId}/plan` | Path + Body | Cambiar el plan de una suscripción | 200 · 404 |
+| PUT | `/api/v1/subscriptions/{subscriptionId}/cancel` | Path | Cancelar una suscripción | 200 · 404 |
+| GET | `/api/v1/subscriptions/{subscriptionId}/payments` | Path | Obtener el historial de pagos de una suscripción | 200 |
+
+### Plans
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| GET | `/api/v1/plans` | — | Obtener el catálogo de planes disponibles | 200 |
+
+![Backend](./assets/images/chapter-5-2-4-6-img1.png)
+
+![Backend](./assets/images/chapter-5-2-4-6-img2.png)
+
+![Backend](./assets/images/chapter-5-2-4-6-img3.png)
 
 ### 5.2.4.7. Software Deployment Evidence for Sprint Review.
 
