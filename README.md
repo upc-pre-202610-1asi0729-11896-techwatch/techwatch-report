@@ -53,7 +53,7 @@
 
 <h3 align="center">Periodo 202610</h3>
 
-<h2 align="center">Junio 2026</h2>
+<h2 align="center">Julio 2026</h2>
 
 <div style="page-break-after: always;"></div>
 
@@ -66,6 +66,7 @@
 | AV1     | 04-04-2026 | Equipo TechWatch | Creación del informe. Inclusión de Capítulos I, II, III, IV , V y la inclusion del Sprint 1                                                                                                                                                                                              |
 | TB1     | 13-05-2026 | Equipo TechWatch | Actualización del Project Report con la inclusión del Sprint 2 y corrección de observaciones de la entrega anterior relacionadas con hipótesis Lean UX, diagramas, wireflows, Sprint Goal, estadísticas de colaboración, nomenclatura de archivos y visualización de imágenes y enlaces. |
 | AV2     | 17-06-2026 | Equipo TechWatch | Actualización del Project Report para el AV2: inclusión del Sprint 3 con la migración del JSON Server al RESTful API real en Spring Boot desplegado en Railway y su documentación con OpenAPI, capítulo de Validation Interviews con evaluación según heurísticas, sección de Video About-the-Product, sección About the Team en Conclusiones, y actualización del Registro de Versiones, Student Outcome y Project Report Collaboration Insights. |
+| TB2     | 05-07-2026 | Equipo TechWatch | Actualización final del Project Report para la TB2: inclusión del Sprint 4 con la culminación e integración completa del Backend Web Services (IAM, Profiles y Subscriptions), la Frontend Web Application y el Landing Page, y su despliegue definitivo en Railway. Se completó el capítulo de Conclusiones (Conclusiones y recomendaciones, About the Team), se corrigieron los diagramas de arquitectura C4 (contenedores y componentes), se reordenaron los diagramas de base de datos por dominio core, se actualizaron los Anexos de video (A, B y C) y se amplió la sección Student Outcome y el Registro de Versiones con la participación del equipo durante la TB2. |
 
 <div style="page-break-after: always;"></div>
 
@@ -193,6 +194,7 @@ URL de la organizacion  del Project Report en GitHub:
 - [Anexos](#anexos)
   - [Anexo A. Video de Exposiciones](#anexo-a-video-de-exposiciones)
   - [Anexo B. Evidencia de Video](#anexo-b-evidencia-de-video)
+  - [Anexo C. Validation Interviews](#anexo-c-validation-interviews)
 
 ---
 
@@ -213,11 +215,11 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </tr>
 
   <tr>
-    <td rowspan="15">Comunica oralmente con efectividad a diferentes rangos de audiencia.</td>
+    <td rowspan="20">Comunica oralmente con efectividad a diferentes rangos de audiencia.</td>
     <td rowspan="5">AV1</td>
     <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Participé activamente en la sustentación de la Landing Page, explicando la coherencia entre el diseño en Figma y la implementación visual. Además, apoyé constantemente en la elaboración y mejora del documento del proyecto.</td>
-    <td rowspan="15">
-      Durante la AV1, la TB1 y la AV2, el equipo mantuvo una comunicación oral efectiva entre integrantes, docente y usuarios entrevistados, permitiendo explicar de manera clara tanto aspectos funcionales como técnicos del proyecto. Las reuniones de coordinación y revisión facilitaron la validación de hipótesis, historias de usuario, wireframes y criterios de aceptación, fortaleciendo la toma de decisiones durante el desarrollo de la solución IoT y mejorando la integración de los avances realizados en cada sprint. En la AV2, la comunicación oral se centró en sustentar la construcción del Backend Web Services, su documentación con OpenAPI y su despliegue en Railway, así como el proceso de validación con usuarios.
+    <td rowspan="20">
+      Durante la AV1, la TB1, la AV2 y la TB2, el equipo mantuvo una comunicación oral efectiva entre integrantes, docente y usuarios entrevistados, permitiendo explicar de manera clara tanto aspectos funcionales como técnicos del proyecto. Las reuniones de coordinación y revisión facilitaron la validación de hipótesis, historias de usuario, wireframes y criterios de aceptación, fortaleciendo la toma de decisiones durante el desarrollo de la solución IoT y mejorando la integración de los avances realizados en cada sprint. En la AV2, la comunicación oral se centró en sustentar la construcción del Backend Web Services, su documentación con OpenAPI y su despliegue en Railway, así como el proceso de validación con usuarios. En la TB2, la comunicación oral se centró en sustentar la culminación e integración completa de la solución, su despliegue final en producción y el cierre del proyecto ante el docente.
     </td>
   </tr>
 
@@ -280,11 +282,32 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </tr>
 
   <tr>
-    <td rowspan="15">Comunica por escrito con efectividad a diferentes rangos de audiencia.</td>
+    <td rowspan="5">TB2</td>
+    <td><b>Fernandez Garfias, Alexander Piero</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
+  </tr>
+
+  <tr>
+    <td><b>Alva Abanto, Luis Andrés</b><br><br>Sustenté ante el equipo y el docente la culminación del Backend Web Services (Bounded Contexts IAM, Profiles y Subscriptions), su integración con el Frontend y el despliegue final de la solución en Railway.</td>
+  </tr>
+
+  <tr>
+    <td><b>Toro Turpo, Ronal</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
+  </tr>
+
+  <tr>
+    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
+  </tr>
+
+  <tr>
+    <td><b>Becerra Durand, Sebastian Uriel</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
+  </tr>
+
+  <tr>
+    <td rowspan="20">Comunica por escrito con efectividad a diferentes rangos de audiencia.</td>
     <td rowspan="5">AV1</td>
     <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Participé en el desarrollo del frontend y apoyé de manera constante en la elaboración, corrección y organización del Project Report, además de documentar avances relacionados con la Landing Page y estructura visual del sistema.</td>
-    <td rowspan="15">
-      La comunicación escrita desarrollada durante la AV1, la TB1 y la AV2 permitió mantener trazabilidad y coherencia entre los artefactos del proyecto, incluyendo Lean UX, historias de usuario, technical stories, wireframes, reportes y despliegues. La documentación elaborada facilitó la comprensión de los avances técnicos y funcionales por parte del docente y del equipo, además de reducir ambigüedades en los procesos de integración y validación del sistema. En la AV2 se documentó por escrito el Sprint 3 (Web Services con OpenAPI, evidencias de desarrollo y despliegue) y las entrevistas de validación con su evaluación según heurísticas.
+    <td rowspan="20">
+      La comunicación escrita desarrollada durante la AV1, la TB1, la AV2 y la TB2 permitió mantener trazabilidad y coherencia entre los artefactos del proyecto, incluyendo Lean UX, historias de usuario, technical stories, wireframes, reportes y despliegues. La documentación elaborada facilitó la comprensión de los avances técnicos y funcionales por parte del docente y del equipo, además de reducir ambigüedades en los procesos de integración y validación del sistema. En la AV2 se documentó por escrito el Sprint 3 (Web Services con OpenAPI, evidencias de desarrollo y despliegue) y las entrevistas de validación con su evaluación según heurísticas. En la TB2 se documentó por escrito el Sprint 4, el capítulo de Conclusiones y el cierre integral del proyecto.
     </td>
   </tr>
 
@@ -346,7 +369,30 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
     <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Registré el registro de entrevistas de validación y observaciones de calidad del informe antes de la entrega.</td>
   </tr>
 
+  <tr>
+    <td rowspan="5">TB2</td>
+    <td><b>Fernandez Garfias, Alexander Piero</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
+  </tr>
+
+  <tr>
+    <td><b>Alva Abanto, Luis Andrés</b><br><br>Redacté la documentación del Sprint 4 correspondiente al Backend Web Services (IAM, Profiles y Subscriptions), el despliegue final en Railway y el capítulo de Conclusiones del informe.</td>
+  </tr>
+
+  <tr>
+    <td><b>Toro Turpo, Ronal</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
+  </tr>
+
+  <tr>
+    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
+  </tr>
+
+  <tr>
+    <td><b>Becerra Durand, Sebastian Uriel</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
+  </tr>
+
 </table>
+
+<!-- TODO equipo: cada integrante debe reemplazar su celda "(pendiente)" del bloque TB2 con lo que efectivamente comunico oralmente y por escrito durante esta entrega. -->
 
 
 # Capítulo I: Introducción
@@ -3046,15 +3092,17 @@ Por otro lado, resulta recomendable ampliar el módulo de Analytics mediante ind
 
 Finalmente, se recomienda continuar realizando validaciones con un mayor número de usuarios pertenecientes al mercado objetivo, utilizando métricas de usabilidad y experiencia de usuario para identificar oportunidades de mejora, priorizar nuevas funcionalidades dentro del Product Backlog y orientar las siguientes iteraciones del Roadmap de TechWatch.
 
-## Video About-The-Team
+## About the Team
 
-### Resumen
+El video **About the Team** presenta el proceso de desarrollo del proyecto TechWatch desde la planificación inicial hasta la implementación de los principales productos digitales. Durante el video se muestran evidencias reales de las reuniones del equipo, sesiones de coordinación, desarrollo de la Landing Page, Frontend, Backend y elaboración del informe académico.
 
-El video **About-The-Team** presenta el proceso de desarrollo del proyecto TechWatch desde la planificación inicial hasta la implementación de los principales productos digitales. Durante el video se muestran evidencias reales de las reuniones del equipo, sesiones de coordinación, desarrollo de la Landing Page, Frontend, Backend y elaboración del informe académico.
-
-Asimismo, se explica la aplicación de las metodologías Scrum, Lean UX y Domain-Driven Design durante el desarrollo del proyecto, mostrando los principales entregables obtenidos en cada sprint y la forma en que el equipo organizó las actividades para alcanzar los objetivos planteados.
+Asimismo, se explica la aplicación del framework **Scrum**, el enfoque **Lean UX** y **Domain-Driven Design** durante el desarrollo del proyecto, mostrando los principales entregables obtenidos en cada sprint y la forma en que el equipo organizó las actividades para alcanzar los objetivos planteados.
 
 Finalmente, cada integrante comparte un breve testimonio describiendo las responsabilidades asumidas, las actividades desarrolladas, los principales resultados obtenidos y las competencias profesionales fortalecidas durante la realización del proyecto.
+
+- **Duración:** _(pendiente)_
+- **URL (Microsoft Stream):** _(pendiente)_
+- **URL (YouTube, incrustado en el Landing Page):** https://youtu.be/v_BGvnbr95c
 
 ### Pauta de secuencias
 
@@ -3062,17 +3110,9 @@ Finalmente, cada integrante comparte un breve testimonio describiendo las respon
 |---------|-----------|
 | 00:00:00 | Presentación del proyecto TechWatch y del equipo. |
 
-### Cuadro representativo del video
+<!-- TODO equipo: completar la pauta de secuencias con los tiempos reales una vez editado el video final, agregar la duracion y el enlace de Microsoft Stream, y subir la captura assets/images/about-the-team.png. -->
 
-![About The Team](./assets/images/about-the-team.png)
-
-### Microsoft Stream
-
-> https://stream.office.com/xxxxxxxxxxxxxxxx
-
-### YouTube
-
-> https://youtu.be/xxxxxxxxxxxxx
+![Screenshot del video About the Team](./assets/images/about-the-team.png)
 >
 
 # Bibliografía
@@ -3116,20 +3156,30 @@ Almas’ud, T. L., Pramudito, H. D., & Badruzzaman, A. (2025). *IoT-enabled smar
 | Entrega | Características del video | Sobre el contenido | Integración y entrega |
 |---------|----------------------------|-------------------|----------------------|
 | AV1 | **Enlace:** https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/IQBeS4ZyHvBRS7DxBIhtX41KAVW1jCO4GycXqKhoihL49AY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=8OcrcO <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-av1 <br><br> **Formato:** .mp4 <br><br> **Duración:** 16:57 | Video de exposición grupal que resume el avance integral del proyecto desarrollado hasta la presente entrega, incluyendo los principales capítulos trabajados y evidencias del desarrollo del sistema. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
+| TB1 | **Enlace:** _(pendiente)_ <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-tb1 <br><br> **Formato:** .mp4 <br><br> **Duración:** _(pendiente)_ | Video de exposición grupal que resume el avance del proyecto hasta la TB1, incluyendo el Sprint 2 y las correcciones aplicadas sobre la entrega anterior. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
+| AV2 | **Enlace:** _(pendiente)_ <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-av2 <br><br> **Formato:** .mp4 <br><br> **Duración:** _(pendiente)_ | Video de exposición grupal que resume el avance del proyecto hasta la AV2, incluyendo el Sprint 3, el Backend Web Services desplegado y las entrevistas de validación. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
+| TB2 | **Enlace:** _(pendiente)_ <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-tb2 <br><br> **Formato:** .mp4 <br><br> **Duración:** _(pendiente)_ | Video de exposición grupal que resume el cierre del proyecto, incluyendo el Sprint 4, la integración final de todos los componentes y su despliegue en producción. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
+
+<!-- TODO equipo: completar Enlace, Duracion y screenshot de las filas TB1, AV2 y TB2 con los videos reales de cada exposicion. -->
 
 ---
 
-## Anexo B. Evidencia de Video 
+## Anexo B. Evidencia de Video
 
 | Sección | Características del video | Sobre el contenido | Integración y entrega |
 |--------|----------------------------|-------------------|----------------------|
 | Needfinding Interviews | **Enlace:** el link del video de entrevistas es este; https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-techwatch-needfinding-sprint-1 <br> **Formato:** .mp4 <br> **Duración:** 22:22 | Consolida todas las entrevistas realizadas, incluyendo títulos con información del entrevistado, segmento objetivo y fecha de entrevista. Presenta evidencia audiovisual del proceso de investigación con usuarios para identificar necesidades, problemas y oportunidades del mercado objetivo. | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo, introducción de la sección, registro de entrevistas y análisis general con hallazgos clave para la construcción de User Persona. |
+| Product Navigation | **Enlace:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310877_upc_edu_pe/IQC-Otlc_V8uQafHAcGBjdNYARcHHtrY_IorSueRBRfHdJY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ff1i6y <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-techwatch-product-navigation-sprint-3 <br> **Formato:** .mp4 <br> **Duración:** 4:19 | Consolida la demostración del flujo de navegación del producto desplegado, priorizando los user flows relacionados con el core business: registro de propiedades, espacios y dispositivos, simulación de acciones, y visualización de métricas, alertas y reportes. | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo (ver sección 5.2.3.5). |
+| About the Product | **Enlace (YouTube):** https://www.youtube.com/watch?v=DF6cDTX380g <br>**Enlace (Microsoft Stream):** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310877_upc_edu_pe/IQDhCTNsGjzeS6kAoX2jYgvcAaSqByjHAyqXcSRxA9T0mIA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5LEZKe <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-about-the-product-sprint-3 <br> **Formato:** .mp4 <br> **Duración:** 1:30 | Video de orientación promocional que resume el modelo de negocio, características y beneficios de TechWatch, con escenas de interacción real con el producto. Ver sección 5.4. | Subido a Microsoft Stream y YouTube, e incrustado en el Landing Page. Incluye screenshot con enlace en el informe (sección 5.4). |
+| About the Team | **Enlace (YouTube):** https://youtu.be/v_BGvnbr95c <br>**Enlace (Microsoft Stream):** _(pendiente)_ <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-about-the-team-sprint-4 <br> **Formato:** .mp4 <br> **Duración:** _(pendiente)_ | Video que resume el proceso de trabajo del equipo, con escenas reales de las sesiones de coordinación y desarrollo, narración del proceso y testimonio de cada integrante sobre logros y competencias alcanzadas. Ver sección de Conclusiones. | Subir a Microsoft Stream y YouTube, e incrustar en una sección adecuada del Landing Page. Falta el enlace de Microsoft Stream, la duración final y el screenshot (`about-the-team.png`). |
 
-## Anexo C. Validation interviews
+<!-- TODO equipo: completar el enlace de Microsoft Stream y la duracion de About the Team en esta tabla una vez publicado el video final. -->
+
+## Anexo C. Validation Interviews
 
 | Sección | Características del video | Sobre el contenido | Integración y entrega |
 |--------|----------------------------|-------------------|----------------------|
-| Needfinding Interviews | **Enlace:** el link del video de entrevistas es este; https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-techwatch-needfinding-sprint-3 <br> **Formato:** .mp4 <br> **Duración:** 22:31 | Consolida todas las entrevistas realizadas, incluyendo títulos con información del entrevistado, segmento objetivo y fecha de entrevista. Presenta evidencia audiovisual del proceso de investigación con usuarios para identificar necesidades, problemas y oportunidades del mercado objetivo. | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo, introducción de la sección, registro de entrevistas y análisis general con hallazgos clave para la construcción de User Persona. |
+| Validation Interviews | **Enlace:** el link del video de entrevistas es este; https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-techwatch-validation-sprint-3 <br> **Formato:** .mp4 <br> **Duración:** 22:31 | Consolida las sesiones y entrevistas de validación en las que usuarios de los segmentos objetivo interactuaron con el Landing Page y los prototipos de la Web Application, manifestando sus observaciones. Incluye títulos con información del entrevistado, segmento objetivo y fecha, junto con la evaluación de heurísticas de usabilidad, arquitectura de información y diseño inclusivo (ver sección 5.3). | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo, introducción de la sección, registro de cada entrevista y evaluación heurística (sección 5.3). |
 
 
 ---
