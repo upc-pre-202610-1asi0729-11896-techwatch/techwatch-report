@@ -3092,28 +3092,40 @@ Por otro lado, resulta recomendable ampliar el módulo de Analytics mediante ind
 
 Finalmente, se recomienda continuar realizando validaciones con un mayor número de usuarios pertenecientes al mercado objetivo, utilizando métricas de usabilidad y experiencia de usuario para identificar oportunidades de mejora, priorizar nuevas funcionalidades dentro del Product Backlog y orientar las siguientes iteraciones del Roadmap de TechWatch.
 
-## About the Team
+## Video About-The-Team
 
-El video **About the Team** presenta el proceso de desarrollo del proyecto TechWatch desde la planificación inicial hasta la implementación de los principales productos digitales. Durante el video se muestran evidencias reales de las reuniones del equipo, sesiones de coordinación, desarrollo de la Landing Page, Frontend, Backend y elaboración del informe académico.
+### Resumen
 
-Asimismo, se explica la aplicación del framework **Scrum**, el enfoque **Lean UX** y **Domain-Driven Design** durante el desarrollo del proyecto, mostrando los principales entregables obtenidos en cada sprint y la forma en que el equipo organizó las actividades para alcanzar los objetivos planteados.
-
+El video **About-The-Team** presenta el proceso de desarrollo del proyecto TechWatch desde la planificación inicial hasta la implementación de los principales productos digitales. Durante el video se muestran evidencias reales de las reuniones del equipo, sesiones de coordinación, desarrollo de la Landing Page, Frontend, Backend y elaboración del informe académico.
+Asimismo, se explica la aplicación de las metodologías Scrum, Lean UX y Domain-Driven Design durante el desarrollo del proyecto, mostrando los principales entregables obtenidos en cada sprint y la forma en que el equipo organizó las actividades para alcanzar los objetivos planteados.
 Finalmente, cada integrante comparte un breve testimonio describiendo las responsabilidades asumidas, las actividades desarrolladas, los principales resultados obtenidos y las competencias profesionales fortalecidas durante la realización del proyecto.
-
-- **Duración:** _(pendiente)_
-- **URL (Microsoft Stream):** _(pendiente)_
-- **URL (YouTube, incrustado en el Landing Page):** https://youtu.be/v_BGvnbr95c
 
 ### Pauta de secuencias
 
-| Tiempo | Contenido |
-|---------|-----------|
-| 00:00:00 | Presentación del proyecto TechWatch y del equipo. |
+| Tiempo   | Contenido                           |
+|----------|-------------------------------------|
+| 00:00:00 | Presentación del proyecto TechWatch |
+| 00:00:17 | Trello del Sprint 1                 |
+| 00:00:24 | Trello del Sprint 2                 |
+| 00:00:32 | Trello del Sprint 3                 |
+| 00:00:41 | Trello del Sprint 4                 |
+| 00:00:53 | Prototipos                          |
+| 00:01:06 | Landing Page                        |
+| 00:01:19 | Web Application                     |
+| 00:01:31 | Swagger                             |
+| 00:01:44 | Testimonio 1                        |
+| 00:02:12 | Testimonio 2                        |
+| 00:04:03 | Testimonio 3                        |
+| 00:05:03 | Testimonio 4                        |
+| 00:06:03 | Testimonio 5                        |
 
-<!-- TODO equipo: completar la pauta de secuencias con los tiempos reales una vez editado el video final, agregar la duracion y el enlace de Microsoft Stream, y subir la captura assets/images/about-the-team.png. -->
+### Cuadro representativo del video
 
-![Screenshot del video About the Team](./assets/images/about-the-team.png)
->
+![About The Team](./assets/images/about-the-team.png)
+
+### Enlace
+
+link :
 
 # Bibliografía
 
