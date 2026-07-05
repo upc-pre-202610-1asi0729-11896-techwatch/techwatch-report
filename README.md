@@ -2587,7 +2587,106 @@ El flujo principal validado comprende el acceso desde el **Landing Page**, el re
 
 ### 5.2.4.6. Services Documentation Evidence for Sprint Review.
 
-### 5.2.X.7. Software Deployment Evidence for Sprint Review.
+Durante el **Sprint 4** se completó la documentación de todos los servicios REST del proyecto utilizando **OpenAPI 3** mediante **springdoc-openapi**. Cada controlador fue documentado utilizando las anotaciones `@Tag`, `@Operation`, `@ApiResponses`, `@Parameter` y `@Schema`, permitiendo generar automáticamente la documentación interactiva mediante **Swagger UI**.
+
+La documentación quedó disponible tanto en el entorno local como en el entorno desplegado en Railway:
+
+- **Producción (Swagger UI):** https://techwatch-backend-production.up.railway.app/swagger-ui/index.html
+- **Especificación OpenAPI (JSON):** https://techwatch-backend-production.up.railway.app/v3/api-docs
+- **Local:** http://localhost:8080/swagger-ui/index.html
+
+El API expone los servicios correspondientes a los Bounded Contexts **IAM**, **Profiles**, **Device Management**, **Analytics** y **Subscriptions**, permitiendo el funcionamiento completo de IntelliHome. Todos los servicios REST utilizan `application/json`, siguen una estructura uniforme de respuestas y errores mediante `Result`, `ApplicationError` y `GlobalExceptionHandler`, y los endpoints protegidos utilizan autenticación basada en JWT.
+
+### IAM (Identity & Access Management)
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/authentication/sign-up` | Body: `SignUpResource` | Registrar un nuevo usuario | 201 · 400 · 409 |
+| POST | `/api/v1/authentication/sign-in` | Body: `SignInResource` | Iniciar sesión y obtener un token JWT | 200 · 400 · 404 |
+| GET | `/api/v1/users` | Authorization: Bearer Token | Listar todos los usuarios | 200 · 401 · 403 |
+| GET | `/api/v1/users/{userId}` | Path: `userId` | Obtener un usuario por ID | 200 · 404 |
+| GET | `/api/v1/roles` | Authorization: Bearer Token | Listar los roles disponibles | 200 |
+
+### Profiles
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/profiles` | Body: `CreateProfileResource` | Crear un perfil de usuario | 201 · 400 · 409 |
+| GET | `/api/v1/profiles` | Authorization: Bearer Token | Listar perfiles registrados | 200 |
+| GET | `/api/v1/profiles/{profileId}` | Path: `profileId` | Obtener un perfil por ID | 200 · 404 |
+
+### Device Management
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/properties` | Body: `CreatePropertyRequest` | Registrar una propiedad | 201 · 400 |
+| GET | `/api/v1/properties` | Query: `userId` | Listar propiedades de un usuario | 200 |
+| POST | `/api/v1/properties/{propertyId}/spaces` | Path + Body | Registrar un espacio dentro de una propiedad | 201 · 404 |
+| POST | `/api/v1/devices` | Body: `CreateDeviceRequest` | Registrar un dispositivo inteligente | 201 · 409 |
+| PUT | `/api/v1/devices/{deviceId}` | Path + Body | Editar un dispositivo | 200 · 404 |
+| DELETE | `/api/v1/devices/{deviceId}` | Path | Eliminar un dispositivo | 200 · 404 |
+| POST | `/api/v1/simulation-sessions` | Body | Iniciar una sesión de simulación | 201 |
+| POST | `/api/v1/simulation-sessions/{sessionId}/actions` | Path + Body | Registrar una acción durante la simulación | 201 |
+| POST | `/api/v1/simulation-sessions/{sessionId}/end` | Path | Finalizar una sesión de simulación | 200 |
+
+### Analytics
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| GET | `/api/v1/metrics` | Query: `propertyId` | Consultar métricas de consumo | 200 |
+| GET | `/api/v1/alerts` | Query: `userId` | Consultar alertas de consumo | 200 |
+| PUT | `/api/v1/alerts/{alertId}/read` | Path: `alertId` | Marcar una alerta como leída | 200 |
+| POST | `/api/v1/reports` | Body | Generar un reporte de consumo | 201 |
+| GET | `/api/v1/reports` | Query: `propertyId` | Consultar reportes de consumo | 200 |
+
+### Subscriptions
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/subscriptions` | Body | Registrar una nueva suscripción | 201 · 400 |
+| GET | `/api/v1/subscriptions` | Authorization: Bearer Token | Listar suscripciones | 200 |
+| GET | `/api/v1/subscriptions/{subscriptionId}` | Path: `subscriptionId` | Obtener una suscripción por ID | 200 · 404 |
+| PUT | `/api/v1/subscriptions/{subscriptionId}` | Path + Body | Actualizar una suscripción | 200 · 404 |
+| DELETE | `/api/v1/subscriptions/{subscriptionId}` | Path | Cancelar una suscripción | 200 · 404 |
+
+### 5.2.4.7. Software Deployment Evidence for Sprint Review.
+
+Durante el **Sprint 4** se consolidó el despliegue definitivo de **IntelliHome**, dejando completamente integrados el **Landing Page**, la **Frontend Web Application**, los **Backend Web Services** y la **Base de Datos MySQL** dentro del entorno de producción en **Railway**. En esta etapa se desplegaron los últimos Bounded Contexts (**IAM**, **Profiles** y **Subscriptions**), se verificó la comunicación entre todos los servicios y se realizaron las pruebas finales de funcionamiento e integración antes del cierre del proyecto.
+
+**Backend Web Services (Spring Boot).** Se actualizó el despliegue del Backend incorporando los últimos Bounded Contexts (**IAM**, **Profiles** y **Subscriptions**), completando la arquitectura basada en **Domain-Driven Design (DDD)**. El servicio continúa desplegado mediante un **Dockerfile** multi-stage utilizando **Maven** y **Eclipse Temurin**, ejecutándose con el perfil de producción (`application-prod.properties`). Se configuraron correctamente las variables de entorno para la conexión con MySQL, JWT, CORS y demás parámetros de producción. La documentación del API mediante **Swagger UI** quedó disponible para validar todos los servicios REST implementados.
+
+**Frontend Web Application (Angular).** Se publicó la versión final de la aplicación web utilizando un **Dockerfile** multi-stage basado en **Node.js** y **Nginx**, integrando completamente todas las funcionalidades con el Backend REST. Durante este Sprint se eliminaron completamente las dependencias de datos simulados, incorporando autenticación mediante JWT, administración de perfiles, gestión de propiedades, simulación, analítica y suscripciones utilizando únicamente los servicios desplegados en producción.
+
+**Landing Page (HTML/CSS/JavaScript).** El Landing Page quedó integrado completamente con la Web Application mediante los botones de **Sign In**, **Sign Up** y **Pricing**, permitiendo que el usuario navegue directamente hacia la aplicación desplegada. Asimismo, se incorporaron los videos finales, enlaces públicos y el contenido definitivo del producto antes de la entrega.
+
+**Base de Datos (MySQL).** La base de datos gestionada por Railway almacenó toda la información correspondiente a usuarios, perfiles, propiedades, dispositivos, simulaciones, métricas, alertas, reportes y suscripciones. El Backend se comunica mediante la red privada de Railway utilizando las credenciales configuradas mediante variables de entorno.
+
+**Integración y validación final.** Durante este Sprint se validó el funcionamiento de extremo a extremo del sistema verificando la correcta comunicación entre el Landing Page, la Frontend Web Application, el Backend Web Services y la Base de Datos. Se ejecutaron pruebas funcionales sobre los principales flujos del sistema, incluyendo autenticación de usuarios, administración de perfiles, registro de propiedades, gestión de dispositivos inteligentes, simulaciones, visualización de métricas, alertas, reportes y administración de suscripciones.
+
+**CORS y Seguridad.** Se verificó la configuración definitiva de **Spring Security**, autenticación basada en **JWT** y políticas de **CORS**, permitiendo el acceso seguro desde la Frontend Web Application y el Landing Page hacia los servicios REST desplegados en Railway.
+
+| Producto | Plataforma | URL pública |
+|----------|------------|-------------|
+| Landing Page | Railway (Docker + nginx) | https://techwatch-landing-production.up.railway.app |
+| Frontend Web Application | Railway (Docker + nginx) | https://techwatch-frontend-production.up.railway.app |
+| Backend Web Services | Railway (Docker + Spring Boot) | https://techwatch-backend-production.up.railway.app |
+| Swagger / OpenAPI | Railway | https://techwatch-backend-production.up.railway.app/swagger-ui/index.html |
+| Base de Datos | Railway (MySQL gestionado) | Red privada de Railway |
+
+### Capturas del despliegue (Railway)
+
+![Railway - Vista general del proyecto desplegado](./assets/images/chapter-5-2-4-7-img1.png)
+
+![Railway - Servicios, variables de entorno y despliegue final](./assets/images/chapter-5-2-4-7-img2.png)
+
+### Evidencia de la imagen Docker (Docker Desktop)
+
+La versión final de IntelliHome se distribuye mediante imágenes Docker correspondientes al **Backend Web Services**, **Frontend Web Application** y **Landing Page**, generadas automáticamente a partir de sus respectivos **Dockerfile**. Estas imágenes son utilizadas por Railway durante el despliegue continuo del sistema, garantizando que todos los servicios se ejecuten utilizando exactamente la misma configuración validada durante el desarrollo.
+
+Las imágenes incluyen la versión final del proyecto, incorporando los Bounded Contexts **Device Management**, **Analytics**, **Subscriptions**, **IAM** y **Profiles**, así como todas las configuraciones necesarias para producción.
+
+![Imágenes Docker finales de IntelliHome](./assets/images/chapter-5-2-4-7-img3.png)
+
 ### 5.2.X.8. Team Collaboration Insights during Sprint.
 
 ---
