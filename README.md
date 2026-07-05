@@ -1619,26 +1619,12 @@ El diagrama de clases del Bounded Context Subscriptions define las estructuras r
 
 En esta sección se presenta el diseño de base de datos de TechWatch, organizado por Bounded Context siguiendo los principios de Domain-Driven Design. Cada diagrama representa el esquema de tablas correspondiente a un contexto delimitado, incluyendo columnas, tipos de dato, restricciones y relaciones mediante claves foráneas. El motor de base de datos utilizado es MySQL, con nomenclatura snake_case y tablas pluralizadas.
 
-Asimismo, el diseño considera la separación lógica entre **IAM**, **Profiles**, **Device Management**, **Analytics** y **Subscriptions**, manteniendo coherencia con la arquitectura del dominio y el Design-Level Event Storming realizado previamente. Las tablas pertenecientes a otros contextos se representan como referencias externas dentro de cada diagrama, ya que la integración entre contextos a nivel de código se realiza mediante fachadas ACL y eventos de dominio.
+Asimismo, el diseño considera la separación lógica entre **Device Management**, **Analytics**, **Subscriptions**, **Profiles** e **IAM**, manteniendo coherencia con la arquitectura del dominio y el Design-Level Event Storming realizado previamente. Las tablas pertenecientes a otros contextos se representan como referencias externas dentro de cada diagrama, ya que la integración entre contextos a nivel de código se realiza mediante fachadas ACL y eventos de dominio.
 
 
 ### 4.8.1. Database Diagrams
 
-A continuación se presentan los diagramas de base de datos para cada uno de los Bounded Contexts identificados en TechWatch: IAM, Profiles, Device Management, Analytics y Subscriptions. Los diagramas fueron elaborados utilizando Vertabelo y reflejan directamente el modelo de dominio definido previamente en los diagramas de clases.
-
-
-#### IAM
-
-El diagrama de IAM (Identity and Access Management) contiene la tabla users, que almacena las cuentas registradas en la plataforma junto con sus credenciales y rol de acceso. El correo electrónico actúa como identificador único de inicio de sesión y la contraseña se almacena como hash (BCrypt). La autenticación de solicitudes se realiza mediante tokens JWT generados por la propia plataforma, los cuales no requieren persistencia en base de datos.
-
-![IAM ERD](./assets/images/erd-iam.png)
-
-
-#### Profiles
-
-El diagrama de Profiles contiene la tabla profiles, que almacena la información personal del usuario (nombres, teléfono e imagen de perfil) junto con sus preferencias de idioma, tema y notificaciones, las cuales corresponden al Value Object Preferences embebido en el agregado Profile. Cada perfil mantiene una relación uno a uno con la tabla users del contexto IAM, referenciada de forma externa.
-
-![Profiles ERD](./assets/images/erd-profiles.png)
+A continuación se presentan los diagramas de base de datos para cada uno de los Bounded Contexts identificados en TechWatch, ordenados desde el dominio core del negocio hasta los subdominios genéricos de soporte: Device Management, Analytics, Subscriptions, Profiles e IAM. Los diagramas fueron elaborados utilizando Vertabelo y reflejan directamente el modelo de dominio definido previamente en los diagramas de clases.
 
 
 #### Device Management
@@ -1668,6 +1654,20 @@ El diagrama de Subscriptions contiene las tablas relacionadas con planes, suscri
 La tabla subscriptions representa la suscripción de cada usuario hacia un plan específico junto con su estado y vigencia, manteniendo referencias hacia users y plans. Finalmente, la tabla payments almacena las transacciones de pago realizadas dentro del sistema, asociadas directamente a una suscripción y procesadas mediante la integración con el servicio de pagos externo.
 
 ![Subscriptions ERD](./assets/images/erd-subscriptions.png)
+
+
+#### Profiles
+
+El diagrama de Profiles contiene la tabla profiles, que almacena la información personal del usuario (nombres, teléfono e imagen de perfil) junto con sus preferencias de idioma, tema y notificaciones, las cuales corresponden al Value Object Preferences embebido en el agregado Profile. Cada perfil mantiene una relación uno a uno con la tabla users del contexto IAM, referenciada de forma externa.
+
+![Profiles ERD](./assets/images/erd-profiles.png)
+
+
+#### IAM
+
+El diagrama de IAM (Identity and Access Management) contiene la tabla users, que almacena las cuentas registradas en la plataforma junto con sus credenciales y rol de acceso. El correo electrónico actúa como identificador único de inicio de sesión y la contraseña se almacena como hash (BCrypt). La autenticación de solicitudes se realiza mediante tokens JWT generados por la propia plataforma, los cuales no requieren persistencia en base de datos.
+
+![IAM ERD](./assets/images/erd-iam.png)
 
 
 
@@ -1864,7 +1864,7 @@ En esta sección se detallan las herramientas y la configuración utilizadas par
 | Prepared By | Alva Abanto, Luis Andrés |
 | Attendees (to planning meeting) | Alva Abanto, Luis Andrés; Toro Turpo, Ronal; Montalvo Vásquez, Bruno Rodrigo; Fernandez Garfias, Alexander Piero; Becerra Durand, Sebastian Uriel |
 | **Sprint Goal & User Stories** | |
-| Sprint 1 Goal | Entregar la *Landing Page* pública (secciones informativas, CTA, *pricing*, contacto, *about*, testimonios, *login* y *registro* estáticos, *i18n* EN/ES, *demo* “Try it right now!”, *responsive*) alineada a las *User Stories* 3.1: US11, US12, US13, US14, US06, US22, US01, US02, US04. |
+| Sprint 1 Goal | Nuestro enfoque está en entregar la presentación pública de TechWatch a nuevos usuarios potenciales. Creemos que esto ayuda a propietarios de casas y residentes de departamentos a entender rápidamente el valor del producto (ahorro y control del consumo energético del hogar), conocer los planes disponibles y comenzar a probarlo sin fricción. Esto se confirmará cuando un visitante pueda informarse sobre el producto, sus planes y su equipo, y iniciar su registro o inicio de sesión desde cualquier dispositivo, sin intervención del equipo de desarrollo. |
 | Sprint 1 Velocity | 20 |
 | Sum of Story Points | 20 |
 
@@ -2164,7 +2164,7 @@ Organización del equipo en GitHub:
 | Sprint 2 Review Summary | En el Sprint 2 se entregó la primera versión funcional del Frontend Web Application, integrada con un JSON Server que actuaba como backend simulado para la gestión de hogares, dispositivos y métricas de consumo. |
 | Sprint 2 Retrospective Summary | El equipo identificó que el JSON Server simulado limitaba la lógica de negocio y la persistencia real de la solución. Para el Sprint 3 se acordó construir el RESTful API real con Spring Boot aplicando Domain-Driven Design, migrar el frontend para consumirlo y desplegar la solución completa (backend, frontend y base de datos) en Railway. |
 | **Sprint Goal & User Stories** | |
-| Sprint 3 Goal | Nuestro enfoque está en reemplazar el backend simulado por una API RESTful real para los contextos delimitados de Gestión de Dispositivos y Analítica. Creemos que esto proporciona persistencia real de datos, reglas de negocio y análisis de consumo a los usuarios de IntelliHome mediante una solución integrada y desplegada. Esto se confirmará cuando los usuarios puedan registrar propiedades, espacios y dispositivos, ejecutar una sesión de simulación y visualizar las métricas, alertas y reportes generados, consumidos desde la API Spring Boot desplegada, sin intervención del equipo de desarrollo.|
+| Sprint 3 Goal | Nuestro enfoque está en entregar una solución completa y desplegada para la gestión de dispositivos y el análisis de consumo energético. Creemos que esto proporciona a los propietarios de casas y residentes de departamentos datos reales y confiables sobre su consumo, en lugar de datos simulados, permitiéndoles tomar mejores decisiones sobre el uso de energía en su hogar. Esto se confirmará cuando los usuarios puedan registrar sus propiedades, espacios y dispositivos, simular su uso diario y visualizar las métricas, alertas y reportes de consumo generados, todo disponible en producción sin intervención del equipo de desarrollo. |
 | Sprint 3 Velocity | 26 |
 | Sum of Story Points | 26 |
 
