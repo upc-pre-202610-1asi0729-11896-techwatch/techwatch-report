@@ -2856,7 +2856,7 @@ Las siguientes entrevistas fueron registradas en video y documentan la interacci
 | Fecha de entrevista | 18 Junio 2026 |
 | Duración | 01:23 |
 | Timing en el video | 00:00 - 01:23 |
-| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb|
+| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f |
 
 ![Screenshot del video](./assets/images/Cap3entrevista1.png)
 
@@ -2875,7 +2875,7 @@ Gustavo Rivas dice que le parece bien todo pero le gustaria que hubiera una form
 | Fecha de entrevista | 18 Junio 2026 |
 | Duración | 03:09 |
 | Timing en el video | 02:31 - 05:40 |
-| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb |
+| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f |
 
 ![Screenshot del video](./assets/images/Cap3entrevista2.png)
 
@@ -2895,7 +2895,7 @@ Tito Rusel Montalvo Vera dice que le parece muy util, pero recomendaria que algu
 | Fecha de entrevista | 19 Junio 2026 |
 | Duración | 05:39 |
 | Timing en el video | 05:41 - 11:20 |
-| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb |
+| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f |
 
 ![Screenshot del video](./assets/images/Cap3entrevista3.png)
 
@@ -2915,7 +2915,7 @@ José Vásquez Martínez dice que le parece muy util la pagina pero recomendaria
 | Fecha de entrevista | 19 Junio 2026 |
 | Duración | 05:41 |
 | Timing en el video | 11:21 - 17:02 |
-| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb|
+| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f |
 
 ![Screenshot del video](./assets/images/Cap3entrevista4.png)
 
@@ -2935,7 +2935,7 @@ Daniel Palomino piensa que es muy util, aunque le gustaria que agreguen gráfico
 | Fecha de entrevista | 19 Junio 2026 |
 | Duración | 02:53 |
 | Timing en el video | 17:03 - 19:56 |
-| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb|
+| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f |
 
 ![Screenshot del video](./assets/images/Cap3entrevista5.png)
 
@@ -2955,7 +2955,7 @@ Eleno Giovanni Mena Zuleta dice que le parece muy intuitivo y util la pagina, si
 | Fecha de entrevista | 19 Junio 2026 |
 | Duración | 02:25 |
 | Timing en el video | 19:57 - 22:31 |
-| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb|
+| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f |
 
 ![Screenshot del video](./assets/images/Cap3entrevista6.png)
 
@@ -3189,7 +3189,7 @@ Almas’ud, T. L., Pramudito, H. D., & Badruzzaman, A. (2025). *IoT-enabled smar
 
 | Sección | Características del video | Sobre el contenido | Integración y entrega |
 |--------|----------------------------|-------------------|----------------------|
-| Validation Interviews | **Enlace:** el link del video de entrevistas es este; https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-techwatch-validation-sprint-3 <br> **Formato:** .mp4 <br> **Duración:** 22:31 | Consolida las sesiones y entrevistas de validación en las que usuarios de los segmentos objetivo interactuaron con el Landing Page y los prototipos de la Web Application, manifestando sus observaciones. Incluye títulos con información del entrevistado, segmento objetivo y fecha, junto con la evaluación de heurísticas de usabilidad, arquitectura de información y diseño inclusivo (ver sección 5.3). | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo, introducción de la sección, registro de cada entrevista y evaluación heurística (sección 5.3). |
+| Validation Interviews | **Enlace:** el link del video de entrevistas es este; https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f  <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-techwatch-validation-sprint-4 <br> **Formato:** .mp4 <br> **Duración:** 23:25 | Consolida las sesiones y entrevistas de validación en las que usuarios de los segmentos objetivo interactuaron con el Landing Page y los prototipos de la Web Application, manifestando sus observaciones. Incluye títulos con información del entrevistado, segmento objetivo y fecha, junto con la evaluación de heurísticas de usabilidad, arquitectura de información y diseño inclusivo (ver sección 5.3). | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo, introducción de la sección, registro de cada entrevista y evaluación heurística (sección 5.3). |
 
 
 ---
