@@ -219,7 +219,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
     <td rowspan="5">AV1</td>
     <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Participé activamente en la sustentación de la Landing Page, explicando la coherencia entre el diseño en Figma y la implementación visual. Además, apoyé constantemente en la elaboración y mejora del documento del proyecto.</td>
     <td rowspan="20">
-      Durante la AV1, la TB1, la AV2 y la TB2, el equipo mantuvo una comunicación oral efectiva entre integrantes, docente y usuarios entrevistados, permitiendo explicar de manera clara tanto aspectos funcionales como técnicos del proyecto. Las reuniones de coordinación y revisión facilitaron la validación de hipótesis, historias de usuario, wireframes y criterios de aceptación, fortaleciendo la toma de decisiones durante el desarrollo de la solución IoT y mejorando la integración de los avances realizados en cada sprint. En la AV2, la comunicación oral se centró en sustentar la construcción del Backend Web Services, su documentación con OpenAPI y su despliegue en Railway, así como el proceso de validación con usuarios. En la TB2, la comunicación oral se centró en sustentar la culminación e integración completa de la solución, su despliegue final en producción y el cierre del proyecto ante el docente.
+      Durante la AV1, la TB1, la AV2 y la TB2, el equipo mantuvo una comunicación oral efectiva entre integrantes, docente y usuarios entrevistados, permitiendo explicar de manera clara tanto aspectos funcionales como técnicos del proyecto. Las reuniones de coordinación y revisión facilitaron la validación de hipótesis, historias de usuario, wireframes y criterios de aceptación, fortaleciendo la toma de decisiones durante el desarrollo de la solución. En la AV2, la comunicación oral se centró en sustentar la construcción del Backend Web Services, su documentación con OpenAPI y su despliegue en Railway, así como el proceso de validación con usuarios. En la TB2, la comunicación oral permitió presentar la integración completa de la solución, los resultados finales de las entrevistas de validación, las conclusiones obtenidas durante el proyecto y el despliegue definitivo del sistema, evidenciando el cumplimiento de los objetivos planteados y el cierre integral de TechWatch.
     </td>
   </tr>
 
@@ -295,7 +295,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </tr>
 
   <tr>
-    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
+    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Presenté la reorganización de las entrevistas de validación, los principales resultados obtenidos durante la evaluación del producto y las actualizaciones realizadas en las conclusiones y anexos del Project Report, explicando su aporte para el cierre integral del proyecto.</td>
   </tr>
 
   <tr>
@@ -307,7 +307,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
     <td rowspan="5">AV1</td>
     <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Participé en el desarrollo del frontend y apoyé de manera constante en la elaboración, corrección y organización del Project Report, además de documentar avances relacionados con la Landing Page y estructura visual del sistema.</td>
     <td rowspan="20">
-      La comunicación escrita desarrollada durante la AV1, la TB1, la AV2 y la TB2 permitió mantener trazabilidad y coherencia entre los artefactos del proyecto, incluyendo Lean UX, historias de usuario, technical stories, wireframes, reportes y despliegues. La documentación elaborada facilitó la comprensión de los avances técnicos y funcionales por parte del docente y del equipo, además de reducir ambigüedades en los procesos de integración y validación del sistema. En la AV2 se documentó por escrito el Sprint 3 (Web Services con OpenAPI, evidencias de desarrollo y despliegue) y las entrevistas de validación con su evaluación según heurísticas. En la TB2 se documentó por escrito el Sprint 4, el capítulo de Conclusiones y el cierre integral del proyecto.
+      La comunicación escrita desarrollada durante la AV1, la TB1, la AV2 y la TB2 permitió mantener trazabilidad y coherencia entre los artefactos del proyecto, incluyendo Lean UX, historias de usuario, technical stories, wireframes, reportes y despliegues. La documentación elaborada facilitó la comprensión de los avances técnicos y funcionales por parte del docente y del equipo, además de reducir ambigüedades en los procesos de integración y validación del sistema. En la AV2 se documentó por escrito el Sprint 3 (Web Services con OpenAPI, evidencias de desarrollo y despliegue) y las entrevistas de validación con su evaluación según heurísticas. En la TB2 se documentó el Sprint 4, se reorganizaron y consolidaron las entrevistas de validación, se actualizaron las conclusiones y recomendaciones, los anexos del proyecto y el registro de versiones, logrando un informe final completo, consistente y alineado con los resultados obtenidos durante el desarrollo de TechWatch.
     </td>
   </tr>
 
@@ -383,7 +383,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </tr>
 
   <tr>
-    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
+    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Reorganicé la documentación correspondiente a las entrevistas de validación, actualicé el capítulo de Conclusiones y recomendaciones, y ordené los Anexos del informe, asegurando coherencia, trazabilidad y consistencia para la entrega final del Project Report.</td>
   </tr>
 
   <tr>
