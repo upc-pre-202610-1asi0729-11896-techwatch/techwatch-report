@@ -291,7 +291,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </tr>
 
   <tr>
-    <td><b>Toro Turpo, Ronal</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
+    <td><b>Toro Turpo, Ronal</b><br>Añadí nuevas funcionalidades a en backend y rvision de el report<br><i></i></td>
   </tr>
 
   <tr>
@@ -379,7 +379,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </tr>
 
   <tr>
-    <td><b>Toro Turpo, Ronal</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
+    <td><b>Toro Turpo, Ronal</b><br>comuniqué acerca de errores sin solucionar, funciones a implementar y revisiones<br><i></i></td>
   </tr>
 
   <tr>
