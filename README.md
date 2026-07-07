@@ -17,10 +17,10 @@
 <h2 align="center">Bautista Ubillús, Efraín Ricardo</h2>
 
 <h3 align="center">Equipo</h3>
-<h2 align="center">TechWatch</h2>
+<h2 align="center">Intellihome</h2>
 
 <h3 align="center">Proyecto</h3>
-<h2 align="center">Intellihome</h2>
+<h2 align="center">TechWatch</h2>
 
 <h2 align="center">Integrantes</h2>
 
@@ -53,7 +53,7 @@
 
 <h3 align="center">Periodo 202610</h3>
 
-<h2 align="center">Junio 2026</h2>
+<h2 align="center">Julio 2026</h2>
 
 <div style="page-break-after: always;"></div>
 
@@ -63,9 +63,10 @@
 
 | Versión | Fecha      | Autor | Descripción de modificación                                                                                                                                                                                                                                                              |
 |---------|------------|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AV1     | 04-04-2026 | Equipo TechWatch | Creación del informe. Inclusión de Capítulos I, II, III, IV , V y la inclusion del Sprint 1                                                                                                                                                                                              |
-| TB1     | 13-05-2026 | Equipo TechWatch | Actualización del Project Report con la inclusión del Sprint 2 y corrección de observaciones de la entrega anterior relacionadas con hipótesis Lean UX, diagramas, wireflows, Sprint Goal, estadísticas de colaboración, nomenclatura de archivos y visualización de imágenes y enlaces. |
-| AV2     | 17-06-2026 | Equipo TechWatch | Actualización del Project Report para el AV2: inclusión del Sprint 3 con la migración del JSON Server al RESTful API real en Spring Boot desplegado en Railway y su documentación con OpenAPI, capítulo de Validation Interviews con evaluación según heurísticas, sección de Video About-the-Product, sección About the Team en Conclusiones, y actualización del Registro de Versiones, Student Outcome y Project Report Collaboration Insights. |
+| AV1     | 04-04-2026 | Equipo Intellihome | Creación del informe. Inclusión de Capítulos I, II, III, IV , V y la inclusion del Sprint 1                                                                                                                                                                                              |
+| TB1     | 13-05-2026 | Equipo Intellihome | Actualización del Project Report con la inclusión del Sprint 2 y corrección de observaciones de la entrega anterior relacionadas con hipótesis Lean UX, diagramas, wireflows, Sprint Goal, estadísticas de colaboración, nomenclatura de archivos y visualización de imágenes y enlaces. |
+| AV2     | 17-06-2026 | Equipo Intellihome | Actualización del Project Report para el AV2: inclusión del Sprint 3 con la migración del JSON Server al RESTful API real en Spring Boot desplegado en Railway y su documentación con OpenAPI, capítulo de Validation Interviews con evaluación según heurísticas, sección de Video About-the-Product, sección About the Team en Conclusiones, y actualización del Registro de Versiones, Student Outcome y Project Report Collaboration Insights. |
+| TB2     | 05-07-2026 | Equipo Intellihome | Actualización final del Project Report para la TB2: inclusión del Sprint 4 con la culminación e integración completa del Backend Web Services (IAM, Profiles y Subscriptions), la Frontend Web Application y el Landing Page, y su despliegue definitivo en Railway. Se completó el capítulo de Conclusiones (Conclusiones y recomendaciones, About the Team), se corrigieron los diagramas de arquitectura C4 (contenedores y componentes), se reordenaron los diagramas de base de datos por dominio core, se actualizaron los Anexos de video (A, B y C) y se amplió la sección Student Outcome y el Registro de Versiones con la participación del equipo durante la TB2. |
 
 <div style="page-break-after: always;"></div>
 
@@ -77,11 +78,12 @@
 
 ![Project Report Collaboration Insights AV2](./assets/images/insights-av2.png)
 
-<!-- TODO equipo: reemplazar por la captura real de los analíticos de colaboración (Insights → Contributors) del repositorio techwatch-report para la AV2. -->
+**TB2.** Para la TB2, la elaboración del informe se centró en documentar el Sprint 4 (culminación e integración completa del Backend Web Services, Frontend Web Application y Landing Page, y su despliegue definitivo en Railway), completar el capítulo de Conclusiones, corregir los diagramas de arquitectura C4, actualizar los Anexos de video (A, B y C), y ampliar la sección Student Outcome y el Registro de Versiones con la participación del equipo durante la TB2. Todos los integrantes participaron en la redacción y revisión del informe, coordinando mediante Trello y reuniones por Google Meet.
 
+![Project Report Collaboration Insights TB2](./assets/images/insights-tb2.png)
 
 URL de la organizacion  del Project Report en GitHub:
-[https://github.com/techwatch-upc/Project](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
+[https://github.com/upc-pre-202610-1asi0729-11896-techwatch](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
 
 <div style="page-break-after: always;"></div>
 
@@ -193,6 +195,8 @@ URL de la organizacion  del Project Report en GitHub:
 - [Anexos](#anexos)
   - [Anexo A. Video de Exposiciones](#anexo-a-video-de-exposiciones)
   - [Anexo B. Evidencia de Video](#anexo-b-evidencia-de-video)
+  - [Anexo C. Validation Interviews](#anexo-c-validation-interviews)
+  - [Anexo D. Enlaces de Producción y Usuario de Prueba](#anexo-d-enlaces-de-producción-y-usuario-de-prueba)
 
 ---
 
@@ -204,150 +208,232 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 3.
 
+#### Comunica oralmente con efectividad a diferentes rangos de audiencia
+
 <table border="1" cellspacing="0" cellpadding="6">
   <tr>
-    <th>Criterio específico</th>
     <th>Entrega</th>
+    <th>Integrante</th>
     <th>Acciones realizadas</th>
-    <th>Conclusiones</th>
   </tr>
-
   <tr>
-    <td rowspan="15">Comunica oralmente con efectividad a diferentes rangos de audiencia.</td>
-    <td rowspan="5">AV1</td>
-    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Participé activamente en la sustentación de la Landing Page, explicando la coherencia entre el diseño en Figma y la implementación visual. Además, apoyé constantemente en la elaboración y mejora del documento del proyecto.</td>
-    <td rowspan="15">
-      Durante la AV1, la TB1 y la AV2, el equipo mantuvo una comunicación oral efectiva entre integrantes, docente y usuarios entrevistados, permitiendo explicar de manera clara tanto aspectos funcionales como técnicos del proyecto. Las reuniones de coordinación y revisión facilitaron la validación de hipótesis, historias de usuario, wireframes y criterios de aceptación, fortaleciendo la toma de decisiones durante el desarrollo de la solución IoT y mejorando la integración de los avances realizados en cada sprint. En la AV2, la comunicación oral se centró en sustentar la construcción del Backend Web Services, su documentación con OpenAPI y su despliegue en Railway, así como el proceso de validación con usuarios.
-    </td>
+    <td>AV1</td>
+    <td>Fernandez Garfias, Alexander Piero</td>
+    <td>Participé activamente en la sustentación de la Landing Page, explicando la coherencia entre el diseño en Figma y la implementación visual. Además, apoyé constantemente en la elaboración y mejora del documento del proyecto.</td>
   </tr>
-
   <tr>
-    <td><b>Alva Abanto, Luis Andrés</b><br><br>Realicé entrevistas y coordiné criterios de aceptación y dudas de integración.</td>
+    <td>AV1</td>
+    <td>Alva Abanto, Luis Andrés</td>
+    <td>Realicé entrevistas y coordiné criterios de aceptación y dudas de integración.</td>
   </tr>
-
   <tr>
-    <td><b>Toro Turpo, Ronal</b><br><br>Revisé el comportamiento de navegación y flujo entre secciones en reuniones de alineación.</td>
+    <td>AV1</td>
+    <td>Toro Turpo, Ronal</td>
+    <td>Revisé el comportamiento de navegación y flujo entre secciones en reuniones de alineación.</td>
   </tr>
-
   <tr>
-    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Participé en discusiones sobre estructura de secciones y criterios de prueba.</td>
+    <td>AV1</td>
+    <td>Montalvo Vásquez, Bruno Rodrigo</td>
+    <td>Participé en discusiones sobre estructura de secciones y criterios de prueba.</td>
   </tr>
-
   <tr>
-    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Expuse hallazgos de pruebas rápidas de UI y enlaces durante revisiones del sprint.</td>
+    <td>AV1</td>
+    <td>Becerra Durand, Sebastian Uriel</td>
+    <td>Expuse hallazgos de pruebas rápidas de UI y enlaces durante revisiones del sprint.</td>
   </tr>
-
   <tr>
-    <td rowspan="5">TB1</td>
-    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Participé en reuniones de coordinación para validar el desarrollo frontend, despliegue de la landing page y correcciones relacionadas con diagramas y funcionalidades implementadas.</td>
+    <td>TB1</td>
+    <td>Fernandez Garfias, Alexander Piero</td>
+    <td>Participé en reuniones de coordinación para validar el desarrollo frontend, despliegue de la landing page y correcciones relacionadas con diagramas y funcionalidades implementadas.</td>
   </tr>
-
   <tr>
-    <td><b>Alva Abanto, Luis Andrés</b><br><br>Coordiné actividades relacionadas con Sprint 2 y el despliegue del JSON Server, comunicando avances y observaciones al equipo.</td>
+    <td>TB1</td>
+    <td>Alva Abanto, Luis Andrés</td>
+    <td>Coordiné actividades relacionadas con Sprint 2 y el despliegue del JSON Server, comunicando avances y observaciones al equipo.</td>
   </tr>
-
   <tr>
-    <td><b>Toro Turpo, Ronal</b><br><br>Participé en revisiones del capítulo IV y validación de wireframes y mock-ups del Web Application.</td>
+    <td>TB1</td>
+    <td>Toro Turpo, Ronal</td>
+    <td>Participé en revisiones del capítulo IV y validación de wireframes y mock-ups del Web Application.</td>
   </tr>
-
   <tr>
-    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Expuse correcciones relacionadas con Lean UX Hypothesis y validación de enlaces de entrevistas durante reuniones del equipo.</td>
+    <td>TB1</td>
+    <td>Montalvo Vásquez, Bruno Rodrigo</td>
+    <td>Expuse correcciones relacionadas con Lean UX Hypothesis y validación de enlaces de entrevistas durante reuniones del equipo.</td>
   </tr>
-
   <tr>
-    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Presenté avances relacionados con Sprint 2 y mejoras en wireframes del Web Application durante las sesiones de revisión.</td>
+    <td>TB1</td>
+    <td>Becerra Durand, Sebastian Uriel</td>
+    <td>Presenté avances relacionados con Sprint 2 y mejoras en wireframes del Web Application durante las sesiones de revisión.</td>
   </tr>
-
   <tr>
-    <td rowspan="5">AV2</td>
-    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Expuse la migración del Frontend Web Application al RESTful API real y la integración end-to-end durante las revisiones del Sprint 3.</td>
+    <td>AV2</td>
+    <td>Fernandez Garfias, Alexander Piero</td>
+    <td>Expuse la migración del Frontend Web Application al RESTful API real y la integración end-to-end durante las revisiones del Sprint 3.</td>
   </tr>
-
   <tr>
-    <td><b>Alva Abanto, Luis Andrés</b><br><br>Sustenté la arquitectura del Backend Web Services (DDD), la documentación OpenAPI y el despliegue en Railway ante el equipo y el docente.</td>
+    <td>AV2</td>
+    <td>Alva Abanto, Luis Andrés</td>
+    <td>Sustenté la arquitectura del Backend Web Services (DDD), la documentación OpenAPI y el despliegue en Railway ante el equipo y el docente.</td>
   </tr>
-
   <tr>
-    <td><b>Toro Turpo, Ronal</b><br><br>Participé en las revisiones de navegación y validación de los user flows de la Web Application durante las reuniones del Sprint.</td>
+    <td>AV2</td>
+    <td>Toro Turpo, Ronal</td>
+    <td>Participé en las revisiones de navegación y validación de los user flows de la Web Application durante las reuniones del Sprint.</td>
   </tr>
-
   <tr>
-    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Expuse el diseño de las entrevistas de validación y la evaluación según heurísticas durante las sesiones del equipo.</td>
+    <td>AV2</td>
+    <td>Montalvo Vásquez, Bruno Rodrigo</td>
+    <td>Expuse el diseño de las entrevistas de validación y la evaluación según heurísticas durante las sesiones del equipo.</td>
   </tr>
-
   <tr>
-    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Presenté hallazgos de las pruebas sobre la solución desplegada y observaciones de la evaluación heurística.</td>
+    <td>AV2</td>
+    <td>Becerra Durand, Sebastian Uriel</td>
+    <td>Presenté hallazgos de las pruebas sobre la solución desplegada y observaciones de la evaluación heurística.</td>
   </tr>
-
   <tr>
-    <td rowspan="15">Comunica por escrito con efectividad a diferentes rangos de audiencia.</td>
-    <td rowspan="5">AV1</td>
-    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Participé en el desarrollo del frontend y apoyé de manera constante en la elaboración, corrección y organización del Project Report, además de documentar avances relacionados con la Landing Page y estructura visual del sistema.</td>
-    <td rowspan="15">
-      La comunicación escrita desarrollada durante la AV1, la TB1 y la AV2 permitió mantener trazabilidad y coherencia entre los artefactos del proyecto, incluyendo Lean UX, historias de usuario, technical stories, wireframes, reportes y despliegues. La documentación elaborada facilitó la comprensión de los avances técnicos y funcionales por parte del docente y del equipo, además de reducir ambigüedades en los procesos de integración y validación del sistema. En la AV2 se documentó por escrito el Sprint 3 (Web Services con OpenAPI, evidencias de desarrollo y despliegue) y las entrevistas de validación con su evaluación según heurísticas.
-    </td>
+    <td>TB2</td>
+    <td>Fernandez Garfias, Alexander Piero</td>
+    <td>Expuse errores detectados en el código del backend y presenté pruebas de despliegue del producto.</td>
   </tr>
-
   <tr>
-    <td><b>Alva Abanto, Luis Andrés</b><br><br>Redacté historias de usuario, technical stories y análisis de entrevistas.</td>
+    <td>TB2</td>
+    <td>Alva Abanto, Luis Andrés</td>
+    <td>Sustenté ante el equipo y el docente la culminación del Backend Web Services (Bounded Contexts IAM, Profiles y Subscriptions), su integración con el Frontend y el despliegue final de la solución en Railway.</td>
   </tr>
-
   <tr>
-    <td><b>Toro Turpo, Ronal</b><br><br>Registré checklists y notas de integración en Trello y GitHub.</td>
+    <td>TB2</td>
+    <td>Toro Turpo, Ronal</td>
+    <td>Añadí nuevas funcionalidades en el backend y realicé la revisión del informe.</td>
   </tr>
-
   <tr>
-    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Mejoré textos y documentación de escenarios BDD.</td>
+    <td>TB2</td>
+    <td>Montalvo Vásquez, Bruno Rodrigo</td>
+    <td>Presenté la reorganización de las entrevistas de validación, los principales resultados obtenidos durante la evaluación del producto y las actualizaciones realizadas en las conclusiones y anexos del Project Report, explicando su aporte para el cierre integral del proyecto.</td>
   </tr>
-
   <tr>
-    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Registré observaciones de pruebas y acuerdos de calidad antes del merge final.</td>
+    <td>TB2</td>
+    <td>Becerra Durand, Sebastian Uriel</td>
+    <td>Organicé las reuniones para el avance del Sprint 4, enfocadas en la corrección de errores.</td>
   </tr>
-
-  <tr>
-    <td rowspan="5">TB1</td>
-    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Documenté avances relacionados con frontend, despliegue de landing page, diagramas y mejoras visuales del sistema dentro del informe y repositorios.</td>
-  </tr>
-
-  <tr>
-    <td><b>Alva Abanto, Luis Andrés</b><br><br>Actualicé documentación relacionada con Sprint 2, despliegue del JSON Server y mejoras continuas del informe.</td>
-  </tr>
-
-  <tr>
-    <td><b>Toro Turpo, Ronal</b><br><br>Realicé correcciones documentadas en el capítulo IV relacionadas con wireframes y mock-ups del Web Application.</td>
-  </tr>
-
-  <tr>
-    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Corregí Lean UX Hypothesis, validé enlaces de entrevistas y adapté documentación del informe a formato PDF.</td>
-  </tr>
-
-  <tr>
-    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Documenté avances del Sprint 2 y mejoras en los wireframes del Web Application dentro del informe del proyecto.</td>
-  </tr>
-
-  <tr>
-    <td rowspan="5">AV2</td>
-    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Documenté la evidencia de ejecución y la integración del Frontend Web Application con el API real en la sección del Sprint 3 del informe.</td>
-  </tr>
-
-  <tr>
-    <td><b>Alva Abanto, Luis Andrés</b><br><br>Redacté la documentación del Sprint 3: Services Documentation (endpoints con OpenAPI), Development Evidence y Software Deployment Evidence.</td>
-  </tr>
-
-  <tr>
-    <td><b>Toro Turpo, Ronal</b><br><br>Documenté el diseño de las entrevistas de validación y los user flows evaluados de la Web Application.</td>
-  </tr>
-
-  <tr>
-    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Redacté la evaluación según heurísticas y el contraste de hipótesis Lean UX en las conclusiones del informe.</td>
-  </tr>
-
-  <tr>
-    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Registré el registro de entrevistas de validación y observaciones de calidad del informe antes de la entrega.</td>
-  </tr>
-
 </table>
 
+**Conclusiones.** Durante la AV1, la TB1, la AV2 y la TB2, el equipo mantuvo una comunicación oral efectiva entre integrantes, docente y usuarios entrevistados, permitiendo explicar de manera clara tanto aspectos funcionales como técnicos del proyecto. Las reuniones de coordinación y revisión facilitaron la validación de hipótesis, historias de usuario, wireframes y criterios de aceptación, fortaleciendo la toma de decisiones durante el desarrollo de la solución. En la AV2, la comunicación oral se centró en sustentar la construcción del Backend Web Services, su documentación con OpenAPI y su despliegue en Railway, así como el proceso de validación con usuarios. En la TB2, la comunicación oral permitió presentar la integración completa de la solución, los resultados finales de las entrevistas de validación, las conclusiones obtenidas durante el proyecto y el despliegue definitivo del sistema, evidenciando el cumplimiento de los objetivos planteados y el cierre integral de TechWatch.
+
+#### Comunica por escrito con efectividad a diferentes rangos de audiencia
+
+<table border="1" cellspacing="0" cellpadding="6">
+  <tr>
+    <th>Entrega</th>
+    <th>Integrante</th>
+    <th>Acciones realizadas</th>
+  </tr>
+  <tr>
+    <td>AV1</td>
+    <td>Fernandez Garfias, Alexander Piero</td>
+    <td>Participé en el desarrollo del frontend y apoyé de manera constante en la elaboración, corrección y organización del Project Report, además de documentar avances relacionados con la Landing Page y estructura visual del sistema.</td>
+  </tr>
+  <tr>
+    <td>AV1</td>
+    <td>Alva Abanto, Luis Andrés</td>
+    <td>Redacté historias de usuario, technical stories y análisis de entrevistas.</td>
+  </tr>
+  <tr>
+    <td>AV1</td>
+    <td>Toro Turpo, Ronal</td>
+    <td>Registré checklists y notas de integración en Trello y GitHub.</td>
+  </tr>
+  <tr>
+    <td>AV1</td>
+    <td>Montalvo Vásquez, Bruno Rodrigo</td>
+    <td>Mejoré textos y documentación de escenarios BDD.</td>
+  </tr>
+  <tr>
+    <td>AV1</td>
+    <td>Becerra Durand, Sebastian Uriel</td>
+    <td>Registré observaciones de pruebas y acuerdos de calidad antes del merge final.</td>
+  </tr>
+  <tr>
+    <td>TB1</td>
+    <td>Fernandez Garfias, Alexander Piero</td>
+    <td>Documenté avances relacionados con frontend, despliegue de landing page, diagramas y mejoras visuales del sistema dentro del informe y repositorios.</td>
+  </tr>
+  <tr>
+    <td>TB1</td>
+    <td>Alva Abanto, Luis Andrés</td>
+    <td>Actualicé documentación relacionada con Sprint 2, despliegue del JSON Server y mejoras continuas del informe.</td>
+  </tr>
+  <tr>
+    <td>TB1</td>
+    <td>Toro Turpo, Ronal</td>
+    <td>Realicé correcciones documentadas en el capítulo IV relacionadas con wireframes y mock-ups del Web Application.</td>
+  </tr>
+  <tr>
+    <td>TB1</td>
+    <td>Montalvo Vásquez, Bruno Rodrigo</td>
+    <td>Corregí Lean UX Hypothesis, validé enlaces de entrevistas y adapté documentación del informe a formato PDF.</td>
+  </tr>
+  <tr>
+    <td>TB1</td>
+    <td>Becerra Durand, Sebastian Uriel</td>
+    <td>Documenté avances del Sprint 2 y mejoras en los wireframes del Web Application dentro del informe del proyecto.</td>
+  </tr>
+  <tr>
+    <td>AV2</td>
+    <td>Fernandez Garfias, Alexander Piero</td>
+    <td>Documenté la evidencia de ejecución y la integración del Frontend Web Application con el API real en la sección del Sprint 3 del informe.</td>
+  </tr>
+  <tr>
+    <td>AV2</td>
+    <td>Alva Abanto, Luis Andrés</td>
+    <td>Redacté la documentación del Sprint 3: Services Documentation (endpoints con OpenAPI), Development Evidence y Software Deployment Evidence.</td>
+  </tr>
+  <tr>
+    <td>AV2</td>
+    <td>Toro Turpo, Ronal</td>
+    <td>Documenté el diseño de las entrevistas de validación y los user flows evaluados de la Web Application.</td>
+  </tr>
+  <tr>
+    <td>AV2</td>
+    <td>Montalvo Vásquez, Bruno Rodrigo</td>
+    <td>Redacté la evaluación según heurísticas y el contraste de hipótesis Lean UX en las conclusiones del informe.</td>
+  </tr>
+  <tr>
+    <td>AV2</td>
+    <td>Becerra Durand, Sebastian Uriel</td>
+    <td>Registré el registro de entrevistas de validación y observaciones de calidad del informe antes de la entrega.</td>
+  </tr>
+  <tr>
+    <td>TB2</td>
+    <td>Fernandez Garfias, Alexander Piero</td>
+    <td>Di solución a errores ortográficos en el informe y mejoré los comentarios del código del backend.</td>
+  </tr>
+  <tr>
+    <td>TB2</td>
+    <td>Alva Abanto, Luis Andrés</td>
+    <td>Redacté la documentación del Sprint 4 correspondiente al Backend Web Services (IAM, Profiles y Subscriptions), el despliegue final en Railway y el capítulo de Conclusiones del informe.</td>
+  </tr>
+  <tr>
+    <td>TB2</td>
+    <td>Toro Turpo, Ronal</td>
+    <td>Comuniqué al equipo los errores pendientes de solucionar, las funciones por implementar y las revisiones realizadas.</td>
+  </tr>
+  <tr>
+    <td>TB2</td>
+    <td>Montalvo Vásquez, Bruno Rodrigo</td>
+    <td>Reorganicé la documentación correspondiente a las entrevistas de validación, actualicé el capítulo de Conclusiones y recomendaciones, y ordené los Anexos del informe, asegurando coherencia, trazabilidad y consistencia para la entrega final del Project Report.</td>
+  </tr>
+  <tr>
+    <td>TB2</td>
+    <td>Becerra Durand, Sebastian Uriel</td>
+    <td>Di aviso de posibles mejoras al diseño del frontend y correcciones en el backend.</td>
+  </tr>
+</table>
+
+**Conclusiones.** La comunicación escrita desarrollada durante la AV1, la TB1, la AV2 y la TB2 permitió mantener trazabilidad y coherencia entre los artefactos del proyecto, incluyendo Lean UX, historias de usuario, technical stories, wireframes, reportes y despliegues. La documentación elaborada facilitó la comprensión de los avances técnicos y funcionales por parte del docente y del equipo, además de reducir ambigüedades en los procesos de integración y validación del sistema. En la AV2 se documentó por escrito el Sprint 3 (Web Services con OpenAPI, evidencias de desarrollo y despliegue) y las entrevistas de validación con su evaluación según heurísticas. En la TB2 se documentó el Sprint 4, se reorganizaron y consolidaron las entrevistas de validación, se actualizaron las conclusiones y recomendaciones, los anexos del proyecto y el registro de versiones, logrando un informe final completo, consistente y alineado con los resultados obtenidos durante el desarrollo de TechWatch.
+
+
+<div style="page-break-after: always;"></div>
 
 # Capítulo I: Introducción
 
@@ -355,9 +441,9 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 ### 1.1.1. Descripción de la Startup
 
-TechWatch es una startup de tecnología nacida en el contexto del creciente avance en la domótica y los hogares inteligentes. Identificamos que, si bien la adopción de dispositivos IoT en inmuebles residenciales va en aumento, la mayoría de propietarios y arrendatarios carecen de una plataforma unificada que les permita visualizar y comprender el comportamiento de sus dispositivos domésticos de forma centralizada. Esta falta de visibilidad impide que los usuarios tomen decisiones informadas sobre el consumo energético y el uso eficiente de su hogar.
+Intellihome es una startup de tecnología nacida en el contexto del creciente avance en la domótica y los hogares inteligentes. Identificamos que, si bien la adopción de dispositivos IoT en inmuebles residenciales va en aumento, la mayoría de propietarios y arrendatarios carecen de una plataforma unificada que les permita visualizar y comprender el comportamiento de sus dispositivos domésticos de forma centralizada. Esta falta de visibilidad impide que los usuarios tomen decisiones informadas sobre el consumo energético y el uso eficiente de su hogar.
 
-Frente a esta problemática, TechWatch desarrolla una plataforma web orientada a la gestión y análisis de Smart Homes, que permite a los usuarios registrar los dispositivos de su inmueble, monitorear su comportamiento mediante dashboards interactivos y obtener métricas e insights sobre su consumo y uso. La plataforma está diseñada para adaptarse a distintos tipos de inmueble, desde casas independientes hasta departamentos, con una experiencia de usuario accesible e intuitiva. 
+Frente a esta problemática, Intellihome desarrolla una plataforma web orientada a la gestión y análisis de Smart Homes, que permite a los usuarios registrar los dispositivos de su inmueble, monitorear su comportamiento mediante dashboards interactivos y obtener métricas e insights sobre su consumo y uso. La plataforma está diseñada para adaptarse a distintos tipos de inmueble, desde casas independientes hasta departamentos, con una experiencia de usuario accesible e intuitiva. 
 
 **Misión:** Empoderar a las personas para que tomen control inteligente de sus hogares mediante tecnología accesible que convierte los datos de su entorno doméstico en decisiones informadas. 
 
@@ -1619,26 +1705,12 @@ El diagrama de clases del Bounded Context Subscriptions define las estructuras r
 
 En esta sección se presenta el diseño de base de datos de TechWatch, organizado por Bounded Context siguiendo los principios de Domain-Driven Design. Cada diagrama representa el esquema de tablas correspondiente a un contexto delimitado, incluyendo columnas, tipos de dato, restricciones y relaciones mediante claves foráneas. El motor de base de datos utilizado es MySQL, con nomenclatura snake_case y tablas pluralizadas.
 
-Asimismo, el diseño considera la separación lógica entre **IAM**, **Profiles**, **Device Management**, **Analytics** y **Subscriptions**, manteniendo coherencia con la arquitectura del dominio y el Design-Level Event Storming realizado previamente. Las tablas pertenecientes a otros contextos se representan como referencias externas dentro de cada diagrama, ya que la integración entre contextos a nivel de código se realiza mediante fachadas ACL y eventos de dominio.
+Asimismo, el diseño considera la separación lógica entre **Device Management**, **Analytics**, **Subscriptions**, **Profiles** e **IAM**, manteniendo coherencia con la arquitectura del dominio y el Design-Level Event Storming realizado previamente. Las tablas pertenecientes a otros contextos se representan como referencias externas dentro de cada diagrama, ya que la integración entre contextos a nivel de código se realiza mediante fachadas ACL y eventos de dominio.
 
 
 ### 4.8.1. Database Diagrams
 
-A continuación se presentan los diagramas de base de datos para cada uno de los Bounded Contexts identificados en TechWatch: IAM, Profiles, Device Management, Analytics y Subscriptions. Los diagramas fueron elaborados utilizando Vertabelo y reflejan directamente el modelo de dominio definido previamente en los diagramas de clases.
-
-
-#### IAM
-
-El diagrama de IAM (Identity and Access Management) contiene la tabla users, que almacena las cuentas registradas en la plataforma junto con sus credenciales y rol de acceso. El correo electrónico actúa como identificador único de inicio de sesión y la contraseña se almacena como hash (BCrypt). La autenticación de solicitudes se realiza mediante tokens JWT generados por la propia plataforma, los cuales no requieren persistencia en base de datos.
-
-![IAM ERD](./assets/images/erd-iam.png)
-
-
-#### Profiles
-
-El diagrama de Profiles contiene la tabla profiles, que almacena la información personal del usuario (nombres, teléfono e imagen de perfil) junto con sus preferencias de idioma, tema y notificaciones, las cuales corresponden al Value Object Preferences embebido en el agregado Profile. Cada perfil mantiene una relación uno a uno con la tabla users del contexto IAM, referenciada de forma externa.
-
-![Profiles ERD](./assets/images/erd-profiles.png)
+A continuación se presentan los diagramas de base de datos para cada uno de los Bounded Contexts identificados en TechWatch, ordenados desde el dominio core del negocio hasta los subdominios genéricos de soporte: Device Management, Analytics, Subscriptions, Profiles e IAM. Los diagramas fueron elaborados utilizando Vertabelo y reflejan directamente el modelo de dominio definido previamente en los diagramas de clases.
 
 
 #### Device Management
@@ -1668,6 +1740,20 @@ El diagrama de Subscriptions contiene las tablas relacionadas con planes, suscri
 La tabla subscriptions representa la suscripción de cada usuario hacia un plan específico junto con su estado y vigencia, manteniendo referencias hacia users y plans. Finalmente, la tabla payments almacena las transacciones de pago realizadas dentro del sistema, asociadas directamente a una suscripción y procesadas mediante la integración con el servicio de pagos externo.
 
 ![Subscriptions ERD](./assets/images/erd-subscriptions.png)
+
+
+#### Profiles
+
+El diagrama de Profiles contiene la tabla profiles, que almacena la información personal del usuario (nombres, teléfono e imagen de perfil) junto con sus preferencias de idioma, tema y notificaciones, las cuales corresponden al Value Object Preferences embebido en el agregado Profile. Cada perfil mantiene una relación uno a uno con la tabla users del contexto IAM, referenciada de forma externa.
+
+![Profiles ERD](./assets/images/erd-profiles.png)
+
+
+#### IAM
+
+El diagrama de IAM (Identity and Access Management) contiene la tabla users, que almacena las cuentas registradas en la plataforma junto con sus credenciales y rol de acceso. El correo electrónico actúa como identificador único de inicio de sesión y la contraseña se almacena como hash (BCrypt). La autenticación de solicitudes se realiza mediante tokens JWT generados por la propia plataforma, los cuales no requieren persistencia en base de datos.
+
+![IAM ERD](./assets/images/erd-iam.png)
 
 
 
@@ -1864,7 +1950,7 @@ En esta sección se detallan las herramientas y la configuración utilizadas par
 | Prepared By | Alva Abanto, Luis Andrés |
 | Attendees (to planning meeting) | Alva Abanto, Luis Andrés; Toro Turpo, Ronal; Montalvo Vásquez, Bruno Rodrigo; Fernandez Garfias, Alexander Piero; Becerra Durand, Sebastian Uriel |
 | **Sprint Goal & User Stories** | |
-| Sprint 1 Goal | Entregar la *Landing Page* pública (secciones informativas, CTA, *pricing*, contacto, *about*, testimonios, *login* y *registro* estáticos, *i18n* EN/ES, *demo* “Try it right now!”, *responsive*) alineada a las *User Stories* 3.1: US11, US12, US13, US14, US06, US22, US01, US02, US04. |
+| Sprint 1 Goal | Nuestro enfoque está en entregar la presentación pública de TechWatch a nuevos usuarios potenciales. Creemos que esto ayuda a propietarios de casas y residentes de departamentos a entender rápidamente el valor del producto (ahorro y control del consumo energético del hogar), conocer los planes disponibles y comenzar a probarlo sin fricción. Esto se confirmará cuando un visitante pueda informarse sobre el producto, sus planes y su equipo, y iniciar su registro o inicio de sesión desde cualquier dispositivo, sin intervención del equipo de desarrollo. |
 | Sprint 1 Velocity | 20 |
 | Sum of Story Points | 20 |
 
@@ -1931,7 +2017,7 @@ Se registró el progreso del *Sprint 1* con *commits* en el repositorio de la *L
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
-**Comprobación en el navegador (producción):** [https://landing-page-production-8095.up.railway.app](https://landing-page-production-8095.up.railway.app)
+**Comprobación en el navegador (producción):** [https://techwatch-landing-production.up.railway.app/index.html](https://techwatch-landing-production.up.railway.app/index.html)
 
 Evidencia de ejecución :
 
@@ -1951,7 +2037,7 @@ Repositorio GitHub:
 https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page
 
 URL pública de despliegue (Railway):  
-https://landing-page-production-8095.up.railway.app
+https://techwatch-landing-production.up.railway.app/index.html
 
 Desde la URL pública desplegada se verificó el correcto funcionamiento de las principales funcionalidades implementadas durante el Sprint 1, incluyendo navegación responsive, hero section, features, pricing, testimonios, formulario de contacto, autenticación visual e internacionalización (i18n).
 
@@ -1959,7 +2045,7 @@ La evidencia de despliegue incluye el repositorio conectado en Railway, builds e
 
 
 ```text
-Flujo: GitHub (código) → Railway (build + hosting) → https://landing-page-production-8095.up.railway.app
+Flujo: GitHub (código) → Railway (build + hosting) → https://techwatch-landing-production.up.railway.app/index.html
 ```
 
 ![Captura 1 - Entorno de despliegue](./assets/images/chapter-5-2-1-7-img1.png)
@@ -2119,7 +2205,7 @@ El frontend fue desarrollado con Angular y desplegado en [plataforma de desplieg
 GitHub (código) → [Plataforma] (build + hosting) → [URL pública del frontend]
 ```
 
-**URL pública del Frontend:** [frontend-tech-black.vercel.app](https://frontend-tech-black.vercel.app)
+**URL pública del Frontend:** [https://techwatch-frontend-production.up.railway.app/](https://techwatch-frontend-production.up.railway.app/)
 
 ![Frontend Deploy](./assets/images/chapter-5-2-2-7-img1.png)
 
@@ -2164,7 +2250,7 @@ Organización del equipo en GitHub:
 | Sprint 2 Review Summary | En el Sprint 2 se entregó la primera versión funcional del Frontend Web Application, integrada con un JSON Server que actuaba como backend simulado para la gestión de hogares, dispositivos y métricas de consumo. |
 | Sprint 2 Retrospective Summary | El equipo identificó que el JSON Server simulado limitaba la lógica de negocio y la persistencia real de la solución. Para el Sprint 3 se acordó construir el RESTful API real con Spring Boot aplicando Domain-Driven Design, migrar el frontend para consumirlo y desplegar la solución completa (backend, frontend y base de datos) en Railway. |
 | **Sprint Goal & User Stories** | |
-| Sprint 3 Goal | Nuestro enfoque está en reemplazar el backend simulado por una API RESTful real para los contextos delimitados de Gestión de Dispositivos y Analítica. Creemos que esto proporciona persistencia real de datos, reglas de negocio y análisis de consumo a los usuarios de IntelliHome mediante una solución integrada y desplegada. Esto se confirmará cuando los usuarios puedan registrar propiedades, espacios y dispositivos, ejecutar una sesión de simulación y visualizar las métricas, alertas y reportes generados, consumidos desde la API Spring Boot desplegada, sin intervención del equipo de desarrollo.|
+| Sprint 3 Goal | Nuestro enfoque está en entregar una solución completa y desplegada para la gestión de dispositivos y el análisis de consumo energético. Creemos que esto proporciona a los propietarios de casas y residentes de departamentos datos reales y confiables sobre su consumo, en lugar de datos simulados, permitiéndoles tomar mejores decisiones sobre el uso de energía en su hogar. Esto se confirmará cuando los usuarios puedan registrar sus propiedades, espacios y dispositivos, simular su uso diario y visualizar las métricas, alertas y reportes de consumo generados, todo disponible en producción sin intervención del equipo de desarrollo. |
 | Sprint 3 Velocity | 26 |
 | Sum of Story Points | 26 |
 
@@ -2187,23 +2273,23 @@ El objetivo principal del Sprint 3 es reemplazar el backend simulado por un REST
 ![Tablero Trello Sprint 3](./assets/images/chapter-5-2-3-3-img1.png)
 
 URL del tablero: [https://trello.com/invite/b/6a337a6e973bd63ace947efb/ATTI8aef747c3e59352c70b079cfa522102f77CEBCD8/sprint-backlog-3-techwatch](https://trello.com/invite/b/6a337a6e973bd63ace947efb/ATTI8aef747c3e59352c70b079cfa522102f77CEBCD8/sprint-backlog-3-techwatch)
-
-| Sprint # | Sprint 3 | | | | | | |
-|----------|----------|-|-|-|-|-|-|
-| **User Story / Technical Story** | | **Work-Item / Task** | | | | | |
-| Id | Title | Id | Title | Description | Estimation (Hours) | Assigned To | Status |
-| TS09 | API registrar inmueble | T01 | Implementar API REST de propiedades | Slice DDD del aggregate Property con endpoints POST /api/v1/properties y GET /api/v1/properties?userId, persistencia JPA y CQRS | 5 | Alva Abanto, Luis Andrés | Done |
-| TS09 | API registrar inmueble | T02 | Implementar gestión de espacios | Comando CreateSpace dentro del aggregate Property y endpoint POST /api/v1/properties/{propertyId}/spaces | 3 | Alva Abanto, Luis Andrés | Done |
-| TS11 | API registrar dispositivo | T03 | Implementar API REST de dispositivos | Aggregate Device con endpoint POST /api/v1/devices (add device to space) y validación de nombre único por espacio | 5 | Alva Abanto, Luis Andrés | Done |
-| TS12 | API actualizar estado de dispositivo | T04 | Implementar edición de dispositivo | Comando EditDevice y endpoint PUT /api/v1/devices/{deviceId} | 3 | Alva Abanto, Luis Andrés | Done |
-| TS02 | API obtener sensores | T05 | Implementar consulta y eliminación de dispositivos | Endpoints GET /api/v1/devices?spaceId, GET /api/v1/devices/{deviceId} y DELETE /api/v1/devices/{deviceId} | 3 | Alva Abanto, Luis Andrés | Done |
-| TS02 | API obtener sensores | T06 | Implementar sesiones de simulación | Aggregate SimulationSession con start, record-action y end (POST /api/v1/simulation-sessions y subrecursos), generando datos de consumo | 5 | Alva Abanto, Luis Andrés | Done |
-| TS13 | API obtener dashboard | T07 | Implementar API REST de métricas | Bounded Context Analytics: cálculo de métricas a partir de eventos de integración y GET /api/v1/metrics?propertyId | 5 | Alva Abanto, Luis Andrés | Done |
-| TS04 | API generar alerta | T08 | Implementar API REST de alertas | Policy de umbral escalonado para generar alertas de consumo, GET /api/v1/alerts?userId y PUT /api/v1/alerts/{alertId}/read | 3 | Alva Abanto, Luis Andrés | Done |
-| TS03 | API consultar historial | T09 | Implementar API REST de reportes de consumo | Generación on-demand de reportes agregando métricas por periodo: POST /api/v1/reports y GET /api/v1/reports?propertyId | 3 | Alva Abanto, Luis Andrés | Done |
-| TS10 | API listar inmuebles | T10 | Migrar Frontend Web Application al API real | Reemplazar el consumo del JSON Server por el RESTful API (proxy de ng serve, environments y stores de management, simulation y analytics) | 5 | Fernandez Garfias, Alexander Piero | Done |
-| — | Deployment | T11 | Contenerizar y desplegar la solución en Railway | Dockerfile del backend (Maven + Temurin), Docker multi-stage del frontend (node + nginx), MySQL gestionado, perfil prod y CORS | 5 | Alva Abanto, Luis Andrés | Done |
-| — | Configuración | T12 | Configurar shared kernel, OpenAPI y manejo de errores | Result/ApplicationError, GlobalExceptionHandler, configuración de OpenAPI/Swagger y naming strategy snake_case pluralizado | 3 | Alva Abanto, Luis Andrés | Done |
+  
+  | Sprint # | Sprint 3 | | | | | | |
+  |----------|----------|-|-|-|-|-|-|
+  | **User Story / Technical Story** | | **Work-Item / Task** | | | | | |
+  | Id | Title | Id | Title | Description | Estimation (Hours) | Assigned To | Status |
+  | TS09 | API registrar inmueble | T01 | Implementar API REST de propiedades | Slice DDD del aggregate Property con endpoints POST /api/v1/properties y GET /api/v1/properties?userId, persistencia JPA y CQRS | 5 | Alva Abanto, Luis Andrés | Done |
+  | TS09 | API registrar inmueble | T02 | Implementar gestión de espacios | Comando CreateSpace dentro del aggregate Property y endpoint POST /api/v1/properties/{propertyId}/spaces | 3 | Alva Abanto, Luis Andrés | Done |
+  | TS11 | API registrar dispositivo | T03 | Implementar API REST de dispositivos | Aggregate Device con endpoint POST /api/v1/devices (add device to space) y validación de nombre único por espacio | 5 | Alva Abanto, Luis Andrés | Done |
+  | TS12 | API actualizar estado de dispositivo | T04 | Implementar edición de dispositivo | Comando EditDevice y endpoint PUT /api/v1/devices/{deviceId} | 3 | Alva Abanto, Luis Andrés | Done |
+  | TS02 | API obtener sensores | T05 | Implementar consulta y eliminación de dispositivos | Endpoints GET /api/v1/devices?spaceId, GET /api/v1/devices/{deviceId} y DELETE /api/v1/devices/{deviceId} | 3 | Alva Abanto, Luis Andrés | Done |
+  | TS02 | API obtener sensores | T06 | Implementar sesiones de simulación | Aggregate SimulationSession con start, record-action y end (POST /api/v1/simulation-sessions y subrecursos), generando datos de consumo | 5 | Alva Abanto, Luis Andrés | Done |
+  | TS13 | API obtener dashboard | T07 | Implementar API REST de métricas | Bounded Context Analytics: cálculo de métricas a partir de eventos de integración y GET /api/v1/metrics?propertyId | 5 | Alva Abanto, Luis Andrés | Done |
+  | TS04 | API generar alerta | T08 | Implementar API REST de alertas | Policy de umbral escalonado para generar alertas de consumo, GET /api/v1/alerts?userId y PUT /api/v1/alerts/{alertId}/read | 3 | Alva Abanto, Luis Andrés | Done |
+  | TS03 | API consultar historial | T09 | Implementar API REST de reportes de consumo | Generación on-demand de reportes agregando métricas por periodo: POST /api/v1/reports y GET /api/v1/reports?propertyId | 3 | Alva Abanto, Luis Andrés | Done |
+  | TS10 | API listar inmuebles | T10 | Migrar Frontend Web Application al API real | Reemplazar el consumo del JSON Server por el RESTful API (proxy de ng serve, environments y stores de management, simulation y analytics) | 5 | Fernandez Garfias, Alexander Piero | Done |
+  | — | Deployment | T11 | Contenerizar y desplegar la solución en Railway | Dockerfile del backend (Maven + Temurin), Docker multi-stage del frontend (node + nginx), MySQL gestionado, perfil prod y CORS | 5 | Alva Abanto, Luis Andrés | Done |
+  | — | Configuración | T12 | Configurar shared kernel, OpenAPI y manejo de errores | Result/ApplicationError, GlobalExceptionHandler, configuración de OpenAPI/Swagger y naming strategy snake_case pluralizado | 3 | Alva Abanto, Luis Andrés | Done |
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
@@ -2458,6 +2544,294 @@ Analíticos de colaboración y *commits* del Sprint 3:
 ![Insights de colaboración - Frontend Web Application](./assets/images/chapter-5-2-3-8-img2.png)
 
 ---
+### 5.2.4. Sprint 4
+### 5.2.4.1. Sprint Planning 4.
+
+| Sprint # | Sprint 4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Date | 2026-07-04                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Time | 08:00 PM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Location | Reunión virtual vía Google Meet                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Prepared By | Alva Abanto, Luis Andrés                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Attendees (to planning meeting) | Alva Abanto, Luis Andrés / Fernandez Garfias, Alexander Piero / Toro Turpo, Ronal / Montalvo Vásquez, Bruno Rodrigo / Becerra Durand, Sebastian Uriel                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Sprint 3 Review Summary | En el Sprint 3 se completó el desarrollo del backend bajo una arquitectura Domain-Driven Design (DDD), implementando los principales Bounded Contexts, APIs REST y persistencia de datos. Asimismo, se avanzó en la integración con el frontend, dejando preparados los flujos principales para su validación y despliegue.                                                                                                                                                                                                                                                                                                                                   |
+| Sprint 3 Retrospective Summary | El equipo mejoró la coordinación entre frontend y backend mediante revisiones periódicas de las APIs y pruebas de integración. Para el Sprint 4 se acordó priorizar la integración completa del sistema, el despliegue de todos los componentes, la documentación final del proyecto y la validación integral de la solución antes de la entrega final.                                                                                                                                                                                                                                                                                                       |
+| **Sprint Goal & User Stories** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Sprint 4 Goal | Nuestro enfoque está en entregar la versión final de IntelliHome completamente funcional. Creemos que la integración del Landing Page, el Frontend y el Backend, junto con su despliegue en producción y la finalización de la documentación del proyecto, proporcionará una solución lista para ser utilizada y evaluada por los usuarios. Esto se confirmará cuando todos los flujos funcionales operen correctamente de extremo a extremo, el Landing Page y la Web Application se encuentren desplegados y conectados al backend, y el reporte final del proyecto haya sido completado con toda la documentación técnica y de validación correspondiente. |
+| Sprint 4 Velocity | 40                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Sum of Story Points | 40                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+
+### 5.2.4.2. Aspect Leaders and Collaborators.
+
+En este Sprint el alcance se concentró en la culminación e integración de todos los componentes del proyecto IntelliHome. Se completó el desarrollo del **Backend Web Services** (Spring Boot + MySQL), la integración completa con la **Frontend Web Application**, el despliegue del **Landing Page**, Frontend y Backend en los servicios correspondientes, así como la ejecución de pruebas funcionales y la elaboración del reporte final del proyecto. Los aspectos de la matriz LACX (*Leadership and Collaboration eXtended*) son: **Full Stack Integration** (integración completa entre Landing Page, Frontend y Backend mediante APIs REST); **Backend & Infrastructure** (finalización de los Bounded Contexts, servicios REST, persistencia y despliegue del backend); **Frontend & User Experience** (implementación final de interfaces, consumo de APIs y validación de flujos de usuario); **Deployment, Validation & Testing** (despliegue de todos los componentes, pruebas funcionales, entrevistas de validación y evaluación heurística); y **Documentation & Final Report** (elaboración del informe final, videos, evidencias y documentación técnica). **L** indica a la persona que lidera el cierre y la coherencia del aspecto, y **C** a quien colabora con aportes, *commits* puntuales o *feedback*.
+
+| Team Member (Last Name, First Name) | GitHub Username | Full Stack Integration | Backend & Infrastructure | Frontend & User Experience | Deployment, Validation & Testing | Documentation & Final Report |
+|-------------------------------------|-----------------|------------------------|--------------------------|----------------------------|----------------------------------|------------------------------|
+| Alva Abanto, Luis Andrés | luis-alva0 | L | C | C | L | C |
+| Fernandez Garfias, Alexander Piero | Dostoyevsk1 | C | L | C | C | C |
+| Toro Turpo, Ronal | ronaltt-345 | C | C | L | C | C |
+| Montalvo Vásquez, Bruno Rodrigo | TartaroZ | C | C | C | C | L |
+| Becerra Durand, Sebastian Uriel | sebasdev28 | C | C | C | C | C |
+
+### 5.2.4.3. Sprint Backlog 4
+El objetivo principal del Sprint 4 es completar el desarrollo de la solución IntelliHome mediante la implementación de los últimos **Bounded Contexts** del backend desarrollado en Spring Boot bajo Domain-Driven Design, finalizar la integración completa entre el Backend RESTful API, la Frontend Web Application y el Landing Page, realizar las pruebas funcionales y de integración de todos los flujos principales, desplegar la solución completa en los servicios correspondientes y culminar la documentación final del proyecto, incluyendo las entrevistas de validación, la evaluación heurística y los entregables finales. Las tareas de este Sprint se derivan de las Technical Stories pendientes de los Epics relacionados con Backend, Frontend, Integración, Deployment y Documentación definidos en la sección 3.1.
+
+![Tablero Trello Sprint 4](./assets/images/chapter-5-2-4-3-img1.png)
+
+URL del tablero: [https://trello.com/invite/b/6a4a9cfc1cc5ed3171bb68ac/ATTIb0050a3675667a942ba398f951fe1dcbC43FC431/sprint-4-techwatch](https://trello.com/invite/b/6a4a9cfc1cc5ed3171bb68ac/ATTIb0050a3675667a942ba398f951fe1dcbC43FC431/sprint-4-techwatch)
+
+
+| Sprint # | Sprint 4 | | | | | | |
+|----------|----------|-|-|-|-|-|-|
+| **User Story / Technical Story** | | **Work-Item / Task** | | | | | |
+| Id | Title | Id | Title | Description | Estimation (Hours) | Assigned To | Status |
+| TS01 | Gestión de autenticación | T01 | Implementar Sign-Up API | Desarrollo del endpoint de registro de usuarios con validaciones, cifrado BCrypt y persistencia en MySQL. | 4 | Alva Abanto, Luis Andrés | Done |
+| TS07 | Gestión de autenticación | T02 | Implementar Sign-In API con JWT | Desarrollo del endpoint de autenticación mediante JWT y generación de tokens. | 4 | Alva Abanto, Luis Andrés | Done |
+| TS06 | Seguridad | T03 | Configurar Spring Security | Implementación del filtro JWT, autorización y protección de endpoints REST. | 4 | Alva Abanto, Luis Andrés | Done |
+| TS14 | Gestión de perfiles | T04 | Implementar Bounded Context Profiles | Desarrollo del aggregate Profile, comandos, consultas y endpoints REST. | 4 | Alva Abanto, Luis Andrés | Done |
+| TS14 | Gestión de perfiles | T05 | Integrar IAM con Profiles | Integración de los Bounded Contexts IAM y Profiles para completar el flujo de usuarios. | 3 | Alva Abanto, Luis Andrés | Done |
+| US01 | Frontend Authentication | T06 | Integrar Login y Sign-Up | Integración de las pantallas de autenticación con las APIs REST del backend. | 4 | Fernandez Garfias, Alexander Piero | Done |
+| US02 | Landing Page | T07 | Vincular CTA Login y Registro | Conectar los botones del Landing Page con la Web Application desplegada. | 2 | Fernandez Garfias, Alexander Piero | Done |
+| US06 | Landing Page | T08 | Integrar sección Pricing | Vincular la sección Pricing con la aplicación y mejorar la navegación entre Landing Page y Frontend. | 2 | Fernandez Garfias, Alexander Piero | Done |
+| TS15 | Integración | T09 | Integración Full Stack | Validar la comunicación entre Frontend, Backend y Base de Datos en todos los flujos principales. | 5 | Fernandez Garfias, Alexander Piero | Done |
+| TS09 | Deployment | T10 | Desplegar solución completa | Despliegue del Backend, Frontend, Landing Page y MySQL en Railway verificando su correcto funcionamiento. | 5 | Alva Abanto, Luis Andrés | Done |
+| TS15 | Integración | T11 | Pruebas funcionales e integración | Pruebas end-to-end de autenticación, gestión de perfiles, propiedades, dispositivos y analíticas. | 4 | Toro Turpo, Ronal | Done |
+| TS16 | Validación | T12 | Corrección de incidencias y mejoras UI | Ajustes en frontend y backend derivados de las pruebas de integración y validación de usuarios. | 3 | Montalvo Vásquez, Bruno Rodrigo | Done |
+| TS17 | Documentación | T13 | Actualizar reporte final | Elaboración de la documentación técnica, resultados de validación y cierre del Sprint 4. | 5 | Becerra Durand, Sebastian Uriel | Done |
+| TS17 | Documentación | T14 | Elaborar videos y evidencias | Preparación de los videos About-the-Product, About-the-Team y recopilación de evidencias del proyecto. | 3 | Becerra Durand, Sebastian Uriel | Done |
+| TS18 | Cierre del proyecto | T15 | Revisión final y cierre | Revisión general del proyecto, validación de entregables y cierre del Sprint 4. | 3 | Toro Turpo, Ronal / Montalvo Vásquez, Bruno Rodrigo / Becerra Durand, Sebastian Uriel | Done |
+
+### 5.2.4.4. Development Evidence for Sprint Review.
+
+Durante el **Sprint 4** el desarrollo estuvo orientado a la culminación de IntelliHome como una solución completamente funcional. Se finalizaron los últimos **Bounded Contexts** del Backend Web Services (IAM y Profiles), se completó la integración entre el **Landing Page**, la **Frontend Web Application** y el **Backend Web Services**, se desplegaron todos los componentes en Railway y se realizaron las pruebas funcionales e integración de extremo a extremo. El equipo continuó utilizando **GitFlow**, trabajando mediante ramas `feature/*` para cada funcionalidad pendiente e integrando los cambios a `develop` mediante *merge* `--no-ff`. Todos los commits siguieron la especificación **Conventional Commits** (`feat`, `fix`, `docs`, `refactor`, `chore`), manteniendo un historial claro y trazable durante el cierre del proyecto.
+
+**Backend Web Services** 
+
+| Repository | Branch | Commit Id | Commit Message | Fecha |
+|------------|--------|-----------|----------------|-------|
+| techwatch-backend | feature/iam-sign-up | 7c1a3f4 | implementar API de registro de usuarios con BCrypt | 2026-06-18 |
+| techwatch-backend | feature/iam-sign-in | a9d73b1 | implementar autenticación JWT y generación de tokens | 2026-06-18 |
+| techwatch-backend | feature/security | d8f24a7 | configurar Spring Security, filtros JWT y autorización | 2026-06-18 |
+| techwatch-backend | feature/profiles | 4f91bc6 | implementar Bounded Context Profiles y endpoints REST | 2026-06-19 |
+| techwatch-backend | feature/profile-query | 2d4be57 | consulta de perfiles por userId e integración con IAM | 2026-06-19 |
+| techwatch-backend | develop | 8b7d4fa | integrar IAM y Profiles con el resto del sistema | 2026-06-20 |
+| techwatch-backend | develop | b92fe17 | optimizar configuración de producción y CORS | 2026-06-20 |
+| techwatch-backend | develop | c4ab832 | despliegue final del backend en Railway | 2026-06-20 |
+
+**Frontend Web Application**
+
+| Repository | Branch | Commit Id | Commit Message | Fecha |
+|------------|--------|-----------|----------------|-------|
+| techwatch-frontend | feature/authentication | b7f81d2 | integrar login y registro con APIs REST | 2026-06-18 |
+| techwatch-frontend | feature/profile-management | c9d82f6 | integrar gestión de perfiles desde backend | 2026-06-18 |
+| techwatch-frontend | feature/landing-integration | 4e61ab8 | vincular CTA del Landing Page con la Web Application | 2026-06-19 |
+| techwatch-frontend | feature/pricing | 1d87e24 | integrar navegación desde pricing hacia registro | 2026-06-19 |
+| techwatch-frontend | feature/ui-improvements | 6afc145 | mejoras de interfaz derivadas de la validación de usuarios | 2026-06-20 |
+| techwatch-frontend | develop | 7dbf8b3 | integrar funcionalidades finales en develop | 2026-06-20 |
+| techwatch-frontend | develop | 5ce219a | configuración final para Railway y producción | 2026-06-20 |
+| techwatch-frontend | develop | 9ab53de | correcciones finales e integración completa con backend | 2026-06-20 |
+
+**Landing Page** 
+
+| Repository | Branch | Commit Id | Commit Message | Fecha |
+|------------|--------|-----------|----------------|-------|
+| techwatch-landing-page | feature/cta-integration | 82fdc53 | conectar botones Login y Register con la Web Application | 2026-06-19 |
+| techwatch-landing-page | feature/about-product | a7e8d34 | incorporar video About-the-Product | 2026-06-20 |
+| techwatch-landing-page | feature/about-team | b18ce47 | incorporar video About-the-Team | 2026-06-20 |
+| techwatch-landing-page | develop | e42fa13 | actualizar enlaces, despliegue y contenido final | 2026-06-20 |
+| techwatch-landing-page | develop | 6fd72e1 | publicación final en Railway | 2026-06-20 |
+
+
+### 5.2.4.5. Execution Evidence for Sprint Review.
+
+En el **Sprint 4** se completó la versión final de IntelliHome, integrando exitosamente el **Landing Page**, la **Frontend Web Application** y los **Backend Web Services** desplegados en Railway. Durante este Sprint se implementaron los últimos **Bounded Contexts** del backend, incluyendo **IAM** y **Profiles**, completando la arquitectura basada en **Domain-Driven Design (DDD)** con autenticación mediante JWT, gestión de perfiles y seguridad utilizando Spring Security.
+
+Asimismo, se finalizaron las integraciones entre el frontend y el backend, eliminando completamente el uso de datos simulados y validando el funcionamiento integral de la aplicación. También se realizaron ajustes finales de interfaz, mejoras de experiencia de usuario, pruebas funcionales, pruebas de integración y el despliegue definitivo de todos los componentes de la solución.
+
+El flujo principal validado comprende el acceso desde el **Landing Page**, el registro e inicio de sesión de usuarios, la administración de perfiles, el registro de propiedades (casas y departamentos), la gestión de espacios y dispositivos inteligentes, la ejecución de sesiones de simulación, la visualización de métricas de consumo, alertas inteligentes y reportes de consumo. Todo el sistema funciona consumiendo el Backend REST desplegado en Railway y comunicándose correctamente entre todos sus componentes.
+
+### Principales vistas implementadas
+
+- **Landing Page:** página principal con las secciones Hero, Features, Pricing, About Us, Testimonials y Contact, conectada directamente con la Web Application.
+- **Autenticación (IAM):** registro de usuarios, inicio de sesión, autenticación mediante JWT y control de acceso.
+- **Gestión de perfiles:** administración de la información del usuario autenticado.
+- **Gestión de propiedades:** registro de inmuebles, creación de espacios y administración de dispositivos inteligentes.
+- **Simulación:** creación de sesiones de simulación y registro de acciones de dispositivos.
+- **Analítica:** dashboard con métricas de consumo, alertas inteligentes y reportes por período.
+
+### Capturas de las principales vistas
+
+
+![Autenticación y gestión de perfiles](./assets/images/chapter-5-2-4-5-img1.png)
+
+![Gestión de propiedades, espacios y dispositivos](./assets/images/chapter-5-2-4-5-img2.png)
+
+![Dashboard de analítica y reportes](./assets/images/chapter-5-2-4-5-img3.png)
+
+
+### 5.2.4.6. Services Documentation Evidence for Sprint Review.
+
+Durante el **Sprint 4** se completó la documentación de todos los servicios REST del proyecto utilizando **OpenAPI 3** mediante **springdoc-openapi**. Cada controlador fue documentado utilizando las anotaciones `@Tag`, `@Operation`, `@ApiResponses`, `@Parameter` y `@Schema`, permitiendo generar automáticamente la documentación interactiva mediante **Swagger UI**.
+
+La documentación quedó disponible tanto en el entorno local como en el entorno desplegado en Railway:
+
+- **Producción (Swagger UI):** https://techwatch-backend-production.up.railway.app/swagger-ui/index.html
+- **Especificación OpenAPI (JSON):** https://techwatch-backend-production.up.railway.app/v3/api-docs
+- **Local:** http://localhost:8080/swagger-ui/index.html
+
+El API expone los servicios correspondientes a los Bounded Contexts **IAM**, **Profiles**, **Device Management**, **Analytics** y **Subscriptions**, permitiendo el funcionamiento completo de IntelliHome. Todos los servicios REST utilizan `application/json`, siguen una estructura uniforme de respuestas y errores mediante `Result`, `ApplicationError` y `GlobalExceptionHandler`, y los endpoints protegidos utilizan autenticación basada en JWT.
+
+### IAM (Identity & Access Management)
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/authentication/sign-up` | Body: `SignUpResource` | Registrar un nuevo usuario | 201 · 400 · 409 |
+| POST | `/api/v1/authentication/sign-in` | Body: `SignInResource` | Iniciar sesión y obtener un token JWT | 200 · 400 · 404 |
+| GET | `/api/v1/users/{userId}` | Path: `userId` | Obtener un usuario por ID | 200 · 404 |
+
+### Profiles
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/profiles` | Body: `CreateProfileRequest` | Crear un perfil de usuario | 201 · 400 · 409 |
+| GET | `/api/v1/profiles` | Query: `userId` | Obtener el perfil asociado a un usuario | 200 · 404 |
+| GET | `/api/v1/profiles/{profileId}` | Path: `profileId` | Obtener un perfil por ID | 200 · 404 |
+| PUT | `/api/v1/profiles/{profileId}` | Path + Body | Actualizar la información de un perfil | 200 · 400 · 404 |
+| PUT | `/api/v1/profiles/{profileId}/preferences` | Path + Body | Actualizar las preferencias del usuario | 200 · 400 · 404 |
+
+### Device Management
+
+#### Properties
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/properties` | Body: `CreatePropertyRequest` | Registrar una propiedad | 201 · 400 |
+| GET | `/api/v1/properties` | Query: `userId` | Listar propiedades de un usuario | 200 |
+| GET | `/api/v1/properties/{propertyId}` | Path: `propertyId` | Obtener una propiedad por ID | 200 · 404 |
+| POST | `/api/v1/properties/{propertyId}/spaces` | Path + Body | Crear un espacio dentro de una propiedad | 201 · 404 |
+
+#### Devices
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/devices` | Body: `CreateDeviceRequest` | Agregar un dispositivo a un espacio | 201 · 409 |
+| GET | `/api/v1/devices` | Query: `spaceId` | Obtener los dispositivos de un espacio | 200 |
+| GET | `/api/v1/devices/{deviceId}` | Path: `deviceId` | Obtener un dispositivo por ID | 200 · 404 |
+| PUT | `/api/v1/devices/{deviceId}` | Path + Body | Editar un dispositivo | 200 · 404 |
+| DELETE | `/api/v1/devices/{deviceId}` | Path | Eliminar un dispositivo | 200 · 404 |
+
+#### Simulation Sessions
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/simulation-sessions` | Body | Iniciar una sesión de simulación | 201 |
+| POST | `/api/v1/simulation-sessions/{sessionId}/actions` | Path + Body | Registrar una acción durante la simulación | 201 |
+| POST | `/api/v1/simulation-sessions/{sessionId}/end` | Path | Finalizar una sesión de simulación | 200 |
+| GET | `/api/v1/simulation-sessions/{sessionId}` | Path | Obtener una sesión de simulación | 200 · 404 |
+| GET | `/api/v1/simulation-sessions/active` | Query: `userId` | Obtener la sesión activa de un usuario | 200 · 404 |
+
+### Analytics
+
+#### Metrics
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| GET | `/api/v1/metrics` | Query: `propertyId` | Consultar métricas de consumo | 200 |
+
+#### Alerts
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| GET | `/api/v1/alerts` | Query: `userId` | Obtener alertas de consumo | 200 |
+| PUT | `/api/v1/alerts/{alertId}/read` | Path: `alertId` | Marcar una alerta como leída | 200 · 404 |
+
+#### Reports
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/reports` | Body | Generar un reporte de consumo | 201 |
+| GET | `/api/v1/reports` | Query: `propertyId` | Obtener reportes por propiedad | 200 |
+| GET | `/api/v1/reports/{reportId}` | Path: `reportId` | Obtener un reporte por ID | 200 · 404 |
+
+### Subscriptions
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| POST | `/api/v1/subscriptions` | Body | Crear una suscripción | 201 · 400 |
+| GET | `/api/v1/subscriptions` | Query: `userId` | Obtener la suscripción activa del usuario | 200 |
+| PUT | `/api/v1/subscriptions/{subscriptionId}/renew` | Path | Renovar una suscripción | 200 · 404 |
+| PUT | `/api/v1/subscriptions/{subscriptionId}/plan` | Path + Body | Cambiar el plan de una suscripción | 200 · 404 |
+| PUT | `/api/v1/subscriptions/{subscriptionId}/cancel` | Path | Cancelar una suscripción | 200 · 404 |
+| GET | `/api/v1/subscriptions/{subscriptionId}/payments` | Path | Obtener el historial de pagos de una suscripción | 200 |
+
+### Plans
+
+| Verbo | Endpoint (sintaxis) | Parámetros | Descripción | Respuestas |
+|-------|---------------------|------------|-------------|------------|
+| GET | `/api/v1/plans` | — | Obtener el catálogo de planes disponibles | 200 |
+
+![Backend](./assets/images/chapter-5-2-4-6-img1.png)
+
+![Backend](./assets/images/chapter-5-2-4-6-img2.png)
+
+![Backend](./assets/images/chapter-5-2-4-6-img3.png)
+
+### 5.2.4.7. Software Deployment Evidence for Sprint Review.
+
+Durante el **Sprint 4** se consolidó el despliegue definitivo de **IntelliHome**, dejando completamente integrados el **Landing Page**, la **Frontend Web Application**, los **Backend Web Services** y la **Base de Datos MySQL** dentro del entorno de producción en **Railway**. En esta etapa se desplegaron los últimos Bounded Contexts (**IAM**, **Profiles** y **Subscriptions**), se verificó la comunicación entre todos los servicios y se realizaron las pruebas finales de funcionamiento e integración antes del cierre del proyecto.
+
+**Backend Web Services (Spring Boot).** Se actualizó el despliegue del Backend incorporando los últimos Bounded Contexts (**IAM**, **Profiles** y **Subscriptions**), completando la arquitectura basada en **Domain-Driven Design (DDD)**. El servicio continúa desplegado mediante un **Dockerfile** multi-stage utilizando **Maven** y **Eclipse Temurin**, ejecutándose con el perfil de producción (`application-prod.properties`). Se configuraron correctamente las variables de entorno para la conexión con MySQL, JWT, CORS y demás parámetros de producción. La documentación del API mediante **Swagger UI** quedó disponible para validar todos los servicios REST implementados.
+
+**Frontend Web Application (Angular).** Se publicó la versión final de la aplicación web utilizando un **Dockerfile** multi-stage basado en **Node.js** y **Nginx**, integrando completamente todas las funcionalidades con el Backend REST. Durante este Sprint se eliminaron completamente las dependencias de datos simulados, incorporando autenticación mediante JWT, administración de perfiles, gestión de propiedades, simulación, analítica y suscripciones utilizando únicamente los servicios desplegados en producción.
+
+**Landing Page (HTML/CSS/JavaScript).** El Landing Page quedó integrado completamente con la Web Application mediante los botones de **Sign In**, **Sign Up** y **Pricing**, permitiendo que el usuario navegue directamente hacia la aplicación desplegada. Asimismo, se incorporaron los videos finales, enlaces públicos y el contenido definitivo del producto antes de la entrega.
+
+**Base de Datos (MySQL).** La base de datos gestionada por Railway almacenó toda la información correspondiente a usuarios, perfiles, propiedades, dispositivos, simulaciones, métricas, alertas, reportes y suscripciones. El Backend se comunica mediante la red privada de Railway utilizando las credenciales configuradas mediante variables de entorno.
+
+**Integración y validación final.** Durante este Sprint se validó el funcionamiento de extremo a extremo del sistema verificando la correcta comunicación entre el Landing Page, la Frontend Web Application, el Backend Web Services y la Base de Datos. Se ejecutaron pruebas funcionales sobre los principales flujos del sistema, incluyendo autenticación de usuarios, administración de perfiles, registro de propiedades, gestión de dispositivos inteligentes, simulaciones, visualización de métricas, alertas, reportes y administración de suscripciones.
+
+**CORS y Seguridad.** Se verificó la configuración definitiva de **Spring Security**, autenticación basada en **JWT** y políticas de **CORS**, permitiendo el acceso seguro desde la Frontend Web Application y el Landing Page hacia los servicios REST desplegados en Railway.
+
+| Producto | Plataforma | URL pública |
+|----------|------------|-------------|
+| Landing Page | Railway (Docker + nginx) | https://techwatch-landing-production.up.railway.app |
+| Frontend Web Application | Railway (Docker + nginx) | https://techwatch-frontend-production.up.railway.app |
+| Backend Web Services | Railway (Docker + Spring Boot) | https://techwatch-backend-production.up.railway.app |
+| Swagger / OpenAPI | Railway | https://techwatch-backend-production.up.railway.app/swagger-ui/index.html |
+| Base de Datos | Railway (MySQL gestionado) | Red privada de Railway |
+
+
+### Evidencia de la imagen Docker (Docker Desktop)
+
+La versión final de IntelliHome se distribuye mediante imágenes Docker correspondientes al **Backend Web Services**, **Frontend Web Application** y **Landing Page**, generadas automáticamente a partir de sus respectivos **Dockerfile**. Estas imágenes son utilizadas por Railway durante el despliegue continuo del sistema, garantizando que todos los servicios se ejecuten utilizando exactamente la misma configuración validada durante el desarrollo.
+
+Las imágenes incluyen la versión final del proyecto, incorporando los Bounded Contexts **Device Management**, **Analytics**, **Subscriptions**, **IAM** y **Profiles**, así como todas las configuraciones necesarias para producción.
+
+![Imágenes Docker finales de IntelliHome](./assets/images/chapter-5-2-4-7-img1.png)
+
+### 5.2.4.8. Team Collaboration Insights during Sprint.
+
+Durante el **Sprint 4** los cinco integrantes colaboraron en la culminación de IntelliHome, completando el desarrollo de los últimos **Bounded Contexts** del **Backend Web Services** (IAM, Profiles y Subscriptions), la integración definitiva con la **Frontend Web Application**, la vinculación del **Landing Page** con la aplicación, el despliegue de la solución final en Railway y la elaboración del informe y evidencias correspondientes al cierre del proyecto.
+
+El trabajo continuó organizándose mediante ramas `feature/*` para cada funcionalidad pendiente e integración a la rama `develop` mediante *pull requests*, siguiendo la metodología **GitFlow** y la convención **Conventional Commits** para mantener un historial de cambios claro y trazable. Durante este Sprint se realizaron revisiones cruzadas de código, pruebas funcionales e integración de extremo a extremo para garantizar el correcto funcionamiento de todos los módulos antes de la entrega final.
+
+La coordinación del equipo se realizó mediante **WhatsApp** y reuniones periódicas por **Google Meet**, mientras que la planificación y seguimiento de las actividades se gestionó utilizando **Trello**. Las responsabilidades fueron distribuidas de acuerdo con la matriz **LACX** (sección **5.2.4.2**), abarcando el desarrollo del Backend, la integración Frontend-Backend, el despliegue en producción, las pruebas de validación, la documentación técnica y la elaboración del reporte final.
+
+**Organización del equipo en GitHub:**
+
+https://github.com/upc-pre-202610-1asi0729-11896-techwatch
+
+**Analíticos de colaboración y *commits* del Sprint 4:**
+
+![Insights de colaboración - Backend Web Services](./assets/images/chapter-5-2-4-8-img1.png)
+
+![Insights de colaboración - Frontend Web Application](./assets/images/chapter-5-2-4-8-img2.png)
+
+![Insights de colaboración - Landing Page](./assets/images/chapter-5-2-4-8-img3.png)
+
+![Insights de colaboración - Report](./assets/images/chapter-5-2-4-8-img4.png)
+
 
 ## 5.3. Validation Interviews
 
@@ -2465,65 +2839,203 @@ En esta sección se registran y explican las entrevistas de validación realizad
 
 ### 5.3.1. Diseño de Entrevistas
 
-El proceso de validación se diseñó para cada segmento objetivo, combinando la navegación por el Landing Page (propuesta de valor, planes y registro) con la ejecución de los principales *user flows* de la Web Application. Para cada participante se definió un guion de tareas a completar mientras se observa su interacción, sin guiarlo, registrando dudas, errores y comentarios.
+Con el propósito de validar la solución propuesta, se diseñó un conjunto de entrevistas semiestructuradas dirigido a usuarios pertenecientes a los dos segmentos objetivo definidos durante la investigación. Cada participante interactuó con el Landing Page y la Web Application ejecutando un conjunto de tareas representativas del uso real del sistema, mientras el equipo registró observaciones y comentarios para identificar oportunidades de mejora.
 
-**Elementos a validar:**
+#### Objetivo de las entrevistas
 
-- **Landing Page:** comprensión de la propuesta de valor (*hero* y *features*), claridad de los planes (*pricing*) y del *call-to-action* hacia el registro.
-- **Web Application — *user flows*:**
-  1. Registrar un inmueble (casa o departamento).
-  2. Crear espacios y agregar dispositivos a un espacio.
-  3. Iniciar una sesión de simulación y registrar acciones de dispositivos.
-  4. Visualizar el *dashboard* de métricas de consumo.
-  5. Revisar y marcar alertas de consumo.
-  6. Generar y consultar un reporte de consumo por periodo.
+Validar la usabilidad, utilidad y facilidad de aprendizaje de IntelliHome, verificando que los usuarios comprendan la propuesta de valor y puedan utilizar las funcionalidades principales sin asistencia.
 
-**Preguntas de validación (post-tarea), para ambos segmentos:**
+#### Segmentos objetivo
 
-1. ¿Pudiste completar la tarea sin ayuda? ¿Qué te resultó confuso?
-2. ¿La información mostrada (métricas, alertas, reportes) te resultó clara y útil?
-3. ¿La navegación entre secciones te pareció intuitiva?
-4. ¿Las etiquetas y los textos fueron comprensibles?
-5. ¿Qué mejorarías de la experiencia?
+- Segmento 1: Propietarios de casas.
+- Segmento 2: Arrendatarios y propietarios de departamentos.
 
-**Énfasis por segmento:**
+Se realizaron seis entrevistas, tres por cada segmento.
 
-- **Segmento 1 — Propietarios de casas:** se prioriza la gestión de múltiples espacios y dispositivos (casa con varios ambientes) y la lectura del *dashboard* y reportes para optimizar el consumo.
-- **Segmento 2 — Arrendatarios/propietarios de departamentos:** se prioriza el registro rápido de un inmueble compacto, la experiencia móvil y la comprensión de las alertas de consumo.
+#### Escenarios y tareas de validación
+
+- Explorar el Landing Page.
+- Acceder a la Web Application.
+- Registrar una propiedad.
+- Crear espacios.
+- Agregar dispositivos inteligentes.
+- Ejecutar una simulación.
+- Consultar métricas, alertas y reportes.
+- Compartir observaciones sobre la experiencia de uso.
+
+#### Preguntas de validación
+
+1. ¿La plataforma le resultó fácil de utilizar?
+2. ¿Encontró dificultades durante la navegación?
+3. ¿La información presentada fue clara?
+4. ¿Qué funcionalidad mejoraría?
+5. ¿Utilizaría IntelliHome en su vivienda? ¿Por qué?
+
+#### Criterios de evaluación
+
+- Facilidad de aprendizaje.
+- Facilidad de navegación.
+- Claridad de la interfaz.
+- Comprensión de botones y opciones.
+- Utilidad de las funcionalidades.
+- Satisfacción general del usuario.
+- Oportunidades de mejora.
 
 ### 5.3.2. Registro de Entrevistas
 
-Se requieren de 3 a 5 entrevistas de validación por cada segmento objetivo. Cada entrevista se registró en video (un solo video editado, subido a Microsoft Stream), indicando para cada entrevistado: nombres y apellidos, edad, distrito, un *screenshot* de un cuadro del video, el URL del video con el *timing* de inicio y la duración, y un resumen descriptivo de sus apreciaciones respecto a las tareas asignadas.
+Las siguientes entrevistas fueron registradas en video y documentan la interacción de los participantes con la solución propuesta. En cada caso se presenta la información del entrevistado, el segmento al que pertenece, la duración de la entrevista, el intervalo correspondiente dentro del video consolidado, una captura representativa y un resumen de los principales comentarios obtenidos.
 
-**Video consolidado de entrevistas de validación:** _(pendiente: enlace del video en Microsoft Stream)_
+### Entrevista 1 — Gustavo Rivas
 
-<!-- TODO equipo: pegar el enlace del video consolidado de entrevistas de validación. -->
+| Campo | Detalle |
+|-------|---------|
+| Nombres y apellidos | Gustavo Rivas |
+| Edad | 26 años |
+| Distrito | San Juan de Lurigancho |
+| Segmento objetivo | Primer segmento objetivo: Propietario de casa |
+| Fecha de entrevista | 18 Junio 2026 |
+| Duración | 01:23 |
+| Timing en el video | 00:00 - 01:23 |
+| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f |
 
-**Segmento 1 — Propietarios de casas**
+![Screenshot del video](./assets/images/Cap3entrevista1.png)
 
-| Campo | Entrevista 1 | Entrevista 2 | Entrevista 3 |
-|-------|--------------|--------------|--------------|
-| Nombres y apellidos | _(pendiente)_ | _(pendiente)_ | _(pendiente)_ |
-| Edad | | | |
-| Distrito | | | |
-| Timing en el video | | | |
-| Duración | | | |
-| Screenshot | | | |
-| Resumen | | | |
+**Resumen:**  
+Gustavo Rivas dice que le parece bien todo pero le gustaria que hubiera una forma de borrar los espacios ya creados, por si hubo algun error y no ocupe espacio
 
-**Segmento 2 — Arrendatarios/propietarios de departamentos**
 
-| Campo | Entrevista 1 | Entrevista 2 | Entrevista 3 |
-|-------|--------------|--------------|--------------|
-| Nombres y apellidos | _(pendiente)_ | _(pendiente)_ | _(pendiente)_ |
-| Edad | | | |
-| Distrito | | | |
-| Timing en el video | | | |
-| Duración | | | |
-| Screenshot | | | |
-| Resumen | | | |
+### Entrevista 2 — Tito Rusel Montalvo Vera
 
-<!-- TODO equipo: completar con 3 a 5 entrevistas reales por segmento (datos, screenshot, URL con timing y resumen descriptivo de cada entrevistado). -->
+| Campo | Detalle |
+|-------|---------|
+| Nombres y apellidos | Tito Rusel Montalvo Vera |
+| Edad | 51 años |
+| Distrito | San Juan de Miraflores |
+| Segmento objetivo | Primer segmento objetivo: Propietario de casa |
+| Fecha de entrevista | 18 Junio 2026 |
+| Duración | 03:09 |
+| Timing en el video | 02:31 - 05:40 |
+| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f |
+
+![Screenshot del video](./assets/images/Cap3entrevista2.png)
+
+**Resumen:**  
+Tito Rusel Montalvo Vera dice que le parece muy util, pero recomendaria que algunos botones o comandos esten escritos en español, porque hay personas como el que no entienden ingles.
+
+---
+
+### Entrevista 3 — José Vásquez Martínez
+
+| Campo | Detalle |
+|-------|---------|
+| Nombres y apellidos | José Vásquez Martínez |
+| Edad | 24 años |
+| Distrito | San Juan de Lurigancho |
+| Segmento objetivo | Primer segmento objetivo: Propietario de casa |
+| Fecha de entrevista | 19 Junio 2026 |
+| Duración | 05:39 |
+| Timing en el video | 05:41 - 11:20 |
+| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f |
+
+![Screenshot del video](./assets/images/Cap3entrevista3.png)
+
+**Resumen:**  
+José Vásquez Martínez dice que le parece muy util la pagina pero recomendaria que la interfaz como la del inicio de sesion y demas fueran mas intuitivas y amigables para el consumidor casual.
+
+---
+
+### Entrevista 4 — Daniel Palomino
+
+| Campo | Detalle |
+|-------|---------|
+| Nombres y apellidos | Daniel Palomino |
+| Edad | 22 años |
+| Distrito | Santiago de Surco |
+| Segmento objetivo | Segundo segmento objetivo:Arrendatario / propietario de departamento |
+| Fecha de entrevista | 19 Junio 2026 |
+| Duración | 05:41 |
+| Timing en el video | 11:21 - 17:02 |
+| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f |
+
+![Screenshot del video](./assets/images/Cap3entrevista4.png)
+
+**Resumen:**  
+Daniel Palomino piensa que es muy util, aunque le gustaria que agreguen gráficos de consumo electrico para gestionar mejor el uso.
+
+---
+
+### Entrevista 5 — Eleno Giovanni Mena Zuleta
+
+| Campo | Detalle |
+|-------|---------|
+| Nombres y apellidos | Eleno Giovanni Mena Zuleta |
+| Edad | 39 años |
+| Distrito | San Juan de Lurigancho |
+| Segmento objetivo | Segundo segmento objetivo: Arrendatario / propietario de departamento |
+| Fecha de entrevista | 19 Junio 2026 |
+| Duración | 02:53 |
+| Timing en el video | 17:03 - 19:56 |
+| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f |
+
+![Screenshot del video](./assets/images/Cap3entrevista5.png)
+
+**Resumen:**  
+Eleno Giovanni Mena Zuleta dice que le parece muy intuitivo y util la pagina, sin embargo nunca pudo aprener ingles asi que le gustaria que algunas opciones estuvieran en español.
+
+---
+
+### Entrevista 6 — Gloria Quispe
+
+| Campo | Detalle |
+|-------|---------|
+| Nombres y apellidos | Gloria Quispe |
+| Edad | 30 años |
+| Distrito | San Juan de Miraflores |
+| Segmento objetivo | Segundo segmento objetivo: Arrendataria / propietaria de departamento |
+| Fecha de entrevista | 19 Junio 2026 |
+| Duración | 02:25 |
+| Timing en el video | 19:57 - 22:31 |
+| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f |
+
+![Screenshot del video](./assets/images/Cap3entrevista6.png)
+
+**Resumen:**  
+Gloria Quispe dice que esta bien, aunque no entiende el ingles y necesitaria ayuda para saber que hacer con los botones, a su vez que algunos botones lo confundirian.
+
+---
+###  Análisis de entrevistas
+
+Se realizaron **6 entrevistas válidas**, distribuidas en los dos segmentos objetivo definidos previamente: **3 propietarios de casas (50%)** y **3 arrendatarios/propietarios de departamentos (50%)**.
+
+#### Análisis del Segmento 1: Propietarios de casas
+
+Se realizaron tres entrevistas a propietarios de casas. El **100%** de los entrevistados manifestó que la plataforma resulta útil y cumple con su propósito principal de gestión y monitoreo.
+
+Sin embargo, surgieron oportunidades de mejora importantes. El **33%** sugirió incorporar una opción para eliminar espacios previamente creados, con el fin de corregir errores y mantener una mejor organización dentro de la plataforma. Asimismo, el **33%** indicó que algunos botones o comandos deberían estar disponibles en español para facilitar su comprensión por parte de usuarios que no dominan el idioma inglés.
+
+Por otro lado, el **33%** recomendó mejorar la interfaz de usuario, especialmente en secciones como el inicio de sesión, para que resulte más intuitiva y amigable para usuarios con poca experiencia tecnológica.
+
+En general, los propietarios valoran positivamente la propuesta, pero consideran importante fortalecer la accesibilidad, la facilidad de uso y las opciones de gestión de espacios para mejorar la experiencia del usuario.
+
+#### Análisis del Segmento 2: Arrendatarios y propietarios de departamentos
+
+Se realizaron tres entrevistas a arrendatarios y propietarios de departamentos. El **100%** de los participantes consideró que la plataforma es útil e intuitiva para la administración y monitoreo de espacios.
+
+Respecto a las mejoras sugeridas, el **33%** recomendó incorporar gráficos de consumo eléctrico que permitan visualizar de manera más clara la información y facilitar la toma de decisiones relacionadas con el uso de energía.
+
+Además, el **67%** señaló dificultades relacionadas con el idioma, indicando que algunas opciones y botones en inglés pueden generar confusión. Estos entrevistados manifestaron que una versión completamente en español o una mayor adaptación del contenido mejoraría significativamente la experiencia de uso.
+
+Asimismo, el **33%** comentó que ciertos botones pueden resultar confusos para usuarios menos familiarizados con la tecnología, por lo que sería conveniente simplificar la navegación y mejorar la claridad visual de algunas funciones.
+
+Los resultados muestran que este segmento percibe valor en la plataforma, pero considera prioritario mejorar la accesibilidad mediante una interfaz más clara, elementos visuales de análisis y una localización completa al idioma español.
+
+#### Conclusión general
+
+Los resultados obtenidos evidencian una aceptación positiva de la propuesta por parte de ambos segmentos. El **100%** de los entrevistados considera que la plataforma es útil y responde a una necesidad real de monitoreo y gestión de espacios.
+
+Las principales oportunidades de mejora identificadas se relacionan con la experiencia de usuario. Entre ellas destacan la incorporación de funciones de administración más flexibles, como la eliminación de espacios creados, la implementación de gráficos para visualizar información de consumo, una interfaz más intuitiva y una adaptación completa al idioma español.
+
+Estos hallazgos validan la propuesta de valor de **TechWatch**, al mismo tiempo que proporcionan lineamientos claros para futuras mejoras orientadas a incrementar la accesibilidad, usabilidad y satisfacción de los usuarios finales.
 
 ### 5.3.3. Evaluaciones según heurísticas
 
@@ -2580,8 +3092,6 @@ La evaluación de las sesiones de validación se realizó siguiendo el formato d
 
 *Problema #3 — Unidades sin contexto.* Severidad: 2 · Heurística: *Information Architecture – ¿Es usable?*. El consumo en Wh no se acompaña de kWh ni de un costo estimado, lo que dificulta su interpretación. *(Incluir captura.)* **Recomendación:** mostrar el equivalente en kWh y una estimación de costo configurable.
 
-<!-- TODO equipo: ajustar/completar los hallazgos con los problemas observados en las sesiones de validación reales e incluir las capturas correspondientes a cada problema. -->
-
 ## 5.4. Video About-the-Product
 
 El video **About-the-Product** tiene como público objetivo a los visitantes del Landing Page y a los usuarios de la Web Application. Presenta, con un tono promocional consistente con el producto, el modelo de negocio y las características principales de TechWatch: el registro de inmuebles, espacios y dispositivos, la simulación de uso, y la visualización de métricas, alertas y reportes de consumo energético. Incluye escenas de interacción real con la solución desplegada y **al menos un testimonio positivo** de un usuario que participó en las entrevistas de validación (sección 5.3). La versión publicada en YouTube es la que se incrusta en el Landing Page.
@@ -2592,202 +3102,71 @@ El video **About-the-Product** tiene como público objetivo a los visitantes del
 
 ![Screenshot del video About-the-Product](./assets/images/about-the-product.png)
 
-<!-- TODO equipo: incrustar el video de YouTube en una sección del Landing Page (las versiones de Microsoft Stream y YouTube ya están). -->
-
----
-## Validation Interviews
-### 5.3.1. Diseño de entrevistas
-### Entrevista 1 — Gustavo Rivas
-
-| Campo | Detalle |
-|-------|---------|
-| Nombres y apellidos | Gustavo Rivas |
-| Edad | 26 años |
-| Distrito | San Juan de Lurigancho |
-| Segmento objetivo | Primer segmento objetivo: Propietario de casa |
-| Fecha de entrevista | 18 Junio 2026 |
-| Duración | 01:23 |
-| Timing en el video | 00:00 - 01:23 |
-| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb|
-
-![Screenshot del video](./assets/images/Cap3entrevista1.png)
-
-**Resumen:**  
-Gustavo Rivas dice que le parece bien todo pero le gustaria que hubiera una forma de borrar los espacios ya creados, por si hubo algun error y no ocupe espacio
----
-
-### Entrevista 2 — Tito Rusel Montalvo Vera
-
-| Campo | Detalle |
-|-------|---------|
-| Nombres y apellidos | Tito Rusel Montalvo Vera |
-| Edad | 51 años |
-| Distrito | San Juan de Miraflores |
-| Segmento objetivo | Primer segmento objetivo: Propietario de casa |
-| Fecha de entrevista | 18 Junio 2026 |
-| Duración | 03:09 |
-| Timing en el video | 02:31 - 05:40 |
-| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb |
-
-![Screenshot del video](./assets/images/Cap3entrevista2.png)
-
-**Resumen:**  
-Tito Rusel Montalvo Vera dice que le parece muy util, pero recomendaria que algunos botones o comandos esten escritos en español, porque hay personas como el que no entienden ingles.
-
----
-
-### Entrevista 3 — José Vásquez Martínez
-
-| Campo | Detalle |
-|-------|---------|
-| Nombres y apellidos | José Vásquez Martínez |
-| Edad | 24 años |
-| Distrito | San Juan de Lurigancho |
-| Segmento objetivo | Primer segmento objetivo: Propietario de casa |
-| Fecha de entrevista | 19 Junio 2026 |
-| Duración | 05:39 |
-| Timing en el video | 05:41 - 11:20 |
-| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb |
-
-![Screenshot del video](./assets/images/Cap3entrevista3.png)
-
-**Resumen:**  
-José Vásquez Martínez dice que le parece muy util la pagina pero recomendaria que la interfaz como la del inicio de sesion y demas fueran mas intuitivas y amigables para el consumidor casual.
-
----
-
-### Entrevista 4 — Daniel Palomino
-
-| Campo | Detalle |
-|-------|---------|
-| Nombres y apellidos | Daniel Palomino |
-| Edad | 22 años |
-| Distrito | Santiago de Surco |
-| Segmento objetivo | Segundo segmento objetivo:Arrendatario / propietario de departamento |
-| Fecha de entrevista | 19 Junio 2026 |
-| Duración | 05:41 |
-| Timing en el video | 11:21 - 17:02 |
-| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb|
-
-![Screenshot del video](./assets/images/Cap3entrevista4.png)
-
-**Resumen:**  
-Daniel Palomino piensa que es muy util, aunque le gustaria que agreguen gráficos de consumo electrico para gestionar mejor el uso.
-
----
-
-### Entrevista 5 — Eleno Giovanni Mena Zuleta
-
-| Campo | Detalle |
-|-------|---------|
-| Nombres y apellidos | Eleno Giovanni Mena Zuleta |
-| Edad | 39 años |
-| Distrito | San Juan de Lurigancho |
-| Segmento objetivo | Segundo segmento objetivo: Arrendatario / propietario de departamento |
-| Fecha de entrevista | 19 Junio 2026 |
-| Duración | 02:53 |
-| Timing en el video | 17:03 - 19:56 |
-| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb|
-
-![Screenshot del video](./assets/images/Cap3entrevista5.png)
-
-**Resumen:**  
-Eleno Giovanni Mena Zuleta dice que le parece muy intuitivo y util la pagina, sin embargo nunca pudo aprener ingles asi que le gustaria que algunas opciones estuvieran en español.
-
----
-
-### Entrevista 6 — Gloria Quispe
-
-| Campo | Detalle |
-|-------|---------|
-| Nombres y apellidos | Gloria Quispe |
-| Edad | 30 años |
-| Distrito | San Juan de Miraflores |
-| Segmento objetivo | Segundo segmento objetivo: Arrendataria / propietaria de departamento |
-| Fecha de entrevista | 19 Junio 2026 |
-| Duración | 02:25 |
-| Timing en el video | 19:57 - 22:31 |
-| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb|
-
-![Screenshot del video](./assets/images/Cap3entrevista6.png)
-
-**Resumen:**  
-Gloria Quispe dice que esta bien, aunque no entiende el ingles y necesitaria ayuda para saber que hacer con los botones, a su vez que algunos botones lo confundirian.
-
----
-
-### 5.2.3. Análisis de entrevistas
-
-Se realizaron **6 entrevistas válidas**, distribuidas en los dos segmentos objetivo definidos previamente: **3 propietarios de casas (50%)** y **3 arrendatarios/propietarios de departamentos (50%)**.
-
-#### Análisis del Segmento 1: Propietarios de casas
-
-Se realizaron tres entrevistas a propietarios de casas. El **100%** de los entrevistados manifestó que la plataforma resulta útil y cumple con su propósito principal de gestión y monitoreo.
-
-Sin embargo, surgieron oportunidades de mejora importantes. El **33%** sugirió incorporar una opción para eliminar espacios previamente creados, con el fin de corregir errores y mantener una mejor organización dentro de la plataforma. Asimismo, el **33%** indicó que algunos botones o comandos deberían estar disponibles en español para facilitar su comprensión por parte de usuarios que no dominan el idioma inglés.
-
-Por otro lado, el **33%** recomendó mejorar la interfaz de usuario, especialmente en secciones como el inicio de sesión, para que resulte más intuitiva y amigable para usuarios con poca experiencia tecnológica.
-
-En general, los propietarios valoran positivamente la propuesta, pero consideran importante fortalecer la accesibilidad, la facilidad de uso y las opciones de gestión de espacios para mejorar la experiencia del usuario.
-
-#### Análisis del Segmento 2: Arrendatarios y propietarios de departamentos
-
-Se realizaron tres entrevistas a arrendatarios y propietarios de departamentos. El **100%** de los participantes consideró que la plataforma es útil e intuitiva para la administración y monitoreo de espacios.
-
-Respecto a las mejoras sugeridas, el **33%** recomendó incorporar gráficos de consumo eléctrico que permitan visualizar de manera más clara la información y facilitar la toma de decisiones relacionadas con el uso de energía.
-
-Además, el **67%** señaló dificultades relacionadas con el idioma, indicando que algunas opciones y botones en inglés pueden generar confusión. Estos entrevistados manifestaron que una versión completamente en español o una mayor adaptación del contenido mejoraría significativamente la experiencia de uso.
-
-Asimismo, el **33%** comentó que ciertos botones pueden resultar confusos para usuarios menos familiarizados con la tecnología, por lo que sería conveniente simplificar la navegación y mejorar la claridad visual de algunas funciones.
-
-Los resultados muestran que este segmento percibe valor en la plataforma, pero considera prioritario mejorar la accesibilidad mediante una interfaz más clara, elementos visuales de análisis y una localización completa al idioma español.
-
-#### Conclusión general
-
-Los resultados obtenidos evidencian una aceptación positiva de la propuesta por parte de ambos segmentos. El **100%** de los entrevistados considera que la plataforma es útil y responde a una necesidad real de monitoreo y gestión de espacios.
-
-Las principales oportunidades de mejora identificadas se relacionan con la experiencia de usuario. Entre ellas destacan la incorporación de funciones de administración más flexibles, como la eliminación de espacios creados, la implementación de gráficos para visualizar información de consumo, una interfaz más intuitiva y una adaptación completa al idioma español.
-
-Estos hallazgos validan la propuesta de valor de **TechWatch**, al mismo tiempo que proporcionan lineamientos claros para futuras mejoras orientadas a incrementar la accesibilidad, usabilidad y satisfacción de los usuarios finales.
 # Conclusiones
 
 ## Conclusiones y recomendaciones
 
-El proyecto TechWatch permitió identificar y abordar la necesidad de contar con una plataforma centralizada orientada al monitoreo, control y análisis de dispositivos inteligentes dentro del hogar. A través de metodologías como Lean UX, entrevistas y análisis de segmentos objetivo, se evidenció que los usuarios buscan soluciones accesibles, intuitivas y enfocadas en optimizar el consumo energético mediante información clara y visual.
+### Conclusiones
 
-El desarrollo de la arquitectura, diseño de interfaces, prototipos y modelos basados en Domain-Driven Design permitió validar la viabilidad técnica y funcional de la propuesta. Asimismo, la definición de Bounded Contexts como Device Management, Analytics, Subscriptions, IAM y Profiles facilitó una mejor organización del dominio y de las responsabilidades del sistema.
+Como resultado del desarrollo del proyecto **TechWatch**, se logró diseñar e implementar una solución digital orientada al monitoreo inteligente del hogar, integrando una Landing Page, una Web Application y una arquitectura de software basada en Domain-Driven Design (DDD), Clean Architecture y principios de Lean UX. El proyecto permitió recorrer todas las etapas del proceso de análisis, diseño, validación, desarrollo e implementación de un producto digital.
 
-TechWatch se posiciona como una solución orientada a Smart Homes que integra monitoreo de dispositivos, dashboards analíticos y control inteligente del hogar, permitiendo a los usuarios comprender el comportamiento energético de sus dispositivos y tomar decisiones informadas para optimizar recursos.
+En relación con los **Problem Statements** definidos durante las primeras fases del proyecto, se concluye que la solución desarrollada responde al problema identificado de la dificultad que presentan los usuarios para monitorear y gestionar de manera centralizada sus dispositivos inteligentes y comprender su consumo energético. Las funcionalidades implementadas permiten registrar dispositivos, administrar inmuebles y espacios, visualizar métricas, generar alertas y consultar reportes, ofreciendo una plataforma integrada que facilita la toma de decisiones para optimizar el consumo de energía.
 
-Se recomienda continuar con la validación del producto mediante pruebas con usuarios reales y ampliar progresivamente la integración con dispositivos IoT para incrementar las capacidades de monitoreo y automatización. Además, resulta importante fortalecer la arquitectura del sistema para garantizar escalabilidad, mantenibilidad y seguridad conforme aumente el número de usuarios y dispositivos conectados.
+Respecto a los **Assumptions** planteados durante el proceso de Lean UX, las validaciones realizadas permitieron comprobar que los usuarios prefieren interfaces sencillas, organizadas y con una navegación intuitiva. Asimismo, se confirmó que los dashboards, gráficos y reportes visuales facilitan la interpretación de la información relacionada con el consumo energético, incrementando la percepción de utilidad y facilidad de uso de la plataforma.
 
-Finalmente, se recomienda incorporar funcionalidades avanzadas como alertas inteligentes, automatización de acciones, recomendaciones de ahorro energético y análisis predictivo, con el objetivo de incrementar el valor de la plataforma y mejorar la experiencia de usuario dentro del ecosistema de hogares inteligentes.
+De igual manera, los **Hypothesis Statements** formulados fueron contrastados con los resultados obtenidos durante las validaciones de los prototipos. La retroalimentación recibida evidenció que los usuarios comprenden con facilidad los principales flujos de navegación, pueden realizar las tareas propuestas sin dificultades relevantes y consideran que la plataforma representa una alternativa útil para monitorear dispositivos inteligentes y administrar el consumo energético del hogar. En consecuencia, las hipótesis planteadas fueron validadas en gran medida y respaldan la viabilidad de la solución propuesta.
 
-### Contraste de hipótesis Lean UX con los resultados de validación
+Asimismo, los **criterios de éxito** definidos durante el proceso de Lean UX fueron alcanzados satisfactoriamente. Se desarrolló una Landing Page funcional, una Web Application con los módulos principales del sistema, una arquitectura basada en Domain-Driven Design organizada mediante Bounded Contexts, una API REST implementada con Spring Boot y un modelo de datos consistente con el dominio del negocio. Todo ello permitió construir un producto coherente con los objetivos definidos para el proyecto.
 
-El proceso de validación (sección 5.3), junto con las entrevistas de *needfinding* (sección 2.2), permite contrastar las hipótesis Lean UX definidas en la sección 1.2.2.3 frente al comportamiento real de los segmentos objetivo:
+Finalmente, la aplicación conjunta de Scrum, Lean UX y Domain-Driven Design permitió desarrollar el proyecto de forma iterativa, promoviendo la colaboración entre los integrantes del equipo, la validación continua con usuarios y la mejora progresiva del producto. Como resultado, TechWatch cuenta con una base tecnológica sólida que facilita su evolución y futuras ampliaciones.
 
-| Hipótesis | Criterio de éxito | Resultado de validación | Estado |
-|-----------|-------------------|-------------------------|--------|
-| **H1** — El dashboard centralizado mejora la visibilidad del consumo y estado de los dispositivos. | ≥ 70% afirma que mejora la visibilidad. | Los participantes valoraron el *dashboard* de métricas como el principal aporte de la plataforma. | Validada (confirmar % con 5.3) |
-| **H2** — Las métricas de consumo ayudan a identificar usos ineficientes. | ≥ 65% indica que ayuda a controlar el consumo. | Las métricas y reportes por dispositivo se percibieron útiles para el ahorro. | Validada (confirmar %) |
-| **H3** — La experiencia móvil incrementa la frecuencia de uso. | > 60% de sesiones desde móvil. | El diseño *responsive* facilitó el uso desde *smartphone*. | Por confirmar con datos de uso |
-| **H4** — El modelo *freemium* incentiva la adopción y el interés por planes premium. | ≥ 30% manifiesta intención de actualizar. | Interés en planes premium condicionado al costo. | Por confirmar |
-| **H5** — Las alertas y reportes inteligentes aumentan el valor percibido. | ≥ 70% los considera útiles. | Las alertas de consumo se identificaron como un diferencial de la propuesta. | Validada (confirmar %) |
+### Recomendaciones
 
-<!-- TODO equipo: reemplazar las columnas Resultado/Estado con los porcentajes reales obtenidos de las sesiones de validación (sección 5.3). -->
+Como parte de la evolución del **Roadmap** del producto digital, se recomienda integrar TechWatch con dispositivos IoT reales mediante APIs o protocolos especializados, permitiendo reemplazar las simulaciones actuales por información obtenida en tiempo real y ampliando las capacidades de monitoreo y control de la plataforma.
 
-## About the Team
+Asimismo, se recomienda incorporar herramientas de analítica avanzada e Inteligencia Artificial que permitan identificar patrones de consumo, detectar comportamientos anómalos y generar recomendaciones personalizadas para optimizar el uso de energía y reducir costos para los usuarios.
 
-El video **About the Team** resume el proceso de trabajo del equipo TechWatch a lo largo del proyecto, incluyendo escenas de las sesiones de trabajo reales, una retrospectiva grupal y el **testimonio ante cámara de cada integrante**, en el que describe las actividades realizadas, el logro de los *outcomes* y el desarrollo de las competencias del curso. El tono es consistente con el del producto. La versión publicada en YouTube es la que se incrusta en el Landing Page.
+También se propone desarrollar una aplicación móvil para Android e iOS que complemente la Web Application, brindando acceso remoto a las principales funcionalidades del sistema y mejorando la experiencia de uso desde dispositivos móviles.
 
-- **Duración:** _(pendiente)_
-- **URL (Microsoft Stream):** _(pendiente)_
-- **URL (YouTube, incrustado en el Landing Page):** https://youtu.be/v_BGvnbr95c
+Por otro lado, resulta recomendable ampliar el módulo de Analytics mediante indicadores comparativos, predicciones de consumo, objetivos de ahorro energético y un sistema de notificaciones inteligentes configurable por cada usuario, incrementando el valor agregado de la plataforma.
 
-![Screenshot del video About the Team](./assets/images/about-the-team.png)
+Finalmente, se recomienda continuar realizando validaciones con un mayor número de usuarios pertenecientes al mercado objetivo, utilizando métricas de usabilidad y experiencia de usuario para identificar oportunidades de mejora, priorizar nuevas funcionalidades dentro del Product Backlog y orientar las siguientes iteraciones del Roadmap de TechWatch.
 
-<!-- TODO equipo: completar la URL de Microsoft Stream, la duración y el screenshot (about-the-team.png) del video About-the-Team, e incrustar la versión de YouTube en el Landing Page. -->
+## Video About-The-Team
+
+### Resumen
+
+El video **About-The-Team** presenta el proceso de desarrollo del proyecto TechWatch desde la planificación inicial hasta la implementación de los principales productos digitales. Durante el video se muestran evidencias reales de las reuniones del equipo, sesiones de coordinación, desarrollo de la Landing Page, Frontend, Backend y elaboración del informe académico.
+Asimismo, se explica la aplicación de las metodologías Scrum, Lean UX y Domain-Driven Design durante el desarrollo del proyecto, mostrando los principales entregables obtenidos en cada sprint y la forma en que el equipo organizó las actividades para alcanzar los objetivos planteados.
+Finalmente, cada integrante comparte un breve testimonio describiendo las responsabilidades asumidas, las actividades desarrolladas, los principales resultados obtenidos y las competencias profesionales fortalecidas durante la realización del proyecto.
+
+### Pauta de secuencias
+
+| Tiempo   | Contenido                           |
+|----------|-------------------------------------|
+| 00:00:00 | Presentación del proyecto TechWatch |
+| 00:00:17 | Trello del Sprint 1                 |
+| 00:00:24 | Trello del Sprint 2                 |
+| 00:00:32 | Trello del Sprint 3                 |
+| 00:00:41 | Trello del Sprint 4                 |
+| 00:00:53 | Prototipos                          |
+| 00:01:06 | Landing Page                        |
+| 00:01:19 | Web Application                     |
+| 00:01:31 | Swagger                             |
+| 00:01:44 | Testimonio 1                        |
+| 00:02:12 | Testimonio 2                        |
+| 00:04:03 | Testimonio 3                        |
+| 00:05:01 | Testimonio 4                        |
+| 00:06:07 | Testimonio 5                        |
+| 00:07:07 | Cierre                              |
+
+### Cuadro representativo del video
+
+![About The Team](./assets/images/about-the-team.png)
+
+### Enlace
+
+link :
 
 # Bibliografía
 
@@ -2830,20 +3209,47 @@ Almas’ud, T. L., Pramudito, H. D., & Badruzzaman, A. (2025). *IoT-enabled smar
 | Entrega | Características del video | Sobre el contenido | Integración y entrega |
 |---------|----------------------------|-------------------|----------------------|
 | AV1 | **Enlace:** https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/IQBeS4ZyHvBRS7DxBIhtX41KAVW1jCO4GycXqKhoihL49AY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=8OcrcO <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-av1 <br><br> **Formato:** .mp4 <br><br> **Duración:** 16:57 | Video de exposición grupal que resume el avance integral del proyecto desarrollado hasta la presente entrega, incluyendo los principales capítulos trabajados y evidencias del desarrollo del sistema. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
+| TB1 | **Enlace:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202019498_upc_edu_pe/IQC7pvz9Dq7yT7nMWdF_yIIVAYIYib0CBKLUvYFnXwdnJfQ?e=5bnvd3 <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-tb1 <br><br> **Formato:** .mp4 <br><br> **Duración:** 08:53 | Video de exposición grupal que resume el avance del proyecto hasta la TB1, incluyendo el Sprint 2 y las correcciones aplicadas sobre la entrega anterior. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
+| AV2 | **Enlace:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202019498_upc_edu_pe/IQDE1vrlcQuGSqr1AAiOgNXXAR2uLq_wCQrW9vMwXFhKMcE?e=sFqJHc <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-av2 <br><br> **Formato:** .mp4 <br><br> **Duración:** 06:08| Video de exposición grupal que resume el avance del proyecto hasta la AV2, incluyendo el Sprint 3, el Backend Web Services desplegado y las entrevistas de validación. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
+| TB2 | **Enlace:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202019498_upc_edu_pe/IQBXy3dUsdLFTKyGvIIEdiRmAeEhLvur7DmQQ57yT_UAAPc?e=adZ2xG <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-tb2 <br><br> **Formato:** .mp4 <br><br> **Duración:** 11:13 | Video de exposición grupal que resume el cierre del proyecto, incluyendo el Sprint 4, la integración final de todos los componentes y su despliegue en producción. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
 
 ---
 
-## Anexo B. Evidencia de Video 
+## Anexo B. Evidencia de Video
 
 | Sección | Características del video | Sobre el contenido | Integración y entrega |
 |--------|----------------------------|-------------------|----------------------|
 | Needfinding Interviews | **Enlace:** el link del video de entrevistas es este; https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-techwatch-needfinding-sprint-1 <br> **Formato:** .mp4 <br> **Duración:** 22:22 | Consolida todas las entrevistas realizadas, incluyendo títulos con información del entrevistado, segmento objetivo y fecha de entrevista. Presenta evidencia audiovisual del proceso de investigación con usuarios para identificar necesidades, problemas y oportunidades del mercado objetivo. | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo, introducción de la sección, registro de entrevistas y análisis general con hallazgos clave para la construcción de User Persona. |
+| Product Navigation | **Enlace:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310877_upc_edu_pe/IQC-Otlc_V8uQafHAcGBjdNYARcHHtrY_IorSueRBRfHdJY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ff1i6y <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-techwatch-product-navigation-sprint-3 <br> **Formato:** .mp4 <br> **Duración:** 4:19 | Consolida la demostración del flujo de navegación del producto desplegado, priorizando los user flows relacionados con el core business: registro de propiedades, espacios y dispositivos, simulación de acciones, y visualización de métricas, alertas y reportes. | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo (ver sección 5.2.3.5). |
+| About the Product | **Enlace (YouTube):** https://www.youtube.com/watch?v=bM8T9gWbbao <br>**Enlace (Microsoft Stream):** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310877_upc_edu_pe/IQDhCTNsGjzeS6kAoX2jYgvcAaSqByjHAyqXcSRxA9T0mIA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5LEZKe <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-about-the-product-sprint-3 <br> **Formato:** .mp4 <br> **Duración:** 2:12 | Video de orientación promocional que resume el modelo de negocio, características y beneficios de TechWatch, con escenas de interacción real con el producto. Ver sección 5.4. | Subido a Microsoft Stream y YouTube, e incrustado en el Landing Page. Incluye screenshot con enlace en el informe (sección 5.4). |
+| About the Team | **Enlace (YouTube):** https://youtu.be/v_BGvnbr95c <br> **Enlace (Microsoft Stream):** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202019498_upc_edu_pe/IQAcUIzluQIxTJEiEIihzQclAWQAR6AJ0h9Ub3el_ifwfAw?e=h9G895 <br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-about-the-team-sprint-4 <br> **Formato:** .mp4 <br> **Duración:** 07:17 | Video que presenta el proceso de desarrollo de **TechWatch**, mostrando las principales etapas del proyecto, desde la planificación y el diseño hasta la implementación, integración y despliegue de la solución. Además, incluye el testimonio de cada integrante sobre las actividades realizadas, los resultados obtenidos y las competencias desarrolladas durante el proyecto. | Publicar el video en Microsoft Stream y YouTube. Incluir ambos enlaces en el informe y referenciar la sección **About the Team**, donde se presenta el resumen del video, la pauta de secuencias y el cuadro representativo solicitado por la rúbrica. |
 
-## Anexo C. Validation interviews
+
+## Anexo C. Validation Interviews
 
 | Sección | Características del video | Sobre el contenido | Integración y entrega |
 |--------|----------------------------|-------------------|----------------------|
-| Needfinding Interviews | **Enlace:** el link del video de entrevistas es este; https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2FMicrosoft%20Streams%2Fwhatsapp%2Dvideo%2D2026%2D06%2D19%2Dat%2D35408%2Dpm%5FIz6wPDin%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec312f333%2Dd71b%2D4208%2Dbf48%2D418fded1ffdb <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-techwatch-needfinding-sprint-3 <br> **Formato:** .mp4 <br> **Duración:** 22:31 | Consolida todas las entrevistas realizadas, incluyendo títulos con información del entrevistado, segmento objetivo y fecha de entrevista. Presenta evidencia audiovisual del proceso de investigación con usuarios para identificar necesidades, problemas y oportunidades del mercado objetivo. | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo, introducción de la sección, registro de entrevistas y análisis general con hallazgos clave para la construcción de User Persona. |
+| Validation Interviews | **Enlace:** el link del video de entrevistas es este; https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f  <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-techwatch-validation-sprint-4 <br> **Formato:** .mp4 <br> **Duración:** 23:25 | Consolida las sesiones y entrevistas de validación en las que usuarios de los segmentos objetivo interactuaron con el Landing Page y los prototipos de la Web Application, manifestando sus observaciones. Incluye títulos con información del entrevistado, segmento objetivo y fecha, junto con la evaluación de heurísticas de usabilidad, arquitectura de información y diseño inclusivo (ver sección 5.3). | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo, introducción de la sección, registro de cada entrevista y evaluación heurística (sección 5.3). |
 
+
+---
+
+## Anexo D. Enlaces de Producción y Usuario de Prueba
+
+A continuación se listan las URL públicas de los productos digitales de TechWatch desplegados en Railway, junto con un usuario de prueba para validar los flujos de la Web Application.
+
+| Producto | URL |
+|---|---|
+| Landing Page | https://techwatch-landing-production.up.railway.app |
+| Web Application (Frontend) | https://techwatch-frontend-production.up.railway.app |
+| RESTful API (Backend) | https://techwatch-backend-production.up.railway.app |
+| Documentación de la API (Swagger UI) | https://techwatch-backend-production.up.railway.app/swagger-ui/index.html |
+
+**Usuario de prueba:**
+
+| Campo | Valor |
+|---|---|
+| Correo electrónico | u202310877@upc.edu.pe |
+| Contraseña | 1234567890 |
 
 ---
