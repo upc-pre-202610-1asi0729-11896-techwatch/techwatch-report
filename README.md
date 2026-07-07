@@ -17,10 +17,10 @@
 <h2 align="center">Bautista Ubillús, Efraín Ricardo</h2>
 
 <h3 align="center">Equipo</h3>
-<h2 align="center">TechWatch</h2>
+<h2 align="center">Intellihome </h2>
 
 <h3 align="center">Proyecto</h3>
-<h2 align="center">Intellihome</h2>
+<h2 align="center">TechWatch</h2>
 
 <h2 align="center">Integrantes</h2>
 
@@ -387,7 +387,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </tr>
 
   <tr>
-    <td><b>Becerra Durand, Sebastian Uriel</b><br>Di aviso de posibles mejoras a el dieseño del frontend y correncciones en el backend<br><i></i></td>
+    <td><b>Becerra Durand, Sebastian Uriel</b><br>Di aviso de posibles mejoras a el diseño del frontend y correncciones en el backend<br><i></i></td>
   </tr>
 
 </table>
