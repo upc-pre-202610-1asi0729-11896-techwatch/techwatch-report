@@ -283,7 +283,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
   <tr>
     <td rowspan="5">TB2</td>
-    <td><b>Fernandez Garfias, Alexander Piero</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
+    <td><b>Fernandez Garfias, Alexander Piero</b><br> Expúse errores en el codigo del backend y presente pruebas de despliegue del producto<br><i></i></td>
   </tr>
 
   <tr>
@@ -291,7 +291,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </tr>
 
   <tr>
-    <td><b>Toro Turpo, Ronal</b><br>Añadí nuevas funcionalidades a en backend y rvision de el report<br><i></i></td>
+    <td><b>Toro Turpo, Ronal</b><br>Añadí nuevas funcionalidades a en backend y revisión de el report<br><i></i></td>
   </tr>
 
   <tr>
@@ -299,7 +299,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </tr>
 
   <tr>
-    <td><b>Becerra Durand, Sebastian Uriel</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
+    <td><b>Becerra Durand, Sebastian Uriel</b><br>Oraganize las reuniones para el avece del sprint 4 el cual consiste en la correción de errores<br><i></i></td>
   </tr>
 
   <tr>
@@ -371,7 +371,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
   <tr>
     <td rowspan="5">TB2</td>
-    <td><b>Fernandez Garfias, Alexander Piero</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
+    <td><b>Fernandez Garfias, Alexander Piero</b><br>Le dí solució a errores ortográficos en el reporte y los comentarios del código backend<br><i></i></td>
   </tr>
 
   <tr>
@@ -387,12 +387,12 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </tr>
 
   <tr>
-    <td><b>Becerra Durand, Sebastian Uriel</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
+    <td><b>Becerra Durand, Sebastian Uriel</b><br>Di aviso de posibles mejoras a el dieseño del frontend y correncciones en el backend<br><i></i></td>
   </tr>
 
 </table>
 
-<!-- TODO equipo: cada integrante debe reemplazar su celda "(pendiente)" del bloque TB2 con lo que efectivamente comunico oralmente y por escrito durante esta entrega. -->
+
 
 
 # Capítulo I: Introducción
