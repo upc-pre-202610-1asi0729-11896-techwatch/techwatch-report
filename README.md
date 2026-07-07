@@ -208,229 +208,79 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 3.
 
-#### Comunica oralmente con efectividad a diferentes rangos de audiencia
-
 <table border="1" cellspacing="0" cellpadding="6">
   <tr>
-    <th>Entrega</th>
-    <th>Integrante</th>
-    <th>Acciones realizadas</th>
+    <th style="width:18%">Criterio específico</th>
+    <th style="width:47%">Acciones realizadas</th>
+    <th style="width:35%">Conclusiones</th>
   </tr>
   <tr>
-    <td>AV1</td>
-    <td>Fernandez Garfias, Alexander Piero</td>
-    <td>Participé activamente en la sustentación de la Landing Page, explicando la coherencia entre el diseño en Figma y la implementación visual. Además, apoyé constantemente en la elaboración y mejora del documento del proyecto.</td>
+    <td><b>Comunica oralmente con efectividad a diferentes rangos de audiencia.</b></td>
+    <td>
+      <b>Fernandez Garfias, Alexander Piero</b><br>
+      <i>AV1</i><br>Participé activamente en la sustentación de la Landing Page, explicando la coherencia entre el diseño en Figma y la implementación visual. Además, apoyé constantemente en la elaboración y mejora del documento del proyecto.<br>
+      <i>TB1</i><br>Participé en reuniones de coordinación para validar el desarrollo frontend, despliegue de la landing page y correcciones relacionadas con diagramas y funcionalidades implementadas.<br>
+      <i>AV2</i><br>Expuse la migración del Frontend Web Application al RESTful API real y la integración end-to-end durante las revisiones del Sprint 3.<br>
+      <i>TB2</i><br>Expuse errores detectados en el código del backend y presenté pruebas de despliegue del producto.<br><br>
+      <b>Alva Abanto, Luis Andrés</b><br>
+      <i>AV1</i><br>Realicé entrevistas y coordiné criterios de aceptación y dudas de integración.<br>
+      <i>TB1</i><br>Coordiné actividades relacionadas con Sprint 2 y el despliegue del JSON Server, comunicando avances y observaciones al equipo.<br>
+      <i>AV2</i><br>Sustenté la arquitectura del Backend Web Services (DDD), la documentación OpenAPI y el despliegue en Railway ante el equipo y el docente.<br>
+      <i>TB2</i><br>Sustenté ante el equipo y el docente la culminación del Backend Web Services (Bounded Contexts IAM, Profiles y Subscriptions), su integración con el Frontend y el despliegue final de la solución en Railway.<br><br>
+      <b>Toro Turpo, Ronal</b><br>
+      <i>AV1</i><br>Revisé el comportamiento de navegación y flujo entre secciones en reuniones de alineación.<br>
+      <i>TB1</i><br>Participé en revisiones del capítulo IV y validación de wireframes y mock-ups del Web Application.<br>
+      <i>AV2</i><br>Participé en las revisiones de navegación y validación de los user flows de la Web Application durante las reuniones del Sprint.<br>
+      <i>TB2</i><br>Añadí nuevas funcionalidades en el backend y realicé la revisión del informe.<br><br>
+      <b>Montalvo Vásquez, Bruno Rodrigo</b><br>
+      <i>AV1</i><br>Participé en discusiones sobre estructura de secciones y criterios de prueba.<br>
+      <i>TB1</i><br>Expuse correcciones relacionadas con Lean UX Hypothesis y validación de enlaces de entrevistas durante reuniones del equipo.<br>
+      <i>AV2</i><br>Expuse el diseño de las entrevistas de validación y la evaluación según heurísticas durante las sesiones del equipo.<br>
+      <i>TB2</i><br>Presenté la reorganización de las entrevistas de validación, los principales resultados obtenidos durante la evaluación del producto y las actualizaciones realizadas en las conclusiones y anexos del Project Report, explicando su aporte para el cierre integral del proyecto.<br><br>
+      <b>Becerra Durand, Sebastian Uriel</b><br>
+      <i>AV1</i><br>Expuse hallazgos de pruebas rápidas de UI y enlaces durante revisiones del sprint.<br>
+      <i>TB1</i><br>Presenté avances relacionados con Sprint 2 y mejoras en wireframes del Web Application durante las sesiones de revisión.<br>
+      <i>AV2</i><br>Presenté hallazgos de las pruebas sobre la solución desplegada y observaciones de la evaluación heurística.<br>
+      <i>TB2</i><br>Organicé las reuniones para el avance del Sprint 4, enfocadas en la corrección de errores.
+    </td>
+    <td>
+      Durante la AV1, la TB1, la AV2 y la TB2, el equipo mantuvo una comunicación oral efectiva entre integrantes, docente y usuarios entrevistados, permitiendo explicar de manera clara tanto aspectos funcionales como técnicos del proyecto. Las reuniones de coordinación y revisión facilitaron la validación de hipótesis, historias de usuario, wireframes y criterios de aceptación, fortaleciendo la toma de decisiones durante el desarrollo de la solución. En la AV2, la comunicación oral se centró en sustentar la construcción del Backend Web Services, su documentación con OpenAPI y su despliegue en Railway, así como el proceso de validación con usuarios. En la TB2, la comunicación oral permitió presentar la integración completa de la solución, los resultados finales de las entrevistas de validación, las conclusiones obtenidas durante el proyecto y el despliegue definitivo del sistema, evidenciando el cumplimiento de los objetivos planteados y el cierre integral de TechWatch.
+    </td>
   </tr>
   <tr>
-    <td>AV1</td>
-    <td>Alva Abanto, Luis Andrés</td>
-    <td>Realicé entrevistas y coordiné criterios de aceptación y dudas de integración.</td>
-  </tr>
-  <tr>
-    <td>AV1</td>
-    <td>Toro Turpo, Ronal</td>
-    <td>Revisé el comportamiento de navegación y flujo entre secciones en reuniones de alineación.</td>
-  </tr>
-  <tr>
-    <td>AV1</td>
-    <td>Montalvo Vásquez, Bruno Rodrigo</td>
-    <td>Participé en discusiones sobre estructura de secciones y criterios de prueba.</td>
-  </tr>
-  <tr>
-    <td>AV1</td>
-    <td>Becerra Durand, Sebastian Uriel</td>
-    <td>Expuse hallazgos de pruebas rápidas de UI y enlaces durante revisiones del sprint.</td>
-  </tr>
-  <tr>
-    <td>TB1</td>
-    <td>Fernandez Garfias, Alexander Piero</td>
-    <td>Participé en reuniones de coordinación para validar el desarrollo frontend, despliegue de la landing page y correcciones relacionadas con diagramas y funcionalidades implementadas.</td>
-  </tr>
-  <tr>
-    <td>TB1</td>
-    <td>Alva Abanto, Luis Andrés</td>
-    <td>Coordiné actividades relacionadas con Sprint 2 y el despliegue del JSON Server, comunicando avances y observaciones al equipo.</td>
-  </tr>
-  <tr>
-    <td>TB1</td>
-    <td>Toro Turpo, Ronal</td>
-    <td>Participé en revisiones del capítulo IV y validación de wireframes y mock-ups del Web Application.</td>
-  </tr>
-  <tr>
-    <td>TB1</td>
-    <td>Montalvo Vásquez, Bruno Rodrigo</td>
-    <td>Expuse correcciones relacionadas con Lean UX Hypothesis y validación de enlaces de entrevistas durante reuniones del equipo.</td>
-  </tr>
-  <tr>
-    <td>TB1</td>
-    <td>Becerra Durand, Sebastian Uriel</td>
-    <td>Presenté avances relacionados con Sprint 2 y mejoras en wireframes del Web Application durante las sesiones de revisión.</td>
-  </tr>
-  <tr>
-    <td>AV2</td>
-    <td>Fernandez Garfias, Alexander Piero</td>
-    <td>Expuse la migración del Frontend Web Application al RESTful API real y la integración end-to-end durante las revisiones del Sprint 3.</td>
-  </tr>
-  <tr>
-    <td>AV2</td>
-    <td>Alva Abanto, Luis Andrés</td>
-    <td>Sustenté la arquitectura del Backend Web Services (DDD), la documentación OpenAPI y el despliegue en Railway ante el equipo y el docente.</td>
-  </tr>
-  <tr>
-    <td>AV2</td>
-    <td>Toro Turpo, Ronal</td>
-    <td>Participé en las revisiones de navegación y validación de los user flows de la Web Application durante las reuniones del Sprint.</td>
-  </tr>
-  <tr>
-    <td>AV2</td>
-    <td>Montalvo Vásquez, Bruno Rodrigo</td>
-    <td>Expuse el diseño de las entrevistas de validación y la evaluación según heurísticas durante las sesiones del equipo.</td>
-  </tr>
-  <tr>
-    <td>AV2</td>
-    <td>Becerra Durand, Sebastian Uriel</td>
-    <td>Presenté hallazgos de las pruebas sobre la solución desplegada y observaciones de la evaluación heurística.</td>
-  </tr>
-  <tr>
-    <td>TB2</td>
-    <td>Fernandez Garfias, Alexander Piero</td>
-    <td>Expuse errores detectados en el código del backend y presenté pruebas de despliegue del producto.</td>
-  </tr>
-  <tr>
-    <td>TB2</td>
-    <td>Alva Abanto, Luis Andrés</td>
-    <td>Sustenté ante el equipo y el docente la culminación del Backend Web Services (Bounded Contexts IAM, Profiles y Subscriptions), su integración con el Frontend y el despliegue final de la solución en Railway.</td>
-  </tr>
-  <tr>
-    <td>TB2</td>
-    <td>Toro Turpo, Ronal</td>
-    <td>Añadí nuevas funcionalidades en el backend y realicé la revisión del informe.</td>
-  </tr>
-  <tr>
-    <td>TB2</td>
-    <td>Montalvo Vásquez, Bruno Rodrigo</td>
-    <td>Presenté la reorganización de las entrevistas de validación, los principales resultados obtenidos durante la evaluación del producto y las actualizaciones realizadas en las conclusiones y anexos del Project Report, explicando su aporte para el cierre integral del proyecto.</td>
-  </tr>
-  <tr>
-    <td>TB2</td>
-    <td>Becerra Durand, Sebastian Uriel</td>
-    <td>Organicé las reuniones para el avance del Sprint 4, enfocadas en la corrección de errores.</td>
+    <td><b>Comunica por escrito con efectividad a diferentes rangos de audiencia.</b></td>
+    <td>
+      <b>Fernandez Garfias, Alexander Piero</b><br>
+      <i>AV1</i><br>Participé en el desarrollo del frontend y apoyé de manera constante en la elaboración, corrección y organización del Project Report, además de documentar avances relacionados con la Landing Page y estructura visual del sistema.<br>
+      <i>TB1</i><br>Documenté avances relacionados con frontend, despliegue de landing page, diagramas y mejoras visuales del sistema dentro del informe y repositorios.<br>
+      <i>AV2</i><br>Documenté la evidencia de ejecución y la integración del Frontend Web Application con el API real en la sección del Sprint 3 del informe.<br>
+      <i>TB2</i><br>Di solución a errores ortográficos en el informe y mejoré los comentarios del código del backend.<br><br>
+      <b>Alva Abanto, Luis Andrés</b><br>
+      <i>AV1</i><br>Redacté historias de usuario, technical stories y análisis de entrevistas.<br>
+      <i>TB1</i><br>Actualicé documentación relacionada con Sprint 2, despliegue del JSON Server y mejoras continuas del informe.<br>
+      <i>AV2</i><br>Redacté la documentación del Sprint 3: Services Documentation (endpoints con OpenAPI), Development Evidence y Software Deployment Evidence.<br>
+      <i>TB2</i><br>Redacté la documentación del Sprint 4 correspondiente al Backend Web Services (IAM, Profiles y Subscriptions), el despliegue final en Railway y el capítulo de Conclusiones del informe.<br><br>
+      <b>Toro Turpo, Ronal</b><br>
+      <i>AV1</i><br>Registré checklists y notas de integración en Trello y GitHub.<br>
+      <i>TB1</i><br>Realicé correcciones documentadas en el capítulo IV relacionadas con wireframes y mock-ups del Web Application.<br>
+      <i>AV2</i><br>Documenté el diseño de las entrevistas de validación y los user flows evaluados de la Web Application.<br>
+      <i>TB2</i><br>Comuniqué al equipo los errores pendientes de solucionar, las funciones por implementar y las revisiones realizadas.<br><br>
+      <b>Montalvo Vásquez, Bruno Rodrigo</b><br>
+      <i>AV1</i><br>Mejoré textos y documentación de escenarios BDD.<br>
+      <i>TB1</i><br>Corregí Lean UX Hypothesis, validé enlaces de entrevistas y adapté documentación del informe a formato PDF.<br>
+      <i>AV2</i><br>Redacté la evaluación según heurísticas y el contraste de hipótesis Lean UX en las conclusiones del informe.<br>
+      <i>TB2</i><br>Reorganicé la documentación correspondiente a las entrevistas de validación, actualicé el capítulo de Conclusiones y recomendaciones, y ordené los Anexos del informe, asegurando coherencia, trazabilidad y consistencia para la entrega final del Project Report.<br><br>
+      <b>Becerra Durand, Sebastian Uriel</b><br>
+      <i>AV1</i><br>Registré observaciones de pruebas y acuerdos de calidad antes del merge final.<br>
+      <i>TB1</i><br>Documenté avances del Sprint 2 y mejoras en los wireframes del Web Application dentro del informe del proyecto.<br>
+      <i>AV2</i><br>Registré el registro de entrevistas de validación y observaciones de calidad del informe antes de la entrega.<br>
+      <i>TB2</i><br>Di aviso de posibles mejoras al diseño del frontend y correcciones en el backend.
+    </td>
+    <td>
+      La comunicación escrita desarrollada durante la AV1, la TB1, la AV2 y la TB2 permitió mantener trazabilidad y coherencia entre los artefactos del proyecto, incluyendo Lean UX, historias de usuario, technical stories, wireframes, reportes y despliegues. La documentación elaborada facilitó la comprensión de los avances técnicos y funcionales por parte del docente y del equipo, además de reducir ambigüedades en los procesos de integración y validación del sistema. En la AV2 se documentó por escrito el Sprint 3 (Web Services con OpenAPI, evidencias de desarrollo y despliegue) y las entrevistas de validación con su evaluación según heurísticas. En la TB2 se documentó el Sprint 4, se reorganizaron y consolidaron las entrevistas de validación, se actualizaron las conclusiones y recomendaciones, los anexos del proyecto y el registro de versiones, logrando un informe final completo, consistente y alineado con los resultados obtenidos durante el desarrollo de TechWatch.
+    </td>
   </tr>
 </table>
-
-**Conclusiones.** Durante la AV1, la TB1, la AV2 y la TB2, el equipo mantuvo una comunicación oral efectiva entre integrantes, docente y usuarios entrevistados, permitiendo explicar de manera clara tanto aspectos funcionales como técnicos del proyecto. Las reuniones de coordinación y revisión facilitaron la validación de hipótesis, historias de usuario, wireframes y criterios de aceptación, fortaleciendo la toma de decisiones durante el desarrollo de la solución. En la AV2, la comunicación oral se centró en sustentar la construcción del Backend Web Services, su documentación con OpenAPI y su despliegue en Railway, así como el proceso de validación con usuarios. En la TB2, la comunicación oral permitió presentar la integración completa de la solución, los resultados finales de las entrevistas de validación, las conclusiones obtenidas durante el proyecto y el despliegue definitivo del sistema, evidenciando el cumplimiento de los objetivos planteados y el cierre integral de TechWatch.
-
-#### Comunica por escrito con efectividad a diferentes rangos de audiencia
-
-<table border="1" cellspacing="0" cellpadding="6">
-  <tr>
-    <th>Entrega</th>
-    <th>Integrante</th>
-    <th>Acciones realizadas</th>
-  </tr>
-  <tr>
-    <td>AV1</td>
-    <td>Fernandez Garfias, Alexander Piero</td>
-    <td>Participé en el desarrollo del frontend y apoyé de manera constante en la elaboración, corrección y organización del Project Report, además de documentar avances relacionados con la Landing Page y estructura visual del sistema.</td>
-  </tr>
-  <tr>
-    <td>AV1</td>
-    <td>Alva Abanto, Luis Andrés</td>
-    <td>Redacté historias de usuario, technical stories y análisis de entrevistas.</td>
-  </tr>
-  <tr>
-    <td>AV1</td>
-    <td>Toro Turpo, Ronal</td>
-    <td>Registré checklists y notas de integración en Trello y GitHub.</td>
-  </tr>
-  <tr>
-    <td>AV1</td>
-    <td>Montalvo Vásquez, Bruno Rodrigo</td>
-    <td>Mejoré textos y documentación de escenarios BDD.</td>
-  </tr>
-  <tr>
-    <td>AV1</td>
-    <td>Becerra Durand, Sebastian Uriel</td>
-    <td>Registré observaciones de pruebas y acuerdos de calidad antes del merge final.</td>
-  </tr>
-  <tr>
-    <td>TB1</td>
-    <td>Fernandez Garfias, Alexander Piero</td>
-    <td>Documenté avances relacionados con frontend, despliegue de landing page, diagramas y mejoras visuales del sistema dentro del informe y repositorios.</td>
-  </tr>
-  <tr>
-    <td>TB1</td>
-    <td>Alva Abanto, Luis Andrés</td>
-    <td>Actualicé documentación relacionada con Sprint 2, despliegue del JSON Server y mejoras continuas del informe.</td>
-  </tr>
-  <tr>
-    <td>TB1</td>
-    <td>Toro Turpo, Ronal</td>
-    <td>Realicé correcciones documentadas en el capítulo IV relacionadas con wireframes y mock-ups del Web Application.</td>
-  </tr>
-  <tr>
-    <td>TB1</td>
-    <td>Montalvo Vásquez, Bruno Rodrigo</td>
-    <td>Corregí Lean UX Hypothesis, validé enlaces de entrevistas y adapté documentación del informe a formato PDF.</td>
-  </tr>
-  <tr>
-    <td>TB1</td>
-    <td>Becerra Durand, Sebastian Uriel</td>
-    <td>Documenté avances del Sprint 2 y mejoras en los wireframes del Web Application dentro del informe del proyecto.</td>
-  </tr>
-  <tr>
-    <td>AV2</td>
-    <td>Fernandez Garfias, Alexander Piero</td>
-    <td>Documenté la evidencia de ejecución y la integración del Frontend Web Application con el API real en la sección del Sprint 3 del informe.</td>
-  </tr>
-  <tr>
-    <td>AV2</td>
-    <td>Alva Abanto, Luis Andrés</td>
-    <td>Redacté la documentación del Sprint 3: Services Documentation (endpoints con OpenAPI), Development Evidence y Software Deployment Evidence.</td>
-  </tr>
-  <tr>
-    <td>AV2</td>
-    <td>Toro Turpo, Ronal</td>
-    <td>Documenté el diseño de las entrevistas de validación y los user flows evaluados de la Web Application.</td>
-  </tr>
-  <tr>
-    <td>AV2</td>
-    <td>Montalvo Vásquez, Bruno Rodrigo</td>
-    <td>Redacté la evaluación según heurísticas y el contraste de hipótesis Lean UX en las conclusiones del informe.</td>
-  </tr>
-  <tr>
-    <td>AV2</td>
-    <td>Becerra Durand, Sebastian Uriel</td>
-    <td>Registré el registro de entrevistas de validación y observaciones de calidad del informe antes de la entrega.</td>
-  </tr>
-  <tr>
-    <td>TB2</td>
-    <td>Fernandez Garfias, Alexander Piero</td>
-    <td>Di solución a errores ortográficos en el informe y mejoré los comentarios del código del backend.</td>
-  </tr>
-  <tr>
-    <td>TB2</td>
-    <td>Alva Abanto, Luis Andrés</td>
-    <td>Redacté la documentación del Sprint 4 correspondiente al Backend Web Services (IAM, Profiles y Subscriptions), el despliegue final en Railway y el capítulo de Conclusiones del informe.</td>
-  </tr>
-  <tr>
-    <td>TB2</td>
-    <td>Toro Turpo, Ronal</td>
-    <td>Comuniqué al equipo los errores pendientes de solucionar, las funciones por implementar y las revisiones realizadas.</td>
-  </tr>
-  <tr>
-    <td>TB2</td>
-    <td>Montalvo Vásquez, Bruno Rodrigo</td>
-    <td>Reorganicé la documentación correspondiente a las entrevistas de validación, actualicé el capítulo de Conclusiones y recomendaciones, y ordené los Anexos del informe, asegurando coherencia, trazabilidad y consistencia para la entrega final del Project Report.</td>
-  </tr>
-  <tr>
-    <td>TB2</td>
-    <td>Becerra Durand, Sebastian Uriel</td>
-    <td>Di aviso de posibles mejoras al diseño del frontend y correcciones en el backend.</td>
-  </tr>
-</table>
-
-**Conclusiones.** La comunicación escrita desarrollada durante la AV1, la TB1, la AV2 y la TB2 permitió mantener trazabilidad y coherencia entre los artefactos del proyecto, incluyendo Lean UX, historias de usuario, technical stories, wireframes, reportes y despliegues. La documentación elaborada facilitó la comprensión de los avances técnicos y funcionales por parte del docente y del equipo, además de reducir ambigüedades en los procesos de integración y validación del sistema. En la AV2 se documentó por escrito el Sprint 3 (Web Services con OpenAPI, evidencias de desarrollo y despliegue) y las entrevistas de validación con su evaluación según heurísticas. En la TB2 se documentó el Sprint 4, se reorganizaron y consolidaron las entrevistas de validación, se actualizaron las conclusiones y recomendaciones, los anexos del proyecto y el registro de versiones, logrando un informe final completo, consistente y alineado con los resultados obtenidos durante el desarrollo de TechWatch.
 
 
 <div style="page-break-after: always;"></div>
@@ -681,7 +531,7 @@ Aunque gestionan una menor cantidad de dispositivos en comparación con el segme
 | Fecha de entrevista | 20 Abril 2026 |
 | Duración | 02:30 |
 | Timing en el video | 00:00 - 02:30 |
-| URL del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka|
+| URL del video | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka)|
 
 <p align="center">
   <img src="assets/images/Cap2entrevista1.png" width="700">
@@ -703,7 +553,7 @@ Gustavo Rivas trabaja en refacción de vehículos y muestra un perfil práctico 
 | Fecha de entrevista | 20 Abril 2026 |
 | Duración | 03:09 |
 | Timing en el video | 02:31 - 05:40 |
-| URL del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka |
+| URL del video | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka) |
 
 <p align="center">
   <img src="assets/images/Cap2entrevista2.png" width="700">
@@ -726,7 +576,7 @@ Tito Rusel Montalvo Vera es técnico en electricidad electrónica y posee un per
 | Fecha de entrevista | 24 Abril 2026 |
 | Duración | 05:39 |
 | Timing en el video | 05:41 - 11:20 |
-| URL del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka |
+| URL del video | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka) |
 
 
 <p align="center">
@@ -750,7 +600,7 @@ José Vásquez Martínez se desempeña como analista de marketing digital y repr
 | Fecha de entrevista | 19 Abril 2026 |
 | Duración | 05:41 |
 | Timing en el video | 11:21 - 17:02 |
-| URL del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka|
+| URL del video | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka)|
 
 <p align="center">
   <img src="assets/images/Cap2entrevista4.png" width="700">
@@ -773,7 +623,7 @@ Daniel Palomino es estudiante de Ingeniería de Software y representa un perfil 
 | Fecha de entrevista | 20 Abril 2026 |
 | Duración | 02:53 |
 | Timing en el video | 17:03 - 19:56 |
-| URL del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka|
+| URL del video | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka)|
 
 <p align="center">
   <img src="assets/images/Cap2entrevista5.png" width="700">
@@ -795,7 +645,7 @@ Eleno Giovanni Mena Zuleta trabaja desde casa y presenta un perfil orientado a l
 | Fecha de entrevista | 20 Abril 2026 |
 | Duración | 02:25 |
 | Timing en el video | 19:57 - 22:22 |
-| URL del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka |
+| URL del video | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka) |
 
 <p align="center">
   <img src="assets/images/Cap2entrevista6.png" width="700">
@@ -1391,7 +1241,7 @@ El diseño de la Landing Page de TechWatch fue desarrollado bajo un enfoque mini
 
 ![Wireframe 2](./assets/images/chapter-4-3-1-img2.png)
 
-**About Us Section**: La sección presentará información sobre la startup TechWatch, incluyendo misión, visión y propósito del proyecto, acompañada de elementos visuales relacionados con tecnología, IoT y hogares inteligentes.
+**About Us Section**: La sección presentará información sobre la startup Intellihome, incluyendo misión, visión y propósito del proyecto, acompañada de elementos visuales relacionados con tecnología, IoT y hogares inteligentes.
 
 ![Wireframe 3](./assets/images/chapter-4-3-1-img3.png)
 
@@ -1419,7 +1269,7 @@ El diseño de la Landing Page de TechWatch fue desarrollado bajo un enfoque mini
 
 ![Mockup 2](./assets/images/chapter-4-3-2-img2.png)
 
-**Mockup - About Us Section**: la sección presenta información sobre la startup TechWatch, incluyendo misión, visión y propósito de la plataforma, acompañada de elementos visuales relacionados con tecnología, IoT y hogares inteligentes.
+**Mockup - About Us Section**: la sección presenta información sobre la startup Intellihome, incluyendo misión, visión y propósito de la plataforma, acompañada de elementos visuales relacionados con tecnología, IoT y hogares inteligentes.
 
 ![Mockup 3](./assets/images/chapter-4-3-2-img3.png)
 
@@ -2088,7 +1938,7 @@ https://trello.com/invite/b/69eabab8c6d017d12b30ef1a/ATTIb95191deca519b3139e11dc
 | Sprint 1 Review Summary | En el Sprint 1 se completó la implementación y despliegue de la primera versión del Landing Page en Railway, cubriendo las secciones principales: hero, features, pricing, about us, testimonios, contacto y navegación responsive con soporte i18n. |
 | Sprint 1 Retrospective Summary | El equipo identificó la necesidad de mejorar la coordinación en la distribución de tareas y establecer criterios de aceptación más claros antes de iniciar el desarrollo de cada feature. Para el Sprint 2 se acuerda trabajar con ramas de feature individuales y hacer revisiones de código antes de integrar. |
 | **Sprint Goal & User Stories** | |
-| Sprint 2 Goal | Nuestro enfoque está en entregar la experiencia principal de gestión de propiedades y dispositivos a los usuarios de IntelliHome. Creemos que esto proporciona una interfaz funcional e intuitiva para registrar viviendas, administrar dispositivos inteligentes y visualizar métricas de consumo para propietarios de casas y residentes de departamentos. Esto se confirmará cuando los usuarios puedan registrar una vivienda, agregar dispositivos y visualizar sus datos de consumo en el panel de control sin intervención del equipo de desarrollo.|
+| Sprint 2 Goal | Nuestro enfoque está en entregar la experiencia principal de gestión de propiedades y dispositivos a los usuarios de TechWatch. Creemos que esto proporciona una interfaz funcional e intuitiva para registrar viviendas, administrar dispositivos inteligentes y visualizar métricas de consumo para propietarios de casas y residentes de departamentos. Esto se confirmará cuando los usuarios puedan registrar una vivienda, agregar dispositivos y visualizar sus datos de consumo en el panel de control sin intervención del equipo de desarrollo.|
 | Sprint 2 Velocity | 34 |
 | Sum of Story Points | 34 |
 
@@ -2106,7 +1956,7 @@ En este Sprint el equipo se organiza en torno a cuatro aspectos principales: Dev
 
 #### 5.2.2.3. Sprint Backlog 2
 
-El objetivo principal del Sprint 2 es entregar la primera versión funcional del Frontend Web Application de IntelliHome, cubriendo las funcionalidades core de gestión de hogares, dispositivos y visualización de métricas de consumo energético, integradas con el JSON Server desplegado que actúa como backend simulado.
+El objetivo principal del Sprint 2 es entregar la primera versión funcional del Frontend Web Application de TechWatch, cubriendo las funcionalidades core de gestión de hogares, dispositivos y visualización de métricas de consumo energético, integradas con el JSON Server desplegado que actúa como backend simulado.
 
 ![Trello Sprint 1](./assets/images/chapter-5-2-2-3-img1.png)
 
@@ -2196,7 +2046,7 @@ Durante el Sprint 2 el equipo utilizó un JSON Server como backend simulado para
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
-Durante el Sprint 2 se realizó el despliegue de dos productos: el Frontend Web Application de IntelliHome y el JSON Server que actúa como backend simulado.
+Durante el Sprint 2 se realizó el despliegue de dos productos: el Frontend Web Application de TechWatch y el JSON Server que actúa como backend simulado.
 
 **Frontend Web Application:**
 El frontend fue desarrollado con Angular y desplegado en [plataforma de despliegue]. El flujo de despliegue es el siguiente:
@@ -2350,7 +2200,7 @@ Capturas de las principales vistas:
 **Video de visualización y navegación del Sprint 3 (Product Navigation):** demostración del recorrido por los principales *user flows* del producto desplegado (registro de propiedades, espacios y dispositivos, simulación de acciones, y visualización de métricas, alertas y reportes).
 
 - **Duración:** 4:19 min
-- **URL (Microsoft Stream):** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310877_upc_edu_pe/IQC-Otlc_V8uQafHAcGBjdNYARcHHtrY_IorSueRBRfHdJY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ff1i6y
+- **URL (Microsoft Stream):** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310877_upc_edu_pe/IQC-Otlc_V8uQafHAcGBjdNYARcHHtrY_IorSueRBRfHdJY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ff1i6y)
 
 ![Screenshot del video de navegación del producto](./assets/images/product-navigation.png)
 
@@ -2558,13 +2408,13 @@ Analíticos de colaboración y *commits* del Sprint 3:
 | Sprint 3 Review Summary | En el Sprint 3 se completó el desarrollo del backend bajo una arquitectura Domain-Driven Design (DDD), implementando los principales Bounded Contexts, APIs REST y persistencia de datos. Asimismo, se avanzó en la integración con el frontend, dejando preparados los flujos principales para su validación y despliegue.                                                                                                                                                                                                                                                                                                                                   |
 | Sprint 3 Retrospective Summary | El equipo mejoró la coordinación entre frontend y backend mediante revisiones periódicas de las APIs y pruebas de integración. Para el Sprint 4 se acordó priorizar la integración completa del sistema, el despliegue de todos los componentes, la documentación final del proyecto y la validación integral de la solución antes de la entrega final.                                                                                                                                                                                                                                                                                                       |
 | **Sprint Goal & User Stories** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Sprint 4 Goal | Nuestro enfoque está en entregar la versión final de IntelliHome completamente funcional. Creemos que la integración del Landing Page, el Frontend y el Backend, junto con su despliegue en producción y la finalización de la documentación del proyecto, proporcionará una solución lista para ser utilizada y evaluada por los usuarios. Esto se confirmará cuando todos los flujos funcionales operen correctamente de extremo a extremo, el Landing Page y la Web Application se encuentren desplegados y conectados al backend, y el reporte final del proyecto haya sido completado con toda la documentación técnica y de validación correspondiente. |
+| Sprint 4 Goal | Nuestro enfoque está en entregar la versión final de TechWatch completamente funcional. Creemos que la integración del Landing Page, el Frontend y el Backend, junto con su despliegue en producción y la finalización de la documentación del proyecto, proporcionará una solución lista para ser utilizada y evaluada por los usuarios. Esto se confirmará cuando todos los flujos funcionales operen correctamente de extremo a extremo, el Landing Page y la Web Application se encuentren desplegados y conectados al backend, y el reporte final del proyecto haya sido completado con toda la documentación técnica y de validación correspondiente. |
 | Sprint 4 Velocity | 40                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | Sum of Story Points | 40                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
 ### 5.2.4.2. Aspect Leaders and Collaborators.
 
-En este Sprint el alcance se concentró en la culminación e integración de todos los componentes del proyecto IntelliHome. Se completó el desarrollo del **Backend Web Services** (Spring Boot + MySQL), la integración completa con la **Frontend Web Application**, el despliegue del **Landing Page**, Frontend y Backend en los servicios correspondientes, así como la ejecución de pruebas funcionales y la elaboración del reporte final del proyecto. Los aspectos de la matriz LACX (*Leadership and Collaboration eXtended*) son: **Full Stack Integration** (integración completa entre Landing Page, Frontend y Backend mediante APIs REST); **Backend & Infrastructure** (finalización de los Bounded Contexts, servicios REST, persistencia y despliegue del backend); **Frontend & User Experience** (implementación final de interfaces, consumo de APIs y validación de flujos de usuario); **Deployment, Validation & Testing** (despliegue de todos los componentes, pruebas funcionales, entrevistas de validación y evaluación heurística); y **Documentation & Final Report** (elaboración del informe final, videos, evidencias y documentación técnica). **L** indica a la persona que lidera el cierre y la coherencia del aspecto, y **C** a quien colabora con aportes, *commits* puntuales o *feedback*.
+En este Sprint el alcance se concentró en la culminación e integración de todos los componentes del proyecto TechWatch. Se completó el desarrollo del **Backend Web Services** (Spring Boot + MySQL), la integración completa con la **Frontend Web Application**, el despliegue del **Landing Page**, Frontend y Backend en los servicios correspondientes, así como la ejecución de pruebas funcionales y la elaboración del reporte final del proyecto. Los aspectos de la matriz LACX (*Leadership and Collaboration eXtended*) son: **Full Stack Integration** (integración completa entre Landing Page, Frontend y Backend mediante APIs REST); **Backend & Infrastructure** (finalización de los Bounded Contexts, servicios REST, persistencia y despliegue del backend); **Frontend & User Experience** (implementación final de interfaces, consumo de APIs y validación de flujos de usuario); **Deployment, Validation & Testing** (despliegue de todos los componentes, pruebas funcionales, entrevistas de validación y evaluación heurística); y **Documentation & Final Report** (elaboración del informe final, videos, evidencias y documentación técnica). **L** indica a la persona que lidera el cierre y la coherencia del aspecto, y **C** a quien colabora con aportes, *commits* puntuales o *feedback*.
 
 | Team Member (Last Name, First Name) | GitHub Username | Full Stack Integration | Backend & Infrastructure | Frontend & User Experience | Deployment, Validation & Testing | Documentation & Final Report |
 |-------------------------------------|-----------------|------------------------|--------------------------|----------------------------|----------------------------------|------------------------------|
@@ -2575,7 +2425,7 @@ En este Sprint el alcance se concentró en la culminación e integración de tod
 | Becerra Durand, Sebastian Uriel | sebasdev28 | C | C | C | C | C |
 
 ### 5.2.4.3. Sprint Backlog 4
-El objetivo principal del Sprint 4 es completar el desarrollo de la solución IntelliHome mediante la implementación de los últimos **Bounded Contexts** del backend desarrollado en Spring Boot bajo Domain-Driven Design, finalizar la integración completa entre el Backend RESTful API, la Frontend Web Application y el Landing Page, realizar las pruebas funcionales y de integración de todos los flujos principales, desplegar la solución completa en los servicios correspondientes y culminar la documentación final del proyecto, incluyendo las entrevistas de validación, la evaluación heurística y los entregables finales. Las tareas de este Sprint se derivan de las Technical Stories pendientes de los Epics relacionados con Backend, Frontend, Integración, Deployment y Documentación definidos en la sección 3.1.
+El objetivo principal del Sprint 4 es completar el desarrollo de la solución TechWatch mediante la implementación de los últimos **Bounded Contexts** del backend desarrollado en Spring Boot bajo Domain-Driven Design, finalizar la integración completa entre el Backend RESTful API, la Frontend Web Application y el Landing Page, realizar las pruebas funcionales y de integración de todos los flujos principales, desplegar la solución completa en los servicios correspondientes y culminar la documentación final del proyecto, incluyendo las entrevistas de validación, la evaluación heurística y los entregables finales. Las tareas de este Sprint se derivan de las Technical Stories pendientes de los Epics relacionados con Backend, Frontend, Integración, Deployment y Documentación definidos en la sección 3.1.
 
 ![Tablero Trello Sprint 4](./assets/images/chapter-5-2-4-3-img1.png)
 
@@ -2604,7 +2454,7 @@ URL del tablero: [https://trello.com/invite/b/6a4a9cfc1cc5ed3171bb68ac/ATTIb0050
 
 ### 5.2.4.4. Development Evidence for Sprint Review.
 
-Durante el **Sprint 4** el desarrollo estuvo orientado a la culminación de IntelliHome como una solución completamente funcional. Se finalizaron los últimos **Bounded Contexts** del Backend Web Services (IAM y Profiles), se completó la integración entre el **Landing Page**, la **Frontend Web Application** y el **Backend Web Services**, se desplegaron todos los componentes en Railway y se realizaron las pruebas funcionales e integración de extremo a extremo. El equipo continuó utilizando **GitFlow**, trabajando mediante ramas `feature/*` para cada funcionalidad pendiente e integrando los cambios a `develop` mediante *merge* `--no-ff`. Todos los commits siguieron la especificación **Conventional Commits** (`feat`, `fix`, `docs`, `refactor`, `chore`), manteniendo un historial claro y trazable durante el cierre del proyecto.
+Durante el **Sprint 4** el desarrollo estuvo orientado a la culminación de TechWatch como una solución completamente funcional. Se finalizaron los últimos **Bounded Contexts** del Backend Web Services (IAM y Profiles), se completó la integración entre el **Landing Page**, la **Frontend Web Application** y el **Backend Web Services**, se desplegaron todos los componentes en Railway y se realizaron las pruebas funcionales e integración de extremo a extremo. El equipo continuó utilizando **GitFlow**, trabajando mediante ramas `feature/*` para cada funcionalidad pendiente e integrando los cambios a `develop` mediante *merge* `--no-ff`. Todos los commits siguieron la especificación **Conventional Commits** (`feat`, `fix`, `docs`, `refactor`, `chore`), manteniendo un historial claro y trazable durante el cierre del proyecto.
 
 **Backend Web Services** 
 
@@ -2645,7 +2495,7 @@ Durante el **Sprint 4** el desarrollo estuvo orientado a la culminación de Inte
 
 ### 5.2.4.5. Execution Evidence for Sprint Review.
 
-En el **Sprint 4** se completó la versión final de IntelliHome, integrando exitosamente el **Landing Page**, la **Frontend Web Application** y los **Backend Web Services** desplegados en Railway. Durante este Sprint se implementaron los últimos **Bounded Contexts** del backend, incluyendo **IAM** y **Profiles**, completando la arquitectura basada en **Domain-Driven Design (DDD)** con autenticación mediante JWT, gestión de perfiles y seguridad utilizando Spring Security.
+En el **Sprint 4** se completó la versión final de TechWatch, integrando exitosamente el **Landing Page**, la **Frontend Web Application** y los **Backend Web Services** desplegados en Railway. Durante este Sprint se implementaron los últimos **Bounded Contexts** del backend, incluyendo **IAM** y **Profiles**, completando la arquitectura basada en **Domain-Driven Design (DDD)** con autenticación mediante JWT, gestión de perfiles y seguridad utilizando Spring Security.
 
 Asimismo, se finalizaron las integraciones entre el frontend y el backend, eliminando completamente el uso de datos simulados y validando el funcionamiento integral de la aplicación. También se realizaron ajustes finales de interfaz, mejoras de experiencia de usuario, pruebas funcionales, pruebas de integración y el despliegue definitivo de todos los componentes de la solución.
 
@@ -2680,7 +2530,7 @@ La documentación quedó disponible tanto en el entorno local como en el entorno
 - **Especificación OpenAPI (JSON):** https://techwatch-backend-production.up.railway.app/v3/api-docs
 - **Local:** http://localhost:8080/swagger-ui/index.html
 
-El API expone los servicios correspondientes a los Bounded Contexts **IAM**, **Profiles**, **Device Management**, **Analytics** y **Subscriptions**, permitiendo el funcionamiento completo de IntelliHome. Todos los servicios REST utilizan `application/json`, siguen una estructura uniforme de respuestas y errores mediante `Result`, `ApplicationError` y `GlobalExceptionHandler`, y los endpoints protegidos utilizan autenticación basada en JWT.
+El API expone los servicios correspondientes a los Bounded Contexts **IAM**, **Profiles**, **Device Management**, **Analytics** y **Subscriptions**, permitiendo el funcionamiento completo de TechWatch. Todos los servicios REST utilizan `application/json`, siguen una estructura uniforme de respuestas y errores mediante `Result`, `ApplicationError` y `GlobalExceptionHandler`, y los endpoints protegidos utilizan autenticación basada en JWT.
 
 ### IAM (Identity & Access Management)
 
@@ -2779,7 +2629,7 @@ El API expone los servicios correspondientes a los Bounded Contexts **IAM**, **P
 
 ### 5.2.4.7. Software Deployment Evidence for Sprint Review.
 
-Durante el **Sprint 4** se consolidó el despliegue definitivo de **IntelliHome**, dejando completamente integrados el **Landing Page**, la **Frontend Web Application**, los **Backend Web Services** y la **Base de Datos MySQL** dentro del entorno de producción en **Railway**. En esta etapa se desplegaron los últimos Bounded Contexts (**IAM**, **Profiles** y **Subscriptions**), se verificó la comunicación entre todos los servicios y se realizaron las pruebas finales de funcionamiento e integración antes del cierre del proyecto.
+Durante el **Sprint 4** se consolidó el despliegue definitivo de **TechWatch**, dejando completamente integrados el **Landing Page**, la **Frontend Web Application**, los **Backend Web Services** y la **Base de Datos MySQL** dentro del entorno de producción en **Railway**. En esta etapa se desplegaron los últimos Bounded Contexts (**IAM**, **Profiles** y **Subscriptions**), se verificó la comunicación entre todos los servicios y se realizaron las pruebas finales de funcionamiento e integración antes del cierre del proyecto.
 
 **Backend Web Services (Spring Boot).** Se actualizó el despliegue del Backend incorporando los últimos Bounded Contexts (**IAM**, **Profiles** y **Subscriptions**), completando la arquitectura basada en **Domain-Driven Design (DDD)**. El servicio continúa desplegado mediante un **Dockerfile** multi-stage utilizando **Maven** y **Eclipse Temurin**, ejecutándose con el perfil de producción (`application-prod.properties`). Se configuraron correctamente las variables de entorno para la conexión con MySQL, JWT, CORS y demás parámetros de producción. La documentación del API mediante **Swagger UI** quedó disponible para validar todos los servicios REST implementados.
 
@@ -2804,15 +2654,15 @@ Durante el **Sprint 4** se consolidó el despliegue definitivo de **IntelliHome*
 
 ### Evidencia de la imagen Docker (Docker Desktop)
 
-La versión final de IntelliHome se distribuye mediante imágenes Docker correspondientes al **Backend Web Services**, **Frontend Web Application** y **Landing Page**, generadas automáticamente a partir de sus respectivos **Dockerfile**. Estas imágenes son utilizadas por Railway durante el despliegue continuo del sistema, garantizando que todos los servicios se ejecuten utilizando exactamente la misma configuración validada durante el desarrollo.
+La versión final de TechWatch se distribuye mediante imágenes Docker correspondientes al **Backend Web Services**, **Frontend Web Application** y **Landing Page**, generadas automáticamente a partir de sus respectivos **Dockerfile**. Estas imágenes son utilizadas por Railway durante el despliegue continuo del sistema, garantizando que todos los servicios se ejecuten utilizando exactamente la misma configuración validada durante el desarrollo.
 
 Las imágenes incluyen la versión final del proyecto, incorporando los Bounded Contexts **Device Management**, **Analytics**, **Subscriptions**, **IAM** y **Profiles**, así como todas las configuraciones necesarias para producción.
 
-![Imágenes Docker finales de IntelliHome](./assets/images/chapter-5-2-4-7-img1.png)
+![Imágenes Docker finales de TechWatch](./assets/images/chapter-5-2-4-7-img1.png)
 
 ### 5.2.4.8. Team Collaboration Insights during Sprint.
 
-Durante el **Sprint 4** los cinco integrantes colaboraron en la culminación de IntelliHome, completando el desarrollo de los últimos **Bounded Contexts** del **Backend Web Services** (IAM, Profiles y Subscriptions), la integración definitiva con la **Frontend Web Application**, la vinculación del **Landing Page** con la aplicación, el despliegue de la solución final en Railway y la elaboración del informe y evidencias correspondientes al cierre del proyecto.
+Durante el **Sprint 4** los cinco integrantes colaboraron en la culminación de TechWatch, completando el desarrollo de los últimos **Bounded Contexts** del **Backend Web Services** (IAM, Profiles y Subscriptions), la integración definitiva con la **Frontend Web Application**, la vinculación del **Landing Page** con la aplicación, el despliegue de la solución final en Railway y la elaboración del informe y evidencias correspondientes al cierre del proyecto.
 
 El trabajo continuó organizándose mediante ramas `feature/*` para cada funcionalidad pendiente e integración a la rama `develop` mediante *pull requests*, siguiendo la metodología **GitFlow** y la convención **Conventional Commits** para mantener un historial de cambios claro y trazable. Durante este Sprint se realizaron revisiones cruzadas de código, pruebas funcionales e integración de extremo a extremo para garantizar el correcto funcionamiento de todos los módulos antes de la entrega final.
 
@@ -2843,7 +2693,7 @@ Con el propósito de validar la solución propuesta, se diseñó un conjunto de 
 
 #### Objetivo de las entrevistas
 
-Validar la usabilidad, utilidad y facilidad de aprendizaje de IntelliHome, verificando que los usuarios comprendan la propuesta de valor y puedan utilizar las funcionalidades principales sin asistencia.
+Validar la usabilidad, utilidad y facilidad de aprendizaje de TechWatch, verificando que los usuarios comprendan la propuesta de valor y puedan utilizar las funcionalidades principales sin asistencia.
 
 #### Segmentos objetivo
 
@@ -2869,7 +2719,7 @@ Se realizaron seis entrevistas, tres por cada segmento.
 2. ¿Encontró dificultades durante la navegación?
 3. ¿La información presentada fue clara?
 4. ¿Qué funcionalidad mejoraría?
-5. ¿Utilizaría IntelliHome en su vivienda? ¿Por qué?
+5. ¿Utilizaría TechWatch en su vivienda? ¿Por qué?
 
 #### Criterios de evaluación
 
@@ -2896,7 +2746,7 @@ Las siguientes entrevistas fueron registradas en video y documentan la interacci
 | Fecha de entrevista | 18 Junio 2026 |
 | Duración | 01:23 |
 | Timing en el video | 00:00 - 01:23 |
-| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f |
+| URL del video | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQD1IHELc9zDT5MFcFg0QZHKAdgT3PwFXdvm2X7Tjm53oPQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=WZ0fD0) |
 
 ![Screenshot del video](./assets/images/Cap3entrevista1.png)
 
@@ -2915,7 +2765,7 @@ Gustavo Rivas dice que le parece bien todo pero le gustaria que hubiera una form
 | Fecha de entrevista | 18 Junio 2026 |
 | Duración | 03:09 |
 | Timing en el video | 02:31 - 05:40 |
-| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f |
+| URL del video | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQD1IHELc9zDT5MFcFg0QZHKAdgT3PwFXdvm2X7Tjm53oPQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=WZ0fD0) |
 
 ![Screenshot del video](./assets/images/Cap3entrevista2.png)
 
@@ -2935,7 +2785,7 @@ Tito Rusel Montalvo Vera dice que le parece muy util, pero recomendaria que algu
 | Fecha de entrevista | 19 Junio 2026 |
 | Duración | 05:39 |
 | Timing en el video | 05:41 - 11:20 |
-| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f |
+| URL del video | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQD1IHELc9zDT5MFcFg0QZHKAdgT3PwFXdvm2X7Tjm53oPQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=WZ0fD0) |
 
 ![Screenshot del video](./assets/images/Cap3entrevista3.png)
 
@@ -2955,7 +2805,7 @@ José Vásquez Martínez dice que le parece muy util la pagina pero recomendaria
 | Fecha de entrevista | 19 Junio 2026 |
 | Duración | 05:41 |
 | Timing en el video | 11:21 - 17:02 |
-| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f |
+| URL del video | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQD1IHELc9zDT5MFcFg0QZHKAdgT3PwFXdvm2X7Tjm53oPQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=WZ0fD0) |
 
 ![Screenshot del video](./assets/images/Cap3entrevista4.png)
 
@@ -2975,7 +2825,7 @@ Daniel Palomino piensa que es muy util, aunque le gustaria que agreguen gráfico
 | Fecha de entrevista | 19 Junio 2026 |
 | Duración | 02:53 |
 | Timing en el video | 17:03 - 19:56 |
-| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f |
+| URL del video | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQD1IHELc9zDT5MFcFg0QZHKAdgT3PwFXdvm2X7Tjm53oPQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=WZ0fD0) |
 
 ![Screenshot del video](./assets/images/Cap3entrevista5.png)
 
@@ -2995,7 +2845,7 @@ Eleno Giovanni Mena Zuleta dice que le parece muy intuitivo y util la pagina, si
 | Fecha de entrevista | 19 Junio 2026 |
 | Duración | 02:25 |
 | Timing en el video | 19:57 - 22:31 |
-| URL del video | https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f |
+| URL del video | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQD1IHELc9zDT5MFcFg0QZHKAdgT3PwFXdvm2X7Tjm53oPQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=WZ0fD0) |
 
 ![Screenshot del video](./assets/images/Cap3entrevista6.png)
 
@@ -3049,10 +2899,10 @@ La evaluación de las sesiones de validación se realizó siguiendo el formato d
 | Curso | Desarrollo de Aplicaciones Open Source |
 | Sección | 11896 |
 | Profesor | Efraín Ricardo Bautista Ubillús |
-| Auditor | Equipo TechWatch |
+| Auditor | Equipo Intellihome |
 | Cliente(s) | Usuarios de validación de los segmentos objetivo |
 
-**Site/App a evaluar:** TechWatch — Landing Page y Web Application (IntelliHome).
+**Site/App a evaluar:** TechWatch — Landing Page y Web Application.
 
 **Tareas a evaluar:**
 
@@ -3096,9 +2946,9 @@ La evaluación de las sesiones de validación se realizó siguiendo el formato d
 
 El video **About-the-Product** tiene como público objetivo a los visitantes del Landing Page y a los usuarios de la Web Application. Presenta, con un tono promocional consistente con el producto, el modelo de negocio y las características principales de TechWatch: el registro de inmuebles, espacios y dispositivos, la simulación de uso, y la visualización de métricas, alertas y reportes de consumo energético. Incluye escenas de interacción real con la solución desplegada y **al menos un testimonio positivo** de un usuario que participó en las entrevistas de validación (sección 5.3). La versión publicada en YouTube es la que se incrusta en el Landing Page.
 
-- **Duración:** 1:30 min
-- **URL (Microsoft Stream):** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310877_upc_edu_pe/IQDhCTNsGjzeS6kAoX2jYgvcAaSqByjHAyqXcSRxA9T0mIA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5LEZKe
-- **URL (YouTube, incrustado en el Landing Page):** https://www.youtube.com/watch?v=DF6cDTX380g
+- **Duración:** 2:12 min
+- **URL (Microsoft Stream):** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310877_upc_edu_pe/IQDhCTNsGjzeS6kAoX2jYgvcAaSqByjHAyqXcSRxA9T0mIA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5LEZKe)
+- **URL (YouTube, incrustado en el Landing Page):** [Ver video](https://www.youtube.com/watch?v=bM8T9gWbbao)
 
 ![Screenshot del video About-the-Product](./assets/images/about-the-product.png)
 
@@ -3166,7 +3016,8 @@ Finalmente, cada integrante comparte un breve testimonio describiendo las respon
 
 ### Enlace
 
-link :
+- **URL (YouTube):** [Ver video](https://youtu.be/v_BGvnbr95c)
+- **URL (Microsoft Stream):** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202019498_upc_edu_pe/IQAcUIzluQIxTJEiEIihzQclAWQAR6AJ0h9Ub3el_ifwfAw?e=h9G895)
 
 # Bibliografía
 
@@ -3208,10 +3059,10 @@ Almas’ud, T. L., Pramudito, H. D., & Badruzzaman, A. (2025). *IoT-enabled smar
 
 | Entrega | Características del video | Sobre el contenido | Integración y entrega |
 |---------|----------------------------|-------------------|----------------------|
-| AV1 | **Enlace:** https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/IQBeS4ZyHvBRS7DxBIhtX41KAVW1jCO4GycXqKhoihL49AY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=8OcrcO <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-av1 <br><br> **Formato:** .mp4 <br><br> **Duración:** 16:57 | Video de exposición grupal que resume el avance integral del proyecto desarrollado hasta la presente entrega, incluyendo los principales capítulos trabajados y evidencias del desarrollo del sistema. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
-| TB1 | **Enlace:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202019498_upc_edu_pe/IQC7pvz9Dq7yT7nMWdF_yIIVAYIYib0CBKLUvYFnXwdnJfQ?e=5bnvd3 <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-tb1 <br><br> **Formato:** .mp4 <br><br> **Duración:** 08:53 | Video de exposición grupal que resume el avance del proyecto hasta la TB1, incluyendo el Sprint 2 y las correcciones aplicadas sobre la entrega anterior. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
-| AV2 | **Enlace:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202019498_upc_edu_pe/IQDE1vrlcQuGSqr1AAiOgNXXAR2uLq_wCQrW9vMwXFhKMcE?e=sFqJHc <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-av2 <br><br> **Formato:** .mp4 <br><br> **Duración:** 06:08| Video de exposición grupal que resume el avance del proyecto hasta la AV2, incluyendo el Sprint 3, el Backend Web Services desplegado y las entrevistas de validación. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
-| TB2 | **Enlace:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202019498_upc_edu_pe/IQBXy3dUsdLFTKyGvIIEdiRmAeEhLvur7DmQQ57yT_UAAPc?e=adZ2xG <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-expo-tb2 <br><br> **Formato:** .mp4 <br><br> **Duración:** 11:13 | Video de exposición grupal que resume el cierre del proyecto, incluyendo el Sprint 4, la integración final de todos los componentes y su despliegue en producción. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
+| AV1 | **Enlace:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQBeS4ZyHvBRS7DxBIhtX41KAVW1jCO4GycXqKhoihL49AY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=99O72l) <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-intellihome-expo-av1 <br><br> **Formato:** .mp4 <br><br> **Duración:** 16:57 | Video de exposición grupal que resume el avance integral del proyecto desarrollado hasta la presente entrega, incluyendo los principales capítulos trabajados y evidencias del desarrollo del sistema. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
+| TB1 | **Enlace:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202019498_upc_edu_pe/IQC7pvz9Dq7yT7nMWdF_yIIVAYIYib0CBKLUvYFnXwdnJfQ?e=5bnvd3) <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-intellihome-expo-tb1 <br><br> **Formato:** .mp4 <br><br> **Duración:** 08:53 | Video de exposición grupal que resume el avance del proyecto hasta la TB1, incluyendo el Sprint 2 y las correcciones aplicadas sobre la entrega anterior. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
+| AV2 | **Enlace:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202019498_upc_edu_pe/IQDE1vrlcQuGSqr1AAiOgNXXAR2uLq_wCQrW9vMwXFhKMcE?e=sFqJHc) <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-intellihome-expo-av2 <br><br> **Formato:** .mp4 <br><br> **Duración:** 06:08| Video de exposición grupal que resume el avance del proyecto hasta la AV2, incluyendo el Sprint 3, el Backend Web Services desplegado y las entrevistas de validación. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
+| TB2 | **Enlace:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202019498_upc_edu_pe/IQBXy3dUsdLFTKyGvIIEdiRmAeEhLvur7DmQQ57yT_UAAPc?e=adZ2xG) <br> **Cantidad de videos:** 1 <br><br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-intellihome-expo-tb2 <br><br> **Formato:** .mp4 <br><br> **Duración:** 11:13 | Video de exposición grupal que resume el cierre del proyecto, incluyendo el Sprint 4, la integración final de todos los componentes y su despliegue en producción. | Subir el video en la plataforma indicada por el docente. Incluir en el informe screenshot del video con enlace correspondiente. Evidenciar claridad en la exposición, organización del equipo y sustento del trabajo realizado. |
 
 ---
 
@@ -3219,17 +3070,17 @@ Almas’ud, T. L., Pramudito, H. D., & Badruzzaman, A. (2025). *IoT-enabled smar
 
 | Sección | Características del video | Sobre el contenido | Integración y entrega |
 |--------|----------------------------|-------------------|----------------------|
-| Needfinding Interviews | **Enlace:** el link del video de entrevistas es este; https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-techwatch-needfinding-sprint-1 <br> **Formato:** .mp4 <br> **Duración:** 22:22 | Consolida todas las entrevistas realizadas, incluyendo títulos con información del entrevistado, segmento objetivo y fecha de entrevista. Presenta evidencia audiovisual del proceso de investigación con usuarios para identificar necesidades, problemas y oportunidades del mercado objetivo. | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo, introducción de la sección, registro de entrevistas y análisis general con hallazgos clave para la construcción de User Persona. |
-| Product Navigation | **Enlace:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310877_upc_edu_pe/IQC-Otlc_V8uQafHAcGBjdNYARcHHtrY_IorSueRBRfHdJY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ff1i6y <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-techwatch-product-navigation-sprint-3 <br> **Formato:** .mp4 <br> **Duración:** 4:19 | Consolida la demostración del flujo de navegación del producto desplegado, priorizando los user flows relacionados con el core business: registro de propiedades, espacios y dispositivos, simulación de acciones, y visualización de métricas, alertas y reportes. | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo (ver sección 5.2.3.5). |
-| About the Product | **Enlace (YouTube):** https://www.youtube.com/watch?v=bM8T9gWbbao <br>**Enlace (Microsoft Stream):** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310877_upc_edu_pe/IQDhCTNsGjzeS6kAoX2jYgvcAaSqByjHAyqXcSRxA9T0mIA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5LEZKe <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-about-the-product-sprint-3 <br> **Formato:** .mp4 <br> **Duración:** 2:12 | Video de orientación promocional que resume el modelo de negocio, características y beneficios de TechWatch, con escenas de interacción real con el producto. Ver sección 5.4. | Subido a Microsoft Stream y YouTube, e incrustado en el Landing Page. Incluye screenshot con enlace en el informe (sección 5.4). |
-| About the Team | **Enlace (YouTube):** https://youtu.be/v_BGvnbr95c <br> **Enlace (Microsoft Stream):** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202019498_upc_edu_pe/IQAcUIzluQIxTJEiEIihzQclAWQAR6AJ0h9Ub3el_ifwfAw?e=h9G895 <br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-Techwatch-about-the-team-sprint-4 <br> **Formato:** .mp4 <br> **Duración:** 07:17 | Video que presenta el proceso de desarrollo de **TechWatch**, mostrando las principales etapas del proyecto, desde la planificación y el diseño hasta la implementación, integración y despliegue de la solución. Además, incluye el testimonio de cada integrante sobre las actividades realizadas, los resultados obtenidos y las competencias desarrolladas durante el proyecto. | Publicar el video en Microsoft Stream y YouTube. Incluir ambos enlaces en el informe y referenciar la sección **About the Team**, donde se presenta el resumen del video, la pauta de secuencias y el cuadro representativo solicitado por la rúbrica. |
+| Needfinding Interviews | **Enlace:** el link del video de entrevistas es este;  [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQAOUbWkC9PST5dLgKXuia7-AUnhBg9cjdlgTu7WCVUPPwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mD9dka) <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-intellihome-needfinding-sprint-1 <br> **Formato:** .mp4 <br> **Duración:** 22:22 | Consolida todas las entrevistas realizadas, incluyendo títulos con información del entrevistado, segmento objetivo y fecha de entrevista. Presenta evidencia audiovisual del proceso de investigación con usuarios para identificar necesidades, problemas y oportunidades del mercado objetivo. | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo, introducción de la sección, registro de entrevistas y análisis general con hallazgos clave para la construcción de User Persona. |
+| Product Navigation | **Enlace:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310877_upc_edu_pe/IQC-Otlc_V8uQafHAcGBjdNYARcHHtrY_IorSueRBRfHdJY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ff1i6y) <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-intellihome-product-navigation-sprint-3 <br> **Formato:** .mp4 <br> **Duración:** 4:19 | Consolida la demostración del flujo de navegación del producto desplegado, priorizando los user flows relacionados con el core business: registro de propiedades, espacios y dispositivos, simulación de acciones, y visualización de métricas, alertas y reportes. | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo (ver sección 5.2.3.5). |
+| About the Product | **Enlace (YouTube):** [Ver video](https://www.youtube.com/watch?v=bM8T9gWbbao) <br>**Enlace (Microsoft Stream):** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310877_upc_edu_pe/IQDhCTNsGjzeS6kAoX2jYgvcAaSqByjHAyqXcSRxA9T0mIA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5LEZKe) <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-intellihome-about-the-product-sprint-3 <br> **Formato:** .mp4 <br> **Duración:** 2:12 | Video de orientación promocional que resume el modelo de negocio, características y beneficios de TechWatch, con escenas de interacción real con el producto. Ver sección 5.4. | Subido a Microsoft Stream y YouTube, e incrustado en el Landing Page. Incluye screenshot con enlace en el informe (sección 5.4). |
+| About the Team | **Enlace (YouTube):** [Ver video](https://youtu.be/v_BGvnbr95c) <br> **Enlace (Microsoft Stream):** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202019498_upc_edu_pe/IQAcUIzluQIxTJEiEIihzQclAWQAR6AJ0h9Ub3el_ifwfAw?e=h9G895) <br> **Nomenclatura:** upc-pre-202610-1asi0729-11896-intellihome-about-the-team-sprint-4 <br> **Formato:** .mp4 <br> **Duración:** 07:17 | Video que presenta el proceso de desarrollo de **TechWatch**, mostrando las principales etapas del proyecto, desde la planificación y el diseño hasta la implementación, integración y despliegue de la solución. Además, incluye el testimonio de cada integrante sobre las actividades realizadas, los resultados obtenidos y las competencias desarrolladas durante el proyecto. | Publicar el video en Microsoft Stream y YouTube. Incluir ambos enlaces en el informe y referenciar la sección **About the Team**, donde se presenta el resumen del video, la pauta de secuencias y el cuadro representativo solicitado por la rúbrica. |
 
 
 ## Anexo C. Validation Interviews
 
 | Sección | Características del video | Sobre el contenido | Integración y entrega |
 |--------|----------------------------|-------------------|----------------------|
-| Validation Interviews | **Enlace:** el link del video de entrevistas es este; https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f  <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-techwatch-validation-sprint-4 <br> **Formato:** .mp4 <br> **Duración:** 23:25 | Consolida las sesiones y entrevistas de validación en las que usuarios de los segmentos objetivo interactuaron con el Landing Page y los prototipos de la Web Application, manifestando sus observaciones. Incluye títulos con información del entrevistado, segmento objetivo y fecha, junto con la evaluación de heurísticas de usabilidad, arquitectura de información y diseño inclusivo (ver sección 5.3). | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo, introducción de la sección, registro de cada entrevista y evaluación heurística (sección 5.3). |
+| Validation Interviews | **Enlace:** el link del video de entrevistas es este; [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111529_upc_edu_pe/IQD1IHELc9zDT5MFcFg0QZHKAdgT3PwFXdvm2X7Tjm53oPQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=WZ0fD0)  <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-techwatch-validation-sprint-4 <br> **Formato:** .mp4 <br> **Duración:** 23:25 | Consolida las sesiones y entrevistas de validación en las que usuarios de los segmentos objetivo interactuaron con el Landing Page y los prototipos de la Web Application, manifestando sus observaciones. Incluye títulos con información del entrevistado, segmento objetivo y fecha, junto con la evaluación de heurísticas de usabilidad, arquitectura de información y diseño inclusivo (ver sección 5.3). | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo, introducción de la sección, registro de cada entrevista y evaluación heurística (sección 5.3). |
 
 
 ---
