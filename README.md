@@ -17,10 +17,10 @@
 <h2 align="center">Bautista Ubillús, Efraín Ricardo</h2>
 
 <h3 align="center">Equipo</h3>
-<h2 align="center">TechWatch</h2>
+<h2 align="center">Intellihome</h2>
 
 <h3 align="center">Proyecto</h3>
-<h2 align="center">Intellihome</h2>
+<h2 align="center">TechWatch</h2>
 
 <h2 align="center">Integrantes</h2>
 
@@ -63,10 +63,10 @@
 
 | Versión | Fecha      | Autor | Descripción de modificación                                                                                                                                                                                                                                                              |
 |---------|------------|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AV1     | 04-04-2026 | Equipo TechWatch | Creación del informe. Inclusión de Capítulos I, II, III, IV , V y la inclusion del Sprint 1                                                                                                                                                                                              |
-| TB1     | 13-05-2026 | Equipo TechWatch | Actualización del Project Report con la inclusión del Sprint 2 y corrección de observaciones de la entrega anterior relacionadas con hipótesis Lean UX, diagramas, wireflows, Sprint Goal, estadísticas de colaboración, nomenclatura de archivos y visualización de imágenes y enlaces. |
-| AV2     | 17-06-2026 | Equipo TechWatch | Actualización del Project Report para el AV2: inclusión del Sprint 3 con la migración del JSON Server al RESTful API real en Spring Boot desplegado en Railway y su documentación con OpenAPI, capítulo de Validation Interviews con evaluación según heurísticas, sección de Video About-the-Product, sección About the Team en Conclusiones, y actualización del Registro de Versiones, Student Outcome y Project Report Collaboration Insights. |
-| TB2     | 05-07-2026 | Equipo TechWatch | Actualización final del Project Report para la TB2: inclusión del Sprint 4 con la culminación e integración completa del Backend Web Services (IAM, Profiles y Subscriptions), la Frontend Web Application y el Landing Page, y su despliegue definitivo en Railway. Se completó el capítulo de Conclusiones (Conclusiones y recomendaciones, About the Team), se corrigieron los diagramas de arquitectura C4 (contenedores y componentes), se reordenaron los diagramas de base de datos por dominio core, se actualizaron los Anexos de video (A, B y C) y se amplió la sección Student Outcome y el Registro de Versiones con la participación del equipo durante la TB2. |
+| AV1     | 04-04-2026 | Equipo Intellihome | Creación del informe. Inclusión de Capítulos I, II, III, IV , V y la inclusion del Sprint 1                                                                                                                                                                                              |
+| TB1     | 13-05-2026 | Equipo Intellihome | Actualización del Project Report con la inclusión del Sprint 2 y corrección de observaciones de la entrega anterior relacionadas con hipótesis Lean UX, diagramas, wireflows, Sprint Goal, estadísticas de colaboración, nomenclatura de archivos y visualización de imágenes y enlaces. |
+| AV2     | 17-06-2026 | Equipo Intellihome | Actualización del Project Report para el AV2: inclusión del Sprint 3 con la migración del JSON Server al RESTful API real en Spring Boot desplegado en Railway y su documentación con OpenAPI, capítulo de Validation Interviews con evaluación según heurísticas, sección de Video About-the-Product, sección About the Team en Conclusiones, y actualización del Registro de Versiones, Student Outcome y Project Report Collaboration Insights. |
+| TB2     | 05-07-2026 | Equipo Intellihome | Actualización final del Project Report para la TB2: inclusión del Sprint 4 con la culminación e integración completa del Backend Web Services (IAM, Profiles y Subscriptions), la Frontend Web Application y el Landing Page, y su despliegue definitivo en Railway. Se completó el capítulo de Conclusiones (Conclusiones y recomendaciones, About the Team), se corrigieron los diagramas de arquitectura C4 (contenedores y componentes), se reordenaron los diagramas de base de datos por dominio core, se actualizaron los Anexos de video (A, B y C) y se amplió la sección Student Outcome y el Registro de Versiones con la participación del equipo durante la TB2. |
 
 <div style="page-break-after: always;"></div>
 
@@ -78,11 +78,12 @@
 
 ![Project Report Collaboration Insights AV2](./assets/images/insights-av2.png)
 
-<!-- TODO equipo: reemplazar por la captura real de los analíticos de colaboración (Insights → Contributors) del repositorio techwatch-report para la AV2. -->
+**TB2.** Para la TB2, la elaboración del informe se centró en documentar el Sprint 4 (culminación e integración completa del Backend Web Services, Frontend Web Application y Landing Page, y su despliegue definitivo en Railway), completar el capítulo de Conclusiones, corregir los diagramas de arquitectura C4, actualizar los Anexos de video (A, B y C), y ampliar la sección Student Outcome y el Registro de Versiones con la participación del equipo durante la TB2. Todos los integrantes participaron en la redacción y revisión del informe, coordinando mediante Trello y reuniones por Google Meet.
 
+![Project Report Collaboration Insights TB2](./assets/images/insights-tb2.png)
 
 URL de la organizacion  del Project Report en GitHub:
-[https://github.com/techwatch-upc/Project](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
+[https://github.com/upc-pre-202610-1asi0729-11896-techwatch](https://github.com/upc-pre-202610-1asi0729-11896-techwatch)
 
 <div style="page-break-after: always;"></div>
 
@@ -195,6 +196,7 @@ URL de la organizacion  del Project Report en GitHub:
   - [Anexo A. Video de Exposiciones](#anexo-a-video-de-exposiciones)
   - [Anexo B. Evidencia de Video](#anexo-b-evidencia-de-video)
   - [Anexo C. Validation Interviews](#anexo-c-validation-interviews)
+  - [Anexo D. Enlaces de Producción y Usuario de Prueba](#anexo-d-enlaces-de-producción-y-usuario-de-prueba)
 
 ---
 
@@ -401,9 +403,9 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 ### 1.1.1. Descripción de la Startup
 
-TechWatch es una startup de tecnología nacida en el contexto del creciente avance en la domótica y los hogares inteligentes. Identificamos que, si bien la adopción de dispositivos IoT en inmuebles residenciales va en aumento, la mayoría de propietarios y arrendatarios carecen de una plataforma unificada que les permita visualizar y comprender el comportamiento de sus dispositivos domésticos de forma centralizada. Esta falta de visibilidad impide que los usuarios tomen decisiones informadas sobre el consumo energético y el uso eficiente de su hogar.
+Intellihome es una startup de tecnología nacida en el contexto del creciente avance en la domótica y los hogares inteligentes. Identificamos que, si bien la adopción de dispositivos IoT en inmuebles residenciales va en aumento, la mayoría de propietarios y arrendatarios carecen de una plataforma unificada que les permita visualizar y comprender el comportamiento de sus dispositivos domésticos de forma centralizada. Esta falta de visibilidad impide que los usuarios tomen decisiones informadas sobre el consumo energético y el uso eficiente de su hogar.
 
-Frente a esta problemática, TechWatch desarrolla una plataforma web orientada a la gestión y análisis de Smart Homes, que permite a los usuarios registrar los dispositivos de su inmueble, monitorear su comportamiento mediante dashboards interactivos y obtener métricas e insights sobre su consumo y uso. La plataforma está diseñada para adaptarse a distintos tipos de inmueble, desde casas independientes hasta departamentos, con una experiencia de usuario accesible e intuitiva. 
+Frente a esta problemática, Intellihome desarrolla una plataforma web orientada a la gestión y análisis de Smart Homes, que permite a los usuarios registrar los dispositivos de su inmueble, monitorear su comportamiento mediante dashboards interactivos y obtener métricas e insights sobre su consumo y uso. La plataforma está diseñada para adaptarse a distintos tipos de inmueble, desde casas independientes hasta departamentos, con una experiencia de usuario accesible e intuitiva. 
 
 **Misión:** Empoderar a las personas para que tomen control inteligente de sus hogares mediante tecnología accesible que convierte los datos de su entorno doméstico en decisiones informadas. 
 
@@ -1977,7 +1979,7 @@ Se registró el progreso del *Sprint 1* con *commits* en el repositorio de la *L
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
-**Comprobación en el navegador (producción):** [https://landing-page-production-8095.up.railway.app](https://landing-page-production-8095.up.railway.app)
+**Comprobación en el navegador (producción):** [https://techwatch-landing-production.up.railway.app/index.html](https://techwatch-landing-production.up.railway.app/index.html)
 
 Evidencia de ejecución :
 
@@ -1997,7 +1999,7 @@ Repositorio GitHub:
 https://github.com/upc-pre-202610-1asi0729-11896-techwatch/Landing-Page
 
 URL pública de despliegue (Railway):  
-https://landing-page-production-8095.up.railway.app
+https://techwatch-landing-production.up.railway.app/index.html
 
 Desde la URL pública desplegada se verificó el correcto funcionamiento de las principales funcionalidades implementadas durante el Sprint 1, incluyendo navegación responsive, hero section, features, pricing, testimonios, formulario de contacto, autenticación visual e internacionalización (i18n).
 
@@ -2005,7 +2007,7 @@ La evidencia de despliegue incluye el repositorio conectado en Railway, builds e
 
 
 ```text
-Flujo: GitHub (código) → Railway (build + hosting) → https://landing-page-production-8095.up.railway.app
+Flujo: GitHub (código) → Railway (build + hosting) → https://techwatch-landing-production.up.railway.app/index.html
 ```
 
 ![Captura 1 - Entorno de despliegue](./assets/images/chapter-5-2-1-7-img1.png)
@@ -2165,7 +2167,7 @@ El frontend fue desarrollado con Angular y desplegado en [plataforma de desplieg
 GitHub (código) → [Plataforma] (build + hosting) → [URL pública del frontend]
 ```
 
-**URL pública del Frontend:** [frontend-tech-black.vercel.app](https://frontend-tech-black.vercel.app)
+**URL pública del Frontend:** [https://techwatch-frontend-production.up.railway.app/](https://techwatch-frontend-production.up.railway.app/)
 
 ![Frontend Deploy](./assets/images/chapter-5-2-2-7-img1.png)
 
@@ -3191,5 +3193,25 @@ Almas’ud, T. L., Pramudito, H. D., & Badruzzaman, A. (2025). *IoT-enabled smar
 |--------|----------------------------|-------------------|----------------------|
 | Validation Interviews | **Enlace:** el link del video de entrevistas es este; https://upcedupe-my.sharepoint.com/personal/u202111529_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202111529%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0729%2D11896%2Dintellihome%2Dvalidation%2Dsprint%2D4%2Emp4&nav=eyJkZWZhdWx0TmF2UGFuZWwiOnsicGx1Z2luTmFtZSI6Ik1lZGlhU2V0dGluZ3NMYXllciJ9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJVcGxvYWREaWFsb2dPcGVuQnV0dG9uIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd6df892%2D04c9%2D4018%2Dac4e%2D0d65b48d636f  <br>**Nomenclatura:** upc-pre-202610-1asi0729-11896-techwatch-validation-sprint-4 <br> **Formato:** .mp4 <br> **Duración:** 23:25 | Consolida las sesiones y entrevistas de validación en las que usuarios de los segmentos objetivo interactuaron con el Landing Page y los prototipos de la Web Application, manifestando sus observaciones. Incluye títulos con información del entrevistado, segmento objetivo y fecha, junto con la evaluación de heurísticas de usabilidad, arquitectura de información y diseño inclusivo (ver sección 5.3). | Subir el video en Microsoft Stream en el canal indicado por el docente. Incluir en el informe screenshot del video con enlace al mismo, introducción de la sección, registro de cada entrevista y evaluación heurística (sección 5.3). |
 
+
+---
+
+## Anexo D. Enlaces de Producción y Usuario de Prueba
+
+A continuación se listan las URL públicas de los productos digitales de TechWatch desplegados en Railway, junto con un usuario de prueba para validar los flujos de la Web Application.
+
+| Producto | URL |
+|---|---|
+| Landing Page | https://techwatch-landing-production.up.railway.app |
+| Web Application (Frontend) | https://techwatch-frontend-production.up.railway.app |
+| RESTful API (Backend) | https://techwatch-backend-production.up.railway.app |
+| Documentación de la API (Swagger UI) | https://techwatch-backend-production.up.railway.app/swagger-ui/index.html |
+
+**Usuario de prueba:**
+
+| Campo | Valor |
+|---|---|
+| Correo electrónico | u202310877@upc.edu.pe |
+| Contraseña | 1234567890 |
 
 ---
