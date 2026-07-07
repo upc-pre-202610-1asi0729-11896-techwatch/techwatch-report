@@ -208,8 +208,6 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 3.
 
-Para evitar problemas de paginación al exportar a PDF, la tabla evita el uso de celdas combinadas (`rowspan`) que abarquen muchas filas: el criterio específico se indica en el encabezado de cada tabla y la entrega se repite en cada fila.
-
 #### Comunica oralmente con efectividad a diferentes rangos de audiencia
 
 <table border="1" cellspacing="0" cellpadding="6">
@@ -435,7 +433,7 @@ Para evitar problemas de paginación al exportar a PDF, la tabla evita el uso de
 **Conclusiones.** La comunicación escrita desarrollada durante la AV1, la TB1, la AV2 y la TB2 permitió mantener trazabilidad y coherencia entre los artefactos del proyecto, incluyendo Lean UX, historias de usuario, technical stories, wireframes, reportes y despliegues. La documentación elaborada facilitó la comprensión de los avances técnicos y funcionales por parte del docente y del equipo, además de reducir ambigüedades en los procesos de integración y validación del sistema. En la AV2 se documentó por escrito el Sprint 3 (Web Services con OpenAPI, evidencias de desarrollo y despliegue) y las entrevistas de validación con su evaluación según heurísticas. En la TB2 se documentó el Sprint 4, se reorganizaron y consolidaron las entrevistas de validación, se actualizaron las conclusiones y recomendaciones, los anexos del proyecto y el registro de versiones, logrando un informe final completo, consistente y alineado con los resultados obtenidos durante el desarrollo de TechWatch.
 
 
-
+<div style="page-break-after: always;"></div>
 
 # Capítulo I: Introducción
 
