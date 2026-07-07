@@ -208,193 +208,233 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 3.
 
+Para evitar problemas de paginación al exportar a PDF, la tabla evita el uso de celdas combinadas (`rowspan`) que abarquen muchas filas: el criterio específico se indica en el encabezado de cada tabla y la entrega se repite en cada fila.
+
+#### Comunica oralmente con efectividad a diferentes rangos de audiencia
+
 <table border="1" cellspacing="0" cellpadding="6">
   <tr>
-    <th>Criterio específico</th>
     <th>Entrega</th>
+    <th>Integrante</th>
     <th>Acciones realizadas</th>
-    <th>Conclusiones</th>
   </tr>
-
   <tr>
-    <td rowspan="20">Comunica oralmente con efectividad a diferentes rangos de audiencia.</td>
-    <td rowspan="5">AV1</td>
-    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Participé activamente en la sustentación de la Landing Page, explicando la coherencia entre el diseño en Figma y la implementación visual. Además, apoyé constantemente en la elaboración y mejora del documento del proyecto.</td>
-    <td rowspan="20">
-      Durante la AV1, la TB1, la AV2 y la TB2, el equipo mantuvo una comunicación oral efectiva entre integrantes, docente y usuarios entrevistados, permitiendo explicar de manera clara tanto aspectos funcionales como técnicos del proyecto. Las reuniones de coordinación y revisión facilitaron la validación de hipótesis, historias de usuario, wireframes y criterios de aceptación, fortaleciendo la toma de decisiones durante el desarrollo de la solución. En la AV2, la comunicación oral se centró en sustentar la construcción del Backend Web Services, su documentación con OpenAPI y su despliegue en Railway, así como el proceso de validación con usuarios. En la TB2, la comunicación oral permitió presentar la integración completa de la solución, los resultados finales de las entrevistas de validación, las conclusiones obtenidas durante el proyecto y el despliegue definitivo del sistema, evidenciando el cumplimiento de los objetivos planteados y el cierre integral de TechWatch.
-    </td>
+    <td>AV1</td>
+    <td>Fernandez Garfias, Alexander Piero</td>
+    <td>Participé activamente en la sustentación de la Landing Page, explicando la coherencia entre el diseño en Figma y la implementación visual. Además, apoyé constantemente en la elaboración y mejora del documento del proyecto.</td>
   </tr>
-
   <tr>
-    <td><b>Alva Abanto, Luis Andrés</b><br><br>Realicé entrevistas y coordiné criterios de aceptación y dudas de integración.</td>
+    <td>AV1</td>
+    <td>Alva Abanto, Luis Andrés</td>
+    <td>Realicé entrevistas y coordiné criterios de aceptación y dudas de integración.</td>
   </tr>
-
   <tr>
-    <td><b>Toro Turpo, Ronal</b><br><br>Revisé el comportamiento de navegación y flujo entre secciones en reuniones de alineación.</td>
+    <td>AV1</td>
+    <td>Toro Turpo, Ronal</td>
+    <td>Revisé el comportamiento de navegación y flujo entre secciones en reuniones de alineación.</td>
   </tr>
-
   <tr>
-    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Participé en discusiones sobre estructura de secciones y criterios de prueba.</td>
+    <td>AV1</td>
+    <td>Montalvo Vásquez, Bruno Rodrigo</td>
+    <td>Participé en discusiones sobre estructura de secciones y criterios de prueba.</td>
   </tr>
-
   <tr>
-    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Expuse hallazgos de pruebas rápidas de UI y enlaces durante revisiones del sprint.</td>
+    <td>AV1</td>
+    <td>Becerra Durand, Sebastian Uriel</td>
+    <td>Expuse hallazgos de pruebas rápidas de UI y enlaces durante revisiones del sprint.</td>
   </tr>
-
   <tr>
-    <td rowspan="5">TB1</td>
-    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Participé en reuniones de coordinación para validar el desarrollo frontend, despliegue de la landing page y correcciones relacionadas con diagramas y funcionalidades implementadas.</td>
+    <td>TB1</td>
+    <td>Fernandez Garfias, Alexander Piero</td>
+    <td>Participé en reuniones de coordinación para validar el desarrollo frontend, despliegue de la landing page y correcciones relacionadas con diagramas y funcionalidades implementadas.</td>
   </tr>
-
   <tr>
-    <td><b>Alva Abanto, Luis Andrés</b><br><br>Coordiné actividades relacionadas con Sprint 2 y el despliegue del JSON Server, comunicando avances y observaciones al equipo.</td>
+    <td>TB1</td>
+    <td>Alva Abanto, Luis Andrés</td>
+    <td>Coordiné actividades relacionadas con Sprint 2 y el despliegue del JSON Server, comunicando avances y observaciones al equipo.</td>
   </tr>
-
   <tr>
-    <td><b>Toro Turpo, Ronal</b><br><br>Participé en revisiones del capítulo IV y validación de wireframes y mock-ups del Web Application.</td>
+    <td>TB1</td>
+    <td>Toro Turpo, Ronal</td>
+    <td>Participé en revisiones del capítulo IV y validación de wireframes y mock-ups del Web Application.</td>
   </tr>
-
   <tr>
-    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Expuse correcciones relacionadas con Lean UX Hypothesis y validación de enlaces de entrevistas durante reuniones del equipo.</td>
+    <td>TB1</td>
+    <td>Montalvo Vásquez, Bruno Rodrigo</td>
+    <td>Expuse correcciones relacionadas con Lean UX Hypothesis y validación de enlaces de entrevistas durante reuniones del equipo.</td>
   </tr>
-
   <tr>
-    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Presenté avances relacionados con Sprint 2 y mejoras en wireframes del Web Application durante las sesiones de revisión.</td>
+    <td>TB1</td>
+    <td>Becerra Durand, Sebastian Uriel</td>
+    <td>Presenté avances relacionados con Sprint 2 y mejoras en wireframes del Web Application durante las sesiones de revisión.</td>
   </tr>
-
   <tr>
-    <td rowspan="5">AV2</td>
-    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Expuse la migración del Frontend Web Application al RESTful API real y la integración end-to-end durante las revisiones del Sprint 3.</td>
+    <td>AV2</td>
+    <td>Fernandez Garfias, Alexander Piero</td>
+    <td>Expuse la migración del Frontend Web Application al RESTful API real y la integración end-to-end durante las revisiones del Sprint 3.</td>
   </tr>
-
   <tr>
-    <td><b>Alva Abanto, Luis Andrés</b><br><br>Sustenté la arquitectura del Backend Web Services (DDD), la documentación OpenAPI y el despliegue en Railway ante el equipo y el docente.</td>
+    <td>AV2</td>
+    <td>Alva Abanto, Luis Andrés</td>
+    <td>Sustenté la arquitectura del Backend Web Services (DDD), la documentación OpenAPI y el despliegue en Railway ante el equipo y el docente.</td>
   </tr>
-
   <tr>
-    <td><b>Toro Turpo, Ronal</b><br><br>Participé en las revisiones de navegación y validación de los user flows de la Web Application durante las reuniones del Sprint.</td>
+    <td>AV2</td>
+    <td>Toro Turpo, Ronal</td>
+    <td>Participé en las revisiones de navegación y validación de los user flows de la Web Application durante las reuniones del Sprint.</td>
   </tr>
-
   <tr>
-    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Expuse el diseño de las entrevistas de validación y la evaluación según heurísticas durante las sesiones del equipo.</td>
+    <td>AV2</td>
+    <td>Montalvo Vásquez, Bruno Rodrigo</td>
+    <td>Expuse el diseño de las entrevistas de validación y la evaluación según heurísticas durante las sesiones del equipo.</td>
   </tr>
-
   <tr>
-    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Presenté hallazgos de las pruebas sobre la solución desplegada y observaciones de la evaluación heurística.</td>
+    <td>AV2</td>
+    <td>Becerra Durand, Sebastian Uriel</td>
+    <td>Presenté hallazgos de las pruebas sobre la solución desplegada y observaciones de la evaluación heurística.</td>
   </tr>
-
   <tr>
-    <td rowspan="5">TB2</td>
-    <td><b>Fernandez Garfias, Alexander Piero</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
+    <td>TB2</td>
+    <td>Fernandez Garfias, Alexander Piero</td>
+    <td>Expuse errores detectados en el código del backend y presenté pruebas de despliegue del producto.</td>
   </tr>
-
   <tr>
-    <td><b>Alva Abanto, Luis Andrés</b><br><br>Sustenté ante el equipo y el docente la culminación del Backend Web Services (Bounded Contexts IAM, Profiles y Subscriptions), su integración con el Frontend y el despliegue final de la solución en Railway.</td>
+    <td>TB2</td>
+    <td>Alva Abanto, Luis Andrés</td>
+    <td>Sustenté ante el equipo y el docente la culminación del Backend Web Services (Bounded Contexts IAM, Profiles y Subscriptions), su integración con el Frontend y el despliegue final de la solución en Railway.</td>
   </tr>
-
   <tr>
-    <td><b>Toro Turpo, Ronal</b><br>Añadí nuevas funcionalidades a en backend y rvision de el report<br><i></i></td>
+    <td>TB2</td>
+    <td>Toro Turpo, Ronal</td>
+    <td>Añadí nuevas funcionalidades en el backend y realicé la revisión del informe.</td>
   </tr>
-
   <tr>
-    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Presenté la reorganización de las entrevistas de validación, los principales resultados obtenidos durante la evaluación del producto y las actualizaciones realizadas en las conclusiones y anexos del Project Report, explicando su aporte para el cierre integral del proyecto.</td>
+    <td>TB2</td>
+    <td>Montalvo Vásquez, Bruno Rodrigo</td>
+    <td>Presenté la reorganización de las entrevistas de validación, los principales resultados obtenidos durante la evaluación del producto y las actualizaciones realizadas en las conclusiones y anexos del Project Report, explicando su aporte para el cierre integral del proyecto.</td>
   </tr>
-
   <tr>
-    <td><b>Becerra Durand, Sebastian Uriel</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
+    <td>TB2</td>
+    <td>Becerra Durand, Sebastian Uriel</td>
+    <td>Organicé las reuniones para el avance del Sprint 4, enfocadas en la corrección de errores.</td>
   </tr>
-
-  <tr>
-    <td rowspan="20">Comunica por escrito con efectividad a diferentes rangos de audiencia.</td>
-    <td rowspan="5">AV1</td>
-    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Participé en el desarrollo del frontend y apoyé de manera constante en la elaboración, corrección y organización del Project Report, además de documentar avances relacionados con la Landing Page y estructura visual del sistema.</td>
-    <td rowspan="20">
-      La comunicación escrita desarrollada durante la AV1, la TB1, la AV2 y la TB2 permitió mantener trazabilidad y coherencia entre los artefactos del proyecto, incluyendo Lean UX, historias de usuario, technical stories, wireframes, reportes y despliegues. La documentación elaborada facilitó la comprensión de los avances técnicos y funcionales por parte del docente y del equipo, además de reducir ambigüedades en los procesos de integración y validación del sistema. En la AV2 se documentó por escrito el Sprint 3 (Web Services con OpenAPI, evidencias de desarrollo y despliegue) y las entrevistas de validación con su evaluación según heurísticas. En la TB2 se documentó el Sprint 4, se reorganizaron y consolidaron las entrevistas de validación, se actualizaron las conclusiones y recomendaciones, los anexos del proyecto y el registro de versiones, logrando un informe final completo, consistente y alineado con los resultados obtenidos durante el desarrollo de TechWatch.
-    </td>
-  </tr>
-
-  <tr>
-    <td><b>Alva Abanto, Luis Andrés</b><br><br>Redacté historias de usuario, technical stories y análisis de entrevistas.</td>
-  </tr>
-
-  <tr>
-    <td><b>Toro Turpo, Ronal</b><br><br>Registré checklists y notas de integración en Trello y GitHub.</td>
-  </tr>
-
-  <tr>
-    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Mejoré textos y documentación de escenarios BDD.</td>
-  </tr>
-
-  <tr>
-    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Registré observaciones de pruebas y acuerdos de calidad antes del merge final.</td>
-  </tr>
-
-  <tr>
-    <td rowspan="5">TB1</td>
-    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Documenté avances relacionados con frontend, despliegue de landing page, diagramas y mejoras visuales del sistema dentro del informe y repositorios.</td>
-  </tr>
-
-  <tr>
-    <td><b>Alva Abanto, Luis Andrés</b><br><br>Actualicé documentación relacionada con Sprint 2, despliegue del JSON Server y mejoras continuas del informe.</td>
-  </tr>
-
-  <tr>
-    <td><b>Toro Turpo, Ronal</b><br><br>Realicé correcciones documentadas en el capítulo IV relacionadas con wireframes y mock-ups del Web Application.</td>
-  </tr>
-
-  <tr>
-    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Corregí Lean UX Hypothesis, validé enlaces de entrevistas y adapté documentación del informe a formato PDF.</td>
-  </tr>
-
-  <tr>
-    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Documenté avances del Sprint 2 y mejoras en los wireframes del Web Application dentro del informe del proyecto.</td>
-  </tr>
-
-  <tr>
-    <td rowspan="5">AV2</td>
-    <td><b>Fernandez Garfias, Alexander Piero</b><br><br>Documenté la evidencia de ejecución y la integración del Frontend Web Application con el API real en la sección del Sprint 3 del informe.</td>
-  </tr>
-
-  <tr>
-    <td><b>Alva Abanto, Luis Andrés</b><br><br>Redacté la documentación del Sprint 3: Services Documentation (endpoints con OpenAPI), Development Evidence y Software Deployment Evidence.</td>
-  </tr>
-
-  <tr>
-    <td><b>Toro Turpo, Ronal</b><br><br>Documenté el diseño de las entrevistas de validación y los user flows evaluados de la Web Application.</td>
-  </tr>
-
-  <tr>
-    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Redacté la evaluación según heurísticas y el contraste de hipótesis Lean UX en las conclusiones del informe.</td>
-  </tr>
-
-  <tr>
-    <td><b>Becerra Durand, Sebastian Uriel</b><br><br>Registré el registro de entrevistas de validación y observaciones de calidad del informe antes de la entrega.</td>
-  </tr>
-
-  <tr>
-    <td rowspan="5">TB2</td>
-    <td><b>Fernandez Garfias, Alexander Piero</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
-  </tr>
-
-  <tr>
-    <td><b>Alva Abanto, Luis Andrés</b><br><br>Redacté la documentación del Sprint 4 correspondiente al Backend Web Services (IAM, Profiles y Subscriptions), el despliegue final en Railway y el capítulo de Conclusiones del informe.</td>
-  </tr>
-
-  <tr>
-    <td><b>Toro Turpo, Ronal</b><br>comuniqué acerca de errores sin solucionar, funciones a implementar y revisiones<br><i></i></td>
-  </tr>
-
-  <tr>
-    <td><b>Montalvo Vásquez, Bruno Rodrigo</b><br><br>Reorganicé la documentación correspondiente a las entrevistas de validación, actualicé el capítulo de Conclusiones y recomendaciones, y ordené los Anexos del informe, asegurando coherencia, trazabilidad y consistencia para la entrega final del Project Report.</td>
-  </tr>
-
-  <tr>
-    <td><b>Becerra Durand, Sebastian Uriel</b><br><br><i>(pendiente — completar con lo comunicado durante la TB2)</i></td>
-  </tr>
-
 </table>
 
-<!-- TODO equipo: cada integrante debe reemplazar su celda "(pendiente)" del bloque TB2 con lo que efectivamente comunico oralmente y por escrito durante esta entrega. -->
+**Conclusiones.** Durante la AV1, la TB1, la AV2 y la TB2, el equipo mantuvo una comunicación oral efectiva entre integrantes, docente y usuarios entrevistados, permitiendo explicar de manera clara tanto aspectos funcionales como técnicos del proyecto. Las reuniones de coordinación y revisión facilitaron la validación de hipótesis, historias de usuario, wireframes y criterios de aceptación, fortaleciendo la toma de decisiones durante el desarrollo de la solución. En la AV2, la comunicación oral se centró en sustentar la construcción del Backend Web Services, su documentación con OpenAPI y su despliegue en Railway, así como el proceso de validación con usuarios. En la TB2, la comunicación oral permitió presentar la integración completa de la solución, los resultados finales de las entrevistas de validación, las conclusiones obtenidas durante el proyecto y el despliegue definitivo del sistema, evidenciando el cumplimiento de los objetivos planteados y el cierre integral de TechWatch.
+
+#### Comunica por escrito con efectividad a diferentes rangos de audiencia
+
+<table border="1" cellspacing="0" cellpadding="6">
+  <tr>
+    <th>Entrega</th>
+    <th>Integrante</th>
+    <th>Acciones realizadas</th>
+  </tr>
+  <tr>
+    <td>AV1</td>
+    <td>Fernandez Garfias, Alexander Piero</td>
+    <td>Participé en el desarrollo del frontend y apoyé de manera constante en la elaboración, corrección y organización del Project Report, además de documentar avances relacionados con la Landing Page y estructura visual del sistema.</td>
+  </tr>
+  <tr>
+    <td>AV1</td>
+    <td>Alva Abanto, Luis Andrés</td>
+    <td>Redacté historias de usuario, technical stories y análisis de entrevistas.</td>
+  </tr>
+  <tr>
+    <td>AV1</td>
+    <td>Toro Turpo, Ronal</td>
+    <td>Registré checklists y notas de integración en Trello y GitHub.</td>
+  </tr>
+  <tr>
+    <td>AV1</td>
+    <td>Montalvo Vásquez, Bruno Rodrigo</td>
+    <td>Mejoré textos y documentación de escenarios BDD.</td>
+  </tr>
+  <tr>
+    <td>AV1</td>
+    <td>Becerra Durand, Sebastian Uriel</td>
+    <td>Registré observaciones de pruebas y acuerdos de calidad antes del merge final.</td>
+  </tr>
+  <tr>
+    <td>TB1</td>
+    <td>Fernandez Garfias, Alexander Piero</td>
+    <td>Documenté avances relacionados con frontend, despliegue de landing page, diagramas y mejoras visuales del sistema dentro del informe y repositorios.</td>
+  </tr>
+  <tr>
+    <td>TB1</td>
+    <td>Alva Abanto, Luis Andrés</td>
+    <td>Actualicé documentación relacionada con Sprint 2, despliegue del JSON Server y mejoras continuas del informe.</td>
+  </tr>
+  <tr>
+    <td>TB1</td>
+    <td>Toro Turpo, Ronal</td>
+    <td>Realicé correcciones documentadas en el capítulo IV relacionadas con wireframes y mock-ups del Web Application.</td>
+  </tr>
+  <tr>
+    <td>TB1</td>
+    <td>Montalvo Vásquez, Bruno Rodrigo</td>
+    <td>Corregí Lean UX Hypothesis, validé enlaces de entrevistas y adapté documentación del informe a formato PDF.</td>
+  </tr>
+  <tr>
+    <td>TB1</td>
+    <td>Becerra Durand, Sebastian Uriel</td>
+    <td>Documenté avances del Sprint 2 y mejoras en los wireframes del Web Application dentro del informe del proyecto.</td>
+  </tr>
+  <tr>
+    <td>AV2</td>
+    <td>Fernandez Garfias, Alexander Piero</td>
+    <td>Documenté la evidencia de ejecución y la integración del Frontend Web Application con el API real en la sección del Sprint 3 del informe.</td>
+  </tr>
+  <tr>
+    <td>AV2</td>
+    <td>Alva Abanto, Luis Andrés</td>
+    <td>Redacté la documentación del Sprint 3: Services Documentation (endpoints con OpenAPI), Development Evidence y Software Deployment Evidence.</td>
+  </tr>
+  <tr>
+    <td>AV2</td>
+    <td>Toro Turpo, Ronal</td>
+    <td>Documenté el diseño de las entrevistas de validación y los user flows evaluados de la Web Application.</td>
+  </tr>
+  <tr>
+    <td>AV2</td>
+    <td>Montalvo Vásquez, Bruno Rodrigo</td>
+    <td>Redacté la evaluación según heurísticas y el contraste de hipótesis Lean UX en las conclusiones del informe.</td>
+  </tr>
+  <tr>
+    <td>AV2</td>
+    <td>Becerra Durand, Sebastian Uriel</td>
+    <td>Registré el registro de entrevistas de validación y observaciones de calidad del informe antes de la entrega.</td>
+  </tr>
+  <tr>
+    <td>TB2</td>
+    <td>Fernandez Garfias, Alexander Piero</td>
+    <td>Di solución a errores ortográficos en el informe y mejoré los comentarios del código del backend.</td>
+  </tr>
+  <tr>
+    <td>TB2</td>
+    <td>Alva Abanto, Luis Andrés</td>
+    <td>Redacté la documentación del Sprint 4 correspondiente al Backend Web Services (IAM, Profiles y Subscriptions), el despliegue final en Railway y el capítulo de Conclusiones del informe.</td>
+  </tr>
+  <tr>
+    <td>TB2</td>
+    <td>Toro Turpo, Ronal</td>
+    <td>Comuniqué al equipo los errores pendientes de solucionar, las funciones por implementar y las revisiones realizadas.</td>
+  </tr>
+  <tr>
+    <td>TB2</td>
+    <td>Montalvo Vásquez, Bruno Rodrigo</td>
+    <td>Reorganicé la documentación correspondiente a las entrevistas de validación, actualicé el capítulo de Conclusiones y recomendaciones, y ordené los Anexos del informe, asegurando coherencia, trazabilidad y consistencia para la entrega final del Project Report.</td>
+  </tr>
+  <tr>
+    <td>TB2</td>
+    <td>Becerra Durand, Sebastian Uriel</td>
+    <td>Di aviso de posibles mejoras al diseño del frontend y correcciones en el backend.</td>
+  </tr>
+</table>
+
+**Conclusiones.** La comunicación escrita desarrollada durante la AV1, la TB1, la AV2 y la TB2 permitió mantener trazabilidad y coherencia entre los artefactos del proyecto, incluyendo Lean UX, historias de usuario, technical stories, wireframes, reportes y despliegues. La documentación elaborada facilitó la comprensión de los avances técnicos y funcionales por parte del docente y del equipo, además de reducir ambigüedades en los procesos de integración y validación del sistema. En la AV2 se documentó por escrito el Sprint 3 (Web Services con OpenAPI, evidencias de desarrollo y despliegue) y las entrevistas de validación con su evaluación según heurísticas. En la TB2 se documentó el Sprint 4, se reorganizaron y consolidaron las entrevistas de validación, se actualizaron las conclusiones y recomendaciones, los anexos del proyecto y el registro de versiones, logrando un informe final completo, consistente y alineado con los resultados obtenidos durante el desarrollo de TechWatch.
+
+
 
 
 # Capítulo I: Introducción
